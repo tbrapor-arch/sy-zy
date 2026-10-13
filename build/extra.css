@@ -1,0 +1,73 @@
+
+/* ---- 书橱 additions: tunes, spelling tables, word search, book notes */
+.tune { flex: none; overflow: visible; }
+.tune .tg line { stroke: var(--soft-line); stroke-width: 1; }
+.tune .tl polyline { fill: none; stroke: var(--brand); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.tune.big .tl polyline { stroke-width: 3; }
+.wc-tune { display: flex; align-items: center; gap: .6rem; margin-top: .35rem; flex-wrap: wrap; }
+.wc-tune .sub { font-size: .8rem; font-variant-numeric: tabular-nums; }
+.spl { border-collapse: collapse; width: 100%; font-size: .95rem; }
+.spl th { text-align: left; font-weight: 700; color: var(--sub); font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; padding: .3rem .6rem .3rem 0; white-space: nowrap; width: 1%; }
+.spl td { padding: .3rem 0; font-family: var(--f-rom); overflow-wrap: anywhere; }
+.spl tr + tr th, .spl tr + tr td { border-top: 1px solid var(--soft-line); }
+.spl tr.cur td { color: var(--brand); font-weight: 700; }
+.tw { overflow-x: auto; max-width: 100%; }
+table.cmp { border-collapse: collapse; width: 100%; font-size: .92rem; }
+table.cmp th, table.cmp td { border-bottom: 1px solid var(--soft-line); padding: .45rem .5rem; text-align: left; vertical-align: middle; }
+table.cmp th { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--sub); }
+table.cmp tr[data-word] { cursor: pointer; }
+table.cmp tr[data-word]:hover { background: var(--brand-soft); }
+table.cmp .big { font-size: 1.3rem; }
+.gap { display: inline-block; min-width: 2.2em; border-bottom: 2px solid var(--brand); color: transparent; margin: 0 .15em; }
+.lit { font-style: italic; }
+.dres { display: flex; flex-direction: column; border-top: 1px solid var(--soft-line); }
+.drow { display: grid; grid-template-columns: minmax(3.2rem, auto) minmax(0, 1fr) auto; gap: .8rem; align-items: center; text-align: left; border: 0; border-bottom: 1px solid var(--soft-line); background: none; padding: .6rem .3rem; }
+.drow:hover { background: var(--brand-soft); }
+.drow .dh { font-size: 1.35rem; font-weight: 700; }
+.drow .r { font-family: var(--f-rom); font-weight: 600; color: var(--brand); margin-right: .4rem; }
+.drow .sub { font-size: .88rem; }
+.drow .pill { font-size: .62rem; padding: .05rem .4rem; margin-right: .25rem; vertical-align: .1em; }
+.drow.c-to .dh { color: var(--brand); }
+.drow.c-ff .dh { color: var(--coral); }
+#dq input { font: inherit; font-size: 1.05rem; color: var(--text); background: var(--surface); border: 1.5px solid var(--line); border-radius: var(--r); padding: .6rem .8rem; width: 100%; box-sizing: border-box; }
+.wc-sec.book form { display: flex; flex-direction: column; gap: .5rem; margin-top: .3rem; }
+.wc-sec.book label { display: flex; flex-direction: column; gap: .15rem; font-size: .8rem; font-weight: 700; color: var(--sub); }
+.wc-sec.book input { font: inherit; font-size: 1rem; font-weight: 400; color: var(--text); background: var(--surface); border: 1.5px solid var(--soft-line); border-radius: 8px; padding: .45rem .6rem; }
+.answer .tune { align-self: center; }
+.opts .opt { font-family: var(--f-rom); }
+
+/* ---- reader (弄堂) */
+.book-card p { line-height: 1.6; }
+.chl { display: grid; grid-template-columns: 1.6rem minmax(0, 1fr); gap: .6rem; align-items: start; }
+.chl-l { font-weight: 800; color: var(--sub); padding-top: .55rem; font-variant-numeric: tabular-nums; }
+.chl-g { display: grid; grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr)); gap: .5rem; }
+.chb { display: flex; flex-direction: column; align-items: flex-start; gap: .05rem; text-align: left; background: var(--surface); border: 1.5px solid var(--soft-line); border-radius: var(--r); padding: .5rem .65rem; min-width: 0; }
+.chb .han { font-size: 1.1rem; font-weight: 700; }
+.chb .r { font-family: var(--f-rom); font-size: .78rem; color: var(--sub); overflow-wrap: anywhere; }
+.chb .g { font-size: .78rem; color: var(--brand); }
+.chb.ready { border-color: var(--brand); box-shadow: var(--shadow-soft); }
+.chb.ready:hover { background: var(--brand-soft); }
+.chb.done .han::after { content: " ✓"; color: var(--brand); font-size: .8em; }
+.chb:disabled { opacity: .55; cursor: default; }
+.reader .rp { display: flex; flex-direction: column; gap: .35rem; }
+.reader .rtext { margin: 0; font-family: var(--f-han); font-size: 1.22rem; line-height: 2.35; overflow-wrap: anywhere; }
+.reader .rp.def .rtext { font-size: 1.05rem; line-height: 2; color: var(--sub); }
+.reader .storybox { display: flex; flex-direction: column; gap: 1.4rem; }
+.reader .rtext ruby rt { font-family: var(--f-rom); font-size: .5em; color: var(--brand); font-weight: 600; }
+.reader .rtext .tok { cursor: pointer; border-radius: 4px; }
+.reader .rtext .tok:hover, .reader .rtext .tok.sel { background: var(--brand-soft); }
+.reader .rtext .tok.c-to { color: var(--brand); }
+.reader .rtext .tok.c-ff { text-decoration: underline dotted var(--coral); text-underline-offset: 5px; }
+.reader ruby.auth rt { color: var(--coral) !important; }
+.k-auth { color: var(--coral); font-weight: 700; }
+.ren { margin: 0; color: var(--sub); line-height: 1.6; max-width: 65ch; font-family: var(--f-ui); }
+.reader .anotes { display: flex; flex-direction: column; gap: .8rem; padding-top: .6rem; }
+.reader .rp.note .rtext { font-size: 1rem; line-height: 2; }
+.unmatched { color: var(--text); }
+.prep summary { cursor: pointer; font-weight: 800; }
+.prep .wgrid { margin-top: .7rem; }
+.prepgrid { grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)) !important; }
+.prepgrid .wchip { padding: .45rem .6rem; }
+.prepgrid .wchip b { font-size: 1.05rem; }
+.prepgrid .wchip .g { font-size: .8rem; }
+.drive { display: flex; flex-direction: column; gap: .35rem; border-top: 1px solid var(--soft-line); padding-top: .8rem; margin-top: .2rem; }

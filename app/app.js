@@ -1,0 +1,586 @@
+// 书橱 Sy-zy · Shanghainese. Same bones as 冊櫥 Tsheh-tû (Taigi) and Mainichi (Japanese).
+// Every word is stored once, in IPA; Wugniu, Qian's pinyin and the spoken tune are generated from it (build/romanize.py).
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('syzy:' + k); return v ? JSON.parse(v) : d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem('syzy:' + k, JSON.stringify(v)); } catch {} }
+};
+const prefs = Object.assign({ mode: 'both', rom: 'wugniu', tonenum: true, en: false, lit: true, skin: 'notebook' }, store.get('prefs', {}));
+function applySkin() {
+  // night mode: the reader's own choice, else the viewer's theme, else the system setting
+  const r = document.documentElement, t = r.dataset.theme;
+  const night = prefs.night !== undefined ? prefs.night : t ? t === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  if (prefs.skin === 'rose') r.dataset.skin = 'rose'; else delete r.dataset.skin; if (night) r.dataset.night = ''; else delete r.dataset.night;
+}
+const ROMS = [['wugniu', 'Wugniu'], ['qian', 'Qian pinyin'], ['ipa', 'IPA']];
+const ROM_NAME = Object.fromEntries(ROMS);
+
+// progress: lesson id -> date finished
+const doneAt = store.get('doneAt', {});
+const done = new Set(Object.keys(doneAt).map(Number));
+function saveDone() { store.set('doneAt', doneAt); }
+let deck = store.get('deck', {});
+let studyDays = new Set(store.get('days', []));
+// notes from the learner's books: word id -> { book, says, note, at, ok }
+let bookNotes = store.get('bookNotes', {});
+const DAY = 864e5, BOXES = [0, 1, 3, 7, 16, 35];
+const ymd = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+const today = () => ymd(new Date());
+const fmtDate = s => { if (!s) return ''; const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }); };
+function studied() { studyDays.add(today()); store.set('days', [...studyDays]); }
+function streak() { let n = 0; const d = new Date(); if (!studyDays.has(ymd(d))) d.setDate(d.getDate() - 1); while (studyDays.has(ymd(d))) { n++; d.setDate(d.getDate() - 1); } return n; }
+
+const COG = {
+  same: ['p-same', 'Same as Mandarin', ''],
+  ff: ['p-ff', 'False friend', 'c-ff'],
+  sh: ['p-to', 'Shanghainese word', 'c-to'],
+};
+const cog = id => COG[(DATA.dict[id] || {}).type] || ['', '', ''];
+const PUNCT = { '，': ', ', '。': '. ', '！': '! ', '？': '? ', '：': ': ', '、': ', ', '；': '; ' };
+const SUP = { 0: '⁰', 1: '¹', 2: '²', 3: '³', 4: '⁴', 5: '⁵', 6: '⁶', 7: '⁷', 8: '⁸', 9: '⁹' };
+const sup = s => String(s).replace(/\d/g, d => SUP[d]);
+const ICONS = {
+  lessons: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21a2 2 0 0 1 2-2h13"/></svg>',
+  dict: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg>',
+  read: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 6.5C10 5 7 4.5 3 5v13c4-.5 7 0 9 1.5 2-1.5 5-2 9-1.5V5c-4-.5-7 0-9 1.5z"/><path d="M12 6.5V19"/></svg>',
+  bridge: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 17h20M4 17v-3a8 8 0 0 1 16 0v3M8 17v-4M12 17v-6M16 17v-4"/></svg>',
+  settings: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
+  review: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="6" y="3" width="13" height="16" rx="2"/><path d="M3 7v12a2 2 0 0 0 2 2h10"/></svg>',
+};
+
+// ---------- spelling: one entry, three systems
+function spell(e, sys = prefs.rom, withTone = prefs.tonenum) {
+  if (!e) return '';
+  if (sys === 'ipa') return e.ipa.split(' ').map((s, i) => s.replace(/\d+$/, '') + (e.contour[i] ? sup(e.contour[i]) : '')).join(' ');
+  if (sys === 'qian') return e.qian;
+  return (withTone && e.tone ? sup(e.tone) : '') + e.wugniu;
+}
+// the tune of a word: one short line per syllable, five pitch levels
+function tune(e, big) {
+  const c = e.contour, n = c.length, w = big ? 34 : 22, h = big ? 40 : 22, pad = 3;
+  const y = d => pad + (5 - +d) * (h - 2 * pad) / 4;
+  const segs = c.map((t, i) => {
+    if (!t) return '';
+    const ds = t.split(''), x0 = i * w + 4, x1 = (i + 1) * w - 4;
+    const pts = ds.length === 1 ? [[x0, y(ds[0])], [x1, y(ds[0])]] : ds.map((d, k) => [x0 + (x1 - x0) * k / (ds.length - 1), y(d)]);
+    return `<polyline points="${pts.map(p => p.join(',')).join(' ')}"/>`;
+  }).join('');
+  const grid = [1, 3, 5].map(l => `<line x1="0" x2="${n * w}" y1="${y(l)}" y2="${y(l)}"/>`).join('');
+  return `<svg class="tune${big ? ' big' : ''}" viewBox="0 0 ${n * w} ${h}" width="${n * w}" height="${h}" role="img" aria-label="Pitch ${c.join(' ')}"><g class="tg">${grid}</g><g class="tl">${segs}</g></svg>`;
+}
+const canon = s => (s || '').normalize('NFD').toLowerCase().replace(/[̀-ͯ]/g, '').replace(/[\s\-'’.,!?。，！？⁰¹²³⁴⁵⁶⁷⁸⁹\d˥˦˧˨˩]/g, '');
+
+// ---------- routing
+let homeY = 0;
+function route() {
+  const h = location.hash.slice(1) || 'lessons';
+  if (!route.keepSheet) closeSheet();
+  let m;
+  if (h === 'lessons') return showLessons();
+  if (h === 'lesson-0') return showLesson0();
+  if ((m = h.match(/^lesson-(\d+)$/))) { const L = DATA.lessons.find(l => l.id === +m[1]); if (L) { store.set('last', L.id); return showLesson(L); } }
+  if (h === 'dict') return showDict();
+  if (h === 'read') return showLibrary();
+  if ((m = h.match(/^read-(\d+)$/))) return showChapter(+m[1]);
+  if (h === 'review') return showReview();
+  if (h === 'bridge') return showBridge();
+  if (h === 'settings') return showSettings();
+  showLessons();
+}
+function go(h) { if (location.hash === '#' + h) { route(); window.scrollTo(0, 0); } else location.hash = h; }
+let onHome = (location.hash.slice(1) || 'lessons') === 'lessons', resetHome = false;
+window.addEventListener('hashchange', () => {
+  if (onHome) homeY = window.scrollY;
+  if (resetHome) { homeY = 0; resetHome = false; }
+  route();
+  onHome = (location.hash.slice(1) || 'lessons') === 'lessons';
+  if (onHome && homeY) window.scrollTo(0, homeY); else window.scrollTo(0, 0);
+});
+function wireGo(root) { $$('[data-go]', root).forEach(b => b.onclick = () => go(b.dataset.go)); }
+
+function renderTabs(cur) {
+  const due = dueCards().length;
+  const tabs = [['lessons', 'Lessons'], ...(DATA.reader ? [['read', 'Read']] : []), ['dict', 'Words'], ['review', 'Review'], ['bridge', 'Bridge'], ['settings', 'Settings']];
+  $('#tabs').innerHTML = tabs.map(([k, t]) => `<button class="tab" data-tab="${k}" aria-current="${cur === k}">${ICONS[k]}<span>${t}</span>${k === 'review' && due ? `<span class="count">${due}</span>` : ''}</button>`).join('');
+  $$('[data-tab]', $('#tabs')).forEach(b => b.onclick = () => { const k = b.dataset.tab; if (k === 'review') sess = null; if (k === 'lessons') resetHome = true; go(k); });
+}
+
+// ---------- lessons list
+function showLessons() {
+  renderTabs('lessons');
+  const next = DATA.lessons.find(l => !done.has(l.id));
+  const last = store.get('last', null), dt = Object.values(doneAt).filter(d => d === today()).length, st = streak();
+  const tile = l => {
+    const st = done.has(l.id) ? 'done' : (next && next.id === l.id ? 'next' : '');
+    return `<button class="lt ${st} ${l.review ? 'rev' : ''}" data-go="lesson-${l.id}" aria-label="Lesson ${l.id}: ${esc(l.title.en)}${done.has(l.id) ? ', done' : ''}"><span class="ln">${done.has(l.id) ? '✓ ' : ''}${l.id}</span><span class="lh">${esc(l.title.hanzi.replace(/\s/g, ''))}</span></button>`;
+  };
+  const journal = Object.entries(doneAt).filter(x => x[1]).sort((a, b) => b[1].localeCompare(a[1]) || b[0] - a[0]);
+  const byId = Object.fromEntries(DATA.lessons.map(l => [l.id, l]));
+  $('#main').innerHTML = `<div class="col">
+    <div class="head"><span class="eyebrow">Course</span><h1>课程</h1>
+      <span class="rom">${esc(spell(DATA.dict[idOf('课程')] || null) || 'Lessons')} · ${done.size} done · ${DATA.lessons.length} written</span></div>
+    <div class="bar" aria-hidden="true"><i style="width:${Math.round(100 * done.size / DATA.lessons.length)}%"></i></div>
+    ${next ? `<div class="card raised nextcard">
+      <span class="eyebrow">${last === next.id ? 'Carry on' : 'Next lesson'}${dt ? ` · ${dt} done today` : ''}${st > 1 ? ` · ${st}-day streak` : ''}</span>
+      <div class="nc-main"><span class="nc-n">${next.id}</span><span class="nc-t"><span class="han">${esc(next.title.hanzi.replace(/\s/g, ''))}</span><span class="rom sub">${esc(lineRom(next.title.tokens))} · ${esc(next.title.en)}</span></span>
+        <button class="btn" data-go="lesson-${next.id}">${last === next.id ? 'Resume' : 'Start'} →</button></div></div>`
+      : `<div class="card raised"><span class="eyebrow">All written lessons are done</span><span>New lessons will appear here as they are written.</span></div>`}
+    <button class="item" data-go="lesson-0"><span class="no">0</span><span><span class="tt">读拼音</span><br><span class="ts">The spellings · start here</span></span><span class="chev">›</span></button>
+    <div class="lgrid">${DATA.lessons.map(tile).join('')}</div>
+    <p class="sub" style="margin:0;font-size:.85rem">Every 7th lesson (复习) is a review. Each lesson: a short dialogue to read and understand (passive phase), notes, the new words and a few exercises. Mark it done and its words go into your review deck.</p>
+    <details class="journal"><summary><span class="han">日记</span> Journal (${journal.length})</summary>
+      ${journal.length ? `<ul>${journal.map(([n, d]) => `<li><time>${fmtDate(d)}</time><button class="linkish" data-go="lesson-${n}">Lesson ${n} · ${esc(byId[n] ? byId[n].title.en : '')}</button></li>`).join('')}</ul>`
+        : '<p class="sub">Lessons you finish show up here with their date.</p>'}</details>
+  </div>`;
+  wireGo($('#main'));
+}
+function idOf(h) { return Object.keys(DATA.dict).find(k => k.startsWith(h + '|')); }
+function lineRom(tokens) { return tokens.map(t => t.p ? (PUNCT[t.p] || t.p).trim() : (t.w.id ? spell(DATA.dict[t.w.id]) : t.w.h)).join(' ').replace(/ ([,.!?:;])/g, '$1'); }
+
+// ---------- tokenised sentence
+function tokHTML(tok, key) {
+  if (tok.p) {
+    if (tok.p === '＿') return `<span class="gap">＿＿</span>`;
+    return `<span class="punct">${esc(prefs.mode === 'rom' ? (PUNCT[tok.p] || tok.p) : tok.p)}</span>`;
+  }
+  const w = tok.w, e = w.id ? DATA.dict[w.id] : null, r = e ? spell(e) : w.h;
+  const cls = 'tok ' + (w.id ? cog(w.id)[2] : '') + (e && bookNotes[w.id] && !bookNotes[w.id].ok ? ' var' : '');
+  const a = `class="${cls}" tabindex="0" role="button" data-tok="${key}"`;
+  if (prefs.mode === 'rom' || !HAN_RE.test(w.h)) return `<span ${a}>${esc(prefs.mode === 'rom' ? r : w.h)}</span>${prefs.mode === 'rom' ? ' ' : ''}`;
+  return `<ruby ${a}>${esc(w.h)}<rt>${esc(r)}</rt></ruby>`;
+}
+const HAN_RE = /[㐀-鿿\u{20000}-\u{3ffff}豈-﫿]/u;
+const TOKS = {};
+function sentence(tokens, prefix) { return tokens.map((t, i) => { if (t.w) TOKS[prefix + ':' + i] = t.w; return tokHTML(t, prefix + ':' + i); }).join(''); }
+function wireTokens(root) {
+  $$('.tok', root).forEach(t => {
+    const open = () => {
+      if (prefs.mode === 'tap' && t.tagName === 'RUBY' && !t.classList.contains('show')) { t.classList.add('show'); return; }
+      $$('.tok.sel').forEach(x => x.classList.remove('sel')); t.classList.add('sel'); const w = TOKS[t.dataset.tok]; openCard(w.id, w);
+    };
+    t.onclick = open; t.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } };
+  });
+}
+function toolbar() {
+  return `<div class="toolbar" role="toolbar" aria-label="Display">
+    <div class="seg" role="group" aria-label="Script">${[['both', '汉字 + spelling'], ['tap', 'Spelling on tap'], ['rom', 'Spelling'], ['han', '汉字']].map(([k, t]) => `<button data-mode="${k}" aria-pressed="${prefs.mode === k}">${t}</button>`).join('')}</div>
+    <div class="seg" role="group" aria-label="Spelling system">${ROMS.map(([k, t]) => `<button data-rom="${k}" aria-pressed="${prefs.rom === k}">${t}</button>`).join('')}</div>
+    <label class="toggle"><input type="checkbox" id="opt-en" ${prefs.en ? 'checked' : ''}> English</label>
+    <div class="legend"><span class="k-to">Shanghainese word</span><span class="k-ff">False friend</span></div></div>`;
+}
+function wireToolbar(rerender) {
+  $$('[data-mode]').forEach(b => b.onclick = () => { prefs.mode = b.dataset.mode; store.set('prefs', prefs); rerender(); });
+  $$('[data-rom]').forEach(b => b.onclick = () => { prefs.rom = b.dataset.rom; store.set('prefs', prefs); rerender(); });
+  $('#opt-en').onchange = e => { prefs.en = e.target.checked; store.set('prefs', prefs); rerender(); };
+}
+const REVEAL = {};
+function enHTML(en, lit) { return `<span class="en">${esc(en)}</span>${lit && prefs.lit ? `<span class="zh lit">lit. ${esc(lit)}</span>` : ''}`; }
+function enLine(en, lit, k) { REVEAL[k] = [en, lit]; return prefs.en ? enHTML(en, lit) : `<button class="reveal" data-reveal="${k}">Show English</button>`; }
+function wireReveal(root) { $$('[data-reveal]', root).forEach(b => b.onclick = () => { const [en, lit] = REVEAL[b.dataset.reveal]; b.outerHTML = enHTML(en, lit); }); }
+function fmt(t) { return esc(t).replace(/([㐀-鿿\u{20000}-\u{3ffff}豈-﫿]+)/gu, '<span class="han">$1</span>'); }
+
+// ---------- lesson
+function showLesson(L) {
+  renderTabs('lessons');
+  const notesBy = {};
+  L.notes.forEach((n, i) => (notesBy[n.ref] = notesBy[n.ref] || []).push(i + 1));
+  const speakers = [...new Set(L.lines.map(l => l.speaker))];
+  const ids = DATA.lessons.map(l => l.id), at = ids.indexOf(L.id);
+  const prev = ids[at - 1], nxt = ids[at + 1];
+  const chips = [['dlg', 'Dialogue'], ['sec-notes', 'Notes'], ['sec-words', 'New words'], ['sec-ex', 'Practice']];
+  $('#main').innerHTML = `<div class="col mode-${prefs.mode}">
+    <div class="lbar"><button class="icon" data-go="lessons" aria-label="Back to lessons">←</button>
+      <span class="where">Lesson ${L.id} · ${esc(L.title.en)}</span>
+      <button class="icon" data-go="lesson-${prev}" aria-label="Previous lesson" ${prev ? '' : 'disabled'}>‹</button>
+      <button class="icon" data-go="lesson-${nxt}" aria-label="Next lesson" ${nxt ? '' : 'disabled'}>›</button></div>
+    <div class="head"><span class="eyebrow">Lesson ${L.id}${L.review ? ' · Review' : ''}</span>
+      <h1>${esc(L.title.hanzi.replace(/\s/g, ''))}</h1><span class="rom">${esc(lineRom(L.title.tokens))} · ${esc(L.title.en)}</span></div>
+    <nav class="lnav" aria-label="Sections">${chips.map(([id, t]) => `<button data-jump="${id}">${t}</button>`).join('')}</nav>
+    <p class="setting" style="margin:0">${esc(L.setting)}</p>
+    ${toolbar()}
+    <div class="lines" id="dlg">${L.lines.map((ln, li) => `
+      <div class="sent" id="line-${ln.n}">
+        <div class="who"><span class="av ${speakers.indexOf(ln.speaker) % 2 ? 'b' : ''}">${esc(ln.speaker[0])}</span>${esc(ln.speaker)}<span class="n">${ln.n}</span></div>
+        <div class="txt">${sentence(ln.tokens, 'L' + li)}</div>
+        <div class="under">${enLine(ln.en, ln.lit, 'l' + li)}${(notesBy[ln.n] || []).map(k => `<button class="nlink" data-note="${k}" aria-label="Note ${k}">${k}</button>`).join('')}</div>
+      </div>`).join('')}</div>
+    <details class="allnotes" id="sec-notes"><summary><span class="han">注解</span> All notes (${L.notes.length})</summary>
+    <ol class="notes">${L.notes.map((n, i) => `<li class="note" id="note-${i + 1}"><span class="nn">${i + 1}</span><p><span class="tag">Line ${n.ref}</span>${fmt(n.text)}</p></li>`).join('')}</ol></details>
+    <h2 id="sec-words"><span class="han">新词</span> New words</h2>
+    <div class="wgrid">${L.new_words.map(id => { const e = DATA.dict[id]; return `<button class="wchip ${cog(id)[2]} ${deck[id] ? 'indeck' : ''}" data-word="${esc(id)}"><b>${esc(e.h)}</b><span class="r">${esc(spell(e))}</span><span class="g">${esc(e.gloss || '')}</span></button>`; }).join('')}</div>
+    <div class="row"><button class="btn small quiet" id="anki">Copy for Anki</button><span class="sub" style="font-size:.85rem">${L.new_words.filter(w => deck[w]).length} of ${L.new_words.length} in your review deck</span></div>
+    <h2 id="sec-ex"><span class="han">练习</span> Practice</h2>
+    <p class="sub" style="margin:0;font-size:.85rem">Type the answer in characters or in any of the three spellings; hyphens, spaces and tone numbers do not matter.</p>
+    <div class="ex">${L.exercises.map((e, i) => exHTML(e, i)).join('')}</div>
+    <div class="card raised finish" id="finish"></div>
+  </div>`;
+  const main = $('#main');
+  wireToolbar(() => { const y = window.scrollY; showLesson(L); window.scrollTo(0, y); }); wireTokens(main); wireReveal(main); wireGo(main);
+  $$('[data-jump]', main).forEach(b => b.onclick = () => { const el = document.getElementById(b.dataset.jump); if (el.tagName === 'DETAILS') el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+  $$('[data-note]', main).forEach(b => b.onclick = () => openNote(L, +b.dataset.note));
+  $$('[data-word]', main).forEach(b => b.onclick = () => openCard(b.dataset.word));
+  $('#anki', main).onclick = e => copyText(L.new_words.map(id => { const d = DATA.dict[id]; return [d.h, d.wugniu, d.qian, d.ipa, d.gloss || '', (d.zh || []).join('、'), `Lesson ${L.id}`].join('\t'); }).join('\n'), e.target, 'Copied · in Anki: File › Import, fields separated by Tab');
+  wireExercises(L.exercises, main);
+  finishBlock(L);
+}
+function finishBlock(L) {
+  const box = $('#finish'), nxt = DATA.lessons.find(l => l.id > L.id), d = doneAt[L.id];
+  box.innerHTML = `<div><b>${d !== undefined ? `✓ Lesson done${d ? ' ' + fmtDate(d) : ''}` : 'Finished with this lesson?'}</b>
+      <div class="sub" style="font-size:.9rem">${d !== undefined ? 'Its new words are in your review deck. Come back to it any time.' : 'Read, reveal, check the notes and do the practice. Then mark it done: its new words go into your review deck.'}</div></div>
+    <div class="row">${d !== undefined ? '<button class="btn small quiet" id="undo">Undo</button>' : '<button class="btn" id="mark">Mark as done</button>'}
+      ${nxt ? `<button class="btn ${d !== undefined ? '' : 'line'}" data-go="lesson-${nxt.id}">Lesson ${nxt.id} →</button>` : '<button class="btn line" data-go="lessons">Lessons</button>'}</div>`;
+  wireGo(box);
+  const mk = $('#mark', box), un = $('#undo', box);
+  if (mk) mk.onclick = () => { doneAt[L.id] = today(); done.add(L.id); saveDone(); studied(); const n = addToDeck(L.new_words); toast(n ? `Lesson done · ${n} words added to review` : 'Lesson marked as done'); renderTabs('lessons'); finishBlock(L); };
+  if (un) un.onclick = () => { delete doneAt[L.id]; done.delete(L.id); saveDone(); toast('Undone · words stay in your review deck'); finishBlock(L); };
+}
+async function copyText(txt, btn, okMsg) {
+  try { await navigator.clipboard.writeText(txt); btn.textContent = '✓ Copied'; toast(okMsg); }
+  catch { const ta = document.createElement('textarea'); ta.value = txt; ta.readOnly = true; ta.className = 'copybox'; btn.after(ta); ta.select(); btn.textContent = 'Copy this text'; }
+}
+function exHTML(e, i) {
+  const s = sentence(e.tokens, 'X' + i);
+  if (e.kind === 'fill') return `<div class="card exi"><span class="k">Fill the gap</span><span class="h txt">${s}</span><span class="sub">${esc(e.en)}</span>
+    <form data-ex="${i}"><input id="ex-${i}" aria-label="Your answer" autocomplete="off" spellcheck="false" autocapitalize="off" placeholder="汉字 or ${ROM_NAME[prefs.rom]}">
+    <button class="btn small" type="submit">Check</button><button class="btn small quiet" type="button" data-show="${i}">Show</button></form>
+    <span class="fb" id="fb-${i}" aria-live="polite"></span></div>`;
+  if (e.kind === 'say') return `<div class="card exi"><span class="k">Say it in Shanghainese</span><span class="h" style="font-family:var(--f-ui)">${esc(e.en)}</span>
+    <button class="btn small quiet" style="align-self:start" data-say="${i}">Show</button><span class="fb txt" id="fb-${i}" hidden>${s}</span></div>`;
+  return `<div class="card exi"><span class="k">What does it mean?</span><span class="h txt">${s}</span>
+    <button class="btn small quiet" style="align-self:start" data-ans="${i}">Show English</button><span class="fb" id="fb-${i}"></span></div>`;
+}
+function answerText(e) { const d = e.answer_id && DATA.dict[e.answer_id]; return d ? `${d.h} ${spell(d)}` : e.answer; }
+function wireExercises(ex, root) {
+  $$('form[data-ex]', root).forEach(f => f.onsubmit = ev => {
+    ev.preventDefault();
+    const e = ex[+f.dataset.ex], v = canon($('input', f).value), fb = $('#fb-' + f.dataset.ex), d = e.answer_id && DATA.dict[e.answer_id];
+    const forms = d ? [d.h, d.wugniu, d.qian, d.ipa].map(canon) : [canon(e.answer)];
+    if (v && forms.includes(v)) { fb.className = 'fb ok'; fb.textContent = '✓ ' + answerText(e); studied(); }
+    else { fb.className = 'fb no'; fb.textContent = v ? 'Not quite. Try again, or tap Show.' : 'Type an answer first.'; }
+  });
+  $$('[data-show]', root).forEach(b => b.onclick = () => { const fb = $('#fb-' + b.dataset.show); fb.className = 'fb'; fb.textContent = answerText(ex[+b.dataset.show]); });
+  $$('[data-ans]', root).forEach(b => b.onclick = () => { $('#fb-' + b.dataset.ans).textContent = ex[+b.dataset.ans].en; b.remove(); });
+  $$('[data-say]', root).forEach(b => b.onclick = () => { $('#fb-' + b.dataset.say).hidden = false; b.remove(); });
+}
+
+// ---------- lesson 0: the spelling systems, with tables drawn from the data
+function showLesson0() {
+  renderTabs('lessons');
+  $('#main').innerHTML = `<div class="col"><div class="prose"><span class="eyebrow">Lesson 0 · Before you start</span>${DATA.lesson0}</div>
+    <div class="row"><button class="btn" data-go="lesson-1">Start lesson 1</button></div></div>`;
+  const m = $('#main');
+  $$('[data-compare]', m).forEach(div => {
+    const rows = div.dataset.compare.split(' ').map(h => idOf(h)).filter(Boolean);
+    div.outerHTML = `<table class="cmp"><thead><tr><th></th><th>Wugniu</th><th>Qian</th><th>IPA (as said)</th><th>Tune</th></tr></thead><tbody>${rows.map(id => { const e = DATA.dict[id];
+      return `<tr data-word="${esc(id)}" tabindex="0"><td><span class="han big">${esc(e.h)}</span><br><span class="sub">${esc(e.gloss || '')}</span></td><td><b>${esc(spell(e, 'wugniu', true))}</b></td><td>${esc(e.qian)}</td><td>${esc(spell(e, 'ipa'))}</td><td>${tune(e)}</td></tr>`; }).join('')}</tbody></table>`;
+  });
+  $$('[data-tones]', m).forEach(div => {
+    const ex = { 1: '三', 5: '四', 6: '五', 7: '七', 8: '六' };
+    div.outerHTML = `<table class="cmp"><thead><tr><th>Wugniu</th><th>Name</th><th>Pitch alone</th><th>Example</th><th>2-syllable word</th></tr></thead><tbody>${Object.entries(DATA.tones).map(([k, t]) => {
+      const e = DATA.dict[idOf(ex[k])];
+      return `<tr><td><b>${k}</b></td><td>${esc(t.name)}</td><td>${t.contour}</td><td>${e ? `<span class="han">${esc(e.h)}</span> ${esc(e.wugniu)}` : ''}</td><td>${t.sandhi[0].replace(' ', '–')}</td></tr>`; }).join('')}</tbody></table>`;
+  });
+  $$('table', m).forEach(t => { const w = document.createElement('div'); w.className = 'tw'; t.replaceWith(w); w.appendChild(t); });
+  $$('[data-word]', m).forEach(r => r.onclick = () => openCard(r.dataset.word));
+  wireGo(m);
+}
+
+// ---------- dictionary: search by characters, any spelling, English or pinyin
+let dictQ = '';
+const SEARCH = Object.entries(DATA.dict).map(([id, e]) => ({ id, e, keys: [e.h, e.wugniu, e.qian, e.ipa, e.mand ? e.mand.py : ''].map(canon), en: (e.gloss || '').toLowerCase() }));
+function showDict() {
+  renderTabs('dict');
+  $('#main').innerHTML = `<div class="col">
+    <div class="head"><span class="eyebrow">Words</span><h1>词典</h1><span class="rom">${DATA.dict ? Object.keys(DATA.dict).length.toLocaleString('en') : 0} words · search in characters, Wugniu, Qian, IPA, pinyin or English</span></div>
+    <form class="card raised" id="dq" role="search"><input id="q" type="search" placeholder="白相 · baq-shian · bhakxiang · to play" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(dictQ)}" aria-label="Search">
+      <span class="sub" style="font-size:.85rem">Type what your book says, in its own spelling: the search finds the word whatever system it uses.</span></form>
+    <div id="res"></div></div>`;
+  const q = $('#q'), run = () => { dictQ = q.value; renderResults(); };
+  q.oninput = run; $('#dq').onsubmit = e => { e.preventDefault(); run(); };
+  renderResults(); if (!matchMedia('(pointer: coarse)').matches) q.focus();
+}
+function renderResults() {
+  const raw = dictQ.trim(), c = canon(raw), box = $('#res');
+  if (!raw) { box.innerHTML = '<p class="sub">Most common words first. Lesson words are marked with their lesson.</p>' + resultList(SEARCH.filter(x => x.e.type === 'sh').slice(0, 40)); wireRes(box); return; }
+  const hits = [], seen = new Set();
+  const add = x => { if (!seen.has(x.id)) { seen.add(x.id); hits.push(x); } };
+  SEARCH.forEach(x => { if (x.keys.some(k => k === c)) add(x); });
+  SEARCH.forEach(x => { if (c && x.keys.some(k => k.startsWith(c))) add(x); });
+  if (raw.length > 2) { const w = raw.toLowerCase(); SEARCH.forEach(x => { if (new RegExp(`\\b${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`).test(x.en)) add(x); }); }
+  SEARCH.forEach(x => { if (HAN_RE.test(raw) && x.e.h.includes(raw)) add(x); });
+  box.innerHTML = hits.length ? resultList(hits.slice(0, 80)) + (hits.length > 80 ? `<p class="sub">${hits.length - 80} more: type a bit more to narrow it down.</p>` : '') : '<p class="sub">Nothing found. Try the characters, or fewer letters.</p>';
+  wireRes(box);
+}
+const LESSON_OF = {};
+DATA.lessons.forEach(l => l.new_words.forEach(id => { if (!LESSON_OF[id]) LESSON_OF[id] = l.id; }));
+function resultList(list) {
+  return `<div class="dres">${list.map(({ id, e }) => `<button class="drow ${cog(id)[2]}" data-word="${esc(id)}"><span class="han dh">${esc(e.h)}</span>
+    <span class="dm"><span class="r">${esc(spell(e))}</span>${LESSON_OF[id] ? `<span class="pill p-same">L${LESSON_OF[id]}</span>` : ''}${bookNotes[id] ? '<span class="pill p-pt">book</span>' : ''}<br><span class="sub">${esc(e.gloss || (e.mand ? e.mand.en : ''))}</span></span>${tune(e)}</button>`).join('')}</div>`;
+}
+function wireRes(box) { $$('[data-word]', box).forEach(b => b.onclick = () => openCard(b.dataset.word)); }
+
+// ---------- word sheet
+const SRC = { core: 'core list, corrected by hand: check it against your books', lexicon: 'Shanghainese lexicon (chinese-dialect-lexicons: Wugniu, MCPDict, rime-yahwe_zaonhe)', book: 'corrected from your book', lesson: 'set in the lesson', composed: 'put together from single characters: check it' };
+function openCard(id, w) {
+  const e = id ? DATA.dict[id] : null, sh = $('#sheet');
+  const top = (h, t, extra) => `<div class="grab"></div><div class="wc-top"><div><div class="wc-h">${esc(h)}</div><div class="wc-t">${esc(t)}</div>${extra || ''}</div><button class="x" aria-label="Close">×</button></div>`;
+  if (!e) sh.innerHTML = top(w ? w.h : '', '') + '<p class="empty">A name, or a word not in the database.</p>';
+  else {
+    const [pc, pt] = cog(id), bn = bookNotes[id];
+    const others = ROMS.filter(([k]) => k !== prefs.rom);
+    sh.innerHTML = top(e.h, spell(e), `<div class="wc-tune">${tune(e, true)}<span class="sub">${e.contour.filter(Boolean).join(' – ')}${e.ipa.split(' ').length > 1 ? ' · the first syllable sets the tune' : ''}</span></div>`) + `
+      ${pt || e.rank ? `<div class="row">${pt ? `<span class="pill ${pc}">${pt}</span>` : ''}${LESSON_OF[id] ? `<span class="pos">Lesson ${LESSON_OF[id]}</span>` : ''}</div>` : ''}
+      ${e.gloss ? `<div class="wc-sec"><h3>English</h3><div class="wc-gloss">${esc(e.gloss)}</div></div>` : ''}
+      <div class="wc-sec"><h3>Spellings</h3><table class="spl"><tbody>
+        ${ROMS.map(([k, t]) => `<tr${k === prefs.rom ? ' class="cur"' : ''}><th>${t}</th><td>${esc(spell(e, k, true))}</td></tr>`).join('')}
+        <tr><th>IPA, alone</th><td>${esc(e.ipa.replace(/(\d+)/g, m => sup(m)))}</td></tr></tbody></table>
+        ${e.verified ? `<span class="pos">✓ Checked in ${e.verified.map(esc).join(', ')}</span><br>` : ''}
+        ${e.lexicon_ipa ? `<span class="pos">The lexicon has ${esc(e.lexicon_ipa.replace(/(\d+)/g, m => sup(m)))}; the reading above was corrected by hand.</span>` : ''}</div>
+      ${e.mand ? `<div class="wc-sec"><h3>Mandarin</h3><ul class="mlist"><li><span class="han">${esc((e.zh && e.zh[0]) || e.h)}</span> <span class="py">${esc(e.mand.py)}</span> <span class="men">${esc(e.mand.en)}</span></li>${(e.zh || []).slice(1).map(z => `<li><span class="han">${esc(z)}</span></li>`).join('')}</ul></div>` : (e.zh ? `<div class="wc-sec"><h3>Mandarin</h3><div class="han">${e.zh.map(esc).join('、')}</div></div>` : '')}
+      ${e.note ? `<div class="wc-sec"><h3>Note</h3><p style="margin:0">${fmt(e.note)}</p></div>` : ''}
+      ${e.parts ? '' : ''}
+      <div class="wc-sec book"><h3>Your book</h3>
+        ${bn ? `<p style="margin:0">${bn.ok ? '✓ Matches' : 'Says <b>' + esc(bn.says) + '</b>'}${bn.book ? ` in <i>${esc(bn.book)}</i>` : ''}${bn.note ? ` · ${esc(bn.note)}` : ''} <span class="sub">(${fmtDate(bn.at)})</span></p>` : '<p class="sub" style="margin:0">Check this word against one of your books. Your notes are saved, and go back into the database from Settings.</p>'}
+        <div class="row"><button class="btn small line" id="bk-ok">Matches my book</button><button class="btn small line" id="bk-diff">My book says…</button>${bn ? '<button class="btn small quiet" id="bk-del">Remove note</button>' : ''}</div>
+        <form id="bk-form" hidden><label>My book writes it <input name="says" placeholder="e.g. bhakxiang, bah-shiang, bəʔ ɕiã" required autocomplete="off" autocapitalize="off" spellcheck="false"></label>
+          <label>Book <input name="book" placeholder="title or author" value="${esc(store.get('lastBook', ''))}" autocomplete="off"></label>
+          <label>Note <input name="note" placeholder="optional: tone, meaning, page" autocomplete="off"></label>
+          <div class="row"><button class="btn small" type="submit">Save</button></div></form></div>
+      <div class="row"><button class="btn ${deck[id] ? 'quiet' : ''}" id="add-card">${deck[id] ? 'In your review deck ✓' : 'Add to review'}</button></div>
+      <div class="wc-src">Reading: ${esc(SRC[e.src] || e.src)}.${e.mand ? ' English and pinyin: CC-CEDICT, CC BY-SA 4.0.' : ''}</div>`;
+    $('#add-card', sh).onclick = () => { if (!deck[id]) { addToDeck([id]); renderTabs(currentTab()); openCard(id, w); toast('Added to review'); } };
+    const saveNote = n => { bookNotes[id] = { ...n, at: today() }; store.set('bookNotes', bookNotes); if (n.book) store.set('lastBook', n.book); openCard(id, w); rerenderCurrent(); toast('Saved in your book notes'); };
+    $('#bk-ok', sh).onclick = () => saveNote({ ok: true, says: spell(e), book: store.get('lastBook', '') });
+    $('#bk-diff', sh).onclick = () => { const f = $('#bk-form', sh); f.hidden = false; $('input', f).focus(); };
+    $('#bk-form', sh).onsubmit = ev => { ev.preventDefault(); const f = new FormData(ev.target); saveNote({ ok: false, says: f.get('says').trim(), book: f.get('book').trim(), note: f.get('note').trim() }); };
+    const del = $('#bk-del', sh); if (del) del.onclick = () => { delete bookNotes[id]; store.set('bookNotes', bookNotes); openCard(id, w); rerenderCurrent(); };
+  }
+  $('.x', sh).onclick = closeSheet;
+  sh.classList.add('open'); sh.setAttribute('aria-hidden', 'false');
+}
+function rerenderCurrent() { const keep = window.scrollY; const h = location.hash.slice(1); if (/^lesson-[1-9]/.test(h) || h === 'dict' || /^read-\d+$/.test(h)) { route.keepSheet = true; route(); route.keepSheet = false; window.scrollTo(0, keep); } }
+function openNote(L, k) {
+  const n = L.notes[k - 1], sh = $('#sheet'), total = L.notes.length;
+  sh.innerHTML = `<div class="grab"></div>
+    <div class="wc-top"><div><span class="eyebrow">Note ${k} of ${total} · line ${n.ref}</span></div><button class="x" aria-label="Close">×</button></div>
+    <p class="note-body">${fmt(n.text)}</p>
+    <div class="row"><button class="btn small line" id="nprev" ${k <= 1 ? 'disabled' : ''}>‹ Previous</button>
+      <button class="btn small" id="nnext" ${k >= total ? 'disabled' : ''}>Next ›</button></div>`;
+  $('.x', sh).onclick = closeSheet;
+  $('#nprev', sh).onclick = () => k > 1 && openNote(L, k - 1);
+  $('#nnext', sh).onclick = () => k < total && openNote(L, k + 1);
+  $$('.sent').forEach(x => x.classList.toggle('noted', x.id === 'line-' + n.ref));
+  sh.classList.add('open'); sh.setAttribute('aria-hidden', 'false');
+}
+function closeSheet() { $$('.sent.noted').forEach(x => x.classList.remove('noted')); const sh = $('#sheet'); sh.classList.remove('open'); sh.setAttribute('aria-hidden', 'true'); $$('.tok.sel').forEach(x => x.classList.remove('sel')); }
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') return closeSheet();
+  if (e.target.closest('input, textarea, select') || e.metaKey || e.ctrlKey || e.altKey) return;
+  const h = location.hash.slice(1);
+  const click = sel => { const b = $(sel); if (b && !b.disabled) { e.preventDefault(); b.click(); } };
+  if (h === 'review' && sess) {
+    if (e.key === ' ' || e.key === 'Enter') click('#flip'); else if (e.key === '1') click('#again'); else if (e.key === '2') click('#good');
+  } else if (h === 'bridge') {
+    if (/^[1-4]$/.test(e.key)) click(`.opt:nth-child(${e.key})`); else if (e.key === ' ' || e.key === 'Enter') click('#next');
+  } else if (/^lesson-\d+$/.test(h) && !e.target.closest('.tok')) {
+    if (e.key === 'ArrowLeft') click('.lbar [aria-label="Previous lesson"]'); else if (e.key === 'ArrowRight') click('.lbar [aria-label="Next lesson"]');
+  }
+});
+document.addEventListener('click', e => {
+  const sh = $('#sheet');
+  if (!sh.classList.contains('open') || !e.target.isConnected || sh.contains(e.target) || e.target.closest('.tok, [data-note], [data-word], [data-ann], .tab')) return;
+  closeSheet();
+});
+function currentTab() { const h = location.hash.slice(1) || 'lessons'; return h.startsWith('lesson') ? 'lessons' : h.startsWith('read') ? 'read' : h; }
+
+// ---------- review deck (Leitner boxes, kept in this browser)
+function addToDeck(ids) { let n = 0; ids.forEach(id => { if (id && DATA.dict[id] && !deck[id]) { deck[id] = { box: 0, due: Date.now() }; n++; } }); store.set('deck', deck); return n; }
+function dueCards() { const now = Date.now(); return Object.keys(deck).filter(id => deck[id].due <= now && DATA.dict[id]); }
+function segments() {
+  const segs = DATA.lessons.map(l => ({ key: 'L' + l.id, title: `Lesson ${l.id} · ${l.title.en}`, han: l.title.hanzi.replace(/\s/g, ''), ids: l.new_words }));
+  const own = Object.keys(deck).filter(id => !LESSON_OF[id] && DATA.dict[id]);
+  if (own.length) segs.push({ key: 'OWN', title: 'Added from the word list', han: '自家', ids: own });
+  return segs;
+}
+const CTX = {};
+DATA.lessons.forEach(l => l.lines.forEach(ln => ln.tokens.forEach(t => { if (t.w && t.w.id && !CTX[t.w.id]) CTX[t.w.id] = { tokens: ln.tokens, en: ln.en }; })));
+let sess = null;
+function showReview() {
+  renderTabs('review');
+  if (sess) return showCard();
+  const now = Date.now(), m = $('#main'), due = dueCards();
+  const segRow = s => {
+    const inDeck = s.ids.filter(id => deck[id]).length, d = s.ids.filter(id => deck[id] && deck[id].due <= now).length;
+    return `<div class="seg-row"><div class="seg-t"><span class="han">${esc(s.han)}</span><span class="sub">${esc(s.title)}</span>
+        <span class="seg-meta">${s.ids.length} words · ${inDeck} in deck${d ? ` · <b>${d} due</b>` : ''}</span></div>
+      <div class="row">${d ? `<button class="btn small" data-study="${s.key}" data-mode="due">Review ${d}</button>` : ''}
+        <button class="btn small ${d ? 'quiet' : 'line'}" data-study="${s.key}" data-mode="all">Practise all</button></div></div>`;
+  };
+  m.innerHTML = `<div class="col">
+    <div class="head"><span class="eyebrow">Review</span><h1>温习</h1><span class="rom">${esc(spell(DATA.dict[idOf('温习')]) || '')} · by lesson</span></div>
+    <div class="card raised"><div class="stat"><b>${due.length}</b><span class="sub">cards due across everything</span></div>
+      <div class="row">${due.length ? '<button class="btn" data-study="ALL" data-mode="due">Review all due</button>' : '<span class="sub">Nothing due right now.</span>'}</div></div>
+    <div class="segs">${segments().map(segRow).join('')}</div>
+    <p class="sub" style="font-size:.85rem;margin:0">Cards show the word inside a sentence from its lesson when there is one. They come back after 1, 3, 7, 16 and 35 days.</p>
+  </div>`;
+  $$('[data-study]', m).forEach(b => b.onclick = () => startSession(b.dataset.study, b.dataset.mode));
+}
+function startSession(key, mode) {
+  const now = Date.now();
+  let ids, title;
+  if (key === 'ALL') { ids = dueCards(); title = 'All due'; }
+  else { const s = segments().find(x => x.key === key); ids = s.ids; title = s.title; }
+  if (mode === 'due') ids = ids.filter(id => deck[id] && deck[id].due <= now);
+  ids = [...new Set(ids)].filter(id => DATA.dict[id]).sort(() => Math.random() - .5);
+  if (!ids.length) return toast('Nothing to review here');
+  sess = { key, title, queue: ids, i: 0, flipped: false, total: ids.length, missed: new Set() };
+  showReview();
+}
+function clozeHTML(ctx, id, reveal) {
+  return ctx.tokens.map(t => {
+    if (t.p) return `<span class="punct">${esc(t.p)}</span>`;
+    const w = t.w, e = w.id && DATA.dict[w.id];
+    if (w.id === id) return reveal ? `<ruby class="hit">${esc(w.h)}<rt>${esc(spell(e))}</rt></ruby>` : `<ruby class="blank">${'＿'.repeat(Math.max(1, [...w.h].length))}<rt>?</rt></ruby>`;
+    return HAN_RE.test(w.h) && e ? `<ruby>${esc(w.h)}<rt>${esc(spell(e))}</rt></ruby>` : esc(w.h);
+  }).join('');
+}
+function showCard() {
+  const m = $('#main');
+  if (sess.i >= sess.queue.length) {
+    m.innerHTML = `<div class="col"><div class="head"><span class="eyebrow">Review · ${esc(sess.title)}</span><h1>好个！</h1><span class="rom">${esc(spell(DATA.dict[idOf('好个')]))} · Done</span></div>
+      <div class="card raised"><div class="stat"><b>${sess.total - sess.missed.size}/${sess.total}</b><span class="sub">remembered the first time</span></div>${sess.missed.size ? `<span class="sub">To look at again: ${[...sess.missed].map(id => `<span class="han">${esc(DATA.dict[id].h)}</span> ${esc(spell(DATA.dict[id]))}`).join(' · ')}</span>` : ''}</div>
+      <div class="row"><button class="btn" id="back">Back to review</button></div></div>`;
+    $('#back').onclick = () => { sess = null; showReview(); };
+    return;
+  }
+  const id = sess.queue[sess.i], e = DATA.dict[id], ctx = CTX[id], [pc, pt] = cog(id);
+  const front = ctx ? `<div class="txt cloze">${clozeHTML(ctx, id, sess.flipped)}</div><div class="sub">${esc(ctx.en)}</div>` : `<div class="big">${esc(e.h)}</div>`;
+  m.innerHTML = `<div class="col">
+    <div class="row" style="justify-content:space-between"><span class="eyebrow">Review · ${esc(sess.title)}</span><span class="sub">${Math.min(sess.i + 1, sess.queue.length)} / ${sess.queue.length}</span></div>
+    <div class="bar" aria-hidden="true"><i style="width:${Math.round(100 * sess.i / sess.queue.length)}%"></i></div>
+    <div class="card raised fc" aria-live="polite">${front}
+      ${sess.flipped ? `<div class="answer"><span class="han ah">${esc(e.h)}</span><span class="r">${esc(spell(e))}</span>${tune(e, true)}
+          ${pt ? `<span class="pill ${pc}">${pt}</span>` : ''}${e.gloss ? `<span>${esc(e.gloss)}</span>` : ''}
+          ${e.zh && e.zh.length ? `<span class="zh">普通话 ${e.zh.slice(0, 3).map(esc).join('、')}</span>` : ''}</div>
+        <div class="row" style="justify-content:center"><button class="btn line" id="again">Again <kbd>1</kbd></button><button class="btn" id="good">Got it <kbd>2</kbd></button></div>`
+      : `<p class="empty" style="margin:0">${ctx ? 'Which word fills the gap? Say it aloud, then check.' : 'Say the reading and the meaning, then check.'}</p>
+        <div class="row" style="justify-content:center"><button class="btn" id="flip">Show answer <kbd>space</kbd></button></div>`}
+    </div>
+    <div class="row"><button class="btn small quiet" id="quit">Stop</button></div></div>`;
+  $('#quit').onclick = () => { sess = null; showReview(); };
+  if (sess.flipped) { $('#again').onclick = () => grade(false); $('#good').onclick = () => grade(true); }
+  else $('#flip').onclick = () => { sess.flipped = true; showCard(); };
+}
+function grade(ok) {
+  const id = sess.queue[sess.i];
+  if (!deck[id]) deck[id] = { box: 0, due: Date.now() };
+  const d = deck[id];
+  d.box = ok ? Math.min(d.box + 1, BOXES.length - 1) : 0;
+  d.due = Date.now() + (ok ? BOXES[d.box] * DAY : 60e3);
+  store.set('deck', deck); studied();
+  if (!ok) { sess.missed.add(id); sess.queue.push(id); }
+  sess.i++; sess.flipped = false; renderTabs('review'); showCard();
+}
+
+// ---------- settings: spelling, look, progress, book notes
+function showSettings() {
+  renderTabs('settings');
+  const opt = (name, cur, list) => `<div class="seg" role="group" aria-label="${name}">${list.map(([k, t]) => `<button data-set="${name}" data-val="${k}" aria-pressed="${cur === k}">${t}</button>`).join('')}</div>`;
+  const notes = Object.entries(bookNotes).filter(([id]) => DATA.dict[id]);
+  const m = $('#main');
+  m.innerHTML = `<div class="col">
+    <div class="head"><span class="eyebrow">Settings</span><h1>设定</h1><span class="rom">${esc(spell(DATA.dict[idOf('设定')]) || '')}</span></div>
+    <div class="card raised setgrid">
+      <span class="lab">Spelling</span>${opt('rom', prefs.rom, ROMS)}
+      <span class="lab">Word tone number</span>${opt('tonenum', prefs.tonenum ? 'on' : 'off', [['on', 'On'], ['off', 'Off']])}
+      <span class="lab">Literal translation</span>${opt('lit', prefs.lit ? 'on' : 'off', [['on', 'Show'], ['off', 'Hide']])}
+      <span class="lab">Look</span>${opt('skin', prefs.skin, [['notebook', 'Notebook'], ['rose', 'Rose']])}
+      <span class="lab">Night mode</span>${opt('night', prefs.night === undefined ? 'auto' : prefs.night ? 'on' : 'off', [['auto', 'Auto'], ['off', 'Off'], ['on', 'On']])}
+    </div>
+    <p class="sub" style="margin:0;max-width:65ch;font-size:.9rem"><b>Spelling</b> changes how every word is written, everywhere: pick the system your book uses.
+      <b>Wugniu</b> is the online standard (Wiktionary, wugniu.com). <b>Qian pinyin</b> is Qian Nairong's, used in his dictionaries and many textbooks (written as new speakers say it).
+      <b>IPA</b> shows each syllable with the pitch it has inside its word. <b>Word tone number</b> puts Wugniu's tone class in front of each word, as Wiktionary does (⁶zaon-he-gnin): one number per word, because the first syllable sets the tune.</p>
+    <h2><span class="han">书</span> Your book notes (${notes.length})</h2>
+    <div class="card">${notes.length ? `<table class="ptable wide"><thead><tr><th>Word</th><th>This app</th><th>Your book</th><th>Book</th></tr></thead><tbody>
+      ${notes.map(([id, n]) => { const e = DATA.dict[id]; return `<tr data-word="${esc(id)}"><td class="han">${esc(e.h)}</td><td>${esc(spell(e))}</td><td>${n.ok ? '✓ same' : `<b>${esc(n.says)}</b>`}</td><td>${esc(n.book || '')}${n.note ? `<br><span class="sub">${esc(n.note)}</span>` : ''}</td></tr>`; }).join('')}</tbody></table>
+      <span class="sub" style="font-size:.9rem">Save this file and send it back: the differences become corrections in <code>data/overrides.tsv</code>, and every lesson picks them up.</span>
+      <div class="row"><button class="btn small" id="bk-exp">Save book notes file</button></div>`
+      : '<span class="sub" style="font-size:.9rem">Open any word and tap <b>Matches my book</b> or <b>My book says…</b>. Your notes collect here.</span>'}</div>
+    <h2><span class="han">进度</span> Your progress</h2>
+    <div class="card"><span>${done.size} lessons done · ${Object.keys(deck).length} words in review · ${studyDays.size} days studied</span>
+      <span class="sub" style="font-size:.9rem">Progress is kept in this browser only. Save a copy to move it to another phone or computer, or to keep it safe.</span>
+      <div class="row"><button class="btn small" id="exp">Save progress file</button><button class="btn small line" id="imp">Load progress file</button>
+        <input type="file" id="imp-file" accept=".json,application/json" hidden></div></div>
+    <h2><span class="han">来源</span> Where the data comes from</h2>
+    <div class="card"><span class="sub" style="font-size:.9rem">Readings: chinese-dialect-lexicons (Shanghainese, built from wugniu.com, MCPDict and rime-yahwe_zaonhe), corrected by hand for the core words.
+      English and pinyin: CC-CEDICT (CC BY-SA 4.0). Word frequency: jieba. Spellings and tunes are generated from the IPA by the app's build script, so one fix updates all three systems. Database built ${esc(DATA.built)}.</span></div>
+  </div>`;
+  const saveFile = async (filename, json) => {
+    const dl = window.claude && window.claude.use ? await window.claude.use('downloads').catch(() => null) : null;
+    if (dl) { try { await dl.save({ filename, data: json }); toast('File saved'); } catch (err) { if (err && err.code !== 'declined') toast('Could not save the file here'); } return; }
+    const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([json], { type: 'application/json' })); a.download = filename; document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+  };
+  $('#exp', m).onclick = () => saveFile(`syzy-progress-${today()}.json`, JSON.stringify({ app: 'syzy', v: 1, at: new Date().toISOString(), doneAt, deck, days: [...studyDays], prefs, bookNotes }, null, 1));
+  const be = $('#bk-exp', m); if (be) be.onclick = () => saveFile(`syzy-book-notes-${today()}.json`, JSON.stringify({ app: 'syzy-book-notes', v: 1, at: new Date().toISOString(),
+    notes: notes.map(([id, n]) => { const e = DATA.dict[id]; return { word: e.h, ipa: e.ipa, wugniu: e.wugniu, qian: e.qian, ...n }; }) }, null, 1));
+  $$('[data-word]', m).forEach(r => r.onclick = () => openCard(r.dataset.word));
+  $('#imp', m).onclick = () => $('#imp-file', m).click();
+  $('#imp-file', m).onchange = async e => {
+    const f = e.target.files[0]; if (!f) return;
+    try {
+      const d = JSON.parse(await f.text());
+      if (d.app !== 'syzy') throw new Error('not a progress file');
+      Object.entries(d.doneAt || {}).forEach(([k, v]) => { if (!(k in doneAt) || (v && (!doneAt[k] || v < doneAt[k]))) doneAt[k] = v; done.add(+k); });
+      Object.entries(d.deck || {}).forEach(([k, v]) => { if (!deck[k] || v.box > deck[k].box) deck[k] = v; });
+      Object.entries(d.bookNotes || {}).forEach(([k, v]) => { if (!bookNotes[k]) bookNotes[k] = v; });
+      (d.days || []).forEach(x => studyDays.add(x));
+      saveDone(); store.set('deck', deck); store.set('days', [...studyDays]); store.set('bookNotes', bookNotes);
+      toast('Progress loaded'); showSettings();
+    } catch (err) { toast('Could not read this file'); }
+  };
+  $$('[data-set]', m).forEach(b => b.onclick = () => {
+    const k = b.dataset.set, v = b.dataset.val;
+    if (k === 'night' && v === 'auto') delete prefs.night; else if (['night', 'tonenum', 'lit'].includes(k)) prefs[k] = v === 'on'; else prefs[k] = v;
+    store.set('prefs', prefs); applySkin(); showSettings();
+  });
+}
+
+// ---------- Mandarin bridge: guess the Shanghainese reading from the Mandarin you know
+let br = null;
+function showBridge() {
+  renderTabs('bridge');
+  if (!br) br = { order: DATA.bridge.map((_, i) => i).sort(() => Math.random() - .5), i: 0, picked: null, score: 0, n: 0 };
+  const it = DATA.bridge[br.order[br.i % br.order.length]];
+  if (!it.shuffled) it.shuffled = [it.answer, ...it.options].sort(() => Math.random() - .5);
+  const S = o => prefs.rom === 'ipa' ? o.ipa.replace(/(\d+)/g, m => sup(m)) : o[prefs.rom];
+  const m = $('#main'), answered = br.picked !== null, ok = br.picked === it.answer.wugniu;
+  m.innerHTML = `<div class="col">
+    <div class="head"><span class="eyebrow">Mandarin bridge</span><h1>普通话的桥</h1>
+      <span class="rom">Use the Mandarin you know to guess the Shanghainese reading</span></div>
+    <div class="row sub"><span><b style="color:var(--text)">${br.score}</b> / ${br.n} right</span>·<span>${ROM_NAME[prefs.rom]}</span></div>
+    <div class="card raised fc">
+      <div class="big">${esc(it.char)}</div>
+      <div class="r">${esc(it.pinyin)}</div>
+      <div class="sub">${esc(it.meaning)}</div>
+      <div class="opts">${it.shuffled.map(o => `<button class="opt ${answered ? (o.wugniu === it.answer.wugniu ? 'right' : (o.wugniu === br.picked ? 'wrong' : '')) : ''}" data-opt="${esc(o.wugniu)}" ${answered ? 'disabled' : ''}>${esc(S(o))}</button>`).join('')}</div>
+      ${answered ? `<div class="explain">
+        <p class="verdict ${ok ? 'ok' : 'no'}">${ok ? 'Yes!' : 'Not this time.'} ${esc(it.char)} is read <b>${esc(S(it.answer))}</b>.</p>
+        <ul>${it.rules.map(r => `<li>${fmt(r)}</li>`).join('')}</ul>
+        <div class="row"><button class="btn" id="next">Next character</button></div></div>` : ''}
+    </div>
+    <p class="sub" style="font-size:.85rem;margin:0">${DATA.bridge.length} common characters. Readings from the lexicon (new urban Shanghainese); the four choices share a consonant or a vowel, so you have to listen for the rule.</p>
+  </div>`;
+  $$('[data-opt]', m).forEach(b => b.onclick = () => { br.picked = b.dataset.opt; br.n++; if (br.picked === it.answer.wugniu) br.score++; studied(); showBridge(); });
+  if (answered) $('#next').onclick = () => { br.i++; br.picked = null; showBridge(); };
+}
+
+let toastT;
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2200); }
+applySkin();
+try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applySkin); } catch {}
+new MutationObserver(applySkin).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+queueMicrotask(route);

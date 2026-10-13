@@ -1,0 +1,24 @@
+title: 几钿 ？ | How much?
+setting: Saturday at the wet market (菜场) round the corner. Sam stops at a fruit stall.
+--- lines
+Sam: 阿姨 ， 搿个 几钿 ？ | Auntie, how much is this? | auntie, this how-much-money?
+阿姨: 苹果 啊 ？ 十二 块 一 斤[ʨin53] 。 | The apples? Twelve yuan a jin.
+Sam: 忒 贵 了 ！ 便宜 一眼 好 伐 ？ | That's too expensive! A bit cheaper, OK? | too dear (now)! cheap a-bit good (question)?
+阿姨: 侬 买 两 斤[ʨin53] ， 廿 块 。 | Buy two jin and it's twenty.
+Sam: 好个 。 再[ʦᴇ34] 要 一眼 葱 。 | OK. And a bit of spring onion too. | good. also want a-bit spring-onion
+阿姨: 葱 拨 侬 ， 勿 要 铜钿 。 | The onions are for you, no charge. | spring-onion give you, not want money
+Sam: 谢谢 侬 ！ 阿姨 侬 老 好 个 。 | Thank you! You're very kind. | thank you! auntie you very good (really)
+阿姨: 覅客气 。 下趟 再[ʦᴇ34] 来 ！ | Don't mention it. Come again! | don't-be-polite. next-time again come!
+--- notes
+1: 几钿 ci-di is "how much money", the question you will ask most at a market. For "how many" of anything else, use 几 with a measure word: 几只, 几斤.
+2: A 斤 is half a kilo, the unit for fruit and vegetables at Chinese markets. 块 is "yuan" when you count money.
+3: 忒 theq is "too (much)": 忒贵 too expensive, 忒烫 too hot. 好伐 at the end of a request softens it: "…, all right?"
+4: 廿 gnie is "twenty", one syllable. Shanghainese counts 十, 十一 … 十九, 廿, 廿一 … and then 三十 for thirty.
+6: 拨 peq is "to give" (Mandarin 给), and also "to, for" before a person. 铜钿 is "money" (Mandarin 钱); 钞票 is another everyday word for it.
+7: The polite form is 谢谢侬 "thank you" (lit. thank you), or 谢谢 alone.
+8: 覅 is a single syllable made from 勿 + 要: "don't". So 覅客气 is "don't be polite" = "you're welcome". 下趟 is "next time" (Mandarin 下次).
+--- exercises
+fill: 搿个 ＿ ？ | How much is this? | 几钿
+fill: 忒 ＿ 了 ！ | That's too expensive! | 贵
+mean: 葱 拨 侬 。 | The onions are for you.
+say: 覅客气 。 | Don't mention it.

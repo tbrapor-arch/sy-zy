@@ -1,0 +1,370 @@
+"""Build the Shanghainese database and the app's data file.
+
+Inputs (paths relative to the repo root):
+  sources/zaonhe.txt     word -> IPA lexicon, ~150k entries (chinese-dialect-lexicons, built from Wugniu, MCPDict, rime-yahwe_zaonhe)
+  sources/cedict_ts.u8   CC-CEDICT, for English glosses and Mandarin pinyin
+  sources/jieba_dict.txt word frequencies (Mandarin web text), to rank words
+  data/core.tsv          hand-written core words: type, gloss, Mandarin equivalent, corrected IPA
+  data/overrides.tsv     corrections from checking books (word, IPA, book, note)
+  lessons/*.txt          the lessons
+
+Outputs:
+  db/lexicon.jsonl       every simplified-character word, with all spellings generated from IPA
+  db/report.md           what the build had to guess (words composed character by character, etc.)
+  app/data.js            what the app loads: lessons, the dictionary it needs, lesson 0, the bridge
+"""
+import json, re, sys, collections, pathlib, datetime
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+import romanize as R
+import opencc
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+t2s = opencc.OpenCC('t2s').convert
+report = collections.defaultdict(list)
+
+# ---------- 1. the lexicon (IPA)
+lex = {}
+for line in open(ROOT / 'sources/zaonhe.txt', encoding='utf8'):
+    w, p = line.rstrip('\n').split('\t')
+    if t2s(w) != w:          # the file holds traditional and simplified twins; keep the simplified one
+        continue
+    syls = [R.from_bars(s) for s in p.split(' ')]
+    if len(syls) != len(w):
+        continue
+    lex.setdefault(w, syls)
+
+# ---------- 2. Mandarin: CC-CEDICT glosses, jieba frequency
+cedict = {}
+for line in open(ROOT / 'sources/cedict_ts.u8', encoding='utf8'):
+    if line.startswith('#'):
+        continue
+    m = re.match(r'(\S+) (\S+) \[([^\]]+)\] /(.*)/', line)
+    if not m:
+        continue
+    trad, simp, py, defs = m.groups()
+    defs = re.sub(r'([^\s|/]+)\|[^\s\[/]+(\[[^\]]*\])?', r'\1', defs)       # 回來|回来[hui2 lai5] -> 回來
+    defs = re.sub(r'\[[a-zA-Z0-9: ]+\]', '', defs)
+    senses = [d.strip() for d in defs.split('/') if d and not d.startswith(('also pr', 'variant of', 'old variant', 'surname ', 'CL:', 'see '))]
+    if senses and simp not in cedict:
+        cedict[simp] = {'py': py, 'en': [x for x in senses if len(x) < 60][:3] or senses[:1]}
+
+freq = {}
+for line in open(ROOT / 'sources/jieba_dict.txt', encoding='utf8'):
+    p = line.split()
+    if len(p) >= 2:
+        freq[p[0]] = int(p[1])
+rank = {w: i + 1 for i, w in enumerate(sorted(freq, key=lambda w: -freq[w]))}
+
+TONE_MARKS = {'1': '̄', '2': '́', '3': '̌', '4': '̀', '5': ''}
+def pinyin_marks(py):
+    out = []
+    for s in py.split():
+        m = re.match(r'([a-zA-Zü:]+)([1-5])$', s.replace('u:', 'ü'))
+        if not m:
+            out.append(s); continue
+        syl, t = m.groups()
+        i = next((syl.index(v) for v in 'aAeE' if v in syl), None)
+        if i is None and 'ou' in syl: i = syl.index('o')
+        if i is None: i = max(j for j, c in enumerate(syl) if c in 'aeiouüAEIOUÜ') if any(c in 'aeiouüAEIOUÜ' for c in syl) else None
+        out.append(syl if i is None else syl[:i + 1] + TONE_MARKS[t] + syl[i + 1:])
+    return ' '.join(out).lower() if py.islower() else ' '.join(out)
+
+def mand(word):
+    c = cedict.get(word)
+    return {'py': pinyin_marks(c['py']), 'en': '; '.join(c['en'])} if c else None
+
+# ---------- 3. core words and book corrections
+def read_tsv(path, cols):
+    rows = []
+    if not path.exists():
+        return rows
+    for line in open(path, encoding='utf8'):
+        if not line.strip() or line.startswith(('#', '!')):
+            continue
+        p = line.rstrip('\n').split('\t')
+        rows.append(dict(zip(cols, p + [''] * (len(cols) - len(p)))))
+    return rows
+
+core = {r['word']: r for r in read_tsv(ROOT / 'data/core.tsv', ['word', 'type', 'en', 'zh', 'ipa', 'note'])}
+# words glossed for the novel reader: like core words, but their IPA only fills a gap in the lexicon
+for r in read_tsv(ROOT / 'reader/longtang/glossary.tsv', ['word', 'en', 'zh', 'ipa', 'type']):
+    if r['word'] in core:
+        continue
+    # not marked: a Shanghainese word unless Mandarin has it too (checked against CC-CEDICT further down)
+    core[r['word']] = {'word': r['word'], 'type': r['type'] or 'auto', 'en': r['en'], 'zh': r['zh'],
+                       'ipa': r['ipa'] if r['word'] not in lex else '', 'note': '', 'book_gloss': True}
+overrides = {r['word']: r for r in read_tsv(ROOT / 'data/overrides.tsv', ['word', 'ipa', 'book', 'note'])}
+for w, r in core.items():
+    if r['type'] == 'auto':
+        r['type'] = 'same' if w in cedict else 'sh'
+verified = collections.defaultdict(list)
+for r in read_tsv(ROOT / 'data/verified.tsv', ['word', 'ipa', 'book', 'date']):
+    if r['word'] != 'word' and r['book']:
+        verified[(r['word'], r['ipa'])].append(r['book'])
+
+def ipa_of(word, forced=None):
+    """Reading of a word, best source first. Returns (syllables, source)."""
+    if forced:
+        return [R.canonical(x) for x in forced.split()], 'lesson'
+    if word in overrides and overrides[word]['ipa']:
+        return [R.canonical(x) for x in overrides[word]['ipa'].split()], 'book'
+    if word in core and core[word]['ipa']:
+        return [R.canonical(x) for x in core[word]['ipa'].split()], 'core'
+    if word in lex:
+        return lex[word], 'lexicon'
+    # not in any list: put it together from its characters (the lexicon's single-character reading)
+    syls = []
+    for ch in word:
+        r = ipa_of(ch)[0] if (ch in lex or ch in core or ch in overrides) else None
+        if not r:
+            return None, None
+        syls += r
+    return syls, 'composed'
+
+def entry(word, forced=None):
+    syls, src = ipa_of(word, forced)
+    if not syls:
+        return None
+    e = {'h': word, **R.word(syls), 'src': src}
+    c = core.get(word)
+    if c:
+        e.update(type=c['type'], gloss=c['en'], zh=[z for z in re.split('[、；;]', c['zh']) if z])
+        if c['note']: e['note'] = c['note']
+    elif word in cedict:
+        e.update(type='same', gloss=mand(word)['en'])
+    m = mand(word) or (mand(core[word]['zh'].split('、')[0]) if c and c['zh'] else None)
+    if m: e['mand'] = m
+    if word in overrides:
+        e['book'] = {k: overrides[word][k] for k in ('book', 'note') if overrides[word][k]}
+    if word in lex and src in ('core', 'book') and ' '.join(lex[word]) != e['ipa']:
+        e['lexicon_ipa'] = ' '.join(lex[word])        # keep the lexicon's reading visible: the corrections stay checkable
+    if verified.get((word, e['ipa'])): e['verified'] = sorted(set(verified[(word, e['ipa'])]))
+    if word in rank: e['rank'] = rank[word]
+    return e
+
+# ---------- 4. full database
+db_dir = ROOT / 'db'; db_dir.mkdir(exist_ok=True)
+words = sorted(set(lex) | set(core), key=lambda w: (rank.get(w, 10 ** 7), w))
+with open(db_dir / 'lexicon.jsonl', 'w', encoding='utf8') as f:
+    for w in words:
+        try:
+            e = entry(w)
+        except ValueError as err:
+            report['unreadable'].append(f'{w}: {err}'); continue
+        if e:
+            f.write(json.dumps(e, ensure_ascii=False) + '\n')
+
+# ---------- 5. lessons
+def parse_lesson(path):
+    L = {'lines': [], 'notes': [], 'exercises': []}
+    part = 'head'
+    for raw in open(path, encoding='utf8'):
+        line = raw.rstrip('\n')
+        if not line.strip() or line.startswith('#'):
+            continue
+        if line.startswith('---'):
+            part = line[3:].strip() or 'lines'; continue
+        if part == 'head':
+            k, v = line.split(':', 1); L[k.strip()] = v.strip()
+        elif part == 'lines':
+            who, rest = line.split(':', 1)
+            f = [x.strip() for x in rest.split('|')]
+            L['lines'].append({'speaker': who.strip(), 'src': f[0], 'en': f[1], 'lit': f[2] if len(f) > 2 else ''})
+        elif part == 'notes':
+            ref, text = line.split(':', 1)
+            L['notes'].append({'ref': int(ref), 'text': text.strip()})
+        elif part == 'exercises':
+            kind, rest = line.split(':', 1)
+            f = [x.strip() for x in rest.split('|')]
+            L['exercises'].append({'kind': kind.strip(), 'src': f[0], 'en': f[1], 'answer': f[2] if len(f) > 2 else ''})
+    return L
+
+dict_out = {}
+HAN = re.compile(r'[㐀-鿿\U00020000-\U0003ffff]')
+
+def tokens(src, where):
+    out = []
+    for tok in src.split():
+        m = re.match(r'^(.+?)\[(.+)\]$', tok)
+        word, forced = (m.group(1), m.group(2).replace('_', ' ')) if m else (tok, None)
+        if not HAN.search(word):
+            out.append({'p': word} if re.fullmatch(r'[，。！？：、；…＿,.!?]+', word) else {'w': {'h': word}})
+            continue
+        e = entry(word, forced)
+        if not e:
+            report['missing'].append(f'{word} ({where})'); out.append({'w': {'h': word}}); continue
+        wid = f"{word}|{e['ipa']}"
+        if wid not in dict_out:
+            dict_out[wid] = e
+            if e['src'] == 'composed': report['composed'].append(f"{word} → {e['wugniu']} ({where})")
+            if 'gloss' not in e: report['no gloss'].append(f'{word} ({where})')
+        out.append({'w': {'h': word, 'id': wid}})
+    return out
+
+lessons = []
+for p in sorted((ROOT / 'lessons').glob('[0-9]*.txt')):
+    L = parse_lesson(p)
+    n = int(p.stem)
+    seen, new_words = set(), []
+    lines = []
+    for i, ln in enumerate(L['lines']):
+        toks = tokens(ln['src'], f'lesson {n} line {i + 1}')
+        lines.append({'n': i + 1, 'speaker': ln['speaker'], 'en': ln['en'], 'lit': ln['lit'], 'tokens': toks})
+        for t in toks:
+            wid = t.get('w', {}).get('id')
+            if wid and wid not in seen:
+                seen.add(wid); new_words.append(wid)
+    # new words: those not met in an earlier lesson
+    earlier = set(w for l in lessons for w in l['all_words'])
+    exercises = []
+    for e in L['exercises']:
+        exercises.append({'kind': e['kind'], 'tokens': tokens(e['src'], f'lesson {n} exercise'), 'en': e['en'],
+                          'answer': e['answer'], 'answer_id': (tokens(e['answer'], 'answer')[0].get('w', {}).get('id') if e['answer'] and HAN.search(e['answer']) else None)})
+    hz, en = [x.strip() for x in L['title'].split('|')]
+    lessons.append({'id': n, 'title': {'hanzi': hz, 'en': en, 'tokens': tokens(hz, f'lesson {n} title')},
+                    'review': L.get('review') == 'yes', 'setting': L.get('setting', ''), 'lines': lines,
+                    'notes': L['notes'], 'exercises': exercises, 'all_words': new_words,
+                    'new_words': [w for w in new_words if w not in earlier]})
+for l in lessons:
+    del l['all_words']
+
+# ---------- 6. dictionary for the app: lesson words + core + the most common words with a gloss
+for w in core:
+    e = entry(w)
+    if e: dict_out.setdefault(f"{w}|{e['ipa']}", e)
+common = [w for w in words if w in cedict and w in rank and rank[w] <= 20000 and len(w) <= 4][:6000]
+for w in common:
+    e = entry(w)
+    if e: dict_out.setdefault(f"{w}|{e['ipa']}", e)
+
+# ---------- 7. Mandarin bridge: frequent characters, the sound rule that links pinyin to Wugniu
+def bridge_rules(py, e):
+    """Plain-language rules that explain a Mandarin reading -> Shanghainese reading."""
+    s, w = py.lower(), e['wugniu']
+    ini, fin, tone = R.split(e['ipa'])
+    rules = []
+    if tone in (7, 8):
+        rules.append('Ends in -q: an "entering tone" syllable, short and cut off by a glottal stop. Mandarin lost these endings, so the syllable is now in any Mandarin tone.')
+    if ini in ('b', 'd', 'g', 'v', 'z', 'ʑ', 'ʥ', 'ɦ') and s[-1] in '24':
+        rules.append('Mandarin tone 2 or 4 with a plain consonant often goes with a voiced, low-tone initial in Shanghainese (b, d, g, z, zh, j, v, gh): Middle Chinese kept a voiced consonant here.')
+    if s.startswith(('zh', 'ch', 'sh')) and ini in ('ʦ', 'ʦʰ', 's', 'z'):
+        rules.append('Mandarin zh / ch / sh → ts / tsh / s or z: Shanghainese has no retroflex consonants.')
+    if s.startswith('r') and ini in ('z', 'ȵ'):
+        rules.append('Mandarin r- → z- (literary) or gn- (colloquial, as in 人 gnin).')
+    if s.startswith('w') and ini == 'v':
+        rules.append('Mandarin w- → v- in many words (万 ve, 文 ven, 问 ven).')
+    if re.match(r'^[a-z]*an[1-5]$', s) and not s.endswith(('ang1', 'ang2', 'ang3', 'ang4', 'ang5')) and fin in ('ᴇ', 'i', 'ø', 'uᴇ', 'yø', 'uø'):
+        rules.append('Mandarin -an / -ian / -uan lost the n: Shanghainese -e, -i, -oe (三 se, 天 thi, 碗 uoe).')
+    if s.startswith(('j', 'q', 'x')) and ini in ('ʦ', 'ʦʰ', 's', 'z'):
+        rules.append('Mandarin j / q / x → ts / tsh / s here: an older split kept apart.')
+    if not rules:
+        rules.append('Close to the Mandarin reading once you know the spelling: compare the consonants and the vowel.')
+    return rules
+
+bridge, used = [], set()
+singles = sorted([w for w in core if len(w) == 1] + [w for w in lex if len(w) == 1 and w in cedict and w in rank and rank[w] < 3000],
+                 key=lambda w: rank.get(w, 10 ** 6))
+pool = [entry(w) for w in dict.fromkeys(singles)]
+pool = [e for e in pool if e and 'mand' in e]
+for e in pool[:220]:
+    if e['h'] in used: continue
+    used.add(e['h'])
+    ini, fin, tone = R.split(e['ipa'])
+    near = {}
+    for o in pool:
+        if o['wugniu'] != e['wugniu'] and (R.split(o['ipa'])[0] == ini or R.split(o['ipa'])[1] == fin):
+            near.setdefault(o['wugniu'], {'wugniu': o['wugniu'], 'qian': o['qian'], 'ipa': o['ipa']})
+    opts = list(near.values())[:3]
+    if len(opts) < 3: continue
+    bridge.append({'char': e['h'], 'pinyin': e['mand']['py'], 'answer': {'wugniu': e['wugniu'], 'qian': e['qian'], 'ipa': e['ipa']},
+                   'options': opts, 'rules': bridge_rules(cedict[e['h']]['py'] if e['h'] in cedict else '', e),
+                   'meaning': e.get('gloss', e['mand']['en'])})
+
+# ---------- 7b. reading packs for 《弄堂》 (no text of the novel goes into the app: see build/reader.py)
+import reader as RD
+reader_out = None
+pack_file = ROOT / 'reader/longtang/packs.json'
+epub = ROOT / 'reader/longtang/book.epub'
+if epub.exists():
+    book = RD.chapters_from_epub(epub)
+    jieba_ok = {w for w, f in freq.items() if f >= 3}
+    blocked = set()
+    for line in open(ROOT / 'reader/longtang/glossary.tsv', encoding='utf8'):
+        if line.startswith('!'): blocked.update(line[1:].split())
+    def cost(w):
+        if w in blocked: return None
+        if w in core: return 1.0
+        if w in lex or w in jieba_ok: return 1.05 if len(w) > 1 else 1.3
+        return 1.6 if len(w) == 1 else None
+    chapters = []
+    for hi, (headline, paras) in enumerate(book):
+        m = re.match(r'^([\u3400-\u9fff\U00020000-\U0003ffff0-9]+)\s*(.*)$', headline)
+        head, rom = (m.group(1), m.group(2)) if m else (headline, '')
+        ch = {'n': hi + 1, 'head': head, 'rom': rom, 'paras': len(paras)}
+        src = next((p for p in (ROOT / 'reader/longtang').glob('ch*.txt') if f'head: {head}\n' in p.read_text(encoding='utf8')), None)
+        if src:
+            lines = src.read_text(encoding='utf8').splitlines()
+            en = {int(a): b.strip() for a, b in (l.split('|', 1) for l in lines if re.match(r'^\d+ \|', l))}
+            ch['en_head'] = next((l.split(':', 1)[1].strip() for l in lines if l.startswith('head_en:')), '')
+            if len(en) != len(paras):
+                report['reader'].append(f'{head}: {len(en)} translations for {len(paras)} paragraphs')
+            pk = []
+            for pi, ptext in enumerate(paras):
+                c, ann = RD.clean(ptext)
+                toks = RD.segment(c, cost)
+                for t in toks:
+                    if RD.HAN.match(t):
+                        e = entry(t)
+                        if not e:
+                            # no reading anywhere: keep the word with its meaning only
+                            c0, m0 = core.get(t), mand(t)
+                            e = {'h': t, 'ipa': '', 'wugniu': '', 'qian': '', 'tone': None, 'tones': [], 'contour': [], 'src': 'none',
+                                 'type': (c0 or {}).get('type', 'same'), 'gloss': (c0 or {}).get('en') or (m0 or {}).get('en', '')}
+                            if m0: e['mand'] = m0
+                            report['reader: no reading'].append(f'{t} ({head} ¶{pi})')
+                        dict_out.setdefault(f"{t}|{e['ipa']}", e)
+                pk.append({'f': RD.fnv(RD.norm(c)), 'n': len(c), 's': [len(t) for t in toks], 'a': ann, 'en': en.get(pi, '')})
+            ch['pack'] = pk
+        chapters.append(ch)
+    reader_out = {'title': '弄堂', 'author': '胡宝谈', 'year': 2011, 'chapters': chapters}
+    pack_file.write_text(json.dumps(reader_out, ensure_ascii=False), encoding='utf8')
+elif pack_file.exists():
+    reader_out = json.loads(pack_file.read_text(encoding='utf8'))
+if reader_out:
+    # words of the prepared chapters: make sure each has its entry (the app looks words up by their characters)
+    READ_ID = {}
+    for e in dict_out.values():
+        READ_ID.setdefault(e['h'], f"{e['h']}|{e['ipa']}")
+    for w in core:
+        e = entry(w)
+        if e and f"{w}|{e['ipa']}" in dict_out: READ_ID[w] = f"{w}|{e['ipa']}"
+    reader_out['ids'] = READ_ID
+
+# ---------- 8. write
+lesson0 = (ROOT / 'lessons/lesson0.html').read_text(encoding='utf8')
+DATA = {'lessons': lessons, 'dict': dict_out, 'reader': reader_out, 'bridge': bridge, 'lesson0': lesson0,
+        'built': datetime.date.today().isoformat(), 'tones': {str(k): {'contour': v, 'name': R.TONE_NAME[k], 'sandhi': R.SANDHI[k]} for k, v in R.CANON.items()}}
+(ROOT / 'app').mkdir(exist_ok=True)
+def dump(d): return 'const DATA = ' + json.dumps(d, ensure_ascii=False, separators=(',', ':')) + ';\n'
+# private build (claude.ai artifact): everything, translations included
+(ROOT / 'app/data.private.js').write_text(dump(DATA), encoding='utf8')
+# public build (GitHub, the hosted site): no text derived from the novel. The translations and the author's
+# bracketed readings travel in a private "study pack" the reader loads once (and keeps in Drive).
+import copy
+pub = copy.deepcopy(DATA)
+if pub['reader']:
+    pack = {'app': 'syzy-pack', 'book': 'longtang', 'built': DATA['built'], 'chapters': []}
+    for c in pub['reader']['chapters']:
+        if not c.get('pack'): continue
+        pack['chapters'].append({'n': c['n'], 'en_head': c.get('en_head', ''), 'paras': [{'en': p.get('en', ''), 'a': p.get('a', {})} for p in c['pack']]})
+        c.pop('en_head', None)
+        for p in c['pack']: p.pop('en', None); p.pop('a', None)
+    (ROOT / 'reader/longtang/syzy-longtang-pack.json').write_text(json.dumps(pack, ensure_ascii=False), encoding='utf8')
+(ROOT / 'app/data.js').write_text(dump(pub), encoding='utf8')
+
+with open(db_dir / 'report.md', 'w', encoding='utf8') as f:
+    f.write(f'# Build report ({DATA["built"]})\n\n')
+    f.write(f'- lexicon: {len(words)} words · app dictionary: {len(dict_out)} words · lessons: {len(lessons)} · bridge: {len(bridge)} characters\n\n')
+    for k, v in report.items():
+        f.write(f'## {k} ({len(v)})\n\n' + '\n'.join(f'- {x}' for x in v[:400]) + '\n\n')
+print(open(db_dir / 'report.md', encoding='utf8').read()[:3000])

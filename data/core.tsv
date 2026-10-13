@@ -1,0 +1,268 @@
+# Core words, written by hand. One line per word, tab separated:
+# word	type	english	mandarin	ipa (optional)	note (optional)
+# type: sh = Shanghainese word (not used this way in Mandarin) · ff = false friend (same characters, other use) · same = same word as Mandarin
+# ipa: only when the lexicon's reading is wrong or missing. Syllables with Chao tone numbers: 53 34 13 55 12
+#      (yin level, yin departing, yang, yin entering, yang entering). Leave empty to take the lexicon's reading.
+#
+# pronouns
+我	same	I, me	我
+侬	sh	you (one person)	你	noŋ13
+伊	sh	he, she; him, her	他、她	ɦi13	Also written 渠 in old texts.
+阿拉	sh	we, us	我们	ᴀʔ55 lᴀ53
+㑚	sh	you (several people)	你们	nᴀ13
+伊拉	sh	they, them	他们	ɦi13 lᴀ53
+自家	sh	oneself; one's own	自己	zɿ13 kᴀ53
+# this, that, where
+搿	sh	this	这	gəʔ12
+搿个	sh	this one; this	这个	gəʔ12 ɦəʔ12
+搿搭	sh	here	这里	gəʔ12 tᴀʔ55
+伊搭	sh	there	那里	ɦi13 tᴀʔ55
+埃	sh	that	那	ᴇ53
+哪里	same	where; which	哪里	nᴀ13 li13
+啥地方	sh	where	什么地方	sᴀ34 di13 fɑ̃53
+# questions
+啥	sh	what	什么	sᴀ34
+啥个	sh	what	什么	sᴀ34 ɦəʔ12
+啥人	sh	who	谁	sᴀ34 ȵin13
+哪能	sh	how	怎么、怎么样	nᴀ13 nən13
+为啥	sh	why	为什么	ɦuᴇ13 sᴀ34
+几钿	sh	how much (money)	多少钱	ʨi34 di13
+几	same	how many; a few	几	ʨi34
+几岁	same	how old	几岁	ʨi34 sø34
+啥辰光	sh	when	什么时候	sᴀ34 zən13 kuɑ̃53
+做啥	sh	why; to do what	干什么	ʦu34 sᴀ34
+伐	sh	(yes–no question particle)	吗	vᴀʔ12	Ends a question you can answer yes or no: 侬是上海人伐？
+# negation
+勿	sh	not	不	vəʔ12
+覅	sh	don't (do it)	不要	viɔ13	One syllable fused from 勿 + 要.
+呒没	sh	there isn't; haven't; not have	没有	m̩13 məʔ12
+勿是	sh	is not; no	不是	vəʔ12 zɿ13
+勿要	sh	do not want; don't	不要	vəʔ12 iɔ34
+勿晓得	sh	don't know	不知道	vəʔ12 ɕiɔ34 təʔ55
+勿要紧	sh	it doesn't matter	不要紧、没关系	vəʔ12 iɔ34 ʨin34
+勿客气	sh	you're welcome	不客气	vəʔ12 kʰᴀʔ55 ʨʰi34
+覅客气	sh	don't mention it	别客气	viɔ13 kʰᴀʔ55 ʨʰi34
+# small words
+个	ff	(possessive, like 的; also the measure word)	的；个	ɦəʔ12	As the ending of 我个 "my", it is ɦəʔ; as a measure word after a number it is also ɦəʔ.
+辣	sh	at, in; (doing) now	在	lᴀʔ12	辣 + place = "at"; 辣 + verb = "is doing".
+辣辣	sh	is there; (doing) now	在	lᴀʔ12 lᴀʔ12
+搭	sh	and, with	和、跟	tᴀʔ55
+拨	sh	to give; to (someone)	给	pəʔ55
+了	same	(change, completed action)	了	ləʔ12
+咾	sh	and so; (listing)	然后、所以	lɔ13
+啊	same	(soft question or surprise)	啊	ᴀ53
+还	same	still; also	还	ɦᴇ13
+就	same	just, right; then	就	ʑiɤ13
+只	same	only	只	ʦəʔ55
+也	same	also	也	ɦiᴀ13
+老	ff	very (before an adjective)	很	lɔ13	Before an adjective 老 means "very": 老好 very good. Not "old" here.
+蛮	sh	quite, rather	挺	mᴇ53
+交关	sh	very; a lot	非常、很多	ʨiɔ53 kuᴇ53
+邪气	sh	terribly, really	非常	ʑiᴀ13 ʨʰi34
+忒	sh	too (much)	太	tʰəʔ55
+一眼眼	sh	a tiny bit	一点点	iɪʔ55 ŋᴇ13 ŋᴇ13
+一眼	sh	a bit	一点	iɪʔ55 ŋᴇ13
+一道	sh	together	一起	iɪʔ55 dɔ13
+# verbs
+是	same	to be	是	zɿ13
+有	same	to have; there is	有	ɦiɤ13
+吃	ff	to eat; to drink; to smoke	吃、喝、抽	ʨʰiɪʔ55	吃 covers eating, drinking and smoking: 吃茶 drink tea, 吃香烟 smoke.
+去	same	to go	去	ʨʰi34
+来	same	to come	来	lᴇ13
+讲	sh	to speak, to say	说	kɑ̃34
+话	sh	to say; speech	说	ɦo13
+叫	same	to be called; to call	叫	ʨiɔ34
+晓得	sh	to know	知道	ɕiɔ34 təʔ55
+认得	sh	to know (someone, a character)	认识	ȵin13 təʔ55
+欢喜	sh	to like	喜欢	huø53 ɕi34
+白相	sh	to play, have fun, hang out	玩	bᴀʔ12 ɕiã53
+想	same	to want to; to think	想	ɕiã34
+要	same	to want; will	要	iɔ34
+会	same	can; will	会	ɦuᴇ13
+来事	sh	to be able; good, capable	行、能干	lᴇ13 zɿ13
+勿来事	sh	can't; no good	不行	vəʔ12 lᴇ13 zɿ13
+买	same	to buy	买	mᴀ13
+卖	same	to sell	卖	mᴀ13
+做	same	to do, make	做	ʦu34
+坐	same	to sit; to take (a bus, the metro)	坐	zu13
+立	sh	to stand	站	liɪʔ12
+跑	ff	to walk, go (on foot)	走	bɔ13	In Shanghainese 跑 is to walk; "to run" is 奔.
+走	same	to walk; to leave	走	ʦɤ34
+寻	sh	to look for	找	ʑin13
+等	same	to wait	等	tən34
+帮	same	to help	帮	pɑ̃53
+学	same	to learn	学	ɦoʔ12
+读书	ff	to study, go to school	上学	doʔ12 sɿ53
+上班	same	to go to work	上班	zɑ̃13 pᴇ53
+下班	same	to finish work	下班	ɦo13 pᴇ53
+困觉	sh	to sleep	睡觉	kʰuən34 kɔ34
+汏浴	sh	to take a bath, a shower	洗澡	dᴀ13 ɦioʔ12
+打电话	same	to phone	打电话	tã34 di13 ɦo13
+回去	same	to go back (home)	回去	ɦuᴇ13 ʨʰi34
+转去	sh	to go back	回去	ʦø34 ʨʰi34
+# greetings and set phrases
+侬好	same	hello	你好	noŋ13 hɔ34
+侬早	sh	good morning	早上好	noŋ13 ʦɔ34
+谢谢	same	thank you	谢谢	ʑiᴀ13 ʑiᴀ13
+谢谢侬	sh	thank you	谢谢你	ʑiᴀ13 ʑiᴀ13 noŋ13
+再会	sh	goodbye	再见	ʦᴇ34 ɦuᴇ13
+对勿起	sh	sorry	对不起	tᴇ34 vəʔ12 ʨʰi34
+好个	sh	OK, sure	好的	hɔ34 ɦəʔ12
+对个	sh	right, that's it	对的	tᴇ34 ɦəʔ12
+是个	sh	yes, that's right	是的	zɿ13 ɦəʔ12
+请问	same	excuse me (may I ask)	请问	ʦʰin34 vən13
+一声	same	(a word, a moment)	一声	iɪʔ55 sã53
+欢迎	same	welcome	欢迎	huø53 ȵin13
+帮帮忙	sh	come on! (please, give me a break)	拜托	pɑ̃53 pɑ̃53 mɑ̃13
+# time
+今朝	sh	today	今天	ʨin53 ʦɔ53
+明朝	sh	tomorrow	明天	min13 ʦɔ53
+昨日	sh	yesterday	昨天	zoʔ12 ȵiɪʔ12
+早浪	sh	(in the) morning	早上	ʦɔ34 lɑ̃13
+夜里	sh	at night	晚上	ɦiᴀ13 li13
+礼拜	sh	week	星期	li13 pᴀ34
+礼拜天	sh	Sunday	星期天	li13 pᴀ34 tʰi53
+礼拜六	sh	Saturday	星期六	li13 pᴀ34 loʔ12
+辰光	sh	time; when	时候	zən13 kuɑ̃53
+现在	same	now	现在	ɦi13 zᴇ13
+老早	sh	long ago; very early	早就	lɔ13 ʦɔ34
+等歇	sh	in a moment, later	等一下	tən34 ɕiɪʔ55
+点钟	same	o'clock	点钟	ti34 ʦoŋ53
+几点钟	same	what time	几点	ʨi34 ti34 ʦoŋ53
+# people
+爷	sh	father	爸爸	ɦiᴀ13
+姆妈	sh	mother	妈妈	m̩53 mᴀ53
+爷叔	sh	uncle (also: polite "sir" to a man older than you)	叔叔	ɦiᴀ13 soʔ55
+阿姨	same	auntie (polite to a woman older than you)	阿姨	ᴀʔ55 ɦi13
+阿哥	sh	elder brother	哥哥	ᴀʔ55 ku53
+阿姐	sh	elder sister	姐姐	ᴀʔ55 ʦiᴀ34
+妹妹	same	younger sister	妹妹	mᴇ13 mᴇ13
+弟弟	same	younger brother	弟弟	di13 di13
+外婆	same	grandmother (mother's mother)	外婆	ŋᴀ13 bu13
+小人	ff	child	孩子	ɕiɔ34 ȵin13	In Mandarin 小人 is a petty person; in Shanghainese it is a child.
+老公	same	husband	老公	lɔ13 koŋ53
+老婆	same	wife	老婆	lɔ13 bu13
+朋友	same	friend	朋友	bã13 ɦiɤ13
+师傅	same	master; polite word for a worker, driver	师傅	sɿ53 vu13
+老师	same	teacher	老师	lɔ13 sɿ53
+学生	same	student	学生	ɦoʔ12 sã53
+男人	same	man	男人	nø13 ȵin13
+女人	same	woman	女人	ȵy13 ȵin13
+上海人	same	Shanghainese (person)	上海人	zɑ̃13 hᴇ34 ȵin13
+外地人	same	someone not from here	外地人	ŋᴀ13 di13 ȵin13
+人	same	person	人	ȵin13
+# things, places
+屋里	sh	home	家	oʔ55 li13
+物事	sh	thing, stuff	东西	məʔ12 zɿ13
+事体	sh	matter, business	事情	zɿ13 tʰi34
+名字	same	name	名字	min13 zɿ13
+闲话	ff	speech, language; words	话	ɦᴇ13 ɦo13	In Mandarin 闲话 is gossip; in Shanghainese it is simply "talk, language".
+上海闲话	sh	Shanghainese (language)	上海话	zɑ̃13 hᴇ34 ɦᴇ13 ɦo13
+普通话	same	Mandarin	普通话	pʰu34 tʰoŋ53 ɦo13
+饭	same	rice; meal	饭	vᴇ13
+早饭	same	breakfast	早饭	ʦɔ34 vᴇ13
+中饭	same	lunch	午饭	ʦoŋ53 vᴇ13
+夜饭	sh	dinner	晚饭	ɦiᴀ13 vᴇ13
+生煎	same	pan-fried pork bun	生煎包	sã53 ʨi53
+小笼	same	soup dumplings	小笼包	ɕiɔ34 loŋ13
+包子	same	steamed bun	包子	pɔ53 ʦɿ34
+豆浆	same	soy milk	豆浆	dɤ13 ʨiã53
+油条	same	fried dough stick	油条	ɦiɤ13 diɔ13
+粢饭团	sh	sticky rice roll	饭团	ʦɿ53 vᴇ13 dø13
+葱油饼	same	scallion pancake	葱油饼	ʦʰoŋ53 ɦiɤ13 pin34
+面	same	noodles	面	mi13
+茶	same	tea	茶	zo13
+水	same	water	水	sɿ34
+咖啡	same	coffee	咖啡	
+钞票	sh	money; banknotes	钱	ʦʰɔ53 pʰiɔ34
+铜钿	sh	money	钱	doŋ13 di13
+块	same	yuan (counting money)	块	kʰuᴇ34
+马路	same	street, road	马路	mo13 lu13
+弄堂	sh	lane (Shanghai's alleys)	弄堂、胡同	loŋ13 dɑ̃13
+外滩	same	the Bund	外滩	ŋᴀ13 tʰᴇ53
+菜场	sh	wet market	菜市场	ʦʰᴇ34 zã13
+小菜	ff	dishes, groceries	菜	ɕiɔ34 ʦʰᴇ34	Not "a piece of cake": in Shanghainese 小菜 is food you cook with rice.
+饭店	same	restaurant; hotel	饭店	vᴇ13 ti34
+学堂	sh	school	学校	ɦoʔ12 dɑ̃13
+公司	same	company	公司	koŋ53 sɿ53
+地铁	same	metro	地铁	di13 tʰiɪʔ55
+地铁站	same	metro station	地铁站	di13 tʰiɪʔ55 zᴇ13
+差头	sh	taxi	出租车	ʦʰᴀ53 dɤ13
+前头	sh	in front, ahead	前面	ʑi13 dɤ13
+搿面	sh	this side	这边	gəʔ12 mi13
+伊面	sh	that side, over there	那边	ɦi13 mi13
+# describing
+好	same	good; well	好	hɔ34
+灵	sh	great, works well	好、灵	lin13
+嗲	sh	lovely, cute; great	可爱、好	tiᴀ34
+结棍	sh	tough, impressive, a lot	厉害	ʨiɪʔ55 kuən34
+好吃	same	tasty	好吃	hɔ34 ʨʰiɪʔ55
+贵	same	expensive	贵	ʨy34
+便宜	same	cheap	便宜	bi13 ȵi13
+冷	same	cold	冷	lã13
+热	same	hot	热	ȵiɪʔ12
+大	same	big	大	du13
+小	same	small	小	ɕiɔ34
+多	same	many	多	tu53
+少	same	few	少	sɔ34
+远	same	far	远	ɦyø13
+近	same	near	近	ʥin13
+快	same	fast	快	kʰuᴀ34
+慢	same	slow	慢	mᴇ13
+忙	same	busy	忙	mɑ̃13
+难	same	difficult	难	nᴇ13
+# numbers
+一	same	one	一	iɪʔ55
+二	same	two (counting)	二	ȵi13
+两	same	two (of something)	两	liã13
+三	same	three	三	sᴇ53
+四	same	four	四	sɿ34
+五	same	five	五	ɦŋ̩13
+六	same	six	六	loʔ12
+七	same	seven	七	ʨʰiɪʔ55
+八	same	eight	八	pᴀʔ55
+九	same	nine	九	ʨiɤ34
+十	same	ten	十	zəʔ12
+廿	sh	twenty	二十	ȵiᴇ13
+百	same	hundred	百	pᴀʔ55
+# names and places in the lessons
+下趟	sh	next time	下次	ɦo13 tʰɑ̃34
+南京东路	same	East Nanjing Road	南京东路	nø13 ʨin53 toŋ53 lu13
+豫园	same	Yuyuan Garden	豫园	ɦy13 ɦyø13
+小李	same	Xiao Li (a name: "little Li")	小李	ɕiɔ34 li13
+法国	same	France	法国	fᴀʔ55 koʔ55
+法国人	same	French (person)	法国人	fᴀʔ55 koʔ55 ȵin13
+巴黎	same	Paris	巴黎	pᴀ53 li13
+外孙	same	grandson (daughter's son)	外孙	ŋᴀ13 sən53
+照片	same	photo	照片	ʦɔ34 pʰi34
+落车	sh	to get off (a bus, train)	下车	loʔ12 ʦʰo53
+苹果	same	apple	苹果	bin13 ku34
+斤	same	jin (half a kilo)	斤	ʨin53
+葱	same	spring onion	葱	ʦʰoŋ53
+再	same	again; also	再	ʦᴇ34
+甜	same	sweet	甜	di13
+咸	same	salty	咸	ɦᴇ13
+烫	same	hot (to the touch)	烫	tʰɑ̃34
+慢慢	same	slowly	慢慢	mᴇ13 mᴇ13
+碗	same	bowl	碗	uø34
+空	sh	free, not busy	有空	kʰoŋ34	With the departing tone (khon⁵) it is "free time"; with the level tone it is "empty".
+带	same	to bring, carry	带	tᴀ34
+忘记	same	to forget	忘记	mɑ̃13 ʨi34
+开心	same	happy	开心	kʰᴇ53 ɕin53
+一直	same	straight on; all the time	一直	iɪʔ55 zəʔ12
+越	same	the more	越	ɦyɪʔ12
+就是	same	only that; it's just that	就是	ʑiɤ13 zɿ13
+今年	same	this year	今年	ʨin53 ȵi13
+岁	same	years old	岁	sø34
+十二	same	twelve	十二	zəʔ12 ȵi13
+见	same	to see	见	ʨi34
+新	same	new	新	ɕin53
+分钟	same	minute	分钟	fən53 ʦoŋ53
+站	same	stop, station	站	zᴇ13
+看	same	to look, to see	看	kʰø34
+# words the app itself uses in its headings
+课程	same	course, lessons	课程	kʰu34 zən13
+温习	ff	to review (lessons)	复习	uən53 ʑiɪʔ12
+设定	same	settings	设定	səʔ55 din13
+词典	same	dictionary	词典	zɿ13 ti34
+书橱	sh	bookcase	书柜	sɿ53 zɿ13

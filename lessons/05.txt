@@ -1,0 +1,26 @@
+title: 阿拉 屋里 | My family
+setting: An evening at the auntie's from lesson 1. She has made tea and takes out a photo.
+--- lines
+阿姨: 搿 是 阿拉 屋里 个 照片 。 | This is a photo of my family. | this is our home ('s) photo
+Sam: 搿个 是 啥人 ？ | Who is this?
+阿姨: 是 阿拉 老公 ， 伊 老早 辣 学堂 做 老师 。 | That's my husband. He used to be a teacher at a school. | is our husband, he long-ago at school do teacher
+Sam: 搿个 小人 是 啥人 ？ | And who is this child?
+阿姨: 阿拉 外孙[ŋᴀ13_sən53] ， 今年 七 岁 。 | My grandson. He's seven this year.
+Sam: 老 嗲 个 ！ | So cute!
+阿姨: 侬 屋里 有 几 个 人 ？ | How many are there in your family? | you home have how-many (measure) person?
+Sam: 四 个 ： 爷 、 姆妈 、 阿姐 搭 我 。 | Four: dad, mum, my big sister and me.
+阿姨: 伊拉 辣 法国[fᴀʔ55_koʔ55] 伐 ？ | Are they in France?
+Sam: 是个 ， 辣 巴黎 。 | Yes, in Paris.
+--- notes
+1: 屋里 is "home" (Mandarin 家). 个 ghe' after a noun or pronoun marks who something belongs to, like Mandarin 的: 阿拉屋里个照片 "our family's photo".
+3: Notice 阿拉老公 "our husband" = "my husband". With family, Shanghainese says 阿拉 "we" where English says "my": 阿拉姆妈, 阿拉屋里. 我老公 is possible but sounds more pointed. 伊 is "he" or "she": the language does not tell them apart.
+3: 老早 is "long ago, already back then". 学堂 is the everyday word for "school".
+4: 小人 is a false friend: in Mandarin it is "a petty person", in Shanghainese simply "child".
+6: 嗲 dia is a very Shanghainese word: "lovely, cute, charming", and also "great". 老嗲个 "really cute".
+7: 个 is also the general measure word, as in Mandarin: 几个人 "how many people", 四个 "four (of them)".
+8: The family: 爷 ya is father, 姆妈 m-ma is mother, 阿姐 is big sister, 阿哥 big brother. 搭 is "and".
+--- exercises
+fill: 搿个 是 ＿ ？ | Who is this? | 啥人
+fill: 侬 屋里 有 ＿ 个 人 ？ | How many are there in your family? | 几
+mean: 搿个 小人 老 嗲 个 。 | This child is really cute.
+say: 阿拉 屋里 有 四 个 人 。 | There are four of us in my family.

@@ -46,7 +46,7 @@ function listHere() {
   const h = location.hash.slice(1) || 'lessons';
   let m;
   if ((m = h.match(/^list-(.+)$/))) return decodeURIComponent(m[1]);
-  if ((m = h.match(/^books-([a-z0-9-]+)/))) return 'book:' + m[1];
+  if ((m = h.match(/^books-([a-z0-9]+)/))) return 'book:' + m[1];
   if (/^bookcourse/.test(h)) return 'bc:course';
   if (/^(dict|lists?)$/.test(h)) return 'words';
   return 'lessons';

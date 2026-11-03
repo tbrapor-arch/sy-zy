@@ -61,7 +61,8 @@ in Settings. Progress, lists and book notes sync through Google Drive.
 | Source | Used for | Trust |
 |---|---|---|
 | `data/raw/zaonhe.txt` (chinese-dialect-lexicons, compiled from wugniu.com, MCPDict, rime-yahwe_zaonhe) | the IPA of ~96,000 words | Good for single characters, noisy for words: some carry book or Mandarin-influenced readings (e.g. 闲话 as ɦi ɦuᴀ). |
-| `course/core.tsv` | ~230 core words: corrected IPA, English, Mandarin | Written by hand (Claude) from standard references; 28 readings differ from the lexicon and are flagged on the word card. Check them first. |
+| `course/core.tsv` | ~230 core words: corrected IPA, English, Mandarin | Written by hand (Claude) from standard references; readings that differ from the lexicon are flagged on the word card. |
+| `course/verified.tsv` | readings confirmed by a source | The words of lessons 1–7 were checked on 3 Nov 2026 against wugniu.com (single characters) and Wiktionary (whole words): 133 confirmed, 5 corrected (阿姨, 粢饭团, 阿姐, 请问, 白相). |
 | `course/overrides.tsv` | your book corrections | Highest. |
 
 The app follows **new urban Shanghainese** (five tones: 53, 34, 13, 55ʔ, 12ʔ). Word tunes use the left-dominant sandhi patterns (the first syllable sets the melody). That is right for compound words and noun phrases; verb + object phrases can follow other patterns.

@@ -1,4 +1,4 @@
-"""Same icon as Tsheh-tû (tools/make_icons.py there), with 橱 instead of 冊. Draw the app icons (app/pwa/icon-*.png) with Chromium: cobalt square, notebook grid, white 橱 (no margin line: alone it reads as a glitch).
+"""Same icon as Tsheh-tû (tools/make_icons.py there), with 沪 (Shanghai) instead of 冊. Draw the app icons (app/pwa/icon-*.png) with Chromium: cobalt square, notebook grid, white 沪 (no margin line: alone it reads as a glitch).
 
   python3 tools/make_icons.py      (needs Playwright and a CJK font such as Noto Sans CJK)
 
@@ -14,7 +14,7 @@ HTML = '''<html><body style="margin:0"><div id=i style="width:1024px;height:1024
 background:#2347B5;background-image:linear-gradient(rgba(255,255,255,.09) 3px,transparent 3px),
 linear-gradient(90deg,rgba(255,255,255,.09) 3px,transparent 3px);background-size:85.3px 85.3px;background-position:-2px -2px">
 <div style="position:absolute;inset:0;display:grid;place-items:center;font:900 560px/1 'Noto Sans CJK SC','Noto Sans SC','Noto Sans CJK TC',sans-serif;
-color:#fff;text-shadow:22px 22px 0 #16307F;padding-bottom:30px">橱</div></div></body></html>'''
+color:#fff;text-shadow:22px 22px 0 #16307F;padding-bottom:30px">沪</div></div></body></html>'''
 with sync_playwright() as pw:
     b = pw.chromium.launch()
     for size in (1024, 512, 192, 180):

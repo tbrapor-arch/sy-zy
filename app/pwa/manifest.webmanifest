@@ -2,7 +2,7 @@
   "name": "书橱 Sy-zy · Shanghainese",
   "short_name": "书橱",
   "description": "A Shanghainese course in English for people who speak Mandarin.",
-  "id": "./",
+  "id": "./?app=syzy-2",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
@@ -12,25 +12,25 @@
   "theme_color": "#FCFCF8",
   "icons": [
     {
-      "src": "icon-192.png?v=2",
+      "src": "icon-192.png?v=3",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icon-512.png?v=2",
+      "src": "icon-512.png?v=3",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icon-512.png?v=2",
+      "src": "icon-512.png?v=3",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "icon-1024.png?v=2",
+      "src": "icon-1024.png?v=3",
       "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "any"

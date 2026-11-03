@@ -5,7 +5,7 @@ Decided 3 Nov 2026 (full working plan, in French, in the claude.ai project: `pla
 ## Decisions
 1. **Progression L1–50 by number of lines** (§3): 6 → 15 lines, +1 every 5 lessons; line length 7 → 11 syllables;
    12 → 20 new words; review lessons 2 lines shorter, no new words.
-2. **Default romanization: Wugniu**; Qian Nairong pinyin and IPA in Settings. Script switch as in Tsheh-tû.
+2. **Default romanization: Qian Nairong pinyin** (the owner's reference; changed 3 Nov 2026); Wugniu and IPA in Settings. Script switch as in Tsheh-tû.
 3. **Characters: simplified by default**, traditional as an option (home-made table for dialect characters).
 4. **Variety: new urban Shanghainese, 5 tones** (53, 34, 13, 55ʔ, 12ʔ).
 5. **Repos: `syzy` (public, this one, on Tsheh-tû's layout) + `syzy-private`** (books, book course, media, module).

@@ -2,7 +2,7 @@
 // and the Book course appear only on a device whose GitHub token can read the owner's private repo; the module's code
 // and content come from there. Contract: module/index.json lists the files with content hashes; app.css and app.js are
 // fetched through GitHub's API, cached in the browser by hash (works offline), then window.ExamModule.init(loader) and
-// window.ExamModule.route(hash) are called. Routes handed to it: #books, #books-…, #bookcourse, #bookcourse-….
+// window.ExamModule.route(hash) are called; the optional window.ExamModule.cardExtra(entry) adds a section to word cards. Routes handed to it: #books, #books-…, #bookcourse, #bookcourse-….
 const Module = {
   REPO: 'tbrapor-arch/syzy-private', DIR: 'module', CACHE: 'syzy-module', index: null, loaded: null,
   get token() { return Sync.token; },
@@ -49,6 +49,8 @@ const Module = {
       if (window.ExamModule) await window.ExamModule.init(this);
     })().catch(e => { this.loaded = null; throw e; });
   },
+  // a section the module may add to any word card (e.g. what the owner's books say about the word); '' when off
+  cardExtra(e) { try { return (this.on && window.ExamModule && window.ExamModule.cardExtra && window.ExamModule.cardExtra(e)) || ''; } catch { return ''; } },
   async show(h) {
     renderTabs(currentTab());
     const here = location.hash;

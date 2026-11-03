@@ -1,6 +1,6 @@
 # 书橱 Sy-zy · Shanghainese
 
-Open it: https://tbrapor-arch.github.io/syzy/ (GitHub Pages, from the root of `main`).
+Open it: https://tbrapor-arch.github.io/sy-zy/ (repository renamed from `syzy` on 3 Nov 2026: Chrome on Android kept a broken install record for the old address) (GitHub Pages, from the root of `main`).
 
 A Shanghainese course in the Assimil style, the sibling of 冊櫥 Tsheh-tû (Taigi) and Mainichi (Japanese): short dialogues, numbered notes, new words, practice, and a review deck. One page, no server; progress stays in the browser.
 

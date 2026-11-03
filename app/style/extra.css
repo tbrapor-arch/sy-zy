@@ -74,3 +74,7 @@ table.cmp .big { font-size: 1.3rem; }
 
 /* Practice and lists */
 .pracnav { flex-wrap: wrap; }
+
+/* Samsung Internet repaints a page dark when the phone is in dark mode, unless the page has its own
+   prefers-color-scheme rules. This one says: stay white (Night is the reader's own switch, as in Tsheh-tû). */
+@media (prefers-color-scheme: dark) { :root:not([data-night]) { color-scheme: only light; } }

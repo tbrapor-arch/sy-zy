@@ -69,6 +69,7 @@ html = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>书橱 Sy-zy</title>
 <meta name="theme-color" content="#FCFCF8">
+<meta name="color-scheme" content="only light">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Iansui&family=Atkinson+Hyperlegible:wght@400;700&family=Noto+Sans:wght@400;600;700&family=Noto+Sans+SC:wght@400;700;900&family=Nunito:wght@600;800;900&display=swap">
 <style>

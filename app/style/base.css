@@ -16,13 +16,13 @@
   --f-han: "Iansui", "Noto Sans TC", "TaigiExt", "PingFang TC", sans-serif;
   --f-mix: "TailoSans", "Noto Sans", "Iansui", "Noto Sans TC", "TaigiExt", system-ui, sans-serif;
   --w-han: 400; --r: 8px; --r-big: 10px;
-  color-scheme: light;   /* white paper unless the reader turns on Night */
+  color-scheme: only light;   /* white paper unless the reader turns on Night */
 }
 /* skin: rose */
 :root[data-night] {
   --bg: #15171D; --grid: #1F2330; --margin: #6E3434; --surface: #1C1F27; --line: #C9D1E6; --soft-line: #343A4C;
   --text: #E7EAF2; --sub: #9AA3B8; --brand: #8FA8FF; --brand-ink: #10152A; --brand-soft: #232B47;
-  --sun: #FFD84D; --sun-soft: #3A3417; --coral: #FF8F86; --coral-soft: #3F2426; color-scheme: dark; }
+  --sun: #FFD84D; --sun-soft: #3A3417; --coral: #FF8F86; --coral-soft: #3F2426; color-scheme: only dark; }
 :root[data-skin="rose"] {
   --bg: #FFF0F3; --grid: transparent; --margin: transparent; --surface: #FFFFFF; --line: #F3C7D3; --soft-line: #F7D9E1;
   --text: #2B1A2E; --sub: #85566A; --brand: #C93466; --brand-ink: #FFFFFF; --brand-soft: #FFE1EA;
@@ -34,7 +34,7 @@
   --w-han: 900; --r: 22px; --r-big: 28px; }
 :root[data-skin="rose"][data-night] {
   --bg: #1E1219; --surface: #2A1A24; --line: #4A2E3C; --soft-line: #3A2430; --text: #FBEFF4; --sub: #C9A3B4;
-  --brand: #FF7AA5; --brand-ink: #2B0F1C; --brand-soft: #4A2236; --sun-soft: #3B3017; --coral: #FF9E6B; --coral-soft: #3E2618; color-scheme: dark; }
+  --brand: #FF7AA5; --brand-ink: #2B0F1C; --brand-soft: #4A2236; --sun-soft: #3B3017; --coral: #FF9E6B; --coral-soft: #3E2618; color-scheme: only dark; }
 
 
 html, body { height: 100%; }

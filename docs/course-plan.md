@@ -43,7 +43,7 @@ Decided 3 Nov 2026 (full working plan, in French, in the claude.ai project: `pla
 1. Structure port. **Done:** layout (`app/ course/ tools/ data/ docs/`), YAML lessons, Makefile, lint with the curve,
    spelling regression test, Pages workflow, `syzy-private` skeleton; app: Tsheh-tû's tabs (Lessons · Practice ·
    Books · Settings), Practice sections, My lists, simplified/traditional switch, private-module loader, CSP,
-   headless smoke test. **Kept from Sy-zy:** Google Drive sync (shared with 书架 Shūjià) instead of Tsheh-tû's gist.
+   headless smoke test. Gist sync as in Tsheh-tû (one token: gists + the private repo). 《弄堂》 moved to `syzy-private/books/` (Books tab).
    **Later:** second wave (from L50), Grammar and themed Vocabulary, Podcast/Video/Music tabs when there is content.
 2. `romanize.py`: verb–object sandhi, more tests, simplified → traditional table for dialect characters.
 3. `syllabus.yaml` (100 titles + grammar); revise L1–7 to the curve.

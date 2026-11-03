@@ -5,7 +5,7 @@
 // window.ExamModule.route(hash) are called. Routes handed to it: #books, #books-…, #bookcourse, #bookcourse-….
 const Module = {
   REPO: 'tbrapor-arch/syzy-private', DIR: 'module', CACHE: 'syzy-module', index: null, loaded: null,
-  get token() { return store.get('ghToken', ''); },
+  get token() { return Sync.token; },
   get on() { return !!this.token && store.get('moduleOn', false); },
   get bookcourse() { return this.on && !!store.get('moduleBC', false); },
   // is the token allowed to read the private repo? (offline: keep the last answer)
@@ -64,22 +64,6 @@ const Module = {
     } catch (e) { page(`<div class="card raised"><b>Could not load the private module</b><span class="sub">${esc(e.message || e)}. It needs the internet the first time; after that it works offline.</span><button class="btn small" style="align-self:start" data-go="${esc(h)}">Try again</button></div>`); }
   },
 };
-// Settings › Private module: the GitHub token (fine-grained, Contents: Read on the private repo), kept in this browser
-function moduleBlock() {
-  const t = Module.token;
-  return `<h2><span class="han">${esc(hzt('私人'))}</span> Private module</h2>
-    <div class="card"><span class="sub" style="font-size:.9rem">Your own books and the book course are read from your private GitHub repository. Paste a fine-grained token with <b>Contents: Read</b> on <code>${Module.REPO}</code>. It stays in this browser and goes only to GitHub.</span>
-      ${t ? `<span>${Module.on ? '✓ Connected: the Books tab is on.' : 'Token saved, but it cannot read the repository.'}</span>
-        <div class="row"><button class="btn small" id="gh-check">Check again</button><button class="btn small quiet" id="gh-off">Remove token</button></div>`
-      : `<form class="row" id="gh-form"><input id="gh-token" type="password" placeholder="github_pat_…" autocomplete="off" spellcheck="false" style="flex:1;min-width:14em" aria-label="GitHub token"><button class="btn small" type="submit">Connect</button></form>`}</div>`;
-}
-function wireModule(m, rerender) {
-  const f = $('#gh-form', m), ck = $('#gh-check', m), off = $('#gh-off', m);
-  const after = async () => { const on = await Module.check(); toast(on ? 'Private module connected' : 'This token cannot read the private repository'); if (on) Module.load().catch(() => {}); rerender(); };
-  if (f) f.onsubmit = e => { e.preventDefault(); const v = $('#gh-token', m).value.trim(); if (!v) return; store.set('ghToken', v); after(); };
-  if (ck) ck.onclick = after;
-  if (off) off.onclick = () => { store.set('ghToken', ''); store.set('moduleOn', false); store.set('moduleBC', false); rerender(); };
-}
 // at start: check (quietly) whether this device's token opens the private repo, then load the module in the background
 if (Module.token) {
   const was = Module.on;

@@ -13,5 +13,5 @@ self.addEventListener('fetch', e => {
     e.respondWith(caches.open(V).then(async c => { try { const r = await fetch(req, { cache: 'no-cache' }); if (r.ok) c.put(req, r.clone()); return r; } catch { return (await c.match(req)) || (await c.match('index.html')); } }));
     return;
   }
-  if (u.hostname === 'cdnjs.cloudflare.com' || u.hostname === 'fonts.googleapis.com' || u.hostname === 'fonts.gstatic.com') e.respondWith(cacheFirst(req));
+  if (u.hostname === 'fonts.googleapis.com' || u.hostname === 'fonts.gstatic.com') e.respondWith(cacheFirst(req));
 });

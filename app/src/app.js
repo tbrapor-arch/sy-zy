@@ -33,7 +33,7 @@ let deck = store.get('deck', {});
 let lists = store.get('lists', {});
 const listIds = k => Object.entries((lists[k] || {}).w || {}).filter(([, t]) => t > 0).sort((a, b) => b[1] - a[1]).map(([id]) => id);
 const inList = (k, id) => (((lists[k] || {}).w || {})[id] || 0) > 0;
-const LIST_TITLES = { 'book:longtang': '弄堂' };   // the private module adds its books' titles here
+const LIST_TITLES = {};   // the private module adds its books' titles here
 function listBase(k) {
   if (k === 'lessons') return 'Lessons';
   if (k === 'words') return 'From the dictionary';
@@ -46,7 +46,6 @@ function listHere() {
   const h = location.hash.slice(1) || 'lessons';
   let m;
   if ((m = h.match(/^list-(.+)$/))) return decodeURIComponent(m[1]);
-  if (/^read/.test(h)) return 'book:longtang';
   if ((m = h.match(/^books-([a-z0-9-]+)/))) return 'book:' + m[1];
   if (/^bookcourse/.test(h)) return 'bc:course';
   if (/^(dict|lists?)$/.test(h)) return 'words';
@@ -134,8 +133,6 @@ function route() {
   if ((m = h.match(/^list-(.+)$/))) return showList(decodeURIComponent(m[1]));
   if (h === 'drills') return showDrills();
   if (h === 'books' || /^books-/.test(h) || /^bookcourse/.test(h)) return Module.show(h);
-  if (h === 'read' && DATA.reader) return showLibrary();
-  if ((m = h.match(/^read-(\d+)$/)) && DATA.reader) return showChapter(+m[1]);
   if (h === 'review') return showReview();
   if (h === 'bridge') return showBridge();
   if (h === 'settings') return showSettings();
@@ -154,7 +151,7 @@ function wireGo(root) { $$('[data-go]', root).forEach(b => b.onclick = () => go(
 
 function renderTabs(cur) {
   const due = dueCards().length;
-  const tabs = [['lessons', 'Lessons'], ['review', 'Practice'], ...(DATA.reader ? [['read', 'Read']] : []), ...(Module.on ? [['books', 'Books']] : []), ['settings', 'Settings']];
+  const tabs = [['lessons', 'Lessons'], ['review', 'Practice'], ...(Module.on ? [['books', 'Books']] : []), ['settings', 'Settings']];
   $('#tabs').innerHTML = tabs.map(([k, t]) => `<button class="tab" data-tab="${k}" aria-current="${cur === k}">${ICONS[k]}<span>${t}</span>${k === 'review' && due ? `<span class="count">${due}</span>` : ''}</button>`).join('');
   // the Practice tab reopens the part used last (a running card session is left); Lessons goes to the top of the grid
   $$('[data-tab]', $('#tabs')).forEach(b => b.onclick = () => { const k = b.dataset.tab; if (k === 'review') { sess = null; go(store.get('pracSec', 'review')); return; } if (k === 'lessons') resetHome = true; go(k); });
@@ -450,10 +447,10 @@ document.addEventListener('click', e => {
   if (!sh.classList.contains('open') || !e.target.isConnected || sh.contains(e.target) || e.target.closest('.tok, [data-note], [data-word], [data-ann], .tab')) return;
   closeSheet();
 });
-function currentTab() { const h = location.hash.slice(1) || 'lessons'; return /^(lesson|bookcourse)/.test(h) ? 'lessons' : h.startsWith('read') ? 'read' : /^(dict|lists?|list-|drills|bridge|review)/.test(h) ? 'review' : /^books/.test(h) ? 'books' : h; }
+function currentTab() { const h = location.hash.slice(1) || 'lessons'; return /^(lesson|bookcourse)/.test(h) ? 'lessons' : /^(dict|lists?|list-|drills|bridge|review)/.test(h) ? 'review' : /^books/.test(h) ? 'books' : h; }
 
 // ---------- review deck (Leitner boxes, kept in this browser)
-function addToDeck(ids) { let n = 0; ids.forEach(id => { if (id && DATA.dict[id] && !deck[id]) { deck[id] = { box: 0, due: Date.now() }; n++; } }); store.set('deck', deck); return n; }
+function addToDeck(ids) { let n = 0; ids.forEach(id => { if (id && DATA.dict[id] && !deck[id]) { deck[id] = { box: 0, due: Date.now(), at: Date.now() }; n++; } }); store.set('deck', deck); return n; }
 function dueCards() { const now = Date.now(); return Object.keys(deck).filter(id => deck[id].due <= now && DATA.dict[id]); }
 function segments() {
   const segs = DATA.lessons.map(l => ({ key: 'L' + l.id, title: `Lesson ${l.id} · ${l.title.en}`, han: T(l.title), ids: l.new_words }));
@@ -601,7 +598,7 @@ function grade(ok) {
   if (!deck[id]) deck[id] = { box: 0, due: Date.now() };
   const d = deck[id];
   d.box = ok ? Math.min(d.box + 1, BOXES.length - 1) : 0;
-  d.due = Date.now() + (ok ? BOXES[d.box] * DAY : 60e3);
+  d.due = Date.now() + (ok ? BOXES[d.box] * DAY : 60e3); d.at = Date.now();
   store.set('deck', deck); studied();
   if (!ok) { sess.missed.add(id); sess.queue.push(id); }
   sess.i++; sess.flipped = false; renderTabs('review'); showCard();
@@ -632,10 +629,10 @@ function showSettings() {
       <span class="sub" style="font-size:.9rem">Save this file and send it back: the differences become corrections in <code>data/overrides.tsv</code>, and every lesson picks them up.</span>
       <div class="row"><button class="btn small" id="bk-exp">Save book notes file</button></div>`
       : '<span class="sub" style="font-size:.9rem">Open any word and tap <b>Matches my book</b> or <b>My book says…</b>. Your notes collect here.</span>'}</div>
-    ${moduleBlock()}
+    ${syncBlock()}
     <h2><span class="han">${esc(hzt('进度'))}</span> Your progress</h2>
     <div class="card"><span>${done.size} lessons done · ${Object.keys(deck).length} words in review · ${studyDays.size} days studied</span>
-      <span class="sub" style="font-size:.9rem">Progress is kept in this browser only. Save a copy to move it to another phone or computer, or to keep it safe.</span>
+      <span class="sub" style="font-size:.9rem">Progress is kept in this browser, and in your gist when sync is on (above). A file is a copy you can keep or move by hand.</span>
       <div class="row"><button class="btn small" id="exp">Save progress file</button><button class="btn small line" id="imp">Load progress file</button>
         <input type="file" id="imp-file" accept=".json,application/json" hidden></div></div>
     <h2><span class="han">${esc(hzt('来源'))}</span> Where the data comes from</h2>
@@ -648,23 +645,16 @@ function showSettings() {
     const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([json], { type: 'application/json' })); a.download = filename; document.body.append(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(a.href), 5000);
   };
-  $('#exp', m).onclick = () => saveFile(`syzy-progress-${today()}.json`, JSON.stringify({ app: 'syzy', v: 1, at: new Date().toISOString(), doneAt, deck, lists, days: [...studyDays], prefs, bookNotes }, null, 1));
+  $('#exp', m).onclick = () => saveFile(`syzy-progress-${today()}.json`, JSON.stringify(progressData(), null, 1));
   const be = $('#bk-exp', m); if (be) be.onclick = () => saveFile(`syzy-book-notes-${today()}.json`, JSON.stringify({ app: 'syzy-book-notes', v: 1, at: new Date().toISOString(),
     notes: notes.map(([id, n]) => { const e = DATA.dict[id]; return { word: e.h, ipa: e.ipa, wugniu: e.wugniu, qian: e.qian, ...n }; }) }, null, 1));
   $$('[data-word]', m).forEach(r => r.onclick = () => openCard(r.dataset.word));
-  wireModule(m, showSettings);
+  wireSync(m, showSettings);
   $('#imp', m).onclick = () => $('#imp-file', m).click();
   $('#imp-file', m).onchange = async e => {
     const f = e.target.files[0]; if (!f) return;
     try {
-      const d = JSON.parse(await f.text());
-      if (d.app !== 'syzy') throw new Error('not a progress file');
-      Object.entries(d.doneAt || {}).forEach(([k, v]) => { if (!(k in doneAt) || (v && (!doneAt[k] || v < doneAt[k]))) doneAt[k] = v; done.add(+k); });
-      Object.entries(d.deck || {}).forEach(([k, v]) => { if (!deck[k] || v.box > deck[k].box) deck[k] = v; });
-      Object.entries(d.bookNotes || {}).forEach(([k, v]) => { if (!bookNotes[k]) bookNotes[k] = v; });
-      if (d.lists) { mergeLists(d.lists); store.set('lists', lists); }
-      (d.days || []).forEach(x => studyDays.add(x));
-      saveDone(); store.set('deck', deck); store.set('days', [...studyDays]); store.set('bookNotes', bookNotes);
+      mergeProgress(JSON.parse(await f.text()));
       toast('Progress loaded'); showSettings();
     } catch (err) { toast('Could not read this file'); }
   };

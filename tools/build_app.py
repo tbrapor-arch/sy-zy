@@ -29,9 +29,7 @@ for a, b in SWAP:
 css += (ROOT / 'app/style/extra.css').read_text(encoding='utf8')
 
 data = (ROOT / 'app/build/data.js').read_text(encoding='utf8')
-private = ROOT / 'app/build/data.private.js'
-data_private = private.read_text(encoding='utf8') if private.exists() else data
-js = (ROOT / 'app/src/app.js').read_text(encoding='utf8') + (ROOT / 'app/src/reader.js').read_text(encoding='utf8') + (ROOT / 'app/src/sync.js').read_text(encoding='utf8') + (ROOT / 'app/src/module.js').read_text(encoding='utf8')
+js = (ROOT / 'app/src/app.js').read_text(encoding='utf8') + (ROOT / 'app/src/sync.js').read_text(encoding='utf8') + (ROOT / 'app/src/module.js').read_text(encoding='utf8')
 html = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>书橱 Sy-zy</title>
@@ -50,7 +48,6 @@ html = f'''<!doctype html>
 </div>
 <aside class="sheet" id="sheet" aria-label="Word" aria-hidden="true"></aside>
 <div class="toast" id="toast" hidden></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script>
 {data}
 {js}
@@ -59,9 +56,4 @@ html = f'''<!doctype html>
 '''
 (ROOT / 'app/dist').mkdir(parents=True, exist_ok=True)
 (ROOT / 'app/dist/index.html').write_text(html, encoding='utf8')
-html_private = html.replace(data, data_private, 1)
-# the claude.ai artifact adds its own document skeleton: publish the page without one
-body = html_private.split('<head>', 1)[1].replace('</head><body>', '').replace('</body></html>', '')
-body = re.sub(r'<meta[^>]*>', '', body, count=3)
-(ROOT / 'app/build/artifact.html').write_text(body, encoding='utf8')
 print('app/dist/index.html', len(html) // 1024, 'KB · publish with tools/site.py')

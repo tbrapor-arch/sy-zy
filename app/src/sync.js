@@ -1,211 +1,94 @@
-
-// ---------- Google Drive: the book and your progress, on every device
-// Two routes, chosen by where the app is open:
-//  - hosted (tbrapor-arch.github.io/syzy): Google sign-in and the hidden app folder of Drive, as in 书架 Shūjià.
-//    Same site and same Google client as Shūjià, so the two apps share that folder: a book imported in Shūjià is found here.
-//  - inside claude.ai: the page cannot sign in to Google itself; it goes through the viewer's Google Drive connector,
-//    and keeps the book as an ordinary file in Drive.
+// ---------- sync between devices (as in Tsheh-tû): progress kept in a secret GitHub gist that only you can list.
+// One fine-grained token does both jobs: Gists read/write (sync) and Contents read on the private repo (Books tab).
+// It stays in this browser. Pull + merge when the app opens, push a few seconds after any change.
 const HOSTED = !!document.querySelector('link[rel=manifest]');
-const SYNC_KEYS = ['doneAt', 'deck', 'days', 'bookNotes', 'readAt', 'lists'];
-
-// ---- hosted: Google Identity Services + Drive appDataFolder (code shape taken from Shūjià)
-const GCLIENT = '509495064448-dip09vjpfiq0690mq5l03hssm4g0rmsa.apps.googleusercontent.com';
-const DRIVE = 'https://www.googleapis.com/drive/v3/files', UPLOAD = 'https://www.googleapis.com/upload/drive/v3/files';
-const Sync = {
-  busy: false, timer: 0, status: '',
-  enabled() { return store.get('syncOn', false); },
-  token() { const t = store.get('gToken', null); return t && t.exp > Date.now() + 60000 ? t.t : null; },
-  loadGIS() {
-    return new Promise((res, rej) => {
-      if (window.google && google.accounts && google.accounts.oauth2) return res();
-      const sc = document.createElement('script'); sc.src = 'https://accounts.google.com/gsi/client';
-      sc.onload = res; sc.onerror = () => rej(new Error('Google cannot be reached from this page.'));
-      document.head.append(sc);
-    });
-  },
-  async login() {
-    await this.loadGIS();
-    const tok = await new Promise((res, rej) => {
-      const tc = google.accounts.oauth2.initTokenClient({ client_id: GCLIENT, scope: 'https://www.googleapis.com/auth/drive.appdata',
-        callback: r => r.error ? rej(new Error(r.error_description || r.error)) : res(r),
-        error_callback: e => rej(new Error(e.type === 'popup_closed' ? 'The Google window was closed.' : (e.message || e.type))) });
-      tc.requestAccessToken({ prompt: this.enabled() ? '' : 'consent' });
-    });
-    store.set('gToken', { t: tok.access_token, exp: Date.now() + (tok.expires_in || 3600) * 1000 }); store.set('syncOn', true);
-  },
-  logout() { const t = this.token(); try { if (t && window.google) google.accounts.oauth2.revoke(t, () => {}); } catch {} store.set('gToken', null); store.set('syncOn', false); },
-  async g(url, opts = {}) {
-    const t = this.token(); if (!t) throw new Error('Sign in to Google again.');
-    const r = await fetch(url, Object.assign({}, opts, { headers: Object.assign({ Authorization: 'Bearer ' + t }, opts.headers || {}) }));
-    if (r.status === 401) { store.set('gToken', null); throw new Error('Sign in to Google again.'); }
-    if (!r.ok) throw new Error('Google Drive answered ' + r.status + '.');
-    return r;
-  },
-  async list() {
-    const out = []; let pt = '';
-    do { const r = await (await this.g(`${DRIVE}?spaces=appDataFolder&pageSize=1000&fields=nextPageToken,files(id,name,size,modifiedTime)${pt ? '&pageToken=' + pt : ''}`)).json(); out.push(...(r.files || [])); pt = r.nextPageToken || ''; } while (pt);
-    return out;
-  },
-  async put(name, blob, mime, id) {
-    if (id) return this.g(`${UPLOAD}/${id}?uploadType=media`, { method: 'PATCH', headers: { 'Content-Type': mime }, body: blob });
-    const b = 'syzy' + Date.now(), meta = { name, parents: ['appDataFolder'] };
-    const body = new Blob([`--${b}\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n${JSON.stringify(meta)}\r\n--${b}\r\nContent-Type: ${mime}\r\n\r\n`, blob, `\r\n--${b}--`]);
-    return this.g(`${UPLOAD}?uploadType=multipart`, { method: 'POST', headers: { 'Content-Type': `multipart/related; boundary=${b}` }, body });
-  },
-  get(id) { return this.g(`${DRIVE}/${id}?alt=media`); },
-  // the book: our own copy first, else the one Shūjià keeps (its library list names each book file)
-  async findBook(files) {
-    const own = files.find(f => f.name === 'syzy-longtang.epub');
-    if (own) return { blob: await (await this.get(own.id)).blob(), from: 'Sy-zy' };
-    const st = files.find(f => f.name === 'shujia-state.json');
-    if (!st) return null;
-    const state = await (await this.get(st.id)).json();
-    const b = Object.values(state.books || {}).find(x => x && /弄堂/.test(x.title || '') && x.format === 'epub');
-    const f = b && files.find(x => x.name === `book-${b.id}.epub`);
-    return f ? { blob: await (await this.get(f.id)).blob(), from: '书架 Shūjià' } : null;
-  },
-  // progress: merged both ways (earliest finish dates, most advanced review boxes, every study day, every book note)
-  local() { const o = {}; SYNC_KEYS.forEach(k => o[k] = store.get(k, k === 'days' ? [] : {})); return o; },
-  merge(a, b) {
-    const o = { doneAt: { ...b.doneAt }, readAt: { ...b.readAt }, deck: { ...b.deck }, bookNotes: { ...b.bookNotes }, days: [...new Set([...(a.days || []), ...(b.days || [])])].sort() };
-    for (const k of ['doneAt', 'readAt']) Object.entries(a[k] || {}).forEach(([n, d]) => { if (!(n in o[k]) || (d && (!o[k][n] || d < o[k][n]))) o[k][n] = d; });
-    Object.entries(a.deck || {}).forEach(([id, v]) => { const r = o.deck[id]; if (!r || v.box > r.box || (v.box === r.box && v.due > r.due)) o.deck[id] = v; });
-    Object.entries(a.bookNotes || {}).forEach(([id, v]) => { const r = o.bookNotes[id]; if (!r || (v.at || '') >= (r.at || '')) o.bookNotes[id] = v; });
-    o.lists = JSON.parse(JSON.stringify(b.lists || {}));
-    const keep = lists; lists = o.lists; mergeLists(a.lists); lists = keep;   // mergeLists works on the global: borrow it
-    return o;
-  },
-  dirty() { if (!HOSTED || !this.enabled() || this.busy) return; clearTimeout(this.timer); this.timer = setTimeout(() => this.run(false).catch(() => {}), 15000); },
-  async run(interactive) {
-    if (this.busy) return; this.busy = true; clearTimeout(this.timer);
-    try {
-      if (!this.token()) { if (!interactive) { this.status = 'Sign in again to sync'; return; } await this.login(); }
-      this.status = 'Syncing…'; paintSync();
-      const files = await this.list(), sf = files.find(f => f.name === 'syzy-state.json');
-      const remote = sf ? await (await this.get(sf.id)).json() : {};
-      const merged = this.merge(this.local(), remote);
-      applyProgress(merged);
-      await this.put('syzy-state.json', new Blob([JSON.stringify(merged)], { type: 'application/json' }), 'application/json', sf && sf.id);
-      const pf = files.find(f => f.name === 'syzy-longtang-pack.json');
-      if (pf && !hasTranslations()) { const pk = await (await this.get(pf.id)).json(); applyPack(pk); store.set('pack:longtang', pk); }
-      else if (!pf && hasTranslations() && store.get('pack:longtang', null)) await this.savePack(store.get('pack:longtang', null), files);
-      if (!BOOK) { const got = await this.findBook(files); if (got) { await loadBookBlob(got.blob); toast(`Book found in your Drive (${got.from})`); } }
-      this.status = 'Synced ' + new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
-    } catch (err) { this.status = err.message || 'Sync failed'; if (interactive) throw err; }
-    finally { this.busy = false; paintSync(); }
-  },
-  async savePack(pk, files) {
-    if (!HOSTED || !this.token() || !pk) return false;
-    files = files || await this.list(); const f = files.find(x => x.name === 'syzy-longtang-pack.json');
-    await this.put('syzy-longtang-pack.json', new Blob([JSON.stringify(pk)], { type: 'application/json' }), 'application/json', f && f.id);
-    return true;
-  },
-  async saveBook(blob) {
-    if (!HOSTED || !this.token()) return false;
-    const files = await this.list(); const f = files.find(x => x.name === 'syzy-longtang.epub');
-    if (!f) await this.put('syzy-longtang.epub', blob, 'application/epub+zip');
-    return true;
-  },
-};
-function applyProgress(m) {
-  Object.assign(doneAt, m.doneAt); Object.keys(m.doneAt).forEach(k => done.add(+k));
-  Object.assign(deck, m.deck); Object.assign(bookNotes, m.bookNotes); m.days.forEach(d => studyDays.add(d));
-  if (m.lists) { mergeLists(m.lists); store.set('lists', lists); }
-  store.set('doneAt', doneAt); store.set('deck', deck); store.set('bookNotes', bookNotes); store.set('days', [...studyDays]); store.set('readAt', m.readAt);
-}
-function paintSync() { const el = $('#sync-status'); if (el) el.textContent = Sync.status; }
-
-// ---- claude.ai: the viewer's Google Drive connector
-const GD = 'Google Drive';
-let MCP = null;
-const mcpReady = (window.claude && window.claude.use ? window.claude.use('mcp').catch(() => null) : Promise.resolve(null)).then(m => (MCP = m));
-// connector answers come in several shapes: dig out what we need without assuming one
-function findFiles(x, out = []) {
-  if (!x || typeof x !== 'object') return out;
-  if (Array.isArray(x)) { x.forEach(v => findFiles(v, out)); return out; }
-  if (typeof x.id === 'string' && (x.title || x.name)) out.push({ id: x.id, title: x.title || x.name, mime: x.mimeType || '' });
-  Object.values(x).forEach(v => findFiles(v, out));
-  return out;
-}
-function findBase64(x) {
-  let best = '';
-  const walk = v => { if (typeof v === 'string') { if (v.length > best.length && /^[A-Za-z0-9+/=\s_-]+$/.test(v.slice(0, 2000))) best = v; } else if (v && typeof v === 'object') Object.values(v).forEach(walk); };
-  walk(x); return best;
-}
-const b64ToBlob = s => { const bin = atob(s.replace(/\s+/g, '').replace(/-/g, '+').replace(/_/g, '/')); const a = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) a[i] = bin.charCodeAt(i); return new Blob([a], { type: 'application/epub+zip' }); };
-function mcpMessage(err) {
-  const c = err && err.code;
-  if (c === 'server_not_connected' || c === 'selection_required') return 'Add the Google Drive connector in claude.ai Settings → Connectors, then try again.';
-  if (c === 'needs_reauth') return 'Reconnect Google Drive in claude.ai Settings → Connectors.';
-  if (c === 'not_in_manifest' || c === 'approval_required' || c === 'consent_required') return 'Google Drive is not allowed for this page. Allow it when asked, then try again.';
-  if (c === 'blocked_by_policy') return 'Your organisation does not allow Google Drive here.';
-  if (c === 'server_unavailable') return 'Google Drive did not answer. Try again in a moment.';
-  if (c === 'tool_error') return 'Google Drive refused: ' + (err.message || 'unknown reason');
-  return (err && err.message) || 'Google Drive could not be reached.';
-}
-async function driveFindBook() {
-  const r = await MCP.callTool(GD, 'search_files', { query: "title contains '弄堂' and mimeType = 'application/epub+zip'", excludeContentSnippets: true, pageSize: 10 });
-  const f = findFiles(r.payload ?? r)[0];
-  if (!f) return null;
-  const d = await MCP.callTool(GD, 'download_file_content', { fileId: f.id });
-  const b64 = findBase64(d.payload ?? d);
-  if (!b64) throw new Error('Google Drive sent the file in a form this page cannot read.');
-  return b64ToBlob(b64);
-}
-async function driveSaveBook(blob) {
-  const lt = await MCP.listTools().catch(() => ({}));
-  if (!lt.fileArgs) throw new Error('This view cannot send a file to Google Drive. Upload the .epub to your Drive yourself, then use "Find it in my Drive".');
-  await MCP.callTool(GD, 'create_file', { title: '弄堂 (Sy-zy).epub', contentMimeType: 'application/epub+zip', disableConversionToGoogleType: true,
-    base64Content: { $file: { data: blob, name: 'longtang.epub', type: 'application/epub+zip' } } });
-}
-
-// one entry point for both routes: turn an epub blob into the book
-async function loadBookBlob(blob) {
-  const chs = await readEpub(blob);
-  const hits = RB.chapters.filter(c => chs.some(b => b.head.startsWith(c.head))).length;
-  if (!hits) throw new Error('No chapter of 《弄堂》 found in this file.');
-  BOOK = chs; store.set(BOOK_KEY, chs);
-  return hits;
-}
-// the Drive block on the Read page
-function driveBlock() {
-  if (HOSTED) {
-    const on = Sync.enabled();
-    return `<div class="drive"><b>Google Drive</b>
-      <span class="sub" style="font-size:.88rem">${on ? 'Your progress and the book follow you on every device. The book is also found if you imported it in 书架 Shūjià.' : 'Sign in once: the app finds the book in your Drive (also the copy in 书架 Shūjià) and keeps your progress in step on every device. It uses the hidden app folder, the same one as Shūjià.'}</span>
-      <div class="row">${on ? '<button class="btn small" id="sy-run">Sync now</button><button class="btn small quiet" id="sy-off">Disconnect</button>' : '<button class="btn small" id="sy-on">Connect Google Drive</button>'}<span class="sub" id="sync-status" style="font-size:.85rem">${esc(Sync.status)}</span></div></div>`;
-  }
-  if (!MCP) return '';
-  return `<div class="drive"><b>Google Drive</b>
-    <span class="sub" style="font-size:.88rem">Keep the book in your Google Drive and open it from there on any device, through your Google Drive connector.</span>
-    <div class="row"><button class="btn small" id="gd-find">Find it in my Drive</button>${BOOK && store.get('bookBlobKept', false) === false ? '' : ''}<span class="sub" id="gd-msg" style="font-size:.85rem"></span></div></div>`;
-}
-function wireDrive(m, rerender) {
-  const msg = t => { const el = $('#gd-msg', m) || $('#sync-status', m); if (el) el.textContent = t; };
-  const on = $('#sy-on', m), run = $('#sy-run', m), off = $('#sy-off', m), find = $('#gd-find', m);
-  if (on) on.onclick = async () => { try { await Sync.run(true); rerender(); } catch (e) { msg(e.message); } };
-  if (run) run.onclick = async () => { try { await Sync.run(true); rerender(); } catch (e) { msg(e.message); } };
-  if (off) off.onclick = () => { Sync.logout(); rerender(); };
-  if (find) find.onclick = async () => {
-    msg('Looking in your Drive…'); find.disabled = true;
-    try { const blob = await driveFindBook(); if (!blob) { msg('No 弄堂 .epub in your Drive yet. Load your copy below: the app can then save it to your Drive.'); return; } const n = await loadBookBlob(blob); toast(`Book loaded from your Drive · ${n} chapters`); rerender(); }
-    catch (e) { msg(e.code ? mcpMessage(e) : e.message); }
-    finally { find.disabled = false; }
-  };
-}
-// after a manual load: offer to keep the file in Drive (claude.ai), or keep it automatically (hosted)
-async function afterManualLoad(file, m) {
-  if (HOSTED) { try { if (await Sync.saveBook(file)) toast('Book saved to your Drive app folder'); } catch {} return; }
-  if (!MCP) return;
-  const el = $('#bk-msg', m); if (!el) return;
-  el.className = 'fb'; el.innerHTML = '<button class="btn small line" id="gd-save">Also keep it in my Google Drive</button>';
-  $('#gd-save', m).onclick = async () => { el.textContent = 'Saving to your Drive…'; try { await driveSaveBook(file); el.textContent = '✓ Saved in your Drive as “弄堂 (Sy-zy).epub”.'; } catch (e) { el.className = 'fb no'; el.textContent = e.code ? mcpMessage(e) : e.message; } };
-}
-// every saved change to progress schedules a sync (hosted, signed in)
+const SYNC_KEYS = new Set(['doneAt', 'deck', 'days', 'bookNotes', 'lists', 'bookRead']);
 const _set = store.set.bind(store);
-store.set = (k, v) => { _set(k, v); if (SYNC_KEYS.includes(k) && typeof Sync !== 'undefined') Sync.dirty(); };
-if (HOSTED) {
-  if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
-  if (Sync.enabled()) setTimeout(() => Sync.run(false).catch(() => {}), 1500);
+store.set = (k, v) => { _set(k, v); if (SYNC_KEYS.has(k) && typeof Sync !== 'undefined') Sync.soon(); };
+
+function progressData() { return { app: 'syzy', v: 2, at: new Date().toISOString(), doneAt, deck, lists, bookNotes, days: [...studyDays], bookRead: store.get('bookRead', {}), last: store.get('last', null) }; }
+// merge another copy into this one: earliest finish dates, the most recently reviewed card, the latest book note
+function mergeProgress(d) {
+  if (!d || d.app !== 'syzy') throw new Error('not a progress file');
+  Object.entries(d.doneAt || {}).forEach(([k, v]) => { if (!(k in doneAt) || (v && (!doneAt[k] || v < doneAt[k]))) doneAt[k] = v; done.add(+k); });
+  Object.entries(d.deck || {}).forEach(([k, v]) => { const m = deck[k]; if (!m || (v.at || 0) > (m.at || 0) || (!v.at && !m.at && v.box > m.box)) deck[k] = v; });
+  Object.entries(d.bookNotes || {}).forEach(([k, v]) => { const r = bookNotes[k]; if (!r || (v.at || '') >= (r.at || '')) bookNotes[k] = v; });
+  const br = store.get('bookRead', {}); Object.entries(d.bookRead || {}).forEach(([k, v]) => { if (!br[k] || (v && v < br[k])) br[k] = v; });
+  (d.days || []).forEach(x => studyDays.add(x));
+  if (d.lists) mergeLists(d.lists);
+  saveDone(); _set('deck', deck); _set('bookNotes', bookNotes); _set('lists', lists); _set('days', [...studyDays]); _set('bookRead', br);
 }
-mcpReady.then(m => { if (m && location.hash === '#read') showLibrary(); });
+const Sync = {
+  FILE: 'syzy-progress.json', timer: null, busy: false,
+  get token() { return store.get('ghToken', ''); }, get id() { return store.get('gistId', ''); },
+  get on() { return HOSTED && !!this.token && store.get('syncOn', true); },
+  async api(path, opts = {}) {
+    const r = await fetch('https://api.github.com' + path, { ...opts, headers: { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + this.token, ...(opts.body ? { 'Content-Type': 'application/json' } : {}) } });
+    if (!r.ok) throw new Error(r.status === 401 ? 'token refused' : r.status === 403 ? 'the token has no Gists permission' : r.status === 404 ? 'not found' : 'GitHub error ' + r.status);
+    return r.status === 204 ? null : r.json();
+  },
+  async findOrCreate() {
+    if (this.id) return this.id;
+    for (let page = 1; page <= 5; page++) {
+      const list = await this.api(`/gists?per_page=100&page=${page}`);
+      const g = list.find(x => x.files && x.files[this.FILE]);
+      if (g) { _set('gistId', g.id); return g.id; }
+      if (list.length < 100) break;
+    }
+    const g = await this.api('/gists', { method: 'POST', body: JSON.stringify({ public: false, description: '书橱 Sy-zy progress', files: { [this.FILE]: { content: JSON.stringify(progressData()) } } }) });
+    _set('gistId', g.id); return g.id;
+  },
+  async pull() {
+    const g = await this.api('/gists/' + await this.findOrCreate());
+    const f = g.files[this.FILE];
+    let text = f && f.content;
+    if (f && f.truncated) text = await (await fetch(f.raw_url)).text();
+    if (text) mergeProgress(JSON.parse(text));
+  },
+  async push() { await this.api('/gists/' + await this.findOrCreate(), { method: 'PATCH', body: JSON.stringify({ files: { [this.FILE]: { content: JSON.stringify(progressData()) } } }) }); },
+  async run(quiet) {
+    if (!this.on || this.busy) return;
+    this.busy = true;
+    try { await this.pull(); await this.push(); _set('syncAt', Date.now()); _set('syncErr', ''); if (!quiet) toast('Progress synced'); }
+    catch (e) { _set('syncErr', String(e.message || e)); if (!quiet) toast('Sync failed: ' + (e.message || e)); }
+    finally { this.busy = false; }
+  },
+  soon() { if (!this.on || this.busy) return; clearTimeout(this.timer); this.timer = setTimeout(() => this.run(true), 4000); },
+};
+// Settings › Sync and private books: one card, one token
+function syncBlock() {
+  if (!HOSTED) return '';
+  const t = Sync.token, at = store.get('syncAt', 0), err = store.get('syncErr', '');
+  return `<h2><span class="han">${esc(hzt('同步'))}</span> Sync and your books</h2>
+    <div class="card">${t ? `<span>${Sync.on ? `Progress synced with your GitHub account${at ? ` · last ${new Date(at).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}` : ''}.` : 'Sync is off on this device.'}</span>
+        ${err ? `<span class="fb no">Last attempt failed: ${esc(err)}</span>` : ''}
+        <span>${Module.on ? '✓ Your books are on (Books tab).' : 'Books: this token cannot read the private repository.'}</span>
+        <div class="row"><button class="btn small" id="sync-now">Sync now</button><button class="btn small quiet" id="sync-off">Remove the token from this device</button></div>`
+      : `<span>One GitHub token keeps your progress the same on every device and opens your own books (Books tab).</span>
+        <ol class="sub" style="font-size:.9rem;margin:0;padding-left:1.2rem">
+          <li>GitHub › Settings › Developer settings › Personal access tokens › <b>Fine-grained tokens</b> › Generate new token.</li>
+          <li>Name it <i>syzy</i>; set an expiry and note the date.</li>
+          <li>Repository access: <b>Only select repositories</b> › <code>${Module.REPO}</code>; Repository permissions › <b>Contents: Read-only</b>.</li>
+          <li>Account permissions › <b>Gists: Read and write</b>. Nothing else.</li>
+          <li>Generate, copy, paste here on each device.</li></ol>
+        <form class="row" id="sync-form"><input id="sync-token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…" aria-label="GitHub token" style="flex:1 1 14rem;min-width:0;font:inherit;padding:.5rem .8rem;border:1.5px solid var(--line);border-radius:var(--r);background:var(--bg);color:var(--text)">
+          <button class="btn small" type="submit">Connect</button></form>
+        <span class="sub" style="font-size:.8rem">The token is kept in this browser only and sent only to GitHub.</span>`}</div>`;
+}
+function wireSync(m, rerender) {
+  const sf = $('#sync-form', m);
+  if (sf) sf.onsubmit = async e => {
+    e.preventDefault(); const t = $('#sync-token', m).value.trim(); if (!t) return;
+    _set('ghToken', t); _set('gistId', ''); _set('syncOn', true);
+    await Sync.run(true); const on = await Module.check();
+    const err = store.get('syncErr', '');
+    if (err && !on) { _set('ghToken', ''); toast('Token refused: ' + err); }
+    else { toast(err ? 'Books connected; sync failed: ' + err : on ? 'Synced · your books are on' : 'Synced · this token cannot read your books'); if (on) Module.load().catch(() => {}); }
+    rerender();
+  };
+  const sn = $('#sync-now', m); if (sn) sn.onclick = async () => { sn.disabled = true; await Sync.run(); await Module.check(); rerender(); };
+  const so = $('#sync-off', m); if (so) so.onclick = () => { _set('ghToken', ''); _set('gistId', ''); _set('moduleOn', false); _set('moduleBC', false); toast('Token removed from this device'); rerender(); };
+}
+if (HOSTED && 'serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
+// pull the other devices' progress at start, then refresh the current page (not during a card session)
+if (Sync.on) setTimeout(() => Sync.run(true).then(() => { if (!sess) { const y = scrollY; route.keepSheet = true; route(); route.keepSheet = false; scrollTo(0, y); } }), 0);

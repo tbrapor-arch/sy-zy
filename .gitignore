@@ -6,9 +6,3 @@ app/build/
 app/dist/
 data/build/lexicon.jsonl
 _site/
-# 《弄堂》 is under copyright: the translations and packs below derive from it. They belong in syzy-private.
-reader/longtang/book.epub
-reader/**/*.epub
-reader/longtang/ch*.txt
-reader/longtang/packs.json
-reader/longtang/syzy-longtang-pack.json

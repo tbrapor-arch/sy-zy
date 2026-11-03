@@ -4,8 +4,8 @@
 
 Adds the home-screen icon and manifest links, copies app/pwa/ (manifest, icons, offline service worker).
 Puts a Content Security Policy in the page, as in Tsheh-tû: only the page's own inline script (by hash, recomputed at
-each build), blob: scripts (the private module), JSZip from cdnjs and Google sign-in run; the page talks only to GitHub's
-API (private module) and Google Drive (sync). A new outside source has to be added below, or the browser refuses it.
+each build), blob: scripts (the private module), run; the page talks only to GitHub's API (gist sync,
+private module). A new outside source has to be added below, or the browser refuses it.
 """
 import base64, hashlib, os, re, shutil, sys
 
@@ -27,13 +27,12 @@ if not hashes:
     sys.exit('site.py: no inline script found, the CSP would block the app')
 rules = {
     'default-src': "'self'",
-    'script-src': f"{hashes} blob: https://cdnjs.cloudflare.com https://accounts.google.com/gsi/client",
-    'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com https://accounts.google.com/gsi/style",
+    'script-src': f"{hashes} blob:",
+    'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com",
     'font-src': "'self' data: https://fonts.gstatic.com",
     'img-src': "'self' data: blob: https:",
     'media-src': "'self' blob: https:",
-    'connect-src': "'self' https://api.github.com https://www.googleapis.com https://accounts.google.com https://cdnjs.cloudflare.com https://fonts.googleapis.com https://fonts.gstatic.com",
-    'frame-src': 'https://accounts.google.com',
+    'connect-src': "'self' https://api.github.com https://gist.githubusercontent.com https://fonts.googleapis.com https://fonts.gstatic.com",
     'worker-src': "'self'",
     'manifest-src': "'self'",
     'object-src': "'none'",

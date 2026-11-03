@@ -9,7 +9,7 @@ Shanghainese has no official spelling, and every book uses its own. So the app s
 ## What's in the repo
 
 ```
-app/src/              the app's code: app.js (lessons, Practice, lists, cards, settings), reader.js, sync.js (Google Drive),
+app/src/              the app's code: app.js (lessons, Practice, lists, cards, settings), sync.js (gist sync),
                       module.js (the optional private module: Books tab, Book course)
 app/style/            the style (base from Tsheh-tû, recoloured, + extra.css)
 app/pwa/              manifest, icons, offline service worker
@@ -27,7 +27,6 @@ tools/lint.py         checks the lessons and the L1–50 curve (docs/course-plan
 tools/smoke.py        opens the built app headless and visits every page
 course/trad.tsv       fixes to the simplified → traditional conversion (Settings › Characters)
 tools/import_notes.py the app's "book notes" file → course/verified.tsv and course/book_notes.tsv
-reader/               the 弄堂 glossary (the book's own text stays out of this repo; moving to syzy-private)
 ```
 
 ## Build
@@ -42,8 +41,8 @@ GitHub Pages builds and publishes on every push to `main` (Settings › Pages �
 
 ## The app
 
-Tabs as in Tsheh-tû: **Lessons · Practice · Settings**, plus **Read** (《弄堂》, when its data is built) and **Books**
-(only on a device whose GitHub token can read the private repository; Settings › Private module). Practice holds
+Tabs as in Tsheh-tû: **Lessons · Practice · Settings**, plus **Books** (only on a device whose GitHub token can read
+the private repository; Settings › Sync and your books). Practice holds
 Cards (Leitner review), My lists (words added from any card go to the list of the page you are on), Vocabulary
 (search in characters, any spelling, pinyin or English) and Drills. Characters: simplified by default, traditional
 in Settings. Progress, lists and book notes sync through Google Drive.
@@ -77,21 +76,12 @@ Qian's pinyin is generated with his "new speakers" rules (əʔ and ᴀʔ both wr
 - chinese-dialect-lexicons (`data/raw/zaonhe.txt`): no licence file in the repository; it is built from the sources above and wugniu.com. Ask the author before publishing the app widely.
 - jieba (`data/raw/jieba_dict.txt`): MIT. Word frequencies only.
 
-## Reader: 《弄堂》 (胡宝谈, 2011)
+## Sync and your books
 
-The Read tab opens the first novel written in Shanghainese, chapter by chapter. The app contains **no text of the novel**: the reader loads their own .epub once, and it stays in their browser. Each prepared chapter ships a pack with the word boundaries, the author's bracketed readings and an English translation, matched to the reader's text by a fingerprint per paragraph.
-
-To prepare a chapter: put your copy at `reader/longtang/book.epub`, add the chapter's words to `reader/longtang/glossary.tsv` (lines starting with `!` stop the splitter from gluing words together), write `reader/longtang/chNN.txt` (one English line per paragraph), rebuild. The book is under copyright: the epub, the translations and `packs.json` are in `.gitignore`. Keep them in a private repo, or out of git.
-
-## Google Drive
-
-On the hosted site the Read page signs in to Google and uses the Drive's hidden app folder, with the same Google client as 书架 Shūjià (same site, tbrapor-arch.github.io). The two apps share that folder: a 弄堂 epub imported in Shūjià is found here. Sy-zy keeps there `syzy-state.json` (lessons done, review deck, book notes, chapters read), `syzy-longtang.epub` (if you loaded the book here) and `syzy-longtang-pack.json` (the study pack).
-
-In the claude.ai version, the page cannot sign in to Google itself: it uses your Google Drive connector, finds a 弄堂 .epub in your Drive and can save your copy there.
-
-## Public and private builds
-
-`app/index.html` and the root `index.html` are public: they hold no text derived from the novel. The build also writes, ignored by git, `app/data.private.js` and `app/artifact.html` (with the English translations, for the private claude.ai version) and `reader/longtang/syzy-longtang-pack.json`, the study pack to load once in the hosted app.
+Settings › *Sync and your books* takes one fine-grained GitHub token (Repository access: only `syzy-private`,
+Contents: Read-only; Account permissions: Gists: Read and write). Progress, lists and book notes are kept in a secret
+gist `syzy-progress.json` and merged on every device, as in Tsheh-tû. The same token opens the optional private
+module: your own books (Books tab) and the book course. Nothing of them is in this repository or the published page.
 
 ## Next
 

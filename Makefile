@@ -2,10 +2,12 @@
 # make app     app/src + style + data -> app/dist/index.html (fetches the fonts once, see data/fetch_fonts.sh)
 # make site    app/dist -> _site/ (what GitHub Pages publishes)
 # make lint    check the lessons
+# make vocab   the common-vocabulary list -> data/build/core_vocab.tsv
+# make coverage  what the lessons cover, what to teach next (PRIVATE=../syzy-private adds the books' ranking)
 # make smoke   open the built app headless, visit every page (needs playwright + Chrome)
 PY = python3 -I
 
-.PHONY: all db app site lint test smoke
+.PHONY: all db app site lint test smoke vocab coverage
 all: db app
 
 db:
@@ -26,3 +28,9 @@ test:
 
 smoke:
 	python3 tools/smoke.py
+
+vocab:
+	$(PY) tools/core_vocab.py
+
+coverage: vocab
+	$(PY) tools/coverage.py $(TOP) $(if $(PRIVATE),--private $(PRIVATE))

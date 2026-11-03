@@ -1,0 +1,3110 @@
+# Common vocabulary (step A: jieba ranks carried to the Shanghainese word). Built by tools/core_vocab.py.
+# rank	word	type	say	english
+1	了	same		(change, completed action)
+2	是	same		to be
+3	辣	sh		at, in; (doing) now
+4	辣辣	sh		is there; (doing) now
+5	在	md	辣、辣辣	to exist; to be alive; (of sb or sth) to be (located) at
+6	搭	sh		and, with
+7	和	md	搭	
+8	有	same		to have; there is
+9	伊	sh		he, she; him, her
+10	他	md	伊	(third-person singular) (since the early 20th century, usu. male) he; him; his; 
+11	勿	sh		not
+12	不	md	勿	no; not so; (bound form) not; un-
+13	我	same		I, me
+14	个	ff		(possessive, like 的; also the measure word)
+15	的	md	个	of; ~'s (possessive particle); (used after an attribute when it modifies a noun)
+16	人	same		person
+17	也	same		also
+18	为	lit		as (in the capacity of); to take sth as
+19	就	same		just, right; then
+20	搿	sh		this
+21	这	md	搿	(pronoun) this; these; (bound form) this; the (followed by a noun)
+22	上	same		used in 上聲|上声[shang3 sheng1]
+23	年	same		
+24	中	same		(bound form) China; Chinese
+25	侬	sh		you (one person)
+26	你	md	侬	you (informal, as opposed to courteous 您[nin2])
+27	讲	sh		to speak, to say
+28	话	sh		to say; speech
+29	说	md	讲、话	to persuade
+30	一	same		one
+31	到	same		to reach; to arrive; to leave for; to go to
+32	都	same		
+33	等	same		to wait
+34	着	sh		to wear, put on (clothes, shoes)
+35	对	same		right; correct; towards; at; for
+36	来	same		to come
+37	与	lit		
+38	地	same		-ly; structural particle: used before a verb or adjective, linking it to precedi
+39	还	same		still; also
+40	要	same		to want; will
+41	又	same		(once) again; also
+42	大	same		big
+43	而	lit		and; as well as
+44	一个	same		a; an; one; the whole (afternoon, summer vacation etc)
+45	之	lit		(possessive particle, literary equivalent of 的[de5]); him
+46	道	same		road; path (CL:條|条[tiao2],股[gu3]); (bound form) way; reason; principle
+47	以	lit		
+48	得	same		to obtain; to get
+49	她	md	伊	she
+50	后	same		
+51	去	same		to go
+52	将	lit		will; shall
+53	埃	sh		that
+54	那	md	埃	
+55	但	same		but; yet; however; still; merely; only; just
+56	从	same		
+57	月	same		moon; month
+58	下	same		down; downwards
+59	拿	sh		to take; (before an object: like 把)
+60	把	md	拿	to hold; to grasp; to hold a baby in position to help it urinate or defecate
+61	被	lit		quilt; to cover (with)
+62	于	lit		
+63	时	same		
+64	只	same		only
+65	多	same		many
+66	阿拉	sh		we, us
+67	我们	md	阿拉	we; us; ourselves; our
+68	过	same		(have done); to pass; to celebrate (a birthday)
+69	可	same		(prefix) can; may; able to; -able; to approve; to permit
+70	伊拉	sh		they, them
+71	他们	md	伊拉	they; them
+72	并	lit		and; furthermore
+73	能	same		
+74	好	same		good; well
+75	会	same		can; will
+76	自家	sh		oneself; one's own
+77	自己	md	自家	oneself; (attributive) one's own
+78	呒没	sh		there isn't; haven't; not have
+79	没有	md	呒没	haven't; hasn't
+80	出	same		to go out; to come out; to arise; to occur
+81	国家	same		country; nation; state
+82	或	same		maybe; perhaps
+83	日	same		(bound form) sun; day
+84	由	lit		to follow; from
+85	里	same		
+86	用	same		to use; to make use of; to employ; (coverb) with; using
+87	所	lit		actually; place
+88	向	lit		
+89	已	lit		already; to stop
+90	其	lit		his; her
+91	可以	same		can; may
+92	拨	sh		to give; to (someone)
+93	给	md	拨	to; for
+94	老	ff		very (before an adjective)
+95	很	md	老	very; quite; (also, often used before an adjective without intensifying its mean
+96	看	same		to look, to see
+97	使	same		to make; to cause
+98	前	same		front; forward
+99	新	same		new
+100	想	same		to want to; to think
+101	却	same		
+102	搿个	sh		this one; this
+103	这个	md	搿个	(pronoun) this; (adjective) this
+104	它	same		it
+105	最	same		
+106	啥	sh		what
+107	啥个	sh		what
+108	什么	md	啥、啥个	what?; something; anything
+109	见	same		to see
+110	起	same		to rise; to raise
+111	小	same		small
+112	高	same		
+113	更	same		to change or replace; to experience
+114	如	same		as; as if
+115	再	same		again; also
+116	才	same		ability; talent; sb of a certain type
+117	便	same		plain; informal
+118	进行	same		(of a process etc) to proceed; to be in progress; to be underway; (of people) to
+119	地方	same		region; regional (away from the central administration)
+120	没	same		(negative prefix for verbs) have not; not
+121	走	same		to walk; to leave
+122	做	same		to do, make
+123	让	same		to yield; to permit
+124	内	same		inside; inner
+125	及	lit		and; to reach
+126	勿是	sh		is not; no
+127	不是	md	勿是	no; is not
+128	听	same		smile (archaic)
+129	公司	same		company
+130	成	same		short name for Chengdu 成都[Cheng2 du1]
+131	各	lit		each; every
+132	事	same		matter; thing
+133	号	same		(bound form) to wail; to howl
+134	人民	same		the people
+135	至	lit		to arrive; most
+136	叫	same		to be called; to call
+137	社会	same		society
+138	两	same		two (of something)
+139	晓得	sh		to know
+140	知道	md	晓得	to know; to become aware of
+141	当	same		(onom.) dong; ding dong (bell)
+142	三	same		three
+143	本	same		(bound form) root; stem; (bound form) origin; source
+144	无	same		used in 南無|南无[na1 mo2]
+145	此	lit		this; these
+146	屋里	sh		home
+147	家	md	屋里	used in 傢伙|家伙[jia1 huo5] and 傢俱|家俱[jia1 ju4]
+148	长	same		long; (bound form) length
+149	市	same		market; city
+150	门	same		
+151	起来	same		to stand up; to get up
+152	地区	same		region; area (informal or geographical term); prefecture (in China's administrat
+153	正	same		first month of the lunar year
+154	技术	same		technology; technique; skill
+155	同	same		like; same
+156	重要	same		important; significant; major
+157	吃	ff		to eat; to drink; to smoke
+158	天	same		day; sky
+159	成为	same		to become; to turn into
+160	因为	same		because; owing to; on account of
+161	比	same		Belgium; Belgian
+162	米	same		
+163	外	same		outside; in addition
+164	研究	same		research; a study
+165	文化	same		culture; civilization
+166	企业	same		company; firm; enterprise; corporation
+167	即	lit		namely; that is
+168	分	same		to divide; to separate; to distribute; to allocate
+169	世界	same		world
+170	问	same		to ask; to inquire
+171	其中	same		among; in
+172	现在	same		now
+173	不能	same		cannot; must not
+174	打	same		to hit; to beat (eggs); to make (a call)
+175	一些	same		some; a few; a little; (following an adjective) slightly ...er
+176	时间	same		(concept of) time; (duration of) time
+177	自	same		(bound form) self; oneself; from; since
+178	副	same		secondary; auxiliary
+179	生产	same		to produce; to manufacture; to give birth to a child
+180	情况	same		circumstances; state of affairs; situation
+181	湖北	same		
+182	跟	same		to follow; with
+183	笑	same		
+184	则	lit		(literary) (conjunction used to express contrast with a previous clause) but; th
+185	关系	same		relation; relationship; connection; to concern; to involve; to affect
+186	像	same		to resemble; to be like
+187	生活	same		to live; life
+188	辰光	sh		time; when
+189	时候	md	辰光	time; length of time
+190	一种	same		one kind of; one type of
+191	可能	same		might (happen); possible
+192	学生	same		student
+193	石首	same		
+194	较	same		(bound form) to compare; (literary) to dispute
+195	一般	same		same; ordinary
+196	认为	same		to believe; to think; to consider; to feel
+197	由于	same		due to; as a result of
+198	国	same		
+199	死	same		to die; impassable
+200	省	same		to save; to economize; to be frugal; to omit; to delete; to leave out
+201	住	same		to live; to reside; to stay; to stop; to cease
+202	咾	sh		and so; (listing)
+203	所以	md	咾	therefore; as a result
+204	万	same		used in 万俟[Mo4 qi2]
+205	不同	same		different; distinct
+206	搿搭	sh		here
+207	这里	md	搿搭	
+208	学院	same		college; educational institute
+209	因	same		
+210	曾	lit		
+211	呢	same		(sentence-final particle) used in questions to link back to prior discourse or c
+212	作为	same		one's conduct; deed
+213	手	same		hand; (formal) to hold
+214	会议	same		meeting; conference
+215	达	same		
+216	头	same		head; hair style
+217	但是	same		but; however
+218	作	same		(bound form) worker; (bound form) workshop
+219	该	lit		should; ought to
+220	女	same		female; woman
+221	开	same		to open (transitive or intransitive); (of ships, vehicles, troops etc) to start
+222	路	same		
+223	部分	same		part; portion; piece; Taiwan pr. [bu4fen4]
+224	约	same		to weigh in a balance or on a scale
+225	哪能	sh		how
+226	怎么	md	哪能	how?; what?
+227	军	same		(bound form) army; military
+228	市场	same		marketplace; market; bazaar; (economics) market
+229	组织	same		to organize; organization
+230	称	same		to fit; to match; to suit; (coll.) to have; to possess
+231	名	same		name; noun (part of speech)
+232	二	same		two (counting)
+233	每	same		each; every
+234	属	same		category; genus (taxonomy)
+235	啥人	sh		who
+236	谁	md	啥人	who
+237	受	same		to receive; to accept
+238	其他	same		other; (sth or sb) else
+239	带	same		to bring, carry
+240	进	same		to go forward; to advance
+241	许多	same		many; a lot of
+242	先	same		beforehand; first; earlier; at first; originally
+243	吧	same		bar (loanword) (serving drinks, or providing Internet access etc); to puff (on a
+244	县	same		county; (Japan) prefecture
+245	之间	same		(after a noun) between; among; amid; (used after certain bisyllabic words to for
+246	心	same		heart; mind
+247	占	same		
+248	处	same		to reside; to live
+249	区	same		
+250	忒	sh		too (much)
+251	太	md	忒	highest; greatest
+252	点	same		to order (a dish); o'clock; a bit
+253	水	same		water
+254	南	same		
+255	发生	same		to happen; to occur; to take place; to arise (e.g. 發生問題|发生问题[fa1 sheng1 wen4 ti2
+256	张	same		(measure word for flat things: tickets, photos)
+257	教育	same		to educate; to teach
+258	要求	same		to request; to require
+259	今	same		now; the present time
+260	间	same		(measure word for rooms)
+261	总	same		(bound form) general; overall; to sum up
+262	山	same		
+263	请	same		to ask; to invite
+264	者	same		(after a verb or adjective) one who (is) ...; (after a noun) person involved in 
+265	党	same		
+266	段	same		
+267	法	same		
+268	连	same		
+269	人口	same		population; people
+270	站	same		stop, station
+271	第	same		(prefix indicating ordinal number, as in 第六[di4 liu4] "sixth"); (literary) grade
+272	共	same		common; general
+273	参加	same		to participate; to take part; to join
+274	而且	same		(not only ...) but also; moreover; in addition; furthermore
+275	另	same		other; another
+276	生	same		to grow; to give birth; to produce; to be born; to arise; to occur
+277	一样	same		same; like
+278	各种	same		every kind of; all kinds of; various
+279	全	same		
+280	提出	same		to raise (an issue); to propose
+281	来事	sh		to be able; good, capable
+282	行	md	来事	(bound form) row; line; (bound form) line of business; trade; profession
+283	倒	same		to fall; to collapse; to lie horizontally; to fail; to go bankrupt
+284	快	same		fast
+285	行政	same		administration; (attributive) administrative; executive
+286	派	same		used in 派司[pa1 si5]
+287	啊	same		(soft question or surprise)
+288	制度	same		system (e.g. political, adminstrative etc); institution
+289	㑚	sh		you (several people)
+290	你们	md	㑚	you (plural)
+291	相	same		
+292	伐	sh		(yes–no question particle)
+293	吗	md	伐	(coll.) what?
+294	说道	same		to state; to say (the quoted words)
+295	为了	same		for; for the purpose of; in order to
+296	应该	same		ought to; should; must
+297	经	same		
+298	按	same		to press; to push
+299	寻	sh		to look for
+300	找	md	寻	to try to find; to look for
+301	口	same		mouth; classifier for things with mouths (people, domestic animals, cannons, wel
+302	均	lit		(bound form) equal; uniform; even; (literary) without exception; all
+303	种	same		seed; species
+304	增长	same		to grow; to increase
+305	字	same		letter; symbol
+306	自然	same		nature; natural
+307	入	same		to enter; to go into; to join; to become a member of
+308	大学	same		the Great Learning, one of the Four Books 四書|四书[Si4 shu1] in Confucianism
+309	真	same		really; truly
+310	城	same		city walls; city
+311	马	same		abbr. for Malaysia 馬來西亞|马来西亚[Ma3 lai2 xi1 ya4]
+312	干	same		
+313	人员	same		staff; crew
+314	计划	same		plan; project
+315	王	same		
+316	不会	same		improbable; unlikely
+317	产生	same		to arise; to come into being; to come about; to give rise to; to bring into bein
+318	时期	same		period; phase
+319	据	same		
+320	当时	same		then; at that time
+321	大家	same		everyone; influential family
+322	四	same		four
+323	子	same		son; child
+324	改革	same		reform; to reform
+325	书	same		abbr. for 書經|书经[Shu1 jing1]
+326	介末	sh		so, in that case, then
+327	那么	md	介末	like that; in that way; to that extent; (before a number) ... or so; about ...
+328	物事	sh		thing, stuff
+329	东西	md	物事	east and west
+330	能力	same		capability; ability
+331	革命	same		to withdraw the mandate of heaven (and transition to a new dynasty) (original me
+332	仍	lit		still; yet; to remain
+333	一直	same		straight on; all the time
+334	难	same		difficult
+335	还有	same		there still remain(s); there is (or are) still; in addition
+336	得到	same		to get; to obtain; to receive
+337	运动	same		to move; to exercise
+338	西	same		the West; abbr. for Spain 西班牙[Xi1 ban1 ya2]
+339	东	same		
+340	少	same		few
+341	对于	same		regarding; as far as (sth) is concerned; with regard to
+342	次	same		next in sequence; second
+343	些	same		classifier indicating a small amount or small number greater than 1: some, a few
+344	举行	same		to hold (a meeting, ceremony etc)
+345	钞票	sh		money; banknotes
+346	铜钿	sh		money
+347	钱	md	钞票、铜钿	
+348	北	same		north; (classical) to be defeated
+349	气	same		gas; air; smell
+350	近	same		near
+351	杀	same		to kill; to slay; to murder; to attack; to weaken; to reduce
+352	单位	same		unit (of measure); unit (group of people as a whole)
+353	学	same		to learn
+354	小人	ff		child
+355	孩子	md	小人	child
+356	过去	same		(in the) past; former; previous; to go over; to pass by
+357	不过	same		only; merely
+358	强	same		
+359	条件	same		condition; circumstance; term; factor; requirement; prerequisite; qualification
+360	写	same		to write
+361	学堂	sh		school
+362	学校	md	学堂	school
+363	既	same		already; since
+364	若	lit		used in 般若[bo1 re3]; used in 蘭若|兰若[lan2 re3]
+365	往	same		to go (in a direction); to
+366	原	same		(Japanese surname) Hara
+367	提高	same		to raise; to increase
+368	发	same		to send out; to show (one's feeling)
+369	任	same		
+370	美	same		(bound form) the Americas (abbr. for 美洲[Mei3 zhou1]); (bound form) USA (abbr. fo
+371	未	same		not yet; did not
+372	提供	same		to offer; to supply
+373	杨	same		
+374	或者	same		or; possibly; maybe; perhaps
+375	下来	same		to come down
+376	兵	same		soldiers; a force
+377	分别	same		to part; to leave each other; to distinguish; to tell apart
+378	十分	same		very; completely
+379	一切	same		everything; every
+380	那些	same		those
+381	非	same		abbr. for 非洲[Fei1 zhou1], Africa
+382	除	same		to get rid of; to remove
+383	边	same		side; edge
+384	位	same		(polite measure word for people)
+385	然后	md	咾	then; after that; afterwards
+386	增加	same		to raise; to increase
+387	鱼	same		
+388	获得	same		to obtain; to receive; to get
+389	设	same		to set up; to put in place; (math.) given; suppose; if
+390	一声	same		(a word, a moment)
+391	觉得	same		to think that ...; to feel that ...; to feel (uncomfortable etc)
+392	一道	sh		together
+393	一起	md	一道	(in) the same place; together; in company (with)
+394	今朝	sh		today
+395	今天	md	今朝	today; the present time; now
+396	交关	sh		very; a lot
+397	邪气	sh		terribly, really
+398	非常	md	交关、邪气	very; really; unusual; extraordinary
+399	州	same		prefecture; (old) province
+400	比较	same		to compare; to contrast
+401	定	same		to fix; to set; to make definite; to subscribe to (a newspaper etc); to book (ti
+402	越	same		the more
+403	身	same		body; life
+404	重	same		to repeat; repetition
+405	声	same		sound; voice
+406	五	same		five
+407	有些	same		some; somewhat; rather; a bit
+408	低	same		low; beneath
+409	内容	same		content; substance; details
+410	坐	same		to sit; to take (a bus, the metro)
+411	儿	same		child; son
+412	实行	same		to implement; to carry out
+413	思想	same		thought; thinking
+414	事体	sh		matter, business
+415	事情	md	事体	affair; matter; thing; business
+416	极	same		extremely; pole (geography, physics)
+417	甚至	same		even; so much so that
+418	任务	same		mission; assignment; task; duty; role
+419	放	same		to put; to place
+420	有人	same		someone; people
+421	突然	same		sudden; abrupt; unexpected
+422	不断	same		unceasing; uninterrupted
+423	变化	same		(intransitive) to change; to vary; change; variation
+424	红	same		
+425	朝	same		abbr. for 朝鮮|朝鲜[Chao2 xian3] Korea
+426	爱	same		to love; to be fond of; to like; affection
+427	知	same		to know; to be aware
+428	主	same		owner; master
+429	不知	same		not to know; unaware
+430	覅	sh		don't (do it)
+431	勿要	sh		do not want; don't
+432	不要	md	覅、勿要	don't!; must not
+433	期间	same		period of time; time
+434	位于	same		to be located at; to be situated at
+435	报	same		to report; to inform; to announce; to respond; to reply
+436	那个	same		that one; that thing
+437	类	same		kind; type; class; category; (classifier) kind; type
+438	执行	same		to implement; to carry out
+439	先生	same		teacher; gentleman; sir; mister (Mr.)
+440	解决	same		to solve; to resolve; to settle (a problem); to eliminate; to wipe out (an enemy
+441	早	same		early; morning
+442	建筑	same		to construct; building
+443	能够	same		to be capable of; to be able to
+444	自治区	same		autonomous region – a provincial-level administrative division of China with sel
+445	虽	same		although; even though
+446	面	same		noodles
+447	称为	same		to be called; to be known as; to call it "..."
+448	结构	same		structure; composition
+449	一眼	sh		a bit
+450	一点	md	一眼	a bit; a little bit; (used in negative expressions) (not) the least bit
+451	别	same		
+452	初	same		(bound form) at first; initially; (bound form) first; early
+453	结果	same		to bear fruit
+454	一下	same		(after a verb) a bit; a little (indicating brief duration, or softening the tone
+455	主任	same		director; head
+456	性	same		nature; character
+457	关于	same		pertaining to; concerning
+458	型	same		mold; type
+459	负责	same		to be responsible for; to be in charge of; to bear responsibility for; conscient
+460	艺术	same		art
+461	部	same		ministry; department
+462	送	same		to send; to deliver; to transmit; to give (as a present)
+463	于是	same		thereupon; as a result; consequently; thus; hence
+464	远	same		far
+465	反	same		contrary; in reverse
+466	学习	same		to learn; to study
+467	合作	same		to cooperate; to collaborate; to work together
+468	指	same		finger; to point at or to
+469	乡	same		country or countryside; native place
+470	方	same		
+471	几个	same		a few; several
+472	伊搭	sh		there
+473	那里	md	伊搭	there; that place
+474	甚	same		
+475	完	same		to finish; to be over
+476	常	same		
+477	意	same		(bound form) idea; thought; meaning; sense; (bound form) intention; feeling; inc
+478	队	same		squadron; team
+479	精神	same		spirit; mind
+480	涓	same		
+481	式	same		type; form
+482	全省	same		the whole province
+483	当然	same		only natural; as it should be
+484	左	same		
+485	拉	same		to pull; to play (a bowed instrument)
+486	个人	same		an individual; oneself; (attributive) personal; one's own
+487	花	same		
+488	电	same		lightning; electricity
+489	重点	same		to recount (e.g. results of election); to re-evaluate
+490	及其	same		(conjunction linking two nouns) and its ...; and their ...; and his ...; and her
+491	条	same		strip; item
+492	新闻	same		news
+493	剑	same		double-edged sword; classifier for blows of a sword
+494	动	same		(of sth) to move; to set in movement
+495	湖	same		lake
+496	相关	same		related; relevant
+497	国内	same		domestic; internal (to a country)
+498	分布	same		to scatter; to distribute
+499	河	same		river (CL:條|条[tiao2],道[dao4]); (bound form) the Yellow River
+500	白	same		white
+501	信息	same		information; news; message
+502	官	same		
+503	师	same		
+504	仅	same		barely; only
+505	重大	same		great; important
+506	教	same		
+507	哪	same		how; which
+508	回来	same		to return; to come back
+509	变	same		to change; to become different
+510	图	same		diagram; picture
+511	范围	same		range; scope
+512	平	same		
+513	其实	same		actually; in fact; really
+514	不仅	same		not just; not limited to; (as a correlative conjunction) not only (..., but also
+515	取得	same		to acquire; to get; to obtain
+516	整个	same		whole; entire
+517	为主	same		to rely mainly on; to attach most importance to
+518	府	same		seat of government; government repository (archive)
+519	热	same		hot
+520	制	same		system; to control
+521	望	same		full moon; to hope
+522	岁	same		years old
+523	地位	same		position; status
+524	转	same		
+525	建	same		to establish; to found
+526	命	same		life; fate
+527	劳动	same		work; toil
+528	基地	same		al-Qaeda
+529	传统	same		tradition; traditional
+530	管	same		
+531	场	same		threshing floor; classifier for events and happenings: spell, episode, bout
+532	跑	ff		to walk, go (on foot)
+533	法国	same		France
+534	穿	md	着	to bore through; to pierce; to perforate; to go through (e.g. a tunnel); to cros
+535	众	same		abbr. for 眾議院|众议院[Zhong4 yi4 yuan4], House of Representatives
+536	比赛	same		competition (sports etc); match
+537	黑	same		short name for Heilongjiang 黑龍江|黑龙江[Hei1 long2 jiang1]
+538	土地	same		land; soil
+539	规模	same		scale; scope; extent
+540	怕	same		
+541	风	same		wind; news
+542	眼睛	same		eye
+543	信	same		letter; mail
+544	置	same		to install; to place
+545	急	same		urgent; pressing
+546	身上	same		on the body; at hand
+547	专家	same		expert; specialist
+548	分析	same		to analyze; analysis
+549	加强	same		to reinforce; to strengthen; to enhance
+550	不到	same		not to arrive; not reaching
+551	石	same		abbr. for Shijiazhuang 石家莊|石家庄[Shi2 jia1 zhuang1], the capital of Hebei
+552	黄	same		
+553	镇	same		to press down; to calm
+554	取	same		to take; to get
+555	告诉	same		to press charges; to file a complaint
+556	光	same		light; ray (CL:道[dao4]); bright; shiny
+557	明白	same		clear; obvious; unequivocal; sensible; reasonable
+558	竟	same		unexpectedly; actually
+559	处理	same		to handle; to deal with; to punish
+560	力	same		
+561	皇上	same		the emperor; Your majesty the emperor
+562	数	same		to count; to count as; to regard as
+563	曰	same		to speak; to say
+564	亲	same		parent; one's own (flesh and blood)
+565	传	same		to pass on; to spread
+566	深	same		
+567	随着	same		along with; in the wake of
+568	心里	same		chest; heart; mind
+569	脸	same		face
+570	终于	same		at last; in the end
+571	大量	same		great amount; large quantity
+572	买	same		to buy
+573	人物	same		person; personage; figure (esp. sb of importance); character (in a play, novel e
+574	接	same		to receive; to answer (the phone)
+575	共同	same		common; joint
+576	茶	same		tea
+577	下去	same		to go down; to descend
+578	且	lit		and; moreover
+579	多少	same		how much, how many
+580	严重	same		grave; serious; severe; critical
+581	词条	same		entry (in a dictionary)
+582	声音	same		sound; voice
+583	意见	same		idea; opinion
+584	办	same		to take care of (a matter); to deal with (a task, procedure etc); to organize (a
+585	过来	same		to come over; to manage
+586	今日	same		today
+587	待	same		to stay; to remain
+588	文	same		
+589	提	same		used in 提防[di1 fang5] and 提溜[di1 liu5]
+590	工人	same		worker
+591	系	same		to connect; to relate to
+592	汽车	same		car; automobile
+593	量	same		to measure
+594	敌人	same		enemy
+595	忙	same		busy
+596	说话	same		to speak; to say
+597	尽	same		to the greatest extent; (when used before a noun of location) furthest or extrem
+598	先后	same		early or late; first and last; priority; in succession; one after another
+599	力量	same		power; force; strength
+600	喝	md	吃	to drink
+601	开发	same		to exploit (a resource); to open up (for development); to develop
+602	看见	same		to see; to catch sight of
+603	是否	same		whether (or not); if
+604	郡	same		canton; county
+605	车	same		
+606	出去	same		to go out
+607	今年	same		this year
+608	程度	same		degree; level; extent
+609	消息	same		(piece of) news; information; message
+610	还是	same		still (as before); had better
+611	啦	same		(onom.) sound of singing, cheering etc; (phonetic)
+612	刚	same		(literary) hard; firm; strong; exactly; precisely
+613	机会	same		opportunity; chance
+614	级	same		level; grade
+615	背	same		
+616	父亲	same		father
+617	欢喜	sh		to like
+618	喜欢	md	欢喜	to like; to be fond of; to be happy; to be pleased
+619	联系	same		
+620	几乎	same		almost; nearly; practically
+621	离	same		mythical beast (archaic)
+622	故	same		happening; instance
+623	言	same		words; speech
+624	大会	same		general assembly; general meeting
+625	海	same		
+626	不可	same		cannot; should not; must not
+627	体	same		used in 體己|体己[ti1 ji5]; Taiwan pr. [ti3]
+628	座	same		seat; base; stand
+629	酒	same		wine (esp. rice wine); liquor
+630	兄弟	same		brothers; younger brother
+631	通	same		to go through; to know well
+632	呀	same		ah (used to express surprise); (onom.) creaking
+633	阶段	same		stage; section
+634	李	same		
+635	令	same		used in 脊令[ji2 ling2]; used in 令狐[Ling2 hu2] (Taiwan pr. [ling4])
+636	飞	same		to fly
+637	为啥	sh		why
+638	为什么	md	为啥	why?; for what reason?
+639	感到	same		to feel; to sense; to perceive
+640	流	same		to flow; to disseminate
+641	无法	same		unable to; incapable of
+642	德	same		Germany; German
+643	似乎	same		it seems; seemingly; as if
+644	斗争	same		a struggle; fight
+645	足	same		excessive
+646	瞧	same		to look at; to see
+647	人类	same		humanity; human race
+648	合	same		100 ml; one-tenth of a peck
+649	右	same		(bound form) right; right-hand side; (bound form) (politics) right of center
+650	目的	same		purpose; aim; goal; target; objective
+651	罢	same		to stop; to cease
+652	儿子	same		son
+653	相同	same		identical; same
+654	亦	lit		also
+655	以前	same		before; formerly
+656	著名	same		famous; noted
+657	改	same		to change; to alter
+658	就是	same		only that; it's just that
+659	刀	same		
+660	破	same		broken; damaged
+661	朋友	same		friend
+662	龙	same		
+663	需	same		to require; to need
+664	第二	same		second; number two
+665	帮助	same		assistance; aid; to help; to assist
+666	宽	same		
+667	委员	same		committee member
+668	行动	same		operation; action
+669	必	same		certainly; must
+670	毛病	ff		illness; fault, bad habit
+671	病	md	毛病	illness; disease
+672	随	same		
+673	须	same		must; to have to
+674	居	same		
+675	呈	same		to present to a superior; memorial
+676	行为	same		action; conduct; behavior; activity
+677	结束	same		to end; to finish; to conclude
+678	介绍	same		to introduce (sb to sb); to give a presentation
+679	汉	same		Han ethnic group; Chinese (language)
+680	认得	sh		to know (someone, a character)
+681	认识	md	认得	to know; to recognize
+682	群	same		
+683	算	same		to calculate; to figure out; to include; to count in
+684	战	same		to fight; fight
+685	眼	same		eye (CL:隻|只[zhi1],雙|双[shuang1]); (often used with 一[yi1]) a look; a glance
+686	人数	same		number of people
+687	姑娘	same		girl; young woman
+688	安	same		
+689	家庭	same		family; household
+690	靠	same		to lean against or on; to stand by the side of
+691	更加	same		more (than sth else); even more
+692	回答	same		to reply; to answer; reply; answer
+693	那样	same		that kind; that sort
+694	市长	same		mayor
+695	落	same		to leave out; to be missing
+696	项	same		
+697	首	same		head; chief
+698	人才	same		talent; talented person
+699	掌	same		palm of the hand; sole of the foot
+700	街	same		street
+701	容易	same		easy; straightforward; likely; liable to; apt to
+702	长期	same		long-term; for a protracted period
+703	铁	same		
+704	一句	same		a line of verse; a sentence
+705	物	same		(bound form) thing; (literary) the outside world as distinct from oneself; peopl
+706	大道	same		main street; avenue
+707	扩大	same		to expand; to enlarge
+708	官员	same		official (in an organization or government); administrator
+709	调整	same		to adjust; to revise; to reorganize
+710	联合	same		to combine; to join
+711	并且	same		and; besides; moreover; furthermore; in addition
+712	小菜	ff		dishes, groceries
+713	菜	md	小菜	vegetable; greens (CL:棵[ke1]); dish (of food) (CL:樣|样[yang4],道[dao4],盤|盘[pan2])
+714	现	same		to appear; present
+715	率	same		(bound form) ratio; rate; proportion
+716	仍然	same		still; as before; yet
+717	拥有	same		to have; to possess; to own
+718	火	same		
+719	专门	same		specialized; dedicated (to a particular field or purpose); specially; specifical
+720	桥	same		bridge
+721	附近	same		nearby; neighboring; (in the) vicinity (of); neighborhood
+722	股	same		thigh; part of a whole; portion of a sum
+723	象	same		elephant; shape
+724	师父	same		used for 師傅|师傅 (in Taiwan); master
+725	古	same		
+726	结合	same		to combine; to link
+727	跳	same		to jump; to hop
+728	清爽	sh		clean, neat; clear
+729	清楚	md	清爽	clear; distinct
+730	说明	same		to explain; to illustrate
+731	某	lit		some; a certain
+732	惊	same		to startle; to be frightened
+733	搞	same		to do; to make
+734	药	same		medicine
+735	冲	same		(of water) to dash against; to mix with water
+736	双	same		
+737	六	same		six
+738	情	same		(bound form) feelings; emotion; sentiment; passion; (bound form) situation; cond
+739	物质	same		matter; substance
+740	鄂	same		short name for Hubei 湖北[Hu2 bei3]
+741	脱	sh		(after a verb: gone, off, away)
+742	掉	md	脱	to fall; to drop
+743	不少	same		many; quite a few; a good number of
+744	中学	same		middle school
+745	立	sh		to stand
+746	调查	same		investigation; inquiry
+747	乱	same		in confusion or disorder; in a confused state of mind
+748	几	same		how many; a few
+749	人家	same		household; dwelling
+750	村	same		village; (dialect) to scold
+751	重新	same		again; once more; re-
+752	分为	same		to divide sth into (parts); to subdivide
+753	知识	same		knowledge; intellectual
+754	别人	same		other people; others; other person
+755	综合	same		comprehensive; composite
+756	收	same		to receive; to accept
+757	动物	same		animal
+758	速度	same		speed; rate; velocity; (music) tempo
+759	半	same		half; semi-
+760	用于	same		to use in; to use on; to use for
+761	女人	same		woman
+762	方向	same		direction; orientation
+763	导弹	same		(guided) missile
+764	供	same		to provide; to supply; to be for (the use or convenience of)
+765	行业	same		trade; profession; industry; business
+766	地理	same		geography
+767	功能	same		function; capability
+768	巨大	same		huge; immense; enormous; gigantic
+769	母亲	same		mother
+770	质量	same		(physics) mass; quality (i.e. degree of excellence)
+771	九	same		nine
+772	命令	same		order; command
+773	活	same		to live; alive
+774	和平	same		peace; peaceful
+775	监督	same		to supervise; to oversee; to inspect
+776	敢	same		to dare; daring
+777	身体	same		the body; one's health
+778	余	same		
+779	获	same		(literary) to catch; to capture; (literary) to get; to obtain; to win
+780	兼	same		double; twice
+781	十	same		ten
+782	特	same		special; unique
+783	位置	same		position; place
+784	逐渐	same		gradually
+785	船	same		
+786	顶	same		apex; crown of the head
+787	从而	same		thus; thereby
+788	断	same		to break; to snap
+789	感觉	same		feeling; impression; sensation; to feel; to perceive
+790	似	same		used in 似的[shi4 de5]
+791	毛	same		
+792	机场	same		airport; airfield; (slang) service provider for Shadowsocks or similar software 
+793	调	same		to transfer; to move (troops or cadres)
+794	吴	same		area comprising southern Jiangsu, northern Zhejiang and Shanghai; name of states
+795	形	same		to appear; to look
+796	线	same		
+797	银行	same		bank
+798	忽	same		
+799	书记	same		secretary (chief official of a branch of a socialist or communist party); clerk
+800	七	same		seven
+801	反应	same		to react; to respond
+802	语言	same		language
+803	久	same		(of a period of time) long
+804	史	same		
+805	当年	same		in those days; back then; in those years; to be in the prime of life
+806	以下	same		that level or lower; that amount or less
+807	困难	same		difficult; challenging
+808	辖	same		linchpin (used to fasten a wheel to an axle); (bound form) to govern; to have ju
+809	英	same		United Kingdom; British
+810	事件	same		incident; event
+811	卖	same		to sell
+812	哪里	same		where; which
+813	血	same		
+814	画	same		to draw; to paint; picture; painting (CL:幅[fu2],張|张[zhang1])
+815	轻	same		light; easy
+816	实在	same		really; actually
+817	见到	same		to see
+818	某些	same		some; certain (things)
+819	皆	lit		all; each and every
+820	治	same		to rule; to govern
+821	其它	same		(adjective) other
+822	问道	same		to ask the way; to ask
+823	权	same		
+824	哭	same		to cry; to weep
+825	空	sh		free, not busy
+826	记	same		to record; to note
+827	多年	same		many years; for many years
+828	男	same		(bound form) male; baron, the lowest of the five ranks of nobility 五等爵位[wu3 deng
+829	广场	same		public square; plaza
+830	八	same		eight
+831	解释	same		explanation; to explain
+832	队伍	same		troops; army; ranks; contingent; force; staff; team
+833	教授	same		to teach (a subject)
+834	喜	same		to be fond of; to like
+835	论	same		abbr. for 論語|论语[Lun2 yu3], The Analects (of Confucius)
+836	伤	same		to injure; injury
+837	架	same		to support; frame
+838	归	same		
+839	男人	same		man
+840	退	same		to retreat; to withdraw; to reject; to return (sth)
+841	减少	same		to lessen; to decrease; to reduce; to lower
+842	考生	same		exam candidate; student whose name has been put forward for an exam
+843	当地	same		local
+844	游	same		
+845	实	same		real; true
+846	多种	same		many kinds of; multiple; diverse; multi-
+847	差	same		difference; discrepancy; (math.) difference (amount remaining after a subtractio
+848	各地	same		in all parts of (a country); various regions
+849	姓	same		family name; surname; to be surnamed ...
+850	生物	same		organism; living creature; life form; (attributive) biological; bio-
+851	朱	same		
+852	网	same		net; web; network
+853	皮	same		
+854	刺	same		(onom.) whoosh
+855	睡	same		to sleep; to lie down
+856	尤其	same		especially; particularly
+857	选	same		to choose; to pick
+858	一边	same		one side; either side
+859	科	same		branch of study; administrative section
+860	机械	same		machine; machinery
+861	关	same		
+862	化	same		
+863	浜	same		stream; creek
+864	参与	same		to participate (in sth)
+865	充分	same		ample; sufficient
+866	骂	same		to scold; to abuse
+867	从事	same		to go for; to engage in
+868	尽管	same		despite; although
+869	又称	same		also known as
+870	底	same		(equivalent to 的 as possessive particle)
+871	便是	same		(emphasizes that sth is precisely or exactly as stated); precisely
+872	院	same		courtyard; institution
+873	含	same		to keep in the mouth; to contain
+874	洞	same		cave; hole
+875	生长	same		to grow; to grow up
+876	内部	same		interior; inside (part, section)
+877	机	same		
+878	简单	same		simple; not complicated
+879	数量	same		amount; quantity; quantitative
+880	色	same		color; look
+881	阿	same		prefix used before monosyllabic names, kinship terms etc to indicate familiarity
+882	装	same		adornment; to adorn
+883	文学	same		literature
+884	理	same		texture; grain (of wood)
+885	属于	same		to belong to; to fall under (a category)
+886	驻	same		to halt; to stay
+887	也许	same		perhaps; maybe
+888	产	same		to give birth; to reproduce
+889	铺	same		store
+890	领	same		neck; collar
+891	相信	same		to believe; to be convinced; to accept as true
+892	块	same		yuan (counting money)
+893	怎	same		how
+894	去年	same		last year
+895	封	same		
+896	谈	same		
+897	诸	same		
+898	觉	same		a nap; a sleep
+899	团	same		round; lump
+900	女儿	same		daughter
+901	图片	same		picture; photograph
+902	创造	same		to create; to bring about
+903	肉	same		meat; flesh
+904	期	same		period; cycle
+905	岛	same		
+906	大型	same		large; large-scale
+907	代	same		to be a substitute for; to act on behalf of; to replace; to substitute; generati
+908	短	same		short; brief
+909	旧	same		old; opposite: new 新
+910	嘴	same		mouth; beak
+911	挂	same		to hang; to suspend (from a hook etc); to hang up (the phone)
+912	留	same		
+913	教师	same		teacher
+914	民	same		
+915	较大	same		comparatively large
+916	看来	same		apparently; it seems that
+917	若干	same		a certain number or amount; how many?
+918	反映	same		to mirror; to reflect
+919	每个	same		each; every
+920	每天	same		every day
+921	敌	same		(bound form) enemy; (bound form) to be a match for; to rival
+922	食品	same		foodstuff; food; provisions
+923	京	same		short name for Beijing 北京[Bei3 jing1]; Gin or Jing, ethnic minority of China, de
+924	相当	same		equivalent to; appropriate
+925	诗	same		abbr. for Shijing 詩經|诗经[Shi1 jing1], the Book of Songs
+926	中间	same		the middle; the inside; in the middle; within; between; among
+927	夫人	same		lady; madam
+928	愿	same		honest and prudent
+929	墓	same		grave; tomb
+930	相对	same		relatively; opposite
+931	世	same		
+932	大陆	same		mainland China (reference to the PRC)
+933	不再	same		no more; no longer
+934	举	same		
+935	殿	same		palace hall
+936	帮	same		to help
+937	抓	same		to grab; to catch
+938	换	same		to exchange; to change (clothes etc)
+939	件	same		item; component
+940	应当	same		should; ought to
+941	求	same		to seek; to look for
+942	脚	same		foot; leg (of an animal or an object)
+943	老师	same		teacher
+944	担任	same		to hold a governmental office or post; to assume office of
+945	房	same		
+946	区域	same		area; region
+947	院长	same		the head of an institution whose name ends in 院[yuan4]; chair of a board; univer
+948	家里	same		home
+949	曾经	same		once; already
+950	宫	same		
+951	云	same		(classical) to say
+952	食	same		to eat; food
+953	错	same		
+954	牛	same		
+955	拜	same		to bow to; to pay one's respects; (bound form) to extend greetings (on a specifi
+956	饭	same		rice; meal
+957	推	same		to push; to cut
+958	创作	same		to create; to produce; to write; a creative work; a creation
+959	强调	same		to emphasize (a statement); to stress
+960	状	same		(bound form) form; appearance; shape; (bound form) state; condition
+961	复	same		to go and return; to return
+962	看看	same		to have a look
+963	句	same		
+964	分钟	same		minute
+965	真个	sh		really, truly
+966	真的	md	真个	really; truly; indeed; real; true; genuine
+967	克	same		abbr. for 克羅地亞|克罗地亚[Ke4 luo2 di4 ya4], Croatia; (Tw) abbr. for 克羅埃西亞|克罗埃西亚[Ke4 l
+968	救	same		
+969	天下	same		land under heaven; the whole world
+970	贸易	same		(commercial) trade
+971	不得	same		must not; may not
+972	境内	same		within the borders; internal (to a country, province, city etc)
+973	楼	same		
+974	胜	same		victory; success
+975	具	same		tool; device
+976	肯定	same		to be certain; to be positive; assuredly; definitely
+977	成绩	same		achievement; performance records
+978	音乐	same		music
+979	斗	same		abbr. for the Big Dipper constellation 北斗星[Bei3 dou3 xing1]
+980	回去	same		to go back (home)
+981	层	same		to pile on top of one another; layer; stratum
+982	难道	same		don't tell me ...; could it be that...?
+983	接着	same		to catch and hold on; to continue
+984	集	same		to gather; to collect
+985	著	same		to make known; to show
+986	片	same		disk; sheet
+987	奔	same		to hurry; to rush
+988	以为	same		to think; to believe (often with the implication that the belief is mistaken – u
+989	章	same		
+990	处于	same		to be in (some state, position, or condition)
+991	大臣	same		chancellor (of a monarchy); cabinet minister
+992	届	same		to arrive at (place or time); period
+993	高度	same		height; altitude
+994	社区	same		community; neighborhood
+995	木	same		
+996	身子	same		body; pregnancy
+997	怪	same		odd; strange; uncanny; (bound form) monster; supernatural being
+998	地面	same		floor; ground
+999	分子	same		
+1000	意思	same		idea; opinion
+1001	江	same		(bound form) Yangtze River; (bound form) Jiangsu Province (abbr. for 江蘇|江苏[Jiang
+1002	弟子	same		disciple; follower
+1003	未来	same		future; tomorrow
+1004	重视	same		to attach importance to sth; to value
+1005	抱	same		to hold; to carry (in one's arms)
+1006	到底	same		finally; in the end
+1007	职	same		office; duty
+1008	拍	same		to pat; to clap
+1009	各个	same		every; various
+1010	交	same		to hand over; to deliver; to pay (money); to turn over; to make friends
+1011	航空	same		aviation
+1012	表	same		exterior surface; family relationship via females
+1013	降	same		to drop; to fall
+1014	之下	same		under; beneath
+1015	田	same		
+1016	营	same		camp; barracks
+1017	修	same		
+1018	里向	sh		inside
+1019	里面	md	里向	
+1020	数学	same		mathematics
+1021	毕业	same		graduation; to graduate
+1022	竞争	same		to compete; competition
+1023	宗教	same		religion
+1024	比例	same		proportion; scale
+1025	考	same		to beat; to hit
+1026	适应	same		to adapt; to fit
+1027	员	same		(bound form) person engaged in a certain field of activity; (bound form) member
+1028	银	same		silver; silver-colored
+1029	故事	same		old practice
+1030	责任	same		responsibility; duty; liability
+1031	欲	same		desire; appetite
+1032	何	same		
+1033	将军	same		(common place name)
+1034	停	same		to stop; to halt
+1035	界	same		(bound form) boundary; border; (bound form) realm
+1036	粮食	same		foodstuff; cereals
+1037	解	same		
+1038	草	same		
+1039	听说	same		to hear (sth said); one hears (that)
+1040	遗址	same		ruins; historic relics
+1041	南北	same		north and south; north to south
+1042	立刻	same		immediately; at once; right away
+1043	女子	same		woman; female
+1044	紫	same		purple; violet
+1045	大小	same		large and small; size
+1046	刘	same		
+1047	善	same		good (virtuous); benevolent
+1048	香	same		fragrant; sweet smelling
+1049	单	same		
+1050	晚	same		evening; night
+1051	吨	same		ton (loanword); Taiwan pr. [dun4]
+1052	抢	same		(literary) to knock against (esp. to knock one's head on the ground in grief or 
+1053	弄	same		lane; alley
+1054	列	same		to arrange; to line up
+1055	至少	same		at least; (to say the) least
+1056	人士	same		person; figure
+1057	夜里	sh		at night
+1058	晚上	md	夜里	evening; night
+1059	特征	same		characteristic; diagnostic property
+1060	质	same		character; nature
+1061	铜	same		copper (chemistry)
+1062	词	same		
+1063	厂	same		"cliff" radical in Chinese characters (Kangxi radical 27), occurring in 原, 历, 压 
+1064	暖	same		
+1065	感	same		to feel; to move
+1066	凭	same		
+1067	周围	same		environs; surroundings; periphery
+1068	难以	same		hard to (predict, imagine etc)
+1069	样子	same		appearance; manner
+1070	追	same		to sculpt; to carve
+1071	紧	same		tight; strict
+1072	题	same		
+1073	臣	same		
+1074	油	same		oil; fat
+1075	相互	same		each other; mutual
+1076	读	same		comma; phrase marked by pause
+1077	是不是	same		is or is not (used to form yes-no questions)
+1078	部长	same		head of a (government etc) department; section chief
+1079	球	same		ball used for playing games (variant of 球[qiu2])
+1080	守	same		to guard; to defend
+1081	俄	same		Russia; Russian
+1082	功	same		meritorious deed or service; achievement
+1083	端	same		(bound form) tip; end; extremity; (bound form) aspect; facet
+1084	散	same		
+1085	义	same		(Tw) Italy (abbr. for 義大利|义大利[Yi4 da4 li4])
+1086	公	same		public; collectively owned
+1087	比如	same		
+1088	理解	same		to comprehend; to understand
+1089	不足	same		insufficient; lacking
+1090	南部	same		southern part
+1091	攻	same		to attack; to accuse
+1092	加上	same		to add; plus; in addition; moreover
+1093	礼	same		abbr. for 禮記|礼记[Li3 ji4], Classic of Rites
+1094	适当	same		suitable; appropriate
+1095	青	same		short name for Qinghai 青海[Qing1 hai3]
+1096	留下	same		to leave behind; to stay behind
+1097	研制	same		to research and manufacture; to research and to develop
+1098	省级	same		(administrative) province-level
+1099	引	same		to draw (e.g. a bow); to pull
+1100	品种	same		breed; variety
+1101	投	same		to throw (sth in a specific direction: ball, javelin, grenade etc); to cast (a b
+1102	类似	same		similar; analogous
+1103	空军	same		air force; (slang) to fail to catch anything (on a fishing trip); to get skunked
+1104	行使	same		to exercise (a right etc)
+1105	目	same		eye; (literary) to look; to regard
+1106	树	same		tree; to cultivate
+1107	寺	same		Buddhist temple; mosque
+1108	空间	same		space; room; (fig.) scope; leeway
+1109	小说	same		novel; fiction
+1110	妇女	same		woman
+1111	股份	same		a share (in a company); stock
+1112	岗	same		
+1113	名称	same		name (of a thing); name (of an organization)
+1114	检查	same		inspection; to examine
+1115	墙	same		
+1116	化学	same		chemistry; chemical
+1117	任期	same		term of office; tenure (entire period in office)
+1118	儿童	same		child
+1119	矛盾	same		contradiction; conflicting views
+1120	规划	same		to draw up a plan; to map out a program; a plan; a program
+1121	状况	same		condition; state; situation
+1122	一家	same		the whole family; the same family
+1123	尚	lit		
+1124	成长	same		to mature; to grow
+1125	凡	lit		ordinary; commonplace
+1126	邦	same		(bound form) country; nation; state
+1127	根	same		root; basis
+1128	分配	same		to distribute; to assign
+1129	末	same		
+1130	西南	same		southwest
+1131	贵族	same		lord; nobility
+1132	高兴	same		happy; glad
+1133	枪	same		
+1134	运	same		to move; to transport
+1135	值	same		value; (to be) worth
+1136	名字	same		name
+1137	不了	same		no thanks (used to politely but informally decline)
+1138	产量	same		output
+1139	从此	same		from now on; since then
+1140	响	same		echo; sound
+1141	招生	same		to enroll new students; to get students
+1142	攻击	same		to attack; to accuse
+1143	不错	same		correct; right
+1144	势	same		power; influence
+1145	亲自	same		personally; in person
+1146	鬼	same		disembodied spirit; ghost; devil; (suffix) person with a certain vice or addicti
+1147	相应	same		to correspond; answering (one another)
+1148	批	same		to ascertain; to act on
+1149	更是	same		even more (so)
+1150	包	same		
+1151	突出	same		prominent; outstanding
+1152	条例	same		regulations; rules; code of conduct; ordinances; statutes
+1153	替	same		to substitute for; to take the place of
+1154	司	same		
+1155	卷	same		to roll up; (fig.) to sweep up; to engulf; to drag into (a situation)
+1156	抗日	same		to resist Japan (esp. during WW2); anti-Japanese (esp. wartime activities)
+1157	旁	same		one side; other
+1158	夏	same		the Xia or Hsia dynasty c. 2000 BC; Xia of the Sixteen Kingdoms (407–432)
+1159	至于	same		as for; as to
+1160	招	same		to recruit; to provoke
+1161	武	same		
+1162	数据	same		data
+1163	冒	same		
+1164	族	same		race; nationality
+1165	女性	same		woman; the female sex
+1166	贴	same		to stick; to paste
+1167	硬	same		hard; stiff; solid; (fig.) strong; firm
+1168	朝廷	same		court; imperial household
+1169	利	same		
+1170	坛	same		altar; platform; rostrum
+1171	委员长	same		head of a committee
+1172	常常	same		frequently; often
+1173	冷	same		cold
+1174	在于	same		to rest with; to lie in; to be due to (a certain attribute); (of a matter) to be
+1175	玉	same		jade
+1176	腿	same		leg
+1177	答	same		bound form having the same meaning as the free word 答[da2], used in 答應|答应[da1 yi
+1178	消费	same		to consume (goods and services, resources etc)
+1179	欢迎	same		welcome
+1180	日子	same		day; a (calendar) date
+1181	条约	same		treaty; pact
+1182	行政区划	same		administrative subdivision
+1183	强烈	same		strong; intense
+1184	照	same		to shine; to illuminate
+1185	衣服	same		clothes
+1186	假	same		used in 假掰[gei1 bai1]
+1187	板	same		board; plank
+1188	太阳	same		sun; sunlight; sunshine
+1189	御	same		(bound form) imperial; royal; (literary) to drive (a carriage)
+1190	河南	same		
+1191	广大	same		(of an area) vast or extensive; large-scale
+1192	胖子	same		fat person; fatty
+1193	态度	same		manner; bearing
+1194	贼	same		thief; robber; (bound form) traitor; subversive
+1195	不好	same		no good
+1196	前头	sh		in front, ahead
+1197	前面	md	前头	ahead; in front
+1198	妈	same		ma; mom
+1199	一部分	same		portion; part of
+1200	度	same		to pass; to spend (time)
+1201	破坏	same		destruction; damage
+1202	江南	same		region of China immediately south of the lower Yangtze River, including Shanghai
+1203	阅读	same		to read
+1204	上头	sh		on top, above
+1205	上面	md	上头	on top of; above-mentioned
+1206	宋	same		the Song dynasty (960–1279); Song of the Southern Dynasties (420–479) 南朝宋[Nan2 c
+1207	专	same		for a particular person, occasion, purpose; focused on one thing
+1208	熟	same		ripe; mature; thoroughly cooked; done
+1209	计	same		
+1210	北部	same		northern part
+1211	忘	same		to forget; to overlook
+1212	种类	same		kind; genus
+1213	赴	same		to go; to visit (e.g. another country)
+1214	无论	same		no matter what or how; regardless of whether...
+1215	石油	same		oil; petroleum
+1216	进去	same		to go in
+1217	射	same		
+1218	地上	same		on the ground; on the floor
+1219	倘若	same		if; supposing; in case
+1220	纺织	same		spinning and weaving
+1221	页	same		head
+1222	意识	same		consciousness; awareness; (usu. followed by 到[dao4]) to be aware of; to realize
+1223	乃	lit		to be; thus
+1224	显得	same		to seem; to look
+1225	巴	same		Ba, a state during the Zhou dynasty (in present-day Chongqing and the eastern pa
+1226	咱	same		
+1227	支	same		
+1228	厚	same		thick; deep or profound
+1229	加工	same		to process; processing
+1230	烧	ff		to cook; to heat
+1231	列为	same		to be classified as
+1232	加入	same		to become a member; to join
+1233	大部分	same		the greater part; the majority; most; Taiwan pr. [da4bu4fen4]
+1234	解放	same		to liberate; to emancipate
+1235	微	same		ancient Chinese state near present-day Chongqing; Taiwan pr. [Wei2]
+1236	虎	same		tiger
+1237	担心	same		anxious; worried
+1238	下降	same		to decline; to drop
+1239	布	same		to announce; to spread
+1240	节	same		
+1241	升	same		to ascend; to rise; to promote; to elevate
+1242	依	same		to depend on; to comply with or listen to sb
+1243	苦	same		bitter; hardship
+1244	绝	same		to cut short; extinct
+1245	翻	same		to turn over; to flip over
+1246	势力	same		power; influence
+1247	外交	same		diplomacy; diplomatic
+1248	逃	same		to escape; to run away
+1249	春	same		
+1250	文物	same		cultural relic; historical relic
+1251	宣传	same		to disseminate; to give publicity to
+1252	闻	same		
+1253	奇	same		odd (number)
+1254	略	same		brief; sketchy; outline; summary
+1255	日常	same		day-to-day; daily; everyday
+1256	甲	same		first of the ten Heavenly Stems 十天干[shi2 tian1 gan1]; (used for an unspecified p
+1257	高中	same		senior high school (abbr. for 高級中學|高级中学[gao1 ji2 zhong1 xue2])
+1258	令人	same		to cause one (to do sth); to make one (angry, delighted etc)
+1259	不管	same		not to be concerned; regardless of
+1260	楚	same		abbr. for Hubei 湖北省[Hu2 bei3 Sheng3] and Hunan 湖南省[Hu2 nan2 Sheng3] provinces to
+1261	下半日	sh		afternoon
+1262	下午	md	下半日	afternoon; p.m.
+1263	喊	same		to yell; to shout
+1264	地下	same		underground; subterranean
+1265	昨日	sh		yesterday
+1266	昨天	md	昨日	yesterday
+1267	大声	same		loud voice; in a loud voice
+1268	成员	same		member
+1269	创新	same		to bring forth new ideas; to blaze new trails; innovation
+1270	不久	same		not long (after); before too long
+1271	份	same		classifier for gifts, newspaper, magazine, papers, reports, contracts etc
+1272	班	same		
+1273	数字	same		numeral; digit
+1274	广	same		"house on a cliff" radical in Chinese characters (Kangxi radical 53), occurring 
+1275	游客	same		traveler; tourist; (online gaming) guest player
+1276	孙	same		
+1277	绣	same		
+1278	阶级	same		(social) class
+1279	似的	same		seems as if; rather like
+1280	发射	same		to shoot (a projectile); to fire (a rocket)
+1281	版	same		a register; block of printing
+1282	坏	same		bad; spoiled
+1283	组	same		to form; to organize
+1284	叶	same		to be in harmony
+1285	轮	same		wheel; disk; ring; steamship
+1286	哥	same		elder brother
+1287	空中	same		in the sky; in the air
+1288	地球	same		the earth
+1289	决	same		to decide; to determine
+1290	压	same		to press; to push down
+1291	刚刚	same		just recently; just a moment ago
+1292	手里	same		in hand; (a situation is) in sb's hands
+1293	弹	same		crossball; bullet
+1294	不但	same		not only (... but also ...)
+1295	显	same		to make visible; to reveal
+1296	任免	same		to appoint and dismiss
+1297	不想	same		unexpectedly; to one's surprise
+1298	语	same		dialect; language
+1299	室	same		
+1300	业	same		
+1301	年间	same		in the years of; during those years
+1302	摸	same		to feel with the hand; to touch
+1303	互相	same		each other; mutually
+1304	庙	same		temple; ancestral shrine
+1305	稍	same		somewhat; a little
+1306	素	same		raw silk; white
+1307	妻子	same		wife and children
+1308	姆妈	sh		mother
+1309	妈妈	md	姆妈	mama; mommy
+1310	扑	same		to throw oneself at; to pounce on
+1311	赶	same		to overtake; to catch up with; to hurry; to rush
+1312	迎	same		to welcome; to meet; to forge ahead (esp. in the face of difficulties); to meet 
+1313	听见	same		to hear
+1314	变得	same		to become
+1315	宝	same		
+1316	果	same		fruit; result
+1317	贵	same		expensive
+1318	炒	same		to sauté; to stir-fry; to speculate (in real estate etc); to scalp
+1319	多数	same		majority; most
+1320	闹	same		
+1321	抬	same		to lift; to raise
+1322	其余	same		the rest; the others
+1323	雨	same		rain
+1324	齐	same		(name of states and dynasties at several different periods)
+1325	划分	same		to divide up; to partition
+1326	骑	same		(Tw) saddle horse; mounted soldier
+1327	概念	same		concept; idea
+1328	盐	same		salt
+1329	降低	same		to reduce; to lower; to bring down
+1330	卒	same		
+1331	四大	same		the four elements: earth, water, fire, and wind (Buddhism); the four freedoms: s
+1332	慢慢	same		slowly
+1333	星	same		star; heavenly body
+1334	老人	same		old man or woman; the elderly
+1335	符合	same		in accordance with; to agree with; to conform to; to meet (a requirement); (phys
+1336	客	same		customer; visitor; guest; classifier for servings or portions (when ordering foo
+1337	小姐	same		young lady; miss
+1338	摆	same		to arrange; to exhibit
+1339	哲学	same		philosophy
+1340	借	same		to borrow; (used in combination with 給|给[gei3] or 出[chu1] etc) to lend
+1341	折	same		to snap; to break (a stick, a bone etc)
+1342	负	same		to bear; to carry (on one's back)
+1343	老板	same		boss
+1344	击	same		to hit; to strike
+1345	戴	same		
+1346	同学	same		to study at the same school; fellow student
+1347	校名	same		school name
+1348	细	same		thin or slender; finely particulate
+1349	山地	same		mountainous region; hilly area
+1350	呆	same		foolish; stupid; expressionless; blank
+1351	那种	same		that kind of
+1352	奉	same		to offer (tribute); to present respectfully (to superior, ancestor, deity etc)
+1353	率领	same		to lead; to command
+1354	观	same		
+1355	唱	same		to sing; to call loudly
+1356	华	same		abbr. for China
+1357	当下	same		immediately; at once
+1358	毒	same		poison; to poison
+1359	泥	same		mud; clay
+1360	味	same		taste; smell
+1361	几天	same		several days
+1362	伸手	same		to reach out with one's hand; to hold out a hand
+1363	各自	same		each; respective
+1364	渐	same		to imbue
+1365	判断	same		to judge; to determine; judgment
+1366	阿哥	sh		elder brother
+1367	哥哥	md	阿哥	older brother
+1368	始	same		to begin; to start
+1369	横	same		horizontal; across
+1370	失去	same		to lose
+1371	危机	same		crisis
+1372	后面	same		the back; the rear; the last bit; behind; near the end; at the back
+1373	亮	same		bright; light; to shine; to flash
+1374	配合	same		matching; fitting in with
+1375	大事	same		major event; major political event (war or change of regime)
+1376	增强	same		to increase; to strengthen
+1377	套	same		to cover; to encase
+1378	兴	same		
+1379	卫生	same		hygienic; sanitary; hygiene; sanitation
+1380	金属	same		metal
+1381	成本	same		(manufacturing, production etc) costs
+1382	加以	same		(formal) to apply; to carry out; to take action to (do sth) (used before a disyl
+1383	步	same		
+1384	仙	same		immortal
+1385	雪	same		
+1386	丈夫	same		husband
+1387	倍	same		(two, three etc) -fold; times (multiplier)
+1388	首都	same		capital (city)
+1389	汗	same		
+1390	东南	same		southeast
+1391	公共	same		public; common; communal
+1392	医生	same		doctor; medical practitioner
+1393	打击	same		to hit; to strike
+1394	生态	same		ecology (the study of interactions between organisms and their environment); eco
+1395	人生	same		life (one's time on earth)
+1396	改为	same		to change into
+1397	耳	same		ear; handle (archaeology)
+1398	红色	same		red (color); revolutionary
+1399	格	same		used in 格登[ge1 deng1]; used in 格格[ge1 ge1]
+1400	忌	same		to be jealous of; fear
+1401	象征	same		symbol; emblem; to symbolize; to signify; to represent
+1402	少数	same		small number; few
+1403	核	same		pit; stone
+1404	爆发	same		to break out; to erupt; to explode; to burst out
+1405	飞行	same		(of planes etc) to fly; flying
+1406	纵	same		vertical; north-south (Taiwan pr. [zong1]); from front to back; longitudinal; le
+1407	器	same		device; tool
+1408	藕	same		root of lotus
+1409	学者	same		scholar
+1410	否则	same		otherwise; if not; or (else)
+1411	遂	lit		used in 半身不遂[ban4 shen1 bu4 sui2]; Taiwan pr. [sui4]
+1412	白相	sh		to play, have fun, hang out
+1413	玩	md	白相	to play; to have fun
+1414	练	same		to practice; to train
+1415	随即	same		immediately; presently
+1416	不禁	same		can't help (doing sth); can't refrain from
+1417	罪	same		guilt; crime
+1418	盖	same		
+1419	院校	same		college; academy
+1420	功夫	same		skill; art
+1421	距	same		to be at a distance of ... from; to be apart from; (bound form) distance
+1422	成分	same		composition; ingredient; element; component; one's social status
+1423	寨	same		stronghold; stockade
+1424	吓	same		to scare; to intimidate
+1425	乘	same		
+1426	伟大	same		huge; great; grand; worthy of the greatest admiration; important (contribution e
+1427	厅	same		(reception) hall; living room
+1428	叹	same		to sigh; to exclaim
+1429	闭会	same		close a meeting
+1430	恨	same		to hate; to regret
+1431	祭	same		
+1432	几年	same		a few years; several years; how many years?
+1433	诏	same		(literary) to admonish; (bound form) imperial edict
+1434	答应	same		to answer; to respond; to answer positively; to agree; to accept; to promise
+1435	相比	same		to compare
+1436	斯	same		Slovakia; Slovak
+1437	吹	same		to blow; to play a wind instrument
+1438	观念	same		notion; thought
+1439	虚	same		emptiness; void
+1440	行者	same		pedestrian; walker
+1441	汤	same		soup
+1442	本人	same		I; me; myself; oneself; yourself; himself; herself; the person concerned
+1443	够	same		enough (sufficient); enough (too much)
+1444	讯	same		(bound form) to ask; to inquire; (bound form) to interrogate; to question
+1445	现场	same		the scene (of a crime, accident etc); (on) the spot
+1446	姊	same		
+1447	夫	same		husband; man
+1448	弦	same		bow string; string of musical instrument
+1449	协调	same		to coordinate; to harmonize
+1450	抓住	same		to grab hold of; to capture
+1451	环	same		
+1452	精	same		essence; extract
+1453	对手	same		opponent; rival
+1454	承担	same		to undertake; to assume (responsibility etc)
+1455	交易	same		to deal; to trade; to transact; transaction; deal
+1456	户	same		a household; door
+1457	外面	same		outside (also pr. [wai4 mian5] for this sense); surface
+1458	争取	same		to fight for; to strive for
+1459	挥	same		to wave; to brandish
+1460	爬	same		to crawl; to climb
+1461	事物	same		thing; object
+1462	岂	same		
+1463	奴隶	same		slave
+1464	少年	same		early youth; youngster
+1465	奏	same		to play music; to achieve
+1466	叫做	same		to be called; to be known as
+1467	持	same		to hold; to grasp
+1468	教学	same		to teach
+1469	亿	same		100 million
+1470	化工	same		chemical industry (abbr. for 化學工業|化学工业[hua4 xue2 gong1 ye4]); chemical engineeri
+1471	夜	same		
+1472	源	same		root; source
+1473	围	same		to encircle; to surround
+1474	局	same		narrow
+1475	圣	same		(literary) to dig with persistent effort (e.g. to gather wild vegetables)
+1476	懂	same		to understand; to comprehend
+1477	再也	same		(not) ever again; (not) any longer
+1478	游行	same		to march; to parade; to demonstrate; procession; march; demonstration
+1479	存	same		to exist; to deposit
+1480	秒	same		second (unit of time); arc second (angular measurement unit)
+1481	究竟	same		to go to the bottom of a matter; after all
+1482	下面	same		below; under
+1483	危险	same		danger; dangerous
+1484	念	same		
+1485	娘	same		mother; young lady
+1486	上来	same		to come up; to approach
+1487	大规模	same		large scale; extensive
+1488	不必	same		need not; does not have to
+1489	兴趣	same		interest (desire to know about sth); interest (thing in which one is interested)
+1490	温度	same		temperature
+1491	骨	same		used in 骨碌碌[gu1 lu4 lu4]; used in 骨碌[gu1 lu5]
+1492	团结	same		to unite; unity; solidarity
+1493	转移	same		to shift; to relocate; to transfer; (fig.) to shift (attention); to change (the 
+1494	插	same		to insert; stick in
+1495	省长	same		governor of a province
+1496	献	same		to offer; to present
+1497	境	same		border; place
+1498	病人	same		sick person; patient
+1499	密	same		name of an ancient state
+1500	竹	same		(bound form) bamboo; Kangxi radical 118
+1501	僧	same		(bound form) Buddhist monk (abbr. for 僧伽[seng1 qie2])
+1502	而言	same		(typically preceded by 就…[jiu4 xx5] or 對…|对…[dui4 xx5] etc) as far as ... is con
+1503	酸	same		sour; tart
+1504	相反	same		opposite; contrary
+1505	厘米	same		centimeter
+1506	烟	same		cigarette or pipe tobacco; smoke
+1507	估计	same		to estimate; to assess; to calculate; (coll.) to reckon; to think (that ...)
+1508	密切	same		close; intimate; to strengthen (ties, cooperation etc)
+1509	招聘	same		to invite applications for a job; to recruit
+1510	传播	same		to disseminate; to propagate; to spread
+1511	合理	same		rational; reasonable; sensible; fair
+1512	超	same		to exceed; to overtake
+1513	苏	same		used in 嚕囌|噜苏[lu1 su1]
+1514	民间	same		among the people; popular
+1515	主人	same		owner; host
+1516	点头	same		to nod
+1517	蛋	same		
+1518	隔	same		to separate; to partition
+1519	大约	same		approximately; probably
+1520	排	same		to arrange in order; to line up; to exclude; to eliminate; to repel; to expel; t
+1521	北方	same		north; the northern part a country
+1522	结棍	sh		tough, impressive, a lot
+1523	厉害	md	结棍	(used to describe sb or sth that makes a very strong impression, whether favorab
+1524	堂	same		(main) hall; large room for a specific purpose
+1525	盘	same		tray; plate; dish; (finance) (bound form) market prices
+1526	明朝	sh		tomorrow
+1527	皇	same		
+1528	太监	same		court eunuch; palace eunuch
+1529	争	same		to strive for; to vie for
+1530	圆	same		circle; round
+1531	强大	same		big and strong; formidable; powerful
+1532	偏	same		to lean; to slant
+1533	前提	same		premise; precondition
+1534	休息	same		rest; to rest
+1535	高校	same		universities and colleges; abbr. for 高等學校|高等学校
+1536	顾	same		
+1537	夏天	same		summer
+1538	模式	same		mode; pattern; model
+1539	性能	same		function; performance; behavior
+1540	感情	same		emotion; sentiment; affection; feelings between two persons
+1541	费用	same		cost; expenditure
+1542	狗	same		dog
+1543	尚未	same		not yet; still not
+1544	极大	same		enormous; great; (math.) maximum
+1545	适合	same		to fit; to suit
+1546	王朝	same		dynasty
+1547	校长	same		(college, university) president; headmaster
+1548	更新	same		to replace the old with new; to renew
+1549	尔	same		
+1550	鸡	same		fowl; chicken
+1551	湘	same		abbr. for Hunan 湖南 province in south central China; abbr. for Xiangjiang river i
+1552	区别	same		difference; to distinguish
+1553	撞	same		to knock against; to bump into
+1554	工	same		work; worker
+1555	结	same		(of a plant) to produce (fruit or seeds); Taiwan pr. [jie2]
+1556	地方性	same		local
+1557	左手	same		left hand; left-hand side
+1558	巴黎	same		Paris
+1559	帝	same		(bound form) emperor; sovereign; supreme deity
+1560	江陵	same		
+1561	早期	same		early period; early phase; early stage
+1562	篇	same		sheet; piece of writing
+1563	员工	same		staff; personnel; employee
+1564	成熟	same		mature; ripe; to mature; to ripen
+1565	蛮	sh		quite, rather
+1566	挺	md	蛮	straight; erect
+1567	犯	same		to violate; to offend
+1568	波	same		(bound form) Poland (abbr. for 波蘭|波兰[Bo1 lan2])
+1569	告	same		(bound form) to say; to tell; to announce; to report
+1570	南方	same		south; southern direction; (in China) southern regions, often referring to areas
+1571	空气	same		air; atmosphere
+1572	罗	same		
+1573	软	same		soft; flexible
+1574	千	same		thousand
+1575	国防	same		national defense
+1576	旁边	same		side; adjacent place
+1577	操作	same		to work; to operate
+1578	纸	same		
+1579	药物	same		medicaments; pharmaceuticals
+1580	试	same		to test; to try
+1581	然	same		correct; right
+1582	梦	same		dream (CL:場|场[chang2]); (bound form) to dream
+1583	方便	same		convenient; suitable; to facilitate; to make things easy
+1584	松	same		
+1585	全身	same		the whole body; (typography) em
+1586	辽	same		short name for Liaoning 遼寧|辽宁[Liao2 ning2] province; Liao or Khitan dynasty (916
+1587	门口	same		doorway; gate
+1588	不在	same		not to be present; to be out
+1589	旗	same		flag
+1590	银子	same		money; silver
+1591	绿	same		used in names
+1592	突破	same		to break through; to make a breakthrough
+1593	痛	same		ache; pain
+1594	转化	same		to change; to turn; to convert; (genetics) to transform
+1595	准	same		to allow; to grant
+1596	议会	same		parliament; legislative assembly
+1597	乐	same		
+1598	志	same		aspiration; ambition
+1599	失	same		to lose; to miss
+1600	回头	same		to turn round; to turn one's head; later; by and by
+1601	害	same		to do harm to; to cause trouble to
+1602	陪	same		to accompany; to keep sb company
+1603	致	same		(bound form) fine; delicate; exquisite
+1604	基	same		(bound form) base; foundation; (bound form) radical (chemistry)
+1605	湖南	same		
+1606	证	same		to admonish
+1607	躲	same		to hide; to dodge
+1608	微笑	same		smile; to smile
+1609	确	same		
+1610	棉花	same		cotton
+1611	逼	same		to compel; to pressure
+1612	十堰	same		
+1613	大多数	same		(great) majority
+1614	丁	same		
+1615	政	same		political; politics
+1616	烤	same		to roast; to grill; to broil; to bake; to toast (bread); to warm oneself by a fi
+1617	舰	same		warship
+1618	炮	same		to sauté; to fry
+1619	交换	same		to exchange; to swap
+1620	证券	same		negotiable security (financial); certificate
+1621	大人	same		adult; grownup
+1622	社	same		(bound form) society; organization; agency; (old) god of the land
+1623	合同	same		contract; agreement
+1624	直播	same		(TV, radio) to broadcast live; live broadcast
+1625	日期	same		date
+1626	钟	same		
+1627	战场	same		battlefield
+1628	咬	same		to bite; to nip
+1629	喝道	same		to shout (i.e. to say in a loud voice) (usually followed by the words shouted); 
+1630	渐渐	same		gradually
+1631	糖	same		sugar; sweets
+1632	从来	same		always; at all times
+1633	平时	same		ordinarily; in normal times
+1634	劝	same		to advise; to urge
+1635	多个	same		many; multiple
+1636	简称	same		to be abbreviated to; abbreviation; short form
+1637	宜	same		
+1638	腰	same		the waist and lower back; (bound form) kidney of an animal (as food)
+1639	沿海	same		coastal
+1640	痛苦	same		pain; suffering
+1641	加速	same		to accelerate; to speed up; to expedite
+1642	勿来事	sh		can't; no good
+1643	不行	md	勿来事	won't do; be out of the question
+1644	转变	same		to change; to transform
+1645	灭	same		to extinguish or put out; to go out (of a fire etc)
+1646	箭	same		arrow
+1647	侧	same		the side; to incline towards
+1648	发行	same		to publish; to issue; to release; to distribute
+1649	重建	same		to rebuild; to reconstruct; to reestablish
+1650	使得	same		usable; serviceable; feasible; workable; doable
+1651	湖泊	same		lake
+1652	躺	same		to recline; to lie down
+1653	加快	same		to accelerate; to speed up; to hasten
+1654	审查	same		to examine; to investigate
+1655	襄	same		
+1656	角	same		
+1657	恩	same		
+1658	哦	same		to chant
+1659	跪	same		to kneel
+1660	遇	same		
+1661	谷	same		grain; corn
+1662	猛	same		ferocious; fierce
+1663	印	same		abbr. for 印度[Yin4 du4], India
+1664	累计	same		to calculate the running total; cumulative
+1665	大大	same		greatly; enormously
+1666	异	same		different; other
+1667	拖	same		
+1668	粮	same		grain; food
+1669	阳光	same		sunshine; (of personality) upbeat; energetic
+1670	右手	same		right hand; right-hand side
+1671	著作	same		to write; literary work
+1672	客人	same		visitor; guest; customer
+1673	查	same		
+1674	医学	same		medicine; medical science
+1675	给予	same		(literary) to give; to accord; to render
+1676	学科	same		subject; branch of learning
+1677	灯	same		lamp; light
+1678	抗	same		to resist; to fight
+1679	上去	same		to go up
+1680	伸	same		to stretch; to extend
+1681	店	same		inn; old-style hotel (CL:家[jia1]); (bound form) shop; store
+1682	到处	same		everywhere
+1683	立场	same		position; standpoint
+1684	阳	same		positive (electric.); sun
+1685	阵	same		disposition of troops; wave
+1686	害怕	same		to be afraid; to be scared
+1687	兄	same		elder brother
+1688	运行	same		(of celestial bodies etc) to move along one's course; (fig.) to function; to be 
+1689	地址	same		address
+1690	帐	same		(bound form) curtain; tent; canopy
+1691	编	same		to weave; to plait
+1692	传说	same		legend; folk tale; to repeat from mouth to mouth; they say that...
+1693	少数民族	same		ethnic minority
+1694	居住	same		to reside; to dwell
+1695	目光	same		gaze; (fig.) attention; expression in one's eyes; look
+1696	食物	same		food
+1697	防止	same		to prevent; to guard against
+1698	太太	same		married woman; Mrs.
+1699	智	same		(literary) wise; wisdom
+1700	作家	same		author
+1701	行情	same		market price; quotation of market price
+1702	沿	same		along; to follow (a line, tradition etc)
+1703	恐怕	same		fear; to dread
+1704	某种	same		some kind (of)
+1705	人马	same		men and horses; troops
+1706	操	same		
+1707	载	same		to record in writing; to carry (i.e. publish in a newspaper etc)
+1708	暗	same		
+1709	总结	same		to sum up; to conclude
+1710	有着	same		to have; to possess
+1711	种种	same		all kinds of
+1712	背景	same		background; backdrop; context; (fig.) powerful backer
+1713	灵	sh		great, works well
+1714	江苏	same		
+1715	百	same		hundred
+1716	死亡	same		to die; death
+1717	遭	same		to suffer; to meet with (usu. misfortune); classifier for events: time, turn, in
+1718	部署	same		to dispose; to deploy
+1719	大概	same		roughly; probably
+1720	移	same		to move; to shift
+1721	年纪	same		age
+1722	砍	same		to chop; to cut down
+1723	郭	same		
+1724	人体	same		human body
+1725	年度	same		year (e.g. school year, fiscal year); annual
+1726	养	same		to raise (animals); to bring up (children)
+1727	胡	same		
+1728	呼	same		to call; to cry
+1729	般	same		sort; kind
+1730	手术	same		(surgical) operation; surgery
+1731	最佳	same		optimum; optimal
+1732	小学	same		elementary school; primary school
+1733	相似	same		similar; alike
+1734	极为	same		extremely; exceedingly
+1735	可惜	same		it is a pity; what a pity
+1736	托	same		to hold up in one's hand; to support with one's palm; sth serving as a support: 
+1737	宗	same		
+1738	衣	same		clothes; Kangxi radical 145
+1739	仗	same		weaponry; to hold (a weapon)
+1740	不由得	same		can't help; cannot but
+1741	艘	same		classifier for ships; Taiwan pr. [sao1]
+1742	明天	md	明朝	tomorrow
+1743	大门	same		the Doors, US rock band
+1744	盛	same		
+1745	补	same		to repair; to patch
+1746	等于	same		to equal; to be tantamount to
+1747	转身	same		(of a person) to turn round; to face about
+1748	幺	same		
+1749	授予	same		to award; to confer
+1750	陆军	same		army; ground forces
+1751	吾	same		
+1752	笔	same		writing brush; writing implement (pen, pencil etc) (CL:支[zhi1],枝[zhi1]); brushst
+1753	允许	same		to permit; to allow
+1754	角度	same		angle; (fig.) point of view
+1755	费	same		
+1756	大多	same		for the most part; many
+1757	老早	sh		long ago; very early
+1758	早就	md	老早	already at an earlier time
+1759	剩下	same		to remain; to be left over
+1760	眼见	same		to see with one's own eyes; very soon
+1761	柄	same		handle or shaft (of an axe etc); (of a flower, leaf or fruit) stem
+1762	瓦	same		roof tile; abbr. for 瓦特[wa3 te4]
+1763	说法	same		to expound Buddhist teachings
+1764	败	same		to defeat; to damage
+1765	弟	same		younger brother; junior male
+1766	拱	same		to cup one's hands in salute; to surround
+1767	值得	same		worth the money; to merit; to deserve; to be worth (doing sth)
+1768	岭	same		used in 岭巆|岭𫶕[ling2 ying2]
+1769	职能	same		function; role
+1770	改称	same		to change a name; to rename
+1771	毕	same		
+1772	学术	same		learning; science
+1773	交给	same		to give; to deliver; to hand over
+1774	床	same		bed; couch (furniture that one can lie down on) (CL:張|张[zhang1]); bed; bottom (o
+1775	科研	same		(scientific) research
+1776	低声	same		in a low voice; softly
+1777	汏	sh		to wash
+1778	洗	md	汏	to wash; to bathe; to develop (photographs)
+1779	分类	same		to classify
+1780	一会儿	same		a moment; a while
+1781	上市	same		to hit the market (of a new product); to float (a company on the stock market)
+1782	系列	same		series; set
+1783	回家	same		to return home
+1784	日益	same		day by day; more and more
+1785	止	same		to stop; to prohibit
+1786	房子	same		flat, house
+1787	河北	same		
+1788	饮	same		
+1789	牌	same		signboard; plaque; plate; tablet (CL:塊|块[kuai4]); brand; trademark
+1790	微微	same		slight; faint
+1791	爹	same		dad
+1792	一会	same		a moment; a while
+1793	劲	same		strength; energy
+1794	碗	same		bowl
+1795	冠军	same		champion
+1796	爷	sh		father
+1797	魔	same		(bound form) evil spirit; devil; (prefix) supernatural; magical
+1798	研究所	same		research institute; graduate studies
+1799	同年	same		in the same year; to be the same age
+1800	君	same		monarch; lord
+1801	协会	same		an association; a society
+1802	孔	same		
+1803	云南	same		
+1804	队员	same		team member
+1805	中共	same		abbr. for 中國共產黨|中国共产党[Zhong1 guo2 Gong4 chan3 dang3], Chinese Communist Party
+1806	恶	same		used in 惡心|恶心[e3 xin1]
+1807	通知	same		to notify; to inform
+1808	洲	same		continent; island in a river
+1809	当即	same		at once; on the spot
+1810	个别	same		individually; one by one; just one or two; exceptional; rare
+1811	仿佛	same		to seem; as if; seemingly; alike; similar
+1812	奖	same		prize; award; bonus; reward; (bound form) to encourage; to commend; to praise
+1813	术	same		method; technique
+1814	涔	same		overflow; rainwater
+1815	哼	same		to groan; to snort
+1816	夺	same		to seize; to take away forcibly
+1817	猪	same		hog; pig
+1818	扶	same		to support with the hand; to help sb up
+1819	不得不	same		have no choice or option but to; cannot but
+1820	头发	same		hair (on the head)
+1821	投降	same		to surrender
+1822	分享	same		to share (esp. sth enjoyable, useful or beneficial)
+1823	脉	same		
+1824	上半日	sh		morning
+1825	上午	md	上半日	morning
+1826	访问	same		to visit; to call on (a person or place); (computing) to visit (a website); to a
+1827	地图	same		map
+1828	赵	same		one of the seven states during the Warring States period (476–220 BC); the Forme
+1829	动手	same		to set about (a task); to raise a hand to hit sb
+1830	吃饭	same		to have a meal; to eat
+1831	联	same		(bound form) to ally oneself with; to unite; to combine; to join; (bound form) (
+1832	罗马	same		Rome, capital of Italy; (historical) Ancient Rome
+1833	穴	same		cave; cavity
+1834	虫	same		
+1835	再说	same		to say again; to put off a discussion until later
+1836	莫	same		
+1837	追求	same		to pursue (a goal etc) stubbornly; to seek after
+1838	大哥	same		eldest brother; big brother (polite address for a man of about the same age as o
+1839	价	same		(literary) messenger; servant
+1840	造	same		to make; to build
+1841	露出	same		to expose; to show
+1842	登	same		to scale (a height); to ascend
+1843	增	same		(bound form) to increase; to augment; to add to
+1844	熟悉	same		to be familiar with; to know well
+1845	人均	same		per capita; averaged per person
+1846	流行	same		(of a contagious disease etc) to spread; to propagate; (of a style of clothing, 
+1847	合法	same		lawful; legitimate
+1848	戏	same		
+1849	鸟	same		penis
+1850	趋势	same		trend; tendency
+1851	地势	same		terrain; topography relief
+1852	歌	same		song (CL:首[shou3],支[zhi1]); (bound form) to sing
+1853	绕	same		to wind; to coil (thread)
+1854	毁	same		to destroy; to ruin; to defame; to slander
+1855	蒙	same		(literary) sincere; honest; genuine
+1856	切	same		to cut; to slice; to carve; (math.) tangential
+1857	繁殖	same		to breed; to reproduce
+1858	风味	same		distinctive flavor; distinctive style
+1859	浙江	same		
+1860	防	same		to protect; to defend
+1861	奶奶	same		(informal) grandma (paternal grandmother); (respectful) mistress of the house
+1862	地质	same		geology
+1863	小子	same		(literary) youngster; (old) young fellow (term of address used by the older gene
+1864	犯罪	same		to commit a crime; crime; offense
+1865	老婆	same		wife
+1866	尖	same		pointed; tapering; sharp; (of a sound) shrill; piercing
+1867	家长	same		head of a household; family head
+1868	等待	same		to wait; to wait for
+1869	通信	same		to correspond (by letter, email etc); to send or receive messages through teleco
+1870	仔细	same		careful; attentive; cautious; to be careful; to look out
+1871	遗产	same		heritage; legacy
+1872	踢	same		to kick; to play (e.g. soccer)
+1873	卡	same		to stop; to block
+1874	父	same		(bound form) father; (bound form) male relative of father's generation (as in 伯父
+1875	头上	same		overhead; above
+1876	塔	same		pagoda (abbr. for 塔婆[ta3 po2], a loanword from Sanskrit stūpa); tower; pylon (CL
+1877	鱼类	same		fishes
+1878	要是	same		(coll.) if
+1879	弱	same		weak; feeble; young
+1880	雕	same		
+1881	风景	same		scenery; landscape
+1882	羊	same		
+1883	将领	same		high-ranking military officer
+1884	肯	same		
+1885	母	same		mother; elderly female relative
+1886	衙门	same		yamen, government office in dynastic China
+1887	脑	same		brain; mind
+1888	结婚	same		to marry; to get married
+1889	所在地	same		location; site
+1890	社稷	same		state; country
+1891	提名	same		to nominate
+1892	视	same		
+1893	枚	same		
+1894	爹爹	same		daddy; granddad
+1895	初期	same		initial stage; beginning period
+1896	挡	same		to resist; to obstruct
+1897	最为	same		the most
+1898	婚	same		(bound form) marriage; wedding; (bound form) to marry
+1899	演员	same		actor; actress; performer
+1900	滑	same		
+1901	根据地	same		base of operations
+1902	沙	same		
+1903	雄	same		male; staminate
+1904	吐	same		to spit; to send out (silk from a silkworm, bolls from cotton flowers etc)
+1905	称号	same		name; term of address
+1906	扎	same		to prick; to run or stick (a needle etc) into
+1907	含量	same		content; quantity contained
+1908	更为	same		even more
+1909	输	same		to lose; to be beaten; (bound form) to transport
+1910	只得	same		to have no alternative but to; to be obliged to
+1911	合并	same		
+1912	许	same		
+1913	闯	same		to rush; to charge
+1914	捧	same		to hold or offer with both hands; to sing the praises of
+1915	福	same		abbr. for Fujian province 福建省[Fu2 jian4 Sheng3]
+1916	当选	same		to be elected; to be selected
+1917	游戏	same		game (CL:場|场[chang3]); to play
+1918	案	same		(legal) case; incident
+1919	注重	same		to pay attention to; to emphasize
+1920	顺	same		to obey; to follow
+1921	塞	same		to plug; to stop up; to stuff in; (bound form) a stopper; a cork
+1922	闪	same		
+1923	震	same		to shake; to vibrate
+1924	迁	same		to move; to shift
+1925	主意	same		plan; idea
+1926	课	same		subject; course
+1927	尾	same		tail; remainder
+1928	据说	same		it is said that; reportedly
+1929	模型	same		model; mold
+1930	挖	same		to dig; to excavate
+1931	银鱼	same		oriental whitebait; slender silvery-white fish e.g. Galaxias maculatus and Salan
+1932	混	same		muddy; turbid (variant of 渾|浑[hun2]); brainless; foolish (variant of 渾|浑[hun2])
+1933	大军	same		army; main forces
+1934	累	same		used in 累累[lei2 lei2]; used in 累贅|累赘[lei2 zhui5] and 累墜|累坠[lei2 zhui5]
+1935	夹	same		used in 夾肢窩|夹肢窝[ga1 zhi5 wo1]
+1936	无人	same		unmanned; uninhabited
+1937	刺激	same		to provoke; to irritate; to upset; to stimulate; to excite; irritant
+1938	灰	same		ash; dust
+1939	未必	same		not necessarily; maybe not
+1940	袁	same		
+1941	搬	same		to move (i.e. relocate oneself); to move (sth relatively heavy or bulky)
+1942	摇头	same		to shake one's head
+1943	扯	same		to pull; to tear
+1944	丢	same		to lose; to put aside
+1945	独	same		alone; independent
+1946	跨	same		to step across; to stride over
+1947	施	same		
+1948	曲	same		
+1949	大师	same		great master; master
+1950	秋	same		
+1951	笔架	same		pen rack; pen-holder
+1952	陵	same		mound; tomb
+1953	浅	same		sound of moving water
+1954	参	same		
+1955	哪些	same		which ones?; who?
+1956	授	same		(bound form) to confer; to give; (bound form) to teach; to instruct
+1957	糕	same		cake
+1958	斜	same		inclined; slanting
+1959	得名	same		to get one's name; named (after sth)
+1960	忍不住	same		cannot help; unable to bear
+1961	秦	same		Qin dynasty (221–207 BC) of the first emperor 秦始皇[Qin2 Shi3 huang2]; short name 
+1962	挑	same		to carry on a shoulder pole; to choose
+1963	擦	same		to rub; to scratch; to wipe; to polish
+1964	防御	same		defense; to defend
+1965	瞎	same		blind; groundlessly
+1966	不用	same		need not
+1967	亭	same		pavilion; booth
+1968	商人	same		merchant; businessman
+1969	有限	same		limited; finite
+1970	扇	same		to fan; to slap sb on the face
+1971	露	same		
+1972	注	same		(bound form) to pour into; to flow into; to inject; (bound form) to focus (one's
+1973	镑	same		pound (sterling) (loanword)
+1974	尼	same		Buddhist nun; (often used in phonetic spellings)
+1975	红军	same		Red Army (1928-1937), predecessor of the PLA; (Soviet) Red Army (1917-1946)
+1976	将来	same		in the future; future
+1977	人工	same		artificial; manpower
+1978	临	same		to face; to overlook
+1979	护	same		to protect
+1980	山区	same		mountain area
+1981	味道	same		flavor; taste; (fig.) feeling (of ...); sense (of ...); hint (of ...)
+1982	丝	same		silk; thread-like thing; (cuisine) shreds or julienne strips
+1983	片刻	same		short period of time; a moment
+1984	所在	same		place; location
+1985	好吃	same		tasty
+1986	温	same		
+1987	次数	same		number of times; frequency
+1988	诗人	same		bard; poet
+1989	识	same		to know; knowledge
+1990	醒	same		to wake up; to be awake
+1991	积累	same		to accumulate; accumulation
+1992	演	same		to perform (a play etc); to stage (a show); (bound form) to develop; to play out
+1993	赛	same		to compete; competition
+1994	抽	md	吃	to draw out; to pull out from in between; to remove part of the whole
+1995	其次	same		next; secondly
+1996	成都	same		
+1997	一齐	same		at the same time; simultaneously
+1998	屋	same		(bound form) house; (bound form) room
+1999	氨	same		ammonia
+2000	地处	same		to be located at; to be situated in
+2001	课程	same		course, lessons
+2002	旨	same		imperial decree; purport
+2003	创	same		
+2004	例	same		example; precedent
+2005	战术	same		tactics
+2006	县长	same		county's head commissioner
+2007	番	same		
+2008	对付	same		to handle; to deal with; to tackle; to get by with; to make do
+2009	江湖	same		rivers and lakes; all corners of the country; remote areas to which hermits retr
+2010	跃	same		to jump; to leap
+2011	校	same		to check; to collate; to proofread
+2012	料	same		material; stuff
+2013	牙	same		tooth; ivory
+2014	廊	same		corridor; veranda
+2015	出于	same		due to; to stem from
+2016	透	same		(bound form) to penetrate; to seep through; to tell secretly; to leak
+2017	阿姐	sh		elder sister
+2018	姐姐	md	阿姐	older sister
+2019	走进	same		to enter; to step into
+2020	内阁	same		(government) cabinet
+2021	冲突	same		conflict; to conflict
+2022	滚	same		to boil; to roll
+2023	蓝	same		
+2024	夫妇	same		a (married) couple; husband and wife
+2025	军人	same		serviceman; soldier
+2026	少女	same		girl; young lady
+2027	亩	same		
+2028	舞	same		to dance; to wield
+2029	审	same		to examine; to investigate
+2030	旅	same		trip; travel
+2031	配	same		to join; to fit
+2032	校园	same		campus
+2033	人人	same		everyone; every person
+2034	落后	same		to fall behind; to lag (in technology etc)
+2035	基本上	same		basically; on the whole
+2036	薄	same		
+2037	物理	same		physics; physical; relating to the material world
+2038	黄石	same		
+2039	长沙	same		
+2040	商量	same		to consult; to talk over
+2041	摇	same		
+2042	路上	same		on the road; on the way; en route
+2043	不许	same		not to allow; must not
+2044	大街	same		street; main street
+2045	杯	same		cup; trophy cup
+2046	读者	same		reader
+2047	企图	same		to attempt; to try
+2048	能量	same		energy; capabilities
+2049	身份	same		identity; aspect of one's identity (e.g. mayor, father, permanent resident); rol
+2050	声明	same		to state; to declare
+2051	大典	same		ceremony; collection of classical writings
+2052	富	same		
+2053	纪念	same		to commemorate; to honor the memory of; memento; keepsake; souvenir
+2054	狼	same		wolf
+2055	荆	same		an early name for the state of Chu 楚國|楚国[Chu3 guo2]
+2056	音	same		sound; noise
+2057	养殖	same		to raise; to breed (animals etc)
+2058	鼓	same		
+2059	新疆	same		
+2060	海外	same		overseas; abroad
+2061	简介	same		summary; brief introduction
+2062	珠	same		bead; pearl
+2063	袭	same		(bound form) to raid; to attack; (bound form) to continue the pattern; to perpet
+2064	盆地	same		(geography) basin; depression
+2065	附	same		
+2066	正好	same		just (in time); just right
+2067	慢	same		slow
+2068	降水量	same		precipitation (meteorology); measured quantity of rain
+2069	天气	same		weather
+2070	睁	same		to open (one's eyes)
+2071	一度	same		for a time; at one time
+2072	不够	same		not enough; insufficient
+2073	函数	same		function (math.)
+2074	圈	same		to confine; to lock up
+2075	即将	same		about to; on the point of; soon
+2076	图案	same		design; pattern
+2077	废	same		to abolish; to abandon
+2078	愈	same		the more...(the more...); to recover
+2079	容	same		
+2080	学会	same		to learn; to master; institute; learned society; (scholarly) association
+2081	颁	same		to promulgate; to send out
+2082	学位	same		academic degree; place in school
+2083	信心	same		confidence; faith (in sb or sth)
+2084	储量	same		remaining quantity; reserves (of natural resources, oil etc)
+2085	眼泪	same		tear; teardrop
+2086	调节	same		to adjust; to regulate
+2087	嘉	same		
+2088	情形	same		circumstances; situation; state of affairs
+2089	感受	same		to sense; perception
+2090	气氛	same		atmosphere; mood
+2091	思	same		to think; to consider
+2092	供应	same		to supply; to provide (goods, services etc)
+2093	挑战	same		to challenge; to take on a challenge; a challenge
+2094	赤	same		red; scarlet
+2095	组合	same		to assemble; to combine; to compose; combination; association; set; compilation
+2096	征	same		journey; trip
+2097	拔	same		to pull up; to pull out
+2098	蜀	same		short name for Sichuan 四川[Si4 chuan1] province; one of the Three Kingdoms 三國|三国[
+2099	尤	same		
+2100	顿	same		to stop; to pause
+2101	地带	same		zone
+2102	提醒	same		to remind; to call attention to
+2103	粗	same		(of sth long) wide; thick; (of sth granular) coarse
+2104	透露	same		to leak out; to divulge
+2105	参考	same		consultation; reference
+2106	西藏	same		
+2107	丹	same		red; pellet
+2108	江西	same		
+2109	严	same		
+2110	吉	same		short name for Jilin 吉林[Ji2 lin2]
+2111	坐下	same		to sit down
+2112	测量	same		survey; to measure
+2113	十五	same		fifteen; 15
+2114	偷	same		to steal; to pilfer
+2115	寄	same		to entrust; to place in sb's care; (bound form) to depend on; to attach oneself 
+2116	兴奋	same		excited; excitement
+2117	氏	same		(bound form) family name; surname (as in 王氏[Wang2 shi4] "the Wang clan"); (bound
+2118	叔	same		uncle; father's younger brother
+2119	可见	same		it can clearly be seen (that this is the case); it is (thus) clear
+2120	总数	same		total; sum
+2121	鲜	same		
+2122	歇	same		to rest; to take a break
+2123	镬子	sh		wok
+2124	锅	md	镬子	pot; pan; wok; cauldron; pot-shaped thing
+2125	常见	same		commonly seen; common
+2126	后期	same		late stage; later period
+2127	吸	same		to breathe; to suck in
+2128	无不	same		none lacking; none missing
+2129	讲话	same		a speech; to speak
+2130	收费	same		to charge a fee
+2131	煤	same		coal
+2132	提到	same		to mention; to raise (a subject)
+2133	差不多	same		almost; nearly
+2134	症状	same		symptom (of an illness)
+2135	辆	same		classifier for vehicles
+2136	记得	same		to remember
+2137	闭	same		to close; to stop up
+2138	钢	same		steel
+2139	几次	same		several times
+2140	详细	same		detailed; in detail
+2141	大力	same		energetically; vigorously
+2142	怀疑	same		to doubt (sth); to be skeptical of; to have one's doubts; to harbor suspicions; 
+2143	刻	same		quarter (hour); moment
+2144	与其	same		rather than... (used in expressions of the form 與其|与其[yu3 qi2] + {verb1} + 不如[bu
+2145	影片	same		a copy of a film; film; motion picture; movie
+2146	不如	same		not equal to; not as good as; inferior to; it would be better to
+2147	大批	same		large quantities of
+2148	快乐	same		happy; joyful
+2149	浣	same		to wash; to rinse
+2150	划	same		to row; to paddle
+2151	总量	same		total; overall amount
+2152	俩	same		two (colloquial equivalent of 兩個|两个); both
+2153	码头	same		wharf; dock; quay; pier
+2154	认	same		to recognize; to know
+2155	妖	same		goblin; witch
+2156	缺	same		deficiency; lack
+2157	谢	same		
+2158	煎	same		to pan fry; to sauté
+2159	脊	same		(bound form) spine; backbone; (bound form) ridge
+2160	吻	same		kiss; to kiss
+2161	场所	same		location; place
+2162	尸	same		(literary) person representing the deceased (during burial ceremonies); (literar
+2163	柳	same		
+2164	税	same		taxes; duties
+2165	聚	same		to assemble; to gather (transitive or intransitive); (chemistry) poly-
+2166	看法	same		way of looking at a thing; view
+2167	房间	same		room
+2168	豆	same		legume; pulse; bean; pea (CL:顆|颗[ke1],粒[li4]) (variant of 豆[dou4])
+2169	哈	same		abbr. for 哈薩克斯坦|哈萨克斯坦[Ha1 sa4 ke4 si1 tan3], Kazakhstan; abbr. for 哈爾濱|哈尔滨[Ha1 e
+2170	毫无	same		not in the least; to completely lack
+2171	自从	same		since (a time); ever since
+2172	妃	same		imperial concubine
+2173	赢	same		to beat; to win
+2174	之内	same		inside; within
+2175	堆	same		to pile up; to heap up
+2176	正门	same		main entrance; main gate
+2177	任职	same		to hold a post; to take office
+2178	额	same		
+2179	市区	same		urban district; downtown
+2180	轿	same		sedan chair; palanquin
+2181	爸爸	md	爷	(coll.) father; dad
+2182	抵	same		to press against; to support; to prop up; to resist; to withstand
+2183	俘	same		to take prisoner; prisoner of war
+2184	芙	same		used in 芙蓉[fu2 rong2], lotus
+2185	静	same		still; calm
+2186	辐射	same		to radiate; radiation
+2187	限	same		to limit; to restrict
+2188	光绪	same		reign name of penultimate Qing emperor Guangxu or Guang-hsu (1875-1908)
+2189	中华	same		Zhonghua, historical and cultural term for China, often used to denote Chinese c
+2190	鸿	same		eastern bean goose; great
+2191	监	same		to supervise; to inspect
+2192	效率	same		efficiency
+2193	相继	same		in succession; following closely
+2194	私人	same		private; personal
+2195	变革	same		to transform; to change
+2196	小心	same		to be careful; to take care
+2197	沉重	same		heavy; hard
+2198	积	same		to amass; to accumulate; to store up; (math.) product (the result of multiplicat
+2199	棒	same		stick; club
+2200	景点	same		tourist attraction; scenic spot
+2201	乾隆	same		the Qianlong era; Qianlong Emperor (1711–1799), sixth Qing emperor, princely tit
+2202	所属	same		one's affiliation (i.e. the organization one is affiliated with); subordinate (i
+2203	针	same		needle; pin
+2204	当前	same		the present time; to be faced with
+2205	予以	same		to give; to impose
+2206	蛇	same		
+2207	士	same		
+2208	合适	same		suitable; fitting; appropriate
+2209	伏	same		
+2210	唉	same		interjection or grunt of agreement or recognition (e.g. yes, it's me!); to sigh
+2211	赏	same		to bestow (a reward); to give (to an inferior)
+2212	避	same		to avoid; to shun
+2213	分裂	same		to split up; to divide
+2214	呵	same		
+2215	生气	same		to get angry; to be furious; vitality; liveliness
+2216	将士	same		officers and soldiers
+2217	结论	same		conclusion; verdict
+2218	佳	same		
+2219	密度	same		density; concentration
+2220	忘记	same		to forget
+2221	曹操	same		Cao Cao (155-220), famous statesman and general at the end of Han, noted poet an
+2222	无数	same		countless; numberless
+2223	个体	same		an individual; self-employed individual; small business operator (abbr. for 個體戶|
+2224	姑姑	same		paternal aunt
+2225	信号	same		signal
+2226	岩	same		cliff; rock
+2227	役	same		forced labor; corvée
+2228	教主	same		founder or leader of a religion or sect; (fig.) revered figure
+2229	沉	same		
+2230	一遍	same		one time (all the way through); once through
+2231	阁	same		pavilion (usu. two-storied); cabinet (politics)
+2232	埋	same		to bury
+2233	捉	same		to clutch; to grab
+2234	老爷	same		(respectful) lord; master
+2235	探	same		to explore; to search out
+2236	上涨	same		to rise; to go up
+2237	共和国	same		republic
+2238	尊重	same		to esteem; to respect
+2239	沟	same		ditch; gutter
+2240	垂	same		to hang (down); droop
+2241	纯	same		pure; simple
+2242	赐	same		(bound form) to confer; to bestow; to grant; (literary) gift; favor
+2243	斩	same		to behead (as form of capital punishment); to chop
+2244	不论	same		whatever; no matter what (who, how etc)
+2245	人群	same		crowd
+2246	钻	same		
+2247	幅	same		width; roll
+2248	猜	same		to guess
+2249	差别	same		difference; distinction; disparity
+2250	千万	same		ten million; countless
+2251	地点	same		place; site
+2252	终	same		end; finish
+2253	何况	same		let alone; to say nothing of
+2254	票	same		ticket; ballot
+2255	粉	same		powder; cosmetic face powder
+2256	较为	same		comparatively; relatively
+2257	被迫	same		to be compelled; to be forced
+2258	泡	same		puffed; swollen; spongy; small lake (esp. in place names)
+2259	读书	ff		to study, go to school
+2260	行政区	same		administrative district
+2261	继	same		to continue; to follow after
+2262	频率	same		frequency
+2263	沪	same		short name for Shanghai
+2264	病毒	same		virus
+2265	传来	same		(of a sound) to come through; to be heard
+2266	掷	same		to toss; to throw dice
+2267	言语	same		words; speech
+2268	一下子	same		once; one time; (following a verb) for a moment; briefly
+2269	怎么样	md	哪能	how?; how about?
+2270	在内	same		(included) in it; among them
+2271	周期	same		period; cycle
+2272	徐	same		
+2273	自行	same		voluntary; autonomous
+2274	休	same		
+2275	样	same		manner; pattern
+2276	彩	same		(bright) color; variety
+2277	当中	same		among; in the middle
+2278	指数	same		(numerical, statistical) index; (math.) exponent
+2279	分离	same		to separate
+2280	嫁	same		(of a woman) to marry; to marry off a daughter
+2281	单独	same		alone; by oneself
+2282	马上	same		at once; right away
+2283	照片	same		photo
+2284	壁	same		wall; rampart
+2285	接待	same		to receive; to entertain; to host (guests, visitors or clients)
+2286	阴	same		
+2287	组成部分	same		part; component
+2288	牺牲	same		to sacrifice one's life; to sacrifice (sth valued)
+2289	穷	same		poor; destitute
+2290	俱	same		(literary) all; both; entirely; without exception; (literary) to be together
+2291	婆婆	same		husband's mother; mother-in-law
+2292	矿	same		mineral deposit; ore deposit; ore
+2293	砸	same		to smash; to pound
+2294	他人	same		another person; sb else; other people
+2295	与此同时	same		at the same time; meanwhile
+2296	混合	same		to mix; to blend; hybrid; composite
+2297	顿时	same		immediately; suddenly
+2298	备	same		
+2299	矣	same		classical final particle, similar to modern 了[le5]
+2300	胸	same		
+2301	感染	same		to infect; infection; (fig.) to influence
+2302	递	same		to hand over; to pass on; to deliver; (bound form) progressively; in the proper 
+2303	庆	same		to celebrate
+2304	品	same		(bound form) article; commodity; product; goods; (bound form) grade; rank
+2305	扔	same		to throw; to throw away
+2306	签署	same		to sign (an agreement)
+2307	收拾	same		to put in order; to tidy up
+2308	大厅	same		hall; concourse; public lounge; (hotel) lobby
+2309	加大	same		to increase (e.g. one's effort)
+2310	故意	same		deliberately; on purpose
+2311	下岗	same		(of a guard, sentry etc) to come off duty; (of a worker) be to laid off
+2312	院子	same		courtyard; garden
+2313	握	same		to hold; to grasp; to clench (one's fist)
+2314	煮	same		
+2315	合成	same		to compose; to constitute
+2316	脑袋	same		head; skull
+2317	五一	same		5-1 (May 1st)
+2318	挤	same		to crowd in; to cram in
+2319	不见	same		not to see; not to meet
+2320	峰	same		
+2321	拥	same		to hold in one's arms; to embrace; to surround; to gather around
+2322	询问	same		to inquire; to ask about
+2323	谱	same		chart; list
+2324	璇	same		(jade)
+2325	长老	same		elder; term of respect for a Buddhist monk
+2326	哪儿	same		where?; wherever; anywhere; somewhere
+2327	住房	same		housing
+2328	分成	same		to divide (into); to split a bonus
+2329	半个	same		half of sth
+2330	旅行社	same		travel agency
+2331	能源	same		energy sources; energy
+2332	讨	same		to invite; to provoke
+2333	冷笑	same		to sneer; to laugh grimly
+2334	得以	same		able to; so that sb can
+2335	思维	same		(line of) thought; thinking
+2336	好处	same		easy to get along with
+2337	那天	same		that day; the other day
+2338	涌	same		(used in place names)
+2339	落实	same		practical; workable
+2340	货	same		goods; money
+2341	为何	same		why
+2342	思考	same		to reflect on; to ponder over
+2343	议	same		to comment on; to discuss
+2344	嗯	same		(a groaning sound)
+2345	夫妻	same		husband and wife; married couple
+2346	抹	same		to wipe
+2347	亡	same		to die; to lose
+2348	喂	same		hello (when answering the phone)
+2349	教训	same		to provide guidance; to lecture sb; to upbraid; a talking-to; a bitter lesson
+2350	大夫	same		senior official (in imperial China)
+2351	影	same		picture; image
+2352	三分	same		somewhat; to some degree
+2353	执	same		to execute (a plan); to grasp
+2354	盗	same		to steal; to rob
+2355	统	same		to gather; to unite
+2356	差异	same		difference; discrepancy
+2357	深处	same		abyss; depths
+2358	筑	same		short name for Guiyang 貴陽|贵阳[Gui4 yang2]
+2359	当局	same		authorities
+2360	沙漠	same		desert
+2361	提前	same		to shift to an earlier date; to do sth ahead of time
+2362	碰头	sh		to meet up
+2363	见面	md	碰头	to meet; to see each other
+2364	赋予	same		to assign; to entrust (a task)
+2365	懂得	same		to understand; to know; to comprehend
+2366	只不过	same		only; merely; nothing but; no more than; it's just that ...
+2367	物资	same		goods; supplies
+2368	内地	same		mainland China (PRC excluding Hong Kong and Macau, but including islands such as
+2369	宫女	same		palace maid
+2370	尽量	same		as much as possible; to the greatest extent
+2371	戏剧	same		a drama; a play; theater; script of a play
+2372	冰	same		ice; to chill sth
+2373	撤	same		to remove; to take away
+2374	忠	same		loyal; devoted; faithful
+2375	中期	same		middle (of a period of time); medium-term (plan, forecast etc)
+2376	体内	same		within the body; in vivo
+2377	以便	same		so that; so as to
+2378	反正	same		anyway; in any case
+2379	彼此	same		each other; one another
+2380	碎	same		(transitive or intransitive) to break into pieces; to shatter; to crumble; broke
+2381	普查	same		census; general survey
+2382	纲	same		head rope of a fishing net; guiding principle
+2383	娶	same		to take a wife; to marry (a woman)
+2384	创办	same		to establish; to found
+2385	杂	same		
+2386	跌	same		to fall; to tumble
+2387	局长	same		bureau chief
+2388	照顾	same		to take care of; to show consideration
+2389	尊	same		senior; of a senior generation
+2390	口味	same		a person's preferences; tastes (in food)
+2391	如下	same		as follows
+2392	无疑	same		undoubtedly; without doubt; for sure
+2393	陆续	same		in turn; successively
+2394	妙	same		clever; wonderful
+2395	妹妹	same		younger sister
+2396	林区	same		region of forest
+2397	不变	same		constant; unvarying
+2398	兴建	same		to build; to construct
+2399	拳	same		fist; boxing
+2400	遍	same		
+2401	说出	same		to speak out; to declare (one's view)
+2402	日前	same		the other day; a few days ago
+2403	陆	same		
+2404	上下	same		the top and bottom of sth; the full vertical extent of sth; from top to bottom
+2405	争夺	same		to fight over; to contest
+2406	汉子	same		man; fellow
+2407	名叫	same		called; named
+2408	耳朵	same		ear; handle (on a cup)
+2409	徒	same		
+2410	得知	same		to find out; to learn of
+2411	水面	same		water surface
+2412	同比	same		(statistics) compared with the same period of the previous year; year on year; y
+2413	的确	same		really; indeed
+2414	人力	same		manpower; labor power
+2415	搜	same		to search
+2416	忍	same		to bear; to endure
+2417	助	same		to help; to assist
+2418	群岛	same		group of islands; archipelago
+2419	炸	same		to deep fry; (coll.) to blanch (a vegetable)
+2420	老子	same		Laozi or Lao-tze (c. 500 BC), Chinese philosopher, the founder of Taoism; the sa
+2421	车程	same		travel time; expected time for a car journey
+2422	防空	same		anti-aircraft defense
+2423	义和团	same		the Righteous and Harmonious Fists; the Boxers (history)
+2424	傻	same		foolish
+2425	减	same		to lower; to decrease
+2426	捕	same		to catch; to seize; to capture
+2427	磨	same		to rub; to grind
+2428	节日	same		holiday; festival
+2429	服从	same		to obey (an order); to comply
+2430	以北	same		to the north of (suffix)
+2431	低于	same		to be lower than
+2432	整顿	same		to tidy up; to reorganize
+2433	考研	same		to sit an entrance exam for a graduate program
+2434	考核	same		to examine; to check up on
+2435	又名	same		also known as; alternative name
+2436	当初	same		at that time; originally
+2437	涨	same		to rise (of prices, rivers)
+2438	渡	same		to cross; to pass through
+2439	光荣	same		honor and glory; glorious
+2440	程	same		
+2441	季度	same		quarter of a year; season (sports)
+2442	蔬菜	same		vegetables
+2443	也好	same		that's fine; may as well
+2444	窝	same		nest; pit or hollow on the human body
+2445	黑鱼	same		northern snakehead (Channa argus)
+2446	测	same		to survey; to measure
+2447	内心	same		heart; innermost being; (math.) incenter
+2448	繁荣	same		prosperous; booming
+2449	下令	same		to give an order; to issue an order
+2450	抛	same		to throw; to toss
+2451	壳	same		
+2452	覆盖	same		to cover
+2453	爷爷	same		(coll.) paternal grandfather; grandpa
+2454	鱼肚	same		fish maw; a food dish made from the swim bladder of fish
+2455	上年	same		last year
+2456	即便	same		even if; even though
+2457	不免	same		inevitably
+2458	律	same		
+2459	库	same		warehouse; storehouse
+2460	规	same		
+2461	全都	same		all; without exception
+2462	聪明	same		intelligent; clever; bright; acute (of sight and hearing)
+2463	租	same		to hire; to rent
+2464	围绕	same		to revolve around; to center on (an issue)
+2465	奥	same		(bound form) Austria (abbr. for 奧地利|奥地利[Ao4 di4 li4]); (bound form) Olympics (ab
+2466	速	same		fast; rapid
+2467	逻辑	same		(loanword) logic
+2468	麻烦	same		trouble; inconvenience; inconvenient; troublesome; annoying
+2469	患	same		to suffer (from illness); to contract (a disease)
+2470	随便	same		as one wishes; as one pleases
+2471	嫩	same		young and tender; (of food) tender; lightly cooked
+2472	互	same		mutual
+2473	罚	same		to punish; to penalize; to fine
+2474	兽	same		beast; animal
+2475	桌子	same		table; desk
+2476	诞生	same		to be born
+2477	济	same		used in place names associated with the Ji River 濟水|济水[Ji3 Shui3]
+2478	缘	same		cause; reason
+2479	种子	same		seed
+2480	概况	same		general situation; summary
+2481	不停	same		incessant
+2482	档	same		(Tw) gear (variant of 擋|挡[dang3])
+2483	近日	same		(in) the past few days; recently
+2484	不下	same		to be not less than (a certain quantity, amount etc)
+2485	湾	same		bay; gulf
+2486	湿	same		
+2487	舞蹈	same		dance (performance art); dancing
+2488	声响	same		sound; noise
+2489	干涉	same		to interfere; to meddle
+2490	岩石	same		(geology) rock
+2491	弯	same		to bend; bent
+2492	缩	same		to withdraw; to pull back
+2493	馆	same		
+2494	不住	same		(verb complement) unable to firmly or securely (grasp, recall etc); repeatedly; 
+2495	并未	same		(used to stress that sth did not turn out as one might have expected) did not ac
+2496	沿革	same		evolution of sth over time; course of development
+2497	热闹	same		lively; bustling; full of activity; to make things lively; to have a good time
+2498	为首	same		head; be headed by
+2499	部落	same		tribe
+2500	烈	same		ardent; intense
+2501	创建	same		to found; to establish
+2502	预防	same		to prevent; to take precautions against
+2503	所长	same		what one is good at; one's strong point
+2504	巨	same		very large; huge; tremendous; gigantic; (coll.) very; extremely
+2505	祭祀	same		to offer sacrifices to the gods or ancestors
+2506	便宜	same		cheap
+2507	寒	same		cold; poor
+2508	魏	same		name of a vassal state of the Zhou dynasty from 661 BC in Shanxi, one of the Sev
+2509	相连	same		to link; to join
+2510	眼光	same		gaze; insight
+2511	评为	same		to elect as; to choose as
+2512	混乱	same		confused; chaotic; disorderly
+2513	嘴里	same		mouth; in the mouth
+2514	驾	same		
+2515	极其	same		extremely
+2516	甜	same		sweet
+2517	老太太	same		elderly lady (respectful); esteemed mother
+2518	太空	same		outer space
+2519	爆炸	same		explosion; to explode
+2520	更名	same		to rename
+2521	采	same		to pick; to pluck
+2522	业绩	same		achievement; accomplishment; (in more recent usage) performance (of a business, 
+2523	大致	same		more or less; roughly; approximately
+2524	刷	same		a brush; to paint; to daub
+2525	天地	same		heaven and earth; world
+2526	己	same		self; oneself
+2527	谋	same		to plan; to seek
+2528	历	same		
+2529	信任	same		to trust; to have confidence in
+2530	冲击	same		
+2531	玻璃	same		glass; (slang) male homosexual
+2532	场合	same		occasion; situation; context; setting; venue
+2533	人选	same		choice of person; candidate
+2534	景	same		
+2535	颗	same		classifier for small spheres, pearls, corn grains, teeth, hearts, satellites etc
+2536	出生	same		to be born
+2537	打破	same		to break; to smash
+2538	邪	same		
+2539	参观	same		to visit (a place, e.g. museum or factory); to tour; to look around
+2540	郎	same		
+2541	委托	same		to entrust; to trust
+2542	盯	same		to watch attentively; to fix one's attention on
+2543	师傅	same		master; polite word for a worker, driver
+2544	研发	same		research and development; to develop
+2545	砖	same		
+2546	孤	same		lone; lonely
+2547	标	same		mark; sign
+2548	泪	same		(bound form) tears; teardrops
+2549	任命	same		to appoint; (job) appointment
+2550	牵	same		to lead along; to pull (an animal on a tether)
+2551	纳	same		
+2552	锦	same		brocade; embroidered work
+2553	赶到	same		to hurry (to some place)
+2554	膜	same		membrane; film
+2555	光华	same		brilliance; splendor
+2556	学说	same		theory; doctrine
+2557	展	same		
+2558	津	same		abbr. for Tianjin 天津[Tian1 jin1]
+2559	突	same		to dash; to move forward quickly
+2560	血液	same		blood; (fig.) lifeblood
+2561	阔	same		
+2562	俱乐部	same		(loanword) club (the organization or its premises)
+2563	损害	same		harm; to damage
+2564	鲜血	same		blood
+2565	付	same		
+2566	石头	same		stone
+2567	净	same		
+2568	平日	same		ordinary day; everyday
+2569	集合	same		to gather; to assemble; (math.) set
+2570	缺少	same		lack; shortage of
+2571	雷	same		
+2572	全长	same		overall length; span
+2573	共和	same		republic; republicanism
+2574	负担	same		to bear (an expense, a responsibility etc); burden
+2575	那儿	same		there
+2576	知识分子	same		
+2577	频繁	same		frequently; often
+2578	州长	same		governor (of a province or colony); (US) state governor
+2579	饿	same		hungry; to starve (sb)
+2580	人间	same		the human world; the earth
+2581	不良	same		bad; harmful; unhealthy; (of a device, connection, material etc) defective; faul
+2582	每日	same		daily; (soup etc) of the day
+2583	会见	same		to meet with (sb who is paying a visit)
+2584	日月	same		the sun and moon; day and month
+2585	邻	same		neighbor; adjacent
+2586	不该	same		should not
+2587	号称	same		to be known as; to be nicknamed; to be purportedly
+2588	拿出	same		to take out; to put out
+2589	敲	same		to hit; to strike
+2590	倾	same		to overturn; to collapse
+2591	维生素	same		vitamin
+2592	鞭	same		whip or lash; to flog
+2593	深度	same		depth; (of a speech etc) profundity
+2594	绘	same		to draw; to paint; to depict; to portray
+2595	扩	same		to enlarge
+2596	为止	same		until; (used in combination with words like 到[dao4] or 至[zhi4] in constructs of 
+2597	大气	same		atmosphere (surrounding the earth); imposing; impressive; stylish
+2598	岸	same		
+2599	眼下	same		now; at present; (anatomy) subocular
+2600	原本	same		originally; the original; original copy; original version
+2601	扫	same		to sweep (with a brush or broom); to sweep away; to wipe out; to get rid of
+2602	杖	same		a staff; a rod
+2603	观看	same		to watch; to view
+2604	推行	same		to implement; to carry out; to introduce (a policy, system, reform etc); to prom
+2605	漂亮	same		pretty; beautiful
+2606	对待	same		to treat; treatment
+2607	广播	same		broadcast; broadcasting
+2608	画家	same		painter
+2609	拟	same		doubtful; suspicious
+2610	迟	same		
+2611	家族	same		family; clan
+2612	怀	same		
+2613	担	same		to undertake; to carry
+2614	本地	same		local; this locality
+2615	一头	same		one head; a head full of sth
+2616	明日	same		tomorrow
+2617	园	same		
+2618	说不定	same		can't say for sure; maybe
+2619	威	same		power; might
+2620	山脉	same		mountain range
+2621	视为	same		to view as; to see as
+2622	车辆	same		vehicle
+2623	信仰	same		to believe in (a religion); firm belief
+2624	炮弹	same		artillery shell
+2625	趁	same		to avail oneself of; to take advantage of
+2626	猫	same		cat (CL:隻|只[zhi1]); (dialect) to hide oneself
+2627	私	same		personal; private
+2628	稳	same		settled; steady; stable
+2629	撒	same		to let go; to cast
+2630	相当于	same		equivalent to
+2631	慌	same		to get panicky; to lose one's head; (coll.) (after 得[de2]) unbearably; terribly
+2632	贾	same		
+2633	陷入	same		to sink into; to get caught up in
+2634	大米	same		(husked) rice
+2635	无比	same		incomparable; matchless
+2636	经费	same		funds; expenditure
+2637	肩	same		shoulder; to shoulder (responsibilities etc)
+2638	轰	same		explosion; bang
+2639	抬头	same		to raise one's head; to look up; (fig.) to begin to emerge; to show signs of gro
+2640	沿岸	same		coastal area; littoral or riparian
+2641	珊	same		coral
+2642	颈	same		used in 脖頸|脖颈[bo2 geng3]
+2643	榜	same		notice or announcement; list of names
+2644	碰	same		
+2645	外贸	same		foreign trade
+2646	浓	same		concentrated; dense
+2647	事儿	same		one's employment; business
+2648	利害	same		pros and cons; advantages and disadvantages
+2649	装甲	same		vehicle armor
+2650	哄	same		roar of laughter (onom.); hubbub
+2651	不满	same		dissatisfied; discontented; resentful; (before a number) to be less than
+2652	农	same		
+2653	纤维	same		fiber
+2654	祝	same		
+2655	街上	same		on the street; in town
+2656	服装	same		dress; clothing
+2657	哪个	same		which; who
+2658	射击	same		to shoot; to fire (a gun)
+2659	党员	same		party member
+2660	勇	same		brave
+2661	协助	same		to provide assistance; to aid
+2662	伊面	sh		that side, over there
+2663	那边	md	伊面	over there; yonder
+2664	房屋	same		house; building
+2665	赚	same		to earn; to make a profit
+2666	葬	same		
+2667	悬	same		to hang or suspend; to worry
+2668	角色	same		role; part (in a play or movie etc)
+2669	二级	same		grade 2; second class
+2670	孝	same		filial piety or obedience; mourning apparel
+2671	省委	same		provincial Party committee
+2672	不幸	same		misfortune; adversity
+2673	纹	same		line; trace; mark; pattern; grain (of wood etc); to tattoo
+2674	干净	md	清爽	clean; neat
+2675	疼	same		(it) hurts; sore; to love dearly
+2676	当作	same		to treat as; to regard as
+2677	誉	same		to praise; to acclaim
+2678	当今	same		the present time; (old) (in reference to the reigning monarch) His Majesty
+2679	渠道	same		irrigation ditch; (fig.) channel; avenue
+2680	洪	same		
+2681	剩	same		to remain; to be left
+2682	天空	same		sky
+2683	或许	same		perhaps; maybe
+2684	零	same		zero; nought
+2685	才能	same		talent; ability
+2686	市场经济	same		market economy
+2687	管辖	same		to administer; to have jurisdiction (over)
+2688	子女	same		children; sons and daughters
+2689	能否	same		whether one can; whether it is possible
+2690	坤	same		one of the Eight Trigrams 八卦[ba1 gua4], symbolizing earth; female principle
+2691	个个	same		each one individually; each and every
+2692	职责	same		duty; responsibility
+2693	感动	same		to move (sb); to touch (sb emotionally)
+2694	鱼苗	same		fry; newly hatched fish
+2695	光芒	same		rays of light; brilliant rays
+2696	食用	same		to eat; to consume; edible
+2697	录	same		to carve wood
+2698	尽快	same		as quickly as possible; as soon as possible
+2699	武装力量	same		armed force
+2700	人为	same		artificial; man-made
+2701	重复	same		to repeat; to duplicate
+2702	臭	same		stench; smelly
+2703	割	same		to cut; to cut apart
+2704	律师	same		lawyer
+2705	行省	same		province (old)
+2706	棺	same		coffin
+2707	缓	same		slow; unhurried
+2708	名单	same		list of names
+2709	一辈子	same		(for) a lifetime
+2710	瘦	same		thin; to lose weight
+2711	摩	same		used in 摩挲[ma1 sa5]
+2712	不利	same		unfavorable; disadvantageous
+2713	勒	same		(literary) bridle; halter; headstall; to rein in
+2714	景观	same		landscape
+2715	宣言	same		declaration; manifesto
+2716	踏	same		
+2717	鹿	same		deer
+2718	研究生	same		graduate student; postgraduate student
+2719	比重	same		proportion; (physics) specific gravity
+2720	群体	same		community; colony
+2721	阵地	same		(military) position; front
+2722	内外	same		inside and outside; domestic and foreign
+2723	内战	same		civil war
+2724	强度	same		strength; intensity
+2725	免费	same		free (of charge)
+2726	启动	same		to start (a machine); (fig.) to set in motion
+2727	脖子	same		neck
+2728	十三	same		thirteen; 13
+2729	瓶	same		bottle; vase
+2730	美术	same		art; fine arts
+2731	温习	ff		to review (lessons)
+2732	复习	md	温习	to review; revision
+2733	地形	same		topography; terrain
+2734	自觉	same		to realize; to be aware of; to feel that; to be conscious of (sth relating to on
+2735	伤害	same		to injure; to harm
+2736	杀人	same		to kill a person; to commit murder
+2737	童	same		
+2738	屋子	same		house; room
+2739	皇家	same		royal; imperial household
+2740	生理	same		physiology
+2741	宁	same		
+2742	查看	same		to look over; to examine
+2743	力度	same		strength; vigor
+2744	遣	same		(bound form) to dispatch; to send; (bound form) to drive away; to dispel
+2745	鼻子	same		nose
+2746	免	same		to excuse sb; to exempt
+2747	其间	same		in between; within that interval
+2748	娃	same		baby; doll
+2749	忧	same		to worry; to concern oneself with
+2750	危害	same		to harm; to jeopardize; to endanger; harmful effect; damage
+2751	列车	same		(railway) train
+2752	基于	same		because of; on the basis of
+2753	过于	same		excessively; too
+2754	麻	same		hemp (variant of 麻[ma2])
+2755	尿	same		to urinate; urine
+2756	径	same		footpath; path; track; (fig.) a way; a means; directly; straight
+2757	球员	same		(ball sports) player; team member
+2758	情景	same		scene; spectacle; circumstances; situation
+2759	筋	same		muscle; tendon
+2760	剧	same		theatrical work (play, opera, TV series etc); dramatic (change, increase etc)
+2761	物体	same		object; body; substance
+2762	译	same		to translate; to interpret
+2763	野生	same		wild; undomesticated
+2764	柱	same		pillar
+2765	高于	same		greater than; to exceed
+2766	骗	same		to cheat; to swindle
+2767	永	same		forever; always
+2768	鼻	same		nose
+2769	弄堂	sh		lane (Shanghai's alleys)
+2770	胡同	md	弄堂	lane; alley
+2771	犯人	same		convict; prisoner
+2772	差距	same		disparity; gap
+2773	拆	same		to tear open; to tear down
+2774	溜	same		to slip away; to escape in stealth
+2775	狂	same		mad; wild
+2776	碑	same		a monument; an upright stone tablet
+2777	低头	same		to bow the head; to yield
+2778	答案	same		answer; solution
+2779	月份	same		month
+2780	肥	same		fat; fertile
+2781	疏	same		
+2782	正中	same		middle; center
+2783	棉	same		generic term for cotton or kapok; cotton
+2784	弟兄	same		brothers; comrade
+2785	提议	same		to propose; to suggest; proposal; suggestion
+2786	添加	same		to add; to increase
+2787	瞪	same		to open (one's eyes) wide; to stare at
+2788	风光	same		scene; view
+2789	信用	same		trustworthiness; (commerce) credit
+2790	施行	same		to put in place; to put into practice
+2791	疾	same		(bound form) disease; ailment; (bound form) swift
+2792	地主	same		landlord; landowner
+2793	辞	same		
+2794	饮食	same		eating and drinking; food and drink; diet
+2795	开创	same		to initiate; to start; to found
+2796	大国	same		a power (i.e. a dominant country)
+2797	大将	same		a general or admiral
+2798	整	same		(bound form) whole; complete; entire; (before a measure word) whole; (before or 
+2799	禁	same		to endure
+2800	高大	same		tall; lofty; towering
+2801	罢了	same		a modal particle indicating (that's all, only, nothing much)
+2802	肚子	same		belly; abdomen
+2803	醉	same		intoxicated
+2804	打倒	same		to overthrow; to knock down
+2805	翁	same		
+2806	潜	same		hidden; secret
+2807	辖区	same		administrative region
+2808	险	same		danger; dangerous
+2809	峡	same		gorge
+2810	碳	same		carbon (chemistry)
+2811	名额	same		quota; number of places
+2812	旁人	same		other people; bystanders
+2813	困觉	sh		to sleep
+2814	睡觉	md	困觉	to go to bed; to sleep
+2815	阻	same		to hinder; to block
+2816	各人	same		each one; everyone
+2817	财	same		money; wealth
+2818	固	same		hard; strong
+2819	模拟	same		imitation; to simulate
+2820	毫不	same		hardly; not in the least
+2821	不顾	same		in spite of; regardless of
+2822	周边	same		periphery; rim; perimeter; surroundings; (computing) (attributive) peripheral
+2823	玉米	same		corn; maize
+2824	传递	same		to transmit; to pass on to sb else; (math.) transitive
+2825	次日	same		next day; the morrow
+2826	生意	same		life force; vitality
+2827	琴	same		guqin 古琴[gu3 qin2] (a type of zither); musical instrument in general
+2828	精华	same		best feature; most important part of an object
+2829	出门	same		to go out; to leave home
+2830	口号	same		slogan; catchphrase
+2831	川	same		short name for Sichuan 四川[Si4 chuan1]
+2832	年初	same		beginning of the year
+2833	肝	same		liver (CL:葉|叶[ye4]); (slang) to put in long hours, typically late into the night
+2834	误	same		mistake; error
+2835	华表	same		marble pillar (ornamental column in front of places, tombs)
+2836	诊断	same		to diagnose
+2837	名片	same		(business) card
+2838	仪	same		apparatus; rites
+2839	铅	same		
+2840	嫌	same		to dislike; suspicion
+2841	感谢	same		to thank; to be grateful
+2842	策	same		
+2843	堤	same		dike; Taiwan pr. [ti2]
+2844	善于	same		to be good at; to be adept at
+2845	景区	same		scenic area
+2846	何处	same		whence; where
+2847	老人家	same		polite term for old woman or man
+2848	团长	same		regimental command; head of a delegation
+2849	化石	same		fossil
+2850	寰	same		large domain; extensive region
+2851	勾	same		
+2852	会谈	same		talks; discussions
+2853	沿着	same		to go along; to follow
+2854	无限	same		unlimited; unbounded
+2855	顾问	same		adviser; consultant
+2856	丧失	same		to lose; to forfeit
+2857	愣	same		to look distracted; to stare blankly
+2858	敏感	same		sensitive; susceptible
+2859	生效	same		(of a law, contract, agreement, ban etc) to come into force; to go into effect; 
+2860	穷人	same		poor people; the poor
+2861	灌	same		to irrigate; to pour
+2862	新鲜	same		fresh (experience, food etc); freshness
+2863	盼	same		to hope for; to long for
+2864	抬起	same		to lift up
+2865	润	same		moist; glossy; sleek; to moisten; to lubricate
+2866	锻炼	same		to toughen; to temper
+2867	臂	same		arm
+2868	队长	same		captain; team leader
+2869	垄断	same		to monopolize
+2870	捏	same		to hold between the thumb and fingers; to pinch
+2871	八戒	same		
+2872	称之为	same		to call it...; known as...
+2873	维	same		abbr. for Uyghur 維吾爾|维吾尔[Wei2 wu2 er3]
+2874	姑	same		paternal aunt; husband's sister
+2875	履行	same		to fulfill (one's obligations); to carry out (a task)
+2876	小麦	same		wheat
+2877	乌	same		abbr. for country names that begin with 烏|乌[wu1]: Ukraine 烏克蘭|乌克兰[Wu1 ke4 lan2],
+2878	单纯	same		simple; pure
+2879	秀	same		(bound form) refined; elegant; graceful; beautiful; (bound form) superior; excel
+2880	颤	same		to tremble; to shiver
+2881	警察	same		police; police officer
+2882	凶	same		terrible; fearful
+2883	消	same		to diminish; to subside; to consume; to reduce
+2884	瑜	same		excellence; luster of gems
+2885	述	same		(bound form) to state; to tell; to narrate; to relate
+2886	参数	same		parameter
+2887	爸	same		father; dad
+2888	液	same		(bound form) a liquid
+2889	区长	same		district chief
+2890	态	same		(bound form); appearance
+2891	教练	same		to coach; to train; instructor; sports coach; trainer (CL:位[wei4],名[ming2])
+2892	万历	same		reign name of Ming emperor (1573-1619)
+2893	合格	same		to meet the standard required; qualified
+2894	娱乐	same		to entertain; to amuse
+2895	前景	same		foreground; vista
+2896	扬	same		abbr. for Yangzhou 揚州|扬州[Yang2 zhou1] in Jiangsu
+2897	依赖	same		to depend on; to be dependent on
+2898	槽	same		trough; manger
+2899	少林	same		the Shaolin monastery and martial arts school
+2900	艰难	same		difficult; arduous; hard
+2901	饶	same		
+2902	上前	same		to advance; to step forward
+2903	变为	same		to change into
+2904	行政区域	same		administrative area
+2905	佳肴	same		fine food; delicacies
+2906	动员	same		to mobilize; mobilization
+2907	大地	same		earth; mother earth
+2908	大体	same		in general; more or less; in rough terms; basically; on the whole; overall situa
+2909	预期	same		to expect; to anticipate
+2910	不易	same		not easy to do sth; difficult
+2911	大队	same		group; a large body of
+2912	挨	same		in order; in sequence; close to; adjacent to
+2913	翅	same		
+2914	招呼	same		to call out to; to greet
+2915	难得	same		seldom; rare
+2916	丫头	same		girl; servant girl
+2917	南湖	same		
+2918	江汉	same		
+2919	锌	same		zinc (chemistry)
+2920	不算	same		to not calculate; to not count
+2921	钉	same		nail; to follow closely
+2922	卫	same		vassal state during the Zhou Dynasty (1066–221 BC), located in present-day Henan
+2923	流传	same		to spread; to circulate; to hand down
+2924	察	same		short name for Chahar Province 察哈爾|察哈尔[Cha2 ha1 er3]
+2925	当代	same		the present age; the contemporary era
+2926	转换	same		to change; to switch
+2927	提起	same		to mention; to bring up; (lit. and fig.) to lift; to raise
+2928	窗	same		
+2929	袭击	same		attack (esp. surprise attack); raid
+2930	潮	same		tide; damp; moist; humid
+2931	看出	same		to make out; to see
+2932	娥	same		good; beautiful
+2933	总产量	same		total output
+2934	愿望	same		desire; wish
+2935	打死	same		to kill; to beat to death
+2936	数目	same		amount; number
+2937	款	same		section; paragraph
+2938	花岗岩	same		granite
+2939	哨	same		a whistle; sentry
+2940	鸭	same		duck (CL:隻|只[zhi1]); (slang) male prostitute
+2941	辟	same		(literary) king; monarch; (literary) (of a sovereign) to summon to official serv
+2942	跪下	same		to kneel down
+2943	两边	same		either side; both sides
+2944	产卵	same		to lay eggs
+2945	十四	same		fourteen; 14
+2946	洋	same		ocean; vast
+2947	辨	same		to distinguish; to recognize
+2948	隐	same		(bound form) secret; hidden; concealed; crypto-
+2949	海峡	same		strait; channel
+2950	产物	same		product; result (of)
+2951	活跃	same		active; lively
+2952	思路	same		line of thought; way of thinking
+2953	打听	same		to ask about; to make some inquiries
+2954	水泥	same		cement
+2955	交往	same		to associate (with); to have contact (with)
+2956	会长	same		president of a club, committee etc
+2957	唤	same		to call
+2958	弟弟	same		younger brother
+2959	王爷	same		prince; marquis
+2960	妻	same		(bound form) wife
+2961	被捕	same		to be arrested; under arrest
+2962	凉	same		the five Liang of the Sixteen Kingdoms, namely: Former Liang 前涼|前凉 (314-376), La
+2963	恐	same		afraid; frightened
+2964	柴	same		
+2965	说起	same		to mention; to bring up (a subject)
+2966	一行	same		party; delegation
+2967	力学	same		(physics) mechanics; (literary) to study hard
+2968	头顶	same		top of the head
+2969	季	same		
+2970	阙	same		
+2971	仍旧	same		still (remaining); to remain (the same)
+2972	刑	same		
+2973	当天	same		on that day
+2974	闲	same		enclosure; (variant of 閒|闲[xian2]) idle
+2975	剂	same		(bound form) a compound made by mixing ingredients (esp. a medicinal or chemical
+2976	南阳	same		
+2977	摄	same		(bound form) to take in; to absorb; to assimilate; to capture (video or still im
+2978	典	same		canon; law
+2979	披露	same		to reveal; to publish
+2980	击败	same		to defeat; to beat
+2981	庆祝	same		to celebrate
+2982	心思	same		mind; thoughts
+2983	情感	same		feeling; emotion
+2984	伙伴	same		
+2985	大幅	same		large-format (picture, banner, photo etc); substantially; by a wide margin
+2986	狠	same		ruthless; fierce; ferocious; determined; resolute
+2987	单行	same		to come individually; to treat separately
+2988	同期	same		the corresponding time period (in a different year etc); concurrent
+2989	重量	same		weight
+2990	庸	same		ordinary; to use
+2991	待遇	same		treatment; pay
+2992	生涯	same		career; life (way in which sb lives)
+2993	贺	same		
+2994	迷	same		to bewilder; crazy about
+2995	不怕	same		fearless; not worried (by setbacks or difficulties)
+2996	以南	same		to the south of (suffix)
+2997	例子	same		case; (for) instance
+2998	包围	same		to surround; to encircle; to hem in
+2999	惹	same		to provoke; to irritate
+3000	泉	same		spring (small stream); mouth of a spring
+3001	啥地方	sh		where
+3002	几钿	sh		how much (money)
+3003	几岁	same		how old
+3004	啥辰光	sh		when
+3005	做啥	sh		why; to do what
+3006	勿晓得	sh		don't know
+3007	勿要紧	sh		it doesn't matter
+3008	勿客气	sh		you're welcome
+3009	覅客气	sh		don't mention it
+3010	一眼眼	sh		a tiny bit
+3011	上班	same		to go to work
+3012	下班	same		to finish work
+3013	汏浴	sh		to take a bath, a shower
+3014	打电话	same		to phone
+3015	转去	sh		to go back
+3016	侬好	same		hello
+3017	侬早	sh		good morning
+3018	谢谢	same		thank you
+3019	谢谢侬	sh		thank you
+3020	再会	sh		goodbye
+3021	对勿起	sh		sorry
+3022	好个	sh		OK, sure
+3023	对个	sh		right, that's it
+3024	是个	sh		yes, that's right
+3025	请问	same		excuse me (may I ask)
+3026	帮帮忙	sh		come on! (please, give me a break)
+3027	早浪	sh		(in the) morning
+3028	礼拜	sh		week
+3029	礼拜天	sh		Sunday
+3030	礼拜六	sh		Saturday
+3031	等歇	sh		in a moment, later
+3032	点钟	same		o'clock
+3033	几点钟	same		what time
+3034	爷叔	sh		uncle (also: polite "sir" to a man older than you)
+3035	阿姨	same		auntie (polite to a woman older than you)
+3036	外婆	same		grandmother (mother's mother)
+3037	老公	same		husband
+3038	上海人	same		Shanghainese (person)
+3039	外地人	same		someone not from here
+3040	闲话	ff		speech, language; words
+3041	上海闲话	sh		Shanghainese (language)
+3042	普通话	same		Mandarin
+3043	早饭	same		breakfast
+3044	中饭	same		lunch
+3045	夜饭	sh		dinner
+3046	生煎	same		pan-fried pork bun
+3047	小笼	same		soup dumplings
+3048	包子	same		steamed bun
+3049	豆浆	same		soy milk
+3050	油条	same		fried dough stick
+3051	粢饭团	sh		sticky rice roll
+3052	葱油饼	same		scallion pancake
+3053	咖啡	same		coffee
+3054	马路	same		street, road
+3055	外滩	same		the Bund
+3056	菜场	sh		wet market
+3057	饭店	same		restaurant; hotel
+3058	地铁	same		metro
+3059	地铁站	same		metro station
+3060	差头	sh		taxi
+3061	搿面	sh		this side
+3062	嗲	sh		lovely, cute; great
+3063	廿	sh		twenty
+3064	下趟	sh		next time
+3065	南京东路	same		East Nanjing Road
+3066	豫园	same		Yuyuan Garden
+3067	小李	same		Xiao Li (a name: "little Li")
+3068	法国人	same		French (person)
+3069	外孙	same		grandson (daughter's son)
+3070	落车	sh		to get off (a bus, train)
+3071	苹果	same		apple
+3072	斤	same		jin (half a kilo)
+3073	葱	same		spring onion
+3074	咸	same		salty
+3075	烫	same		hot (to the touch)
+3076	开心	same		happy
+3077	十二	same		twelve
+3078	设定	same		settings
+3079	词典	same		dictionary
+3080	书橱	sh		bookcase
+3081	番茄	sh		tomato
+3082	番茄炒蛋	same		tomato and scrambled egg
+3083	打差头	sh		to take a taxi
+3084	搿歇	sh		now, at this moment
+3085	落雨	sh		to rain
+3086	趟	same		(times, trips)
+3087	坏脱	sh		broken, broken down
+3088	朝南	same		facing south
+3089	房钿	sh		rent
+3090	五千	same		five thousand
+3091	四千	same		four thousand
+3092	三百	same		three hundred
+3093	勿适意	sh		unwell
+3094	适意	sh		comfortable
+3095	发寒热	sh		to have a fever
+3096	看毛病	sh		to see a doctor
+3097	试试看	sh		to try (and see)
+3098	打八折	same		20% off (sell at 80%)
+3099	三刻	same		three quarters (of an hour)
+3100	上趟	sh		last time
+3101	剃头	sh		to get a haircut
+3102	汏头	sh		to wash one's hair
+3103	剪脱	sh		to cut off
+3104	切一切	same		to cut up (a bit)
+3105	打一打	same		to beat (a bit)
+3106	上勿来	sh		can't come up
+3107	冷脱	sh		gone cold
+3108	生日歌	same		birthday song

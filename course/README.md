@@ -8,7 +8,7 @@ characters as Mandarin are learned as pronunciation; teaching time goes to false
 - 100 lessons, a review every 7th lesson, second wave from lesson 50.
 - Progression L1–50 by number of lines (`tools/lint.py`, `docs/course-plan.md` §3): 6 lines at L1–5, one more every
   5 lessons (15 at L46–50); a median line of 7 syllables at L1–10, rising by 1 every 10 lessons; 12 → 20 new words;
-  review lessons 2 lines shorter, no new words. Exercises: 5 translate + 3 fill.
+  review lessons 2 lines shorter, no new words. Exercises: 3 translate + 3 fill + 3 say, new sentences (never a dialogue line), words already met only.
 
 ## Rules for content
 1. Everything here is original. No sentences, dialogues or notes from published courses or from the books in the
@@ -36,9 +36,10 @@ notes:
   text: >
     伐 at the end turns a statement into a yes–no question…
 exercises:
-  translate: [{hanzi: …, en: …}]          # read it, give the English (5)
+  translate: [{hanzi: …, en: …}]          # read it, give the English (3)
   fill: [{hanzi: 我 ＿ Sam 。, en: …, answer: 叫}]   # (3)
-  say: [{hanzi: …, en: …}]                # optional: English → Shanghainese
+  say: [{hanzi: …, en: …}]                # English → Shanghainese (3)
+# Exercise sentences are new (lint fails on a copy of any dialogue line) and use only words met so far.
 ```
 Lesson 0 (how to read the spellings) is `lessons/000-reading.html`.
 

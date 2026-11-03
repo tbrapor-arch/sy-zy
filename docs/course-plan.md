@@ -16,7 +16,7 @@ Decided 3 Nov 2026 (full working plan, in French, in the claude.ai project: `pla
 - Lines: 6 at L1–5, then +1 every 5 lessons → 15 at L46–50.
 - Median syllables per line: 7 (L1–10), 8, 9, 10, 11 (L41–50); a single line may be short.
 - New words: 12 → 20, linear (±2). Reviews (7, 14 … 49): 2 lines fewer than their neighbours, no new words.
-- Exercises: 5 translate + 3 fill, outside the dialogue, already-seen words only.
+- Exercises: 3 translate + 3 fill + 3 say, outside the dialogue (never a dialogue line), already-seen words only.
 - `make lint` reports the differences; `python3 tools/lint.py --strict` makes them errors once a lesson is final.
 
 | L | lines | syll./line | new words |

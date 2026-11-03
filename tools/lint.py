@@ -7,7 +7,7 @@ Curve (docs/course-plan.md §3):
   lines     6 at L1–5, +1 every 5 lessons → 15 at L46–50; a review lesson has 2 fewer lines
   syllables median per line: 7 (L1–10), 8, 9, 10, 11 (L41–50); more than 1 syllable off = warning
   new words 12 → 20, linear (±2); review lessons: none
-  exercises 5 translate + 3 fill
+  exercises 3 translate + 3 fill + 3 say, none copied from a dialogue line
 """
 import glob, os, re, statistics, sys
 import yaml
@@ -44,6 +44,18 @@ def syllables(text):
         han = len(HAN.findall(tok))
         n += han if han else 1
     return n
+
+
+def bare(s):
+    return re.sub(r'[\s，。！？：、；…,.!?＿]', '', re.sub(r'\[[^\]]*\]', '', s))
+
+
+ALL_LINES = {}
+SEEN = {}      # lesson id -> words met in the dialogues and titles up to that lesson
+
+
+def words(text):
+    return [re.sub(r'\[[^\]]*\]$', '', t) for t in text.split() if HAN.search(t)]
 
 
 def check(path, strict):
@@ -84,8 +96,19 @@ def check(path, strict):
         if abs(med - target_syllables(n)) > 1:
             warns.append(f'median {med:g} syllables per line, curve says {target_syllables(n)}')
         ex = y.get('exercises') or {}
-        if len(ex.get('translate', [])) != 5 or len(ex.get('fill', [])) != 3:
-            warns.append(f'exercises: {len(ex.get("translate", []))} translate + {len(ex.get("fill", []))} fill, want 5 + 3')
+        got = [len(ex.get(k) or []) for k in ('translate', 'fill', 'say')]
+        if got != [3, 3, 3]:
+            warns.append('exercises: {} translate + {} fill + {} say, want 3 + 3 + 3'.format(*got))
+    for k, items in (y.get('exercises') or {}).items():
+        for e in items or []:
+            src = e['hanzi'].replace('＿', ' ' + (e.get('answer') or '') + ' ')
+            if bare(src) in ALL_LINES:
+                errors.append(f'{k} exercise copies a dialogue line (lesson {ALL_LINES[bare(src)]}): {e["hanzi"]}')
+            unseen = [w for w in words(src) if w not in SEEN.get(n, set())]
+            if unseen:
+                errors.append(f'{k} exercise uses words not met yet ({" ".join(unseen)}): {e["hanzi"]}')
+            if '＿' in e['hanzi'] and not e.get('answer'):
+                errors.append(f'fill exercise without an answer: {e["hanzi"]}')
     if strict:
         errors += warns
         warns = []
@@ -95,6 +118,14 @@ def check(path, strict):
 def main():
     strict = '--strict' in sys.argv
     bad = 0
+    for p in sorted(glob.glob(os.path.join(ROOT, 'course/lessons/[0-9][0-9][0-9].yaml'))):
+        y = yaml.safe_load(open(p, encoding='utf8'))
+        seen = set(SEEN.get(max(SEEN), set())) if SEEN else set()
+        seen |= set(words(y['title']['hanzi']))
+        for d in y.get('dialogue', []):
+            ALL_LINES.setdefault(bare(d['hanzi']), y['id'])
+            seen |= set(words(d['hanzi']))
+        SEEN[y['id']] = seen
     for p in sorted(glob.glob(os.path.join(ROOT, 'course/lessons/[0-9][0-9][0-9].yaml'))):
         n, errors, warns = check(p, strict)
         for e in errors:

@@ -31,7 +31,7 @@ css += (ROOT / 'app/style/extra.css').read_text(encoding='utf8')
 data = (ROOT / 'app/build/data.js').read_text(encoding='utf8')
 private = ROOT / 'app/build/data.private.js'
 data_private = private.read_text(encoding='utf8') if private.exists() else data
-js = (ROOT / 'app/src/app.js').read_text(encoding='utf8') + (ROOT / 'app/src/reader.js').read_text(encoding='utf8') + (ROOT / 'app/src/sync.js').read_text(encoding='utf8')
+js = (ROOT / 'app/src/app.js').read_text(encoding='utf8') + (ROOT / 'app/src/reader.js').read_text(encoding='utf8') + (ROOT / 'app/src/sync.js').read_text(encoding='utf8') + (ROOT / 'app/src/module.js').read_text(encoding='utf8')
 html = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>书橱 Sy-zy</title>

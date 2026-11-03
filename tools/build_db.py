@@ -103,6 +103,23 @@ for r in read_tsv(ROOT / 'course/verified.tsv', ['word', 'ipa', 'book', 'date'])
     if r['word'] != 'word' and r['book']:
         verified[(r['word'], r['ipa'])].append(r['book'])
 
+# ---------- traditional characters (the app shows simplified by default; Settings › Characters switches)
+# OpenCC converts word by word; course/trad.tsv fixes what it gets wrong for Shanghainese (钟 → 鐘, not the surname 鍾).
+S2T = opencc.OpenCC('s2t').convert
+TRAD_FIX = sorted(((r['simp'], r['trad']) for r in read_tsv(ROOT / 'course/trad.tsv', ['simp', 'trad', 'note'])
+                   if r['simp'] != 'simp' and len(r['simp']) == len(r['trad'])), key=lambda x: -len(x[0]))
+def trad(s):
+    t = S2T(s)
+    if len(t) != len(s):
+        return t
+    t = list(t)
+    for a, b in TRAD_FIX:
+        i = s.find(a)
+        while i >= 0:
+            t[i:i + len(a)] = b
+            i = s.find(a, i + 1)
+    return ''.join(t)
+
 def ipa_of(word, forced=None):
     """Reading of a word, best source first. Returns (syllables, source)."""
     if forced:
@@ -127,6 +144,7 @@ def entry(word, forced=None):
     if not syls:
         return None
     e = {'h': word, **R.word(syls), 'src': src}
+    if trad(word) != word: e['t'] = trad(word)
     c = core.get(word)
     if c:
         e.update(type=c['type'], gloss=c['en'], zh=[z for z in re.split('[、；;]', c['zh']) if z])
@@ -184,13 +202,13 @@ def tokens(src, where):
             continue
         e = entry(word, forced)
         if not e:
-            report['missing'].append(f'{word} ({where})'); out.append({'w': {'h': word}}); continue
+            report['missing'].append(f'{word} ({where})'); out.append({'w': {'h': word, **({'t': trad(word)} if trad(word) != word else {})}}); continue
         wid = f"{word}|{e['ipa']}"
         if wid not in dict_out:
             dict_out[wid] = e
             if e['src'] == 'composed': report['composed'].append(f"{word} → {e['wugniu']} ({where})")
             if 'gloss' not in e: report['no gloss'].append(f'{word} ({where})')
-        out.append({'w': {'h': word, 'id': wid}})
+        out.append({'w': {'h': word, 'id': wid, **({'t': trad(word)} if trad(word) != word else {})}})
     return out
 
 lessons = []
@@ -213,7 +231,7 @@ for p in sorted((ROOT / 'course/lessons').glob('[0-9][0-9][0-9].yaml')):
         exercises.append({'kind': e['kind'], 'tokens': tokens(e['src'], f'lesson {n} exercise'), 'en': e['en'],
                           'answer': e['answer'], 'answer_id': (tokens(e['answer'], 'answer')[0].get('w', {}).get('id') if e['answer'] and HAN.search(e['answer']) else None)})
     hz, en = [x.strip() for x in L['title'].split('|')]
-    lessons.append({'id': n, 'title': {'hanzi': hz, 'en': en, 'tokens': tokens(hz, f'lesson {n} title')},
+    lessons.append({'id': n, 'title': {'hanzi': hz, 't': trad(hz), 'en': en, 'tokens': tokens(hz, f'lesson {n} title')},
                     'review': L.get('review') == 'yes', 'setting': L.get('setting', ''), 'lines': lines,
                     'notes': L['notes'], 'exercises': exercises, 'all_words': new_words,
                     'new_words': [w for w in new_words if w not in earlier]})
@@ -334,7 +352,12 @@ if reader_out:
 
 # ---------- 8. write
 lesson0 = (ROOT / 'course/lessons/000-reading.html').read_text(encoding='utf8')
-DATA = {'lessons': lessons, 'dict': dict_out, 'reader': reader_out, 'bridge': bridge, 'lesson0': lesson0,
+# character map for free text (notes, settings, Mandarin equivalents): one character at a time
+_free = ''.join(l['setting'] + ''.join(x['text'] for x in l['notes']) for l in lessons) + ''.join(
+    e['h'] + ''.join(e.get('zh', [])) + e.get('note', '') for e in dict_out.values())
+_free += ''.join(x.read_text(encoding='utf8') for x in (ROOT / 'app/src').glob('*.js'))   # the app's own labels
+s2t_map = {c: trad(c) for c in sorted(set(HAN.findall(_free))) if len(trad(c)) == 1 and trad(c) != c}
+DATA = {'s2t': s2t_map, 'lessons': lessons, 'dict': dict_out, 'reader': reader_out, 'bridge': bridge, 'lesson0': lesson0,
         'built': datetime.date.today().isoformat(), 'tones': {str(k): {'contour': v, 'name': R.TONE_NAME[k], 'sandhi': R.SANDHI[k]} for k, v in R.CANON.items()}}
 (ROOT / 'app/build').mkdir(parents=True, exist_ok=True)
 def dump(d): return 'const DATA = ' + json.dumps(d, ensure_ascii=False, separators=(',', ':')) + ';\n'

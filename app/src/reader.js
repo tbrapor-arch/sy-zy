@@ -154,7 +154,7 @@ function showChapter(n) {
     ${rows.filter(r => r.kind === 'def').map(para).join('')}
     <details class="card prep" ${store.get('readAt', {})[n] ? '' : 'open'}><summary><span class="han">预习</span> Before you read · ${pre.length} Shanghainese words</summary>
       <p class="sub" style="margin:.4rem 0 0;font-size:.88rem">In order of appearance. Tap one for its card; words in the text open the same card.</p>
-      <div class="wgrid prepgrid">${pre.map((id, k) => { const e = DATA.dict[id]; return `<button class="wchip ${cog(id)[2]} ${deck[id] ? 'indeck' : ''}" data-word="${esc(id)}" ${k >= 24 ? 'hidden' : ''}><b>${esc(e.h)}</b><span class="r">${esc(e.ipa ? spell(e) : '')}</span><span class="g">${esc(e.gloss || '')}</span></button>`; }).join('')}</div>
+      <div class="wgrid prepgrid">${pre.map((id, k) => { const e = DATA.dict[id]; return `<button class="wchip ${cog(id)[2]} ${deck[id] ? 'indeck' : ''}" data-word="${esc(id)}" ${k >= 24 ? 'hidden' : ''}><b>${esc(H(e))}</b><span class="r">${esc(e.ipa ? spell(e) : '')}</span><span class="g">${esc(e.gloss || '')}</span></button>`; }).join('')}</div>
       <div class="row">${pre.length > 24 ? `<button class="btn small line" id="pre-more">Show all ${pre.length}</button>` : ''}<button class="btn small quiet" id="pre-add">Add these words to review</button></div></details>
     <div class="toolbar" role="toolbar" aria-label="Display">
       <div class="seg" role="group" aria-label="Spelling above">${[['sh', 'Over Shanghainese words'], ['all', 'Over every word'], ['none', 'None']].map(([k, t]) => `<button data-rr="${k}" aria-pressed="${RPREF.ruby === k}">${t}</button>`).join('')}</div>

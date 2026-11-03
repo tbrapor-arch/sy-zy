@@ -6,7 +6,7 @@
 //  - inside claude.ai: the page cannot sign in to Google itself; it goes through the viewer's Google Drive connector,
 //    and keeps the book as an ordinary file in Drive.
 const HOSTED = !!document.querySelector('link[rel=manifest]');
-const SYNC_KEYS = ['doneAt', 'deck', 'days', 'bookNotes', 'readAt'];
+const SYNC_KEYS = ['doneAt', 'deck', 'days', 'bookNotes', 'readAt', 'lists'];
 
 // ---- hosted: Google Identity Services + Drive appDataFolder (code shape taken from Shūjià)
 const GCLIENT = '509495064448-dip09vjpfiq0690mq5l03hssm4g0rmsa.apps.googleusercontent.com';
@@ -71,6 +71,8 @@ const Sync = {
     for (const k of ['doneAt', 'readAt']) Object.entries(a[k] || {}).forEach(([n, d]) => { if (!(n in o[k]) || (d && (!o[k][n] || d < o[k][n]))) o[k][n] = d; });
     Object.entries(a.deck || {}).forEach(([id, v]) => { const r = o.deck[id]; if (!r || v.box > r.box || (v.box === r.box && v.due > r.due)) o.deck[id] = v; });
     Object.entries(a.bookNotes || {}).forEach(([id, v]) => { const r = o.bookNotes[id]; if (!r || (v.at || '') >= (r.at || '')) o.bookNotes[id] = v; });
+    o.lists = JSON.parse(JSON.stringify(b.lists || {}));
+    const keep = lists; lists = o.lists; mergeLists(a.lists); lists = keep;   // mergeLists works on the global: borrow it
     return o;
   },
   dirty() { if (!HOSTED || !this.enabled() || this.busy) return; clearTimeout(this.timer); this.timer = setTimeout(() => this.run(false).catch(() => {}), 15000); },
@@ -108,6 +110,7 @@ const Sync = {
 function applyProgress(m) {
   Object.assign(doneAt, m.doneAt); Object.keys(m.doneAt).forEach(k => done.add(+k));
   Object.assign(deck, m.deck); Object.assign(bookNotes, m.bookNotes); m.days.forEach(d => studyDays.add(d));
+  if (m.lists) { mergeLists(m.lists); store.set('lists', lists); }
   store.set('doneAt', doneAt); store.set('deck', deck); store.set('bookNotes', bookNotes); store.set('days', [...studyDays]); store.set('readAt', m.readAt);
 }
 function paintSync() { const el = $('#sync-status'); if (el) el.textContent = Sync.status; }

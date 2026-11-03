@@ -45,16 +45,14 @@ Tabs as in Tsheh-tû: **Lessons · Practice · Settings**, plus **Books** (only 
 the private repository; Settings › Sync and your books). Practice holds
 Cards (Leitner review), My lists (words added from any card go to the list of the page you are on), Vocabulary
 (search in characters, any spelling, pinyin or English) and Drills. Characters: simplified by default, traditional
-in Settings. Progress, lists and book notes sync through Google Drive.
+in Settings. Progress and lists sync through a secret gist.
 
 ## Checking against your books ("training" the database)
 
-1. In the app, open a word and tap **Matches my book** or **My book says…** (write the book's spelling and title).
-2. Settings → **Save book notes file**.
-3. `python3 tools/import_notes.py syzy-book-notes-….json`
-   Matches go to `course/verified.tsv` and show as "✓ Checked in …" on the word card.
-   Differences go to `course/book_notes.tsv`, with a proposed IPA when the book's spelling can be read back as Wugniu or Qian.
-4. Copy the lines you accept into `course/overrides.tsv` (word, IPA, book, note) and rebuild.
+The word cards no longer carry a "Your book" section (removed 4 Nov 2026; notes saved earlier stay in the browser
+and in sync, unused). Readings are now checked against the books typed in the private repository: matches go to
+`course/verified.tsv` ("✓ Checked in …" on the card), accepted differences to `course/overrides.tsv` (word, IPA,
+book, note), then rebuild. `tools/import_notes.py` still reads an old book-notes file if one exists.
 
 ## Readings: where they come from, how far to trust them
 

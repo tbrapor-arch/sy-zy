@@ -201,7 +201,7 @@ function tokHTML(tok, key) {
     return `<span class="punct">${esc(prefs.mode === 'rom' ? (PUNCT[tok.p] || tok.p) : tok.p)}</span>`;
   }
   const w = tok.w, e = w.id ? DATA.dict[w.id] : null, r = e ? spell(e) : w.h;
-  const cls = 'tok ' + (w.id ? cog(w.id)[2] : '') + (e && bookNotes[w.id] && !bookNotes[w.id].ok ? ' var' : '');
+  const cls = 'tok ' + (w.id ? cog(w.id)[2] : '');
   const a = `class="${cls}" tabindex="0" role="button" data-tok="${key}"`;
   if (prefs.mode === 'rom' || !HAN_RE.test(w.h)) return `<span ${a}>${esc(prefs.mode === 'rom' ? r : w.h)}</span>${prefs.mode === 'rom' ? ' ' : ''}`;
   return `<ruby ${a}>${esc(H(w))}<rt>${esc(r)}</rt></ruby>`;
@@ -373,7 +373,7 @@ const LESSON_OF = {};
 DATA.lessons.forEach(l => l.new_words.forEach(id => { if (!LESSON_OF[id]) LESSON_OF[id] = l.id; }));
 function resultList(list) {
   return `<div class="dres">${list.map(({ id, e }) => `<button class="drow ${cog(id)[2]}" data-word="${esc(id)}"><span class="han dh">${esc(H(e))}</span>
-    <span class="dm"><span class="r">${esc(spell(e))}</span>${LESSON_OF[id] ? `<span class="pill p-same">L${LESSON_OF[id]}</span>` : ''}${bookNotes[id] ? '<span class="pill p-pt">book</span>' : ''}<br><span class="sub">${esc(e.gloss || (e.mand ? e.mand.en : ''))}</span></span>${tune(e)}</button>`).join('')}</div>`;
+    <span class="dm"><span class="r">${esc(spell(e))}</span>${LESSON_OF[id] ? `<span class="pill p-same">L${LESSON_OF[id]}</span>` : ''}<br><span class="sub">${esc(e.gloss || (e.mand ? e.mand.en : ''))}</span></span>${tune(e)}</button>`).join('')}</div>`;
 }
 function wireRes(box) { $$('[data-word]', box).forEach(b => b.onclick = () => openCard(b.dataset.word)); }
 
@@ -381,41 +381,29 @@ function wireRes(box) { $$('[data-word]', box).forEach(b => b.onclick = () => op
 const SRC = { core: 'core list, corrected by hand: check it against your books', lexicon: 'Shanghainese lexicon (chinese-dialect-lexicons: Wugniu, MCPDict, rime-yahwe_zaonhe)', book: 'corrected from your book', lesson: 'set in the lesson', composed: 'put together from single characters: check it' };
 function openCard(id, w) {
   const e = id ? DATA.dict[id] : null, sh = $('#sheet');
-  const top = (h, t, extra) => `<div class="grab"></div><div class="wc-top"><div><div class="wc-h">${esc(h)}</div><div class="wc-t">${esc(t)}</div>${extra || ''}</div><button class="x" aria-label="Close">×</button></div>`;
+  const top = (h, t, extra, btn) => `<div class="grab"></div><div class="wc-top"><div><div class="wc-h">${esc(h)}</div><div class="wc-t">${esc(t)}</div>${extra || ''}</div><div class="wc-btns">${btn || ''}<button class="x" aria-label="Close">×</button></div></div>`;
   if (!e) sh.innerHTML = top(w ? H(w) : '', '') + '<p class="empty">A name, or a word not in the database.</p>';
   else {
-    const [pc, pt] = cog(id), bn = bookNotes[id];
-    const others = ROMS.filter(([k]) => k !== prefs.rom);
-    sh.innerHTML = top(H(e), spell(e), `<div class="wc-tune">${tune(e, true)}<span class="sub">${e.contour.filter(Boolean).join(' – ')}${e.ipa.split(' ').length > 1 ? ' · the first syllable sets the tune' : ''}</span></div>`) + `
+    const [pc, pt] = cog(id);
+    // IPA stays in the data but is not shown on cards for now: the card speaks Qian or Wugniu
+    const CR = ROMS.filter(([k]) => k !== 'ipa'), cur = prefs.rom === 'ipa' ? 'qian' : prefs.rom;
+    // save to the list of the page being read: a bookmark in the card's top corner, filled once the word is in it (as in Tsheh-tû)
+    const lk = listHere(), onL = inList(lk, id);
+    const addBtn = `<button class="wc-add ${onL ? 'on' : ''}" id="add-list" aria-pressed="${onL}" aria-label="${onL ? `In ${esc(listTitle(lk))}: tap to remove` : `Add to ${esc(listTitle(lk))}`}" title="${onL ? 'In' : 'Add to'} ${esc(listTitle(lk))}"><svg viewBox="0 0 24 24" fill="${onL ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"/></svg><span>${esc(listTitle(lk))}</span></button>`;
+    sh.innerHTML = top(H(e), spell(e, cur), `<div class="wc-tune">${tune(e, true)}<span class="sub">${e.contour.filter(Boolean).join(' – ')}${e.ipa.split(' ').length > 1 ? ' · the first syllable sets the tune' : ''}</span></div>`, addBtn) + `
       ${pt || e.rank ? `<div class="row">${pt ? `<span class="pill ${pc}">${pt}</span>` : ''}${LESSON_OF[id] ? `<span class="pos">Lesson ${LESSON_OF[id]}</span>` : ''}</div>` : ''}
       ${e.gloss ? `<div class="wc-sec"><h3>English</h3><div class="wc-gloss">${esc(e.gloss)}</div></div>` : ''}
       <div class="wc-sec"><h3>Spellings</h3><table class="spl"><tbody>
-        ${ROMS.map(([k, t]) => `<tr${k === prefs.rom ? ' class="cur"' : ''}><th>${t}</th><td>${esc(spell(e, k, true))}</td></tr>`).join('')}
-        <tr><th>IPA, alone</th><td>${esc(e.ipa.replace(/(\d+)/g, m => sup(m)))}</td></tr></tbody></table>
-        ${e.verified ? `<span class="pos">✓ Checked in ${e.verified.map(esc).join(', ')}</span><br>` : ''}
-        ${e.lexicon_ipa ? `<span class="pos">The lexicon has ${esc(e.lexicon_ipa.replace(/(\d+)/g, m => sup(m)))}; the reading above was corrected by hand.</span>` : ''}</div>
+        ${CR.map(([k, t]) => `<tr${k === cur ? ' class="cur"' : ''}><th>${t}</th><td>${esc(spell(e, k, true))}</td></tr>`).join('')}</tbody></table>
+        ${e.verified ? `<div class="pos">✓ Checked in ${e.verified.map(esc).join(', ')}</div>` : ''}
+        ${e.lexicon_ipa ? `<div class="pos">This reading was corrected by hand: the lexicon reads it differently.</div>` : ''}</div>
       ${e.mand ? `<div class="wc-sec"><h3>Mandarin</h3><ul class="mlist"><li><span class="han">${esc(hzt((e.zh && e.zh[0]) || e.h))}</span> <span class="py">${esc(e.mand.py)}</span> <span class="men">${esc(e.mand.en)}</span></li>${(e.zh || []).slice(1).map(z => `<li><span class="han">${esc(hzt(z))}</span></li>`).join('')}</ul></div>` : (e.zh ? `<div class="wc-sec"><h3>Mandarin</h3><div class="han">${e.zh.map(z => esc(hzt(z))).join('、')}</div></div>` : '')}
       ${e.note ? `<div class="wc-sec"><h3>Note</h3><p style="margin:0">${fmt(e.note)}</p></div>` : ''}
       ${Module.cardExtra(e)}
       ${e.parts ? '' : ''}
-      <div class="wc-sec book"><h3>Your book</h3>
-        ${bn ? `<p style="margin:0">${bn.ok ? '✓ Matches' : 'Says <b>' + esc(bn.says) + '</b>'}${bn.book ? ` in <i>${esc(bn.book)}</i>` : ''}${bn.note ? ` · ${esc(bn.note)}` : ''} <span class="sub">(${fmtDate(bn.at)})</span></p>` : '<p class="sub" style="margin:0">Check this word against one of your books. Your notes are saved, and go back into the database from Settings.</p>'}
-        <div class="row"><button class="btn small line" id="bk-ok">Matches my book</button><button class="btn small line" id="bk-diff">My book says…</button>${bn ? '<button class="btn small quiet" id="bk-del">Remove note</button>' : ''}</div>
-        <form id="bk-form" hidden><label>My book writes it <input name="says" placeholder="e.g. bhakxiang, bah-shiang, bəʔ ɕiã" required autocomplete="off" autocapitalize="off" spellcheck="false"></label>
-          <label>Book <input name="book" placeholder="title or author" value="${esc(store.get('lastBook', ''))}" autocomplete="off"></label>
-          <label>Note <input name="note" placeholder="optional: tone, meaning, page" autocomplete="off"></label>
-          <div class="row"><button class="btn small" type="submit">Save</button></div></form></div>
-      <div class="row"><button class="btn ${inList(listHere(), id) ? 'quiet' : ''}" id="add-list">${inList(listHere(), id) ? `In ${esc(listTitle(listHere()))} ✓` : 'Add to my list'}</button>
-        <button class="btn ${deck[id] ? 'quiet' : 'line'}" id="add-card">${deck[id] ? 'In your review deck ✓' : 'Add to review'}</button></div>
       <div class="wc-src">Reading: ${esc(SRC[e.src] || e.src)}.${e.mand ? ' English and pinyin: CC-CEDICT, CC BY-SA 4.0.' : ''}</div>`;
     $$('[data-go]', sh).forEach(b => b.onclick = () => { closeSheet(); go(b.dataset.go); });   // links a module section may add
-    $('#add-list', sh).onclick = () => { const k = listHere(), on = !inList(k, id); listSet(k, [id], on); openCard(id, w); toast(on ? `Added to ${listTitle(k)}` : `Removed from ${listTitle(k)}`); };
-    $('#add-card', sh).onclick = () => { if (!deck[id]) { addToDeck([id]); renderTabs(currentTab()); openCard(id, w); toast('Added to review'); } };
-    const saveNote = n => { bookNotes[id] = { ...n, at: today() }; store.set('bookNotes', bookNotes); if (n.book) store.set('lastBook', n.book); openCard(id, w); rerenderCurrent(); toast('Saved in your book notes'); };
-    $('#bk-ok', sh).onclick = () => saveNote({ ok: true, says: spell(e), book: store.get('lastBook', '') });
-    $('#bk-diff', sh).onclick = () => { const f = $('#bk-form', sh); f.hidden = false; $('input', f).focus(); };
-    $('#bk-form', sh).onsubmit = ev => { ev.preventDefault(); const f = new FormData(ev.target); saveNote({ ok: false, says: f.get('says').trim(), book: f.get('book').trim(), note: f.get('note').trim() }); };
-    const del = $('#bk-del', sh); if (del) del.onclick = () => { delete bookNotes[id]; store.set('bookNotes', bookNotes); openCard(id, w); rerenderCurrent(); };
+    $('#add-list', sh).onclick = () => { const on = !inList(lk, id); listSet(lk, [id], on); openCard(id, w); toast(on ? `Added to ${listTitle(lk)}` : `Removed from ${listTitle(lk)}`); };
   }
   $('.x', sh).onclick = closeSheet;
   sh.classList.add('open'); sh.setAttribute('aria-hidden', 'false');
@@ -610,11 +598,10 @@ function grade(ok) {
   sess.i++; sess.flipped = false; renderTabs('review'); showCard();
 }
 
-// ---------- settings: spelling, look, progress, book notes
+// ---------- settings: spelling, look, progress
 function showSettings() {
   renderTabs('settings');
   const opt = (name, cur, list) => `<div class="seg" role="group" aria-label="${name}">${list.map(([k, t]) => `<button data-set="${name}" data-val="${k}" aria-pressed="${cur === k}">${t}</button>`).join('')}</div>`;
-  const notes = Object.entries(bookNotes).filter(([id]) => DATA.dict[id]);
   const m = $('#main');
   m.innerHTML = `<div class="col">
     <div class="head"><span class="eyebrow">Settings</span><h1>${esc(hzt('设定'))}</h1><span class="rom">${esc(spell(DATA.dict[idOf('设定')]) || '')}</span></div>
@@ -629,12 +616,6 @@ function showSettings() {
     <p class="sub" style="margin:0;max-width:65ch;font-size:.9rem"><b>Spelling</b> changes how every word is written, everywhere: pick the system your book uses.
       <b>Wugniu</b> is the online standard (Wiktionary, wugniu.com). <b>Qian pinyin</b> is Qian Nairong's, used in his dictionaries and many textbooks (written as new speakers say it).
       <b>IPA</b> shows each syllable with the pitch it has inside its word. <b>Word tone number</b> puts Wugniu's tone class in front of each word, as Wiktionary does (⁶zaon-he-gnin): one number per word, because the first syllable sets the tune.</p>
-    <h2><span class="han">${esc(hzt('书'))}</span> Your book notes (${notes.length})</h2>
-    <div class="card">${notes.length ? `<table class="ptable wide"><thead><tr><th>Word</th><th>This app</th><th>Your book</th><th>Book</th></tr></thead><tbody>
-      ${notes.map(([id, n]) => { const e = DATA.dict[id]; return `<tr data-word="${esc(id)}"><td class="han">${esc(H(e))}</td><td>${esc(spell(e))}</td><td>${n.ok ? '✓ same' : `<b>${esc(n.says)}</b>`}</td><td>${esc(n.book || '')}${n.note ? `<br><span class="sub">${esc(n.note)}</span>` : ''}</td></tr>`; }).join('')}</tbody></table>
-      <span class="sub" style="font-size:.9rem">Save this file and send it back: the differences become corrections in <code>data/overrides.tsv</code>, and every lesson picks them up.</span>
-      <div class="row"><button class="btn small" id="bk-exp">Save book notes file</button></div>`
-      : '<span class="sub" style="font-size:.9rem">Open any word and tap <b>Matches my book</b> or <b>My book says…</b>. Your notes collect here.</span>'}</div>
     ${syncBlock()}
     <h2><span class="han">${esc(hzt('进度'))}</span> Your progress</h2>
     <div class="card"><span>${done.size} lessons done · ${Object.keys(deck).length} words in review · ${studyDays.size} days studied</span>
@@ -652,8 +633,6 @@ function showSettings() {
     setTimeout(() => URL.revokeObjectURL(a.href), 5000);
   };
   $('#exp', m).onclick = () => saveFile(`syzy-progress-${today()}.json`, JSON.stringify(progressData(), null, 1));
-  const be = $('#bk-exp', m); if (be) be.onclick = () => saveFile(`syzy-book-notes-${today()}.json`, JSON.stringify({ app: 'syzy-book-notes', v: 1, at: new Date().toISOString(),
-    notes: notes.map(([id, n]) => { const e = DATA.dict[id]; return { word: e.h, ipa: e.ipa, wugniu: e.wugniu, qian: e.qian, ...n }; }) }, null, 1));
   $$('[data-word]', m).forEach(r => r.onclick = () => openCard(r.dataset.word));
   wireSync(m, showSettings);
   $('#imp', m).onclick = () => $('#imp-file', m).click();

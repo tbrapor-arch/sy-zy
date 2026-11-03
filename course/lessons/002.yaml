@@ -1,0 +1,85 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 2
+title:
+  en: Have you eaten?
+  hanzi: 吃 过 了 伐 ？
+review: false
+setting: >-
+  The next morning, at the breakfast stall at the end of the lane. An older man is frying buns.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 爷叔 ， 侬早 ！
+  en: Good morning, sir!
+- n: 2
+  speaker: 爷叔
+  hanzi: 侬早 ！ 早饭 吃 过 了 伐 ？
+  en: Morning! Have you had breakfast?
+  lit: you early! breakfast eat (done) (already) (question)?
+- n: 3
+  speaker: Sam
+  hanzi: 还 呒没 。 搿搭 有 啥 ？
+  en: Not yet. What do you have here?
+  lit: still not-have. here have what?
+- n: 4
+  speaker: 爷叔
+  hanzi: 有 生煎 、 豆浆 、 粢饭团 。
+  en: Pan-fried buns, soy milk, sticky rice rolls.
+- n: 5
+  speaker: Sam
+  hanzi: 我 要 四 只[ʦᴀʔ55] 生煎 搭 一 碗 豆浆 。
+  en: I'll have four buns and a bowl of soy milk.
+  lit: I want four (measure) pan-fried-bun and one bowl soy-milk
+- n: 6
+  speaker: 爷叔
+  hanzi: 好个 。 豆浆 要 甜[di13] 个 还是 咸[ɦᴇ13] 个 ？
+  en: Sure. Sweet or salty soy milk?
+  lit: soy-milk want sweet one or salty one?
+- n: 7
+  speaker: Sam
+  hanzi: 甜[di13] 个 。
+  en: Sweet.
+- n: 8
+  speaker: 爷叔
+  hanzi: 生煎 老 烫 个 ， 慢慢[mᴇ13_mᴇ13] 吃 ！
+  en: The buns are very hot, eat slowly!
+  lit: buns very hot (it is), slowly eat!
+notes:
+- ref: 1
+  text: >-
+    爷叔 is the polite word for a man older than you: the stallholder, the taxi driver, the man asking the way. It
+    is also the word for a father's younger brother.
+- ref: 2
+  text: >-
+    吃过了伐？ "eaten (yet)?" is a greeting as much as a question, as in Mandarin 吃过了吗. Verb + 过了伐 asks whether something
+    has already been done. The answer is 吃过了 "yes", or 还呒没 "not yet".
+- ref: 3
+  text: >-
+    呒没 m-meq is Mandarin 没有: "there isn't, haven't". 搿搭 is "here", 搿 being "this".
+- ref: 5
+  text: >-
+    只 is the measure word for buns, animals and many round things, said tsaq (Mandarin 个 / 只). Do not mix it up
+    with 只 tseq "only" in lesson 1: same character, different word. 搭 is "and".
+- ref: 6
+  text: >-
+    个 after an adjective makes "a … one": 甜个 "a sweet one", 咸个 "a salty one", like Mandarin 甜的. 还是 asks "or?" in
+    a question.
+- ref: 8
+  text: >-
+    老 before an adjective is "very": 老烫 very hot, 老好 very good. It has nothing to do with "old" here. The 个 at the
+    end of the sentence adds weight: "they really are hot".
+exercises:
+  fill:
+  - hanzi: 早饭 吃 过 了 ＿ ？
+    en: Have you had breakfast?
+    answer: 伐
+  - hanzi: 还 ＿ 。
+    en: Not yet.
+    answer: 呒没
+  translate:
+  - hanzi: 生煎 老 烫 个 。
+    en: The buns are very hot.
+  say:
+  - hanzi: 甜[di13] 个 还是 咸[ɦᴇ13] 个 ？
+    en: Sweet or salty?

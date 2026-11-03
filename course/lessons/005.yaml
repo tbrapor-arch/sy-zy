@@ -1,0 +1,91 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 5
+title:
+  en: My family
+  hanzi: 阿拉 屋里
+review: false
+setting: >-
+  An evening at the auntie's from lesson 1. She has made tea and takes out a photo.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: 搿 是 阿拉 屋里 个 照片 。
+  en: This is a photo of my family.
+  lit: this is our home ('s) photo
+- n: 2
+  speaker: Sam
+  hanzi: 搿个 是 啥人 ？
+  en: Who is this?
+- n: 3
+  speaker: 阿姨
+  hanzi: 是 阿拉 老公 ， 伊 老早 辣 学堂 做 老师 。
+  en: That's my husband. He used to be a teacher at a school.
+  lit: is our husband, he long-ago at school do teacher
+- n: 4
+  speaker: Sam
+  hanzi: 搿个 小人 是 啥人 ？
+  en: And who is this child?
+- n: 5
+  speaker: 阿姨
+  hanzi: 阿拉 外孙[ŋᴀ13_sən53] ， 今年 七 岁 。
+  en: My grandson. He's seven this year.
+- n: 6
+  speaker: Sam
+  hanzi: 老 嗲 个 ！
+  en: So cute!
+- n: 7
+  speaker: 阿姨
+  hanzi: 侬 屋里 有 几 个 人 ？
+  en: How many are there in your family?
+  lit: you home have how-many (measure) person?
+- n: 8
+  speaker: Sam
+  hanzi: 四 个 ： 爷 、 姆妈 、 阿姐 搭 我 。
+  en: 'Four: dad, mum, my big sister and me.'
+- n: 9
+  speaker: 阿姨
+  hanzi: 伊拉 辣 法国[fᴀʔ55_koʔ55] 伐 ？
+  en: Are they in France?
+- n: 10
+  speaker: Sam
+  hanzi: 是个 ， 辣 巴黎 。
+  en: Yes, in Paris.
+notes:
+- ref: 1
+  text: >-
+    屋里 is "home" (Mandarin 家). 个 ghe' after a noun or pronoun marks who something belongs to, like Mandarin 的: 阿拉屋里个照片
+    "our family's photo".
+- ref: 3
+  text: >-
+    Notice 阿拉老公 "our husband" = "my husband". With family, Shanghainese says 阿拉 "we" where English says "my": 阿拉姆妈,
+    阿拉屋里. 我老公 is possible but sounds more pointed. 伊 is "he" or "she": the language does not tell them apart.
+- ref: 3
+  text: >-
+    老早 is "long ago, already back then". 学堂 is the everyday word for "school".
+- ref: 4
+  text: >-
+    小人 is a false friend: in Mandarin it is "a petty person", in Shanghainese simply "child".
+- ref: 6
+  text: >-
+    嗲 dia is a very Shanghainese word: "lovely, cute, charming", and also "great". 老嗲个 "really cute".
+- ref: 7
+  text: >-
+    个 is also the general measure word, as in Mandarin: 几个人 "how many people", 四个 "four (of them)".
+- ref: 8
+  text: >-
+    The family: 爷 ya is father, 姆妈 m-ma is mother, 阿姐 is big sister, 阿哥 big brother. 搭 is "and".
+exercises:
+  fill:
+  - hanzi: 搿个 是 ＿ ？
+    en: Who is this?
+    answer: 啥人
+  - hanzi: 侬 屋里 有 ＿ 个 人 ？
+    en: How many are there in your family?
+    answer: 几
+  translate:
+  - hanzi: 搿个 小人 老 嗲 个 。
+    en: This child is really cute.
+  say:
+  - hanzi: 阿拉 屋里 有 四 个 人 。
+    en: There are four of us in my family.

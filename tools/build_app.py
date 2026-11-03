@@ -1,12 +1,12 @@
-"""Assemble the app into one self-contained page: app/index.html (style + data + script inline).
+"""Assemble the app into one self-contained page: app/dist/index.html (style + data + script inline).
 
-The style starts from 冊櫥 Tsheh-tû's (build/base.css), recoloured: Huangpu-river teal ink instead of blue,
-simplified-character fonts instead of the Taiwanese ones, plus the pieces only this app has (build/extra.css).
+The style starts from 冊櫥 Tsheh-tû's (app/style/base.css), recoloured: Huangpu-river teal ink instead of blue,
+simplified-character fonts instead of the Taiwanese ones, plus the pieces only this app has (app/style/extra.css).
 """
 import pathlib, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-css = (ROOT / 'build/base.css').read_text(encoding='utf8')
+css = (ROOT / 'app/style/base.css').read_text(encoding='utf8')
 SWAP = [
     ('--grid: #E3E9F6;', '--grid: #E1EBE8;'),
     ('--brand: #2347B5; --brand-ink: #FFFFFF; --brand-soft: #E5EBFA;', '--brand: #12655F; --brand-ink: #FFFFFF; --brand-soft: #DCEEEA;'),
@@ -26,12 +26,12 @@ for a, b in SWAP:
     if a not in css:
         raise SystemExit(f'style swap not found: {a}')
     css = css.replace(a, b)
-css += (ROOT / 'build/extra.css').read_text(encoding='utf8')
+css += (ROOT / 'app/style/extra.css').read_text(encoding='utf8')
 
-data = (ROOT / 'app/data.js').read_text(encoding='utf8')
-private = ROOT / 'app/data.private.js'
+data = (ROOT / 'app/build/data.js').read_text(encoding='utf8')
+private = ROOT / 'app/build/data.private.js'
 data_private = private.read_text(encoding='utf8') if private.exists() else data
-js = (ROOT / 'app/app.js').read_text(encoding='utf8') + (ROOT / 'app/reader.js').read_text(encoding='utf8') + (ROOT / 'app/sync.js').read_text(encoding='utf8')
+js = (ROOT / 'app/src/app.js').read_text(encoding='utf8') + (ROOT / 'app/src/reader.js').read_text(encoding='utf8') + (ROOT / 'app/src/sync.js').read_text(encoding='utf8')
 html = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>书橱 Sy-zy</title>
@@ -57,12 +57,11 @@ html = f'''<!doctype html>
 </script>
 </body></html>
 '''
-(ROOT / 'app/index.html').write_text(html, encoding='utf8')
+(ROOT / 'app/dist').mkdir(parents=True, exist_ok=True)
+(ROOT / 'app/dist/index.html').write_text(html, encoding='utf8')
 html_private = html.replace(data, data_private, 1)
 # the claude.ai artifact adds its own document skeleton: publish the page without one
 body = html_private.split('<head>', 1)[1].replace('</head><body>', '').replace('</body></html>', '')
 body = re.sub(r'<meta[^>]*>', '', body, count=3)
-(ROOT / 'app/artifact.html').write_text(body, encoding='utf8')
-hosted = html.replace('<meta name="theme-color" content="#FCFCF8">', '<meta name="theme-color" content="#FCFCF8">\n<link rel="manifest" href="manifest.webmanifest">\n<link rel="icon" href="icon-192.png">\n<link rel="apple-touch-icon" href="icon-192.png">', 1)
-(ROOT / 'index.html').write_text(hosted, encoding='utf8')
-print('app/index.html', len(html) // 1024, 'KB · index.html (hosted)')
+(ROOT / 'app/build/artifact.html').write_text(body, encoding='utf8')
+print('app/dist/index.html', len(html) // 1024, 'KB · publish with tools/site.py')

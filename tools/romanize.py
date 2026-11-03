@@ -172,6 +172,28 @@ if __name__ == '__main__':
         '拎勿清': 'lin53 vəʔ12 ʨʰin53', '淘浆糊': 'dɔ113 ʨiã53 ɦu113', '轧朋友': 'gəʔ12 bã113 ɦiɤ113',
         '五': 'ɦŋ̩113', '瀴': 'in53', '上海闲话': 'zɑ̃113 hᴇ334 ɦᴇ113 ɦo113', '谢谢侬': 'ʑiᴀ113 ʑiᴀ113 noŋ113',
     }
+    # expected: Wugniu, Qian, word contour. The 8 Qian spellings marked * are the examples Qian published with his
+    # input software; the rest freeze today's output, so a change to the rules shows up here (`make test`).
+    expect = {
+        '上海人': 'zaon-he-gnin shanghenyin 22-55-21', '白相': 'baq-shian bhakxiang* 11-23',
+        '洋': 'yan yhang 13', '友': 'yeu yhou 13', '黄浦江': 'waon-phu-kaon whangpugang* 22-55-21',
+        '物事': 'meq-zy makshy* 11-23', '出洋相': 'tsheq-yan-shian cakyhangxiang* 33-55-21',
+        '拎勿清': 'lin-veq-chin linfhakqin* 55-33-21', '淘浆糊': 'dau-cian-wu dhaojiangwhu* 22-55-21',
+        '轧朋友': 'geq-ban-yeu ghakbhangyhou* 11-22-23', '五': 'ng hng 13', '瀴': 'in yin 53',
+        '上海闲话': 'zaon-he-ghe-gho shanghehhehho* 22-55-33-21', '谢谢侬': 'zhia-zhia-non xhiaxhianong 22-55-21',
+    }
+    import sys
+    bad = 0
     for k, v in tests.items():
         w = word(v.split())
-        print(k, w['wugniu'], w['qian'], w['tone'], '-'.join(w['contour']))
+        got = f"{w['wugniu']} {w['qian']} {'-'.join(w['contour'])}"
+        want = expect[k].replace('*', '')
+        if '--test' in sys.argv:
+            if got != want:
+                bad += 1
+                print(f'FAIL {k}: got {got}, want {want}')
+        else:
+            print(k, w['wugniu'], w['qian'], w['tone'], '-'.join(w['contour']))
+    if '--test' in sys.argv:
+        print('romanize:', 'ok' if not bad else f'{bad} failure(s)', f'({len(tests)} words)')
+        sys.exit(1 if bad else 0)

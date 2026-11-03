@@ -1,0 +1,98 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 1
+title:
+  en: Good morning!
+  hanzi: 侬早 ！
+review: false
+setting: >-
+  A lane (弄堂) in Jing'an, nine in the morning. Sam has just moved in. The auntie next door is hanging out her washing.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: 侬早 ！
+  en: Good morning!
+  lit: you early
+- n: 2
+  speaker: Sam
+  hanzi: 阿姨 侬早 ！
+  en: Good morning, auntie!
+- n: 3
+  speaker: 阿姨
+  hanzi: 侬 是 新[ɕin53] 来 个 伐 ？
+  en: You're new here, aren't you?
+  lit: you are newly come one, (question)?
+- n: 4
+  speaker: Sam
+  hanzi: 是个 ， 我 叫 Sam 。
+  en: Yes. My name is Sam.
+  lit: yes-it-is, I am-called Sam
+- n: 5
+  speaker: 阿姨
+  hanzi: 侬 是 外地人 伐 ？
+  en: Are you from out of town?
+  lit: you are outside-place-person (question)?
+- n: 6
+  speaker: Sam
+  hanzi: 是个 ， 我 是 法国人[fᴀʔ55_koʔ55_ȵin13] 。
+  en: Yes, I'm French.
+- n: 7
+  speaker: 阿姨
+  hanzi: 侬 上海闲话 讲 得 蛮 好 ！
+  en: You speak Shanghainese quite well!
+  lit: you Shanghai-talk speak (it) quite well
+- n: 8
+  speaker: Sam
+  hanzi: 谢谢 阿姨 ！ 我 只 会 讲 一眼眼 。
+  en: Thank you, auntie! I can only say a little.
+  lit: thank auntie! I only can speak a-tiny-bit
+- n: 9
+  speaker: 阿姨
+  hanzi: 再会 ！
+  en: Bye!
+- n: 10
+  speaker: Sam
+  hanzi: 再会 ！
+  en: Bye!
+notes:
+- ref: 1
+  text: >-
+    侬早 is "you early": the morning greeting, said until about ten. At other times people say 侬好, or just the person's
+    title: 阿姨！爷叔！
+- ref: 2
+  text: >-
+    阿姨 is what you call any woman a generation older than you, not only an aunt. For a man the word is 爷叔 (lesson
+    2).
+- ref: 3
+  text: >-
+    伐 at the end turns a statement into a yes–no question, like Mandarin 吗: 侬是外地人 "you are from out of town" → 侬是外地人伐？
+    It is said with a low, short tone, vaq.
+- ref: 4
+  text: >-
+    是个 is "yes, that's right" (Mandarin 是的). "No" is 勿是 (lesson 3). 个 here plays the role of Mandarin 的.
+- ref: 7
+  text: >-
+    Listen to the melody of a whole word. 上海闲话 zaon-he-ghe-gho is said with one tune: low on the first syllable,
+    high on the second, then falling. The first syllable's tone decides the tune; the others lose their own tone.
+    This is the main thing that makes Shanghainese sound different from Mandarin. Tap the word to see its contour.
+- ref: 7
+  text: >-
+    讲 is "to speak" (Mandarin 说). 得 links the verb to how well it is done, as in Mandarin: 讲得蛮好 "speaks quite well".
+    蛮 is "quite". 侬 is "you" for one person; for several people it is 㑚.
+- ref: 8
+  text: >-
+    一眼眼 is "a tiny bit": 一眼 is "a bit", and repeating 眼 makes it smaller. Nothing to do with eyes here.
+exercises:
+  fill:
+  - hanzi: 侬 是 外地人 ＿ ？
+    en: Are you from out of town?
+    answer: 伐
+  - hanzi: 我 ＿ Sam 。
+    en: My name is Sam.
+    answer: 叫
+  translate:
+  - hanzi: 侬 上海闲话 讲 得 蛮 好 。
+    en: You speak Shanghainese quite well.
+  say:
+  - hanzi: 再会 ！
+    en: Goodbye!

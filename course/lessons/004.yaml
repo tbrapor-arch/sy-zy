@@ -1,0 +1,85 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 4
+title:
+  en: How do I get to the Bund?
+  hanzi: 外滩 哪能 走 ？
+review: false
+setting: >-
+  Sunday afternoon. Sam wants to see the Bund and stops a man at a bus stop.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 爷叔 ， 请问 一声 ， 外滩 哪能 走 ？
+  en: Excuse me, sir, how do I get to the Bund?
+  lit: uncle, may-I-ask one-word, Bund how go?
+- n: 2
+  speaker: 爷叔
+  hanzi: 外滩 啊 ？ 蛮 远 个 。 侬 坐 地铁 好 了 。
+  en: The Bund? It's quite far. Just take the metro.
+  lit: Bund (eh)? quite far (it is). you sit metro (and that's it)
+- n: 3
+  speaker: Sam
+  hanzi: 地铁站 辣 啥地方 ？
+  en: Where's the metro station?
+  lit: metro-station at what-place?
+- n: 4
+  speaker: 爷叔
+  hanzi: 就 辣 前头 ， 一直[iɪʔ55_zəʔ12] 跑 ， 五 分钟 。
+  en: Just ahead. Walk straight on, five minutes.
+  lit: right at front, straight walk, five minutes
+- n: 5
+  speaker: Sam
+  hanzi: 要 坐 几 站 ？
+  en: How many stops?
+  lit: need sit how-many stop?
+- n: 6
+  speaker: 爷叔
+  hanzi: 三 站 ， 南京东路[nø13_ʨin53_toŋ53_lu13] 落车[loʔ12_ʦʰo53] 。
+  en: Three stops. Get off at East Nanjing Road.
+- n: 7
+  speaker: Sam
+  hanzi: 谢谢 爷叔 ！
+  en: Thank you, sir!
+- n: 8
+  speaker: 爷叔
+  hanzi: 勿客气 。 白相 开心 ！
+  en: You're welcome. Have fun!
+  lit: not-polite. play happy!
+notes:
+- ref: 1
+  text: >-
+    请问一声 "may I ask a word" is the polite way to stop someone in the street. 哪能 na-nen is "how" (Mandarin 怎么): 哪能走
+    "how (do I) go".
+- ref: 2
+  text: >-
+    好了 at the end of a suggestion means "just do that": 侬坐地铁好了 "just take the metro". 坐 is "to sit", and also "to
+    take" a bus or the metro.
+- ref: 3
+  text: >-
+    辣 laq + a place is "at, in" (Mandarin 在): 辣啥地方 "at what place = where". 啥地方 is the everyday "where"; 哪里 also
+    exists.
+- ref: 4
+  text: >-
+    跑 is a false friend: in Shanghainese it is "to walk, to go on foot". To run is 奔. 前头 is "in front, ahead".
+- ref: 6
+  text: >-
+    落车 "get off" (Mandarin 下车) uses 落 "to come down". In this word 车 is said tsho, its everyday reading; you will
+    also hear the reading ciu in book words.
+- ref: 8
+  text: >-
+    白相 is "to have fun, to play, to go out": one of the most Shanghainese words there is. 开心 is "happy".
+exercises:
+  fill:
+  - hanzi: 外滩 ＿ 走 ？
+    en: How do I get to the Bund?
+    answer: 哪能
+  - hanzi: 地铁站 ＿ 啥地方 ？
+    en: Where is the metro station?
+    answer: 辣
+  translate:
+  - hanzi: 侬 坐 地铁 好 了 。
+    en: Just take the metro.
+  say:
+  - hanzi: 请问 一声 。
+    en: Excuse me (may I ask).

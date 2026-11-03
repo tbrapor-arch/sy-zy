@@ -9,46 +9,50 @@ Shanghainese has no official spelling, and every book uses its own. So the app s
 ## What's in the repo
 
 ```
-app/index.html        the app: one self-contained page (open it, or publish it)
-app/app.js            the app's code
-app/data.js           generated: lessons, the 6,000-word dictionary the app uses, lesson 0, the bridge
-lessons/01.txt …      the lessons, in a plain text format (see the top of 01.txt)
-lessons/lesson0.html  lesson 0: how to read the spellings
-data/core.tsv         ~230 core words written by hand: type, English, Mandarin, corrected IPA
-data/overrides.tsv    corrections confirmed against a book (win over everything else)
-data/verified.tsv     readings confirmed by a book (created by import_notes.py)
-db/lexicon.jsonl      generated: the full database, ~96,000 words, every spelling and tune
-db/report.md          generated: what the build had to guess
-build/romanize.py     the spelling systems and the tone sandhi: the only place they are defined
-build/build_db.py     sources + core + overrides + lessons → db/ and app/data.js
-build/build_app.py    app.js + data.js + style → app/index.html
-build/import_notes.py the app's "book notes" file → data/verified.tsv and data/book_notes.tsv
-sources/              the open data the database is built from
+app/src/              the app's code (app.js, reader.js, sync.js)
+app/style/            the style (base from Tsheh-tû, recoloured, + extra.css)
+app/pwa/              manifest, icons, offline service worker
+course/lessons/       001.yaml … the lessons (format: course/README.md); 000-reading.html is lesson 0
+course/core.tsv       ~230 core words written by hand: type, English, Mandarin, corrected IPA
+course/overrides.tsv  corrections confirmed against a book (win over everything else)
+course/verified.tsv   readings confirmed by a book (created by tools/import_notes.py)
+data/raw/             the open data the database is built from
+data/build/           generated: lexicon.jsonl (~96,000 words, every spelling and tune), report.md
+tools/romanize.py     the spelling systems and the tone sandhi: the only place they are defined
+tools/build_db.py     sources + course → data/build/ and app/build/data.js
+tools/build_app.py    app/src + style + data → app/dist/index.html
+tools/site.py         app/dist → _site/ (published by .github/workflows/pages.yml)
+tools/lint.py         checks the lessons and the L1–50 curve (docs/course-plan.md)
+tools/import_notes.py the app's "book notes" file → course/verified.tsv and course/book_notes.tsv
+reader/               the 弄堂 glossary (the book's own text stays out of this repo; moving to syzy-private)
 ```
 
-## Rebuild
+## Build
 
 ```
-pip install opencc-python-reimplemented
-python3 build/build_db.py && python3 build/build_app.py
+pip install -r requirements.txt
+make            # database + app → app/dist/index.html
+make lint test  # lessons and spellings
+make site       # the installable site in _site/
 ```
+GitHub Pages builds and publishes on every push to `main` (Settings › Pages › Source: GitHub Actions).
 
 ## Checking against your books ("training" the database)
 
 1. In the app, open a word and tap **Matches my book** or **My book says…** (write the book's spelling and title).
 2. Settings → **Save book notes file**.
-3. `python3 build/import_notes.py syzy-book-notes-….json`
-   Matches go to `data/verified.tsv` and show as "✓ Checked in …" on the word card.
-   Differences go to `data/book_notes.tsv`, with a proposed IPA when the book's spelling can be read back as Wugniu or Qian.
-4. Copy the lines you accept into `data/overrides.tsv` (word, IPA, book, note) and rebuild.
+3. `python3 tools/import_notes.py syzy-book-notes-….json`
+   Matches go to `course/verified.tsv` and show as "✓ Checked in …" on the word card.
+   Differences go to `course/book_notes.tsv`, with a proposed IPA when the book's spelling can be read back as Wugniu or Qian.
+4. Copy the lines you accept into `course/overrides.tsv` (word, IPA, book, note) and rebuild.
 
 ## Readings: where they come from, how far to trust them
 
 | Source | Used for | Trust |
 |---|---|---|
-| `sources/zaonhe.txt` (chinese-dialect-lexicons, compiled from wugniu.com, MCPDict, rime-yahwe_zaonhe) | the IPA of ~96,000 words | Good for single characters, noisy for words: some carry book or Mandarin-influenced readings (e.g. 闲话 as ɦi ɦuᴀ). |
-| `data/core.tsv` | ~230 core words: corrected IPA, English, Mandarin | Written by hand (Claude) from standard references; 28 readings differ from the lexicon and are flagged on the word card. Check them first. |
-| `data/overrides.tsv` | your book corrections | Highest. |
+| `data/raw/zaonhe.txt` (chinese-dialect-lexicons, compiled from wugniu.com, MCPDict, rime-yahwe_zaonhe) | the IPA of ~96,000 words | Good for single characters, noisy for words: some carry book or Mandarin-influenced readings (e.g. 闲话 as ɦi ɦuᴀ). |
+| `course/core.tsv` | ~230 core words: corrected IPA, English, Mandarin | Written by hand (Claude) from standard references; 28 readings differ from the lexicon and are flagged on the word card. Check them first. |
+| `course/overrides.tsv` | your book corrections | Highest. |
 
 The app follows **new urban Shanghainese** (five tones: 53, 34, 13, 55ʔ, 12ʔ). Word tunes use the left-dominant sandhi patterns (the first syllable sets the melody). That is right for compound words and noun phrases; verb + object phrases can follow other patterns.
 
@@ -56,11 +60,11 @@ Qian's pinyin is generated with his "new speakers" rules (əʔ and ᴀʔ both wr
 
 ## Licences of the data
 
-- CC-CEDICT (`sources/cedict_ts.u8`): CC BY-SA 4.0. English glosses and pinyin.
-- rime-yahwe_zaonhe (`sources/yahwe_zaonhe.dict.yaml`): CC0.
+- CC-CEDICT (`data/raw/cedict_ts.u8`): CC BY-SA 4.0. English glosses and pinyin.
+- rime-yahwe_zaonhe (`data/raw/yahwe_zaonhe.dict.yaml`): CC0.
 - MCPDict: MIT.
-- chinese-dialect-lexicons (`sources/zaonhe.txt`): no licence file in the repository; it is built from the sources above and wugniu.com. Ask the author before publishing the app widely.
-- jieba (`sources/jieba_dict.txt`): MIT. Word frequencies only.
+- chinese-dialect-lexicons (`data/raw/zaonhe.txt`): no licence file in the repository; it is built from the sources above and wugniu.com. Ask the author before publishing the app widely.
+- jieba (`data/raw/jieba_dict.txt`): MIT. Word frequencies only.
 
 ## Reader: 《弄堂》 (胡宝谈, 2011)
 
@@ -80,6 +84,6 @@ In the claude.ai version, the page cannot sign in to Google itself: it uses your
 
 ## Next
 
-- Lessons 8 onwards (the format is in `lessons/01.txt`).
+- Lessons 8 onwards (format: `course/README.md`; length: `docs/course-plan.md`).
 - Audio: an open Shanghainese text-to-speech model exists (CjangCjengh/Shanghainese-TTS on Hugging Face, trained on this same data); it takes IPA, so it could voice every word and line.
 - A second wave (active phase, English → Shanghainese) from lesson 50, as in Tsheh-tû.

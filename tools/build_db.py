@@ -1,22 +1,23 @@
 """Build the Shanghainese database and the app's data file.
 
 Inputs (paths relative to the repo root):
-  sources/zaonhe.txt     word -> IPA lexicon, ~150k entries (chinese-dialect-lexicons, built from Wugniu, MCPDict, rime-yahwe_zaonhe)
-  sources/cedict_ts.u8   CC-CEDICT, for English glosses and Mandarin pinyin
-  sources/jieba_dict.txt word frequencies (Mandarin web text), to rank words
-  data/core.tsv          hand-written core words: type, gloss, Mandarin equivalent, corrected IPA
-  data/overrides.tsv     corrections from checking books (word, IPA, book, note)
-  lessons/*.txt          the lessons
+  data/raw/zaonhe.txt     word -> IPA lexicon, ~150k entries (chinese-dialect-lexicons, built from Wugniu, MCPDict, rime-yahwe_zaonhe)
+  data/raw/cedict_ts.u8   CC-CEDICT, for English glosses and Mandarin pinyin
+  data/raw/jieba_dict.txt word frequencies (Mandarin web text), to rank words
+  course/core.tsv          hand-written core words: type, gloss, Mandarin equivalent, corrected IPA
+  course/overrides.tsv     corrections from checking books (word, IPA, book, note)
+  course/lessons/*.yaml  the lessons
 
 Outputs:
-  db/lexicon.jsonl       every simplified-character word, with all spellings generated from IPA
-  db/report.md           what the build had to guess (words composed character by character, etc.)
-  app/data.js            what the app loads: lessons, the dictionary it needs, lesson 0, the bridge
+  data/build/lexicon.jsonl       every simplified-character word, with all spellings generated from IPA
+  data/build/report.md           what the build had to guess (words composed character by character, etc.)
+  app/build/data.js            what the app loads: lessons, the dictionary it needs, lesson 0, the bridge
 """
 import json, re, sys, collections, pathlib, datetime
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import romanize as R
 import opencc
+import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 t2s = opencc.OpenCC('t2s').convert
@@ -24,7 +25,7 @@ report = collections.defaultdict(list)
 
 # ---------- 1. the lexicon (IPA)
 lex = {}
-for line in open(ROOT / 'sources/zaonhe.txt', encoding='utf8'):
+for line in open(ROOT / 'data/raw/zaonhe.txt', encoding='utf8'):
     w, p = line.rstrip('\n').split('\t')
     if t2s(w) != w:          # the file holds traditional and simplified twins; keep the simplified one
         continue
@@ -35,7 +36,7 @@ for line in open(ROOT / 'sources/zaonhe.txt', encoding='utf8'):
 
 # ---------- 2. Mandarin: CC-CEDICT glosses, jieba frequency
 cedict = {}
-for line in open(ROOT / 'sources/cedict_ts.u8', encoding='utf8'):
+for line in open(ROOT / 'data/raw/cedict_ts.u8', encoding='utf8'):
     if line.startswith('#'):
         continue
     m = re.match(r'(\S+) (\S+) \[([^\]]+)\] /(.*)/', line)
@@ -49,7 +50,7 @@ for line in open(ROOT / 'sources/cedict_ts.u8', encoding='utf8'):
         cedict[simp] = {'py': py, 'en': [x for x in senses if len(x) < 60][:3] or senses[:1]}
 
 freq = {}
-for line in open(ROOT / 'sources/jieba_dict.txt', encoding='utf8'):
+for line in open(ROOT / 'data/raw/jieba_dict.txt', encoding='utf8'):
     p = line.split()
     if len(p) >= 2:
         freq[p[0]] = int(p[1])
@@ -85,7 +86,7 @@ def read_tsv(path, cols):
         rows.append(dict(zip(cols, p + [''] * (len(cols) - len(p)))))
     return rows
 
-core = {r['word']: r for r in read_tsv(ROOT / 'data/core.tsv', ['word', 'type', 'en', 'zh', 'ipa', 'note'])}
+core = {r['word']: r for r in read_tsv(ROOT / 'course/core.tsv', ['word', 'type', 'en', 'zh', 'ipa', 'note'])}
 # words glossed for the novel reader: like core words, but their IPA only fills a gap in the lexicon
 for r in read_tsv(ROOT / 'reader/longtang/glossary.tsv', ['word', 'en', 'zh', 'ipa', 'type']):
     if r['word'] in core:
@@ -93,12 +94,12 @@ for r in read_tsv(ROOT / 'reader/longtang/glossary.tsv', ['word', 'en', 'zh', 'i
     # not marked: a Shanghainese word unless Mandarin has it too (checked against CC-CEDICT further down)
     core[r['word']] = {'word': r['word'], 'type': r['type'] or 'auto', 'en': r['en'], 'zh': r['zh'],
                        'ipa': r['ipa'] if r['word'] not in lex else '', 'note': '', 'book_gloss': True}
-overrides = {r['word']: r for r in read_tsv(ROOT / 'data/overrides.tsv', ['word', 'ipa', 'book', 'note'])}
+overrides = {r['word']: r for r in read_tsv(ROOT / 'course/overrides.tsv', ['word', 'ipa', 'book', 'note'])}
 for w, r in core.items():
     if r['type'] == 'auto':
         r['type'] = 'same' if w in cedict else 'sh'
 verified = collections.defaultdict(list)
-for r in read_tsv(ROOT / 'data/verified.tsv', ['word', 'ipa', 'book', 'date']):
+for r in read_tsv(ROOT / 'course/verified.tsv', ['word', 'ipa', 'book', 'date']):
     if r['word'] != 'word' and r['book']:
         verified[(r['word'], r['ipa'])].append(r['book'])
 
@@ -143,7 +144,7 @@ def entry(word, forced=None):
     return e
 
 # ---------- 4. full database
-db_dir = ROOT / 'db'; db_dir.mkdir(exist_ok=True)
+db_dir = ROOT / 'data/build'; db_dir.mkdir(exist_ok=True)
 words = sorted(set(lex) | set(core), key=lambda w: (rank.get(w, 10 ** 7), w))
 with open(db_dir / 'lexicon.jsonl', 'w', encoding='utf8') as f:
     for w in words:
@@ -156,27 +157,18 @@ with open(db_dir / 'lexicon.jsonl', 'w', encoding='utf8') as f:
 
 # ---------- 5. lessons
 def parse_lesson(path):
-    L = {'lines': [], 'notes': [], 'exercises': []}
-    part = 'head'
-    for raw in open(path, encoding='utf8'):
-        line = raw.rstrip('\n')
-        if not line.strip() or line.startswith('#'):
-            continue
-        if line.startswith('---'):
-            part = line[3:].strip() or 'lines'; continue
-        if part == 'head':
-            k, v = line.split(':', 1); L[k.strip()] = v.strip()
-        elif part == 'lines':
-            who, rest = line.split(':', 1)
-            f = [x.strip() for x in rest.split('|')]
-            L['lines'].append({'speaker': who.strip(), 'src': f[0], 'en': f[1], 'lit': f[2] if len(f) > 2 else ''})
-        elif part == 'notes':
-            ref, text = line.split(':', 1)
-            L['notes'].append({'ref': int(ref), 'text': text.strip()})
-        elif part == 'exercises':
-            kind, rest = line.split(':', 1)
-            f = [x.strip() for x in rest.split('|')]
-            L['exercises'].append({'kind': kind.strip(), 'src': f[0], 'en': f[1], 'answer': f[2] if len(f) > 2 else ''})
+    """course/lessons/NNN.yaml -> the shape the rest of this script uses"""
+    y = yaml.safe_load(open(path, encoding='utf8'))
+    L = {'title': f"{y['title']['hanzi']} | {y['title']['en']}", 'setting': y.get('setting', '').strip(),
+         'review': 'yes' if y.get('review') else 'no',
+         'lines': [{'speaker': d['speaker'], 'src': d['hanzi'], 'en': d['en'], 'lit': d.get('lit', '')} for d in y['dialogue']],
+         'notes': [{'ref': nt['ref'], 'text': nt['text'].strip(), **({'topic': nt['topic']} if nt.get('topic') else {})}
+                   for nt in y.get('notes', [])],
+         'exercises': []}
+    for kind, items in (y.get('exercises') or {}).items():
+        for e in items:
+            L['exercises'].append({'kind': {'translate': 'mean'}.get(kind, kind), 'src': e['hanzi'], 'en': e['en'],
+                                   'answer': e.get('answer', '')})
     return L
 
 dict_out = {}
@@ -202,7 +194,7 @@ def tokens(src, where):
     return out
 
 lessons = []
-for p in sorted((ROOT / 'lessons').glob('[0-9]*.txt')):
+for p in sorted((ROOT / 'course/lessons').glob('[0-9][0-9][0-9].yaml')):
     L = parse_lesson(p)
     n = int(p.stem)
     seen, new_words = set(), []
@@ -341,13 +333,13 @@ if reader_out:
     reader_out['ids'] = READ_ID
 
 # ---------- 8. write
-lesson0 = (ROOT / 'lessons/lesson0.html').read_text(encoding='utf8')
+lesson0 = (ROOT / 'course/lessons/000-reading.html').read_text(encoding='utf8')
 DATA = {'lessons': lessons, 'dict': dict_out, 'reader': reader_out, 'bridge': bridge, 'lesson0': lesson0,
         'built': datetime.date.today().isoformat(), 'tones': {str(k): {'contour': v, 'name': R.TONE_NAME[k], 'sandhi': R.SANDHI[k]} for k, v in R.CANON.items()}}
-(ROOT / 'app').mkdir(exist_ok=True)
+(ROOT / 'app/build').mkdir(parents=True, exist_ok=True)
 def dump(d): return 'const DATA = ' + json.dumps(d, ensure_ascii=False, separators=(',', ':')) + ';\n'
 # private build (claude.ai artifact): everything, translations included
-(ROOT / 'app/data.private.js').write_text(dump(DATA), encoding='utf8')
+(ROOT / 'app/build/data.private.js').write_text(dump(DATA), encoding='utf8')
 # public build (GitHub, the hosted site): no text derived from the novel. The translations and the author's
 # bracketed readings travel in a private "study pack" the reader loads once (and keeps in Drive).
 import copy
@@ -360,7 +352,7 @@ if pub['reader']:
         c.pop('en_head', None)
         for p in c['pack']: p.pop('en', None); p.pop('a', None)
     (ROOT / 'reader/longtang/syzy-longtang-pack.json').write_text(json.dumps(pack, ensure_ascii=False), encoding='utf8')
-(ROOT / 'app/data.js').write_text(dump(pub), encoding='utf8')
+(ROOT / 'app/build/data.js').write_text(dump(pub), encoding='utf8')
 
 with open(db_dir / 'report.md', 'w', encoding='utf8') as f:
     f.write(f'# Build report ({DATA["built"]})\n\n')

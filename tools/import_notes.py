@@ -3,8 +3,8 @@
     python3 build/import_notes.py syzy-book-notes-2026-10-20.json
 
 For every word you checked in the app:
-  - "Matches my book"  -> data/verified.tsv   (word, IPA, book): the reading is confirmed by a book
-  - "My book says …"   -> data/book_notes.tsv (word, current IPA, the book's spelling, a proposed IPA, book, note)
+  - "Matches my book"  -> course/verified.tsv   (word, IPA, book): the reading is confirmed by a book
+  - "My book says …"   -> course/book_notes.tsv (word, current IPA, the book's spelling, a proposed IPA, book, note)
 
 The proposed IPA is found by reading the book's spelling back through the Wugniu and Qian tables
 (syllable by syllable, the tone kept from the current reading). Spellings from other systems get no
@@ -20,7 +20,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 # every syllable the lexicon uses, spelled both ways -> its IPA without tone
 rev = {'wugniu': collections.defaultdict(set), 'qian': collections.defaultdict(set)}
-for line in open(ROOT / 'sources/zaonhe.txt', encoding='utf8'):
+for line in open(ROOT / 'data/raw/zaonhe.txt', encoding='utf8'):
     for syl in line.rstrip('\n').split('\t')[1].split(' '):
         s = R.from_bars(syl)
         try:
@@ -69,7 +69,7 @@ def main(path):
             diff.append([n['word'], n['ipa'], n['says'], p, system, n.get('book', ''), n.get('note', ''), n.get('at', '')])
     for name, rows, head in [('verified.tsv', ver, 'word\tipa\tbook\tdate'),
                              ('book_notes.tsv', diff, 'word\tcurrent_ipa\tbook_says\tproposed_ipa\tread_as\tbook\tnote\tdate')]:
-        f = ROOT / 'data' / name
+        f = ROOT / 'course' / name
         new = not f.exists()
         with open(f, 'a', encoding='utf8') as out:
             if new:

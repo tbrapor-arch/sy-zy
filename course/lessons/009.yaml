@@ -1,0 +1,103 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 9
+title:
+  en: Taking a taxi
+  hanzi: 打 差头
+review: false
+setting: >-
+  Saturday, late afternoon. Sam is meeting friends on the Bund and is running late. He waves down a taxi.
+dialogue:
+- n: 1
+  speaker: 师傅
+  hanzi: 到 啥地方 ？
+  en: Where to?
+  lit: arrive what-place?
+- n: 2
+  speaker: Sam
+  hanzi: 去 外滩 。 我 有 一眼 急 。
+  en: The Bund. I'm in a bit of a hurry.
+  lit: go Bund. I have a-bit hurried
+- n: 3
+  speaker: 师傅
+  hanzi: 车子 交关 多 。
+  en: There's a lot of traffic.
+  lit: cars very many
+- n: 4
+  speaker: Sam
+  hanzi: 要 多少 辰光 ？
+  en: How long will it take?
+  lit: need how-much time?
+- n: 5
+  speaker: 师傅
+  hanzi: 半 个 钟头 ， 侬 覅 急 。
+  en: Half an hour. Don't worry.
+  lit: half (measure) hour, you don't hurry
+- n: 6
+  speaker: Sam
+  hanzi: 师傅 ， 就 辣 前头 停 。
+  en: Driver, just stop up ahead.
+- n: 7
+  speaker: 师傅
+  hanzi: 到 了 。 扫码 付 好 了 。
+  en: Here we are. You can just scan the code to pay.
+  lit: arrived. scan-code pay (and that's it)
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    打差头 is "to take a taxi" and 差头 is the taxi itself, a word you will only hear in Shanghai. 到 is "to arrive,
+    to get to": 到啥地方？ "(you're) getting to where?" is what every driver asks.
+- ref: 1
+  topic: culture
+  text: >-
+    Call a taxi driver, a bus driver or any workman 师傅 "master". It is polite and neutral, for men and women.
+- ref: 2
+  topic: grammar
+  text: >-
+    有一眼 before an adjective is "a bit, rather": 有一眼急 "a bit in a hurry", 有一眼贵 "a bit expensive". Compare 一眼
+    after an adjective, which compares: 便宜一眼 "a bit cheaper" (lesson 3).
+- ref: 3
+  topic: vocab
+  text: >-
+    交关 is "very, a lot of", stronger than 蛮. 车子 is "car, vehicle"; 车子交关多 "there are a lot of cars" is how
+    you say the traffic is bad.
+- ref: 4
+  topic: grammar
+  text: >-
+    For a large or unknown amount, ask 多少: 多少辰光 "how much time", 多少人 "how many people". 几 is for small
+    numbers you count: 几站, 几岁. 辰光 is "time" (Mandarin 时间、时候).
+- ref: 5
+  topic: vocab
+  text: >-
+    钟头 is "hour" (Mandarin 小时): 一个钟头, 半个钟头 "half an hour". 覅急 "don't hurry, don't worry".
+- ref: 7
+  topic: culture
+  text: >-
+    Almost everyone pays by phone: 扫码 "scan the code". 付 is "to pay". 好了 at the end is the "just do that" of
+    lesson 4.
+exercises:
+  translate:
+  - hanzi: 外滩 到 了 伐 ？
+    en: Are we at the Bund yet?
+  - hanzi: 坐 地铁 要 多少 辰光 ？
+    en: How long does it take by metro?
+  - hanzi: 我 等 了 侬 半 个 钟头 。
+    en: I waited half an hour for you.
+  fill:
+  - hanzi: 师傅 ， 豫园 远 伐 ？ 要 ＿ 辰光 ？
+    en: Driver, is Yuyuan far? How long will it take?
+    answer: 多少
+  - hanzi: 豫园 ＿ 了 ， 阿拉 落车 。
+    en: We're at Yuyuan, let's get out.
+    answer: 到
+  - hanzi: 搿 只[ʦᴀʔ55] 苹果 ＿ 一眼 贵 。
+    en: This apple is a bit expensive.
+    answer: 有
+  say:
+  - hanzi: 师傅 ， 到 南京东路 。
+    en: To East Nanjing Road, please.
+  - hanzi: 今朝 地铁 人 交关 多 。
+    en: The metro is very crowded today.
+  - hanzi: 覅 急 ， 慢慢 讲 。
+    en: Don't rush, speak slowly.

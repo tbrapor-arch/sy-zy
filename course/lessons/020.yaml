@@ -1,0 +1,110 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 20
+title:
+  en: A birthday
+  hanzi: 生日
+review: false
+setting: >-
+  Saturday afternoon. The auntie's grandson, the boy in the photo from lesson 5, is turning eight. Sam knocks with
+  a box in his hands.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 今朝 侬 外孙 过 生日 伐 ？
+  en: Is it your grandson's birthday today?
+- n: 2
+  speaker: 阿姨
+  hanzi: 是个 ， 伊 今年 八 岁 了 。
+  en: Yes, he's eight now.
+- n: 3
+  speaker: Sam
+  hanzi: 我 买 了 只[ʦᴀʔ55] 蛋糕 拨 伊 。
+  en: I've bought him a cake.
+  lit: I bought (measure) cake give him
+- n: 4
+  speaker: 阿姨
+  hanzi: 侬 忒 客气 了 ！ 快 进来 坐 。
+  en: You really shouldn't have! Come in and sit down.
+  lit: you too polite (now)! quick come-in sit
+- n: 5
+  speaker: 外孙
+  hanzi: 谢谢 叔叔 ！ 是 巧克力 个 伐 ？
+  en: Thank you! Is it chocolate?
+- n: 6
+  speaker: Sam
+  hanzi: 是个 。 侬 先 吹 蜡烛 ！
+  en: It is. Blow out the candles first!
+- n: 7
+  speaker: 阿姨
+  hanzi: 阿拉 唱 生日歌 。
+  en: Let's sing happy birthday.
+- n: 8
+  speaker: 外孙
+  hanzi: 姆妈 讲 我 只 好 吃 一 块 。
+  en: Mum says I can only have one piece.
+- n: 9
+  speaker: 阿姨
+  hanzi: 今朝 吃 两 块 勿要紧 。
+  en: Today two pieces is fine.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    过生日 is "to have a birthday, celebrate one". 生 keeps its everyday reading, as in 先生 and 学生.
+- ref: 2
+  topic: grammar
+  text: >-
+    Age + 了: 八岁了 "he's eight now", the 了 of change. To ask: 侬几岁了？ for a child.
+- ref: 3
+  topic: grammar
+  text: >-
+    了 straight after a verb marks a completed action: 买了只蛋糕 "bought a cake", 等了半个钟头. A cake is counted with 只;
+    a slice of it with 块 (line 8), the same 块 as for yuan.
+- ref: 4
+  topic: culture
+  text: >-
+    侬忒客气了 "you're too polite" is how you thank someone for a present or a favour. The guest answers 应该个 or simply
+    覅客气 (lesson 3). 进来 is "to come in": 快进来坐 "come in and sit down".
+- ref: 5
+  topic: vocab
+  text: >-
+    Children call a young man 叔叔 and a young woman 阿姨; an older man is 爷叔 (lesson 2). 巧克力 is chocolate, as in
+    Mandarin.
+- ref: 6
+  topic: vocab
+  text: >-
+    吹 is "to blow": 吹蜡烛 "blow out the candles", 吹干 "blow-dry" (lesson 17).
+- ref: 7
+  topic: grammar
+  text: >-
+    阿拉 + verb invites everyone present: "let's", as in lesson 6. 唱 is "to sing".
+- ref: 8
+  topic: grammar
+  text: >-
+    只好 here is 只 "only" + 好 "may": "may only". Compare 好…伐？ "may I?" (lesson 12).
+exercises:
+  translate:
+  - hanzi: 阿拉 爷 礼拜天 过 生日 。
+    en: My dad has his birthday on Sunday.
+  - hanzi: 蛋糕 侬 吃 了 两 块 了 ！
+    en: You've already had two pieces of cake!
+  - hanzi: 小人 老 欢喜 吹 蜡烛 。
+    en: Children love blowing out candles.
+  fill:
+  - hanzi: 侬 ＿ 客气 了 ， 谢谢 侬 。
+    en: You're too kind, thank you.
+    answer: 忒
+  - hanzi: 今朝 是 我 个 ＿ 。
+    en: Today is my birthday.
+    answer: 生日
+  - hanzi: 蜡烛 侬 来 ＿ 。
+    en: You blow out the candles.
+    answer: 吹
+  say:
+  - hanzi: 侬 几 岁 了 ？
+    en: How old are you (now)?
+  - hanzi: 我 买 了 一 只[ʦᴀʔ55] 巧克力 蛋糕 。
+    en: I bought a chocolate cake.
+  - hanzi: 蛋糕 我 只 好 吃 一 块 。
+    en: I'm only allowed one piece of cake.

@@ -1,0 +1,102 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 11
+title:
+  en: At the office
+  hanzi: 上班
+review: false
+setting: >-
+  Monday morning. Sam rushes into the office twenty minutes late. Xiao Li is at the next desk.
+dialogue:
+- n: 1
+  speaker: 小李
+  hanzi: Sam ， 侬 今朝 哪能 迟到 了 ？
+  en: Sam, how come you're late today?
+- n: 2
+  speaker: Sam
+  hanzi: 对勿起 ， 地铁 坏脱 了 。
+  en: Sorry, the metro broke down.
+  lit: sorry, metro break-off (now)
+- n: 3
+  speaker: 小李
+  hanzi: 老板 辣辣 寻 侬 。
+  en: The boss is looking for you.
+  lit: boss (right-now) look-for you
+- n: 4
+  speaker: Sam
+  hanzi: 伊 寻 我 做啥 ？
+  en: What does he want me for?
+- n: 5
+  speaker: 小李
+  hanzi: 十 点钟 开会 ， 侬 要 讲 两 句 。
+  en: There's a meeting at ten, and you have to say a few words.
+  lit: ten o'clock hold-meeting, you must speak two sentences
+- n: 6
+  speaker: Sam
+  hanzi: 我 一眼 也 呒没 准备 啊 ！
+  en: I haven't prepared at all!
+  lit: I a-bit even not-have prepare (oh)!
+- n: 7
+  speaker: 小李
+  hanzi: 覅 急 ， 还 有 一 个 钟头 。
+  en: Don't panic, there's still an hour.
+- n: 8
+  speaker: Sam
+  hanzi: 好个 ， 我 先 去 吃 杯 咖啡 。
+  en: OK, I'll get a coffee first.
+  lit: OK, I first go drink (measure) coffee
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    哪能 is "how" (lesson 4), and also "how come?": 侬哪能迟到了？ "how come you're late?". 迟到 is "to be late", as in
+    Mandarin.
+- ref: 2
+  topic: grammar
+  text: >-
+    脱 after a verb says that something is gone or done for (Mandarin 掉 or 了): 坏脱 "broken down", 吃脱 "eaten up",
+    冷脱 "gone cold". It is one of the most frequent little words in Shanghainese.
+- ref: 3
+  topic: grammar
+  text: >-
+    辣辣 before a verb is "is doing (right now)", like Mandarin 在: 老板辣辣寻侬 "the boss is looking for you". 辣 alone
+    also works: 我辣吃饭. 寻 is "to look for" (Mandarin 找).
+- ref: 5
+  topic: vocab
+  text: >-
+    开会 is "to hold a meeting". 两句 "two sentences" means "a few words", as in Mandarin 说两句.
+- ref: 6
+  topic: grammar
+  text: >-
+    一眼也 + negative is "not at all": 一眼也呒没准备 "not prepared at all", 一眼也勿贵 "not expensive at all". 也 is "also,
+    even".
+- ref: 8
+  topic: vocab
+  text: >-
+    吃 again covers drinking: 吃咖啡, 吃茶, 吃豆浆. 杯 is "cup, glass", and before a noun the 一 drops: 吃杯咖啡. 先 is
+    "first, before something else".
+exercises:
+  translate:
+  - hanzi: 老板 今朝 也 迟到 了 。
+    en: The boss was late today too.
+  - hanzi: 侬 辣辣 做啥 ？
+    en: What are you doing?
+  - hanzi: 我 先 去 开会 ， 下半日 再 讲 。
+    en: I'll go to the meeting first, we can talk this afternoon.
+  fill:
+  - hanzi: 小李 辣辣 ＿ 侬 ， 侬 辣 啥地方 ？
+    en: Xiao Li is looking for you, where are you?
+    answer: 寻
+  - hanzi: 搿 只[ʦᴀʔ55] 菜 一眼 ＿ 勿 好吃 。
+    en: This dish isn't good at all.
+    answer: 也
+  - hanzi: 差头 ＿ 了 ， 我 坐 地铁 去 。
+    en: The taxi has broken down, I'll take the metro.
+    answer: 坏脱
+  say:
+  - hanzi: 对勿起 ， 我 迟到 了 。
+    en: Sorry, I'm late.
+  - hanzi: 阿拉 两 点钟 开会 。
+    en: We have a meeting at two.
+  - hanzi: 侬 吃 杯 咖啡 伐 ？
+    en: Will you have a coffee?

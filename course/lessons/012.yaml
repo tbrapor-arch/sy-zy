@@ -1,0 +1,102 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 12
+title:
+  en: Looking for a flat
+  hanzi: 寻 房子
+review: false
+setting: >-
+  Sam's lease is ending. On Saturday he visits a flat in an old lane house; the landlady shows him round.
+dialogue:
+- n: 1
+  speaker: 房东
+  hanzi: 搿 间 房间 朝南 ， 老 亮 个 。
+  en: This room faces south, it's very bright.
+- n: 2
+  speaker: Sam
+  hanzi: 一 个 月 房钿 几钿 ？
+  en: How much is the rent a month?
+  lit: one (measure) month rent how-much?
+- n: 3
+  speaker: 房东
+  hanzi: 五千 块 ， 勿 贵 个 。
+  en: Five thousand. That's not expensive.
+- n: 4
+  speaker: Sam
+  hanzi: 忒 贵 了 ， 四千 五 好 伐 ？
+  en: It's too much. Would forty-five hundred be all right?
+- n: 5
+  speaker: 房东
+  hanzi: 租 一 年 ， 就 四千 五 。
+  en: If you rent for a year, forty-five hundred.
+  lit: rent one year, then four-thousand five
+- n: 6
+  speaker: Sam
+  hanzi: 我 好 看看 厨房 伐 ？
+  en: Can I see the kitchen?
+  lit: I may look-look kitchen (question)?
+- n: 7
+  speaker: 房东
+  hanzi: 当然 好 ， 跟 我 来 。
+  en: Of course, follow me.
+- n: 8
+  speaker: Sam
+  hanzi: 搿搭 蛮 清爽 个 ， 我 欢喜 。
+  en: It's nice and clean here, I like it.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    间 counts rooms: 一间房间, 两间. 朝南 "facing south" is what everyone wants in Shanghai: sun in winter, shade in
+    summer. 亮 is "bright, light".
+- ref: 2
+  topic: vocab
+  text: >-
+    房钿 is "rent", with the 钿 of 铜钿 and 几钿 (lesson 3). 月 is "month": 一个月, 两个月.
+- ref: 4
+  topic: grammar
+  text: >-
+    Round numbers drop their last unit, as in Mandarin: 四千五 is 4,500, 三百八 is 380. 千 is "thousand".
+- ref: 5
+  topic: grammar
+  text: >-
+    Two clauses side by side make an "if…then": 租一年，就四千五 "(if you) rent a year, (then it's) 4,500". 就 marks the
+    "then". 年 is "year".
+- ref: 6
+  topic: grammar
+  text: >-
+    好…伐？ asks for permission: 我好看看伐？ "may I have a look?". The answer is 好个 or 好 "yes", 勿好 "no".
+- ref: 7
+  topic: vocab
+  text: >-
+    当然 is "of course". 跟 is "to follow" and also "with": 跟我来 "come with me".
+- ref: 8
+  topic: vocab
+  text: >-
+    清爽 is "clean, neat, tidy", a very Shanghainese word (Mandarin 干净). It is also used for a clear explanation:
+    讲清爽 "say it clearly".
+exercises:
+  translate:
+  - hanzi: 阿拉 屋里 个 厨房 勿 亮 。
+    en: The kitchen at my place isn't bright.
+  - hanzi: 搿 间 房间 一 个 月 几钿 ？
+    en: How much is this room a month?
+  - hanzi: 我 跟 侬 一道 去 看看 房子 。
+    en: I'll go and see the flat with you.
+  fill:
+  - hanzi: 侬 屋里 老 ＿ 个 。
+    en: Your place is very tidy.
+    answer: 清爽
+  - hanzi: 我 要 ＿ 一 年 。
+    en: I want to rent it for a year.
+    answer: 租
+  - hanzi: ＿ 好 ， 侬 来 白相 。
+    en: Of course, come over.
+    answer: 当然
+  say:
+  - hanzi: 我 要 租 一 间 房间 。
+    en: I want to rent a room.
+  - hanzi: 房钿 忒 贵 了 。
+    en: The rent is too high.
+  - hanzi: 搿 间 房间 朝南 伐 ？
+    en: Does this room face south?

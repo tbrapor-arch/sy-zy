@@ -1,0 +1,106 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 17
+title:
+  en: At the barber's
+  hanzi: 剃头
+review: false
+setting: >-
+  Saturday morning, before the cinema. A small barber's shop at the end of Sam's lane.
+dialogue:
+- n: 1
+  speaker: 师傅
+  hanzi: 剃头 还是 汏头 ？
+  en: A haircut or a wash?
+- n: 2
+  speaker: Sam
+  hanzi: 剃头 ， 剪 短 一眼 。
+  en: A haircut. A bit shorter, please.
+- n: 3
+  speaker: 师傅
+  hanzi: 要 剪脱 多少 ？
+  en: How much should I take off?
+  lit: need cut-off how-much?
+- n: 4
+  speaker: Sam
+  hanzi: 两边 短 一眼 ， 上头 长 一眼 。
+  en: Shorter at the sides, a bit longer on top.
+- n: 5
+  speaker: 师傅
+  hanzi: 晓得 了 。 头发 要 汏 伐 ？
+  en: Got it. Shall I wash your hair?
+- n: 6
+  speaker: Sam
+  hanzi: 要 个 ， 汏 好 再 吹干 。
+  en: Yes, wash it and then blow-dry it.
+  lit: want (it), wash done then blow-dry
+- n: 7
+  speaker: 师傅
+  hanzi: 侬 看看 ， 好 伐 ？
+  en: Have a look. All right?
+- n: 8
+  speaker: Sam
+  hanzi: 蛮 好 ， 清爽 交关 了 。
+  en: Very good, much neater.
+  lit: quite good, neat a-lot (now)
+- n: 9
+  speaker: 师傅
+  hanzi: 一共 三十 块 ， 扫码 好 了 。
+  en: Thirty yuan altogether. Just scan the code.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    剃头 is any haircut, scissors or razor (Mandarin 理发). 汏 is "to wash" (Mandarin 洗): 汏头 "wash your hair", 汏浴 "take a
+    shower", 汏衣裳 "do the laundry".
+- ref: 2
+  topic: grammar
+  text: >-
+    Verb + result: 剪短 "cut (until) short", 汏好 "wash (until) done", 吹干 "blow (until) dry". Add 一眼 to say "a bit
+    more": 剪短一眼 "cut a bit shorter".
+- ref: 3
+  topic: grammar
+  text: >-
+    剪脱 "cut off": 脱 again for something removed (lesson 11). 多少 asks "how much" (lesson 9).
+- ref: 4
+  topic: vocab
+  text: >-
+    两边 "both sides", 上头 "on top, above" (with the 头 of 前头, lesson 4). 长 is "long", 短 "short".
+- ref: 6
+  topic: grammar
+  text: >-
+    要个 "yes (I want it)" answers a 要…伐？ question. 再 here is "and then": 汏好再吹干 "wash it, then dry it".
+- ref: 8
+  topic: grammar
+  text: >-
+    交关 after an adjective is "much more": 清爽交关了 "much neater (now)", 好交关了 "much better". Before an adjective it is
+    "very": 交关多 (lesson 9).
+- ref: 9
+  topic: vocab
+  text: >-
+    一共 is "altogether, in total".
+exercises:
+  translate:
+  - hanzi: 侬 头发 长 了 ， 要 去 剃头 了 。
+    en: Your hair has got long, you need a haircut.
+  - hanzi: 衣裳 汏 好 了 伐 ？
+    en: Has the laundry been done?
+  - hanzi: 我 毛病 好 交关 了 。
+    en: I'm much better now.
+  fill:
+  - hanzi: 一 碗 豆浆 ， 两 只[ʦᴀʔ55] 生煎 ， ＿ 十二 块 。
+    en: 'A bowl of soy milk and two buns: twelve yuan altogether.'
+    answer: 一共
+  - hanzi: 头发 汏 好 了 ， 我 来 ＿ 。
+    en: Your hair's washed; I'll blow-dry it.
+    answer: 吹干
+  - hanzi: 师傅 ， 上头 剪 ＿ 一眼 。
+    en: A bit shorter on top, please.
+    answer: 短
+  say:
+  - hanzi: 我 要 剃头 。
+    en: I'd like a haircut.
+  - hanzi: 两边 覅 剪 忒 短 。
+    en: Don't cut the sides too short.
+  - hanzi: 剃头 几钿 ？
+    en: How much is a haircut?

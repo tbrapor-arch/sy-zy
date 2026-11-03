@@ -1,0 +1,102 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 10
+title:
+  en: Rain this afternoon
+  hanzi: 下半日 要 落雨
+review: false
+setting: >-
+  A grey morning in the lane. Sam is leaving for work; the auntie is looking at the sky.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: Sam ， 今朝 要 落雨 了 。
+  en: Sam, it's going to rain today.
+  lit: Sam, today will fall-rain (now)
+- n: 2
+  speaker: Sam
+  hanzi: 真个 ？ 天 还 蛮 好 个 。
+  en: Really? The sky still looks fine.
+- n: 3
+  speaker: 阿姨
+  hanzi: 下半日 落雨 ， 带 把 伞 ！
+  en: It'll rain this afternoon, take an umbrella!
+  lit: afternoon fall-rain, bring (measure) umbrella!
+- n: 4
+  speaker: Sam
+  hanzi: 我 呒没 伞 。
+  en: I don't have an umbrella.
+- n: 5
+  speaker: 阿姨
+  hanzi: 借 侬 一 把 ， 明朝 还[ɦuᴇ13] 我 。
+  en: I'll lend you one. Give it back tomorrow.
+  lit: lend you one (measure), tomorrow return me
+- n: 6
+  speaker: Sam
+  hanzi: 谢谢 ！ 今朝 冷 伐 ？
+  en: Thanks! Is it cold today?
+- n: 7
+  speaker: 阿姨
+  hanzi: 勿 冷 ， 着 件 外套 好 了 。
+  en: Not cold. A jacket will do.
+  lit: not cold, wear (measure) jacket (and that's it)
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    落雨 is "to rain", literally "fall rain", with the same 落 as 落车 (lesson 4). Snow is 落雪. 要…了 is "about to":
+    要落雨了 "it's going to rain".
+- ref: 2
+  topic: vocab
+  text: >-
+    真个 is "really, truly": 真个？ "really?", 真个好 "really good". 天 is the sky, and also the weather: 天好 "the
+    weather is fine".
+- ref: 3
+  topic: vocab
+  text: >-
+    下半日 is "afternoon" (Mandarin 下午); the morning is 上半日 or 早浪 (lesson 6). 日 is read with its everyday sound
+    here, as in 一日 "one day".
+- ref: 3
+  topic: grammar
+  text: >-
+    把 is the measure word for things you hold by a handle: 一把伞, 一把调羹 "a spoon". Before a noun the 一 is often
+    dropped: 带把伞 "take an umbrella", 着件外套 "put on a jacket".
+- ref: 5
+  topic: pronunciation
+  text: >-
+    还 has two readings. "Still" (还呒没, lesson 2) has no -u-; "to give back" has one, like 回. Tap both words to hear
+    the difference.
+- ref: 5
+  topic: grammar
+  text: >-
+    借 is both "to lend" and "to borrow"; the order tells you which. 借侬一把 "lend you one", 问侬借 "borrow from you".
+- ref: 7
+  topic: vocab
+  text: >-
+    着 is "to wear, put on" for clothes and shoes (Mandarin 穿). 件 counts pieces of clothing: 一件外套. 好了 again: "just
+    do that and you'll be fine".
+exercises:
+  translate:
+  - hanzi: 明朝 天 好 伐 ？
+    en: Will the weather be fine tomorrow?
+  - hanzi: 落雨 了 ， 阿拉 坐 差头 去 。
+    en: It's raining, let's take a taxi.
+  - hanzi: 伞 我 明朝 还[ɦuᴇ13] 侬 。
+    en: I'll give you back the umbrella tomorrow.
+  fill:
+  - hanzi: 外滩 冷 ， 侬 ＿ 件 外套 。
+    en: It's cold on the Bund, put on a jacket.
+    answer: 着
+  - hanzi: 侬 有 伞 伐 ？ 我 好 ＿ 一 把 伐 ？
+    en: Do you have an umbrella? Could I borrow one?
+    answer: 借
+  - hanzi: 今朝 下半日 要 ＿ 了 。
+    en: It's going to rain this afternoon.
+    answer: 落雨
+  say:
+  - hanzi: 我 忘记 带 伞 了 。
+    en: I forgot my umbrella.
+  - hanzi: 今朝 天 真个 冷 。
+    en: It's really cold today.
+  - hanzi: 明朝 下半日 侬 空 伐 ？
+    en: Are you free tomorrow afternoon?

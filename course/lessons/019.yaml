@@ -1,0 +1,102 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 19
+title:
+  en: The delivery
+  hanzi: 叫 外卖
+review: false
+setting: >-
+  A weeknight. Sam has ordered dinner on his phone and is in the shower when the rider calls.
+dialogue:
+- n: 1
+  speaker: 师傅
+  hanzi: 侬好 ， 侬 个 外卖 到 了 。
+  en: Hello, your delivery is here.
+- n: 2
+  speaker: Sam
+  hanzi: 好个 ， 侬 送 到 楼上 好 伐 ？
+  en: OK, could you bring it upstairs?
+- n: 3
+  speaker: 师傅
+  hanzi: 我 上勿来 ， 侬 下来 拿 。
+  en: I can't come up, you'll have to come down for it.
+- n: 4
+  speaker: Sam
+  hanzi: 我 辣辣 汏浴 。
+  en: I'm in the shower.
+- n: 5
+  speaker: 师傅
+  hanzi: 介末 我 放 辣 小区 门口 。
+  en: Then I'll leave it at the gate of the compound.
+- n: 6
+  speaker: Sam
+  hanzi: 好个 ， 谢谢 侬 ！ 我 等歇 去 拿 。
+  en: OK, thank you! I'll go and get it in a moment.
+- n: 7
+  speaker: 师傅
+  hanzi: 快 一眼 ， 汤 要 冷脱 个 。
+  en: Be quick, or the soup will get cold.
+- n: 8
+  speaker: Sam
+  hanzi: 晓得 了 ， 我 马上 下来 。
+  en: Got it, I'm coming right down.
+- n: 9
+  speaker: 师傅
+  hanzi: 好个 ， 再会 ！
+  en: All right, bye!
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    外卖 is a meal delivery, 叫外卖 "to order one" (Mandarin 点外卖). Riders are called 师傅 like taxi drivers (lesson 9).
+- ref: 2
+  topic: grammar
+  text: >-
+    Verb + 到 + place: 送到楼上 "deliver (up) to upstairs", 放到门口. 楼上 is "upstairs", 楼下 "downstairs".
+- ref: 3
+  topic: grammar
+  text: >-
+    勿 between a verb and its direction says "can't": 上勿来 "can't come up", 吃勿落 "can't eat (any more)". The positive
+    is 上得来 "can come up". 下来 is "to come down".
+- ref: 4
+  topic: vocab
+  text: >-
+    汏浴 is "to have a bath or a shower", with the 汏 "wash" of lesson 17. 辣辣 + verb: "in the middle of" (lesson 11).
+- ref: 5
+  topic: vocab
+  text: >-
+    介末 is "so, in that case, then" (Mandarin 那么、那): one of the commonest linking words in Shanghainese speech. 小区
+    is a residential compound, the gated estate most people live in.
+- ref: 6
+  topic: vocab
+  text: >-
+    等歇 is "in a moment, later" (Mandarin 等一下、待会儿). 马上 is "right away" (line 8).
+- ref: 7
+  topic: grammar
+  text: >-
+    要…个 is "will (surely)": 要冷脱个 "it will go cold". 冷脱 "gone cold" with 脱 (lesson 11).
+exercises:
+  translate:
+  - hanzi: 介末 阿拉 叫 外卖 好 了 。
+    en: In that case let's just order a delivery.
+  - hanzi: 我 下来 了 ， 侬 辣 啥地方 ？
+    en: I've come down, where are you?
+  - hanzi: 伞 我 放 辣 门口 了 。
+    en: I've left the umbrella by the door.
+  fill:
+  - hanzi: 侬 等 一眼 ， 我 ＿ 来 。
+    en: Wait a moment, I'm coming right away.
+    answer: 马上
+  - hanzi: 侬 拿 伞 ＿ 到 阿姨 屋里 。
+    en: Take the umbrella round to the auntie's place.
+    answer: 送
+  - hanzi: 豆浆 快 吃 ， 要 ＿ 个 。
+    en: Drink your soy milk, it'll go cold.
+    answer: 冷脱
+  say:
+  - hanzi: 我 等歇 来 寻 侬 。
+    en: I'll come and find you in a bit.
+  - hanzi: 老板 辣 楼上 开会 。
+    en: The boss is in a meeting upstairs.
+  - hanzi: 介末 我 下来 拿 。
+    en: Then I'll come down and get it.

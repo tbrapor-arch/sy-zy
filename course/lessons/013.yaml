@@ -1,0 +1,100 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 13
+title:
+  en: At the doctor's
+  hanzi: 看 毛病
+review: false
+setting: >-
+  Sam has felt unwell since the weekend. He goes to the neighbourhood clinic.
+dialogue:
+- n: 1
+  speaker: 医生
+  hanzi: 侬 啥地方 勿适意 ？
+  en: What's wrong? Where don't you feel well?
+  lit: you what-place not-comfortable?
+- n: 2
+  speaker: Sam
+  hanzi: 头 痛 ， 还 发寒热 。
+  en: I have a headache, and a fever too.
+  lit: head hurts, also have-fever
+- n: 3
+  speaker: 医生
+  hanzi: 几 天 了 ？ 咳嗽 伐 ？
+  en: For how many days? Are you coughing?
+- n: 4
+  speaker: Sam
+  hanzi: 两 天 了 ， 喉咙 也 痛 。
+  en: Two days. My throat hurts too.
+- n: 5
+  speaker: 医生
+  hanzi: 我 来 看看 侬 个 喉咙 。
+  en: Let me have a look at your throat.
+- n: 6
+  speaker: 医生
+  hanzi: 是 感冒 ， 勿要紧 个 。
+  en: It's a cold. Nothing serious.
+- n: 7
+  speaker: Sam
+  hanzi: 我 要 吃 药 伐 ？
+  en: Do I need to take medicine?
+- n: 8
+  speaker: 医生
+  hanzi: 一 日[ȵiɪʔ12] 三 趟 ， 多 吃 开水 。
+  en: Three times a day, and drink plenty of water.
+  lit: one day three times, much drink boiled-water
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    勿适意 is "unwell, not feeling right" (Mandarin 不舒服). 适意 alone is "comfortable": 搿只椅子老适意. Asking 啥地方勿适意？
+    "where are you unwell?" is how a doctor starts.
+- ref: 2
+  topic: vocab
+  text: >-
+    发寒热 is "to have a fever", literally "send out cold-and-heat" (Mandarin 发烧). 头痛 "headache" is just "head
+    hurts".
+- ref: 3
+  topic: vocab
+  text: >-
+    天 counts days: 几天 "how many days", 两天. 日 is also used, in set phrases: 一日三趟. The title, 看毛病, is "to see
+    a doctor", literally "look at the illness"; 毛病 is "illness" and also "fault, bad habit".
+- ref: 6
+  topic: grammar
+  text: >-
+    勿要紧 "it doesn't matter, it's nothing serious" (Mandarin 没关系、不要紧). It is also what you say when someone
+    apologises: 对勿起！ — 勿要紧。
+- ref: 7
+  topic: vocab
+  text: >-
+    吃药 is "to take medicine": 吃 covers it too.
+- ref: 8
+  topic: vocab
+  text: >-
+    趟 counts times (Mandarin 次): 三趟 "three times", and 下趟 "next time" (lesson 3). 开水 is boiled water, what people
+    drink rather than tap water. 多吃 "eat/drink more".
+exercises:
+  translate:
+  - hanzi: 姆妈 头 痛 ， 勿 去 上班 了 。
+    en: Mum has a headache, she isn't going to work.
+  - hanzi: 小人 发寒热 ， 要 去 看 毛病 伐 ？
+    en: The child has a fever, should we see a doctor?
+  - hanzi: 搿 药 一 日[ȵiɪʔ12] 吃 两 趟 。
+    en: Take this medicine twice a day.
+  fill:
+  - hanzi: 侬 哪能 了 ？ 啥地方 ＿ ？
+    en: What's the matter? Where don't you feel well?
+    answer: 勿适意
+  - hanzi: 侬 毛病 好 了 伐 ？ 还 ＿ 伐 ？
+    en: Are you better? Are you still coughing?
+    answer: 咳嗽
+  - hanzi: 对勿起 ！ — ＿ 。
+    en: Sorry! — That's all right.
+    answer: 勿要紧
+  say:
+  - hanzi: 我 喉咙 老 痛 。
+    en: My throat really hurts.
+  - hanzi: 我 感冒 了 ， 今朝 勿 来 了 。
+    en: I've caught a cold, I won't come today.
+  - hanzi: 多 吃 开水 ， 覅 吃 咖啡 。
+    en: Drink lots of water, no coffee.

@@ -1,0 +1,93 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 21
+title:
+  en: Review
+  hanzi: 复习
+review: true
+setting: >-
+  A warm evening in the lane. Sam comes home from work; the auntie is fanning herself by her door.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: Sam ， 侬 头发 剪 过 了 伐 ？
+  en: Sam, have you had a haircut?
+- n: 2
+  speaker: Sam
+  hanzi: 是个 ， 礼拜六 去 剃头 个 。
+  en: Yes, I went to the barber's on Saturday.
+- n: 3
+  speaker: 阿姨
+  hanzi: 蛮 清爽 ， 衬衫 也 是 新 个 伐 ？
+  en: Very neat. Is the shirt new too?
+- n: 4
+  speaker: Sam
+  hanzi: 新 个 ， 打八折 买 个 ， 勿 贵 。
+  en: New, I got it at twenty percent off. Not expensive.
+- n: 5
+  speaker: 阿姨
+  hanzi: 今朝 夜里 侬 吃 啥 ？
+  en: What are you having tonight?
+- n: 6
+  speaker: Sam
+  hanzi: 我 叫 了 外卖 ， 还 呒没 到 。
+  en: I ordered a delivery, it hasn't arrived yet.
+- n: 7
+  speaker: 阿姨
+  hanzi: 覅 等 了 ， 到 阿拉 屋里 来 吃 ！
+  en: Don't wait, come and eat at my place!
+- n: 8
+  speaker: Sam
+  hanzi: 谢谢 阿姨 ， 我 马上 来 ！
+  en: Thank you, auntie, I'm coming right now!
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    过 after a verb is "have done (at some point)": 剪过了 "(you've) had it cut", 吃过了 (lesson 2). 了 after a verb is
+    "done": 叫了外卖. 了 at the end is "now, a change": 八岁了, 好交关了.
+- ref: 2
+  topic: grammar
+  text: >-
+    个 at the end tells how something was done, as with 坐地铁去个 in lesson 7: 礼拜六去剃头个 "it was on Saturday that I
+    went", 打八折买个 "I bought it at a discount".
+- ref: 3
+  topic: grammar
+  text: >-
+    Results after a verb, so far: 剪短, 汏好, 吹干, 烧热 (verb + result); 坏脱, 冷脱, 剪脱 (gone); 上勿来 (can't); 送到 (to a
+    place).
+- ref: 5
+  topic: vocab
+  text: >-
+    Times of day: 早浪 morning · 中饭 time · 下半日 afternoon · 夜里 evening, night. Days: 今朝, 明朝, 礼拜六, 礼拜天. Clock:
+    两点半, 一点三刻.
+- ref: 7
+  topic: grammar
+  text: >-
+    到…来 "come to (a place)": 到阿拉屋里来吃 "come to my place and eat". Commands with 覅 "don't" end in 了 when they mean
+    "stop doing it": 覅等了 "stop waiting".
+exercises:
+  translate:
+  - hanzi: 侬 衬衫 汏 过 了 伐 ？
+    en: Have you washed your shirt?
+  - hanzi: 外卖 到 了 ， 我 下来 拿 。
+    en: The delivery's here, I'll come down for it.
+  - hanzi: 礼拜六 我 搭 小李 一道 去 剃头 个 。
+    en: I went to the barber's with Xiao Li on Saturday.
+  fill:
+  - hanzi: 我 叫 ＿ 外卖 ， 还 呒没 送 到 。
+    en: I've ordered a delivery, it hasn't been brought yet.
+    answer: 了
+  - hanzi: 覅 ＿ 了 ， 伊 勿 来 了 。
+    en: Stop waiting, he isn't coming.
+    answer: 等
+  - hanzi: 侬 头发 剪 短 了 ， 清爽 ＿ 了 。
+    en: You've had your hair cut short, it's much neater.
+    answer: 交关
+  say:
+  - hanzi: 侬 到 阿拉 屋里 来 白相 。
+    en: Come over to my place.
+  - hanzi: 今朝 夜里 我 烧 番茄炒蛋 。
+    en: Tonight I'm making tomato and egg.
+  - hanzi: 搿 件 外套 打八折 买 个 。
+    en: I got this jacket at twenty percent off.

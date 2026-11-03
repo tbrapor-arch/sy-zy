@@ -1,0 +1,106 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 18
+title:
+  en: Cooking at home
+  hanzi: 烧 小菜
+review: false
+setting: >-
+  Sunday evening in the auntie's kitchen. Sam liked the tomato and egg at the restaurant; she offers to show him
+  how it is done at home.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: 今朝 我 教 侬 烧 番茄炒蛋 。
+  en: Today I'll teach you to make tomato and egg.
+- n: 2
+  speaker: Sam
+  hanzi: 好 啊 ！ 先 做 啥 ？
+  en: Great! What do I do first?
+- n: 3
+  speaker: 阿姨
+  hanzi: 先 拿 番茄 切一切 。
+  en: First cut up the tomatoes.
+  lit: first take tomato cut a-cut
+- n: 4
+  speaker: 阿姨
+  hanzi: 再 拿 鸡蛋 打一打 。
+  en: Then beat the eggs.
+- n: 5
+  speaker: Sam
+  hanzi: 镬子 要 烧 热 伐 ？
+  en: Does the wok need to get hot?
+- n: 6
+  speaker: 阿姨
+  hanzi: 要 个 ， 油 多 放 一眼 。
+  en: Yes, and put in a bit more oil.
+- n: 7
+  speaker: Sam
+  hanzi: 糖 要 放 伐 ？
+  en: Do I add sugar?
+- n: 8
+  speaker: 阿姨
+  hanzi: 要 个 ， 上海人 欢喜 甜 一眼 。
+  en: Yes, Shanghai people like it a bit sweeter.
+- n: 9
+  speaker: Sam
+  hanzi: 香 是 真 香 ！ 我 好 吃 了 伐 ？
+  en: It smells amazing! Can I eat now?
+  lit: fragrant is truly fragrant! I may eat (now) (question)?
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    烧 is "to cook" (Mandarin 做饭 / 做菜): 烧饭 "to cook rice, make a meal", 烧小菜 "to cook the dishes". In the title,
+    小菜 is a false friend: not "a piece of cake" but the dishes you eat with rice. 教 is "to teach".
+- ref: 3
+  topic: grammar
+  text: >-
+    拿 + object + verb puts the object first, like Mandarin 把: 拿番茄切一切 "cut the tomatoes". It is the everyday
+    Shanghainese way to give instructions.
+- ref: 3
+  topic: grammar
+  text: >-
+    Verb + 一 + verb is "do it a bit, quickly": 切一切, 打一打, 看一看. It softens an instruction, like 看看 (lesson 8).
+- ref: 4
+  topic: vocab
+  text: >-
+    打 is "to beat" an egg: 打鸡蛋. 再 is "then, next" in a sequence (lesson 17).
+- ref: 5
+  topic: vocab
+  text: >-
+    镬子 is the wok (Mandarin 锅), an old word kept in Shanghainese. 烧热 "heat (until) hot": verb + result again.
+- ref: 6
+  topic: grammar
+  text: >-
+    多 or 少 before a verb is "more" or "less": 多放一眼 "put in a bit more", 少吃 "eat less", 多吃开水 (lesson 13).
+- ref: 9
+  topic: grammar
+  text: >-
+    X 是真 X "X it truly is" gives emphasis: 香是真香 "it really does smell good", 贵是真贵 "it's really expensive". 好…伐？
+    asks permission (lesson 12).
+exercises:
+  translate:
+  - hanzi: 我 姆妈 烧 个 红烧肉 老 好吃 个 。
+    en: The red-braised pork my mum makes is delicious.
+  - hanzi: 侬 拿 葱 切一切 。
+    en: Chop the spring onions.
+  - hanzi: 豆浆 糖 覅 放 忒 多 。
+    en: Don't put too much sugar in the soy milk.
+  fill:
+  - hanzi: 阿姨 ＿ 我 讲 上海闲话 。
+    en: The auntie teaches me Shanghainese.
+    answer: 教
+  - hanzi: 侬 ＿ 衣裳 汏 好 。
+    en: Get the clothes washed.
+    answer: 拿
+  - hanzi: 今朝 夜里 我 来 ＿ 小菜 。
+    en: I'll do the cooking tonight.
+    answer: 烧
+  say:
+  - hanzi: 生煎 香 是 真 香 。
+    en: The buns really do smell good.
+  - hanzi: 侬 会 烧 小菜 伐 ？
+    en: Can you cook?
+  - hanzi: 上海人 欢喜 吃 甜 个 。
+    en: Shanghai people like sweet food.

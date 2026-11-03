@@ -1,0 +1,107 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 16
+title:
+  en: Meeting on Sunday
+  hanzi: 礼拜天 碰头
+review: false
+setting: >-
+  Thursday evening. Xiao Li phones Sam: someone gave him two cinema tickets.
+dialogue:
+- n: 1
+  speaker: 小李
+  hanzi: Sam ， 礼拜六 夜里 有 空 伐 ？
+  en: Sam, are you free on Saturday evening?
+- n: 2
+  speaker: Sam
+  hanzi: 礼拜六 要 加班 。 做啥 ？
+  en: I'm working on Saturday. Why?
+- n: 3
+  speaker: 小李
+  hanzi: 我 有 两 张 电影票 。
+  en: I've got two cinema tickets.
+- n: 4
+  speaker: Sam
+  hanzi: 礼拜天 下半日 好 伐 ？
+  en: Would Sunday afternoon work?
+- n: 5
+  speaker: 小李
+  hanzi: 好个 ， 下半日 两 点 半 开始 。
+  en: Sure, it starts at half past two in the afternoon.
+- n: 6
+  speaker: Sam
+  hanzi: 辣 啥地方 碰头 ？
+  en: Where shall we meet?
+- n: 7
+  speaker: 小李
+  hanzi: 电影院 门口 ， 一 点 三刻 。
+  en: At the cinema entrance, at a quarter to two.
+  lit: cinema doorway, one o'clock three-quarters
+- n: 8
+  speaker: Sam
+  hanzi: 放心 ， 我 勿 会 迟到 个 。
+  en: Don't worry, I won't be late.
+- n: 9
+  speaker: 小李
+  hanzi: 侬 上趟 就 迟到 了 ！
+  en: You were late last time!
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    夜里 is "in the evening, at night" (Mandarin 晚上). 有空 "to have free time": the same 空 as in lesson 6.
+- ref: 2
+  topic: vocab
+  text: >-
+    加班 is "to work overtime", as in Mandarin. 做啥？ "what for?" (lesson 6).
+- ref: 3
+  topic: grammar
+  text: >-
+    张 counts flat things: tickets, photos, tables. 电影票 is "cinema ticket"; 电影 is a film, 电影院 a cinema.
+- ref: 5
+  topic: grammar
+  text: >-
+    Telling the time: 两点 "two o'clock", 两点半 "half past two", 两点一刻 "a quarter past two", 一点三刻 "a quarter to
+    two" (one o'clock and three quarters). 点钟 is the full form: 十点钟. 开始 is "to start".
+- ref: 6
+  topic: vocab
+  text: >-
+    碰头 is "to meet up", literally "bump heads" (Mandarin 见面). 辣啥地方碰头？ "where shall we meet?".
+- ref: 8
+  topic: vocab
+  text: >-
+    放心 "set your mind at rest" = "don't worry", as in Mandarin.
+- ref: 8
+  topic: grammar
+  text: >-
+    勿会…个 is a firm promise or prediction: 勿会迟到个 "I definitely won't be late". The 个 at the end adds the weight
+    (lesson 2).
+- ref: 9
+  topic: vocab
+  text: >-
+    上趟 is "last time"; 下趟 "next time" (lesson 3). 就 here stresses: "you were late last time, actually".
+exercises:
+  translate:
+  - hanzi: 礼拜六 夜里 阿拉 去 电影院 。
+    en: We're going to the cinema on Saturday evening.
+  - hanzi: 明朝 早浪 七 点 半 ， 地铁站 碰头 。
+    en: Half past seven tomorrow morning, we'll meet at the metro station.
+  - hanzi: 老板 讲 礼拜天 勿 要 加班 。
+    en: The boss says there's no overtime on Sunday.
+  fill:
+  - hanzi: 我 有 两 ＿ 照片 拨 侬 。
+    en: I have two photos for you.
+    answer: 张
+  - hanzi: 阿拉 辣 电影院 ＿ 等 侬 。
+    en: We'll wait for you at the cinema entrance.
+    answer: 门口
+  - hanzi: ＿ 侬 迟到 了 ， 下趟 覅 迟到 。
+    en: You were late last time; don't be late next time.
+    answer: 上趟
+  say:
+  - hanzi: 阿拉 几 点钟 碰头 ？
+    en: What time shall we meet?
+  - hanzi: 礼拜六 我 有 空 。
+    en: I'm free on Saturday.
+  - hanzi: 电影票 几钿 一 张 ？
+    en: How much is a cinema ticket?

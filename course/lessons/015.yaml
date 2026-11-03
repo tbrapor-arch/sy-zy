@@ -1,0 +1,102 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 15
+title:
+  en: Buying a shirt
+  hanzi: 买 衣裳
+review: false
+setting: >-
+  Sam needs a shirt for work. He goes into a clothes shop on Huaihai Road; a shop assistant comes over.
+dialogue:
+- n: 1
+  speaker: 营业员
+  hanzi: 先生 ， 侬 想 买 啥 ？
+  en: What would you like, sir?
+  lit: sir, you would-like buy what?
+- n: 2
+  speaker: Sam
+  hanzi: 我 想 买 一 件 衬衫 。
+  en: I'd like to buy a shirt.
+- n: 3
+  speaker: 营业员
+  hanzi: 搿 件 白 个 哪能 ？ 侬 试试看 。
+  en: How about this white one? Try it on.
+- n: 4
+  speaker: Sam
+  hanzi: 忒 小 了 ， 有 大 一眼 个 伐 ？
+  en: It's too small. Do you have a bigger one?
+- n: 5
+  speaker: 营业员
+  hanzi: 大 个 只 有 蓝 个 了 。
+  en: In the bigger size there's only blue left.
+  lit: big one only have blue one (now)
+- n: 6
+  speaker: Sam
+  hanzi: 蓝 个 也 好 。 一 件 几钿 ？
+  en: Blue is fine too. How much is one?
+- n: 7
+  speaker: 营业员
+  hanzi: 三百 八十 ， 今朝 打八折 。
+  en: Three hundred and eighty, with twenty percent off today.
+- n: 8
+  speaker: Sam
+  hanzi: 好个 ， 就 买 搿 件 。
+  en: OK, I'll take this one.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    先生 is "sir, Mr" to a man you don't know; in a shop you will hear 先生 and, for a woman, 小姐 or 阿姨. Its 生 is
+    the everyday reading, as in 学生.
+- ref: 2
+  topic: vocab
+  text: >-
+    衣裳 is "clothes" (Mandarin 衣服). 想 is "would like to": 想买 "would like to buy". 衬衫 is "shirt".
+- ref: 3
+  topic: grammar
+  text: >-
+    试试看 "try and see" is the way to say "try (it)": 侬试试看 "try it on", 吃吃看 "taste it". Any verb can take it:
+    doubled, then 看.
+- ref: 3
+  topic: grammar
+  text: >-
+    个 after a colour or size makes "the … one", as with 甜个 in lesson 2: 白个 "the white one", 大个 "the big one",
+    蓝个 "the blue one".
+- ref: 5
+  topic: grammar
+  text: >-
+    只 "only" sits before the verb: 只有 "there's only", 只会讲一眼眼 (lesson 1). 了 at the end shows that's all that is
+    left now.
+- ref: 7
+  topic: culture
+  text: >-
+    打八折 is "to sell at 80%", that is 20% off. The number is what you pay, not what you save: 打九折 is 10% off.
+- ref: 8
+  topic: grammar
+  text: >-
+    就 is "just, then": 就买搿件 "I'll just take this one". Shoppers rarely say "I'll buy it": the 就 does the work.
+exercises:
+  translate:
+  - hanzi: 搿 件 衬衫 我 着 忒 大 了 。
+    en: This shirt is too big on me.
+  - hanzi: 阿姐 想 买 一 件 蓝 个 外套 。
+    en: My big sister would like to buy a blue jacket.
+  - hanzi: 红烧肉 侬 试试看 ， 老 好吃 个 。
+    en: Try the red-braised pork, it's really good.
+  fill:
+  - hanzi: 有 ＿ 一眼 个 伐 ？ 搿 件 忒 大 了 。
+    en: Do you have a smaller one? This one is too big.
+    answer: 小
+  - hanzi: 外套 侬 ＿ ， 蛮 好 个 。
+    en: Try the jacket on, it's quite nice.
+    answer: 试试看
+  - hanzi: 今朝 衬衫 ＿ ， 三百 块 。
+    en: 'Shirts are 20% off today: three hundred yuan.'
+    answer: 打八折
+  say:
+  - hanzi: 我 想 买 一 件 白 衬衫 。
+    en: I'd like to buy a white shirt.
+  - hanzi: 有 蓝 个 伐 ？
+    en: Do you have a blue one?
+  - hanzi: 搿 件 衬衫 打八折 伐 ？
+    en: Is this shirt 20% off?

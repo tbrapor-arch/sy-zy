@@ -1,0 +1,85 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 14
+title:
+  en: Review
+  hanzi: 复习
+review: true
+setting: >-
+  Saturday lunchtime. Sam and Xiao Li meet at the little restaurant from lesson 8.
+dialogue:
+- n: 1
+  speaker: 小李
+  hanzi: 侬 毛病 好 了 伐 ？
+  en: Are you better?
+  lit: you illness good (now) (question)?
+- n: 2
+  speaker: Sam
+  hanzi: 好 了 ， 还 有 一眼 咳嗽 。
+  en: Yes, I just have a bit of a cough still.
+- n: 3
+  speaker: 小李
+  hanzi: 新 个 房子 哪能 ？
+  en: How's the new flat?
+- n: 4
+  speaker: Sam
+  hanzi: 朝南 个 ， 老 亮 ， 就是 忒 贵 了 。
+  en: It faces south, very bright. It's just too expensive.
+- n: 5
+  speaker: 小李
+  hanzi: 礼拜天 我 来 侬 屋里 白相 。
+  en: I'll come round to your place on Sunday.
+- n: 6
+  speaker: Sam
+  hanzi: 好个 ， 阿拉 一道 吃 中饭 。
+  en: Great, we'll have lunch together.
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    了 at the end marks a change: 好了 "(you're) well now", 够了 "that's enough (now)", 要落雨了 "it's about to rain".
+    脱 after a verb says something is gone: 坏脱 "broken", 冷脱 "gone cold".
+- ref: 2
+  topic: grammar
+  text: >-
+    A bit. 有一眼 + adjective is "rather": 有一眼急, 有一眼贵. Adjective + 一眼 compares: 便宜一眼 "cheaper". 一眼也 + negative
+    is "not at all": 一眼也呒没准备.
+- ref: 3
+  topic: grammar
+  text: >-
+    Measure words so far: 个 people and most things · 位 people (polite) · 只 dishes, buns, apples · 碗 bowls · 斤 half
+    a kilo · 把 umbrellas · 件 clothes · 间 rooms · 杯 cups · 句 sentences · 趟 times.
+- ref: 5
+  topic: grammar
+  text: >-
+    Time before the verb: 礼拜天我来, 十点钟开会, 下半日落雨. Place with 辣 before the verb too: 辣地铁站等侬. A place you go to
+    comes straight after 来 or 去: 来侬屋里, 去外滩.
+- ref: 6
+  topic: vocab
+  text: >-
+    Meals: 早饭 breakfast, 中饭 lunch, 夜饭 dinner; 吃饭 "to eat (a meal)". Ordering: 点菜, 来一只…, 再要….
+exercises:
+  translate:
+  - hanzi: 下半日 我 辣 屋里 等 侬 。
+    en: I'll wait for you at home this afternoon.
+  - hanzi: 侬 屋里 个 房间 朝南 伐 ？
+    en: Do the rooms at your place face south?
+  - hanzi: 阿拉 去 吃 红烧肉 ， 我 来 点 菜 。
+    en: Let's go have red-braised pork; I'll do the ordering.
+  fill:
+  - hanzi: 侬 感冒 好 ＿ 伐 ？
+    en: Is your cold better?
+    answer: 了
+  - hanzi: 搿 件 外套 有 一眼 ＿ 。
+    en: This jacket is a bit expensive.
+    answer: 贵
+  - hanzi: 礼拜天 阿拉 ＿ 吃 中饭 好 伐 ？
+    en: Shall we have lunch together on Sunday?
+    answer: 一道
+  say:
+  - hanzi: 我 毛病 好 了 。
+    en: I'm better now.
+  - hanzi: 搿 只[ʦᴀʔ55] 菜 一眼 也 勿 贵 。
+    en: This dish isn't expensive at all.
+  - hanzi: 侬 礼拜天 来 阿拉 屋里 白相 。
+    en: Come over to our place on Sunday.

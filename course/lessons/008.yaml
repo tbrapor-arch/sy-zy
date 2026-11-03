@@ -1,0 +1,103 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 8
+title:
+  en: Ordering
+  hanzi: 点 菜
+review: false
+setting: >-
+  Lunchtime on a working day. Sam and Xiao Li go into a small family restaurant near the office. A waitress comes
+  to the door.
+dialogue:
+- n: 1
+  speaker: 服务员
+  hanzi: 两 位 吃饭 伐 ？ 里向 坐 ！
+  en: Two for lunch? Have a seat inside!
+  lit: two (measure) eat-meal (question)? inside sit!
+- n: 2
+  speaker: 小李
+  hanzi: 菜单 拨 我 看看 。
+  en: Let me see the menu.
+  lit: menu give me look-look
+- n: 3
+  speaker: 服务员
+  hanzi: 阿拉 个 红烧肉 老 有名 个 。
+  en: Our red-braised pork is very well known.
+- n: 4
+  speaker: 小李
+  hanzi: 好个 ， 来 一 只[ʦᴀʔ55] 红烧肉 。
+  en: All right, one red-braised pork.
+  lit: good, come one (measure) red-braised-pork
+- n: 5
+  speaker: Sam
+  hanzi: 再 点 一 只[ʦᴀʔ55] 番茄炒蛋 。
+  en: And let's order a tomato and egg too.
+  lit: also order one (measure) tomato-fry-egg
+- n: 6
+  speaker: 服务员
+  hanzi: 两 只[ʦᴀʔ55] 菜 够 伐 ？
+  en: Will two dishes be enough?
+- n: 7
+  speaker: 小李
+  hanzi: 够 了 。 再 要 两 碗 米饭 。
+  en: That's enough. And two bowls of rice.
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    位 is the polite measure word for people, used by staff to customers: 两位 "two of you", 几位？ "how many of
+    you?". Among friends you count people with 个: 两个人.
+- ref: 1
+  topic: vocab
+  text: >-
+    里向 is "inside" (Mandarin 里面). 坐 comes after the place, as an invitation: 里向坐 "(come and) sit inside".
+- ref: 2
+  topic: grammar
+  text: >-
+    拨 "to give" also means "to let": 拨我看看 "let me have a look". Doubling a verb softens it, "have a little …":
+    看看 "have a look", 等等 "wait a moment".
+- ref: 4
+  topic: grammar
+  text: >-
+    Dishes are counted with 只, said like the 只 of 四只生煎 in lesson 2: 一只菜, 两只菜. When you order, 来 "come" is
+    "bring me": 来一只红烧肉, 来两碗米饭.
+- ref: 4
+  topic: culture
+  text: >-
+    红烧肉 is pork belly stewed in soy sauce and sugar. Shanghai home cooking is known for being dark, oily and a
+    little sweet, which locals sum up as 浓油赤酱 "thick oil, red sauce".
+- ref: 5
+  topic: pronunciation
+  text: >-
+    番茄 "tomato" keeps an old reading: 茄 starts with a hard g-, nothing like Mandarin qié. 点 "to order (a dish)"
+    is the same word as Mandarin 点菜.
+- ref: 7
+  topic: grammar
+  text: >-
+    够了 "that's enough": 了 marks the new situation, as in 好了 and 忒贵了. 再 here is "also, in addition": 再要
+    "I also want".
+exercises:
+  translate:
+  - hanzi: 搿搭 个 生煎 老 有名 个 。
+    en: The pan-fried buns here are well known.
+  - hanzi: 菜单 拨 阿姨 看看 。
+    en: Let the auntie see the menu.
+  - hanzi: 三 只[ʦᴀʔ55] 菜 够 了 ， 覅 再 点 了 。
+    en: Three dishes are enough, don't order any more.
+  fill:
+  - hanzi: 侬 要 ＿ 啥 菜 ？
+    en: Which dishes do you want to order?
+    answer: 点
+  - hanzi: 米饭 ＿ 伐 ？ 再 要 一 碗 伐 ？
+    en: Is the rice enough? Do you want another bowl?
+    answer: 够
+  - hanzi: 阿拉 去 ＿ 坐 。
+    en: Let's go and sit inside.
+    answer: 里向
+  say:
+  - hanzi: 阿拉 点 两 只[ʦᴀʔ55] 菜 。
+    en: We'll order two dishes.
+  - hanzi: 再 来 一 碗 米饭 。
+    en: One more bowl of rice, please.
+  - hanzi: 红烧肉 甜 伐 ？
+    en: Is the red-braised pork sweet?

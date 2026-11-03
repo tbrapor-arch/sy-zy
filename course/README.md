@@ -55,7 +55,8 @@ Lesson 0 (how to read the spellings) is `lessons/000-reading.html`.
   "mandarin" column of `core.tsv`); the Mandarin word stays, typed md.
 - `make coverage` shows how much of it the lessons teach and the most frequent words not taught yet, Shanghainese
   words and false friends first: pick from it before writing a batch. `make coverage PRIVATE=../syzy-private` adds step
-  B: the real frequencies of 《弄堂》, read locally, never written here.
+  B: it merges A with the real frequencies of 《弄堂》 (B counts twice where the novel has the word 5 times or more) and
+  lists what to teach next from that combined ranking. It is computed locally and never written here.
 - `syllabus.yaml`: the 100 titles and what each lesson teaches.
 
 ## Word files

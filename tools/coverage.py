@@ -64,32 +64,46 @@ def main():
 
     if '--private' in sys.argv:
         priv = sys.argv[sys.argv.index('--private') + 1]
-        fpath = os.path.join(priv, 'books/longtang/freq.tsv')
-        rows_b = []
-        for line in open(fpath, encoding='utf8'):
-            if line.startswith('#'):
-                continue
-            r, w, c, src, jr = (line.rstrip('\n').split('\t') + [''] * 5)[:5]
-            if src == '-' or (src == 'mandarin' and len(w) > 1):
-                continue                     # unknown strings and Mandarin compounds the splitter made up
-            rows_b.append((int(r), w, int(c), src))
-        md = {x[1] for x in rows if x[2] in ('md', 'lit')}
-        rows_b = [x for x in rows_b if x[1] not in md]
-        print('\nStep B, 《弄堂》 (private, whole novel):')
-        for n in (100, 300, 1000):
-            part = rows_b[:n]
+        merged = merge(rows, os.path.join(priv, 'books/longtang/freq.tsv'))
+        print('\nCombined ranking A + B (B = 《弄堂》, private; computed here, never written):')
+        for n in (100, 300, 1000, 2000):
+            part = [x for x in merged if x[0] <= n]
             got = sum(1 for x in part if x[1] in seen)
             print(f'  top {n:>4}: {got}/{len(part)} ({100 * got // max(1, len(part))}%)')
-        print(f'\nFrequent in 《弄堂》, not taught yet (count ≥ 20; core = already in core.tsv):')
-        k = 0
-        for r, w, c, src in rows_b:
-            if c < 20 or w in seen:
-                continue
-            print(f'  {c:>5}× {w:<6} {src}')
-            k += 1
-            if k >= 40:
-                break
+        missing = [x for x in merged if x[0] <= top and x[1] not in seen]
+        missing.sort(key=lambda x: (x[2] not in ('sh', 'ff'), x[0]))
+        print(f'\nNot taught yet, combined top {top} (Shanghainese words and false friends first; × = count in the novel):')
+        for r, w, typ, c, en in missing[:50]:
+            print(f'  #{r:<5} {w:<6} {typ:<4} {c:>4}×  {en[:55]}')
 
+
+def merge(rows, freq_path):
+    """One ranking from A (jieba carried to Shanghainese) and B (《弄堂》 counts). B weighs twice as much as A where the
+    novel has the word at least 5 times; a word the novel lacks is pushed down; a Shanghainese word only the novel
+    has (侪, 高头…) comes in with its novel rank. Returns [(rank, word, type, count, english)]."""
+    import math
+    b = {}
+    for line in open(freq_path, encoding='utf8'):
+        if line.startswith('#'):
+            continue
+        r, w, c, src, _ = (line.rstrip('\n').split('\t') + [''] * 5)[:5]
+        if src == '-' or (src == 'mandarin' and len(w) > 1):
+            continue                          # strings the splitter made up
+        b[w] = (len(b) + 1, int(c), src)
+    score, info = {}, {}
+    for r, w, typ, say, en in rows:
+        if typ in ('md', 'lit'):
+            continue
+        rb, c, _ = b.get(w, (None, 0, ''))
+        score[w] = math.exp((2 * math.log(rb) + math.log(r)) / 3) if c >= 5 else r * 1.5
+        info[w] = (typ, c, en)
+    md = {x[1] for x in rows if x[2] in ('md', 'lit')}
+    for w, (rb, c, src) in b.items():
+        if w not in score and w not in md and c >= 10 and src in ('core', 'book', 'lexicon'):
+            score[w] = rb * 1.2
+            info[w] = ('sh' if src == 'book' else '?', c, '')
+    order = sorted(score, key=score.get)
+    return [(i, w, *info[w]) for i, w in enumerate(order, 1)]
 
 if __name__ == '__main__':
     main()

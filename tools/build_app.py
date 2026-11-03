@@ -1,41 +1,76 @@
 """Assemble the app into one self-contained page: app/dist/index.html (style + data + script inline).
 
-The style starts from 冊櫥 Tsheh-tû's (app/style/base.css), recoloured: Huangpu-river teal ink instead of blue,
-simplified-character fonts instead of the Taiwanese ones, plus the pieces only this app has (app/style/extra.css).
+The style is 冊櫥 Tsheh-tû's, copied verbatim (app/style/base.css): same colours, same layout, same fonts. Only the
+Chinese fallbacks change: Iansui (Tsheh-tû's Hàn-jī font) has no simplified characters, so the glyphs it lacks come
+from LXGW WenKai, the same Klee One design, subset to what the app uses and embedded (font 'SyzyExt', like
+Tsheh-tû's 'TaigiExt'). Pieces only this app has are in app/style/extra.css.
+Fonts: `sh data/fetch_fonts.sh` (pinned, not committed); without them the build warns and falls back to Noto Sans SC.
 """
-import pathlib, re
+import base64, io, pathlib, unicodedata
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 css = (ROOT / 'app/style/base.css').read_text(encoding='utf8')
-SWAP = [
-    ('--grid: #E3E9F6;', '--grid: #E1EBE8;'),
-    ('--brand: #2347B5; --brand-ink: #FFFFFF; --brand-soft: #E5EBFA;', '--brand: #12655F; --brand-ink: #FFFFFF; --brand-soft: #DCEEEA;'),
-    ('--line: #1A2233;', '--line: #16302D;'), ('--text: #1A2233;', '--text: #16302D;'), ('--sub: #586276;', '--sub: #536663;'),
-    ('--soft-line: #CBD3E4;', '--soft-line: #C6D6D2;'),
-    ('--bg: #15171D; --grid: #1F2330;', '--bg: #121918; --grid: #1B2523;'),
-    ('--surface: #1C1F27; --line: #C9D1E6; --soft-line: #343A4C;', '--surface: #19221F; --line: #C3D9D4; --soft-line: #2F3F3B;'),
-    ('--text: #E7EAF2; --sub: #9AA3B8; --brand: #8FA8FF; --brand-ink: #10152A; --brand-soft: #232B47;',
-     '--text: #E5EFEC; --sub: #97ABA6; --brand: #6CCFC1; --brand-ink: #0B1F1D; --brand-soft: #18332F;'),
-    ('"Iansui", "Noto Sans TC", "TaigiExt", "PingFang TC", sans-serif', '"Noto Serif SC", "Songti SC", "STSong", serif'),
-    ('"Noto Sans", "Iansui", "Noto Sans TC", "TaigiExt", system-ui, sans-serif', '"Noto Sans", "Noto Sans SC", "PingFang SC", system-ui, sans-serif'),
-    ('"Noto Sans TC", "TaigiExt", "PingFang TC", sans-serif', '"Noto Sans SC", "PingFang SC", sans-serif'),
+SWAP = [   # order matters: the second string is also inside the first
+    ('"Iansui", "Noto Sans TC", "TaigiExt", "PingFang TC", sans-serif',
+     '"Iansui", "SyzyExt", "Noto Sans SC", "PingFang SC", sans-serif'),
+    ('"TailoSans", "Noto Sans", "Iansui", "Noto Sans TC", "TaigiExt", system-ui, sans-serif',
+     '"TailoSans", "Noto Sans", "Iansui", "SyzyExt", "Noto Sans SC", system-ui, sans-serif'),
+    ('"Noto Sans TC", "TaigiExt", "PingFang TC", sans-serif', '"Noto Sans SC", "PingFang SC", sans-serif'),   # Rose
     ('"Nunito", "Noto Sans", "Noto Sans TC", "TaigiExt", sans-serif', '"Nunito", "Noto Sans", "Noto Sans SC", sans-serif'),
-    ('/* full Latin Extended + combining marks for Tâi-lô */', '/* Latin + IPA */'),
 ]
 for a, b in SWAP:
     if a not in css:
         raise SystemExit(f'style swap not found: {a}')
-    css = css.replace(a, b)
+    css = css.replace(a, b, 1)
+
 css += (ROOT / 'app/style/extra.css').read_text(encoding='utf8')
 
 data = (ROOT / 'app/build/data.js').read_text(encoding='utf8')
 js = (ROOT / 'app/src/app.js').read_text(encoding='utf8') + (ROOT / 'app/src/sync.js').read_text(encoding='utf8') + (ROOT / 'app/src/module.js').read_text(encoding='utf8')
+def tailo_font_css():
+    """Tsheh-tû's embedded Noto Sans (app/fonts/tailo-noto-sans.woff2), same name, same use."""
+    b64 = base64.b64encode((ROOT / 'app/fonts/tailo-noto-sans.woff2').read_bytes()).decode()
+    return (f"@font-face{{font-family:'TailoSans';font-weight:400 800;font-display:swap;"
+            f"src:url(data:font/woff2;base64,{b64}) format('woff2');}}")
+
+
+def ext_font_css(text):
+    """'SyzyExt': the LXGW WenKai glyphs of every Chinese character in the app that Iansui does not have."""
+    fdir = ROOT / 'data/raw/fonts'
+    ian, wk = fdir / 'Iansui-Regular.ttf', fdir / 'LXGWWenKai-Regular.ttf'
+    if not (ian.exists() and wk.exists()):
+        print('WARNING: fonts missing (sh data/fetch_fonts.sh): simplified characters fall back to Noto Sans SC')
+        return ''
+    from fontTools import subset
+    from fontTools.ttLib import TTFont
+    have = set(TTFont(ian).getBestCmap())
+    need = sorted({ord(c) for c in text if (0x3400 <= ord(c) <= 0x9fff or 0xf900 <= ord(c) <= 0xfaff or ord(c) >= 0x20000)
+                   and ord(c) not in have and unicodedata.category(c) != 'Cn'})
+    font = TTFont(wk)
+    cmap = font.getBestCmap()
+    got = [c for c in need if c in cmap]
+    if len(got) < len(need):
+        print('not in LXGW WenKai either:', ''.join(chr(c) for c in need if c not in cmap))
+    sub = subset.Subsetter(subset.Options(flavor='woff2', layout_features=[], name_IDs=['*']))
+    sub.populate(unicodes=got)
+    sub.subset(font)
+    font.flavor = 'woff2'
+    buf = io.BytesIO()
+    font.save(buf)
+    print(f'embedded {len(got)} characters Iansui lacks ({len(buf.getvalue()) // 1024} KB)')
+    rng = ','.join(f'U+{c:X}' for c in got)
+    return (f"@font-face{{font-family:'SyzyExt';font-display:swap;src:url(data:font/woff2;base64,"
+            f"{base64.b64encode(buf.getvalue()).decode()}) format('woff2');unicode-range:{rng};}}")
+
+
+css = css.replace('/*__FONTS__*/', tailo_font_css() + '\n' + ext_font_css(data + js), 1)
+
 html = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>书橱 Sy-zy</title>
 <meta name="theme-color" content="#FCFCF8">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Noto+Sans:wght@400;600;700&family=Noto+Sans+SC:wght@400;700;900&family=Noto+Serif+SC:wght@500;700;900&family=Nunito:wght@600;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Iansui&family=Atkinson+Hyperlegible:wght@400;700&family=Noto+Sans:wght@400;600;700&family=Noto+Sans+SC:wght@400;700;900&family=Nunito:wght@600;800;900&display=swap">
 <style>
 {css}
 </style></head><body>

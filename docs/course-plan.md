@@ -46,7 +46,9 @@ Decided 3 Nov 2026 (full working plan, in French, in the claude.ai project: `pla
    headless smoke test. Gist sync as in Tsheh-tû (one token: gists + the private repo). 《弄堂》 moved to `syzy-private/books/` (Books tab).
    **Later:** second wave (from L50), Grammar and themed Vocabulary, Podcast/Video/Music tabs when there is content.
 2. `romanize.py`: verb–object sandhi, more tests, simplified → traditional table for dialect characters.
-3. `syllabus.yaml` (100 titles + grammar); revise L1–7 to the curve.
+3. `syllabus.yaml` (100 titles + grammar). **Done.** Lessons declare `new_words`; common-vocabulary list (`make vocab`,
+   step A = jieba ranks carried to Shanghainese; step B = 《弄堂》 frequencies, private) and `make coverage`.
+   L1–7 dialogues stay longer than the curve (owner's choice, 3 Nov 2026).
 4. Write lessons in batches of 7.
 5. Phrasebook → `syzy-private/books/`.
 6. Book course tab (private): audio + timed lines.

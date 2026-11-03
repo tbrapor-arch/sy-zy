@@ -35,6 +35,9 @@ notes:
   topic: grammar              # optional: vocab, grammar, pronunciation, culture
   text: >
     伐 at the end turns a statement into a yes–no question…
+new_words:                    # as in Tsheh-tû: the words this lesson teaches, with the English for this lesson
+- hanzi: 侬                   # a word of the title or dialogue; 只[ʦᴀʔ55] when the reading is forced
+  en: you (one person)
 exercises:
   translate: [{hanzi: …, en: …}]          # read it, give the English (3)
   fill: [{hanzi: 我 ＿ Sam 。, en: …, answer: 叫}]   # (3)
@@ -42,6 +45,18 @@ exercises:
 # Exercise sentences are new (lint fails on a copy of any dialogue line) and use only words met so far.
 ```
 Lesson 0 (how to read the spellings) is `lessons/000-reading.html`.
+
+## New words and the common vocabulary
+- Each lesson declares its `new_words` (as in Tsheh-tû). `make lint` fails when a dialogue word is declared neither in
+  that lesson nor before (numbers are free), when a declared word is not in the lesson, or is declared twice; it warns
+  when the count leaves the curve (12 → 20, 0 in reviews).
+- `make vocab` builds the common-vocabulary list (`data/build/core_vocab.tsv`, ~3,100 words). Step A: jieba's Mandarin
+  ranks, carried to the Shanghainese word wherever Shanghainese says it differently (你 → 侬, 东西 → 物事, from the
+  "mandarin" column of `core.tsv`); the Mandarin word stays, typed md.
+- `make coverage` shows how much of it the lessons teach and the most frequent words not taught yet, Shanghainese
+  words and false friends first: pick from it before writing a batch. `make coverage PRIVATE=../syzy-private` adds step
+  B: the real frequencies of 《弄堂》, read locally, never written here.
+- `syllabus.yaml`: the 100 titles and what each lesson teaches.
 
 ## Word files
 - `core.tsv`: ~230 core words written by hand (type, English, Mandarin, corrected IPA). Check the flagged ones first.

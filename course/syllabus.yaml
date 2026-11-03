@@ -1,0 +1,104 @@
+# The 100 lessons (as Tsheh-tû's syllabus.yaml): title + what each one teaches. Lessons 1–21 are written; 22–100 are
+# the plan, to adjust with `make coverage` (the most frequent words not taught yet) before each batch.
+# Every 7th lesson is a review; the second wave starts at lesson 50.
+lessons:
+- {n: 1, en: 'Good morning!', focus: '侬早, 侬/我, 是/是个, 伐 questions, 讲得蛮好, 一眼眼'}
+- {n: 2, en: 'Have you eaten?', focus: '吃过了伐 / 还呒没, 搿搭, 只 (measure), 老 "very", 甜个 / 咸个, 还是'}
+- {n: 3, en: 'How much?', focus: '几钿, 斤/块, 忒, 便宜一眼, 廿, 拨 "give", 覅客气'}
+- {n: 4, en: 'How do I get to the Bund?', focus: '哪能, 辣 + place, 啥地方, 跑 (false friend), 落车, 白相'}
+- {n: 5, en: 'My family', focus: '阿拉/伊拉, 屋里, 个 possessive, family words, 小人 (false friend), 嗲'}
+- {n: 6, en: 'A Sunday out', focus: '空, 做啥, 一道, 礼拜 days, 早浪 + time, 欢喜, 覅, 晓得'}
+- {n: 7, en: 'Review', review: true, focus: 'questions, pronouns, three negatives 勿/覅/呒没, 个 at the end, 越…越'}
+- {n: 8, en: 'Ordering', focus: '位, 里向, 拨我看看 (let), 只 for dishes, 来 "bring me", 够了'}
+- {n: 9, en: 'Taking a taxi', focus: '打差头, 到, 有一眼 + adj, 交关, 多少 vs 几, 钟头, 扫码'}
+- {n: 10, en: 'Rain this afternoon', focus: '落雨, 要…了, 下半日, 把/件, 借, 还 "give back", 着 "wear"'}
+- {n: 11, en: 'At the office', focus: '脱 (坏脱), 辣辣 + verb, 寻, 一眼也 + negative, 先'}
+- {n: 12, en: 'Looking for a flat', focus: '间, 朝南, 房钿, 千 and round numbers, 好…伐 (may I), 清爽'}
+- {n: 13, en: "At the doctor's", focus: '勿适意, 发寒热, 天/日, 趟, 勿要紧, 吃药'}
+- {n: 14, en: 'Review', review: true, focus: '了 and 脱, "a bit" (有一眼/一眼/一眼也), measure words, word order of time and place'}
+- {n: 15, en: 'Buying a shirt', focus: '衣裳, 想, 试试看, 白个/大个, 只有, 打八折, 就'}
+- {n: 16, en: 'Meeting on Sunday', focus: 'telling the time (点/半/一刻/三刻), 张, 碰头, 勿会…个, 上趟/下趟'}
+- {n: 17, en: "At the barber's", focus: 'verb + result (剪短, 汏好, 吹干), 剪脱, 交关 after an adjective, 一共'}
+- {n: 18, en: 'Cooking at home', focus: '烧, 拿 + object + verb, V一V, 多/少 + verb, X是真X'}
+- {n: 19, en: 'The delivery', focus: 'V + 到 + place, 上勿来 (can''t), 下来, 介末, 等歇, 要…个'}
+- {n: 20, en: 'A birthday', focus: '过生日, 了 after the verb, 只好, 吹/唱, 叔叔 vs 爷叔'}
+- {n: 21, en: 'Review', review: true, focus: '过 / 了 / 了, 个 for how it was done, results after verbs, times of day'}
+- {n: 22, en: 'The neighbours', focus: '隔壁邻舍, 埃 "that", 伊搭, 侪 "all", 人家'}
+- {n: 23, en: 'Lost keys', focus: '物事, 寻勿着 / 寻着 (着 as result), 钥匙, 啥个'}
+- {n: 24, en: 'At the bank', focus: '万, 存/取钞票, 卡, 勿是…是…'}
+- {n: 25, en: 'A market morning', focus: '咾 (listing, "and so"), 讲价钿, 新鲜, 一斤/半斤'}
+- {n: 26, en: 'Taking the bus', focus: '公交车, 换车, 立 "stand", 部 (measure for vehicles), 下一站'}
+- {n: 27, en: 'Too hot!', focus: '热煞, 煞 as intensifier, 黄梅天, 邪气, 吃冷饮'}
+- {n: 28, en: 'Review', review: true}
+- {n: 29, en: 'Calling home', focus: '打电话, 㑚 "you all", 想 "miss", 身体好伐'}
+- {n: 30, en: 'Housework', focus: '汏衣裳, 晾, 揩 "wipe", 拖地板, 帮'}
+- {n: 31, en: 'A dinner invitation', focus: '请客, 自家烧, 客气, 人家 "other people / home"'}
+- {n: 32, en: 'Sending a parcel', focus: '寄, 快递, 地址, 拨 + person'}
+- {n: 33, en: 'Lane gossip', focus: '讲闲话, 听讲, 好像, 事体'}
+- {n: 34, en: 'New Year', focus: '过年, 红包, 年夜饭, wishes'}
+- {n: 35, en: 'Review', review: true}
+- {n: 36, en: 'Train to Suzhou', focus: '火车, 来回票, 苏州闲话 vs 上海闲话'}
+- {n: 37, en: 'The washing machine', focus: '修, 来事 / 勿来事, 坏脱, 寻人'}
+- {n: 38, en: 'Hairy crab season', focus: '大闸蟹, 剥, 吃相, 鲜'}
+- {n: 39, en: 'Making friends', focus: '自家, 认得, 介绍, 朋友'}
+- {n: 40, en: 'A walk on Wukang Road', focus: '老房子, 梧桐树, 一面…一面…'}
+- {n: 41, en: 'Feelings', focus: '开心, 难过, 动气, 吓煞'}
+- {n: 42, en: 'Review', review: true}
+- {n: 43, en: 'Comparing', focus: '比, 一样, 勿及, 越…越…'}
+- {n: 44, en: 'Shanghai sayings', focus: '拎勿清, 老克勒, 嘎讪胡'}
+- {n: 45, en: 'Spring soup', focus: '腌笃鲜, 笃, 鲜, 火 (heat)'}
+- {n: 46, en: 'Online shopping', focus: '网浪买, 退, 换, 寄转去'}
+- {n: 47, en: 'An argument', focus: '吵相骂, 帮帮忙, 勿要讲'}
+- {n: 48, en: 'Making up', focus: '对勿起, 算了, 勿要紧'}
+- {n: 49, en: 'Review', review: true}
+- {n: 50, en: 'Sam writes in Shanghainese', focus: 'second wave starts; writing dialect characters'}
+- {n: 51, en: 'At the hospital', focus: '挂号, 住医院, 开刀'}
+- {n: 52, en: 'A job interview', focus: '工作, 面试, polite register'}
+- {n: 53, en: 'A typhoon', focus: '刮风, 落大雨, 台风, 当心'}
+- {n: 54, en: 'Old Shanghai', focus: '老底子, 石库门, 亭子间'}
+- {n: 55, en: 'Mid-Autumn', focus: '月饼, 赏月, 团圆'}
+- {n: 56, en: 'Review', review: true}
+- {n: 57, en: 'Mahjong', focus: '搓麻将, 输/赢, 牌'}
+- {n: 58, en: 'A wedding', focus: '结婚, 吃喜酒, 新郎新娘'}
+- {n: 59, en: 'Bargaining', focus: '讲价钿, 便宜眼, 勿卖'}
+- {n: 60, en: 'Sport', focus: '跑步, 打乒乓, 身体'}
+- {n: 61, en: 'School', focus: '读书, 作业, 考试'}
+- {n: 62, en: 'An evening at the theatre', focus: '沪剧, 滑稽戏, 好看'}
+- {n: 63, en: 'Review', review: true}
+- {n: 64, en: 'Moving house', focus: '搬场, 箱子, 搬勿动'}
+- {n: 65, en: 'Rush hour', focus: '轧 "crowded", 轧煞, 挤'}
+- {n: 66, en: 'A bike ride', focus: '脚踏车, 踏, 当心'}
+- {n: 67, en: 'Pets', focus: '猫, 狗, 养'}
+- {n: 68, en: 'Chinese medicine', focus: '中药, 搭脉, 补'}
+- {n: 69, en: 'A breakfast tour', focus: '四大金刚, 大饼油条'}
+- {n: 70, en: 'Review', review: true}
+- {n: 71, en: 'Planning a trip', focus: '旅游, 订, 火车票'}
+- {n: 72, en: 'Hangzhou', focus: '西湖, 船, 风景'}
+- {n: 73, en: 'Childhood', focus: '小辰光, 老底子, 白相物事'}
+- {n: 74, en: 'At the tailor', focus: '量, 做衣裳, 尺寸'}
+- {n: 75, en: 'Lost in the city', focus: '迷路, 寻勿着路, 问路'}
+- {n: 76, en: 'Visiting the grandparents', focus: '外婆, 外公, 老人家'}
+- {n: 77, en: 'Review', review: true}
+- {n: 78, en: 'Local cooking', focus: '本帮菜, 浓油赤酱, 味道'}
+- {n: 79, en: 'Money', focus: '工资, 省, 用钞票'}
+- {n: 80, en: 'A leak', focus: '漏水, 修, 寻师傅'}
+- {n: 81, en: 'Helping a friend', focus: '帮忙, 朋友, 勿好意思'}
+- {n: 82, en: 'A teahouse', focus: '吃茶, 泡, 闲话'}
+- {n: 83, en: 'The news', focus: '新闻, 听讲, 讲法'}
+- {n: 84, en: 'Review', review: true}
+- {n: 85, en: 'Health', focus: '身体, 老人家, 保养'}
+- {n: 86, en: 'Plum rain', focus: '黄梅天, 霉, 潮'}
+- {n: 87, en: 'Late-night snacks', focus: '夜宵, 烧烤, 小馄饨'}
+- {n: 88, en: 'Old songs', focus: '老歌, 唱, 听'}
+- {n: 89, en: 'Habits', focus: '天天, 一直, 习惯'}
+- {n: 90, en: 'Plans', focus: '打算, 以后, 想'}
+- {n: 91, en: 'Review', review: true}
+- {n: 92, en: 'Shanghai and other cities', focus: '比, 外地, 北方/南方'}
+- {n: 93, en: 'A visit', focus: '做客, 带物事, 坐一歇'}
+- {n: 94, en: 'A complaint', focus: '投诉, 勿灵, 赔'}
+- {n: 95, en: 'Lane life', focus: '弄堂, 晒衣裳, 乘风凉'}
+- {n: 96, en: 'Pudong and Puxi', focus: '浦东/浦西, 过江, 摆渡'}
+- {n: 97, en: 'Farewells', focus: '送, 再会, 下趟见'}
+- {n: 98, en: 'Review', review: true}
+- {n: 99, en: "Sam's story", focus: 'narrative, linking words (介末, 后首来, 结果)'}
+- {n: 100, en: 'Looking back', focus: 'the whole course'}

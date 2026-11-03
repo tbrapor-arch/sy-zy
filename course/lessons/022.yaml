@@ -1,0 +1,156 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 22
+title:
+  en: The neighbours
+  hanzi: 隔壁邻舍
+review: false
+setting: >-
+  Saturday morning in the lane. A new family has moved in upstairs from Sam, and the auntie has an opinion about it.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: Sam ， 楼高头 新 搬 来 一 家 人家 。
+  en: Sam, a new family has moved in upstairs.
+  lit: Sam, upstairs newly move come one (measure) household
+- n: 2
+  speaker: Sam
+  hanzi: 埃 家 人家 是 上海人 伐 ？
+  en: Are they from Shanghai, that family?
+- n: 3
+  speaker: 阿姨
+  hanzi: 勿是 ， 伊拉 侪 是 外地人 。
+  en: No, they're all from out of town.
+- n: 4
+  speaker: 阿姨
+  hanzi: 两 个 小人 ， 交关 吵 个 。
+  en: Two children, and very noisy.
+- n: 5
+  speaker: Sam
+  hanzi: 夜里 我 也 听见 了 。
+  en: I heard them at night too.
+- n: 6
+  speaker: 阿姨
+  hanzi: 侬 自家 去 讲 ， 好 伐 ？
+  en: Why don't you go and tell them yourself?
+- n: 7
+  speaker: Sam
+  hanzi: 我 是 新 来 个 ， 勿 好 讲 。
+  en: I'm new here, it's not my place to say.
+  lit: I am newly come one, not good speak
+- n: 8
+  speaker: 阿姨
+  hanzi: 介末 我 去 ， 搿 种 事体 我 来 。
+  en: Then I'll go. Leave this sort of thing to me.
+  lit: so I go, this kind matter I come
+- n: 9
+  speaker: Sam
+  hanzi: 阿姨 ， 侬 好好叫 讲 。
+  en: Auntie, say it nicely.
+- n: 10
+  speaker: 阿姨
+  hanzi: 放心 ， 隔壁邻舍 侪 是 朋友 。
+  en: Don't worry, neighbours are all friends.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    楼高头 is "upstairs" (Mandarin 楼上), with 高头 "on top, above", the everyday Shanghainese word; 上头 (lesson 17) is
+    also heard. 楼上 (lesson 19) is understood by everyone. 搬来 "move in": 搬 is "to move (house, things)".
+- ref: 1
+  topic: grammar
+  text: >-
+    家 counts households and shops: 一家人家 "a household, a family", 一家店. 人家 on its own is "a household" here; it is
+    also "other people" (lesson 31).
+- ref: 2
+  topic: vocab
+  text: >-
+    埃 is "that" (Mandarin 那): 埃家 "that family", 埃个 "that one". 搿 is "this". You will also hear 伊 used for "that"
+    by some speakers.
+- ref: 3
+  topic: grammar
+  text: >-
+    侪 is "all" (Mandarin 都), one of the most frequent words in Shanghainese. It sits before the verb: 伊拉侪是外地人
+    "they are all from out of town", 侪好 "all fine". 勿是 "no, it's not" answers a 是…伐？ question.
+- ref: 4
+  topic: vocab
+  text: >-
+    吵 is "noisy" (and "to quarrel"). 交关吵个 "really noisy": the 个 at the end adds weight.
+- ref: 6
+  topic: vocab
+  text: >-
+    自家 is "oneself, one's own" (Mandarin 自己): 侬自家去 "go yourself", 自家屋里 "one's own home".
+- ref: 7
+  topic: grammar
+  text: >-
+    勿好 + verb is "shouldn't, it's not right to": 勿好讲 "it's not for me to say". Compare 好…伐？ "may I?" (lesson 12).
+- ref: 8
+  topic: grammar
+  text: >-
+    种 is "kind, sort": 搿种事体 "this kind of thing". 我来 "I'll do it" (lesson 19: 我来吹干).
+- ref: 9
+  topic: vocab
+  text: >-
+    好好叫 is "nicely, properly, gently" (Mandarin 好好地): 好好叫讲 "say it nicely", 好好叫吃 "eat properly". 叫 here
+    turns the doubled adjective into an adverb.
+- ref: 10
+  topic: culture
+  text: >-
+    隔壁邻舍 "the neighbours (next door)": in the lanes neighbours shared kitchens and taps, and the word still carries that
+    closeness. 侪 again: "all".
+new_words:
+- hanzi: 隔壁邻舍
+  en: neighbours
+- hanzi: 楼高头
+  en: upstairs
+- hanzi: 搬
+  en: to move (house, things)
+- hanzi: 家
+  en: (measure word for households, shops)
+- hanzi: 人家
+  en: household; other people
+- hanzi: 埃
+  en: that
+- hanzi: 勿是
+  en: no, it's not; is not
+- hanzi: 侪
+  en: all
+- hanzi: 吵
+  en: noisy; to quarrel
+- hanzi: 听见
+  en: to hear
+- hanzi: 自家
+  en: oneself, one's own
+- hanzi: 种
+  en: kind, sort
+- hanzi: 事体
+  en: matter, thing (to do)
+- hanzi: 好好叫
+  en: nicely, properly
+- hanzi: 朋友
+  en: friend
+exercises:
+  translate:
+  - hanzi: 阿拉 屋里 个 人 侪 欢喜 吃 生煎 。
+    en: Everyone in my family likes pan-fried buns.
+  - hanzi: 埃 个 小人 是 啥人 屋里 个 ？
+    en: Whose child is that?
+  - hanzi: 搿 种 衬衫 勿是 打八折 个 。
+    en: This kind of shirt isn't 20% off.
+  fill:
+  - hanzi: 侬 ＿ 去 买 ， 我 勿 去 了 。
+    en: Go and buy it yourself, I'm not going.
+    answer: 自家
+  - hanzi: 菜 我 侪 买 好 了 ， 侬 ＿ 吃 。
+    en: I've bought all the food; eat properly.
+    answer: 好好叫
+  - hanzi: 楼高头 个 人家 夜里 老 ＿ 个 。
+    en: The family upstairs is very noisy at night.
+    answer: 吵
+  say:
+  - hanzi: 伊拉 侪 是 我 个 朋友 。
+    en: They're all my friends.
+  - hanzi: 侬 听见 了 伐 ？
+    en: Did you hear?
+  - hanzi: 埃 家 人家 礼拜六 搬 来 个 。
+    en: That family moved in on Saturday.

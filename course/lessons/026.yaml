@@ -1,0 +1,155 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 26
+title:
+  en: On the bus
+  hanzi: 坐 公交车
+review: false
+setting: >-
+  Sunday afternoon. Sam takes the bus to Jing'an Temple. An old lady with heavy shopping bags gets on.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 阿婆 ， 搿 部 车子 到 静安寺 伐 ？
+  en: Excuse me, does this bus go to Jing'an Temple?
+  lit: granny, this (measure) vehicle reach Jing'an Temple (question)?
+- n: 2
+  speaker: 阿婆
+  hanzi: 到 个 ， 静安寺 是 第 五 站 。
+  en: It does. Jing'an Temple is the fifth stop.
+- n: 3
+  speaker: Sam
+  hanzi: 车子 浪 人 介 多 ， 我 只好 立 了 。
+  en: There are so many people on the bus, I'll have to stand.
+- n: 4
+  speaker: 阿婆
+  hanzi: 侬 坐 我 搿搭 ， 我 下 一 站 落车 。
+  en: Take my seat, I'm getting off at the next stop.
+  lit: you sit my here, I next one stop get-off
+- n: 5
+  speaker: Sam
+  hanzi: 勿要 ， 我 年纪 轻 。
+  en: No, I'm young.
+- n: 6
+  speaker: 阿婆
+  hanzi: 侬 帮 我 拎 只[ʦᴀʔ55] 包 好 伐 ？
+  en: Could you hold my bag for me?
+- n: 7
+  speaker: Sam
+  hanzi: 好个 ， 侬 买 了 介 多 菜 啊 。
+  en: Sure. You've bought so much food!
+- n: 8
+  speaker: 阿婆
+  hanzi: 孙子 今朝 转来 ， 屋里 人 多 。
+  en: My grandson's coming home today, there'll be a lot of us.
+- n: 9
+  speaker: 司机
+  hanzi: 静安寺 到 了 ， 当心 落车 。
+  en: Jing'an Temple. Mind how you get off.
+- n: 10
+  speaker: 阿婆
+  hanzi: 我 也 辣 搿搭 落车 ， 侬 拎 好 。
+  en: I'm getting off here too, hold on to it.
+- n: 11
+  speaker: Sam
+  hanzi: 侬 慢慢 跑 ， 我 来 扶 侬 。
+  en: Take your time, I'll help you down.
+  lit: you slowly walk, I come support you
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    阿婆 is what you call an old woman you don't know, "granny"; an old man is 老伯伯. 部 counts vehicles and machines:
+    一部车子, 搿部车子 "this bus". 公交车 is a city bus.
+- ref: 2
+  topic: grammar
+  text: >-
+    第 makes ordinal numbers, as in Mandarin: 第五站 "the fifth stop", 第一趟 "the first time".
+- ref: 3
+  topic: grammar
+  text: >-
+    浪 after a noun is "on, at" (Mandarin 上): 车子浪 "on the bus", 马路浪 "in the street", 台子浪 "on the table". 立 is "to
+    stand" (Mandarin 站): 立辣搿搭 "stand here".
+- ref: 4
+  topic: vocab
+  text: >-
+    下 is "next" before a measure word: 下一站 "the next stop", 下个礼拜 "next week"; 下趟 "next time" (lesson 3).
+- ref: 5
+  topic: vocab
+  text: >-
+    年纪轻 "young" (literally "age light"); 年纪大 "old". 勿要 "no, I don't want (it)": a polite refusal.
+- ref: 6
+  topic: vocab
+  text: >-
+    拎 is "to carry (by a handle), to hold" (Mandarin 提): 拎包 "carry a bag". A bag is counted with 只.
+- ref: 8
+  topic: vocab
+  text: >-
+    转来 "to come back (here)", 转去 "to go back (there)": 转 is "to return" (Mandarin 回来、回去). 孙子 is "grandson
+    (son's son)"; a daughter's son is 外孙 (lesson 5).
+- ref: 9
+  topic: vocab
+  text: >-
+    当心 is "be careful, watch out" (Mandarin 小心): 当心落车 "careful getting off", 当心！ "watch out!".
+- ref: 11
+  topic: false-friend
+  text: >-
+    跑 is "to walk" again (lesson 4): 慢慢跑 "walk slowly". 扶 is "to support (someone) by the arm".
+new_words:
+- hanzi: 公交车
+  en: city bus
+- hanzi: 阿婆
+  en: granny (an old woman)
+- hanzi: 部
+  en: (measure word for vehicles, machines)
+- hanzi: 静安寺
+  en: Jing'an Temple
+- hanzi: 第
+  en: (makes ordinal numbers)
+- hanzi: 浪
+  en: on, at (after a noun)
+- hanzi: 立
+  en: to stand
+- hanzi: 下
+  en: next (下一站, 下个礼拜)
+- hanzi: 勿要
+  en: no, I don't want (it); don't
+- hanzi: 年纪
+  en: age
+- hanzi: 轻
+  en: light; young (年纪轻)
+- hanzi: 拎
+  en: to carry, hold (by a handle)
+- hanzi: 孙子
+  en: grandson
+- hanzi: 转来
+  en: to come back
+- hanzi: 当心
+  en: be careful
+- hanzi: 扶
+  en: to support (by the arm)
+exercises:
+  translate:
+  - hanzi: 伊 一直 立 辣 门口 等 侬 。
+    en: He's been standing at the door waiting for you all along.
+  - hanzi: 侬 立 辣 门口 ， 我 去 拎 包 。
+    en: Stand at the door, I'll go and get the bag.
+  - hanzi: 孙子 礼拜天 转来 吃 中饭 。
+    en: My grandson is coming back for lunch on Sunday.
+  fill:
+  - hanzi: 落雨 了 ， 落车 要 ＿ 。
+    en: It's raining, be careful getting off.
+    answer: 当心
+  - hanzi: 侬 几 点钟 ＿ ？
+    en: What time are you coming back?
+    answer: 转来
+  - hanzi: 阿拉 辣 ＿ 三 站 落车 。
+    en: We get off at the third stop.
+    answer: 第
+  say:
+  - hanzi: 伊 年纪 交关 轻 。
+    en: She's very young.
+  - hanzi: 我 来 帮 侬 拎 。
+    en: Let me carry it for you.
+  - hanzi: 搿 部 车子 到 外滩 伐 ？
+    en: Does this bus go to the Bund?

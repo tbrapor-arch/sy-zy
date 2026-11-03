@@ -1,4 +1,4 @@
-# The 100 lessons (as Tsheh-tû's syllabus.yaml): title + what each one teaches. Lessons 1–21 are written; 22–100 are
+# The 100 lessons (as Tsheh-tû's syllabus.yaml): title + what each one teaches. Lessons 1–28 are written; 29–100 are
 # the plan, to adjust with `make coverage` (the most frequent words not taught yet) before each batch.
 # Every 7th lesson is a review; the second wave starts at lesson 50.
 lessons:
@@ -23,13 +23,13 @@ lessons:
 - {n: 19, en: 'The delivery', focus: 'V + 到 + place, 上勿来 (can''t), 下来, 介末, 等歇, 要…个'}
 - {n: 20, en: 'A birthday', focus: '过生日, 了 after the verb, 只好, 吹/唱, 叔叔 vs 爷叔'}
 - {n: 21, en: 'Review', review: true, focus: '过 / 了 / 了, 个 for how it was done, results after verbs, times of day'}
-- {n: 22, en: 'The neighbours', focus: '隔壁邻舍, 埃 "that", 伊搭, 侪 "all", 人家'}
-- {n: 23, en: 'Lost keys', focus: '物事, 寻勿着 / 寻着 (着 as result), 钥匙, 啥个'}
-- {n: 24, en: 'At the bank', focus: '万, 存/取钞票, 卡, 勿是…是…'}
-- {n: 25, en: 'A market morning', focus: '咾 (listing, "and so"), 讲价钿, 新鲜, 一斤/半斤'}
-- {n: 26, en: 'Taking the bus', focus: '公交车, 换车, 立 "stand", 部 (measure for vehicles), 下一站'}
-- {n: 27, en: 'Too hot!', focus: '热煞, 煞 as intensifier, 黄梅天, 邪气, 吃冷饮'}
-- {n: 28, en: 'Review', review: true}
+- {n: 22, en: 'The neighbours', focus: '隔壁邻舍, 楼高头/高头, 埃 "that", 侪 "all", 人家, 自家, 勿好 + verb, 好好叫'}
+- {n: 23, en: 'Lost keys', focus: '寻勿着 / 寻着 (着 as result), 啥个, 物事, 里头, 是勿是, 落脱, 蹲 "live", 只好'}
+- {n: 24, en: 'At the bank', focus: '办, 开, 存/取, 万, 请侬 + verb, 以后, 用勿着, 介 "so", 便当 (false friend)'}
+- {n: 25, en: 'A market morning', focus: '闹忙, 邪气, 赛过…一样, 咾 (list), 帮 + person, 拣, 刚刚, 统统'}
+- {n: 26, en: 'On the bus', focus: '部, 第, 浪 "on", 立, 下一站, 拎, 转来/转去, 当心'}
+- {n: 27, en: 'Too hot!', focus: '煞 (热煞), 黄梅天, 用, 一日到夜, 冰过个, 弄堂里, 乘风凉'}
+- {n: 28, en: 'Review', review: true, focus: 'place words after nouns (里/里头/浪/高头), all and very, coming back, results with 着'}
 - {n: 29, en: 'Calling home', focus: '打电话, 㑚 "you all", 想 "miss", 身体好伐'}
 - {n: 30, en: 'Housework', focus: '汏衣裳, 晾, 揩 "wipe", 拖地板, 帮'}
 - {n: 31, en: 'A dinner invitation', focus: '请客, 自家烧, 客气, 人家 "other people / home"'}

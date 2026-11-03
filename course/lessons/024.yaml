@@ -1,0 +1,144 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 24
+title:
+  en: At the bank
+  hanzi: 到 银行
+review: false
+setting: >-
+  Monday lunchtime. Sam goes to the bank near his office to open an account.
+dialogue:
+- n: 1
+  speaker: 营业员
+  hanzi: 先生 ， 侬 要 办 啥个 事体 ？
+  en: What can I do for you, sir?
+  lit: sir, you want handle what matter?
+- n: 2
+  speaker: Sam
+  hanzi: 我 想 开 一 张 银行卡 。
+  en: I'd like to open an account, with a bank card.
+- n: 3
+  speaker: 营业员
+  hanzi: 侬 个 护照 带 了 伐 ？
+  en: Have you brought your passport?
+- n: 4
+  speaker: Sam
+  hanzi: 带 了 ， 搿 是 我 个 护照 。
+  en: Yes, here's my passport.
+- n: 5
+  speaker: 营业员
+  hanzi: 侬 今朝 要 存 多少 钞票 ？
+  en: How much would you like to deposit today?
+- n: 6
+  speaker: Sam
+  hanzi: 先 存 一万 块 钞票 。
+  en: Ten thousand to start with.
+- n: 7
+  speaker: 营业员
+  hanzi: 好个 ， 请 侬 辣 搿搭 按 密码 。
+  en: Fine. Please enter your PIN here.
+- n: 8
+  speaker: Sam
+  hanzi: 以后 取 钞票 ， 要 到 搿搭 来 伐 ？
+  en: To take money out later, do I have to come here?
+- n: 9
+  speaker: 营业员
+  hanzi: 用勿着 ， 门口 有 机器 。
+  en: No need, there's a machine at the door.
+- n: 10
+  speaker: Sam
+  hanzi: 介 便当 啊 ！ 谢谢 侬 。
+  en: That's so convenient! Thank you.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    办 is "to handle, to see to": 办事体 "to get something done" (Mandarin 办事). 啥个事体 "what business".
+- ref: 2
+  topic: vocab
+  text: >-
+    开 is "to open": 开银行卡 "open an account (get a card)", 开门 "open the door". In lesson 9 it was "to drive"; it is
+    the same word.
+- ref: 5
+  topic: vocab
+  text: >-
+    存 is "to deposit, to save", 取 "to take out": 存钞票, 取钞票.
+- ref: 6
+  topic: grammar
+  text: >-
+    万 is "ten thousand", the unit Chinese counts in after 千: 一万 10,000, 两万 20,000, 十万 100,000. 一万块 "ten
+    thousand yuan".
+- ref: 7
+  topic: vocab
+  text: >-
+    请侬 + verb is the polite "please": 请侬按密码 "please enter your PIN", 请侬坐 "please sit down". 按 is "to press"; 密码
+    is a password or PIN.
+- ref: 8
+  topic: vocab
+  text: >-
+    以后 is "later, in future, after": 以后取钞票 "when (I) take money out later".
+- ref: 9
+  topic: grammar
+  text: >-
+    用勿着 "no need, not necessary" (Mandarin 用不着), with the 勿着 of 寻勿着 (lesson 23). 机器 is "machine".
+- ref: 10
+  topic: false-friend
+  text: >-
+    介 is "so, such" before an adjective (Mandarin 这么): 介便当 "so convenient", 介热 "so hot". 便当 is "convenient, easy"
+    (Mandarin 方便); in Taiwan and Japan 便当 is a lunchbox, never in Shanghai.
+new_words:
+- hanzi: 银行
+  en: bank
+- hanzi: 办
+  en: to handle, see to
+- hanzi: 开
+  en: to open
+- hanzi: 银行卡
+  en: bank card
+- hanzi: 护照
+  en: passport
+- hanzi: 存
+  en: to deposit, save
+- hanzi: 请
+  en: please; to invite
+- hanzi: 按
+  en: to press
+- hanzi: 密码
+  en: password, PIN
+- hanzi: 以后
+  en: later, afterwards
+- hanzi: 取
+  en: to take out (money)
+- hanzi: 用勿着
+  en: no need
+- hanzi: 机器
+  en: machine
+- hanzi: 介
+  en: so, such
+- hanzi: 便当
+  en: convenient, easy
+exercises:
+  translate:
+  - hanzi: 请 侬 拿 护照 拨 我 看看 。
+    en: Please let me see your passport.
+  - hanzi: 以后 侬 用勿着 带 钞票 了 。
+    en: From now on you won't need to carry cash.
+  - hanzi: 门口 个 机器 坏脱 了 ， 只好 进来 取 。
+    en: The machine at the door is broken, so you'll have to come in to take money out.
+  fill:
+  - hanzi: 搿搭 坐 地铁 交关 ＿ 。
+    en: Taking the metro from here is very convenient.
+    answer: 便当
+  - hanzi: 侬 要 ＿ 钞票 还是 取 钞票 ？
+    en: Do you want to deposit or withdraw money?
+    answer: 存
+  - hanzi: 今朝 ＿ 冷 啊 ！
+    en: It's so cold today!
+    answer: 介
+  say:
+  - hanzi: 银行 几 点钟 开 门 ？
+    en: What time does the bank open?
+  - hanzi: 请 侬 等 一眼 。
+    en: Please wait a moment.
+  - hanzi: 我 要 去 银行 办 事体 。
+    en: I have to go to the bank to sort something out.

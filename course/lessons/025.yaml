@@ -1,0 +1,142 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 25
+title:
+  en: A market morning
+  hanzi: 菜场
+review: false
+setting: >-
+  Saturday, half past seven. Sam goes to the wet market with the auntie, who knows every stallholder.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: 礼拜六 菜场 邪气 闹忙 。
+  en: The market is really busy on Saturdays.
+- n: 2
+  speaker: Sam
+  hanzi: 人 交关 多 ， 赛过 地铁站 一样 。
+  en: So many people, it's like a metro station.
+- n: 3
+  speaker: 阿姨
+  hanzi: 阿拉 先 买 青菜 咾 豆腐 。
+  en: Let's get greens and tofu first.
+- n: 4
+  speaker: 摊主
+  hanzi: 青菜 新鲜 个 ， 两 块 一 斤 。
+  en: The greens are fresh, two yuan a jin.
+- n: 5
+  speaker: 阿姨
+  hanzi: 帮 我 拣 一 斤 ， 要 好 一眼 个 。
+  en: Pick me out a jin, good ones.
+- n: 6
+  speaker: 摊主
+  hanzi: 鱼 要 伐 ？ 刚刚 到 个 。
+  en: Any fish? It's just come in.
+- n: 7
+  speaker: 阿姨
+  hanzi: 鱼 几钿 一 斤 ？
+  en: How much is the fish a jin?
+- n: 8
+  speaker: 摊主
+  hanzi: 廿五 块 ， 统统 是 活 个 。
+  en: Twenty-five, and they're all alive.
+- n: 9
+  speaker: 阿姨
+  hanzi: 忒 贵 了 ， 便宜 一眼 ， 廿 块 好 伐 ？
+  en: That's too much. A bit cheaper, twenty?
+- n: 10
+  speaker: 摊主
+  hanzi: 侬 是 老 主顾 了 ， 就 廿二 块 。
+  en: You're a regular. Twenty-two, then.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    闹忙 is "lively, bustling, crowded", a very Shanghainese word (Mandarin 热闹). 邪气 is "really, terribly", stronger than
+    老 and 交关.
+- ref: 2
+  topic: grammar
+  text: >-
+    赛过 is "just like, as if" (Mandarin 好像、简直像): 赛过地铁站一样 "just like a metro station". 一样 "the same, alike"
+    often closes the comparison.
+- ref: 3
+  topic: grammar
+  text: >-
+    咾 links things in a list, "and" (Mandarin 和、啊): 青菜咾豆腐 "greens and tofu". Between two clauses it means "and so"
+    (lesson 31). 搭 (lesson 2) also means "and"; 咾 is more casual.
+- ref: 5
+  topic: vocab
+  text: >-
+    拣 is "to pick, to choose" (Mandarin 挑): 帮我拣 "pick (some) for me". 帮 + person + verb is "do it for someone".
+- ref: 6
+  topic: vocab
+  text: >-
+    刚刚 is "just (now)": 刚刚到个 "just arrived". 鱼 is said with a bare, syllabic ng: tap it.
+- ref: 8
+  topic: vocab
+  text: >-
+    统统 is "all, every one of them" (Mandarin 全部), stronger than 侪. 活 is "alive": fish at a Shanghai market are sold
+    live.
+- ref: 10
+  topic: culture
+  text: >-
+    老主顾 "an old customer, a regular": a regular gets the better price, and often a bit of spring onion thrown in (lesson
+    3).
+new_words:
+- hanzi: 菜场
+  en: wet market
+- hanzi: 邪气
+  en: really, terribly
+- hanzi: 闹忙
+  en: lively, busy, bustling
+- hanzi: 赛过
+  en: just like, as if
+- hanzi: 一样
+  en: the same, alike
+- hanzi: 青菜
+  en: greens (bok choy)
+- hanzi: 咾
+  en: and (in a list); and so
+- hanzi: 豆腐
+  en: tofu
+- hanzi: 新鲜
+  en: fresh
+- hanzi: 帮
+  en: to help; (帮 + person) for
+- hanzi: 拣
+  en: to pick, choose
+- hanzi: 鱼
+  en: fish
+- hanzi: 刚刚
+  en: just (now)
+- hanzi: 统统
+  en: all, every one
+- hanzi: 活
+  en: alive
+- hanzi: 主顾
+  en: customer
+exercises:
+  translate:
+  - hanzi: 今朝 外滩 邪气 闹忙 。
+    en: The Bund is really busy today.
+  - hanzi: 帮 我 拣 两 只[ʦᴀʔ55] 苹果 。
+    en: Pick two apples for me.
+  - hanzi: 伊 刚刚 到 屋里 ， 还 呒没 吃饭 。
+    en: She's just got home and hasn't eaten yet.
+  fill:
+  - hanzi: 我 买 了 葱 ＿ 豆腐 。
+    en: I bought spring onions and tofu.
+    answer: 咾
+  - hanzi: 苹果 我 ＿ 买 了 。
+    en: I bought all the apples.
+    answer: 统统
+  - hanzi: 菜场 个 青菜 老 ＿ 个 。
+    en: The greens at the market are very fresh.
+    answer: 新鲜
+  say:
+  - hanzi: 侬 讲 上海闲话 赛过 上海人 一样 。
+    en: You speak Shanghainese just like a Shanghai person.
+  - hanzi: 鱼 是 活 个 伐 ？
+    en: Is the fish alive?
+  - hanzi: 我 刚刚 吃 过 早饭 。
+    en: I've just had breakfast.

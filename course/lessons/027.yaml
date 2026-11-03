@@ -1,0 +1,151 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 27
+title:
+  en: Too hot!
+  hanzi: 热煞 了
+review: false
+setting: >-
+  A Sunday in July. Sam drops in on the auntie after a walk; she is sitting with a paper fan and the windows open.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 今朝 热煞 了 ， 一 身 汗 ！
+  en: It's boiling today, I'm drenched in sweat!
+  lit: today hot-to-death (now), one body sweat!
+- n: 2
+  speaker: 阿姨
+  hanzi: 黄梅天 刚刚 过 ， 就 介 热 了 。
+  en: The plum rains have only just ended, and it's this hot already.
+- n: 3
+  speaker: Sam
+  hanzi: 侬 屋里 呒没 空调 啊 ？
+  en: Don't you have air conditioning?
+- n: 4
+  speaker: 阿姨
+  hanzi: 有 个 ， 我 欢喜 用 扇子 。
+  en: I do, I just prefer a fan.
+- n: 5
+  speaker: 阿姨
+  hanzi: 空调 开 了 ， 我 要 头 痛 个 。
+  en: When the air conditioning is on, I get a headache.
+- n: 6
+  speaker: Sam
+  hanzi: 我 一日到夜 开 空调 。
+  en: I have the air conditioning on all day long.
+- n: 7
+  speaker: 阿姨
+  hanzi: 吃 块 西瓜 ， 冰 过 个 。
+  en: Have a slice of watermelon, it's been chilled.
+- n: 8
+  speaker: Sam
+  hanzi: 邪气 甜 ！ 搿 是 啥地方 买 个 ？
+  en: It's so sweet! Where did you buy it?
+- n: 9
+  speaker: 阿姨
+  hanzi: 弄堂口 个 小店 买 个 。
+  en: At the little shop at the end of the lane.
+- n: 10
+  speaker: Sam
+  hanzi: 下趟 我 也 去 买 。
+  en: I'll buy some there next time.
+- n: 11
+  speaker: 阿姨
+  hanzi: 夜里 风 大 ， 来 弄堂 里 乘风凉 。
+  en: There's a breeze in the evening; come and sit out in the lane.
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    煞 after an adjective or verb is "to death, terribly": 热煞 "boiling hot", 冷煞 "freezing", 吓煞 "scared stiff", 吵煞
+    "deafening". 一身汗 "a body (full) of sweat".
+- ref: 2
+  topic: culture
+  text: >-
+    黄梅天 is the plum-rain season, June to early July, when it rains almost every day; the real heat comes right after. 介
+    "so" (lesson 24): 介热 "this hot".
+- ref: 4
+  topic: vocab
+  text: >-
+    用 is "to use": 用扇子 "use a fan". 空调 is the air conditioner, 开空调 "turn it on".
+- ref: 5
+  topic: grammar
+  text: >-
+    要…个 "will (surely)" (lesson 19): 我要头痛个 "I'll get a headache". Two clauses side by side make the "if": 空调开了，… "if
+    the air conditioning is on, …".
+- ref: 6
+  topic: vocab
+  text: >-
+    一日到夜 is "from morning till night, all day long" (Mandarin 一天到晚), with the everyday 日 of lesson 13.
+- ref: 7
+  topic: vocab
+  text: >-
+    冰过个 "chilled" (iced): 冰 is "ice" and here "to chill". 块 counts slices as well as pieces of cake (lesson 20).
+- ref: 9
+  topic: vocab
+  text: >-
+    弄堂口 is the mouth of the lane, where it meets the street: the place for the corner shop (小店), the bike repairer, the
+    breakfast stall.
+- ref: 11
+  topic: culture
+  text: >-
+    乘风凉 is "to sit out in the cool of the evening": before air conditioning, whole lanes brought out bamboo chairs on
+    summer nights. 里 after a noun is "in": 弄堂里 "in the lane".
+new_words:
+- hanzi: 热煞
+  en: terribly hot
+- hanzi: 身
+  en: body
+- hanzi: 汗
+  en: sweat
+- hanzi: 黄梅天
+  en: plum-rain season
+- hanzi: 空调
+  en: air conditioning
+- hanzi: 用
+  en: to use
+- hanzi: 扇子
+  en: fan (held in the hand)
+- hanzi: 一日到夜
+  en: all day long
+- hanzi: 西瓜
+  en: watermelon
+- hanzi: 冰
+  en: ice; to chill
+- hanzi: 弄堂口
+  en: the mouth of the lane
+- hanzi: 小店
+  en: small shop
+- hanzi: 风
+  en: wind, breeze
+- hanzi: 弄堂
+  en: lane (Shanghai's alleys)
+- hanzi: 里
+  en: in (after a noun)
+- hanzi: 乘风凉
+  en: to sit out in the cool evening air
+exercises:
+  translate:
+  - hanzi: 菜场 里 人 多 ， 阿姨 一 身 汗 。
+    en: The market was crowded and the auntie was drenched in sweat.
+  - hanzi: 我 一日到夜 辣 公司 开会 。
+    en: I'm in meetings at the office all day long.
+  - hanzi: 弄堂口 个 小店 礼拜天 也 开 个 。
+    en: The shop at the end of the lane is open on Sundays too.
+  fill:
+  - hanzi: 介 热 个 天 ， 侬 要 多 吃 ＿ 。
+    en: In weather this hot you need to drink lots of boiled water.
+    answer: 开水
+  - hanzi: 空调 坏脱 了 ， 只好 ＿ 扇子 。
+    en: The air conditioning has broken, so we'll have to use a fan.
+    answer: 用
+  - hanzi: 夜里 弄堂 ＿ 风 老 大 。
+    en: There's a strong breeze in the lane at night.
+    answer: 里
+  say:
+  - hanzi: 西瓜 冰 过 了 伐 ？
+    en: Has the watermelon been chilled?
+  - hanzi: 黄梅天 一日到夜 落雨 。
+    en: In the plum-rain season it rains all day long.
+  - hanzi: 侬 屋里 有 空调 伐 ？
+    en: Do you have air conditioning at home?

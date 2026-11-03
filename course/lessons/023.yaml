@@ -1,0 +1,150 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 23
+title:
+  en: Lost keys
+  hanzi: 钥匙 寻勿着 了
+review: false
+setting: >-
+  Evening. Sam and Xiao Li come back from dinner; Sam stands at his door going through his pockets.
+dialogue:
+- n: 1
+  speaker: 小李
+  hanzi: 侬 辣辣 寻 啥个 物事 ？
+  en: What are you looking for?
+  lit: you (right-now) look-for what thing?
+- n: 2
+  speaker: Sam
+  hanzi: 钥匙 寻勿着 了 ！
+  en: I can't find my keys!
+- n: 3
+  speaker: 小李
+  hanzi: 包 里头 看 过 了 伐 ？
+  en: Have you looked in your bag?
+- n: 4
+  speaker: Sam
+  hanzi: 看 过 了 ， 一眼 也 呒没 。
+  en: Yes, there's nothing there.
+- n: 5
+  speaker: 小李
+  hanzi: 侬 是勿是 落脱 辣 公司 了 ？
+  en: Did you leave them at the office?
+  lit: you is-not-is lose-off at office (now)?
+- n: 6
+  speaker: Sam
+  hanzi: 勿晓得 ， 今朝 事体 忒 多 了 。
+  en: I don't know, there was too much going on today.
+- n: 7
+  speaker: 小李
+  hanzi: 房东 有 钥匙 伐 ？
+  en: Does the landlady have a key?
+- n: 8
+  speaker: Sam
+  hanzi: 有 个 ， 伊 蹲 辣 楼高头 。
+  en: Yes, she lives upstairs.
+- n: 9
+  speaker: 小李
+  hanzi: 介末 只好 去 寻 伊 了 。
+  en: Then we'll just have to go and find her.
+- n: 10
+  speaker: Sam
+  hanzi: 寻着 了 ！ 就 辣 门 高头 ！
+  en: Found them! They're in the door!
+  lit: look-for-got (now)! right at door top!
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    啥个 is "what" before a noun, or alone (lesson 7 had 啥): 啥个物事 "what thing". 物事 is "thing, stuff" (Mandarin 东西),
+    a word you will hear all day.
+- ref: 2
+  topic: grammar
+  text: >-
+    寻勿着 "can't find": verb + 勿 + 着 says the result was not reached. Here 着 is read like zaq, not like the 着 "wear" of
+    lesson 10: tap both. The positive is 寻着 "found" (line 10). The same pattern: 困勿着 "can't sleep", 买勿着 "can't get
+    hold of".
+- ref: 3
+  topic: vocab
+  text: >-
+    里头 is "inside, in" (Mandarin 里面), after a noun: 包里头 "in the bag". 里向 (lesson 8) means the same; 里头 is the
+    more frequent.
+- ref: 5
+  topic: grammar
+  text: >-
+    是勿是 "is it (the case) that…?" asks a question you half expect the answer to, like Mandarin 是不是. 落脱 is "to
+    lose, leave behind" (Mandarin 丢了), with the 脱 of lesson 11.
+- ref: 6
+  topic: vocab
+  text: >-
+    勿晓得 "I don't know": 勿 + 晓得 (lesson 6). 事体 "things to do" (lesson 22).
+- ref: 8
+  topic: false-friend
+  text: >-
+    蹲 is "to live, to stay" (Mandarin 住): 侬蹲辣啥地方？ "where do you live?". It does not mean "to squat" here.
+- ref: 9
+  topic: grammar
+  text: >-
+    只好 "have no choice but to" (Mandarin 只好): 只好去寻伊 "we'll just have to go and find her". In lesson 20, 只 + 好
+    was "may only"; here it is one word.
+- ref: 10
+  topic: vocab
+  text: >-
+    门高头 "on the door", with 高头 "on, above" (lesson 22): the keys are still in the lock.
+new_words:
+- hanzi: 钥匙
+  en: key
+- hanzi: 寻勿着
+  en: can't find
+- hanzi: 啥个
+  en: what
+- hanzi: 物事
+  en: thing, stuff
+- hanzi: 包
+  en: bag
+- hanzi: 里头
+  en: inside, in
+- hanzi: 是勿是
+  en: is it that…? (question)
+- hanzi: 落脱
+  en: to lose, leave behind
+- hanzi: 公司
+  en: company, office
+- hanzi: 勿晓得
+  en: don't know
+- hanzi: 房东
+  en: landlord, landlady
+- hanzi: 蹲
+  en: to live, to stay
+- hanzi: 只好
+  en: have no choice but to
+- hanzi: 寻着
+  en: to find (succeed in finding)
+- hanzi: 门
+  en: door
+- hanzi: 高头
+  en: on, above, on top
+exercises:
+  translate:
+  - hanzi: 侬 蹲 辣 啥地方 ？
+    en: Where do you live?
+  - hanzi: 伞 我 落脱 辣 地铁 里头 了 。
+    en: I left my umbrella on the metro.
+  - hanzi: 外卖 勿 来 ， 只好 自家 烧 了 。
+    en: The delivery isn't coming, so we'll have to cook ourselves.
+  fill:
+  - hanzi: 侬 包 里头 有 ＿ 物事 ？
+    en: What have you got in your bag?
+    answer: 啥个
+  - hanzi: 钥匙 寻 了 半 个 钟头 ， 还 ＿ 。
+    en: I've looked for the key for half an hour and still can't find it.
+    answer: 寻勿着
+  - hanzi: 伊 是 ＿ 新 来 个 ？
+    en: Is he the new one?
+    answer: 是勿是
+  say:
+  - hanzi: 我 勿晓得 伊 蹲 辣 啥地方 。
+    en: I don't know where he lives.
+  - hanzi: 钥匙 寻着 了 伐 ？
+    en: Have you found the keys?
+  - hanzi: 物事 侪 放 辣 包 里头 。
+    en: Everything is in the bag.

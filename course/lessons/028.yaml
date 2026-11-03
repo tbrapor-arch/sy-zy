@@ -1,0 +1,96 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 28
+title:
+  en: Review
+  hanzi: 复习
+review: true
+setting: >-
+  A summer evening. Bamboo chairs are out in the lane; Sam joins the auntie for some cool air.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: Sam ， 西瓜 冰 好 了 ， 来 吃 ！
+  en: Sam, the watermelon's chilled, come and have some!
+- n: 2
+  speaker: Sam
+  hanzi: 来 了 ！ 弄堂 里 风 大 ， 老 灵 。
+  en: Coming! There's a breeze in the lane, lovely.
+- n: 3
+  speaker: 阿姨
+  hanzi: 楼高头 个 两 个 小人 今朝 勿 吵 。
+  en: The two children upstairs aren't noisy today.
+- n: 4
+  speaker: Sam
+  hanzi: 伊拉 去 白相 了 ， 礼拜天 转来 。
+  en: They've gone away for the weekend, they're back on Sunday.
+- n: 5
+  speaker: 阿姨
+  hanzi: 侬 银行卡 开 好 了 伐 ？
+  en: Did you get your bank card sorted?
+- n: 6
+  speaker: Sam
+  hanzi: 开 好 了 ， 门口 机器 也 用 过 了 。
+  en: Yes, and I've already used the machine at the door.
+- n: 7
+  speaker: 阿姨
+  hanzi: 介 便当 ， 我 也 去 开 一 张 。
+  en: That's so handy, I'll go and get one too.
+- n: 8
+  speaker: Sam
+  hanzi: 我 帮 侬 一道 去 ， 好 伐 ？
+  en: I'll come with you and help, OK?
+- n: 9
+  speaker: 阿姨
+  hanzi: 好个 ， 侬 真 是 好 人 。
+  en: Thank you, you really are kind.
+notes:
+- ref: 2
+  topic: grammar
+  text: >-
+    Place words after a noun: 弄堂里 "in the lane", 包里头 "in the bag", 车子浪 "on the bus", 门高头 "on the door", 楼高头
+    "upstairs". Before the verb they take 辣: 立辣门口, 蹲辣楼高头.
+- ref: 3
+  topic: grammar
+  text: >-
+    "All" and "very": 侪 "all" (伊拉侪是外地人), 统统 "every one" (统统是活个); 交关, 邪气 "very, really", 介 "so" (介便当),
+    煞 "terribly" after the word (热煞).
+- ref: 4
+  topic: vocab
+  text: >-
+    Coming and going back: 转来 "come back (here)", 转去 "go back (there)", 下来 "come down" (lesson 19), 搬来 "move in".
+- ref: 5
+  topic: grammar
+  text: >-
+    Results: 开好 "opened (done)", 寻着 "found", 寻勿着 "can't find", 用勿着 "no need", 落脱 "lost". 着 here is read
+    differently from 着 "wear".
+- ref: 9
+  topic: vocab
+  text: >-
+    Words for people so far: 阿姨, 爷叔, 阿婆, 叔叔, 先生, 师傅, 老板, 房东, 主顾, 隔壁邻舍, 朋友.
+new_words: []
+exercises:
+  translate:
+  - hanzi: 阿婆 自家 拎 了 两 只[ʦᴀʔ55] 包 转来 。
+    en: The old lady carried two bags home by herself.
+  - hanzi: 菜场 里 个 鱼 统统 是 活 个 。
+    en: The fish at the market are all alive.
+  - hanzi: 介 热 个 天 ， 侬 一日到夜 开 空调 啊 ？
+    en: In this heat, do you have the air conditioning on all day?
+  fill:
+  - hanzi: 隔壁邻舍 ＿ 是 朋友 。
+    en: The neighbours are all friends.
+    answer: 侪
+  - hanzi: 钥匙 侬 ＿ 了 伐 ？
+    en: Have you found the keys?
+    answer: 寻着
+  - hanzi: 坐 地铁 交关 ＿ ， 用勿着 打 差头 。
+    en: The metro is very convenient, no need to take a taxi.
+    answer: 便当
+  say:
+  - hanzi: 我 蹲 辣 楼高头 。
+    en: I live upstairs.
+  - hanzi: 今朝 菜场 邪气 闹忙 。
+    en: The market is really busy today.
+  - hanzi: 当心 ， 搿搭 人 介 多 。
+    en: Careful, there are so many people here.

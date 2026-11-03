@@ -1,8 +1,8 @@
 # Build report (2026-11-03)
 
-- lexicon: 95763 words · app dictionary: 6169 words · lessons: 21 · bridge: 220 characters
+- lexicon: 95772 words · app dictionary: 6210 words · lessons: 28 · bridge: 220 characters
 
-## composed (16)
+## composed (23)
 
 - 有名 → yeu-min (lesson 8 line 3)
 - 米饭 → mi-ve (lesson 8 line 7)
@@ -20,4 +20,17 @@
 - 楼上 → leu-zaon (lesson 19 line 2)
 - 进来 → cin-le (lesson 20 line 4)
 - 巧克力 → chiau-kheq-liq (lesson 20 line 5)
+- 房东 → vaon-ton (lesson 23 line 7)
+- 密码 → miq-mo (lesson 24 line 7)
+- 以后 → i-gheu (lesson 24 line 8)
+- 机器 → ci-chi (lesson 24 line 9)
+- 廿五 → gnie-ng (lesson 25 line 8)
+- 廿二 → gnie-gni (lesson 25 line 10)
+- 公交车 → kon-ciau-tsho (lesson 26 title)
+
+## no gloss (3)
+
+- 一万 (lesson 24 line 6)
+- 廿五 (lesson 25 line 8)
+- 廿二 (lesson 25 line 10)
 

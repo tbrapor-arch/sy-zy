@@ -75,16 +75,27 @@ notes:
   text: >-
     晓得了 "(I) know (now)" = "got it". 晓得 is "to know" (Mandarin 知道).
 exercises:
-  fill:
-  - hanzi: 礼拜天 侬 ＿ 伐 ？
-    en: Are you free on Sunday?
-    answer: 空
-  - hanzi: 阿拉 ＿ 去 豫园[ɦy13_ɦyø13] 白相 。
-    en: Let's go to Yuyuan together.
-    answer: 一道
   translate:
-  - hanzi: 我 老 欢喜 吃 小笼 个 。
-    en: I really love soup dumplings.
+  - hanzi: 小李 礼拜天 勿 空 。
+    en: Xiao Li isn't free on Sunday.
+  - hanzi: 阿拉 一道 去 吃 小笼 好 伐 ？
+    en: Shall we go and have soup dumplings together?
+  - hanzi: 我 辣 豫园 等 侬 。
+    en: I'll wait for you at Yuyuan.
+  fill:
+  - hanzi: 侬 欢喜 吃 生煎 ＿ ？
+    en: Do you like pan-fried buns?
+    answer: 伐
+  - hanzi: 早浪 七 ＿ ， 我 辣 屋里 等 侬 。
+    en: Seven in the morning, I'll wait for you at home.
+    answer: 点钟
+  - hanzi: 我 ＿ 了 ， 十 点钟 见 。
+    en: Got it, see you at ten.
+    answer: 晓得
   say:
-  - hanzi: 晓得 了 。
-    en: Got it.
+  - hanzi: 侬 做啥 去 豫园 ？
+    en: Why are you going to Yuyuan?
+  - hanzi: 覅 忘记 带 照片 。
+    en: Don't forget to bring the photos.
+  - hanzi: 我 老 欢喜 豫园 。
+    en: I really like Yuyuan.

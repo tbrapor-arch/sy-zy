@@ -83,16 +83,27 @@ notes:
   text: >-
     一眼眼 is "a tiny bit": 一眼 is "a bit", and repeating 眼 makes it smaller. Nothing to do with eyes here.
 exercises:
-  fill:
-  - hanzi: 侬 是 外地人 ＿ ？
-    en: Are you from out of town?
-    answer: 伐
-  - hanzi: 我 ＿ Sam 。
-    en: My name is Sam.
-    answer: 叫
   translate:
-  - hanzi: 侬 上海闲话 讲 得 蛮 好 。
-    en: You speak Shanghainese quite well.
+  - hanzi: 我 是 新[ɕin53] 来 个 。
+    en: I'm new here.
+  - hanzi: 阿姨 是 外地人 伐 ？
+    en: Is the auntie from out of town?
+  - hanzi: Sam 只 会 讲 一眼眼 上海闲话 。
+    en: Sam can only speak a tiny bit of Shanghainese.
+  fill:
+  - hanzi: 我 ＿ Anna ， 我 是 法国人 。
+    en: My name is Anna, I'm French.
+    answer: 叫
+  - hanzi: 侬 会 讲 上海闲话 ＿ ？
+    en: Can you speak Shanghainese?
+    answer: 伐
+  - hanzi: Anna 上海闲话 讲 得 ＿ 好 。
+    en: Anna speaks Shanghainese quite well.
+    answer: 蛮
   say:
-  - hanzi: 再会 ！
-    en: Goodbye!
+  - hanzi: 我 是 外地人 。
+    en: I'm not from here.
+  - hanzi: 侬 是 法国人 伐 ？
+    en: Are you French?
+  - hanzi: 谢谢 ， 再会 ！
+    en: Thanks, bye!

@@ -69,16 +69,27 @@ notes:
   text: >-
     越…越… "the more…the more…": 越讲越好 "the more you speak, the better (it gets)", as in Mandarin.
 exercises:
+  translate:
+  - hanzi: 今朝 侬 去 啥地方 白相 了 ？
+    en: Where did you go today?
+  - hanzi: 生煎 越 吃 越 好吃 。
+    en: The more you eat pan-fried buns, the better they get.
+  - hanzi: 小笼 老 好吃 ， 就是 有 一眼 贵 。
+    en: The soup dumplings are delicious, just a little expensive.
   fill:
-  - hanzi: 侬 今朝 做 ＿ 了 ？
-    en: What did you do today?
-    answer: 啥
-  - hanzi: ＿ 远 。
-    en: (It's) not far.
-    answer: 勿
-  - hanzi: 还 ＿ 。
-    en: Not yet.
-    answer: 呒没
+  - hanzi: 伊 是 ＿ ？ 是 侬 个 老师 伐 ？
+    en: Who is she? Is she your teacher?
+    answer: 啥人
+  - hanzi: 阿拉 坐 地铁 去 ＿ 。
+    en: We went by metro.
+    answer: 个
+  - hanzi: 我 只 会 讲 ＿ 上海闲话 。
+    en: I can only speak a tiny bit of Shanghainese.
+    answer: 一眼眼
   say:
-  - hanzi: 侬 是 我 个 老师 。
-    en: You're my teacher.
+  - hanzi: 今朝 我 搭 阿姐 一道 去 外滩 了 。
+    en: Today I went to the Bund with my big sister.
+  - hanzi: 中饭 吃 过 了 伐 ？
+    en: Have you had lunch?
+  - hanzi: 侬 去 过 豫园 伐 ？
+    en: Have you been to Yuyuan?

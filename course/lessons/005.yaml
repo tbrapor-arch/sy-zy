@@ -76,16 +76,27 @@ notes:
   text: >-
     The family: 爷 ya is father, 姆妈 m-ma is mother, 阿姐 is big sister, 阿哥 big brother. 搭 is "and".
 exercises:
-  fill:
-  - hanzi: 搿个 是 ＿ ？
-    en: Who is this?
-    answer: 啥人
-  - hanzi: 侬 屋里 有 ＿ 个 人 ？
-    en: How many are there in your family?
-    answer: 几
   translate:
-  - hanzi: 搿个 小人 老 嗲 个 。
-    en: This child is really cute.
+  - hanzi: 伊 是 啥人 ？
+    en: Who is he?
+  - hanzi: 阿拉 阿姐 辣 巴黎 做 老师 。
+    en: My big sister is a teacher in Paris.
+  - hanzi: 伊拉 个 小人 今年 四 岁 。
+    en: Their child is four this year.
+  fill:
+  - hanzi: 伊 是 阿拉 ＿ ， 伊 辣 学堂 做 老师 。
+    en: She's my mum; she's a teacher at a school.
+    answer: 姆妈
+  - hanzi: 侬 今年 几 ＿ ？
+    en: How old are you this year?
+    answer: 岁
+  - hanzi: 搿 是 侬 ＿ 照片 伐 ？
+    en: Is this your photo?
+    answer: 个
   say:
-  - hanzi: 阿拉 屋里 有 四 个 人 。
-    en: There are four of us in my family.
+  - hanzi: 阿拉 屋里 有 五 个 人 。
+    en: There are five of us in my family.
+  - hanzi: 阿拉 爷 是 法国人 。
+    en: My dad is French.
+  - hanzi: 侬 老公 是 老师 伐 ？
+    en: Is your husband a teacher?

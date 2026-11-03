@@ -72,16 +72,27 @@ notes:
     覅 is a single syllable made from 勿 + 要: "don't". So 覅客气 is "don't be polite" = "you're welcome". 下趟 is "next
     time" (Mandarin 下次).
 exercises:
-  fill:
-  - hanzi: 搿个 ＿ ？
-    en: How much is this?
-    answer: 几钿
-  - hanzi: 忒 ＿ 了 ！
-    en: That's too expensive!
-    answer: 贵
   translate:
-  - hanzi: 葱 拨 侬 。
-    en: The onions are for you.
+  - hanzi: 葱 几钿 一 斤 ？
+    en: How much is a jin of spring onions?
+  - hanzi: 苹果 勿 贵 ， 我 买 四 斤 。
+    en: The apples aren't expensive, I'll buy four jin.
+  - hanzi: 阿姨 ， 铜钿 拨 侬 。
+    en: Auntie, here's the money.
+  fill:
+  - hanzi: 搿个 苹果 ＿ ？
+    en: How much are these apples?
+    answer: 几钿
+  - hanzi: 廿 块 忒 贵 了 ， ＿ 一眼 好 伐 ？
+    en: Twenty is too much, a bit cheaper, OK?
+    answer: 便宜
+  - hanzi: 我 ＿ 两 斤 苹果 。
+    en: I'll buy two jin of apples.
+    answer: 买
   say:
-  - hanzi: 覅客气 。
-    en: Don't mention it.
+  - hanzi: 下趟 再 买 。
+    en: I'll buy some next time.
+  - hanzi: 十二 块 忒 贵 了 。
+    en: Twelve yuan is too expensive.
+  - hanzi: 再 要 一 斤 苹果 。
+    en: One more jin of apples, please.

@@ -70,16 +70,27 @@ notes:
     老 before an adjective is "very": 老烫 very hot, 老好 very good. It has nothing to do with "old" here. The 个 at the
     end of the sentence adds weight: "they really are hot".
 exercises:
-  fill:
-  - hanzi: 早饭 吃 过 了 ＿ ？
-    en: Have you had breakfast?
-    answer: 伐
-  - hanzi: 还 ＿ 。
-    en: Not yet.
-    answer: 呒没
   translate:
-  - hanzi: 生煎 老 烫 个 。
-    en: The buns are very hot.
+  - hanzi: 爷叔 ， 搿搭 有 豆浆 伐 ？
+    en: Sir, do you have soy milk here?
+  - hanzi: 我 要 一 碗 咸 豆浆 。
+    en: I'd like a bowl of salty soy milk.
+  - hanzi: 生煎 我 吃 过 了 。
+    en: I've already had pan-fried buns.
+  fill:
+  - hanzi: 粢饭团 ＿ 伐 ？
+    en: Do you have sticky rice rolls?
+    answer: 有
+  - hanzi: 我 要 一 碗 豆浆 ＿ 一 只[ʦᴀʔ55] 粢饭团 。
+    en: I'll have a bowl of soy milk and a sticky rice roll.
+    answer: 搭
+  - hanzi: 豆浆 ＿ 烫 个 ， 慢慢 吃 。
+    en: The soy milk is very hot, drink it slowly.
+    answer: 老
   say:
-  - hanzi: 甜[di13] 个 还是 咸[ɦᴇ13] 个 ？
-    en: Sweet or salty?
+  - hanzi: 早饭 我 吃 过 了 。
+    en: I've had breakfast.
+  - hanzi: 搿搭 有 生煎 伐 ？
+    en: Do you have pan-fried buns here?
+  - hanzi: 我 要 甜 个 。
+    en: I'll have a sweet one.

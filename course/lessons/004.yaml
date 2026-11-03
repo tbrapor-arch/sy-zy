@@ -70,16 +70,27 @@ notes:
   text: >-
     白相 is "to have fun, to play, to go out": one of the most Shanghainese words there is. 开心 is "happy".
 exercises:
-  fill:
-  - hanzi: 外滩 ＿ 走 ？
-    en: How do I get to the Bund?
-    answer: 哪能
-  - hanzi: 地铁站 ＿ 啥地方 ？
-    en: Where is the metro station?
-    answer: 辣
   translate:
-  - hanzi: 侬 坐 地铁 好 了 。
-    en: Just take the metro.
+  - hanzi: 南京东路 远 伐 ？
+    en: Is East Nanjing Road far?
+  - hanzi: 地铁站 就 辣 前头 ， 勿 远 。
+    en: The metro station is just ahead, it's not far.
+  - hanzi: 外滩 蛮 远 ， 我 坐 地铁 。
+    en: The Bund is quite far, I'll take the metro.
+  fill:
+  - hanzi: 请问 一声 ， 南京东路 ＿ 走 ？
+    en: Excuse me, how do I get to East Nanjing Road?
+    answer: 哪能
+  - hanzi: 外滩 辣 ＿ ？
+    en: Where is the Bund?
+    answer: 啥地方
+  - hanzi: 地铁站 勿 远 ， 一直 ＿ 五 分钟 。
+    en: The metro station isn't far, five minutes' walk straight on.
+    answer: 跑
   say:
-  - hanzi: 请问 一声 。
-    en: Excuse me (may I ask).
+  - hanzi: 请问 一声 ， 地铁站 哪能 走 ？
+    en: Excuse me, how do I get to the metro station?
+  - hanzi: 我 辣 南京东路 落车 。
+    en: I get off at East Nanjing Road.
+  - hanzi: 我 要 坐 地铁 。
+    en: I need to take the metro.

@@ -79,6 +79,31 @@ notes:
   topic: vocab
   text: >-
     一共 is "altogether, in total".
+new_words:
+- hanzi: 剃头
+  en: to get a haircut
+- hanzi: 汏头
+  en: to wash one's hair
+- hanzi: 剪
+  en: to cut (with scissors)
+- hanzi: 短
+  en: short
+- hanzi: 剪脱
+  en: to cut off
+- hanzi: 两边
+  en: both sides
+- hanzi: 上头
+  en: on top, above
+- hanzi: 长
+  en: long
+- hanzi: 头发
+  en: hair
+- hanzi: 汏
+  en: to wash
+- hanzi: 吹干
+  en: to blow-dry
+- hanzi: 一共
+  en: altogether
 exercises:
   translate:
   - hanzi: 侬 头发 长 了 ， 要 去 剃头 了 。

@@ -175,7 +175,7 @@ def parse_lesson(path):
          'lines': [{'speaker': d['speaker'], 'src': d['hanzi'], 'en': d['en'], 'lit': d.get('lit', '')} for d in y['dialogue']],
          'notes': [{'ref': nt['ref'], 'text': nt['text'].strip(), **({'topic': nt['topic']} if nt.get('topic') else {})}
                    for nt in y.get('notes', [])],
-         'exercises': []}
+         'exercises': [], 'declared': y.get('new_words')}
     for kind, items in (y.get('exercises') or {}).items():
         for e in items:
             L['exercises'].append({'kind': {'translate': 'mean'}.get(kind, kind), 'src': e['hanzi'], 'en': e['en'],
@@ -224,7 +224,20 @@ for p in sorted((ROOT / 'course/lessons').glob('[0-9][0-9][0-9].yaml')):
         exercises.append({'kind': e['kind'], 'tokens': tokens(e['src'], f'lesson {n} exercise'), 'en': e['en'],
                           'answer': e['answer'], 'answer_id': (tokens(e['answer'], 'answer')[0].get('w', {}).get('id') if e['answer'] and HAN.search(e['answer']) else None)})
     hz, en = [x.strip() for x in L['title'].split('|')]
-    lessons.append({'id': n, 'title': {'hanzi': hz, 't': trad(hz), 'en': en, 'tokens': tokens(hz, f'lesson {n} title')},
+    title_toks = tokens(hz, f'lesson {n} title')
+    # new words: as declared in the lesson (Tsheh-tû's new_words), each with the English chosen for the lesson;
+    # a lesson without the list falls back to "first met here"
+    new_en = {}
+    if L['declared'] is not None:
+        new_words = []
+        for w in L['declared'] or []:
+            t = tokens(w['hanzi'], f'lesson {n} new_words')[0].get('w', {})
+            if not t.get('id'):
+                report['missing'].append(f"{w['hanzi']} (lesson {n} new_words)"); continue
+            new_words.append(t['id'])
+            if w.get('en'): new_en[t['id']] = w['en']
+        earlier = set()
+    lessons.append({'id': n, 'title': {'hanzi': hz, 't': trad(hz), 'en': en, 'tokens': title_toks}, 'new_en': new_en,
                     'review': L.get('review') == 'yes', 'setting': L.get('setting', ''), 'lines': lines,
                     'notes': L['notes'], 'exercises': exercises, 'all_words': new_words,
                     'new_words': [w for w in new_words if w not in earlier]})

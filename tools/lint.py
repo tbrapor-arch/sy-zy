@@ -6,7 +6,12 @@
 Curve (docs/course-plan.md §3):
   lines     6 at L1–5, +1 every 5 lessons → 15 at L46–50; a review lesson has 2 fewer lines
   syllables median per line: 7 (L1–10), 8, 9, 10, 11 (L41–50); more than 1 syllable off = warning
-  new words 12 → 20, linear (±2); review lessons: none
+  new words 12 → 20, linear (±2); review lessons: none (counted from the lesson's declared new_words)
+
+New words (as in Tsheh-tû): each lesson declares its new_words (hanzi, with [IPA] when the reading is forced, + en).
+  errors: a declared word that is not a word of the lesson's title or dialogue; a word declared twice in the course;
+          a dialogue word declared neither here nor earlier (numbers are free; a word with a forced reading counts
+          as declared when the same form, or the bare word, was declared).
   exercises 3 translate + 3 fill + 3 say, none copied from a dialogue line
 """
 import glob, os, re, statistics, sys
@@ -52,6 +57,8 @@ def bare(s):
 
 ALL_LINES = {}
 SEEN = {}      # lesson id -> words met in the dialogues and titles up to that lesson
+DECLARED = {}  # lesson id -> words declared in new_words up to the lesson before
+NUM = set('〇一二三四五六七八九十廿百千万两半')
 
 
 def words(text):
@@ -87,6 +94,32 @@ def check(path, strict):
     for nt in y.get('notes', []):
         if not 1 <= nt.get('ref', 0) <= lines:
             errors.append(f'note refers to line {nt.get("ref")}')
+
+    nw = y.get('new_words')
+    if nw is None:
+        warns.append('no new_words list')
+    else:
+        toks = set(t for t in (y['title']['hanzi'] + ' ' + ' '.join(d['hanzi'] for d in y['dialogue'])).split() if HAN.search(t))
+        bases = {re.sub(r'\[[^\]]*\]$', '', t) for t in toks}
+        before = DECLARED.get(n, set())
+        mine = set()
+        for w in nw or []:
+            h = w.get('hanzi', '')
+            if h not in toks and h not in bases:
+                errors.append(f'new word {h} is not a word of the title or dialogue')
+            if h in before or h in mine:
+                errors.append(f'new word {h} is already declared')
+            if not w.get('en'):
+                errors.append(f'new word {h} has no English')
+            mine.add(h)
+        known = before | mine
+        for t in sorted(toks):
+            b = re.sub(r'\[[^\]]*\]$', '', t)
+            if t in known or b in known or all(c in NUM for c in b):
+                continue
+            errors.append(f'{t} is used but declared neither here nor earlier')
+        if n <= 50 and abs(len(nw or []) - target_new_words(n)) > 2:
+            warns.append(f'{len(nw or [])} new words, curve says {target_new_words(n)}')
 
     if n <= 50:
         want = target_lines(n)
@@ -126,6 +159,8 @@ def main():
             ALL_LINES.setdefault(bare(d['hanzi']), y['id'])
             seen |= set(words(d['hanzi']))
         SEEN[y['id']] = seen
+        DECLARED[y['id']] = set(acc) if (acc := DECLARED.get('_all', set())) else set()
+        DECLARED['_all'] = acc | {w['hanzi'] for w in (y.get('new_words') or [])}
     for p in sorted(glob.glob(os.path.join(ROOT, 'course/lessons/[0-9][0-9][0-9].yaml'))):
         n, errors, warns = check(p, strict)
         for e in errors:

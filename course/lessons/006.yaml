@@ -74,6 +74,49 @@ notes:
 - ref: 9
   text: >-
     晓得了 "(I) know (now)" = "got it". 晓得 is "to know" (Mandarin 知道).
+new_words:
+- hanzi: 礼拜天
+  en: Sunday
+- hanzi: 小李
+  en: 'Xiao Li (a name: "little Li")'
+- hanzi: 空
+  en: free, not busy
+- hanzi: 做啥
+  en: why; to do what
+- hanzi: 一道
+  en: together
+- hanzi: 去
+  en: to go
+- hanzi: 豫园
+  en: Yuyuan Garden
+- hanzi: 几点钟
+  en: what time
+- hanzi: 早浪
+  en: (in the) morning
+- hanzi: 点钟
+  en: o'clock
+- hanzi: 等
+  en: to wait
+- hanzi: 中饭
+  en: lunch
+- hanzi: 小笼
+  en: soup dumplings
+- hanzi: 灵
+  en: great, works well
+- hanzi: 欢喜
+  en: to like
+- hanzi: 覅
+  en: don't (do it)
+- hanzi: 忘记
+  en: to forget
+- hanzi: 带
+  en: to bring, carry
+- hanzi: 钞票
+  en: money; banknotes
+- hanzi: 晓得
+  en: to know
+- hanzi: 见
+  en: to see
 exercises:
   translate:
   - hanzi: 小李 礼拜天 勿 空 。

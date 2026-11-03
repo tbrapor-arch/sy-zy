@@ -68,6 +68,17 @@ notes:
 - ref: 7
   text: >-
     越…越… "the more…the more…": 越讲越好 "the more you speak, the better (it gets)", as in Mandarin.
+new_words:
+- hanzi: 复习
+  en: review
+- hanzi: 今朝
+  en: today
+- hanzi: 好吃
+  en: tasty
+- hanzi: 就是
+  en: only that; it's just that
+- hanzi: 越
+  en: the more
 exercises:
   translate:
   - hanzi: 今朝 侬 去 啥地方 白相 了 ？

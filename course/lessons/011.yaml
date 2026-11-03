@@ -75,6 +75,35 @@ notes:
   text: >-
     吃 again covers drinking: 吃咖啡, 吃茶, 吃豆浆. 杯 is "cup, glass", and before a noun the 一 drops: 吃杯咖啡. 先 is
     "first, before something else".
+new_words:
+- hanzi: 上班
+  en: to go to work
+- hanzi: 迟到
+  en: to be late
+- hanzi: 对勿起
+  en: sorry
+- hanzi: 坏脱
+  en: broken, broken down
+- hanzi: 老板
+  en: boss
+- hanzi: 辣辣
+  en: is there; (doing) now
+- hanzi: 寻
+  en: to look for
+- hanzi: 开会
+  en: to have a meeting
+- hanzi: 句
+  en: (measure word for sentences)
+- hanzi: 也
+  en: also, even
+- hanzi: 准备
+  en: to prepare
+- hanzi: 先
+  en: first
+- hanzi: 杯
+  en: cup, glass
+- hanzi: 咖啡
+  en: coffee
 exercises:
   translate:
   - hanzi: 老板 今朝 也 迟到 了 。

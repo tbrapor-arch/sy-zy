@@ -82,6 +82,53 @@ notes:
 - ref: 8
   text: >-
     一眼眼 is "a tiny bit": 一眼 is "a bit", and repeating 眼 makes it smaller. Nothing to do with eyes here.
+new_words:
+- hanzi: 侬早
+  en: good morning
+- hanzi: 阿姨
+  en: auntie (polite to a woman older than you)
+- hanzi: 侬
+  en: you (one person)
+- hanzi: 是
+  en: to be
+- hanzi: 新
+  en: new
+- hanzi: 来
+  en: to come
+- hanzi: 个
+  en: (possessive, like 的; also the measure word)
+- hanzi: 伐
+  en: (yes–no question particle)
+- hanzi: 是个
+  en: yes, that's right
+- hanzi: 我
+  en: I, me
+- hanzi: 叫
+  en: to be called; to call
+- hanzi: 外地人
+  en: someone not from here
+- hanzi: 法国人
+  en: French (person)
+- hanzi: 上海闲话
+  en: Shanghainese (language)
+- hanzi: 讲
+  en: to speak, to say
+- hanzi: 得
+  en: (links a verb to how well it is done)
+- hanzi: 蛮
+  en: quite, rather
+- hanzi: 好
+  en: good; well
+- hanzi: 谢谢
+  en: thank you
+- hanzi: 只
+  en: only
+- hanzi: 会
+  en: can; will
+- hanzi: 一眼眼
+  en: a tiny bit
+- hanzi: 再会
+  en: goodbye
 exercises:
   translate:
   - hanzi: 我 是 新[ɕin53] 来 个 。

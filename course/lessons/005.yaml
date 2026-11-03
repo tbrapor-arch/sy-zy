@@ -75,6 +75,53 @@ notes:
 - ref: 8
   text: >-
     The family: 爷 ya is father, 姆妈 m-ma is mother, 阿姐 is big sister, 阿哥 big brother. 搭 is "and".
+new_words:
+- hanzi: 阿拉
+  en: we, us
+- hanzi: 屋里
+  en: home
+- hanzi: 搿
+  en: this
+- hanzi: 照片
+  en: photo
+- hanzi: 啥人
+  en: who
+- hanzi: 老公
+  en: husband
+- hanzi: 伊
+  en: he, she; him, her
+- hanzi: 老早
+  en: long ago; very early
+- hanzi: 学堂
+  en: school
+- hanzi: 做
+  en: to do, make
+- hanzi: 老师
+  en: teacher
+- hanzi: 小人
+  en: child
+- hanzi: 外孙
+  en: grandson (daughter's son)
+- hanzi: 今年
+  en: this year
+- hanzi: 岁
+  en: years old
+- hanzi: 嗲
+  en: lovely, cute; great
+- hanzi: 人
+  en: person
+- hanzi: 爷
+  en: father
+- hanzi: 姆妈
+  en: mother
+- hanzi: 阿姐
+  en: elder sister
+- hanzi: 伊拉
+  en: they, them
+- hanzi: 法国
+  en: France
+- hanzi: 巴黎
+  en: Paris
 exercises:
   translate:
   - hanzi: 伊 是 啥人 ？

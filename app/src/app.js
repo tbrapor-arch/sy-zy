@@ -264,7 +264,7 @@ function showLesson(L) {
     <details class="allnotes" id="sec-notes"><summary><span class="han">${esc(hzt('注解'))}</span> All notes (${L.notes.length})</summary>
     <ol class="notes">${L.notes.map((n, i) => `<li class="note" id="note-${i + 1}"><span class="nn">${i + 1}</span><p><span class="tag">Line ${n.ref}</span>${fmt(n.text)}</p></li>`).join('')}</ol></details>
     <h2 id="sec-words"><span class="han">${esc(hzt('新词'))}</span> New words</h2>
-    <div class="wgrid">${L.new_words.map(id => { const e = DATA.dict[id]; return `<button class="wchip ${cog(id)[2]} ${deck[id] ? 'indeck' : ''}" data-word="${esc(id)}"><b>${esc(H(e))}</b><span class="r">${esc(spell(e))}</span><span class="g">${esc(e.gloss || '')}</span></button>`; }).join('')}</div>
+    <div class="wgrid">${L.new_words.map(id => { const e = DATA.dict[id]; return `<button class="wchip ${cog(id)[2]} ${deck[id] ? 'indeck' : ''}" data-word="${esc(id)}"><b>${esc(H(e))}</b><span class="r">${esc(spell(e))}</span><span class="g">${esc((L.new_en || {})[id] || e.gloss || '')}</span></button>`; }).join('')}</div>
     <div class="row"><button class="btn small quiet" id="anki">Copy for Anki</button><span class="sub" style="font-size:.85rem">${L.new_words.filter(w => deck[w]).length} of ${L.new_words.length} in your review deck</span></div>
     <h2 id="sec-ex"><span class="han">${esc(hzt('练习'))}</span> Practice</h2>
     <p class="sub" style="margin:0;font-size:.85rem">Type the answer in characters or in any of the three spellings; hyphens, spaces and tone numbers do not matter.</p>
@@ -276,7 +276,7 @@ function showLesson(L) {
   $$('[data-jump]', main).forEach(b => b.onclick = () => { const el = document.getElementById(b.dataset.jump); if (el.tagName === 'DETAILS') el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
   $$('[data-note]', main).forEach(b => b.onclick = () => openNote(L, +b.dataset.note));
   $$('[data-word]', main).forEach(b => b.onclick = () => openCard(b.dataset.word));
-  $('#anki', main).onclick = e => copyText(L.new_words.map(id => { const d = DATA.dict[id]; return [d.h, d.wugniu, d.qian, d.ipa, d.gloss || '', (d.zh || []).join('、'), `Lesson ${L.id}`].join('\t'); }).join('\n'), e.target, 'Copied · in Anki: File › Import, fields separated by Tab');
+  $('#anki', main).onclick = e => copyText(L.new_words.map(id => { const d = DATA.dict[id]; return [d.h, d.wugniu, d.qian, d.ipa, (L.new_en || {})[id] || d.gloss || '', (d.zh || []).join('、'), `Lesson ${L.id}`].join('\t'); }).join('\n'), e.target, 'Copied · in Anki: File › Import, fields separated by Tab');
   wireExercises(L.exercises, main);
   finishBlock(L);
 }
@@ -540,7 +540,7 @@ function showList(k) {
     inp.onblur = () => save(true);
   };
   const fc = $('#lfc', m); if (fc) fc.onclick = () => { startSession('V:' + k, 'all'); if (sess) { sess.back = 'list-' + encodeURIComponent(k); if (location.hash !== '#review') location.hash = 'review'; else showReview(); } };
-  const ak = $('#lanki', m); if (ak) ak.onclick = () => copyText(ids.map(id => { const d = DATA.dict[id]; return [d.h, d.wugniu, d.qian, d.ipa, d.gloss || '', (d.zh || []).join('、'), listTitle(k)].join('\t'); }).join('\n'), ak, 'Copied · in Anki: File › Import, fields separated by Tab');
+  const ak = $('#lanki', m); if (ak) ak.onclick = () => copyText(ids.map(id => { const d = DATA.dict[id]; return [d.h, d.wugniu, d.qian, d.ipa, (L.new_en || {})[id] || d.gloss || '', (d.zh || []).join('、'), listTitle(k)].join('\t'); }).join('\n'), ak, 'Copied · in Anki: File › Import, fields separated by Tab');
 }
 function showDrills() {
   renderTabs('review');

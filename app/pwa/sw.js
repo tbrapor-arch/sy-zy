@@ -1,5 +1,5 @@
 // 书橱 Sy-zy service worker: the app opens offline once it has been opened online
-const V = 'syzy-1';
+const V = 'syzy-2';
 const CORE = ['./', 'index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
 const STATIC = 'syzy-static-1';
 self.addEventListener('install', e => { e.waitUntil(caches.open(V).then(c => c.addAll(CORE))); self.skipWaiting(); });

@@ -18,8 +18,8 @@ html = open(os.path.join(DIST, 'index.html'), encoding='utf-8').read()
 tag = '<meta name="theme-color" content="#FCFCF8">'
 if tag not in html:
     sys.exit('site.py: theme-color meta not found in app/dist/index.html')
-html = html.replace(tag, tag + '\n<link rel="manifest" href="manifest.webmanifest">\n<link rel="icon" href="icon-192.png">'
-                    '\n<link rel="apple-touch-icon" href="icon-192.png">\n<meta name="apple-mobile-web-app-capable" content="yes">'
+html = html.replace(tag, tag + '\n<link rel="manifest" href="manifest.webmanifest">\n<link rel="icon" href="icon-192.png?v=2">'
+                    '\n<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">\n<meta name="apple-mobile-web-app-capable" content="yes">'
                     '\n<meta name="apple-mobile-web-app-title" content="书橱">', 1)
 hashes = ' '.join("'sha256-" + base64.b64encode(hashlib.sha256(m.group(1).encode('utf-8')).digest()).decode() + "'"
                   for m in re.finditer(r'<script>(.*?)</script>', html, re.S))

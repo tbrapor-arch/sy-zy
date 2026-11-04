@@ -47,6 +47,10 @@ dialogue:
   hanzi: 香 是 真 香 ！ 我 好 吃 了 伐 ？
   en: It smells amazing! Can I eat now?
   lit: fragrant is truly fragrant! I may eat (now) (question)?
+- n: 10
+  speaker: 阿姨
+  hanzi: 侬 嘴巴 真 馋 ， 先 拿 手 汏 清爽 ！
+  en: You're such a greedy guts! Wash your hands first!
 notes:
 - ref: 1
   topic: vocab
@@ -79,6 +83,10 @@ notes:
   text: >-
     X 是真 X "X it truly is" gives emphasis: 香是真香 "it really does smell good", 贵是真贵 "it's really expensive". 好…伐？
     asks permission (lesson 12).
+- ref: 10
+  topic: vocab
+  text: >-
+    嘴巴馋 "a greedy mouth" = loves food. 嘴巴 is said tsy-po. 拿手汏清爽 "wash your hands clean": 拿 + object + verb again.
 new_words:
 - hanzi: 烧
   en: to cook
@@ -112,6 +120,12 @@ new_words:
   en: to smell good, fragrant
 - hanzi: 真
   en: really, truly
+- hanzi: 嘴巴
+  en: mouth
+- hanzi: 馋
+  en: greedy (for food)
+- hanzi: 手
+  en: hand
 exercises:
   translate:
   - hanzi: 我 姆妈 烧 个 红烧肉 老 好吃 个 。

@@ -48,6 +48,10 @@ dialogue:
   speaker: 摊主
   hanzi: 侬 是 老 主顾 了 ， 就 廿二 块 。
   en: You're a regular. Twenty-two, then.
+- n: 11
+  speaker: 阿姨
+  hanzi: 必过 侬 要 帮 我 杀 好 ， 还 要 送 一眼 葱 。
+  en: But you have to gut it for me, and throw in some spring onions.
 notes:
 - ref: 1
   topic: vocab
@@ -82,6 +86,10 @@ notes:
   text: >-
     老主顾 "an old customer, a regular": a regular gets the better price, and often a bit of spring onion thrown in (lesson
     3).
+- ref: 11
+  topic: vocab
+  text: >-
+    必过 piq-ku is "but, however" (Mandarin 不过), the everyday Shanghainese form. 杀好 "killed and cleaned": stalls do it for you.
 new_words:
 - hanzi: 菜场
   en: wet market
@@ -115,6 +123,10 @@ new_words:
   en: alive
 - hanzi: 主顾
   en: customer
+- hanzi: 必过
+  en: but, however
+- hanzi: 杀
+  en: to kill; to gut (a fish)
 exercises:
   translate:
   - hanzi: 今朝 外滩 邪气 闹忙 。

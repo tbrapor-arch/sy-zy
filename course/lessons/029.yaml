@@ -53,6 +53,10 @@ dialogue:
   speaker: 儿子
   hanzi: 是个 ， 姆妈 ， 我 想 侬 了 。
   en: Yes, Mum. I miss you.
+- n: 12
+  speaker: 阿姨
+  hanzi: 我 也 想 侬 。 下 个 号头 我 就 来 ！
+  en: I miss you too. I'll come next month!
 notes:
 - ref: 1
   topic: culture
@@ -100,6 +104,10 @@ notes:
   topic: grammar
   text: >-
     想 + person is "to miss": 我想侬了 "I miss you". 想 + verb is "would like to" (lesson 15).
+- ref: 12
+  topic: vocab
+  text: >-
+    号头 "month" (Mandarin 月): 下个号头 "next month", 一个号头 "one month"; 月 (lesson 12) is also used.
 new_words:
 - hanzi: 外国
   en: abroad; foreign country
@@ -139,6 +147,8 @@ new_words:
   en: plane ticket
 - hanzi: 原来
   en: so (it turns out)
+- hanzi: 号头
+  en: month
 exercises:
   translate:
   - hanzi: 㑚 明朝 啥辰光 到 ？

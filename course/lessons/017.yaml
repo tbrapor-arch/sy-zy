@@ -47,6 +47,10 @@ dialogue:
   speaker: 师傅
   hanzi: 一共 三十 块 ， 扫码 好 了 。
   en: Thirty yuan altogether. Just scan the code.
+- n: 10
+  speaker: 师傅
+  hanzi: 短 头发 顶 好看 ， 像煞 换 了 个 人 。
+  en: Short hair suits you best, you look like a different person.
 notes:
 - ref: 1
   topic: vocab
@@ -79,6 +83,10 @@ notes:
   topic: vocab
   text: >-
     一共 is "altogether, in total".
+- ref: 10
+  topic: vocab
+  text: >-
+    像煞 "just as if, it looks as though" (Mandarin 好像), a very Shanghainese word. 换 "to change": 换了个人 "(like) a different person".
 new_words:
 - hanzi: 剃头
   en: to get a haircut
@@ -104,6 +112,10 @@ new_words:
   en: to blow-dry
 - hanzi: 一共
   en: altogether
+- hanzi: 像煞
+  en: just as if, looks like
+- hanzi: 换
+  en: to change
 exercises:
   translate:
   - hanzi: 侬 头发 长 了 ， 要 去 剃头 了 。

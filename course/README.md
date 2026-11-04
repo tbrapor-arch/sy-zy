@@ -7,7 +7,7 @@ characters as Mandarin are learned as pronunciation; teaching time goes to false
 ## Shape (as in Tsheh-tû)
 - 100 lessons, a review every 7th lesson, second wave from lesson 50.
 - Progression L1–50 by number of lines (`tools/lint.py`, `docs/course-plan.md` §3): 6 lines at L1–5, one more every
-  5 lessons (15 at L46–50); a median line of 7 syllables at L1–10, rising by 1 every 10 lessons; 12 → 20 new words;
+  5 lessons, plus one from L8 (16 at L46–50); a median line of 7 syllables at L1–10, rising by 1 every 10 lessons; 12 → 20 new words;
   review lessons 2 lines shorter, no new words. Exercises: 3 translate + 3 fill + 3 say, new sentences (never a dialogue line), words already met only.
 
 ## Rules for content

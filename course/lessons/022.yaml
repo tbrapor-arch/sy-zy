@@ -51,6 +51,10 @@ dialogue:
   speaker: 阿姨
   hanzi: 放心 ， 隔壁邻舍 侪 是 朋友 。
   en: Don't worry, neighbours are all friends.
+- n: 11
+  speaker: Sam
+  hanzi: 听 侬 讲 ， 我 觉着 搿搭 个 人 侪 老 好 。
+  en: Hearing you, I feel everyone here is really nice.
 notes:
 - ref: 1
   topic: vocab
@@ -98,6 +102,10 @@ notes:
   text: >-
     隔壁邻舍 "the neighbours (next door)": in the lanes neighbours shared kitchens and taps, and the word still carries that
     closeness. 侪 again: "all".
+- ref: 11
+  topic: vocab
+  text: >-
+    觉着 "to feel, to think" (Mandarin 觉得), with the 着 of 寻着. 听侬讲 "listening to you, from what you say".
 new_words:
 - hanzi: 隔壁邻舍
   en: neighbours
@@ -129,6 +137,10 @@ new_words:
   en: nicely, properly
 - hanzi: 朋友
   en: friend
+- hanzi: 听
+  en: to listen, hear
+- hanzi: 觉着
+  en: to feel, think
 exercises:
   translate:
   - hanzi: 阿拉 屋里 个 人 侪 欢喜 吃 生煎 。

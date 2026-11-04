@@ -4,7 +4,8 @@
   python3 tools/lint.py --strict   # curve differences fail too (use once a lesson is final)
 
 Curve (docs/course-plan.md §3):
-  lines     6 at L1–5, +1 every 5 lessons → 15 at L46–50; a review lesson has 2 fewer lines
+  lines     6 at L1–5, +1 every 5 lessons → 15 at L46–50, plus 1 from L8 on (4 Nov 2026: one line added to every
+            lesson 8–35 to bring in frequent words); a review lesson has 2 fewer lines
   syllables median per line: 7 (L1–10), 8, 9, 10, 11 (L41–50); more than 1 syllable off = warning
   new words 12 → 20, linear (±2); review lessons: none (counted from the lesson's declared new_words)
 
@@ -27,7 +28,7 @@ def is_review(n):
 
 
 def target_lines(n):
-    lines = 6 + (n - 1) // 5          # L1–5: 6, L6–10: 7 … L46–50: 15
+    lines = 6 + (n - 1) // 5 + (n >= 8)   # L1–5: 6, L6–7: 7, L8–10: 8 … L46–50: 16
     return lines - 2 if is_review(n) else lines
 
 

@@ -56,6 +56,10 @@ dialogue:
   speaker: 营业员
   hanzi: 好个 ， 写 清爽 就 可以 了 。
   en: Yes, as long as it's written clearly.
+- n: 13
+  speaker: Sam
+  hanzi: 我 个 字 勿 大 好看 ， 侬 帮 我 看看 。
+  en: My handwriting isn't very good, can you check it for me?
 notes:
 - ref: 1
   topic: vocab
@@ -93,6 +97,10 @@ notes:
   topic: grammar
   text: >-
     可以 "it's all right, that'll do" (Mandarin 可以). 写清爽 "write it clearly": 清爽 "clear" as well as "clean" (lesson 12).
+- ref: 13
+  topic: vocab
+  text: >-
+    字 "character, word; handwriting". 勿大 + adjective "not very": 勿大好看 "not very nice".
 new_words:
 - hanzi: 寄
   en: to send (by post)
@@ -128,6 +136,8 @@ new_words:
   en: English; the Latin alphabet
 - hanzi: 可以
   en: all right, can
+- hanzi: 字
+  en: character; handwriting
 exercises:
   translate:
   - hanzi: 明朝 落雨 个话 ， 阿拉 勿 去 了 。

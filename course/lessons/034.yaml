@@ -56,6 +56,11 @@ dialogue:
   speaker: Sam
   hanzi: 介末 阿拉 一道 包 汤团 ， 我 会得 包 个 ！
   en: Then let's make glutinous rice balls together. I know how!
+- n: 13
+  speaker: 小李
+  hanzi: 真个 ？ 介末 侬 顶 来事 了 ！
+  en: Really? Then you're the best of us!
+  lit: really? so you most capable (now)!
 notes:
 - ref: 1
   topic: culture
@@ -99,6 +104,10 @@ notes:
   text: >-
     汤团 are the glutinous rice balls (Mandarin 汤圆) eaten on New Year's morning; 包 here is "to wrap, make (by wrapping)", as
     in 包馄饨. 会得 "know how to" (lesson 31).
+- ref: 13
+  topic: vocab
+  text: >-
+    来事 "capable, good at it; it works" (Mandarin 行、能干): 侬来事个 "you're good", 勿来事 "no good, can't".
 new_words:
 - hanzi: 过年
   en: to celebrate New Year
@@ -134,6 +143,8 @@ new_words:
   en: the city centre, urban districts
 - hanzi: 汤团
   en: glutinous rice ball
+- hanzi: 来事
+  en: capable, good at it
 exercises:
   translate:
   - hanzi: 一家门 侪 到 娘舅 屋里 去 过年 。

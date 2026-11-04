@@ -1,6 +1,6 @@
 # Build report (2026-11-04)
 
-- lexicon: 95795 words · app dictionary: 6261 words · lessons: 35 · bridge: 220 characters
+- lexicon: 95796 words · app dictionary: 6275 words · lessons: 35 · bridge: 220 characters
 
 ## composed (27)
 

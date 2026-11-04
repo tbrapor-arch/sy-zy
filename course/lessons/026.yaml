@@ -55,6 +55,10 @@ dialogue:
   hanzi: 侬 慢慢 跑 ， 我 来 扶 侬 。
   en: Take your time, I'll help you down.
   lit: you slowly walk, I come support you
+- n: 12
+  speaker: 阿婆
+  hanzi: 侬 心 好 ， 像 阿拉 孙子 一样 。
+  en: You're kind, just like my grandson.
 notes:
 - ref: 1
   topic: vocab
@@ -95,6 +99,10 @@ notes:
   topic: false-friend
   text: >-
     跑 is "to walk" again (lesson 4): 慢慢跑 "walk slowly". 扶 is "to support (someone) by the arm".
+- ref: 12
+  topic: vocab
+  text: >-
+    像…一样 "just like" (as in Mandarin); 赛过…一样 (lesson 25) and 像煞 (lesson 17) say the same thing more colloquially.
 new_words:
 - hanzi: 公交车
   en: city bus
@@ -128,6 +136,8 @@ new_words:
   en: be careful
 - hanzi: 扶
   en: to support (by the arm)
+- hanzi: 像
+  en: like, to resemble
 exercises:
   translate:
   - hanzi: 伊 一直 立 辣 门口 等 侬 。

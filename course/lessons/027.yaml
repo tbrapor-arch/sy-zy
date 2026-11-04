@@ -53,6 +53,10 @@ dialogue:
   speaker: 阿姨
   hanzi: 夜里 风 大 ， 来 弄堂 里 乘风凉 。
   en: There's a breeze in the evening; come and sit out in the lane.
+- n: 12
+  speaker: Sam
+  hanzi: 好个 ， 我 夜头 下来 ， 带 只[ʦᴀʔ55] 西瓜 过来 。
+  en: Great, I'll come down this evening and bring a watermelon over.
 notes:
 - ref: 1
   topic: grammar
@@ -91,6 +95,10 @@ notes:
   text: >-
     乘风凉 is "to sit out in the cool of the evening": before air conditioning, whole lanes brought out bamboo chairs on
     summer nights. 里 after a noun is "in": 弄堂里 "in the lane".
+- ref: 12
+  topic: vocab
+  text: >-
+    过来 "to come over (here)", 过去 "to go over (there)". A watermelon is counted with 只.
 new_words:
 - hanzi: 热煞
   en: terribly hot
@@ -124,6 +132,8 @@ new_words:
   en: in (after a noun)
 - hanzi: 乘风凉
   en: to sit out in the cool evening air
+- hanzi: 过来
+  en: to come over
 exercises:
   translate:
   - hanzi: 菜场 里 人 多 ， 阿姨 一 身 汗 。

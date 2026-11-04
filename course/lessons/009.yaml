@@ -42,6 +42,10 @@ dialogue:
   hanzi: 到 了 。 扫码 付 好 了 。
   en: Here we are. You can just scan the code to pay.
   lit: arrived. scan-code pay (and that's it)
+- n: 8
+  speaker: Sam
+  hanzi: 好 ， 我 看见 小李 了 ， 伊 辣 外头 等 我 。
+  en: OK. I can see Xiao Li, he's waiting for me outside.
 notes:
 - ref: 1
   topic: vocab
@@ -76,6 +80,10 @@ notes:
   text: >-
     Almost everyone pays by phone: 扫码 "scan the code". 付 is "to pay". 好了 at the end is the "just do that" of
     lesson 4.
+- ref: 8
+  topic: vocab
+  text: >-
+    看见 "to see, catch sight of": 看 is "to look", 见 the result. 外头 is "outside" (Mandarin 外面), the opposite of 里头.
 new_words:
 - hanzi: 打
   en: to beat; (打差头) to take a taxi
@@ -107,6 +115,10 @@ new_words:
   en: to scan the (QR) code
 - hanzi: 付
   en: to pay
+- hanzi: 看见
+  en: to see
+- hanzi: 外头
+  en: outside
 exercises:
   translate:
   - hanzi: 外滩 到 了 伐 ？

@@ -51,6 +51,10 @@ dialogue:
   hanzi: 寻着 了 ！ 就 辣 门 高头 ！
   en: Found them! They're in the door!
   lit: look-for-got (now)! right at door top!
+- n: 11
+  speaker: 小李
+  hanzi: 侬 总归 忘记 物事 ， 到底 哪能 了 ？
+  en: You're always forgetting things, what's the matter with you?
 notes:
 - ref: 1
   topic: vocab
@@ -90,6 +94,10 @@ notes:
   topic: vocab
   text: >-
     门高头 "on the door", with 高头 "on, above" (lesson 22): the keys are still in the lock.
+- ref: 11
+  topic: vocab
+  text: >-
+    总归 "always, in any case" (Mandarin 总是、反正). 到底 in a question is "…on earth?": 到底哪能了？ "what on earth is wrong?".
 new_words:
 - hanzi: 钥匙
   en: key
@@ -123,6 +131,10 @@ new_words:
   en: door
 - hanzi: 高头
   en: on, above, on top
+- hanzi: 总归
+  en: always; in any case
+- hanzi: 到底
+  en: after all; (in a question) on earth
 exercises:
   translate:
   - hanzi: 侬 蹲 辣 啥地方 ？

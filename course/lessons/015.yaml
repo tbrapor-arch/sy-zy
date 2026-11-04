@@ -42,6 +42,11 @@ dialogue:
   speaker: Sam
   hanzi: 好个 ， 就 买 搿 件 。
   en: OK, I'll take this one.
+- n: 9
+  speaker: 营业员
+  hanzi: 侬 着 蓝 个 比 白 个 好看 。
+  en: Blue suits you better than white.
+  lit: you wear blue one compared-to white one good-looking
 notes:
 - ref: 1
   topic: vocab
@@ -75,6 +80,10 @@ notes:
   topic: grammar
   text: >-
     就 is "just, then": 就买搿件 "I'll just take this one". Shoppers rarely say "I'll buy it": the 就 does the work.
+- ref: 9
+  topic: vocab
+  text: >-
+    A 比 B + adjective "A is more … than B", as in Mandarin: 蓝个比白个好看. 好看 "good-looking" (Mandarin 好看).
 new_words:
 - hanzi: 衣裳
   en: clothes
@@ -96,6 +105,10 @@ new_words:
   en: blue
 - hanzi: 打八折
   en: 20% off (sell at 80%)
+- hanzi: 比
+  en: than, compared with
+- hanzi: 好看
+  en: good-looking, nice
 exercises:
   translate:
   - hanzi: 搿 件 衬衫 我 着 忒 大 了 。

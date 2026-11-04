@@ -33,6 +33,11 @@ dialogue:
   speaker: Sam
   hanzi: 好个 ， 阿拉 一道 吃 中饭 。
   en: Great, we'll have lunch together.
+- n: 7
+  speaker: 小李
+  hanzi: 好个 ， 侬 欢喜 吃 啥 就 点 啥 。
+  en: Sure, order whatever you like.
+  lit: good, you like eat what then order what
 notes:
 - ref: 1
   topic: grammar

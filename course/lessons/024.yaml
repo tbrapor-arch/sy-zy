@@ -49,6 +49,10 @@ dialogue:
   speaker: Sam
   hanzi: 介 便当 啊 ！ 谢谢 侬 。
   en: That's so convenient! Thank you.
+- n: 11
+  speaker: 营业员
+  hanzi: 出 门 就 看见 了 ， 辣 银行 边浪 。
+  en: You'll see it as you go out, right beside the bank.
 notes:
 - ref: 1
   topic: vocab
@@ -86,6 +90,10 @@ notes:
   text: >-
     介 is "so, such" before an adjective (Mandarin 这么): 介便当 "so convenient", 介热 "so hot". 便当 is "convenient, easy"
     (Mandarin 方便); in Taiwan and Japan 便当 is a lunchbox, never in Shanghai.
+- ref: 11
+  topic: vocab
+  text: >-
+    出门 "to go out (of the door)". 边浪 "beside, at the side of" (Mandarin 旁边), with 浪 "on" (lesson 26).
 new_words:
 - hanzi: 银行
   en: bank
@@ -117,6 +125,10 @@ new_words:
   en: so, such
 - hanzi: 便当
   en: convenient, easy
+- hanzi: 出
+  en: to go out of, exit
+- hanzi: 边浪
+  en: beside, next to
 exercises:
   translate:
   - hanzi: 请 侬 拿 护照 拨 我 看看 。

@@ -53,6 +53,10 @@ dialogue:
   hanzi: 记牢 了 ， 我 马上 去 倒 。
   en: Right, I won't forget. I'll take it out now.
   lit: remember-firmly (now), I right-away go pour
+- n: 12
+  speaker: 阿姨
+  hanzi: 倒 辣 弄堂口 ， 小店 后头 。
+  en: Tip it at the mouth of the lane, behind the little shop.
 notes:
 - ref: 1
   topic: vocab
@@ -96,6 +100,10 @@ notes:
   topic: grammar
   text: >-
     牢 after a verb is "firmly, for good": 记牢 "remember (and not forget)", 拿牢 "hold tight", 立牢 "stand still".
+- ref: 12
+  topic: vocab
+  text: >-
+    后头 "behind, at the back" (Mandarin 后面), as against 前头 "in front" (lesson 4).
 new_words:
 - hanzi: 收作
   en: to tidy up
@@ -131,6 +139,8 @@ new_words:
   en: rubbish
 - hanzi: 记牢
   en: to remember (for good)
+- hanzi: 后头
+  en: behind, at the back
 exercises:
   translate:
   - hanzi: 侬 又 迟到 了 ！

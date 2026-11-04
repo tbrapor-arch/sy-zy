@@ -41,6 +41,10 @@ dialogue:
   speaker: 小李
   hanzi: 够 了 。 再 要 两 碗 米饭 。
   en: That's enough. And two bowls of rice.
+- n: 8
+  speaker: 服务员
+  hanzi: 好个 ， 大家 要 吃 水 伐 ？
+  en: Sure. Would you like some water?
 notes:
 - ref: 1
   topic: grammar
@@ -76,6 +80,10 @@ notes:
   text: >-
     够了 "that's enough": 了 marks the new situation, as in 好了 and 忒贵了. 再 here is "also, in addition": 再要
     "I also want".
+- ref: 8
+  topic: vocab
+  text: >-
+    大家 da-ka "everyone" is said with the everyday 大 da, not du as in 大 "big". 吃水 "drink water": 吃 again covers drinking.
 new_words:
 - hanzi: 点
   en: to order (a dish); o'clock
@@ -101,6 +109,10 @@ new_words:
   en: enough
 - hanzi: 米饭
   en: (cooked) rice
+- hanzi: 大家
+  en: everyone, all of you
+- hanzi: 水
+  en: water
 exercises:
   translate:
   - hanzi: 搿搭 个 生煎 老 有名 个 。

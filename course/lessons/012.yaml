@@ -43,6 +43,10 @@ dialogue:
   speaker: Sam
   hanzi: 搿搭 蛮 清爽 个 ， 我 欢喜 。
   en: It's nice and clean here, I like it.
+- n: 9
+  speaker: 房东
+  hanzi: 侬 看看 ， 外头 还有 交关 花 。
+  en: Look, there are lots of flowers outside too.
 notes:
 - ref: 1
   topic: vocab
@@ -75,6 +79,10 @@ notes:
   text: >-
     清爽 is "clean, neat, tidy", a very Shanghainese word (Mandarin 干净). It is also used for a clear explanation:
     讲清爽 "say it clearly".
+- ref: 9
+  topic: vocab
+  text: >-
+    还有 "there is also, and also" (Mandarin 还有). 花 ho "flower".
 new_words:
 - hanzi: 房子
   en: flat, house
@@ -102,6 +110,10 @@ new_words:
   en: to follow; with
 - hanzi: 清爽
   en: clean, neat; clear
+- hanzi: 还有
+  en: there is also; and also
+- hanzi: 花
+  en: flower
 exercises:
   translate:
   - hanzi: 阿拉 屋里 个 厨房 勿 亮 。

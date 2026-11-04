@@ -40,6 +40,10 @@ dialogue:
   speaker: Sam
   hanzi: 谢谢 阿姨 ， 我 马上 来 ！
   en: Thank you, auntie, I'm coming right now!
+- n: 9
+  speaker: 阿姨
+  hanzi: 我 烧 了 番茄炒蛋 ， 侬 欢喜 个 。
+  en: I've made tomato and egg, the one you like.
 notes:
 - ref: 1
   topic: grammar

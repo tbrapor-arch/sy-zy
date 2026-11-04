@@ -47,6 +47,10 @@ dialogue:
   speaker: 阿姨
   hanzi: 今朝 吃 两 块 勿要紧 。
   en: Today two pieces is fine.
+- n: 10
+  speaker: 外孙
+  hanzi: 外公 ， 侬 也 吃 一 块 ， 老 甜 个 ！
+  en: Grandpa, you have a piece too, it's really sweet!
 notes:
 - ref: 1
   topic: vocab
@@ -83,6 +87,10 @@ notes:
   topic: grammar
   text: >-
     只好 here is 只 "only" + 好 "may": "may only". Compare 好…伐？ "may I?" (lesson 12).
+- ref: 10
+  topic: vocab
+  text: >-
+    外公 is the mother's father, 外婆 the mother's mother; the father's parents are 阿爷 and 阿娘.
 new_words:
 - hanzi: 生日
   en: birthday
@@ -104,6 +112,8 @@ new_words:
   en: to sing
 - hanzi: 生日歌
   en: birthday song
+- hanzi: 外公
+  en: grandfather (mother's father)
 exercises:
   translate:
   - hanzi: 阿拉 爷 礼拜天 过 生日 。

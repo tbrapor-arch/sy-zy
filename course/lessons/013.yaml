@@ -43,6 +43,10 @@ dialogue:
   hanzi: 一 日[ȵiɪʔ12] 三 趟 ， 多 吃 开水 。
   en: Three times a day, and drink plenty of water.
   lit: one day three times, much drink boiled-water
+- n: 9
+  speaker: 医生
+  hanzi: 夜头 覅 吃 香烟 ， 两 天 就 好 了 。
+  en: No smoking in the evening, and you'll be better in two days.
 notes:
 - ref: 1
   topic: vocab
@@ -73,6 +77,10 @@ notes:
   text: >-
     趟 counts times (Mandarin 次): 三趟 "three times", and 下趟 "next time" (lesson 3). 开水 is boiled water, what people
     drink rather than tap water. 多吃 "eat/drink more".
+- ref: 9
+  topic: vocab
+  text: >-
+    吃香烟 is "to smoke": 吃 covers it too (lesson 1). 夜头 "in the evening" is a third word beside 夜里 and 夜到.
 new_words:
 - hanzi: 看
   en: to look; (看毛病) to see a doctor
@@ -102,6 +110,10 @@ new_words:
   en: (times, trips)
 - hanzi: 开水
   en: boiled water
+- hanzi: 夜头
+  en: in the evening
+- hanzi: 香烟
+  en: cigarette
 exercises:
   translate:
   - hanzi: 姆妈 头 痛 ， 勿 去 上班 了 。

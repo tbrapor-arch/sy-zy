@@ -13,7 +13,9 @@ Decided 3 Nov 2026 (full working plan, in French, in the claude.ai project: `pla
    video, music.
 
 ## 3. Progression L1–50
-- Lines: 6 at L1–5, then +1 every 5 lessons → 15 at L46–50.
+- Lines: 6 at L1–5, then +1 every 5 lessons, plus 1 from L8 on → 16 at L46–50. (4 Nov 2026: one line added at the end
+  of every lesson 8–35, bringing in 2–3 frequent words missing from the course: 大家, 看见, 外头, 问, 顶, 像煞, 觉着,
+  总归, 必过, 号头…; reviews got one line of known words.)
 - Median syllables per line: 7 (L1–10), 8, 9, 10, 11 (L41–50); a single line may be short.
 - New words: 12 → 20, linear (±2). Reviews (7, 14 … 49): 2 lines fewer than their neighbours, no new words.
 - Exercises: 3 translate + 3 fill + 3 say, outside the dialogue (never a dialogue line), already-seen words only.

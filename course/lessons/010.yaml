@@ -40,6 +40,11 @@ dialogue:
   hanzi: 勿 冷 ， 着 件 外套 好 了 。
   en: Not cold. A jacket will do.
   lit: not cold, wear (measure) jacket (and that's it)
+- n: 8
+  speaker: Sam
+  hanzi: 阿姨 侬 心 老 好 ， 我 出去 了 ！
+  en: You're so kind, auntie. I'm off!
+  lit: auntie you heart very good, I go-out (now)!
 notes:
 - ref: 1
   topic: vocab
@@ -75,6 +80,10 @@ notes:
   text: >-
     着 is "to wear, put on" for clothes and shoes (Mandarin 穿). 件 counts pieces of clothing: 一件外套. 好了 again: "just
     do that and you'll be fine".
+- ref: 8
+  topic: vocab
+  text: >-
+    心好 "kind-hearted". 出去 "to go out": 出 "out" + 去 "away"; coming in is 进来 (lesson 20).
 new_words:
 - hanzi: 下半日
   en: afternoon
@@ -102,6 +111,10 @@ new_words:
   en: (measure word for clothes)
 - hanzi: 外套
   en: jacket, coat
+- hanzi: 心
+  en: heart
+- hanzi: 出去
+  en: to go out
 exercises:
   translate:
   - hanzi: 明朝 天 好 伐 ？

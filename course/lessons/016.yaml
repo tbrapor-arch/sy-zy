@@ -45,6 +45,10 @@ dialogue:
   speaker: 小李
   hanzi: 侬 上趟 就 迟到 了 ！
   en: You were late last time!
+- n: 10
+  speaker: Sam
+  hanzi: 侬 覅 笑 ， 上趟 是 地铁 坏脱 了 ， 勿 算 ！
+  en: Don't laugh, last time the metro broke down, it doesn't count!
 notes:
 - ref: 1
   topic: vocab
@@ -80,6 +84,10 @@ notes:
   topic: vocab
   text: >-
     上趟 is "last time"; 下趟 "next time" (lesson 3). 就 here stresses: "you were late last time, actually".
+- ref: 10
+  topic: vocab
+  text: >-
+    笑 "to laugh, to smile". 勿算 "it doesn't count": 算 is "to count, to reckon".
 new_words:
 - hanzi: 碰头
   en: to meet up
@@ -105,6 +113,10 @@ new_words:
   en: don't worry, rest assured
 - hanzi: 上趟
   en: last time
+- hanzi: 笑
+  en: to laugh, smile
+- hanzi: 算
+  en: to count
 exercises:
   translate:
   - hanzi: 礼拜六 夜里 阿拉 去 电影院 。

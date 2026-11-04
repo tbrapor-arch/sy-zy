@@ -58,6 +58,10 @@ dialogue:
   speaker: Sam
   hanzi: 下趟 我 请客 ， 㑚 侪 到 我 屋里 来 。
   en: Next time it's on me, you must all come to my place.
+- n: 13
+  speaker: 小李姆妈
+  hanzi: 侬 嘴巴 甜 得来 ， 阿拉 一定 来 ！
+  en: You're such a sweet talker! We'll definitely come.
 notes:
 - ref: 1
   topic: grammar
@@ -100,6 +104,10 @@ notes:
   topic: culture
   text: >-
     请客 "to treat, to pay for everyone": the guest offers to return the invitation before leaving. 㑚侪 "all of you".
+- ref: 13
+  topic: vocab
+  text: >-
+    甜得来 "so sweet": 得来 after an adjective is "so, really" (Mandarin 得很). 嘴巴甜 "a sweet mouth" = says nice things. 一定 "definitely".
 new_words:
 - hanzi: 夜饭
   en: dinner
@@ -137,6 +145,10 @@ new_words:
   en: can't eat any more
 - hanzi: 请客
   en: to treat (pay for everyone)
+- hanzi: 得来
+  en: '(after an adjective) so, really'
+- hanzi: 一定
+  en: definitely, surely
 exercises:
   translate:
   - hanzi: 姆妈 烧 个 小菜 味道 老 好 。

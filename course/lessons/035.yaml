@@ -48,6 +48,10 @@ dialogue:
   speaker: Sam
   hanzi: 阿姨 侬 忒 客气 了 ， 谢谢 侬 ！
   en: Auntie, you're too kind, thank you!
+- n: 11
+  speaker: 阿姨
+  hanzi: 覅客气 ， 隔壁邻舍 侪 是 朋友 。
+  en: Don't mention it, neighbours are all friends.
 notes:
 - ref: 1
   topic: grammar

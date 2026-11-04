@@ -44,6 +44,10 @@ dialogue:
   speaker: 师傅
   hanzi: 好个 ， 再会 ！
   en: All right, bye!
+- n: 10
+  speaker: Sam
+  hanzi: 外头 冷 ， 我 着 件 外套 再 下去 。
+  en: It's cold out, I'll put on a jacket and then go down.
 notes:
 - ref: 1
   topic: vocab
@@ -75,6 +79,10 @@ notes:
   topic: grammar
   text: >-
     要…个 is "will (surely)": 要冷脱个 "it will go cold". 冷脱 "gone cold" with 脱 (lesson 11).
+- ref: 10
+  topic: vocab
+  text: >-
+    下去 "to go down (there)", 下来 "to come down (here)" (line 3): 去 and 来 say the direction.
 new_words:
 - hanzi: 外卖
   en: meal delivery
@@ -104,6 +112,8 @@ new_words:
   en: gone cold
 - hanzi: 马上
   en: right away
+- hanzi: 下去
+  en: to go down
 exercises:
   translate:
   - hanzi: 介末 阿拉 叫 外卖 好 了 。

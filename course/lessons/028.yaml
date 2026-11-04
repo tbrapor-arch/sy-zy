@@ -44,6 +44,10 @@ dialogue:
   speaker: 阿姨
   hanzi: 好个 ， 侬 真 是 好 人 。
   en: Thank you, you really are kind.
+- n: 10
+  speaker: Sam
+  hanzi: 勿客气 ， 阿拉 是 隔壁邻舍 啊 。
+  en: Not at all, we're neighbours.
 notes:
 - ref: 2
   topic: grammar

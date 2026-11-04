@@ -1,0 +1,166 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 29
+title:
+  en: A call from abroad
+  hanzi: 外国 来 个 电话
+review: false
+setting: >-
+  Sunday evening. Sam is having tea at the auntie's when her phone rings: her son, who works in New York.
+dialogue:
+- n: 1
+  speaker: 儿子
+  hanzi: 姆妈 ， 是 我 ， 侬 身体 好 伐 ？
+  en: Mum, it's me. Are you keeping well?
+- n: 2
+  speaker: 阿姨
+  hanzi: 蛮 好 。 㑚 辣 美国 侪 好 伐 ？
+  en: Quite well. Are you all well in America?
+  lit: quite good. you-all at America all good (question)?
+- n: 3
+  speaker: 儿子
+  hanzi: 侪 好 ， 就是 工作 忙煞 了 。
+  en: All fine, just terribly busy at work.
+- n: 4
+  speaker: 阿姨
+  hanzi: 侬 夜到 要 早 一眼 困觉 。
+  en: You should go to bed a bit earlier at night.
+- n: 5
+  speaker: 儿子
+  hanzi: 晓得 了 。 侬 啥辰光 来 美国 白相 ？
+  en: I know. When are you coming to America for a visit?
+- n: 6
+  speaker: 阿姨
+  hanzi: 外国 我 勿 认得 路 ， 勿 去 了 。
+  en: I don't know my way around abroad, I won't go.
+- n: 7
+  speaker: 儿子
+  hanzi: 我 到 机场 来 接 侬 ， 覅 怕 。
+  en: I'll come and meet you at the airport, don't be afraid.
+- n: 8
+  speaker: 阿姨
+  hanzi: 再讲 ， 机票 忒 贵 了 。
+  en: Besides, the tickets are too expensive.
+- n: 9
+  speaker: 儿子
+  hanzi: 钞票 我 来 付 ， 侬 放心 好 了 。
+  en: I'll pay, don't you worry about that.
+- n: 10
+  speaker: 阿姨
+  hanzi: 原来 侬 老早 想 好 了 ！
+  en: So you'd already thought it all out!
+- n: 11
+  speaker: 儿子
+  hanzi: 是个 ， 姆妈 ， 我 想 侬 了 。
+  en: Yes, Mum. I miss you.
+notes:
+- ref: 1
+  topic: culture
+  text: >-
+    身体好伐？ "is your body well?" is how you ask after an older relative's health; it is warmer than 侬好. The answer is
+    蛮好 or 还好.
+- ref: 2
+  topic: grammar
+  text: >-
+    㑚 na is "you" for several people (Mandarin 你们): 㑚辣美国 "you (all) in America". The three plurals are 阿拉 we, 㑚
+    you, 伊拉 they. 侪 "all" again (lesson 22).
+- ref: 3
+  topic: grammar
+  text: >-
+    忙煞 "terribly busy": 煞 after an adjective, as in 热煞 (lesson 27). 工作 is "work, job", as in Mandarin.
+- ref: 4
+  topic: vocab
+  text: >-
+    夜到 is "in the evening, at night", a common alternative to 夜里. 困觉 is "to sleep, go to bed" (Mandarin 睡觉): 困 alone
+    is "to sleep, lie down".
+- ref: 5
+  topic: vocab
+  text: >-
+    啥辰光 is "when?" (Mandarin 什么时候), literally "what time". 辰光 alone is "time" (lesson 9).
+- ref: 6
+  topic: vocab
+  text: >-
+    认得 is "to know (a person, a place, a character)" (Mandarin 认识): 认得路 "know the way", 认得伊 "know him". 晓得 is
+    "to know (a fact)".
+- ref: 7
+  topic: vocab
+  text: >-
+    接 is "to meet, pick up (someone)": 到机场来接侬 "come to the airport to meet you". 怕 is "to be afraid": 覅怕 "don't be
+    afraid".
+- ref: 8
+  topic: grammar
+  text: >-
+    再讲 at the start of a sentence is "besides, what's more" (Mandarin 再说). At the end it means "let's see later":
+    明朝再讲 "we'll talk about it tomorrow".
+- ref: 10
+  topic: vocab
+  text: >-
+    原来 is "so (it turns out)": the surprise of finding out. 想好 "think through": 好 after a verb is "done" (汏好, 开好).
+- ref: 11
+  topic: grammar
+  text: >-
+    想 + person is "to miss": 我想侬了 "I miss you". 想 + verb is "would like to" (lesson 15).
+new_words:
+- hanzi: 外国
+  en: abroad; foreign country
+- hanzi: 电话
+  en: telephone, call
+- hanzi: 身体
+  en: body; health
+- hanzi: 㑚
+  en: you (several people)
+- hanzi: 美国
+  en: America, the US
+- hanzi: 工作
+  en: work, job
+- hanzi: 忙煞
+  en: terribly busy
+- hanzi: 夜到
+  en: in the evening, at night
+- hanzi: 早
+  en: early
+- hanzi: 困觉
+  en: to sleep, go to bed
+- hanzi: 啥辰光
+  en: when?
+- hanzi: 认得
+  en: to know (a person, a place)
+- hanzi: 路
+  en: road, way
+- hanzi: 机场
+  en: airport
+- hanzi: 接
+  en: to meet, pick up (someone)
+- hanzi: 怕
+  en: to be afraid
+- hanzi: 再讲
+  en: besides; (at the end) we'll see later
+- hanzi: 机票
+  en: plane ticket
+- hanzi: 原来
+  en: so (it turns out)
+exercises:
+  translate:
+  - hanzi: 㑚 明朝 啥辰光 到 ？
+    en: When do you all arrive tomorrow?
+  - hanzi: 我 勿 认得 埃 个 小人 。
+    en: I don't know that child.
+  - hanzi: 原来 侬 是 伊 个 朋友 ！
+    en: So you're his friend!
+  fill:
+  - hanzi: 侬 夜到 几 点钟 ＿ ？
+    en: What time do you go to bed?
+    answer: 困觉
+  - hanzi: 我 礼拜六 到 机场 去 ＿ 阿姐 。
+    en: I'm going to the airport on Saturday to meet my sister.
+    answer: 接
+  - hanzi: 今朝 公司 里 ＿ 了 。
+    en: The office was terribly busy today.
+    answer: 忙煞
+  say:
+  - hanzi: 侬 认得 路 伐 ？
+    en: Do you know the way?
+  - hanzi: 㑚 侪 是 法国人 伐 ？
+    en: Are you all French?
+  - hanzi: 今朝 勿 去 了 ， 明朝 再讲 。
+    en: Let's not go today, we'll see tomorrow.

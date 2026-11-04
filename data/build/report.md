@@ -1,8 +1,8 @@
-# Build report (2026-11-03)
+# Build report (2026-11-04)
 
-- lexicon: 95772 words · app dictionary: 6210 words · lessons: 28 · bridge: 220 characters
+- lexicon: 95795 words · app dictionary: 6261 words · lessons: 35 · bridge: 220 characters
 
-## composed (23)
+## composed (27)
 
 - 有名 → yeu-min (lesson 8 line 3)
 - 米饭 → mi-ve (lesson 8 line 7)
@@ -27,10 +27,17 @@
 - 廿五 → gnie-ng (lesson 25 line 8)
 - 廿二 → gnie-gni (lesson 25 line 10)
 - 公交车 → kon-ciau-tsho (lesson 26 title)
+- 机票 → ci-phiau (lesson 29 line 8)
+- 四百 → sy-paq (lesson 32 line 4)
+- 一百 → iq-paq (lesson 32 line 8)
+- 两百 → lian-paq (lesson 34 line 7)
 
-## no gloss (3)
+## no gloss (6)
 
 - 一万 (lesson 24 line 6)
 - 廿五 (lesson 25 line 8)
 - 廿二 (lesson 25 line 10)
+- 四百 (lesson 32 line 4)
+- 一百 (lesson 32 line 8)
+- 两百 (lesson 34 line 7)
 

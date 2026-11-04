@@ -1,0 +1,158 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 30
+title:
+  en: Tidying up
+  hanzi: 收作 屋里
+review: false
+setting: >-
+  Saturday morning. Xiao Li is coming for lunch and Sam's flat is a mess. The auntie looks in through the open door.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: 今朝 天 好 ， 衣裳 好 晒 了 。
+  en: It's a fine day, you can hang your washing out.
+- n: 2
+  speaker: Sam
+  hanzi: 衣裳 还 呒没 汏 ， 屋里 也 一塌糊涂 。
+  en: I haven't even done the washing, and the flat is a mess.
+- n: 3
+  speaker: 阿姨
+  hanzi: 洗衣机 辣 啥地方 ？ 我 来 帮 侬 。
+  en: Where's your washing machine? I'll give you a hand.
+- n: 4
+  speaker: Sam
+  hanzi: 辣 卫生间 里 ， 我 勿 会 用 。
+  en: In the bathroom. I don't know how to use it.
+- n: 5
+  speaker: 阿姨
+  hanzi: 揿 搿 只[ʦᴀʔ55] ， 就 好 了 。
+  en: Press this one, that's all.
+- n: 6
+  speaker: 阿姨
+  hanzi: 侬 先 拿 台子 揩 清爽 ， 再 拖 地板 。
+  en: First wipe the table clean, then mop the floor.
+- n: 7
+  speaker: Sam
+  hanzi: 地浪 个 物事 放 到 啥地方 去 ？
+  en: Where do I put the things on the floor?
+- n: 8
+  speaker: 阿姨
+  hanzi: 侪 摆 辣 橱 里头 。
+  en: Put them all in the cupboard.
+- n: 9
+  speaker: Sam
+  hanzi: 好 了 ！ 屋里 清爽 交关 了 。
+  en: Done! The flat is much tidier.
+- n: 10
+  speaker: 阿姨
+  hanzi: 侬 又 忘记 倒 垃圾 了 。
+  en: You've forgotten to take out the rubbish again.
+- n: 11
+  speaker: Sam
+  hanzi: 记牢 了 ， 我 马上 去 倒 。
+  en: Right, I won't forget. I'll take it out now.
+  lit: remember-firmly (now), I right-away go pour
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    晒 so is "to dry in the sun", for washing, quilts, people too: 晒衣裳, 晒太阳 "sunbathe". 好 + verb is "can (now)": 好晒了
+    "it can be dried now".
+- ref: 2
+  topic: vocab
+  text: >-
+    一塌糊涂 is "a complete mess", also "terribly": 忙得一塌糊涂 "busy as anything". The title, 收作, is "to tidy up, to put in
+    order", a typical Shanghainese word (Mandarin 收拾).
+- ref: 3
+  topic: vocab
+  text: >-
+    洗衣机 "washing machine" keeps the Mandarin 洗 of the written word, even though "to wash" in speech is 汏 (lesson 17).
+- ref: 5
+  topic: vocab
+  text: >-
+    揿 chin is "to press (a button)" (Mandarin 按、摁): 揿门铃 "ring the doorbell". 按 (lesson 24) is more formal. Buttons are
+    counted with 只.
+- ref: 6
+  topic: vocab
+  text: >-
+    揩 kha is "to wipe" (Mandarin 擦): 揩台子 "wipe the table", 揩清爽 "wipe clean". 台子 is "table" (Mandarin 桌子). 拖地板
+    "mop the floor".
+- ref: 7
+  topic: grammar
+  text: >-
+    地浪 is "on the floor, on the ground", with 浪 "on" (lesson 26). 放到…去 "put (it) to …": 去 at the end shows movement away.
+- ref: 8
+  topic: vocab
+  text: >-
+    摆 is "to put, set, place" (Mandarin 放、摆): the everyday word for putting things away. 橱 is a cupboard or wardrobe: 书橱
+    "bookcase", 衣橱 "wardrobe".
+- ref: 10
+  topic: vocab
+  text: >-
+    又 is "again" for something that has already happened (Mandarin 又): 又忘记了 "forgot again". 再 is "again" for the
+    future (下趟再来). 倒垃圾 "take out the rubbish": 倒 is "to pour, tip out".
+- ref: 11
+  topic: grammar
+  text: >-
+    牢 after a verb is "firmly, for good": 记牢 "remember (and not forget)", 拿牢 "hold tight", 立牢 "stand still".
+new_words:
+- hanzi: 收作
+  en: to tidy up
+- hanzi: 晒
+  en: to dry in the sun
+- hanzi: 一塌糊涂
+  en: a complete mess; terribly
+- hanzi: 洗衣机
+  en: washing machine
+- hanzi: 卫生间
+  en: bathroom
+- hanzi: 揿
+  en: to press (a button)
+- hanzi: 揩
+  en: to wipe
+- hanzi: 台子
+  en: table
+- hanzi: 拖
+  en: to mop; to drag
+- hanzi: 地板
+  en: floor
+- hanzi: 地浪
+  en: on the floor, on the ground
+- hanzi: 摆
+  en: to put, place
+- hanzi: 橱
+  en: cupboard, wardrobe
+- hanzi: 又
+  en: again (already happened)
+- hanzi: 倒
+  en: to pour, tip out
+- hanzi: 垃圾
+  en: rubbish
+- hanzi: 记牢
+  en: to remember (for good)
+exercises:
+  translate:
+  - hanzi: 侬 又 迟到 了 ！
+    en: You're late again!
+  - hanzi: 钥匙 摆 辣 台子 高头 。
+    en: The keys are on the table.
+  - hanzi: 洗衣机 坏脱 了 ， 衣裳 只好 自家 汏 。
+    en: The washing machine has broken down, so I'll have to wash the clothes myself.
+  fill:
+  - hanzi: 吃 好 中饭 ， 侬 来 ＿ 台子 。
+    en: After lunch, you wipe the table.
+    answer: 揩
+  - hanzi: 明朝 要 早 一眼 来 ， 侬 要 ＿ 。
+    en: You have to come a bit earlier tomorrow, don't forget.
+    answer: 记牢
+  - hanzi: 今朝 落雨 ， 衣裳 勿 好 ＿ 。
+    en: It's raining today, the washing can't go out to dry.
+    answer: 晒
+  say:
+  - hanzi: 地浪 一塌糊涂 ， 当心 。
+    en: The floor is a mess, careful.
+  - hanzi: 我 来 帮 侬 收作 。
+    en: I'll help you tidy up.
+  - hanzi: 垃圾 倒 了 伐 ？
+    en: Have you taken out the rubbish?

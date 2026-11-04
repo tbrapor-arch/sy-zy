@@ -1,0 +1,161 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 34
+title:
+  en: New Year
+  hanzi: 过年
+review: false
+setting: >-
+  Late January, a week before Spring Festival. Xiao Li stops by Sam's desk at lunchtime.
+dialogue:
+- n: 1
+  speaker: 小李
+  hanzi: 大年夜 到 阿拉 屋里 吃 年夜饭 ！
+  en: Come to our place for dinner on New Year's Eve!
+- n: 2
+  speaker: Sam
+  hanzi: 好 啊 ！ 今年 勿 转去 ， 正好 有 空 。
+  en: I'd love to! I'm not going home this year, so I'm free.
+- n: 3
+  speaker: 小李
+  hanzi: 交关 闹忙 ， 一家门 侪 来 。
+  en: It's very lively, the whole family comes.
+- n: 4
+  speaker: Sam
+  hanzi: 我 要 带 啥个 物事 去 ？
+  en: What should I bring?
+- n: 5
+  speaker: 小李
+  hanzi: 用勿着 ， 拨 小囡 红包 好 了 。
+  en: Nothing. Just give the children a red envelope.
+- n: 6
+  speaker: Sam
+  hanzi: 红包 里头 放 多少 钞票 ？
+  en: How much money goes in it?
+- n: 7
+  speaker: 小李
+  hanzi: 两百 块 就 够 了 ， 叫 压岁钿 。
+  en: Two hundred is enough. It's called "new year money".
+- n: 8
+  speaker: Sam
+  hanzi: 年初一 要 讲 啥个 闲话 ？
+  en: What do you say on New Year's Day?
+- n: 9
+  speaker: 小李
+  hanzi: 讲 新年好 ， 再 讲 恭喜发财 。
+  en: You say "Happy New Year", and "May you prosper".
+- n: 10
+  speaker: Sam
+  hanzi: 夜里 好 放 炮仗 伐 ？
+  en: Can we let off firecrackers at night?
+- n: 11
+  speaker: 小李
+  hanzi: 现在 市区 里 勿 好 放 了 。
+  en: Not in the city any more.
+- n: 12
+  speaker: Sam
+  hanzi: 介末 阿拉 一道 包 汤团 ， 我 会得 包 个 ！
+  en: Then let's make glutinous rice balls together. I know how!
+notes:
+- ref: 1
+  topic: culture
+  text: >-
+    大年夜 is New Year's Eve (Mandarin 除夕), the night of 年夜饭, the big family dinner; 过年 is "to celebrate the New Year". Being
+    asked to someone's 年夜饭 is a real honour.
+- ref: 2
+  topic: vocab
+  text: >-
+    转去 "to go back (there)", as against 转来 "come back (here)" (lesson 26): 勿转去 "not going home". 正好 is "just right,
+    as it happens".
+- ref: 3
+  topic: vocab
+  text: >-
+    一家门 is "the whole family, everyone in the house" (Mandarin 一家人、全家), a word with its own Shanghainese flavour.
+- ref: 5
+  topic: vocab
+  text: >-
+    小囡 nau is "child, little one" (Mandarin 小孩): 小囡 is warmer than 小人 (lesson 5). 红包 is the red envelope of money given
+    to children, and as a present at weddings.
+- ref: 7
+  topic: vocab
+  text: >-
+    压岁钿 "money that holds the year down" is the New Year money in the red envelope (Mandarin 压岁钱), with the 钿 of 铜钿.
+- ref: 8
+  topic: vocab
+  text: >-
+    年初一 is New Year's Day (the first day of the lunar year). 闲话 is "words, things to say": 讲啥个闲话 "what to say". It is
+    not "gossip" as in Mandarin.
+- ref: 9
+  topic: culture
+  text: >-
+    新年好 "Happy New Year" to everyone; 恭喜发财 "congratulations, may you get rich", to which children add 红包拿来 "now give
+    me the red envelope".
+- ref: 11
+  topic: vocab
+  text: >-
+    现在 "now": firecrackers have been banned in downtown Shanghai (市区) since 2016. 勿好 + verb "you can't, not allowed".
+- ref: 12
+  topic: culture
+  text: >-
+    汤团 are the glutinous rice balls (Mandarin 汤圆) eaten on New Year's morning; 包 here is "to wrap, make (by wrapping)", as
+    in 包馄饨. 会得 "know how to" (lesson 31).
+new_words:
+- hanzi: 过年
+  en: to celebrate New Year
+- hanzi: 大年夜
+  en: New Year's Eve
+- hanzi: 年夜饭
+  en: New Year's Eve dinner
+- hanzi: 转去
+  en: to go back (there)
+- hanzi: 正好
+  en: just right, as it happens
+- hanzi: 一家门
+  en: the whole family
+- hanzi: 小囡
+  en: child, little one
+- hanzi: 红包
+  en: red envelope (of money)
+- hanzi: 压岁钿
+  en: New Year money (for children)
+- hanzi: 年初一
+  en: New Year's Day (lunar)
+- hanzi: 闲话
+  en: words, things said; speech
+- hanzi: 新年好
+  en: Happy New Year!
+- hanzi: 恭喜发财
+  en: may you prosper (New Year wish)
+- hanzi: 炮仗
+  en: firecracker
+- hanzi: 现在
+  en: now
+- hanzi: 市区
+  en: the city centre, urban districts
+- hanzi: 汤团
+  en: glutinous rice ball
+exercises:
+  translate:
+  - hanzi: 一家门 侪 到 娘舅 屋里 去 过年 。
+    en: The whole family goes to my uncle's for New Year.
+  - hanzi: 年初一 早浪 阿拉 吃 汤团 。
+    en: On New Year's morning we eat glutinous rice balls.
+  - hanzi: 压岁钿 侬 放 辣 啥地方 了 ？
+    en: Where have you put your New Year money?
+  fill:
+  - hanzi: 伊 下 个 月 ＿ 美国 。
+    en: She's going back to America next month.
+    answer: 转去
+  - hanzi: 侬 来 了 ， ＿ ， 阿拉 一道 吃 中饭 。
+    en: You're here, perfect, let's have lunch together.
+    answer: 正好
+  - hanzi: ＿ 几 点钟 了 ？
+    en: What time is it now?
+    answer: 现在
+  say:
+  - hanzi: 阿姨 ， 新年好 ！
+    en: Happy New Year, auntie!
+  - hanzi: 小囡 拿 了 交关 红包 。
+    en: The children got lots of red envelopes.
+  - hanzi: 我 今年 勿 转去 过年 。
+    en: I'm not going home for New Year this year.

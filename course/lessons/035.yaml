@@ -1,0 +1,104 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 35
+title:
+  en: Review
+  hanzi: 复习
+review: true
+setting: >-
+  The third day of the New Year. The lane is quiet; Sam brings the auntie a box of cakes.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: Sam ， 新年好 ！ 年夜饭 吃 得 开心 伐 ？
+  en: Sam, Happy New Year! Did you enjoy your New Year's Eve dinner?
+- n: 2
+  speaker: Sam
+  hanzi: 老 开心 ！ 伊 一家门 侪 辣辣 。
+  en: It was great! His whole family was there.
+- n: 3
+  speaker: 阿姨
+  hanzi: 侬 拨 小囡 红包 了 伐 ？
+  en: Did you give the children red envelopes?
+- n: 4
+  speaker: Sam
+  hanzi: 拨 了 ， 两百 块 压岁钿 。
+  en: Yes, two hundred yuan each.
+- n: 5
+  speaker: 阿姨
+  hanzi: 侬 阿姐 个 快递 到 了 伐 ？
+  en: Did your sister's parcel arrive?
+- n: 6
+  speaker: Sam
+  hanzi: 到 了 ， 伊 打 电话 来 讲 老 欢喜 。
+  en: Yes, she phoned to say she loves it.
+- n: 7
+  speaker: 阿姨
+  hanzi: 听讲 侬 爷 姆妈 要 来 白相 ？
+  en: I hear your parents are coming to visit?
+- n: 8
+  speaker: Sam
+  hanzi: 是个 ， 我 到 机场 去 接 伊拉 。
+  en: Yes, I'm going to meet them at the airport.
+- n: 9
+  speaker: 阿姨
+  hanzi: 介末 我 请 㑚 吃 夜饭 。
+  en: Then I'll have you all over for dinner.
+- n: 10
+  speaker: Sam
+  hanzi: 阿姨 侬 忒 客气 了 ， 谢谢 侬 ！
+  en: Auntie, you're too kind, thank you!
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    Conditions so far: two clauses side by side (空调开了，我要头痛个), …个话 "if" (寄快个话), …末 "then" (落雨末勿去). 介末 "so,
+    in that case" opens the answer (line 9).
+- ref: 2
+  topic: grammar
+  text: >-
+    "All": 侪 (一家门侪辣辣), 统统 "every one". "You" for several people is 㑚 (line 9): 阿拉 we, 㑚 you, 伊拉 they.
+- ref: 5
+  topic: grammar
+  text: >-
+    Results with 着, read zaq: 寻着 "found", 碰着 "ran into", 寻勿着 "can't find", 用勿着 "no need". Other results: 记牢 (牢 "for
+    good"), 吃饱, 吃勿落, 揩清爽.
+- ref: 6
+  topic: vocab
+  text: >-
+    Coming and going: 转来 "come back (here)", 转去 "go back (there)"; 打电话来 "call (here)": 来 and 去 after a verb show the
+    direction.
+- ref: 7
+  topic: vocab
+  text: >-
+    Knowing: 晓得 a fact, 认得 a person or a place, 会得 how to do something, 听讲 "I hear".
+- ref: 10
+  topic: vocab
+  text: >-
+    "Again": 又 for what has already happened (又忘记了), 再 for what is to come (下趟再来). "Even": 连得…也.
+new_words: []
+exercises:
+  translate:
+  - hanzi: 侬 认得 伊 伐 ？ 伊 是 阿拉 娘舅 。
+    en: Do you know him? He's my uncle.
+  - hanzi: 侬 又 落脱 钥匙 了 ， 下趟 要 记牢 。
+    en: You've lost your keys again, remember next time.
+  - hanzi: 空 个话 ， 礼拜天 到 阿拉 屋里 来 吃 夜饭 。
+    en: If you're free, come to our place for dinner on Sunday.
+  fill:
+  - hanzi: 我 辣 菜场 ＿ 楼高头 个 阿婆 。
+    en: I ran into the old lady from upstairs at the market.
+    answer: 碰着
+  - hanzi: 侬 ＿ 讲 上海闲话 伐 ？
+    en: Can you speak Shanghainese?
+    answer: 会得
+  - hanzi: 钥匙 ＿ 了 ， 就 辣 包 里头 。
+    en: I've found the keys, they were in the bag.
+    answer: 寻着
+  say:
+  - hanzi: 㑚 侪 是 我 个 朋友 。
+    en: You're all my friends.
+  - hanzi: 我 下 个 礼拜 转去 。
+    en: I'm going back next week.
+  - hanzi: 听讲 伊 结婚 了 。
+    en: I hear she got married.

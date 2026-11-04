@@ -1,0 +1,155 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 32
+title:
+  en: Sending a parcel
+  hanzi: 寄 快递
+review: false
+setting: >-
+  A weekday lunchtime. Sam takes a parcel to the courier counter near his office: a present for his sister in Paris.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 我 要 寄 一 只[ʦᴀʔ55] 包裹 到 法国 。
+  en: I'd like to send a parcel to France.
+- n: 2
+  speaker: 营业员
+  hanzi: 里头 是 啥个 物事 ？
+  en: What's inside?
+- n: 3
+  speaker: Sam
+  hanzi: 茶叶 搭 两 本 书 ， 送 拨 阿姐 个 。
+  en: Tea and two books, a present for my sister.
+- n: 4
+  speaker: 营业员
+  hanzi: 三 公斤 ， 寄 到 法国 要 四百 块 。
+  en: Three kilos. That's four hundred to France.
+- n: 5
+  speaker: Sam
+  hanzi: 介 贵 啊 ！ 几 天 好 到 ？
+  en: That much! How many days to get there?
+- n: 6
+  speaker: 营业员
+  hanzi: 寄 快 个话 ， 一 个 礼拜 就 到 了 。
+  en: If you send it express, it gets there in a week.
+- n: 7
+  speaker: Sam
+  hanzi: 慢 个 末 ， 便宜 一眼 伐 ？
+  en: And the slow one, is it cheaper?
+- n: 8
+  speaker: 营业员
+  hanzi: 一百 五十 块 ， 要 一 个 月 。
+  en: A hundred and fifty, and it takes a month.
+- n: 9
+  speaker: Sam
+  hanzi: 来得及 个 ， 阿姐 下 个 月 过 生日 。
+  en: That's in time, my sister's birthday is next month.
+- n: 10
+  speaker: 营业员
+  hanzi: 地址 搭 电话号码 写 辣 搿搭 。
+  en: Write the address and phone number here.
+- n: 11
+  speaker: Sam
+  hanzi: 法国 个 地址 好 写 英文 伐 ？
+  en: Can I write the French address in English letters?
+- n: 12
+  speaker: 营业员
+  hanzi: 好个 ， 写 清爽 就 可以 了 。
+  en: Yes, as long as it's written clearly.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    寄 is "to send (by post or courier)": 寄包裹 "send a parcel", 寄快递 "send it by courier". 快递 is both the courier service and
+    the parcel itself.
+- ref: 3
+  topic: grammar
+  text: >-
+    送拨 + person "give (as a present) to": 送拨阿姐 "for my sister". 本 counts books: 两本书. 茶叶 is tea leaves; 茶 alone is
+    the drink.
+- ref: 4
+  topic: vocab
+  text: >-
+    公斤 is "kilo"; at the market people count in 斤, half a kilo (lesson 3). 四百 is 400.
+- ref: 6
+  topic: grammar
+  text: >-
+    个话 after a clause is "if" (Mandarin 的话): 寄快个话 "if you send it fast", 侬勿来个话 "if you don't come".
+- ref: 7
+  topic: grammar
+  text: >-
+    末 marks a topic, "as for …" (Mandarin 呢): 慢个末 "and the slow one?". It also follows a condition: 落雨末勿去 "if it
+    rains, (we) don't go". 介末 "so" (lesson 19) is built on it.
+- ref: 9
+  topic: vocab
+  text: >-
+    来得及 is "there's still time, (it'll be) in time"; 来勿及 is "too late, no time". 下个月 "next month": 下 + measure
+    (lesson 26).
+- ref: 11
+  topic: vocab
+  text: >-
+    写 is "to write". 英文 is English, also the Latin alphabet in general. 好…伐？ asks permission (lesson 12).
+- ref: 12
+  topic: grammar
+  text: >-
+    可以 "it's all right, that'll do" (Mandarin 可以). 写清爽 "write it clearly": 清爽 "clear" as well as "clean" (lesson 12).
+new_words:
+- hanzi: 寄
+  en: to send (by post)
+- hanzi: 快递
+  en: courier; parcel
+- hanzi: 包裹
+  en: parcel
+- hanzi: 茶叶
+  en: tea leaves
+- hanzi: 本
+  en: (measure word for books)
+- hanzi: 书
+  en: book
+- hanzi: 公斤
+  en: kilo
+- hanzi: 个话
+  en: if (after a clause)
+- hanzi: 礼拜
+  en: week
+- hanzi: 慢
+  en: slow
+- hanzi: 末
+  en: (topic marker) as for…; (after a condition) then
+- hanzi: 来得及
+  en: (still) in time
+- hanzi: 地址
+  en: address
+- hanzi: 电话号码
+  en: phone number
+- hanzi: 写
+  en: to write
+- hanzi: 英文
+  en: English; the Latin alphabet
+- hanzi: 可以
+  en: all right, can
+exercises:
+  translate:
+  - hanzi: 明朝 落雨 个话 ， 阿拉 勿 去 了 。
+    en: If it rains tomorrow, we won't go.
+  - hanzi: 侬 个 电话号码 写 拨 我 。
+    en: Write your phone number down for me.
+  - hanzi: 快 一眼 ， 还 来得及 。
+    en: Hurry, there's still time.
+  fill:
+  - hanzi: 我 买 了 三 ＿ 书 。
+    en: I bought three books.
+    answer: 本
+  - hanzi: 我 去 外滩 ， 侬 ＿ ？
+    en: I'm going to the Bund, and you?
+    answer: 末
+  - hanzi: 侬 屋里 个 ＿ 是 啥 ？
+    en: What's your home address?
+    answer: 地址
+  say:
+  - hanzi: 我 要 寄 快递 。
+    en: I'd like to send a parcel.
+  - hanzi: 一 个 礼拜 就 到 了 伐 ？
+    en: Will it get there in a week?
+  - hanzi: 茶叶 送 拨 侬 个 。
+    en: The tea is a present for you.

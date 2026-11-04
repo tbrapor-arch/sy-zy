@@ -1,0 +1,164 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 31
+title:
+  en: Dinner at Xiao Li's
+  hanzi: 到 小李 屋里 吃 夜饭
+review: false
+setting: >-
+  Saturday evening in Hongkou. Xiao Li's parents have invited Sam to dinner; the table is covered with dishes.
+dialogue:
+- n: 1
+  speaker: 小李姆妈
+  hanzi: Sam ， 覅 客气 ， 当 自家 屋里 一样 。
+  en: Sam, make yourself at home.
+  lit: Sam, don't be-polite, treat (as) own home same
+- n: 2
+  speaker: Sam
+  hanzi: 阿姨 ， 侬 烧 了 介 多 菜 啊 ！
+  en: Auntie, you've cooked so many dishes!
+- n: 3
+  speaker: 小李
+  hanzi: 阿拉 姆妈 烧 了 一 个 下半日 。
+  en: My mum spent the whole afternoon cooking.
+- n: 4
+  speaker: 小李爷
+  hanzi: 先 吃 杯 黄酒 ， 阿拉 干杯 ！
+  en: Have a glass of yellow wine first. Cheers!
+- n: 5
+  speaker: Sam
+  hanzi: 我 勿 会得 吃 酒 ， 一眼眼 好 了 。
+  en: I can't really drink, just a drop.
+- n: 6
+  speaker: 小李爷
+  hanzi: 筷子 拿 好 ， 欢喜 吃 啥 自家 搛 。
+  en: Pick up your chopsticks and help yourself to whatever you like.
+- n: 7
+  speaker: 小李姆妈
+  hanzi: 搿 只[ʦᴀʔ55] 本帮 红烧 鱼 ， 侬 吃吃看 。
+  en: Try this Shanghai-style red-braised fish.
+- n: 8
+  speaker: Sam
+  hanzi: 味道 邪气 好 ， 赛过 饭店 里 一样 ！
+  en: It's delicious, just like in a restaurant!
+- n: 9
+  speaker: 小李姆妈
+  hanzi: 好吃 就 多 吃 一眼 ， 再 来 一 碗 饭 。
+  en: If you like it, eat more. Have another bowl of rice.
+- n: 10
+  speaker: Sam
+  hanzi: 我 吃饱 了 ， 连得 一眼眼 也 吃勿落 了 。
+  en: I'm full, I can't eat another bite.
+  lit: I eat-full (now), even a-tiny-bit also eat-not-down (now)
+- n: 11
+  speaker: 小李
+  hanzi: 爷 ， 人家 吃饱 了 ， 覅 再 拨 伊 了 。
+  en: Dad, he's full, stop giving him more.
+- n: 12
+  speaker: Sam
+  hanzi: 下趟 我 请客 ， 㑚 侪 到 我 屋里 来 。
+  en: Next time it's on me, you must all come to my place.
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    当…一样 "treat as, as if it were": 当自家屋里一样 "(treat it) as your own home". 当 is said with the departing tone here.
+    覅客气 "don't be polite": the host's first words.
+- ref: 3
+  topic: grammar
+  text: >-
+    Verb + 了 + a stretch of time: 烧了一个下半日 "cooked for a whole afternoon", 等了半个钟头 (lesson 20).
+- ref: 4
+  topic: culture
+  text: >-
+    黄酒 "yellow wine" is rice wine from nearby Shaoxing, drunk warm in winter and used in cooking. 干杯 "cheers", literally
+    "dry the cup". 吃酒 is "to drink (alcohol)": 吃 again.
+- ref: 5
+  topic: grammar
+  text: >-
+    会得 is "can, know how to" (Mandarin 会), more Shanghainese than plain 会: 我勿会得吃酒 "I can't drink", 侬会得游泳伐？.
+- ref: 6
+  topic: vocab
+  text: >-
+    搛 ci is "to pick up with chopsticks": 搛菜 "help yourself (to food)", 帮侬搛 "serve you (some)". 筷子 are chopsticks.
+- ref: 7
+  topic: culture
+  text: >-
+    本帮菜 is Shanghai's own local cooking, dark, sweet and rich (浓油赤酱, lesson 8). 红烧 "red-braised" with soy sauce and
+    sugar. 吃吃看 "taste and see", from 试试看 (lesson 15).
+- ref: 10
+  topic: grammar
+  text: >-
+    吃饱 "eat until full", 吃勿落 "can't eat any more": 落 "down", with 勿 between for "can't" (上勿来, lesson 19). 连得…也 is
+    "even": 连得一眼眼也吃勿落 "can't eat even a little".
+- ref: 11
+  topic: grammar
+  text: >-
+    人家 here points at someone present: "he, the poor man" (Mandarin 人家). It is also "other people" in general: 人家侪晓得
+    "everyone else knows".
+- ref: 12
+  topic: culture
+  text: >-
+    请客 "to treat, to pay for everyone": the guest offers to return the invitation before leaving. 㑚侪 "all of you".
+new_words:
+- hanzi: 夜饭
+  en: dinner
+- hanzi: 当
+  en: to treat as
+- hanzi: 黄酒
+  en: yellow (rice) wine
+- hanzi: 干杯
+  en: cheers!
+- hanzi: 会得
+  en: can, know how to
+- hanzi: 酒
+  en: alcohol, wine
+- hanzi: 筷子
+  en: chopsticks
+- hanzi: 搛
+  en: to pick up with chopsticks
+- hanzi: 本帮
+  en: (of food) Shanghai local style
+- hanzi: 红烧
+  en: red-braised
+- hanzi: 吃吃看
+  en: to taste and see
+- hanzi: 味道
+  en: taste, flavour
+- hanzi: 饭店
+  en: restaurant
+- hanzi: 饭
+  en: (cooked) rice; meal
+- hanzi: 吃饱
+  en: to eat one's fill
+- hanzi: 连得
+  en: even (连得…也)
+- hanzi: 吃勿落
+  en: can't eat any more
+- hanzi: 请客
+  en: to treat (pay for everyone)
+exercises:
+  translate:
+  - hanzi: 姆妈 烧 个 小菜 味道 老 好 。
+    en: The dishes my mum cooks taste very good.
+  - hanzi: 连得 阿拉 爷 也 会得 烧 番茄炒蛋 。
+    en: Even my dad can make tomato and egg.
+  - hanzi: 侬 吃饱 了 伐 ？ 再 搛 一眼 。
+    en: Have you had enough? Take a bit more.
+  fill:
+  - hanzi: 今朝 我 ＿ ， 㑚 侪 覅 付 钞票 。
+    en: It's on me today, none of you pay.
+    answer: 请客
+  - hanzi: 蛋糕 吃 了 两 块 ， ＿ 了 。
+    en: I've had two pieces of cake, I can't eat any more.
+    answer: 吃勿落
+  - hanzi: 搿 只[ʦᴀʔ55] 鱼 ＿ 邪气 好 。
+    en: This fish tastes really good.
+    answer: 味道
+  say:
+  - hanzi: 侬 吃吃看 ， 好吃 伐 ？
+    en: Try it, is it good?
+  - hanzi: 阿拉 一道 干杯 ！
+    en: Let's all drink to that!
+  - hanzi: 我 勿 会得 用 筷子 。
+    en: I can't use chopsticks.

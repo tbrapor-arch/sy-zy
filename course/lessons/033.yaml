@@ -1,0 +1,161 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 33
+title:
+  en: News from the lane
+  hanzi: 弄堂 里 个 新闻
+review: false
+setting: >-
+  A sunny afternoon at the mouth of the lane. The auntie and an old neighbour are talking on their stools; Sam comes
+  home from the shop.
+dialogue:
+- n: 1
+  speaker: 阿婆
+  hanzi: 侬 听讲 了 伐 ？ 小王 要 结婚 了 。
+  en: Have you heard? Xiao Wang is getting married.
+- n: 2
+  speaker: 阿姨
+  hanzi: 真个 ？ 伊 个 女朋友 我 碰着 过 。
+  en: Really? I've run into his girlfriend.
+- n: 3
+  speaker: 阿婆
+  hanzi: 好像 是 外地人 ， 辣 银行 上班 。
+  en: She's from out of town, I think, and works at a bank.
+- n: 4
+  speaker: 阿姨
+  hanzi: 小姑娘 蛮 好 ， 见 了 人 就 叫 。
+  en: She's a nice girl, always greets people.
+  lit: girl quite good, see (done) people then call
+- n: 5
+  speaker: 阿婆
+  hanzi: 伊 娘舅 讲 ， 屋里 本生 勿 同意 。
+  en: His uncle says the family wasn't keen at first.
+- n: 6
+  speaker: 阿姨
+  hanzi: 为啥 ？ 因得 伊 是 外地人 啊 ？
+  en: Why? Because she's not from Shanghai?
+- n: 7
+  speaker: 阿婆
+  hanzi: 后首来 看 伊 人 好 ， 就 同意 了 。
+  en: Later they saw what a good person she is, and agreed.
+- n: 8
+  speaker: Sam
+  hanzi: 阿姨 ， 㑚 辣辣 讲 啥 ？ 介 开心 。
+  en: Auntie, what are you talking about? You look so happy.
+- n: 9
+  speaker: 阿姨
+  hanzi: 弄堂 里 个 新闻 ， 侬 勿 认得 。
+  en: Lane news, people you don't know.
+- n: 10
+  speaker: 阿婆
+  hanzi: 小伙子 ， 侬 有 女朋友 伐 ？
+  en: And you, young man, have you got a girlfriend?
+- n: 11
+  speaker: Sam
+  hanzi: 呒没 ， 侬 覅 帮 我 介绍 啊 ！
+  en: No, and don't go finding me one!
+- n: 12
+  speaker: 阿婆
+  hanzi: 我 看 侬 是 有 苗头 个 ！
+  en: I'd say there's something in the air!
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    听讲 is "I hear (that), they say" (Mandarin 听说): 侬听讲了伐？ "have you heard?". 结婚 is "to get married".
+- ref: 2
+  topic: vocab
+  text: >-
+    碰着 is "to run into, to meet by chance" (Mandarin 碰到、遇到), with the 着 of 寻着 (lesson 23). 碰头 (lesson 16) is a
+    meeting you arrange.
+- ref: 3
+  topic: vocab
+  text: >-
+    好像 "it seems, I think" softens what you are not sure of, as in Mandarin.
+- ref: 4
+  topic: culture
+  text: >-
+    叫 + person is "to greet (by title)": 见了人就叫 "says 阿姨! 爷叔! to everyone she meets", the first thing the lane
+    judges a young person by. 小姑娘 is "girl, young woman"; a young man is 小伙子 (line 10).
+- ref: 5
+  topic: vocab
+  text: >-
+    娘舅 is a mother's brother; 老娘舅 is also the neighbourhood peacemaker, after a well-known TV programme. 本生 is "at
+    first, originally" (Mandarin 本来): a word you will meet often in books.
+- ref: 6
+  topic: grammar
+  text: >-
+    为啥 "why?" (lesson 6 had the softer 做啥). 因得 is "because" (Mandarin 因为); 因为 is heard too.
+- ref: 7
+  topic: vocab
+  text: >-
+    后首来 is "later, afterwards (in a story)" (Mandarin 后来), the word that moves a story on.
+- ref: 9
+  topic: vocab
+  text: >-
+    新闻 is "news", from TV news to lane gossip.
+- ref: 12
+  topic: vocab
+  text: >-
+    苗头 is "a sign of something coming, promise": 有苗头 "there's something going on, it looks promising". The old lady is
+    teasing.
+new_words:
+- hanzi: 新闻
+  en: news
+- hanzi: 听讲
+  en: to hear (that), they say
+- hanzi: 小王
+  en: Xiao Wang (a name)
+- hanzi: 结婚
+  en: to get married
+- hanzi: 女朋友
+  en: girlfriend
+- hanzi: 碰着
+  en: to run into
+- hanzi: 好像
+  en: it seems, I think
+- hanzi: 小姑娘
+  en: girl, young woman
+- hanzi: 娘舅
+  en: uncle (mother's brother)
+- hanzi: 本生
+  en: at first, originally
+- hanzi: 同意
+  en: to agree
+- hanzi: 为啥
+  en: why
+- hanzi: 因得
+  en: because
+- hanzi: 后首来
+  en: later, afterwards
+- hanzi: 小伙子
+  en: young man
+- hanzi: 介绍
+  en: to introduce; to find (someone) for
+- hanzi: 苗头
+  en: sign, promise
+exercises:
+  translate:
+  - hanzi: 听讲 下 个 礼拜 要 落雨 。
+    en: They say it'll rain next week.
+  - hanzi: 我 本生 想 去 ， 后首来 勿 去 了 。
+    en: I meant to go at first, but in the end I didn't.
+  - hanzi: 今朝 我 辣 地铁 里 碰着 老板 了 。
+    en: I ran into the boss on the metro today.
+  fill:
+  - hanzi: 伊 今朝 勿 来 ， ＿ 伊 感冒 了 。
+    en: He isn't coming today, because he has a cold.
+    answer: 因得
+  - hanzi: ＿ 侬 勿 吃 夜饭 ？
+    en: Why aren't you having dinner?
+    answer: 为啥
+  - hanzi: 我 来 ＿ 一声 ， 搿 是 小李 。
+    en: Let me introduce you, this is Xiao Li.
+    answer: 介绍
+  say:
+  - hanzi: 好像 要 落雨 了 。
+    en: It looks like rain.
+  - hanzi: 侬 听讲 了 伐 ？
+    en: Have you heard?
+  - hanzi: 阿拉 娘舅 蹲 辣 美国 。
+    en: My uncle lives in America.

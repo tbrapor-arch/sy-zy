@@ -68,13 +68,33 @@ def main():
         print('\nCombined ranking A + B (B = 《弄堂》, private; computed here, never written):')
         for n in (100, 300, 1000, 2000):
             part = [x for x in merged if x[0] <= n]
-            got = sum(1 for x in part if x[1] in seen)
+            got = sum(1 for x in part if is_taught(x[1], seen))
             print(f'  top {n:>4}: {got}/{len(part)} ({100 * got // max(1, len(part))}%)')
-        missing = [x for x in merged if x[0] <= top and x[1] not in seen]
+        print('  (left out: the novel\'s spellings of taught words, older-register particles ' + ' '.join(sorted(OLDER)) +
+              ', split artefacts, written Mandarin)')
+        missing = [x for x in merged if x[0] <= top and not is_taught(x[1], seen)]
         missing.sort(key=lambda x: (x[2] not in ('sh', 'ff'), x[0]))
         print(f'\nNot taught yet, combined top {top} (Shanghainese words and false friends first; × = count in the novel):')
         for r, w, typ, c, en in missing[:50]:
             print(f'  #{r:<5} {w:<6} {typ:<4} {c:>4}×  {en[:55]}')
+
+
+# Cleaning the novel's counts (4 Nov 2026). The automatic split of 《弄堂》 produces strings that are not words to teach:
+# the novel's own spellings of words the course writes otherwise, particles of an older register than the course's
+# new urban Shanghainese, and number + measure or word + particle strings the course always writes as two words.
+VARIANTS = {'掰': '搿', '迭': '搿', '掰只': '搿只', '宁': '人', '辣海': '辣辣', '伊个': '埃个', '睏': '困', '汰': '汏'}
+OLDER = set('仔 唻 哉 吒 咤 迓 好唻 伲'.split())
+SPLIT = set('一个 两个 来个 叫伊 有眼 侪是 也是 蛮好 阿 眼 一埭 两家头 头头 想想 勿会 还要 个人 子 原 生 拨侬 掰只'.split())
+NOVEL_ONLY = set('革命 橄榄 阿三 写作 架梁 石首 湖北'.split())   # the novel's own topics, not everyday vocabulary
+# written Mandarin that list A ranks high (jieba counts newspapers): typed lit, never taught for itself
+WRITTEN = set('进行 企业 地区 认为 由于 其中 成为 部分 会议 学院 市场 但是 不同 之间 其他 许多 一些 不能 属 较 内 便 自 '
+              '更 它 军 县 约 地 道 中 从 后 前 外 分 成 正 极 占 事 关'.split())
+# suffixes the course teaches inside words (坏脱, 热煞, 记牢): taught once a word ending in them is
+SUFFIXES = {'脱', '煞', '牢'}
+
+
+def is_taught(w, seen):
+    return w in seen or (w in SUFFIXES and any(len(s) > 1 and s.endswith(w) for s in seen))
 
 
 def merge(rows, freq_path):
@@ -89,10 +109,15 @@ def merge(rows, freq_path):
         r, w, c, src, _ = (line.rstrip('\n').split('\t') + [''] * 5)[:5]
         if src == '-' or (src == 'mandarin' and len(w) > 1):
             continue                          # strings the splitter made up
+        w = VARIANTS.get(w, w)
+        if w in OLDER or w in SPLIT or w in NOVEL_ONLY:
+            continue
+        if w in b:                            # a variant spelling adds its count to the course's spelling
+            rb, c0, s0 = b[w]; b[w] = (rb, c0 + int(c), s0); continue
         b[w] = (len(b) + 1, int(c), src)
     score, info = {}, {}
     for r, w, typ, say, en in rows:
-        if typ in ('md', 'lit'):
+        if typ in ('md', 'lit') or w in WRITTEN or w in SPLIT:
             continue
         rb, c, _ = b.get(w, (None, 0, ''))
         score[w] = math.exp((2 * math.log(rb) + math.log(r)) / 3) if c >= 5 else r * 1.5

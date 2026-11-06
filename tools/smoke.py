@@ -10,7 +10,7 @@ from playwright.async_api import async_playwright
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 URL = (ROOT / 'app/dist/index.html').as_uri()
-PAGES = ['lessons', 'lesson-0', 'lesson-1', 'lesson-7', 'review', 'lists', 'dict', 'drills', 'bridge', 'settings', 'books', 'read']
+PAGES = ['lessons', 'lesson-0', 'lesson-1', 'lesson-7', 'review', 'lists', 'dict', 'drills', 'bridge', 'settings', 'books', 'read', 'video', 'vid-kaixin-1']
 SHOTS = sys.argv[sys.argv.index('--shots') + 1] if '--shots' in sys.argv else None
 
 
@@ -36,8 +36,9 @@ async def main():
         await pg.goto(URL + '#list-lessons'); await pg.wait_for_timeout(300)
         n = await pg.locator('.vtable tr').count()
         if n != 1: errs.append(f'list-lessons: {n} rows, expected 1')
-        await pg.click('#lfc'); await pg.wait_for_timeout(300)
-        if SHOTS: await pg.screenshot(path=f'{SHOTS}/flashcards.png')
+        if await pg.locator('#lfc').count():   # the Flashcards button is hidden while CARDS is false
+            await pg.click('#lfc'); await pg.wait_for_timeout(300)
+            if SHOTS: await pg.screenshot(path=f'{SHOTS}/flashcards.png')
         # traditional characters
         await pg.evaluate("localStorage.setItem('syzy:prefs', JSON.stringify(Object.assign(JSON.parse(localStorage.getItem('syzy:prefs')||'{}'), {chars:'trad'})))")
         await pg.goto(URL + '#lesson-1'); await pg.reload(); await pg.wait_for_timeout(300)

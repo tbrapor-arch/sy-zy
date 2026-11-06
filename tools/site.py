@@ -27,7 +27,8 @@ if not hashes:
     sys.exit('site.py: no inline script found, the CSP would block the app')
 rules = {
     'default-src': "'self'",
-    'script-src': f"{hashes} blob:",
+    'script-src': f"{hashes} blob: https://www.youtube.com https://s.ytimg.com",   # the TV tab uses YouTube's player API
+    'frame-src': "https://www.youtube-nocookie.com https://www.youtube.com",
     'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com",
     'font-src': "'self' data: https://fonts.gstatic.com",
     'img-src': "'self' data: blob: https:",

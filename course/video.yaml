@@ -1,0 +1,14 @@
+# TV tab: Shanghainese shows published free by their broadcaster on its own YouTube channel. Only ids, titles and
+# lengths are kept here; the video plays in YouTube's embedded player. Add an episode when it is worked on.
+# Transcripts are not part of this repo (private).
+shows:
+  - id: kaixin   # 开心公寓, SMG sitcom (routes #vid-kaixin-<n>)
+    title: 开心公寓
+    en: Happy Apartment
+    by: SMG 东方卫视
+    about: >-
+      SMG's Shanghainese sitcom (from 2006): young white-collar residents of a serviced apartment block, played by
+      well-known Shanghai TV hosts. Mostly urban Shanghainese, with some other Wu varieties for comic effect.
+      Played from the channel's HD restoration.
+    episodes:
+      - {n: 1, video: hHSx1yWolZ8, title: 第1集}

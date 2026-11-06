@@ -47,7 +47,7 @@ function listBase(k) {
   return LIST_TITLES[k] || (lists[k] && lists[k].t) || k.split(':')[1] || k;
 }
 function listTitle(k) { return (lists[k] && lists[k].nm) || listBase(k); }
-const LIST_KIND = { lessons: ['课', 'Lessons'], book: ['书', 'Book'], bc: ['课', 'Book course'], words: ['词', 'Words'] };
+const LIST_KIND = { lessons: ['课', 'Lessons'], vid: ['剧', 'Drama'], book: ['书', 'Book'], bc: ['课', 'Book course'], words: ['词', 'Words'] };
 const listKind = k => LIST_KIND[k.split(':')[0]] || ['词', ''];
 function listHere() {
   const h = location.hash.slice(1) || 'lessons';
@@ -95,6 +95,7 @@ const PUNCT = { '，': ', ', '。': '. ', '！': '! ', '？': '? ', '：': ': ',
 const SUP = { 0: '⁰', 1: '¹', 2: '²', 3: '³', 4: '⁴', 5: '⁵', 6: '⁶', 7: '⁷', 8: '⁸', 9: '⁹' };
 const sup = s => String(s).replace(/\d/g, d => SUP[d]);
 const ICONS = {
+  video: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="m10 9.2 5 2.8-5 2.8z"/></svg>',
   books: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 5c3-1.5 6-1.5 9 .5 3-2 6-2 9-.5v14c-3-1.5-6-1.5-9 .5-3-2-6-2-9-.5z"/><path d="M12 5.5v14"/></svg>',
   lessons: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21a2 2 0 0 1 2-2h13"/></svg>',
   dict: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg>',
@@ -126,6 +127,127 @@ function tune(e, big) {
 }
 const canon = s => (s || '').normalize('NFD').toLowerCase().replace(/[̀-ͯ]/g, '').replace(/[\s\-'’.,!?。，！？⁰¹²³⁴⁵⁶⁷⁸⁹\d˥˦˧˨˩]/g, '');
 
+const mmss = s => { s = Math.max(0, Math.floor(s || 0)); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = String(s % 60).padStart(2, '0'); return h ? `${h}:${String(m).padStart(2, '0')}:${x}` : `${m}:${x}`; };
+// ---------- video: Shanghainese shows on the broadcaster's own YouTube channel (course/video.yaml), played in YouTube's
+// embedded player; nothing is copied. The private module can add a transcript: it puts it in #vidside (beside the
+// player on wide screens, under it otherwise) and uses vidTime(), vidSeek() and vidInset().
+const VID = DATA.video || { shows: [] };
+const vidState = () => store.get('vid', {});
+const vidKey = (S, ep) => `${S.id}-${ep.n}`;
+function vidSave(k, t, finished) { const st = vidState(); st[k] = Object.assign(st[k] || {}, { t: Math.floor(t) }, finished ? { done: true } : {}); store.set('vid', st); }
+let yt = null, ytEp = null, ytLoop = null, ytApi = null, ytTimer = null;
+function ytReady() {
+  if (window.YT && window.YT.Player) return Promise.resolve();
+  if (ytApi) return ytApi;
+  return ytApi = new Promise((res, rej) => {
+    const prev = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = () => { if (prev) prev(); res(); };
+    const sc = document.createElement('script'); sc.src = 'https://www.youtube.com/iframe_api';
+    sc.onerror = () => { ytApi = null; sc.remove(); rej(new Error('offline')); };
+    document.head.append(sc);
+  });
+}
+const vidTime = () => (yt && yt.getCurrentTime ? yt.getCurrentTime() : 0);
+// height covered at the top of the screen by the floating picture (0 when it is not floating)
+const vidInset = () => { const b = $('.vidplayer.float .vidbox'); return b ? b.getBoundingClientRect().bottom : 0; };
+function vidSeek(t, play) { if (yt && yt.seekTo) { yt.seekTo(Math.max(0, t), true); if (play) yt.playVideo(); } }
+function showVideo() {
+  renderTabs('video');
+  const st = vidState(), m = $('#main');
+  m.innerHTML = `<div class="col">${VID.shows.map(S => `
+    <div class="head"><span class="eyebrow">Video · in Shanghainese</span><h1>${esc(S.title)}</h1><span class="rom">${esc(S.en)} · ${esc(S.by)}</span></div>
+    <p class="sub" style="margin:0;max-width:65ch">${esc(S.about)}</p>
+    <div class="list">${S.episodes.map(ep => { const s = st[vidKey(S, ep)] || {}, pct = s.done ? 100 : ep.dur ? Math.round(100 * (s.t || 0) / ep.dur) : 0; return `
+      <button class="item ep ${s.done ? 'done' : ''}" data-go="vid-${vidKey(S, ep)}"><span class="no">${ep.n}</span>
+        <span><span class="tt">${esc(ep.title)}</span><br><span class="ts">EP${ep.n}${ep.dur ? ` · ${Math.round(ep.dur / 60)} min` : ''}${s.done ? ' · ✓ watched' : pct ? ` · ${pct}%` : ''}</span>
+        ${pct && !s.done ? `<span class="bar" style="margin-top:.3rem"><i style="width:${pct}%"></i></span>` : ''}</span><span class="chev">›</span></button>`; }).join('')}</div>
+    <p class="sub" style="font-size:.8rem;margin:0">${S.episodes.length}${S.total ? ` of ${S.total}` : ''} episode${S.episodes.length > 1 ? 's' : ''} listed. Played from ${S.channel ? `<a href="${esc(S.channel)}" target="_blank" rel="noopener">${esc(S.by)}'s YouTube channel</a>` : `${esc(S.by)}'s own YouTube uploads`}.</p>`).join('')}
+  </div>`;
+  wireGo(m);
+}
+function showVideoEp(S, ep) {
+  vidPage(S, ep, {
+    tab: 'video', key: vidKey(S, ep), back: 'video', backLabel: 'Back to episodes', where: `EP${ep.n} · ${esc(ep.title)}`,
+    eyebrow: `${esc(S.title)} · ${esc(S.en)}`, h1: `EP${ep.n} ${esc(ep.title)}`,
+    notes: `<p class="sub" style="margin:0;max-width:65ch">Spoken in Shanghainese. Any subtitles on screen are in standard written Chinese, written for the meaning, not word for word.</p>
+    <p class="sub" style="font-size:.8rem;margin:0">${esc(S.title)} © ${esc(S.by)}. Played from the channel's own upload: <a href="https://www.youtube.com/watch?v=${esc(ep.video)}" target="_blank" rel="noopener">open on YouTube</a>.</p>`,
+  });
+}
+// the player page shared by the Video and Music tabs. o = { tab, key (resume / progress), back, backLabel, where,
+// eyebrow, h1 (HTML), notes (HTML) }
+function vidPage(S, ep, o) {
+  renderTabs(o.tab);
+  clearInterval(ytTimer);
+  if (yt && yt.destroy) { try { yt.destroy(); } catch {} }
+  yt = null; ytLoop = null; ytEp = { S, ep };
+  const k = o.key, m = $('#main'), t0 = (vidState()[k] || {}).t || 0;
+  m.innerHTML = `<div class="col vidpage"><div class="vidleft">
+    <div class="lbar"><button class="icon" data-go="${o.back}" aria-label="${o.backLabel}">←</button><span class="where">${o.where}</span></div>
+    <div class="head"><span class="eyebrow">${o.eyebrow}</span><h1 style="font-size:clamp(1.5rem,5vw,2rem)">${o.h1}</h1></div>
+    <div class="card raised podplayer vidplayer" id="vidplayer">
+      <div class="vidslot"><div class="vidbox"><div id="vidframe"><div class="vidmsg">Loading the player…</div></div><button class="vidfx" aria-label="Put the video back in the page">×</button></div></div>
+      <div class="row" style="justify-content:space-between"><span id="vp-t" class="sub">${mmss(t0)}${ep.dur ? ' / ' + mmss(ep.dur) : ''}</span>
+        <button class="btn small quiet" id="vp-rate" title="Speed">${store.get('vidRate', 1)}×</button></div>
+      <div class="row pp-ctl"><button class="btn line" id="vp-back" aria-label="Back 5 seconds">↺ 5</button>
+        <button class="btn pp-big" id="vp-play" aria-label="Play or pause">▶</button>
+        <button class="btn line" id="vp-fwd" aria-label="Forward 10 seconds">10 ↻</button></div>
+      <div class="row"><button class="btn small quiet" id="pp-loop" title="Repeat a passage: tap at the start, tap at the end, tap again to stop">A–B</button>
+        <span class="sub" style="font-size:.8rem">Repeat a passage: tap at its start, again at its end.</span></div>
+    </div>
+    ${o.notes}
+  </div><div class="vidside" id="vidside"></div></div>`;
+  wireGo(m);
+  const root = $('#vidplayer', m);
+  // narrow screens: float the picture at the top once the player is scrolled up out of view (× puts it back until the
+  // player has been seen again); wide screens have it side by side with the transcript instead
+  const narrow = matchMedia('(max-width: 1099px)');
+  let docked = false;
+  const slot = $('.vidslot', root);
+  const setFloat = on => root.classList.toggle('float', on);
+  if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => {
+    if (!root.isConnected) return;
+    if (e.isIntersecting) docked = false;
+    setFloat(narrow.matches && !docked && !e.isIntersecting && e.boundingClientRect.bottom < 0 && !!yt);
+  }).observe(slot);
+  $('.vidfx', root).onclick = () => { docked = true; setFloat(false); };
+  const ui = () => {
+    if (!root.isConnected) return;
+    const t = vidTime(), d = (yt && yt.getDuration && yt.getDuration()) || ep.dur || 0, st = yt && yt.getPlayerState ? yt.getPlayerState() : -1;
+    $('#vp-t', root).textContent = `${mmss(t)}${d ? ' / ' + mmss(d) : ''}`;
+    $('#vp-play', root).textContent = st === 1 || st === 3 ? '⏸' : '▶';
+    $('#pp-loop', root).textContent = !ytLoop ? 'A–B' : ytLoop.b == null ? `A ${mmss(ytLoop.a)} → B?` : `⟲ ${mmss(ytLoop.a)}–${mmss(ytLoop.b)}`;
+    $('#pp-loop', root).classList.toggle('on', !!ytLoop);
+  };
+  const ctl = f => () => { if (yt && yt.getPlayerState) { f(); ui(); } };
+  $('#vp-play', root).onclick = ctl(() => yt.getPlayerState() === 1 ? yt.pauseVideo() : yt.playVideo());
+  $('#vp-back', root).onclick = ctl(() => vidSeek(vidTime() - 5));
+  $('#vp-fwd', root).onclick = ctl(() => vidSeek(vidTime() + 10));
+  $('#vp-rate', root).onclick = ctl(() => { const rs = [0.75, 1, 1.25], r = rs[(rs.indexOf(yt.getPlaybackRate()) + 1) % rs.length]; yt.setPlaybackRate(r); store.set('vidRate', r); $('#vp-rate', root).textContent = r + '×'; });
+  $('#pp-loop', root).onclick = ctl(() => { const t = vidTime(); if (!ytLoop) ytLoop = { a: t, b: null }; else if (ytLoop.b == null) ytLoop.b = Math.max(t, ytLoop.a + 1); else ytLoop = null; });
+  ytReady().then(() => {
+    if (!$('#vidframe') || ytEp.ep !== ep) return;
+    yt = new YT.Player('vidframe', {
+      host: 'https://www.youtube-nocookie.com', videoId: ep.video,
+      playerVars: { start: t0 > 5 && (!ep.dur || t0 < ep.dur - 10) ? t0 : 0, playsinline: 1, rel: 0 },
+      events: {
+        onReady: () => { yt.setPlaybackRate(store.get('vidRate', 1)); ui(); },
+        // 101 / 150: the channel does not allow this video to be played outside YouTube
+        onError: e => { if (![101, 150].includes(e.data)) return; const box = $('.vidbox', root); if (box) box.innerHTML = `<div class="vidmsg">This video can only be played on YouTube.<br><a style="color:#fff" href="https://www.youtube.com/watch?v=${esc(ep.video)}" target="_blank" rel="noopener">Open it on YouTube</a></div>`; },
+        onStateChange: e => { if (e.data === 0) vidSave(k, 0, true); else if (e.data === 2) vidSave(k, vidTime()); ui(); },
+      },
+    });
+    let saved = 0;
+    ytTimer = setInterval(() => {
+      if (!root.isConnected) { clearInterval(ytTimer); if (yt && yt.getCurrentTime) vidSave(k, vidTime()); return; }
+      if (!yt || !yt.getPlayerState || yt.getPlayerState() !== 1) return;
+      const t = vidTime();
+      if (ytLoop && ytLoop.b != null && t >= ytLoop.b) vidSeek(ytLoop.a);
+      if (Date.now() - saved > 4000) { saved = Date.now(); const d = yt.getDuration() || ep.dur; vidSave(k, t, d && t > d * .97); }
+      ui();
+    }, 250);
+  }).catch(() => { const f = $('#vidframe'); if (f) f.innerHTML = '<div class="vidmsg">The player needs the internet.</div>'; });
+}
+
 // ---------- routing
 let homeY = 0;
 function route() {
@@ -142,6 +264,8 @@ function route() {
   if (h === 'books' || /^books-/.test(h) || /^bookcourse/.test(h)) return Module.show(h);
   if (h === 'review') { if (!CARDS) { history.replaceState(null, '', '#lists'); return showLists(); } return showReview(); }
   if (h === 'bridge') return showBridge();
+  if (h === 'video') return showVideo();
+  if ((m = h.match(/^vid-([a-z0-9]+)-(\d+)$/))) { const S = VID.shows.find(x => x.id === m[1]), ep = S && S.episodes.find(e => e.n === +m[2]); if (ep) return showVideoEp(S, ep); }
   if (h === 'settings') return showSettings();
   showLessons();
 }
@@ -158,7 +282,7 @@ function wireGo(root) { $$('[data-go]', root).forEach(b => b.onclick = () => go(
 
 function renderTabs(cur) {
   const due = CARDS ? dueCards().length : 0;
-  const tabs = [['lessons', 'Lessons'], ['review', 'Practice'], ...(Module.on ? [['books', 'Books']] : []), ['settings', 'Settings']];
+  const tabs = [['lessons', 'Lessons'], ['review', 'Practice'], ...(VID.shows.length ? [['video', 'Video']] : []), ...(Module.on ? [['books', 'Books']] : []), ['settings', 'Settings']];
   $('#tabs').innerHTML = tabs.map(([k, t]) => `<button class="tab" data-tab="${k}" aria-current="${cur === k}">${ICONS[k]}<span>${t}</span>${k === 'review' && due ? `<span class="count">${due}</span>` : ''}</button>`).join('');
   // the Practice tab reopens the part used last (a running card session is left); Lessons goes to the top of the grid
   $$('[data-tab]', $('#tabs')).forEach(b => b.onclick = () => { const k = b.dataset.tab; if (k === 'review') { sess = null; go(store.get('pracSec', CARDS ? 'review' : 'lists')); return; } if (k === 'lessons') resetHome = true; go(k); });
@@ -444,7 +568,7 @@ document.addEventListener('click', e => {
   if (!sh.classList.contains('open') || !e.target.isConnected || sh.contains(e.target) || e.target.closest('.tok, [data-note], [data-word], [data-ann], [data-sheet], .tab')) return;
   closeSheet();
 });
-function currentTab() { const h = location.hash.slice(1) || 'lessons'; return /^(lesson|bookcourse)/.test(h) ? 'lessons' : /^(dict|lists?|list-|drills|bridge|review)/.test(h) ? 'review' : /^books/.test(h) ? 'books' : h; }
+function currentTab() { const h = location.hash.slice(1) || 'lessons'; return /^(lesson|bookcourse)/.test(h) ? 'lessons' : /^(dict|lists?|list-|drills|bridge|review)/.test(h) ? 'review' : /^(video|vid-)/.test(h) ? 'video' : /^books/.test(h) ? 'books' : h; }
 
 // ---------- review deck (Leitner boxes, kept in this browser)
 function addToDeck(ids) { let n = 0; ids.forEach(id => { if (id && DATA.dict[id] && !deck[id]) { deck[id] = { box: 0, due: Date.now(), at: Date.now() }; n++; } }); store.set('deck', deck); return n; }

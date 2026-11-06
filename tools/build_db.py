@@ -302,8 +302,12 @@ lesson0 = (ROOT / 'course/lessons/000-reading.html').read_text(encoding='utf8')
 _free = ''.join(l['setting'] + ''.join(x['text'] for x in l['notes']) for l in lessons) + ''.join(
     e['h'] + ''.join(e.get('zh', [])) + e.get('note', '') for e in dict_out.values())
 _free += ''.join(x.read_text(encoding='utf8') for x in (ROOT / 'app/src').glob('*.js'))   # the app's own labels
+_free += (ROOT / 'course/video.yaml').read_text(encoding='utf8') if (ROOT / 'course/video.yaml').exists() else ''
 s2t_map = {c: trad(c) for c in sorted(set(HAN.findall(_free))) if len(trad(c)) == 1 and trad(c) != c}
-DATA = {'s2t': s2t_map, 'lessons': lessons, 'dict': dict_out, 'bridge': bridge, 'lesson0': lesson0,
+# TV tab (course/video.yaml): shows on their broadcaster's own YouTube channel; ids and titles only
+_vid = ROOT / 'course/video.yaml'
+video = yaml.safe_load(open(_vid, encoding='utf8')) if _vid.exists() else {'shows': []}
+DATA = {'s2t': s2t_map, 'lessons': lessons, 'video': video, 'dict': dict_out, 'bridge': bridge, 'lesson0': lesson0,
         'built': datetime.date.today().isoformat(), 'tones': {str(k): {'contour': v, 'name': R.TONE_NAME[k], 'sandhi': R.SANDHI[k]} for k, v in R.CANON.items()}}
 (ROOT / 'app/build').mkdir(parents=True, exist_ok=True)
 def dump(d): return 'const DATA = ' + json.dumps(d, ensure_ascii=False, separators=(',', ':')) + ';\n'

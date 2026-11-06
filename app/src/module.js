@@ -2,12 +2,15 @@
 // and the Book course appear only on a device whose GitHub token can read the owner's private repo; the module's code
 // and content come from there. Contract: module/index.json lists the files with content hashes; app.css and app.js are
 // fetched through GitHub's API, cached in the browser by hash (works offline), then window.ExamModule.init(loader) and
-// window.ExamModule.route(hash) are called; the optional window.ExamModule.cardExtra(entry) adds a section to word cards. Routes handed to it: #books, #books-…, #bookcourse, #bookcourse-….
+// window.ExamModule.route(hash) are called; the optional window.ExamModule.cardExtra(entry) adds a section to word cards. Routes handed to it: #books, #books-…, #bookcourse, #bookcourse-…,
+// and those of any extra tab the index declares (index.tabs: [{ id, label }] → #id and #id-…).
 const Module = {
   REPO: 'tbrapor-arch/syzy-private', DIR: 'module', CACHE: 'syzy-module', index: null, loaded: null,
   get token() { return Sync.token; },
   get on() { return !!this.token && store.get('moduleOn', false); },
   get bookcourse() { return this.on && !!store.get('moduleBC', false); },
+  get tabs() { return this.on ? store.get('moduleTabs', []) : []; },
+  tabOf(h) { const t = this.tabs.find(t => h === t.id || h.startsWith(t.id + '-')); return t ? t.id : null; },
   // is the token allowed to read the private repo? (offline: keep the last answer)
   async check() {
     if (!this.token) { store.set('moduleOn', false); return false; }
@@ -42,6 +45,12 @@ const Module = {
       try { const r = await this.raw(this.DIR + '/index.json'); this.index = await r.clone().json(); if (c) await c.put('https://module.invalid/index.json', r); }
       catch (e) { const hit = c && await c.match('https://module.invalid/index.json'); if (!hit) throw e; this.index = await hit.json(); }
       store.set('moduleBC', !!this.index.bookcourse);
+      const tabs = (this.index.tabs || []).filter(t => /^[a-z][a-z0-9]*$/.test(t.id || '') && t.label).map(t => ({ id: t.id, label: String(t.label) }));
+      if (JSON.stringify(tabs) !== JSON.stringify(store.get('moduleTabs', []))) {
+        store.set('moduleTabs', tabs); renderTabs(currentTab());
+        const h = location.hash.slice(1);   // opened on a tab this device did not know yet: show it once the module is in
+        if (this.tabOf(h)) setTimeout(() => { if (location.hash.slice(1) === h) route(); }, 0);
+      }
       if (!this.index.files || !this.index.files['app.js']) return;     // nothing built yet
       if (this.index.files['app.css']) { const css = document.createElement('style'); css.textContent = await (await this.file('app.css')).text(); document.head.append(css); }
       const js = await (await this.file('app.js')).text();
@@ -54,8 +63,9 @@ const Module = {
   async show(h) {
     renderTabs(currentTab());
     const here = location.hash;
-    const [ey, ti] = /^bookcourse/.test(h) ? ['Lessons', '课本'] : ['Books', '书'];
-    const page = body => { $('#main').innerHTML = `<div class="col"><div class="head"><span class="eyebrow">${ey}</span><h1>${esc(hzt(ti))}</h1></div>${body}</div>`; wireGo($('#main')); };
+    const tab = this.tabs.find(t => t.id === this.tabOf(h));
+    const [ey, ti] = /^bookcourse/.test(h) ? ['Lessons', '课本'] : tab ? [tab.label, ''] : ['Books', '书'];
+    const page = body => { $('#main').innerHTML = `<div class="col"><div class="head"><span class="eyebrow">${ey}</span>${ti ? `<h1>${esc(hzt(ti))}</h1>` : ''}</div>${body}</div>`; wireGo($('#main')); };
     if (!this.on) return page('<p class="sub">Not available on this device.</p>');
     if (!window.ExamModule) page('<p class="sub">Loading…</p>');
     try {
@@ -70,7 +80,8 @@ const Module = {
 if (Module.token) {
   const was = Module.on;
   Module.check().then(on => {
-    if (on !== was) { if (/^(books|bookcourse)/.test(location.hash.slice(1))) route(); else renderTabs(currentTab()); }
-    if (on && !/^(books|bookcourse)/.test(location.hash.slice(1))) Module.load().then(() => { if ((location.hash.slice(1) || 'lessons') === 'lessons') route(); else renderTabs(currentTab()); }).catch(() => {});
+    const mine = h => /^(books|bookcourse)/.test(h) || Module.tabOf(h);
+    if (on !== was) { if (mine(location.hash.slice(1))) route(); else renderTabs(currentTab()); }
+    if (on && !mine(location.hash.slice(1))) Module.load().then(() => { if ((location.hash.slice(1) || 'lessons') === 'lessons') route(); else renderTabs(currentTab()); }).catch(() => {});
   });
 }

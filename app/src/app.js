@@ -96,6 +96,7 @@ const SUP = { 0: '⁰', 1: '¹', 2: '²', 3: '³', 4: '⁴', 5: '⁵', 6: '⁶',
 const sup = s => String(s).replace(/\d/g, d => SUP[d]);
 const ICONS = {
   video: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="m10 9.2 5 2.8-5 2.8z"/></svg>',
+  module: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 9"/><path d="M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-13.7 5.6L4 15"/><path d="M4 20v-5h5"/></svg>',
   books: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 5c3-1.5 6-1.5 9 .5 3-2 6-2 9-.5v14c-3-1.5-6-1.5-9 .5-3-2-6-2-9-.5z"/><path d="M12 5.5v14"/></svg>',
   lessons: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21a2 2 0 0 1 2-2h13"/></svg>',
   dict: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg>',
@@ -261,7 +262,7 @@ function route() {
   if (h === 'lists') return showLists();
   if ((m = h.match(/^list-(.+)$/))) return showList(decodeURIComponent(m[1]));
   if (h === 'drills') return showDrills();
-  if (h === 'books' || /^books-/.test(h) || /^bookcourse/.test(h)) return Module.show(h);
+  if (h === 'books' || /^books-/.test(h) || /^bookcourse/.test(h) || Module.tabOf(h)) return Module.show(h);
   if (h === 'review') { if (!CARDS) { history.replaceState(null, '', '#lists'); return showLists(); } return showReview(); }
   if (h === 'bridge') return showBridge();
   if (h === 'video') return showVideo();
@@ -282,8 +283,8 @@ function wireGo(root) { $$('[data-go]', root).forEach(b => b.onclick = () => go(
 
 function renderTabs(cur) {
   const due = CARDS ? dueCards().length : 0;
-  const tabs = [['lessons', 'Lessons'], ['review', 'Practice'], ...(VID.shows.length ? [['video', 'Video']] : []), ...(Module.on ? [['books', 'Books']] : []), ['settings', 'Settings']];
-  $('#tabs').innerHTML = tabs.map(([k, t]) => `<button class="tab" data-tab="${k}" aria-current="${cur === k}">${ICONS[k]}<span>${t}</span>${k === 'review' && due ? `<span class="count">${due}</span>` : ''}</button>`).join('');
+  const tabs = [['lessons', 'Lessons'], ['review', 'Practice'], ...(VID.shows.length ? [['video', 'Video']] : []), ...(Module.on ? [['books', 'Books'], ...Module.tabs.map(t => [t.id, t.label])] : []), ['settings', 'Settings']];
+  $('#tabs').innerHTML = tabs.map(([k, t]) => `<button class="tab" data-tab="${k}" aria-current="${cur === k}">${ICONS[k] || ICONS.module}<span>${esc(t)}</span>${k === 'review' && due ? `<span class="count">${due}</span>` : ''}</button>`).join('');
   // the Practice tab reopens the part used last (a running card session is left); Lessons goes to the top of the grid
   $$('[data-tab]', $('#tabs')).forEach(b => b.onclick = () => { const k = b.dataset.tab; if (k === 'review') { sess = null; go(store.get('pracSec', CARDS ? 'review' : 'lists')); return; } if (k === 'lessons') resetHome = true; go(k); });
 }
@@ -568,7 +569,7 @@ document.addEventListener('click', e => {
   if (!sh.classList.contains('open') || !e.target.isConnected || sh.contains(e.target) || e.target.closest('.tok, [data-note], [data-word], [data-ann], [data-sheet], .tab')) return;
   closeSheet();
 });
-function currentTab() { const h = location.hash.slice(1) || 'lessons'; return /^(lesson|bookcourse)/.test(h) ? 'lessons' : /^(dict|lists?|list-|drills|bridge|review)/.test(h) ? 'review' : /^(video|vid-)/.test(h) ? 'video' : /^books/.test(h) ? 'books' : h; }
+function currentTab() { const h = location.hash.slice(1) || 'lessons'; return /^(lesson|bookcourse)/.test(h) ? 'lessons' : /^(dict|lists?|list-|drills|bridge|review)/.test(h) ? 'review' : /^(video|vid-)/.test(h) ? 'video' : /^books/.test(h) ? 'books' : Module.tabOf(h) || h; }
 
 // ---------- review deck (Leitner boxes, kept in this browser)
 function addToDeck(ids) { let n = 0; ids.forEach(id => { if (id && DATA.dict[id] && !deck[id]) { deck[id] = { box: 0, due: Date.now(), at: Date.now() }; n++; } }); store.set('deck', deck); return n; }

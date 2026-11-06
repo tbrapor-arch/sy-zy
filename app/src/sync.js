@@ -2,11 +2,11 @@
 // One fine-grained token does both jobs: Gists read/write (sync) and Contents read on the private repo (Books tab).
 // It stays in this browser. Pull + merge when the app opens, push a few seconds after any change.
 const HOSTED = !!document.querySelector('link[rel=manifest]');
-const SYNC_KEYS = new Set(['doneAt', 'deck', 'days', 'bookNotes', 'lists', 'bookRead']);
+const SYNC_KEYS = new Set(['doneAt', 'deck', 'days', 'bookNotes', 'lists', 'bookRead', 'modSync']);   // modSync: the private module's own progress, { key: { at, … } }
 const _set = store.set.bind(store);
 store.set = (k, v) => { _set(k, v); if (SYNC_KEYS.has(k) && typeof Sync !== 'undefined') Sync.soon(); };
 
-function progressData() { return { app: 'syzy', v: 2, at: new Date().toISOString(), doneAt, deck, lists, bookNotes, days: [...studyDays], bookRead: store.get('bookRead', {}), last: store.get('last', null) }; }
+function progressData() { return { app: 'syzy', v: 2, at: new Date().toISOString(), doneAt, deck, lists, bookNotes, days: [...studyDays], bookRead: store.get('bookRead', {}), modSync: store.get('modSync', {}), last: store.get('last', null) }; }
 // merge another copy into this one: earliest finish dates, the most recently reviewed card, the latest book note
 function mergeProgress(d) {
   if (!d || d.app !== 'syzy') throw new Error('not a progress file');
@@ -14,9 +14,10 @@ function mergeProgress(d) {
   Object.entries(d.deck || {}).forEach(([k, v]) => { const m = deck[k]; if (!m || (v.at || 0) > (m.at || 0) || (!v.at && !m.at && v.box > m.box)) deck[k] = v; });
   Object.entries(d.bookNotes || {}).forEach(([k, v]) => { const r = bookNotes[k]; if (!r || (v.at || '') >= (r.at || '')) bookNotes[k] = v; });
   const br = store.get('bookRead', {}); Object.entries(d.bookRead || {}).forEach(([k, v]) => { if (!br[k] || (v && v < br[k])) br[k] = v; });
+  const ms = store.get('modSync', {}); Object.entries(d.modSync || {}).forEach(([k, v]) => { if (!ms[k] || (v && (v.at || 0) > (ms[k].at || 0))) ms[k] = v; });
   (d.days || []).forEach(x => studyDays.add(x));
   if (d.lists) mergeLists(d.lists);
-  saveDone(); _set('deck', deck); _set('bookNotes', bookNotes); _set('lists', lists); _set('days', [...studyDays]); _set('bookRead', br);
+  saveDone(); _set('deck', deck); _set('bookNotes', bookNotes); _set('lists', lists); _set('days', [...studyDays]); _set('bookRead', br); _set('modSync', ms);
 }
 const Sync = {
   FILE: 'syzy-progress.json', timer: null, busy: false,

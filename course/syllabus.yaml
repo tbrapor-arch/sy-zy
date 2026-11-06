@@ -1,4 +1,4 @@
-# The 100 lessons (as Tsheh-tû's syllabus.yaml): title + what each one teaches. Lessons 1–35 are written; 36–100 are
+# The 100 lessons (as Tsheh-tû's syllabus.yaml): title + what each one teaches. Lessons 1–49 are written; 50–100 are
 # the plan, to adjust with `make coverage` (the most frequent words not taught yet) before each batch.
 # Every 7th lesson is a review; the second wave starts at lesson 50.
 lessons:
@@ -37,20 +37,20 @@ lessons:
 - {n: 33, en: 'News from the lane', focus: '听讲, 碰着, 好像, 叫 "greet", 娘舅, 本生, 为啥/因得, 后首来, 苗头'}
 - {n: 34, en: 'New Year', focus: '大年夜, 年夜饭, 转去, 正好, 一家门, 小囡, 红包/压岁钿, 新年好, 汤团'}
 - {n: 35, en: 'Review', review: true, focus: 'conditions (个话, 末, 介末), plurals, results with 着 and 牢, knowing (晓得/认得/会得), 又 vs 再'}
-- {n: 36, en: 'Train to Suzhou', focus: '火车, 来回票, 苏州闲话 vs 上海闲话'}
-- {n: 37, en: 'The washing machine', focus: '修, 来事 / 勿来事, 坏脱, 寻人'}
-- {n: 38, en: 'Hairy crab season', focus: '大闸蟹, 剥, 吃相, 鲜'}
-- {n: 39, en: 'Making friends', focus: '自家, 认得, 介绍, 朋友'}
-- {n: 40, en: 'A walk on Wukang Road', focus: '老房子, 梧桐树, 一面…一面…'}
-- {n: 41, en: 'Feelings', focus: '开心, 难过, 动气, 吓煞'}
-- {n: 42, en: 'Review', review: true}
-- {n: 43, en: 'Comparing', focus: '比, 一样, 勿及, 越…越…'}
-- {n: 44, en: 'Shanghai sayings', focus: '拎勿清, 老克勒, 嘎讪胡'}
-- {n: 45, en: 'Spring soup', focus: '腌笃鲜, 笃, 鲜, 火 (heat)'}
-- {n: 46, en: 'Online shopping', focus: '网浪买, 退, 换, 寄转去'}
-- {n: 47, en: 'An argument', focus: '吵相骂, 帮帮忙, 勿要讲'}
-- {n: 48, en: 'Making up', focus: '对勿起, 算了, 勿要紧'}
-- {n: 49, en: 'Review', review: true}
+- {n: 36, en: 'Train to Suzhou', focus: '火车, 票, 靠/窗门/对过, 结棍, 以前, 埭 (trips), 亲眷, 苏州闲话, 差勿多, 更加, 听得懂, 面'}
+- {n: 37, en: 'The washing machine', focus: '弄, 弄勿来, 吓煞, 拆, 修得好, X是X得…必过, 价钿, 有数, 合算, 灵光, 老 "old"'}
+- {n: 38, en: 'Hairy crab season', focus: '大闸蟹, 清蒸/蒸, 蘸, 剥, 脚, 鲜, verb + 起来, 慢慢叫, 吃相'}
+- {n: 39, en: 'Making friends', focus: '名字, 上海, 学, 大学/读书, 交换, 对, 主意, 加微信, 话 "say", 附近, 条'}
+- {n: 40, en: 'A walk on Wukang Road', focus: '荡马路, 意思, 一面…一面, 随便, 梧桐树, 腔调, 造, 洋房, 上去, 下头, 望'}
+- {n: 41, en: 'Feelings', focus: '眼睛, 哭, 难过, 欺负, 分手, 脾气, 一歇, 动气, 伤心, 会 "will", 懂, 戆, 陪, 应该'}
+- {n: 42, en: 'Review', review: true, focus: 'can/can''t (听得懂, 修得好, 弄勿来), praise words, 更加/顶, measure words 埭 条 部, directions'}
+- {n: 43, en: 'Comparing', focus: '掼, 两样, 比 + 交关, 加二, 旧, 推扳, 越来越, 勿及, 舍勿得, 颜色'}
+- {n: 44, en: 'Shanghai sayings', focus: '嘎讪胡, 昨日, 拎勿清, 识相, 面孔, 难为情, 老克勒, 老底子, 洋泾浜, 吹牛皮, 坍台'}
+- {n: 45, en: 'Spring soup', focus: '腌笃鲜, 笋, 嫩, 笃, 火, 滚, 闻到, 一记头, 肚皮, 饿煞, 心急吃勿着热豆腐'}
+- {n: 46, en: 'Online shopping', focus: '网浪, 收到, 合身, 着着看, 着勿落, 退, 回, 寄转去, 算是, 道理, 拨 passive, 骗'}
+- {n: 47, en: 'An argument', focus: '吵相骂, 插队, 帮帮忙, 让, 先来后到, 搭侬啥搭界, 管闲事, 凶, 倒霉, 骂'}
+- {n: 48, en: 'Making up', focus: '用场, 困勿着, 气, 错, 原谅, 吃醋, 误会, 后悔, 赔礼, 算了, 勿好意思, 和好'}
+- {n: 49, en: 'Review', review: true, focus: 'comparing, results with 到, passive 拨, verb + 了 + time + 了, Shanghai sayings, quarrelling and making up'}
 - {n: 50, en: 'Sam writes in Shanghainese', focus: 'second wave starts; writing dialect characters'}
 - {n: 51, en: 'At the hospital', focus: '挂号, 住医院, 开刀'}
 - {n: 52, en: 'A job interview', focus: '工作, 面试, polite register'}

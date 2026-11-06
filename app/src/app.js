@@ -32,6 +32,9 @@ const doneAt = store.get('doneAt', {});
 const done = new Set(Object.keys(doneAt).map(Number));
 function saveDone() { store.set('doneAt', doneAt); }
 let deck = store.get('deck', {});
+// the flashcard system (Leitner review deck) is switched off for now: its code and the saved deck stay, finished lessons
+// still add their words to the deck, but nothing about it is shown. Set to true to bring it back.
+const CARDS = false;
 // ---------- vocabulary lists (as in Tsheh-tû): a word added from a card goes to the list of the page being read: one
 // list for all the lessons, one per book. lists[key] = { t: title, w: { id: +time added | -time removed } }; synced.
 let lists = store.get('lists', {});
@@ -137,7 +140,7 @@ function route() {
   if ((m = h.match(/^list-(.+)$/))) return showList(decodeURIComponent(m[1]));
   if (h === 'drills') return showDrills();
   if (h === 'books' || /^books-/.test(h) || /^bookcourse/.test(h)) return Module.show(h);
-  if (h === 'review') return showReview();
+  if (h === 'review') { if (!CARDS) { history.replaceState(null, '', '#lists'); return showLists(); } return showReview(); }
   if (h === 'bridge') return showBridge();
   if (h === 'settings') return showSettings();
   showLessons();
@@ -154,11 +157,11 @@ window.addEventListener('hashchange', () => {
 function wireGo(root) { $$('[data-go]', root).forEach(b => b.onclick = () => go(b.dataset.go)); }
 
 function renderTabs(cur) {
-  const due = dueCards().length;
+  const due = CARDS ? dueCards().length : 0;
   const tabs = [['lessons', 'Lessons'], ['review', 'Practice'], ...(Module.on ? [['books', 'Books']] : []), ['settings', 'Settings']];
   $('#tabs').innerHTML = tabs.map(([k, t]) => `<button class="tab" data-tab="${k}" aria-current="${cur === k}">${ICONS[k]}<span>${t}</span>${k === 'review' && due ? `<span class="count">${due}</span>` : ''}</button>`).join('');
   // the Practice tab reopens the part used last (a running card session is left); Lessons goes to the top of the grid
-  $$('[data-tab]', $('#tabs')).forEach(b => b.onclick = () => { const k = b.dataset.tab; if (k === 'review') { sess = null; go(store.get('pracSec', 'review')); return; } if (k === 'lessons') resetHome = true; go(k); });
+  $$('[data-tab]', $('#tabs')).forEach(b => b.onclick = () => { const k = b.dataset.tab; if (k === 'review') { sess = null; go(store.get('pracSec', CARDS ? 'review' : 'lists')); return; } if (k === 'lessons') resetHome = true; go(k); });
 }
 
 // ---------- lessons list
@@ -184,7 +187,7 @@ function showLessons() {
     <button class="item" data-go="lesson-0"><span class="no">0</span><span><span class="tt">${esc(hzt('读拼音'))}</span><br><span class="ts">The spellings · start here</span></span><span class="chev">›</span></button>
     ${Module.bookcourse ? `<button class="item" data-go="bookcourse"><span class="no han">${esc(hzt('课'))}</span><span><span class="tt">Book course</span><br><span class="ts">Your course book, with its audio</span></span><span class="chev">›</span></button>` : ''}
     <div class="lgrid">${DATA.lessons.map(tile).join('')}</div>
-    <p class="sub" style="margin:0;font-size:.85rem">Every 7th lesson (复习) is a review. Each lesson: a short dialogue to read and understand (passive phase), notes, the new words and a few exercises. Mark it done and its words go into your review deck.</p>
+    <p class="sub" style="margin:0;font-size:.85rem">Every 7th lesson (复习) is a review. Each lesson: a short dialogue to read and understand (passive phase), notes, the new words and a few exercises. ${CARDS ? 'Mark it done and its words go into your review deck.' : 'Mark it done when you have finished it.'}</p>
     <details class="journal"><summary><span class="han">${esc(hzt('日记'))}</span> Journal (${journal.length})</summary>
       ${journal.length ? `<ul>${journal.map(([n, d]) => `<li><time>${fmtDate(d)}</time><button class="linkish" data-go="lesson-${n}">Lesson ${n} · ${esc(byId[n] ? byId[n].title.en : '')}</button></li>`).join('')}</ul>`
         : '<p class="sub">Lessons you finish show up here with their date.</p>'}</details>
@@ -264,8 +267,8 @@ function showLesson(L) {
     <details class="allnotes" id="sec-notes"><summary><span class="han">${esc(hzt('注解'))}</span> All notes (${L.notes.length})</summary>
     <ol class="notes">${L.notes.map((n, i) => `<li class="note" id="note-${i + 1}"><span class="nn">${i + 1}</span><p><span class="tag">Line ${n.ref}</span>${fmt(n.text)}</p></li>`).join('')}</ol></details>
     <h2 id="sec-words"><span class="han">${esc(hzt('新词'))}</span> New words</h2>
-    <div class="wgrid">${L.new_words.map(id => { const e = DATA.dict[id]; return `<button class="wchip ${cog(id)[2]} ${deck[id] ? 'indeck' : ''}" data-word="${esc(id)}"><b>${esc(H(e))}</b><span class="r">${esc(spell(e))}</span><span class="g">${esc((L.new_en || {})[id] || e.gloss || '')}</span></button>`; }).join('')}</div>
-    <div class="row"><button class="btn small quiet" id="anki">Copy for Anki</button><span class="sub" style="font-size:.85rem">${L.new_words.filter(w => deck[w]).length} of ${L.new_words.length} in your review deck</span></div>
+    <div class="wgrid">${L.new_words.map(id => { const e = DATA.dict[id]; return `<button class="wchip ${cog(id)[2]} ${CARDS && deck[id] ? 'indeck' : ''}" data-word="${esc(id)}"><b>${esc(H(e))}</b><span class="r">${esc(spell(e))}</span><span class="g">${esc((L.new_en || {})[id] || e.gloss || '')}</span></button>`; }).join('')}</div>
+    <div class="row"><button class="btn small quiet" id="anki">Copy for Anki</button>${CARDS ? `<span class="sub" style="font-size:.85rem">${L.new_words.filter(w => deck[w]).length} of ${L.new_words.length} in your review deck</span>` : ''}</div>
     <h2 id="sec-ex"><span class="han">${esc(hzt('练习'))}</span> Practice</h2>
     <p class="sub" style="margin:0;font-size:.85rem">Type the answer in characters or in any of the three spellings; hyphens, spaces and tone numbers do not matter.</p>
     <div class="ex">${L.exercises.map((e, i) => exHTML(e, i)).join('')}</div>
@@ -283,13 +286,13 @@ function showLesson(L) {
 function finishBlock(L) {
   const box = $('#finish'), nxt = DATA.lessons.find(l => l.id > L.id), d = doneAt[L.id];
   box.innerHTML = `<div><b>${d !== undefined ? `✓ Lesson done${d ? ' ' + fmtDate(d) : ''}` : 'Finished with this lesson?'}</b>
-      <div class="sub" style="font-size:.9rem">${d !== undefined ? 'Its new words are in your review deck. Come back to it any time.' : 'Read, reveal, check the notes and do the practice. Then mark it done: its new words go into your review deck.'}</div></div>
+      <div class="sub" style="font-size:.9rem">${d !== undefined ? (CARDS ? 'Its new words are in your review deck. Come back to it any time.' : 'Come back to it any time.') : (CARDS ? 'Read, reveal, check the notes and do the practice. Then mark it done: its new words go into your review deck.' : 'Read, reveal, check the notes and do the practice. Then mark it done.')}</div></div>
     <div class="row">${d !== undefined ? '<button class="btn small quiet" id="undo">Undo</button>' : '<button class="btn" id="mark">Mark as done</button>'}
       ${nxt ? `<button class="btn ${d !== undefined ? '' : 'line'}" data-go="lesson-${nxt.id}">Lesson ${nxt.id} →</button>` : '<button class="btn line" data-go="lessons">Lessons</button>'}</div>`;
   wireGo(box);
   const mk = $('#mark', box), un = $('#undo', box);
-  if (mk) mk.onclick = () => { doneAt[L.id] = today(); done.add(L.id); saveDone(); studied(); const n = addToDeck(L.new_words); toast(n ? `Lesson done · ${n} words added to review` : 'Lesson marked as done'); renderTabs('lessons'); finishBlock(L); };
-  if (un) un.onclick = () => { delete doneAt[L.id]; done.delete(L.id); saveDone(); toast('Undone · words stay in your review deck'); finishBlock(L); };
+  if (mk) mk.onclick = () => { doneAt[L.id] = today(); done.add(L.id); saveDone(); studied(); const n = addToDeck(L.new_words); toast(CARDS && n ? `Lesson done · ${n} words added to review` : 'Lesson marked as done'); renderTabs('lessons'); finishBlock(L); };
+  if (un) un.onclick = () => { delete doneAt[L.id]; done.delete(L.id); saveDone(); toast(CARDS ? 'Undone · words stay in your review deck' : 'Undone'); finishBlock(L); };
 }
 async function copyText(txt, btn, okMsg) {
   try { await navigator.clipboard.writeText(txt); btn.textContent = '✓ Copied'; toast(okMsg); }
@@ -478,7 +481,7 @@ function showReview() {
 }
 // Practice tab (温习), as in Tsheh-tû: cards, lists, vocabulary and drills share one tab; the switch under the title picks
 // the part, and the tab reopens the part used last
-const PRAC = () => [['review', 'Cards'], ['lists', 'My lists'], ['dict', 'Vocabulary'], ['drills', 'Drills']];
+const PRAC = () => [...(CARDS ? [['review', 'Cards']] : []), ['lists', 'My lists'], ['dict', 'Vocabulary'], ['drills', 'Drills']];
 function pracHead(sec, what) {
   store.set('pracSec', sec);
   return `<div class="head"><span class="eyebrow">Practice</span><h1>${esc(hzt('温习'))}</h1><span class="rom">${esc(spell(DATA.dict[idOf('温习')]) || '')} · ${what}</span></div>
@@ -505,7 +508,7 @@ function showList(k) {
     <div class="head"><span class="eyebrow"><button class="xback" data-go="lists" aria-label="Back to my lists">‹</button> My lists${kind ? ' · ' + kind : ''}</span>
       <div class="lname"><h1>${esc(listTitle(k))}</h1><button class="icon sq" id="lren" aria-label="Rename this list" title="Rename">✎</button></div>
       <span class="rom">${ids.length} word${ids.length === 1 ? '' : 's'}${lists[k] && lists[k].nm ? ` · ${esc(listBase(k))}` : ''}</span></div>
-    ${ids.length ? `<div class="row"><button class="btn" id="lfc">Flashcards →</button><button class="btn small quiet" id="lanki">Copy for Anki</button></div>
+    ${ids.length ? `<div class="row">${CARDS ? '<button class="btn" id="lfc">Flashcards →</button>' : ''}<button class="btn small quiet" id="lanki">Copy for Anki</button></div>
     <div class="vwrap"><table class="vtable"><tbody>${ids.map(id => { const c = DATA.dict[id];
       return `<tr class="${cog(id)[2]}" data-word="${esc(id)}" tabindex="0"><td class="vh">${esc(H(c))}</td><td class="vr">${esc(spell(c))}</td><td class="ve">${esc(c.gloss || '')}</td>
         <td><button class="icon" data-rm="${esc(id)}" aria-label="Remove ${esc(H(c))} from this list">×</button></td></tr>`; }).join('')}</tbody></table></div>`
@@ -618,7 +621,7 @@ function showSettings() {
       <b>IPA</b> shows each syllable with the pitch it has inside its word. <b>Word tone number</b> puts Wugniu's tone class in front of each word, as Wiktionary does (⁶zaon-he-gnin): one number per word, because the first syllable sets the tune.</p>
     ${syncBlock()}
     <h2><span class="han">${esc(hzt('进度'))}</span> Your progress</h2>
-    <div class="card"><span>${done.size} lessons done · ${Object.keys(deck).length} words in review · ${studyDays.size} days studied</span>
+    <div class="card"><span>${done.size} lessons done · ${CARDS ? Object.keys(deck).length + ' words in review · ' : ''}${studyDays.size} days studied</span>
       <span class="sub" style="font-size:.9rem">Progress is kept in this browser, and in your gist when sync is on (above). A file is a copy you can keep or move by hand.</span>
       <div class="row"><button class="btn small" id="exp">Save progress file</button><button class="btn small line" id="imp">Load progress file</button>
         <input type="file" id="imp-file" accept=".json,application/json" hidden></div></div>

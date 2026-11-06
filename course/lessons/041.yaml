@@ -1,0 +1,188 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 41
+title:
+  en: Feelings
+  hanzi: 勿 开心
+review: false
+setting: >-
+  A Friday evening. Sam meets Xiao Zhang for their language exchange; she arrives late, and her eyes are red.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 小张 ， 侬 哪能 了 ？ 眼睛 介 红 。
+  en: Xiao Zhang, what's wrong? Your eyes are so red.
+- n: 2
+  speaker: 小张
+  hanzi: 我 刚刚 哭 过 ， 心里 老 难过 。
+  en: I've just been crying, I feel awful.
+- n: 3
+  speaker: Sam
+  hanzi: 啥个 事体 ？ 啥人 欺负 侬 了 ？
+  en: What happened? Has someone been mean to you?
+- n: 4
+  speaker: 小张
+  hanzi: 我 男朋友 讲 ， 伊 要 搭 我 分手 。
+  en: My boyfriend says he wants to break up with me.
+- n: 5
+  speaker: Sam
+  hanzi: 为啥 ？ 㑚 本生 勿是 老 好 个 啊 ？
+  en: Why? Weren't you two getting on really well?
+- n: 6
+  speaker: 小张
+  hanzi: 伊 讲 我 脾气 忒 大 ， 一歇 就 发 。
+  en: He says I've got a temper, I flare up in no time.
+- n: 7
+  speaker: Sam
+  hanzi: 侬 覅 动气 ， 慢慢叫 讲 。
+  en: Don't get upset, tell me slowly.
+- n: 8
+  speaker: 小张
+  hanzi: 我 勿是 动气 ， 我 是 伤心 。
+  en: I'm not angry, I'm hurt.
+- n: 9
+  speaker: Sam
+  hanzi: 吃 杯 热 茶 ， 心里 会 适意 一眼 。
+  en: Have a cup of hot tea, you'll feel a bit better.
+- n: 10
+  speaker: 小张
+  hanzi: 谢谢 侬 ， 侬 真 是 好 人 。
+  en: Thank you, you're really kind.
+- n: 11
+  speaker: Sam
+  hanzi: 伊 勿 懂 侬 ， 是 伊 戆 。
+  en: If he doesn't understand you, he's the fool.
+- n: 12
+  speaker: 小张
+  hanzi: 侬 讲 了 交关 好 闲话 ， 我 开心 交关 了 。
+  en: You've said lots of nice things, I feel much happier.
+- n: 13
+  speaker: Sam
+  hanzi: 介末 笑 一 笑 ， 阿拉 去 吃 夜饭 。
+  en: Then give us a smile, let's go and have dinner.
+- n: 14
+  speaker: 小张
+  hanzi: 好个 ， 我 请客 ， 谢谢 侬 陪 我 。
+  en: OK, it's on me. Thanks for keeping me company.
+- n: 15
+  speaker: Sam
+  hanzi: 勿客气 ， 朋友 是 应该 个 。
+  en: Don't mention it, that's what friends are for.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    眼睛 is "eye(s)", 红 "red": 眼睛红 "red eyes" (from crying); 眼睛红 also means "jealous".
+- ref: 2
+  topic: vocab
+  text: >-
+    哭 is "to cry", 哭过 "have cried". 难过 is "sad, upset" (Mandarin 难过); 心里难过 "feel sad inside".
+- ref: 3
+  topic: vocab
+  text: >-
+    欺负 "to bully, to treat badly": 啥人欺负侬了？ "who's been mean to you?".
+- ref: 4
+  topic: vocab
+  text: >-
+    男朋友 "boyfriend" (女朋友, lesson 33). 分手 "to break up": 搭 + person + 分手 "break up with".
+- ref: 6
+  topic: vocab
+  text: >-
+    脾气 is "temper, character": 脾气大 "quick-tempered", 脾气好 "easy-going". 一歇 "a moment": 一歇就发 "flares up in a moment"; 发 is
+    "to break out", short for 发脾气 "lose one's temper".
+- ref: 7
+  topic: vocab
+  text: >-
+    动气 "to get angry" (Mandarin 生气). 覅动气 "don't be angry" is what you say to calm someone.
+- ref: 8
+  topic: vocab
+  text: >-
+    伤心 "heartbroken, hurt": stronger than 难过.
+- ref: 9
+  topic: grammar
+  text: >-
+    会 + verb is "will (probably)": 心里会适意一眼 "you'll feel a bit better". 适意 "comfortable" (lesson 13). 茶 is tea (the drink);
+    吃茶 "to drink tea".
+- ref: 11
+  topic: vocab
+  text: >-
+    懂 "to understand": 勿懂侬 "doesn't understand you". 戆 gaon is "foolish, daft", a very common Shanghai word, not too rude:
+    戆大 "a fool".
+- ref: 12
+  topic: grammar
+  text: >-
+    交关 after an adjective is "much more" (lesson 17): 开心交关了 "much happier now".
+- ref: 13
+  topic: grammar
+  text: >-
+    Verb + 一 + verb softens a request (lesson 18): 笑一笑 "give a smile". 笑 "to laugh, smile" (lesson 16).
+- ref: 14
+  topic: vocab
+  text: >-
+    陪 "to keep someone company": 陪我 "be with me", 陪姆妈去医院.
+- ref: 15
+  topic: vocab
+  text: >-
+    应该 "should, ought to": 是应该个 "it's only right", the reply when someone thanks you warmly.
+new_words:
+- hanzi: 眼睛
+  en: eye
+- hanzi: 红
+  en: red
+- hanzi: 哭
+  en: to cry
+- hanzi: 难过
+  en: sad, upset
+- hanzi: 欺负
+  en: to bully, treat badly
+- hanzi: 男朋友
+  en: boyfriend
+- hanzi: 分手
+  en: to break up
+- hanzi: 脾气
+  en: temper
+- hanzi: 一歇
+  en: a moment
+- hanzi: 发
+  en: to break out; to lose (one’s temper)
+- hanzi: 动气
+  en: to get angry
+- hanzi: 伤心
+  en: heartbroken, hurt
+- hanzi: 适意
+  en: comfortable
+- hanzi: 茶
+  en: tea
+- hanzi: 懂
+  en: to understand
+- hanzi: 戆
+  en: foolish, daft
+- hanzi: 陪
+  en: to keep company
+- hanzi: 应该
+  en: should, ought to
+exercises:
+  translate:
+  - hanzi: 小人 哭 了 ， 伊 寻勿着 姆妈 了 。
+    en: The child is crying, he can't find his mum.
+  - hanzi: 伊 脾气 老 好 ， 一眼 也 勿 会 动气 。
+    en: He's very easy-going, he never gets angry at all.
+  - hanzi: 我 勿 懂 侬 讲 个 意思 。
+    en: I don't understand what you mean.
+  fill:
+  - hanzi: 侬 等 ＿ ， 我 马上 来 。
+    en: Wait a moment, I'm coming right away.
+    answer: 一歇
+  - hanzi: 礼拜天 我 ＿ 外婆 去 苏州 。
+    en: On Sunday I'm going to Suzhou with Grandma (to keep her company).
+    answer: 陪
+  - hanzi: 侬 覅 ＿ ， 我 勿是 讲 侬 。
+    en: Don't get upset, I wasn't talking about you.
+    answer: 动气
+  say:
+  - hanzi: 侬 哪能 了 ？ 啥 事体 ？
+    en: What's the matter? What happened?
+  - hanzi: 我 今朝 心里 勿 适意 。
+    en: I don't feel right today.
+  - hanzi: 阿拉 去 吃 杯 茶 。
+    en: Let's go for a cup of tea.

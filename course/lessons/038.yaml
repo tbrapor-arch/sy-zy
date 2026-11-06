@@ -1,0 +1,181 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 38
+title:
+  en: Hairy crab season
+  hanzi: 大闸蟹
+review: false
+setting: >-
+  A Saturday in October. The auntie comes back from the market with a string bag of live crabs.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: Sam ， 十 月 了 ， 好 吃 大闸蟹 了 ！
+  en: Sam, it's October, hairy crab time!
+- n: 2
+  speaker: Sam
+  hanzi: 大闸蟹 我 还 呒没 吃 过 。
+  en: I've never had hairy crab.
+- n: 3
+  speaker: 阿姨
+  hanzi: 今朝 我 买 了 四 只[ʦᴀʔ55] ， 侪 是 活 个 。
+  en: I bought four today, all alive.
+- n: 4
+  speaker: Sam
+  hanzi: 哪能 烧 ？ 红烧 还是 清蒸 ？
+  en: How do you cook them? Red-braised or steamed?
+- n: 5
+  speaker: 阿姨
+  hanzi: 蒸 廿 分钟 ， 蘸 醋 搭 姜 吃 。
+  en: Steam them twenty minutes and eat them dipped in vinegar and ginger.
+- n: 6
+  speaker: Sam
+  hanzi: 哪能 吃 ？ 我 勿 会得 剥 。
+  en: How do you eat them? I don't know how to shell them.
+- n: 7
+  speaker: 阿姨
+  hanzi: 先 剥 脚 ， 再 开 壳 。
+  en: First the legs, then open the shell.
+- n: 8
+  speaker: 阿姨
+  hanzi: 里头 黄 个 是 蟹黄 ， 顶 鲜 了 ！
+  en: The yellow inside is the roe, the most delicious part!
+- n: 9
+  speaker: Sam
+  hanzi: 肉 介 少 ， 剥 起来 介 难 ！
+  en: There's so little meat, and it's so hard to get out!
+- n: 10
+  speaker: 阿姨
+  hanzi: 慢慢叫 剥 ， 侬 吃相 交关 难看 。
+  en: Take your time, you look a real mess eating.
+- n: 11
+  speaker: Sam
+  hanzi: 我 手 浪 侪 是 蟹 个 味道 。
+  en: My hands smell of crab all over.
+- n: 12
+  speaker: 阿姨
+  hanzi: 吃 好 用 茶叶 汏 手 ， 味道 就 呒没 了 。
+  en: When you're done, wash your hands with tea leaves and the smell goes.
+- n: 13
+  speaker: Sam
+  hanzi: 搿 种 蟹 一 只[ʦᴀʔ55] 几钿 ？
+  en: How much is one of these crabs?
+- n: 14
+  speaker: 阿姨
+  hanzi: 一百 块 一 只[ʦᴀʔ55] ， 一 年 吃 一 趟 。
+  en: A hundred yuan each. You have them once a year.
+notes:
+- ref: 1
+  topic: culture
+  text: >-
+    大闸蟹 are the Chinese mitten crabs of the lakes west of Shanghai, eaten from late September to November: 好吃大闸蟹了 "you can
+    eat hairy crab now". 十月 "October": months are numbers + 月.
+- ref: 4
+  topic: vocab
+  text: >-
+    清蒸 "steamed plain", as against 红烧 (lesson 31). 蒸 is "to steam" (line 5).
+- ref: 5
+  topic: vocab
+  text: >-
+    蘸 is "to dip (in a sauce)". 醋 is vinegar, 姜 ginger: the classic crab dip, ginger to balance the crab's "cold" nature.
+- ref: 6
+  topic: vocab
+  text: >-
+    剥 is "to peel, to shell": 剥蟹, 剥橘子. 会得 "know how to" (lesson 31).
+- ref: 7
+  topic: vocab
+  text: >-
+    脚 is "foot, leg": a crab's legs, a person's feet. 壳 is the shell. 开壳 "open the shell".
+- ref: 8
+  topic: vocab
+  text: >-
+    蟹黄 is the roe (of the female crab); 黄 is "yellow". 鲜 is "savoury, delicious", the taste Shanghai cooking looks for:
+    鲜得来 "so tasty". 顶…了 "the most …".
+- ref: 9
+  topic: grammar
+  text: >-
+    Verb + 起来 is "when you do it, (it's) …": 剥起来介难 "so hard to shell", 吃起来蛮好 "tastes good". 起来 alone is "to get up". 肉 is
+    meat, 少 "little, few"; 难 "hard, difficult".
+- ref: 10
+  topic: vocab
+  text: >-
+    慢慢叫 "slowly, take your time", like 好好叫 (lesson 22). 吃相 "the way one eats, table manners", 吃相难看 "eats like a pig" (also
+    said of greedy behaviour). 难看 "ugly", the opposite of 好看.
+- ref: 11
+  topic: grammar
+  text: >-
+    手浪 "on (my) hands", with 浪 "on" (lesson 26). 蟹 is crab in general.
+- ref: 12
+  topic: culture
+  text: >-
+    Washing your hands with tea leaves (or chrysanthemum leaves) after crab is an old Shanghai trick against the smell.
+- ref: 14
+  topic: vocab
+  text: >-
+    一百块一只 "a hundred yuan each": price + per item, as in 两块一斤 (lesson 25). 趟 counts times (lesson 13).
+new_words:
+- hanzi: 大闸蟹
+  en: hairy crab
+- hanzi: 清蒸
+  en: steamed (plain)
+- hanzi: 蒸
+  en: to steam
+- hanzi: 蘸
+  en: to dip (in sauce)
+- hanzi: 醋
+  en: vinegar
+- hanzi: 姜
+  en: ginger
+- hanzi: 剥
+  en: to peel, shell
+- hanzi: 脚
+  en: foot, leg
+- hanzi: 壳
+  en: shell
+- hanzi: 黄
+  en: yellow
+- hanzi: 蟹黄
+  en: crab roe
+- hanzi: 鲜
+  en: savoury, delicious
+- hanzi: 肉
+  en: meat
+- hanzi: 少
+  en: little, few
+- hanzi: 起来
+  en: (after a verb) when doing it; to get up
+- hanzi: 难
+  en: hard, difficult
+- hanzi: 慢慢叫
+  en: slowly, take your time
+- hanzi: 吃相
+  en: the way one eats, table manners
+- hanzi: 难看
+  en: ugly
+- hanzi: 蟹
+  en: crab
+exercises:
+  translate:
+  - hanzi: 搿 只[ʦᴀʔ55] 鱼 清蒸 顶 鲜 。
+    en: This fish is best steamed.
+  - hanzi: 上海闲话 讲 起来 难 伐 ？
+    en: Is Shanghainese hard to speak?
+  - hanzi: 侬 慢慢叫 跑 ， 我 辣 门口 等 侬 。
+    en: Take your time, I'll wait for you at the door.
+  fill:
+  - hanzi: 搿 只[ʦᴀʔ55] 菜 老 ＿ 个 ， 侬 吃吃看 。
+    en: This dish is really tasty, try it.
+    answer: 鲜
+  - hanzi: 番茄 ＿ 好 再 切一切 。
+    en: Peel the tomatoes before cutting them.
+    answer: 剥
+  - hanzi: 蟹 有 八 只[ʦᴀʔ55] ＿ 。
+    en: A crab has eight legs.
+    answer: 脚
+  say:
+  - hanzi: 我 欢喜 吃 蟹 。
+    en: I like crab.
+  - hanzi: 红烧肉 吃 起来 有 一眼 甜 。
+    en: Red-braised pork tastes a little sweet.
+  - hanzi: 蘸 一眼 醋 再 吃 。
+    en: Dip it in a bit of vinegar before you eat it.

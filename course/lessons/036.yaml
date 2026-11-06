@@ -1,0 +1,187 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 36
+title:
+  en: Train to Suzhou
+  hanzi: 坐 火车 到 苏州
+review: false
+setting: >-
+  Saturday morning at Shanghai station. Xiao Li is taking Sam to Suzhou for the day, to see his grandmother.
+dialogue:
+- n: 1
+  speaker: 小李
+  hanzi: 火车 八 点 三刻 开 ， 票 买 好 了 伐 ？
+  en: The train leaves at a quarter to nine. Have you got your ticket?
+- n: 2
+  speaker: Sam
+  hanzi: 买 好 了 ， 是 来回 票 。
+  en: Yes, it's a return.
+- n: 3
+  speaker: 小李
+  hanzi: 我 靠 窗门 ， 侬 坐 我 对过 。
+  en: I'll take the window, you sit opposite me.
+- n: 4
+  speaker: Sam
+  hanzi: 到 苏州 要 多少 辰光 ？
+  en: How long does it take to Suzhou?
+- n: 5
+  speaker: 小李
+  hanzi: 半 个 钟头 就 到 ， 结棍 伐 ？
+  en: Half an hour. Impressive, eh?
+- n: 6
+  speaker: Sam
+  hanzi: 介 快 ！ 我 以前 坐 汽车 要 两 个 钟头 。
+  en: So fast! Before, by coach, it took me two hours.
+- n: 7
+  speaker: 小李
+  hanzi: 苏州 我 一 年 要 去 好几 埭 。
+  en: I go to Suzhou several times a year.
+- n: 8
+  speaker: Sam
+  hanzi: 为啥 ？ 侬 有 亲眷 辣 苏州 啊 ？
+  en: Why? Do you have relatives in Suzhou?
+- n: 9
+  speaker: 小李
+  hanzi: 阿拉 外婆 蹲 辣 苏州 ， 伊 讲 苏州闲话 。
+  en: My grandmother lives there, she speaks Suzhou dialect.
+- n: 10
+  speaker: Sam
+  hanzi: 苏州闲话 搭 上海闲话 一样 伐 ？
+  en: Is Suzhou dialect the same as Shanghainese?
+- n: 11
+  speaker: 小李
+  hanzi: 差勿多 ， 必过 苏州闲话 更加 软 。
+  en: Almost, but Suzhou dialect is softer.
+- n: 12
+  speaker: Sam
+  hanzi: 我 听得懂 伐 ？
+  en: Will I understand it?
+- n: 13
+  speaker: 小李
+  hanzi: 侬 去 听 末 晓得 了 。
+  en: Go and listen, then you'll know.
+- n: 14
+  speaker: Sam
+  hanzi: 到 了 ， 先 去 吃 一 碗 面 ！
+  en: When we get there, let's have a bowl of noodles first!
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    火车 is "train" (火车站 the station), 票 "ticket": 电影票 (lesson 16), 火车票. The time: 八点三刻 "a quarter to nine" (lesson 16).
+- ref: 2
+  topic: vocab
+  text: >-
+    来回票 "return ticket", literally "come-back ticket"; a single is 单程票.
+- ref: 3
+  topic: vocab
+  text: >-
+    靠 is "to lean on, to be next to": 靠窗门 "by the window". 窗门 is "window" (Mandarin 窗户). 对过 is "opposite, across from" (Mandarin
+    对面): 坐我对过 "sit opposite me".
+- ref: 5
+  topic: vocab
+  text: >-
+    结棍 is "impressive, tough, a lot": 结棍伐？ "not bad, eh?", 伊吃得结棍 "he eats a lot". A word with real Shanghai flavour.
+- ref: 6
+  topic: vocab
+  text: >-
+    以前 is "before, in the past" (以后 "later", lesson 24). 汽车 is any motor vehicle; a long-distance coach is 长途汽车.
+- ref: 7
+  topic: grammar
+  text: >-
+    埭 da is the Shanghainese measure word for trips and times you go somewhere (Mandarin 趟): 去好几埭 "go several times", 跑一埭
+    "make a trip". 趟 (lesson 13) counts times in general; 埭 is the more local word. 好几 is "several, quite a few".
+- ref: 8
+  topic: vocab
+  text: >-
+    亲眷 is "relatives" (Mandarin 亲戚), a word kept from old Wu.
+- ref: 9
+  topic: culture
+  text: >-
+    外婆 is the mother's mother (lesson 20 had 外公). 苏州闲话: Suzhou speaks another Wu dialect, close to Shanghainese; Shanghainese
+    itself grew out of it and the Ningbo speech of the people who moved here.
+- ref: 11
+  topic: vocab
+  text: >-
+    差勿多 "almost, about the same" (Mandarin 差不多). 更加 "even more". 软 "soft": Suzhou speech is famous for being 糯 and 软, soft
+    and gentle.
+- ref: 12
+  topic: grammar
+  text: >-
+    听得懂 "can understand (by listening)", 听勿懂 "can't understand": 得 for can, 勿 for can't, between the verb and its result.
+    懂 alone is "to understand" (lesson 41).
+- ref: 13
+  topic: grammar
+  text: >-
+    末 after a condition is "then" (lesson 32): 侬去听末晓得了 "(if) you go and listen, then you'll know".
+- ref: 14
+  topic: culture
+  text: >-
+    面 is noodles (Mandarin 面条); 苏式汤面, noodles in a clear dark broth with toppings, is what people go to Suzhou to eat in
+    the morning.
+new_words:
+- hanzi: 火车
+  en: train
+- hanzi: 票
+  en: ticket
+- hanzi: 来回
+  en: there and back, return
+- hanzi: 靠
+  en: to lean on, be next to
+- hanzi: 窗门
+  en: window
+- hanzi: 对过
+  en: opposite, across from
+- hanzi: 苏州
+  en: Suzhou
+- hanzi: 结棍
+  en: impressive, tough, a lot
+- hanzi: 以前
+  en: before, in the past
+- hanzi: 汽车
+  en: car, coach, motor vehicle
+- hanzi: 好几
+  en: several, quite a few
+- hanzi: 埭
+  en: (measure word for trips, times one goes)
+- hanzi: 亲眷
+  en: relatives
+- hanzi: 外婆
+  en: grandmother (mother's mother)
+- hanzi: 苏州闲话
+  en: Suzhou dialect
+- hanzi: 差勿多
+  en: almost, about the same
+- hanzi: 更加
+  en: even more
+- hanzi: 软
+  en: soft
+- hanzi: 听得懂
+  en: can understand (by listening)
+- hanzi: 面
+  en: noodles
+exercises:
+  translate:
+  - hanzi: 我 以前 一 个 礼拜 要 去 两 埭 菜场 。
+    en: I used to go to the market twice a week.
+  - hanzi: 伊 蹲 辣 我 对过 ， 阿拉 是 隔壁邻舍 。
+    en: She lives opposite me, we're neighbours.
+  - hanzi: 外婆 个 闲话 我 只 听得懂 一眼眼 。
+    en: I can only understand a little of what Grandma says.
+  fill:
+  - hanzi: 银行 就 辣 地铁站 ＿ 。
+    en: The bank is right opposite the metro station.
+    answer: 对过
+  - hanzi: 今朝 冷 ， 明朝 ＿ 冷 。
+    en: It's cold today, and tomorrow it'll be even colder.
+    answer: 更加
+  - hanzi: 伊 一 个 人 吃 了 三 碗 面 ， 真 ＿ ！
+    en: He ate three bowls of noodles by himself, impressive!
+    answer: 结棍
+  say:
+  - hanzi: 我 要 买 一 张 来回 票 。
+    en: I'd like a return ticket.
+  - hanzi: 侬 有 亲眷 辣 美国 伐 ？
+    en: Do you have relatives in America?
+  - hanzi: 我 想 坐 辣 窗门 边浪 。
+    en: I'd like to sit by the window.

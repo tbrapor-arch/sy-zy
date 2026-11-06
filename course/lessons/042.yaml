@@ -1,0 +1,116 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 42
+title:
+  en: Review
+  hanzi: 复习
+review: true
+setting: >-
+  Sunday afternoon in the lane. The auntie wants to hear about Sam's week.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: Sam ， 礼拜六 侬 到 啥地方 去 了 ？
+  en: Sam, where did you go on Saturday?
+- n: 2
+  speaker: Sam
+  hanzi: 我 搭 小李 坐 火车 到 苏州 去 了 。
+  en: I went to Suzhou by train with Xiao Li.
+- n: 3
+  speaker: 阿姨
+  hanzi: 苏州闲话 侬 听得懂 伐 ？
+  en: Could you understand Suzhou dialect?
+- n: 4
+  speaker: Sam
+  hanzi: 听得懂 一眼 ， 外婆 讲 得 忒 快 。
+  en: A bit. Grandma speaks too fast.
+- n: 5
+  speaker: 阿姨
+  hanzi: 苏州 个 面 好吃 伐 ？
+  en: Are the Suzhou noodles good?
+- n: 6
+  speaker: Sam
+  hanzi: 结棍 ， 我 吃 了 两 碗 。
+  en: Amazing, I had two bowls.
+- n: 7
+  speaker: 阿姨
+  hanzi: 侬 个 洗衣机 修 好 了 伐 ？
+  en: Has your washing machine been fixed?
+- n: 8
+  speaker: Sam
+  hanzi: 呒没 修 ， 买 了 部 新 个 ， 更加 合算 。
+  en: I didn't fix it, I bought a new one, better value.
+- n: 9
+  speaker: 阿姨
+  hanzi: 听讲 侬 交 了 个 新 朋友 ？
+  en: I hear you've made a new friend?
+- n: 10
+  speaker: Sam
+  hanzi: 是 小张 ， 伊 辣 大学 里 读书 。
+  en: Yes, Xiao Zhang, she's at university.
+- n: 11
+  speaker: 阿姨
+  hanzi: 下趟 带 伊 到 弄堂 里 来 白相 。
+  en: Bring her round to the lane next time.
+- n: 12
+  speaker: Sam
+  hanzi: 好个 ， 我 陪 伊 荡马路 ， 再 来 望 侬 。
+  en: Sure. I'll take her for a stroll and then we'll come and see you.
+- n: 13
+  speaker: 阿姨
+  hanzi: 介末 我 烧 大闸蟹 ， 请 㑚 吃 。
+  en: Then I'll cook hairy crabs for you both.
+notes:
+- ref: 3
+  topic: grammar
+  text: >-
+    Can and can't between a verb and its result: 听得懂 / 听勿懂, 修得好 / 修勿好, 弄得来 / 弄勿来, 上勿来, 吃勿落. X是X得…，必过… concedes before a
+    "but": 修是修得好，必过价钿勿便宜.
+- ref: 6
+  topic: vocab
+  text: >-
+    Words of praise: 结棍 "impressive", 灵光 "works well", 有腔调 "stylish", 漂亮, 鲜 "tasty", 合算 "good value". And the other way:
+    戆 "daft", 难看, 吃相难看, 勿灵光.
+- ref: 8
+  topic: grammar
+  text: >-
+    更加 "even more" and 顶 "most"; 交关 after an adjective "much more" (开心交关了). 比 compares: 蓝个比白个好看 (lesson 15).
+- ref: 9
+  topic: vocab
+  text: >-
+    Measure words of this week: 埭 trips (去好几埭), 条 long things (一条弄堂), 部 machines (一部洗衣机), 只 crabs, parts, plugs.
+- ref: 12
+  topic: grammar
+  text: >-
+    Directions after verbs: 上去 "go up", 下来 "come down", 出去, 进去, 过来; places: 下头 "below", 上头, 外头, 里头, 后头, 对过 "opposite", 边浪
+    "beside". 望 is also "to visit": 来望侬.
+- ref: 13
+  topic: vocab
+  text: >-
+    Feelings: 开心, 难过, 伤心, 动气 "angry", 吓煞 "scared stiff"; 心里适意 "feel better".
+new_words: []
+exercises:
+  translate:
+  - hanzi: 苏州 个 面 比 上海 个 更加 鲜 。
+    en: Suzhou noodles are even tastier than Shanghai ones.
+  - hanzi: 伊 一面 剥 蟹 ， 一面 讲 闲话 。
+    en: She talks while she shells the crabs.
+  - hanzi: 侬 立 辣 下头 ， 我 上去 望 一 望 。
+    en: Stay down here, I'll go up and have a look.
+  fill:
+  - hanzi: 外婆 个 闲话 侬 ＿ 伐 ？
+    en: Can you understand what Grandma says?
+    answer: 听得懂
+  - hanzi: 伊 ＿ 了 ， 侬 覅 再 讲 了 。
+    en: She's upset, don't say any more.
+    answer: 动气
+  - hanzi: 搿 部 洗衣机 修 是 修 得 好 ， ＿ 要 等 一 个 礼拜 。
+    en: This washing machine can be fixed, but you have to wait a week.
+    answer: 必过
+  say:
+  - hanzi: 我 一 个 礼拜 去 两 埭 苏州 。
+    en: I go to Suzhou twice a week.
+  - hanzi: 侬 陪 我 去 荡马路 好 伐 ？
+    en: Will you come for a stroll with me?
+  - hanzi: 搿 条 弄堂 交关 有 腔调 。
+    en: This lane has real character.

@@ -1,0 +1,189 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 39
+title:
+  en: Making friends
+  hanzi: 交 朋友
+review: false
+setting: >-
+  A Tuesday evening language exchange in a café near Jing'an Temple. A young woman sits down opposite Sam.
+dialogue:
+- n: 1
+  speaker: 小张
+  hanzi: 侬好 ， 我 叫 小张 ， 侬 叫 啥 名字 ？
+  en: Hi, I'm Xiao Zhang. What's your name?
+- n: 2
+  speaker: Sam
+  hanzi: 我 叫 Sam ， 是 法国人 ， 辣 上海 工作 。
+  en: I'm Sam, I'm French, I work in Shanghai.
+- n: 3
+  speaker: 小张
+  hanzi: 侬 上海闲话 学 了 几 年 了 ？
+  en: How many years have you been learning Shanghainese?
+- n: 4
+  speaker: Sam
+  hanzi: 一 年 多 ， 隔壁 阿姨 教 我 个 。
+  en: A bit over a year, the auntie next door teaches me.
+- n: 5
+  speaker: 小张
+  hanzi: 我 辣 大学 里 读书 ， 学 法文 个 。
+  en: I'm at university, studying French.
+- n: 6
+  speaker: Sam
+  hanzi: 真个 ？ 介末 阿拉 好 交换 。
+  en: Really? Then we can do an exchange.
+- n: 7
+  speaker: 小张
+  hanzi: 对 ， 我 教 侬 上海闲话 ， 侬 教 我 法文 。
+  en: Right, I teach you Shanghainese, you teach me French.
+- n: 8
+  speaker: Sam
+  hanzi: 好 主意 ， 阿拉 加 个 微信 。
+  en: Good idea. Let's add each other on WeChat.
+- n: 9
+  speaker: 小张
+  hanzi: 我 来 扫 侬 。 侬 微信 浪 叫 啥 ？
+  en: I'll scan yours. What's your name on WeChat?
+- n: 10
+  speaker: Sam
+  hanzi: 就 叫 Sam ， 照片 是 外滩 。
+  en: Just Sam, the photo is the Bund.
+- n: 11
+  speaker: 小张
+  hanzi: 寻着 了 。 侬 话 侬 蹲 辣 啥地方 ？
+  en: Found you. Where did you say you live?
+- n: 12
+  speaker: Sam
+  hanzi: 静安寺 附近 ， 一 条 老 弄堂 里 。
+  en: Near Jing'an Temple, in an old lane.
+- n: 13
+  speaker: 小张
+  hanzi: 我 屋里 也 辣 边浪 ， 有 空 来 白相 。
+  en: My family lives nearby too, come over when you're free.
+- n: 14
+  speaker: Sam
+  hanzi: 一定 ！ 认得 侬 老 开心 个 。
+  en: Definitely! Lovely to meet you.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    交朋友 "to make friends": 交 is "to make (friends), to hand over".
+- ref: 1
+  topic: vocab
+  text: >-
+    名字 is "name": 侬叫啥名字？ "what's your name?" (lesson 1 had 侬叫啥). 小张 "young Zhang": 小 + surname for a young person, 老 + surname
+    for an older one.
+- ref: 2
+  topic: vocab
+  text: >-
+    上海 on its own: Shanghai the city. 辣上海工作 "work in Shanghai": place with 辣 before the verb.
+- ref: 3
+  topic: grammar
+  text: >-
+    学 is "to learn, to study". Verb + 了 + time + 了 is "have been doing for…": 学了几年了 "have been learning for how many years
+    (so far)".
+- ref: 4
+  topic: grammar
+  text: >-
+    一年多 "a year and a bit": 多 after a number is "more than". 隔壁 "next door" on its own, as in 隔壁邻舍 (lesson 22).
+- ref: 5
+  topic: vocab
+  text: >-
+    大学 is university; 读书 "to study, to go to school" (literally "read books"). 法文 is French (the language), like 英文 (lesson
+    32).
+- ref: 6
+  topic: vocab
+  text: >-
+    交换 "to exchange": 语言交换 is a language exchange.
+- ref: 7
+  topic: vocab
+  text: >-
+    对 is "right, correct": 对，… "right, …"; 勿对 "wrong". It is one of the most frequent words in speech.
+- ref: 8
+  topic: vocab
+  text: >-
+    主意 "idea" (said like zy-i). 加微信 "add (someone) on WeChat"; the measure 个 slips in: 加个微信.
+- ref: 9
+  topic: vocab
+  text: >-
+    扫 "to scan" (扫码, lesson 9), and "to sweep": 扫地.
+- ref: 11
+  topic: false-friend
+  text: >-
+    话 wo is "to say" in Shanghainese, beside 讲: 侬话… "you said…", 伊话伊勿来 "he says he's not coming". In Mandarin 话 is only
+    a noun, "words".
+- ref: 12
+  topic: vocab
+  text: >-
+    附近 "nearby, near": place + 附近. 条 counts long things: lanes, roads, fish, trousers.
+- ref: 13
+  topic: vocab
+  text: >-
+    边浪 "nearby, beside" (lesson 24): 也辣边浪 "also near there".
+- ref: 14
+  topic: culture
+  text: >-
+    认得侬老开心 "very happy to know you" is what people say on first meeting, a little warmer than 侬好.
+new_words:
+- hanzi: 交
+  en: to make (friends); to hand over
+- hanzi: 小张
+  en: Xiao Zhang (a name)
+- hanzi: 名字
+  en: name
+- hanzi: 上海
+  en: Shanghai
+- hanzi: 学
+  en: to learn, study
+- hanzi: 隔壁
+  en: next door
+- hanzi: 大学
+  en: university
+- hanzi: 读书
+  en: to study, go to school
+- hanzi: 法文
+  en: French (language)
+- hanzi: 交换
+  en: to exchange
+- hanzi: 对
+  en: right, correct
+- hanzi: 主意
+  en: idea
+- hanzi: 加
+  en: to add
+- hanzi: 微信
+  en: WeChat
+- hanzi: 扫
+  en: to scan; to sweep
+- hanzi: 话
+  en: to say
+- hanzi: 附近
+  en: nearby, near
+- hanzi: 条
+  en: '(measure word for long things: lanes, roads, fish)'
+exercises:
+  translate:
+  - hanzi: 伊 话 伊 明朝 勿 来 了 。
+    en: He says he isn't coming tomorrow.
+  - hanzi: 阿拉 阿姐 辣 大学 里 教 英文 。
+    en: My big sister teaches English at a university.
+  - hanzi: 附近 有 地铁站 伐 ？
+    en: Is there a metro station nearby?
+  fill:
+  - hanzi: 侬 ＿ 了 ， 就是 搿 只[ʦᴀʔ55] 。
+    en: You're right, it's this one.
+    answer: 对
+  - hanzi: 侬 姆妈 叫 啥 ＿ ？
+    en: What's your mother's name?
+    answer: 名字
+  - hanzi: 伊 辣 大学 里 ＿ ， 学 英文 个 。
+    en: She studies English at university.
+    answer: 读书
+  say:
+  - hanzi: 我 辣 学 上海闲话 。
+    en: I'm learning Shanghainese.
+  - hanzi: 阿拉 加 个 微信 好 伐 ？
+    en: Shall we add each other on WeChat?
+  - hanzi: 侬 搿 个 主意 老 好 。
+    en: That's a very good idea of yours.

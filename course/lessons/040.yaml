@@ -1,0 +1,187 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 40
+title:
+  en: A walk on Wukang Road
+  hanzi: 武康路 荡马路
+review: false
+setting: >-
+  A bright Sunday in November. Xiao Li takes Sam to the old French Concession.
+dialogue:
+- n: 1
+  speaker: 小李
+  hanzi: 礼拜天 阿拉 去 武康路 荡马路 。
+  en: Let's go for a stroll on Wukang Road on Sunday.
+- n: 2
+  speaker: Sam
+  hanzi: 荡马路 ？ 是 啥个 意思 ？
+  en: 荡马路? What does that mean?
+- n: 3
+  speaker: 小李
+  hanzi: 就是 一面 跑 ， 一面 看 ， 随便 白相 。
+  en: You walk and look around at the same time, no plan.
+- n: 4
+  speaker: Sam
+  hanzi: 搿搭 个 树 介 大 ， 是 啥个 树 ？
+  en: The trees here are so big, what are they?
+- n: 5
+  speaker: 小李
+  hanzi: 梧桐树 ， 秋天 叶子 侪 黄 了 。
+  en: Plane trees. In autumn the leaves all turn yellow.
+- n: 6
+  speaker: Sam
+  hanzi: 搿 种 老房子 交关 有 腔调 。
+  en: These old houses have real style.
+- n: 7
+  speaker: 小李
+  hanzi: 侪 是 一百 年 以前 造 个 洋房 。
+  en: They are all Western-style houses built a hundred years ago.
+- n: 8
+  speaker: Sam
+  hanzi: 以前 是 啥人 蹲 个 ？
+  en: Who used to live in them?
+- n: 9
+  speaker: 小李
+  hanzi: 有 铜钿 人 ， 还有 外国人 。
+  en: Rich people, and foreigners too.
+- n: 10
+  speaker: Sam
+  hanzi: 我 好 上去 看看 伐 ？
+  en: Can I go up and have a look?
+- n: 11
+  speaker: 小李
+  hanzi: 勿 来事 ， 里头 还 有 人 蹲 个 。
+  en: No, people still live there.
+- n: 12
+  speaker: Sam
+  hanzi: 介末 我 辣 下头 拍 张 照片 。
+  en: Then I'll take a photo from down here.
+- n: 13
+  speaker: 小李
+  hanzi: 侬 立 到 马路 对过 去 拍 ， 好看 。
+  en: Stand across the road to take it, it looks better.
+- n: 14
+  speaker: Sam
+  hanzi: 拍 好 了 ， 侬 望 一 望 ， 漂亮 伐 ？
+  en: Done. Have a look, isn't it beautiful?
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    荡马路 "to stroll the streets, to go window-shopping": 荡 is "to wander, to hang about", 马路 is "road, street". 武康路 is one
+    of the tree-lined streets of the former French Concession.
+- ref: 2
+  topic: vocab
+  text: >-
+    意思 is "meaning": 啥个意思？ "what does it mean?"; 有意思 "interesting".
+- ref: 3
+  topic: grammar
+  text: >-
+    一面…一面… "while …, …" (Mandarin 一边…一边…): 一面跑一面看 "walk and look at the same time". 随便 is "as you like, casually": 随便白相
+    "wander about with no plan", 随便侬 "up to you".
+- ref: 4
+  topic: vocab
+  text: >-
+    树 is "tree".
+- ref: 5
+  topic: culture
+  text: >-
+    梧桐树 are the London planes the French planted along these streets; Shanghai people still call them 法国梧桐. 秋天 is autumn,
+    叶子 leaves; 黄了 "have turned yellow": 了 of change.
+- ref: 6
+  topic: vocab
+  text: >-
+    老房子 "old house(s)": 老 "old" before a noun (lesson 37). 腔调 is "style, class", a key Shanghai word of praise: 有腔调 "stylish",
+    搿个人老有腔调个.
+- ref: 7
+  topic: vocab
+  text: >-
+    造 is "to build" (Mandarin 建、盖): 造房子. 洋房 is a Western-style house or villa; 洋 "foreign" is in many old words: 洋伞, 洋钿.
+- ref: 9
+  topic: vocab
+  text: >-
+    有铜钿人 "rich people": 有铜钿 "to have money", without 个 before 人 in quick speech. 外国人 "foreigner(s)".
+- ref: 10
+  topic: vocab
+  text: >-
+    上去 "to go up (there)", 下来 "to come down (here)": 来 and 去 show the direction (lessons 19, 27).
+- ref: 11
+  topic: grammar
+  text: >-
+    勿来事 "no, it won't do, you can't" (lesson 34 had 来事 "capable"): a polite but firm no.
+- ref: 12
+  topic: vocab
+  text: >-
+    下头 "below, down here" (Mandarin 下面), as 上头 is "above" (lesson 17). 拍照片 "to take a photo": 拍 is "to clap, to pat, to
+    shoot (a photo or a film)".
+- ref: 14
+  topic: vocab
+  text: >-
+    望 is "to look (at)", softer than 看: 望一望 "have a look", 望出去 "look out". It also means "to visit" (望朋友). 漂亮 "beautiful,
+    pretty".
+new_words:
+- hanzi: 荡马路
+  en: to stroll the streets
+- hanzi: 武康路
+  en: Wukang Road
+- hanzi: 意思
+  en: meaning
+- hanzi: 一面
+  en: (一面…一面…) while
+- hanzi: 随便
+  en: as you like, casually
+- hanzi: 树
+  en: tree
+- hanzi: 梧桐树
+  en: plane tree
+- hanzi: 秋天
+  en: autumn
+- hanzi: 叶子
+  en: leaf
+- hanzi: 老房子
+  en: old house
+- hanzi: 腔调
+  en: style, class
+- hanzi: 造
+  en: to build
+- hanzi: 洋房
+  en: Western-style house
+- hanzi: 外国人
+  en: foreigner
+- hanzi: 上去
+  en: to go up
+- hanzi: 下头
+  en: below, down here
+- hanzi: 拍
+  en: to pat; to take (a photo)
+- hanzi: 马路
+  en: road, street
+- hanzi: 望
+  en: to look (at)
+- hanzi: 漂亮
+  en: beautiful, pretty
+exercises:
+  translate:
+  - hanzi: 伊 一面 吃 夜饭 ， 一面 讲 闲话 。
+    en: She talks while she has dinner.
+  - hanzi: 搿 条 马路 浪 个 树 侪 是 梧桐树 。
+    en: The trees on this road are all plane trees.
+  - hanzi: 侬 着 搿 件 衬衫 交关 有 腔调 。
+    en: You look really stylish in that shirt.
+  fill:
+  - hanzi: 侬 想 吃 啥 ？ ＿ ， 侬 点 好 了 。
+    en: What would you like? Anything, you order.
+    answer: 随便
+  - hanzi: 侬 ＿ 一 望 ， 外头 落雨 了 伐 ？
+    en: Have a look, is it raining outside?
+    answer: 望
+  - hanzi: 搿 个 字 是 啥个 ＿ ？
+    en: What does this character mean?
+    answer: 意思
+  say:
+  - hanzi: 阿拉 去 荡马路 好 伐 ？
+    en: Shall we go for a stroll?
+  - hanzi: 我 帮 侬 拍 张 照片 。
+    en: I'll take a photo of you.
+  - hanzi: 搿 种 洋房 老 漂亮 个 。
+    en: These Western-style houses are very beautiful.

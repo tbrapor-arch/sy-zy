@@ -1,0 +1,181 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 37
+title:
+  en: The washing machine
+  hanzi: 洗衣机 坏脱 了
+review: false
+setting: >-
+  Monday evening. Sam's washing machine has started making a strange noise. A repairman comes round.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 师傅 ， 阿拉 屋里 个 洗衣机 坏脱 了 。
+  en: Hello, our washing machine has broken down.
+- n: 2
+  speaker: 师傅
+  hanzi: 有 啥个 毛病 ？ 侬 自家 弄 过 伐 ？
+  en: What's wrong with it? Have you tried fixing it yourself?
+- n: 3
+  speaker: Sam
+  hanzi: 我 弄勿来 。 一 开 就 有 怪 声音 。
+  en: I can't. As soon as I turn it on there's a strange noise.
+- n: 4
+  speaker: Sam
+  hanzi: 我 吓煞 了 ， 马上 拿 插头 拔脱 。
+  en: It scared me, so I pulled the plug out right away.
+- n: 5
+  speaker: 师傅
+  hanzi: 我 来 拆 开 看看 。
+  en: Let me open it up and have a look.
+- n: 6
+  speaker: 师傅
+  hanzi: 是 里头 一 只[ʦᴀʔ55] 零件 坏脱 了 。
+  en: One of the parts inside is broken.
+- n: 7
+  speaker: Sam
+  hanzi: 修 得 好 伐 ？
+  en: Can it be fixed?
+- n: 8
+  speaker: 师傅
+  hanzi: 修 是 修 得 好 ， 必过 价钿 勿 便宜 。
+  en: It can be fixed all right, but it won't be cheap.
+- n: 9
+  speaker: Sam
+  hanzi: 要 多少 钞票 ？ 我 心里 要 有数 。
+  en: How much? I'd like to know what I'm in for.
+- n: 10
+  speaker: 师傅
+  hanzi: 零件 三百 ， 人工 一百 ， 一共 四百 。
+  en: 'Three hundred for the part, a hundred for labour: four hundred altogether.'
+- n: 11
+  speaker: Sam
+  hanzi: 介 贵 ， 买 部 新 个 合算 伐 ？
+  en: That much! Would it be better value to buy a new one?
+- n: 12
+  speaker: 师傅
+  hanzi: 侬 搿 部 用 了 几 年 了 ？
+  en: How many years have you had this one?
+- n: 13
+  speaker: Sam
+  hanzi: 十 年 了 ， 房东 留 下来 个 。
+  en: Ten years. The landlady left it.
+- n: 14
+  speaker: 师傅
+  hanzi: 介末 覅 修 了 ， 老 个 洗衣机 勿 灵光 了 。
+  en: Then don't repair it, old machines don't work well.
+notes:
+- ref: 2
+  topic: vocab
+  text: >-
+    弄 is "to do, to fiddle with, to fix", the all-purpose verb of Shanghainese (Mandarin 弄、搞): 侬弄过伐？ "have you tried (to
+    fix it)?". 毛病 here is "fault, problem" (lesson 13).
+- ref: 3
+  topic: grammar
+  text: >-
+    弄勿来 "can't manage, can't do it": verb + 勿来 for "not able to", as in 上勿来 (lesson 19). 弄得来 "can do it". 怪 is "strange";
+    声音 is "sound, voice".
+- ref: 4
+  topic: vocab
+  text: >-
+    吓煞 "scared stiff", with the 煞 of 热煞 (lesson 27): 吓 is "to frighten, be frightened". 插头 is a plug, 拔脱 "pull out": 脱 for
+    "off, away" (lesson 11).
+- ref: 5
+  topic: vocab
+  text: >-
+    拆 is "to take apart, to pull down": 拆开 "open up", 拆房子 "pull a house down".
+- ref: 6
+  topic: vocab
+  text: >-
+    零件 is "(machine) part". A part is counted with 只.
+- ref: 7
+  topic: grammar
+  text: >-
+    修得好伐？ "can it be repaired?": 得 between verb and result for "can", 勿 for "can't" (修勿好). 修 is "to repair".
+- ref: 8
+  topic: grammar
+  text: >-
+    X是X得好，必过… "it can be X'd all right, but…": repeating the verb concedes the point before the 必过 (lesson 25). Compare
+    贵是真贵 (lesson 18). 价钿 is "price", with the 钿 of 铜钿.
+- ref: 9
+  topic: vocab
+  text: >-
+    有数 "to know where one stands, to have it in hand": 心里有数 "know what to expect". It is a very Shanghainese word: 侬有数伐？
+    "you know what you're doing?".
+- ref: 10
+  topic: vocab
+  text: >-
+    人工 is "labour (cost)". 三百 300, 四百 400.
+- ref: 11
+  topic: vocab
+  text: >-
+    合算 "good value, worth it" (Mandarin 划算), a word every Shanghai shopper uses. 部 counts machines (lesson 26).
+- ref: 13
+  topic: vocab
+  text: >-
+    留下来 "leave behind": 留 is "to keep, to leave", 下来 shows it stayed.
+- ref: 14
+  topic: vocab
+  text: >-
+    灵光 is "working well, good, effective" (Mandarin 灵、好使): 勿灵光 "no good, doesn't work". 老 before a noun is "old": 老洗衣机,
+    老房子 (lesson 40); before an adjective it is "very" (lesson 2).
+new_words:
+- hanzi: 弄
+  en: to do, fiddle with, fix
+- hanzi: 弄勿来
+  en: can't manage
+- hanzi: 怪
+  en: strange
+- hanzi: 声音
+  en: sound, voice
+- hanzi: 吓煞
+  en: scared stiff
+- hanzi: 插头
+  en: plug
+- hanzi: 拔脱
+  en: to pull out
+- hanzi: 拆
+  en: to take apart
+- hanzi: 零件
+  en: (machine) part
+- hanzi: 修
+  en: to repair
+- hanzi: 价钿
+  en: price
+- hanzi: 心里
+  en: in one’s mind, at heart
+- hanzi: 有数
+  en: to know where one stands
+- hanzi: 人工
+  en: labour (cost)
+- hanzi: 合算
+  en: good value, worth it
+- hanzi: 留
+  en: to keep, leave
+- hanzi: 灵光
+  en: working well, good
+exercises:
+  translate:
+  - hanzi: 搿 只[ʦᴀʔ55] 插头 勿 灵光 了 。
+    en: This plug doesn't work any more.
+  - hanzi: 电话 修 是 修 得 好 ， 必过 要 一 个 礼拜 。
+    en: The phone can be repaired all right, but it'll take a week.
+  - hanzi: 搿 件 衬衫 打八折 ， 交关 合算 。
+    en: This shirt is 20% off, very good value.
+  fill:
+  - hanzi: 搿 种 事体 我 ＿ ， 侬 来 帮 我 。
+    en: I can't manage this kind of thing, can you help me?
+    answer: 弄勿来
+  - hanzi: 外头 是 啥个 ＿ ？ 交关 吵 。
+    en: What's that noise outside? It's very loud.
+    answer: 声音
+  - hanzi: 苹果 个 ＿ 写 辣 高头 。
+    en: The price of the apples is written on top.
+    answer: 价钿
+  say:
+  - hanzi: 洗衣机 修 得 好 伐 ？
+    en: Can the washing machine be fixed?
+  - hanzi: 伞 我 留 拨 侬 。
+    en: I'll leave the umbrella for you.
+  - hanzi: 门口 个 机器 勿 灵光 了 。
+    en: The machine at the door doesn't work any more.

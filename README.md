@@ -27,6 +27,8 @@ tools/lint.py         checks the lessons and the L1–50 curve (docs/course-plan
 tools/smoke.py        opens the built app headless and visits every page
 course/trad.tsv       fixes to the simplified → traditional conversion (Settings › Characters)
 tools/import_notes.py the app's "book notes" file → course/verified.tsv and course/book_notes.tsv
+tools/tts.py          synthetic dialogue audio (Azure, wuu-CN voices) → audio/ (run by .github/workflows/audio.yml)
+course/voices.tsv     which voice each speaker gets; course/tts_fix.tsv: respellings for the voice
 ```
 
 ## Build
@@ -67,6 +69,23 @@ The app follows **new urban Shanghainese** (five tones: 53, 34, 13, 55ʔ, 12ʔ).
 
 Qian's pinyin is generated with his "new speakers" rules (əʔ and ᴀʔ both written -ak), and was tested against the examples he published with his input software (whangpugang, makshy, bhakxiang, cakyhangxiang, linfhakqin, dhaojiangwhu, ghakbhangyhou, shanghehhehho).
 
+## Lesson audio (synthetic)
+
+Every dialogue line can have a ▶ button and the lesson a "Listen to the dialogue" button. The audio is made by
+`tools/tts.py` with Microsoft's two Wu Chinese neural voices, `wuu-CN-XiaotongNeural` (female) and
+`wuu-CN-YunzheNeural` (male), and published from `audio/` with the site (cached for offline use).
+
+- These voices are only on the **Azure Speech API**. The free Edge "Read aloud" endpoint (speech.platform.bing.com)
+  does not have them: it answers with no audio for any `wuu-CN` voice (tested 6 Nov 2026).
+- Setup: create a Speech resource in the Azure portal (free tier F0: 500,000 characters a month; the whole course is a
+  few thousand), then add the repository secrets `AZURE_SPEECH_KEY` and `AZURE_SPEECH_REGION`. The **Lesson audio**
+  workflow then makes the audio for new or changed lines whenever a lesson changes, commits it and rebuilds the site.
+  Locally: `AZURE_SPEECH_KEY=… AZURE_SPEECH_REGION=… python3 tools/tts.py` (`--dry-run` shows what would be sent).
+- `course/voices.tsv` says who speaks with which voice; `course/tts_fix.tsv` respells words the voice reads wrongly.
+- The voice reads characters with its own readings and does not see the lesson's IPA or sandhi: it is a guide to rhythm
+  and melody, labelled as synthetic in the app, not a reference for a reading. A line edited after its audio was made
+  goes silent until the audio is made again.
+
 ## Licences of the data
 
 - CC-CEDICT (`data/raw/cedict_ts.u8`): CC BY-SA 4.0. English glosses and pinyin.
@@ -85,5 +104,5 @@ module: your own books (Books tab) and the book course. Nothing of them is in th
 ## Next
 
 - Lessons 8 onwards (format: `course/README.md`; length: `docs/course-plan.md`).
-- Audio: an open Shanghainese text-to-speech model exists (CjangCjengh/Shanghainese-TTS on Hugging Face, trained on this same data); it takes IPA, so it could voice every word and line.
+- Audio from IPA: the open CjangCjengh/Shanghainese-TTS model (Hugging Face) takes IPA, so it could follow the lesson's own readings and sandhi, which the Azure voices cannot.
 - A second wave (active phase, English → Shanghainese) from lesson 50, as in Tsheh-tû.

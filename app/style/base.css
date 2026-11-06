@@ -510,3 +510,9 @@ body.has-mini main { padding-bottom: 11rem; }
 .copybox { width: 100%; min-height: 8rem; font: inherit; font-size: .85rem; }
 kbd { font-family: var(--f-ui); font-size: .7rem; font-weight: 700; border: 1px solid currentColor; border-radius: 4px; padding: 0 .3rem; opacity: .6; margin-left: .2rem; }
 @media (hover: none) { kbd { display: none; } }
+
+/* dialogue audio */
+.sent .who .say { margin-left: .4rem; border: 1px solid var(--line, currentColor); background: none; color: inherit; border-radius: 999px; width: 1.9rem; height: 1.9rem; font-size: .7rem; line-height: 1; cursor: pointer; flex: none; }
+.sent.playing { background: color-mix(in srgb, var(--coral, #d66) 10%, transparent); border-radius: .5rem; }
+.listen { align-items: center; gap: .6rem; flex-wrap: wrap; }
+.listen .sub { font-size: .78rem; }

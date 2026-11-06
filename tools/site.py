@@ -2,7 +2,7 @@
 
   python3 tools/site.py [out-dir]
 
-Adds the home-screen icon and manifest links, copies app/pwa/ (manifest, icons, offline service worker).
+Adds the home-screen icon and manifest links, copies app/pwa/ (manifest, icons, offline service worker) and audio/.
 Puts a Content Security Policy in the page, as in Tsheh-tû: only the page's own inline script (by hash, recomputed at
 each build), blob: scripts (the private module), run; the page talks only to GitHub's API (gist sync,
 private module). A new outside source has to be added below, or the browser refuses it.
@@ -45,5 +45,9 @@ os.makedirs(OUT, exist_ok=True)
 open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(html)
 for f in os.listdir(PWA):
     shutil.copy(os.path.join(PWA, f), OUT)
+AUDIO = os.path.join(ROOT, 'audio')   # synthetic dialogue audio (tools/tts.py), served same-origin (media-src 'self')
+if os.path.isdir(AUDIO):
+    shutil.copytree(AUDIO, os.path.join(OUT, 'audio'), dirs_exist_ok=True,
+                    ignore=shutil.ignore_patterns('index.json'))
 open(os.path.join(OUT, '.nojekyll'), 'w').close()
 print(f'{os.path.relpath(OUT, ROOT)}: installable site')

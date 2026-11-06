@@ -252,6 +252,7 @@ function vidPage(S, ep, o) {
 // ---------- routing
 let homeY = 0;
 function route() {
+  stopAudio();
   const h = location.hash.slice(1) || 'lessons';
   if (!route.keepSheet) closeSheet();
   let m;
@@ -382,10 +383,11 @@ function showLesson(L) {
       <h1>${esc(T(L.title))}</h1><span class="rom">${esc(lineRom(L.title.tokens))} · ${esc(L.title.en)}</span></div>
     <nav class="lnav" aria-label="Sections">${chips.map(([id, t]) => `<button data-jump="${id}">${t}</button>`).join('')}</nav>
     <p class="setting" style="margin:0">${esc(L.setting)}</p>
+    ${L.lines.some(l => l.audio) ? `<div class="row listen"><button class="btn small line" id="playall">▶ Listen to the dialogue</button><span class="sub">Synthetic voice (Microsoft, Wu): a guide to the rhythm, not a native speaker</span></div>` : ''}
     ${toolbar()}
     <div class="lines" id="dlg">${L.lines.map((ln, li) => `
       <div class="sent" id="line-${ln.n}">
-        <div class="who"><span class="av ${speakers.indexOf(ln.speaker) % 2 ? 'b' : ''}">${esc(ln.speaker[0])}</span>${esc(ln.speaker)}<span class="n">${ln.n}</span></div>
+        <div class="who"><span class="av ${speakers.indexOf(ln.speaker) % 2 ? 'b' : ''}">${esc(ln.speaker[0])}</span>${esc(ln.speaker)}<span class="n">${ln.n}</span>${ln.audio ? `<button class="say" data-play="${li}" aria-label="Listen to line ${ln.n}">▶</button>` : ''}</div>
         <div class="txt">${sentence(ln.tokens, 'L' + li)}</div>
         <div class="under">${enLine(ln.en, ln.lit, 'l' + li)}${(notesBy[ln.n] || []).map(k => `<button class="nlink" data-note="${k}" aria-label="Note ${k}">${k}</button>`).join('')}</div>
       </div>`).join('')}</div>
@@ -405,8 +407,34 @@ function showLesson(L) {
   $$('[data-note]', main).forEach(b => b.onclick = () => openNote(L, +b.dataset.note));
   $$('[data-word]', main).forEach(b => b.onclick = () => openCard(b.dataset.word));
   $('#anki', main).onclick = e => copyText(L.new_words.map(id => { const d = DATA.dict[id]; return [d.h, d.wugniu, d.qian, d.ipa, (L.new_en || {})[id] || d.gloss || '', (d.zh || []).join('、'), `Lesson ${L.id}`].join('\t'); }).join('\n'), e.target, 'Copied · in Anki: File › Import, fields separated by Tab');
+  wireAudio(L, main);
   wireExercises(L.exercises, main);
   finishBlock(L);
+}
+// ---------- dialogue audio (tools/tts.py): one player; ▶ on a line plays it, "Listen" plays the lines in turn
+var playQueue = [], PLAYER_;  // var: route() may stop audio before this line has run
+function player() { return PLAYER_ || (PLAYER_ = new Audio()); }
+function stopAudio() { playQueue = []; player().pause(); player().onended = null; $$('.sent.playing').forEach(e => e.classList.remove('playing')); const b = $('#playall'); if (b) b.textContent = '▶ Listen to the dialogue'; }
+function playLine(L, li, then) {
+  $$('.sent.playing').forEach(e => e.classList.remove('playing'));
+  const el = document.getElementById('line-' + L.lines[li].n);
+  if (el) { el.classList.add('playing'); if (then) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+  player().src = L.lines[li].audio;
+  player().onended = () => { if (el) el.classList.remove('playing'); if (then) then(); };
+  player().play().catch(() => { stopAudio(); toast('Audio could not play (offline and not cached yet?)'); });
+}
+function wireAudio(L, root) {
+  stopAudio();
+  $$('[data-play]', root).forEach(b => b.onclick = () => { stopAudio(); playLine(L, +b.dataset.play); });
+  const all = $('#playall', root);
+  if (!all) return;
+  all.onclick = () => {
+    if (playQueue.length || !player().paused) { stopAudio(); return; }
+    playQueue = L.lines.map((l, i) => l.audio ? i : -1).filter(i => i >= 0);
+    all.textContent = '■ Stop';
+    const next = () => { if (!playQueue.length) { stopAudio(); return; } playLine(L, playQueue.shift(), () => setTimeout(next, 450)); };
+    next();
+  };
 }
 function finishBlock(L) {
   const box = $('#finish'), nxt = DATA.lessons.find(l => l.id > L.id), d = doneAt[L.id];

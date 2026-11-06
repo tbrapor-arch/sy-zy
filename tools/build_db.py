@@ -204,6 +204,11 @@ def tokens(src, where):
         out.append({'w': {'h': word, 'id': wid, **({'t': trad(word)} if trad(word) != word else {})}})
     return out
 
+# synthetic audio (tools/tts.py): a line gets its file only if the text it was made from is still the line's text
+import tts
+AUDIO = json.loads((ROOT / 'audio/index.json').read_text()) if (ROOT / 'audio/index.json').exists() else {}
+TTS_FIX = tts.tsv('course/tts_fix.tsv')
+
 lessons = []
 for p in sorted((ROOT / 'course/lessons').glob('[0-9][0-9][0-9].yaml')):
     L = parse_lesson(p)
@@ -213,6 +218,11 @@ for p in sorted((ROOT / 'course/lessons').glob('[0-9][0-9][0-9].yaml')):
     for i, ln in enumerate(L['lines']):
         toks = tokens(ln['src'], f'lesson {n} line {i + 1}')
         lines.append({'n': i + 1, 'speaker': ln['speaker'], 'en': ln['en'], 'lit': ln['lit'], 'tokens': toks})
+        au = AUDIO.get(str(n), {}).get(str(i + 1))
+        if au and au['t'] == tts.spoken(ln['src'], TTS_FIX) and (ROOT / f'audio/{n:03d}/{i + 1:02d}.mp3').exists():
+            lines[-1]['audio'] = f"audio/{n:03d}/{i + 1:02d}.mp3?v={au['h']}"
+        elif au:
+            report.setdefault('stale audio', []).append(f'lesson {n} line {i + 1} (run tools/tts.py)')
         for t in toks:
             wid = t.get('w', {}).get('id')
             if wid and wid not in seen:

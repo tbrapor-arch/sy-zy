@@ -1,0 +1,11 @@
+# Who speaks with which synthetic voice (tools/tts.py): speaker <TAB> female|male
+# female = wuu-CN-XiaotongNeural, male = wuu-CN-YunzheNeural. A speaker not listed: female if they speak first, else male.
+阿姨	female
+Sam	male
+阿婆	female
+小李姆妈	female
+爷叔	male
+师傅	male
+儿子	male
+外孙	male
+小李爷	male

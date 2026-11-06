@@ -1,0 +1,182 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 45
+title:
+  en: Spring soup
+  hanzi: 腌笃鲜
+review: false
+setting: >-
+  A Sunday in April. The auntie has bought fresh bamboo shoots and calls Sam into her kitchen.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: 春天 个 笋 顶 嫩 ， 阿拉 烧 腌笃鲜 。
+  en: Spring bamboo shoots are the most tender, let's make 腌笃鲜.
+- n: 2
+  speaker: Sam
+  hanzi: 腌笃鲜 是 啥个 汤 ？ 我 还 呒没 吃 过 。
+  en: What sort of soup is 腌笃鲜? I've never had it.
+- n: 3
+  speaker: 阿姨
+  hanzi: 咸肉 、 鲜肉 搭 笋 ， 一道 笃 。
+  en: Salt pork, fresh pork and bamboo shoots, simmered together.
+- n: 4
+  speaker: Sam
+  hanzi: 笃 是 啥 意思 ？ 搭 烧 一样 伐 ？
+  en: What does 笃 mean? Is it the same as 烧?
+- n: 5
+  speaker: 阿姨
+  hanzi: 就是 用 小 火 ， 慢慢叫 烧 几 个 钟头 。
+  en: It means cooking slowly on a low heat for a few hours.
+- n: 6
+  speaker: 阿姨
+  hanzi: 先 拿 两 种 肉 切一切 ， 切 得 大 一眼 。
+  en: First cut up the two kinds of pork, in biggish pieces.
+- n: 7
+  speaker: Sam
+  hanzi: 笋 个 壳 要 剥 伐 ？
+  en: Do the shoots need peeling?
+- n: 8
+  speaker: 阿姨
+  hanzi: 要 个 ， 剥 好 再 拿 刀 切 。
+  en: Yes. Peel them, then cut them with the knife.
+- n: 9
+  speaker: 阿姨
+  hanzi: 冷水 滚 了 ， 肉 先 笃 一 个 钟头 。
+  en: When the water boils, the pork simmers first, for an hour.
+- n: 10
+  speaker: Sam
+  hanzi: 盐 要 放 多少 ？ 一 调羹 够 伐 ？
+  en: How much salt goes in? Is a spoonful enough?
+- n: 11
+  speaker: 阿姨
+  hanzi: 盐 覅 放 ， 咸肉 已经 够 咸 了 。
+  en: No salt, the salt pork is salty enough.
+- n: 12
+  speaker: Sam
+  hanzi: 我 辣 外头 已经 闻 到 香 了 ！
+  en: I can smell it from outside already!
+- n: 13
+  speaker: 阿姨
+  hanzi: 笋 一记头 放 下去 ， 再 笃 半 个 钟头 。
+  en: Put all the shoots in at once and simmer another half hour.
+- n: 14
+  speaker: Sam
+  hanzi: 等 介 长 辰光 ， 我 肚皮 饿煞 了 。
+  en: Waiting this long, I'm starving.
+- n: 15
+  speaker: 阿姨
+  hanzi: 好 物事 要 等 个 ， 心 急 吃勿着 热 豆腐 。
+  en: 'Good things take time: in a hurry, you never get hot tofu.'
+notes:
+- ref: 1
+  topic: culture
+  text: >-
+    腌笃鲜 is Shanghai's spring soup: 腌 "salted" (pork), 笃 "simmered", 鲜 "fresh" (pork and shoots). 笋 are bamboo shoots, best
+    in spring (春天); 嫩 "tender".
+- ref: 3
+  topic: vocab
+  text: >-
+    咸肉 "salt-cured pork", 鲜肉 "fresh pork". 笃 dok is "to simmer": the soup goes 笃笃笃 as it bubbles.
+- ref: 5
+  topic: vocab
+  text: >-
+    火 is "fire, heat": 小火 "low heat", 大火 "high heat". 用 "to use" (lesson 27).
+- ref: 6
+  topic: vocab
+  text: >-
+    切 "to cut": 切得大一眼 "cut it a bit bigger"; 切一切 "cut up" (lesson 18).
+- ref: 8
+  topic: vocab
+  text: >-
+    刀 is "knife": 菜刀 "kitchen knife".
+- ref: 9
+  topic: vocab
+  text: >-
+    冷水 "cold water": the pork goes in cold water. 滚 "to boil" (Mandarin 开、滚): 水滚了 "the water is boiling"; 滚水 is boiling
+    water.
+- ref: 10
+  topic: vocab
+  text: >-
+    盐 "salt". 调羹 "spoon", also a spoonful: 一调羹.
+- ref: 12
+  topic: grammar
+  text: >-
+    闻到 "smell (and get it)": 到 after a verb is the result "reached", like 着 (寻着). 闻 is "to smell".
+- ref: 13
+  topic: vocab
+  text: >-
+    一记头 "all at once, in one go" (Mandarin 一下子), with 记 "a blow, a go".
+- ref: 14
+  topic: vocab
+  text: >-
+    肚皮 is "belly, stomach": 肚皮饿 "hungry", 饿煞了 "starving", with 煞 (lesson 27).
+- ref: 15
+  topic: culture
+  text: >-
+    心急吃勿着热豆腐 "in a hurry, you can't get (to eat) hot tofu": good things need patience. 吃勿着 "can't get to eat": 勿着, as in
+    寻勿着 (lesson 23).
+new_words:
+- hanzi: 腌笃鲜
+  en: spring soup of salt and fresh pork with bamboo shoots
+- hanzi: 春天
+  en: spring
+- hanzi: 笋
+  en: bamboo shoot
+- hanzi: 嫩
+  en: tender
+- hanzi: 咸肉
+  en: salt-cured pork
+- hanzi: 鲜肉
+  en: fresh pork
+- hanzi: 笃
+  en: to simmer
+- hanzi: 火
+  en: fire, heat
+- hanzi: 切
+  en: to cut
+- hanzi: 刀
+  en: knife
+- hanzi: 冷水
+  en: cold water
+- hanzi: 滚
+  en: to boil
+- hanzi: 盐
+  en: salt
+- hanzi: 调羹
+  en: spoon
+- hanzi: 闻
+  en: to smell
+- hanzi: 一记头
+  en: all at once
+- hanzi: 肚皮
+  en: belly, stomach
+- hanzi: 饿煞
+  en: starving
+- hanzi: 吃勿着
+  en: can't get to eat
+exercises:
+  translate:
+  - hanzi: 搿 只[ʦᴀʔ55] 鱼 要 用 大 火 蒸 。
+    en: This fish needs steaming on a high heat.
+  - hanzi: 伊 一记头 吃 了 三 碗 饭 。
+    en: He ate three bowls of rice in one go.
+  - hanzi: 水 滚 了 ， 侬 放 面 下去 。
+    en: The water's boiling, put the noodles in.
+  fill:
+  - hanzi: 春天 个 青菜 老 ＿ 个 。
+    en: Spring greens are very tender.
+    answer: 嫩
+  - hanzi: 我 ＿ 饿煞 了 ， 阿拉 去 吃 面 。
+    en: I'm starving, let's go and have noodles.
+    answer: 肚皮
+  - hanzi: 汤 里 ＿ 放 多 了 ， 忒 咸 了 。
+    en: There's too much salt in the soup, it's too salty.
+    answer: 盐
+  say:
+  - hanzi: 我 闻 到 红烧肉 个 味道 了 。
+    en: I can smell red-braised pork.
+  - hanzi: 汤 要 用 小 火 笃 。
+    en: Soup has to simmer on a low heat.
+  - hanzi: 侬 当心 刀 ！
+    en: Careful with the knife!

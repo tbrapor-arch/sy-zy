@@ -1,0 +1,193 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 46
+title:
+  en: Online shopping
+  hanzi: 网浪 买 物事
+review: false
+setting: >-
+  A weekday evening. A parcel has come for Sam: a jacket he ordered online. Xiao Li is round for dinner.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 我 网浪 买 了 件 外套 ， 今朝 收到 了 。
+  en: I bought a jacket online and it came today.
+- n: 2
+  speaker: 小李
+  hanzi: 拆 开 来 看看 ， 着 了 合身 伐 ？
+  en: Open it up, does it fit?
+- n: 3
+  speaker: Sam
+  hanzi: 颜色 搭 照片 两样 ， 我 老 失望 。
+  en: The colour isn't the same as in the photo, I'm really disappointed.
+- n: 4
+  speaker: 小李
+  hanzi: 侬 先 着着看 ， 大小 哪能 ？
+  en: Try it on first, how is the size?
+- n: 5
+  speaker: Sam
+  hanzi: 小 一 号 ， 着勿落 ， 手 也 伸 勿 进去 。
+  en: A size too small, I can't get into it, my arms won't go in.
+- n: 6
+  speaker: 小李
+  hanzi: 覅 失望 ， 七 天 里向 好 退 个 。
+  en: Don't be disappointed, you can return things within seven days.
+- n: 7
+  speaker: Sam
+  hanzi: 哪能 退 ？ 我 一 趟 也 呒没 退 过 。
+  en: How do I return it? I've never done it.
+- n: 8
+  speaker: 小李
+  hanzi: 侬 寻 客服 ， 讲 尺寸 勿 对 。
+  en: Contact customer service and say the size is wrong.
+- n: 9
+  speaker: Sam
+  hanzi: 客服 回 了 ， 叫 我 寄 转去 。
+  en: Customer service replied, they say send it back.
+- n: 10
+  speaker: 小李
+  hanzi: 寄 转去 个 运费 啥人 付 ？
+  en: Who pays the postage to send it back?
+- n: 11
+  speaker: Sam
+  hanzi: 伊拉 讲 运费 伊拉 出 ， 我 勿 要 付 。
+  en: They say they'll pay the postage, I don't have to.
+- n: 12
+  speaker: 小李
+  hanzi: 搿 家 店 还 算是 讲 道理 个 。
+  en: That shop is fair, at least.
+- n: 13
+  speaker: Sam
+  hanzi: 我 个 钞票 啥辰光 退 转来 ？
+  en: When will my money come back?
+- n: 14
+  speaker: 小李
+  hanzi: 伊拉 收到 外套 ， 钞票 就 退 拨 侬 。
+  en: When they receive the jacket, they refund you.
+- n: 15
+  speaker: Sam
+  hanzi: 下趟 到 店 里 去 买 ， 勿 会 拨 人家 骗 。
+  en: Next time I'll buy in a shop, nobody can trick me there.
+- n: 16
+  speaker: 小李
+  hanzi: 网浪 便宜 ， 必过 要 看 清爽 评价 。
+  en: Online is cheap, but you have to read the reviews properly.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    网浪 "online" (Mandarin 网上), with 浪 "on" (lesson 26). 收到 "to receive": 到 for the result.
+- ref: 2
+  topic: vocab
+  text: >-
+    合身 "to fit (clothes)". 拆开 "open (a parcel)" (lesson 37).
+- ref: 3
+  topic: vocab
+  text: >-
+    失望 "disappointed". 两样 "different" (lesson 43).
+- ref: 4
+  topic: vocab
+  text: >-
+    着着看 "try it on": 着 "wear" (lesson 10) + 看, as in 试试看. 大小 "size" (literally "big-small").
+- ref: 5
+  topic: grammar
+  text: >-
+    号 "size" (also "number, date"): 小一号 "one size too small". 着勿落 "can't get into (it)": 勿落 "won't go down/in", as in 吃勿落
+    (lesson 31). 伸 "to stretch out": 伸勿进去 "won't go in".
+- ref: 6
+  topic: vocab
+  text: >-
+    退 "to return (goods), to refund": 退货, 退钞票. 七天里向 "within seven days": 里向 "inside" (lesson 8) for time.
+- ref: 8
+  topic: vocab
+  text: >-
+    客服 "customer service". 尺寸 "size, measurements".
+- ref: 9
+  topic: vocab
+  text: >-
+    回 "to reply" (also "to go back"): 回微信 "reply on WeChat". 寄转去 "send back": 转去 (lesson 34).
+- ref: 10
+  topic: vocab
+  text: >-
+    运费 "postage, shipping cost".
+- ref: 11
+  topic: vocab
+  text: >-
+    出 "to pay (out)": 伊拉出 "they'll pay", 出钞票 "pay up".
+- ref: 12
+  topic: vocab
+  text: >-
+    算是 "can be counted as, after all": 还算是讲道理个 "is fair enough, all things considered". 讲道理 "reasonable, fair": 道理 is "reason,
+    sense". 家 counts shops (lesson 22); 店 is "shop".
+- ref: 15
+  topic: grammar
+  text: >-
+    拨 + person + verb makes the passive: 拨人家骗 "be cheated by people" (Mandarin 被). 骗 "to cheat, to trick".
+- ref: 16
+  topic: vocab
+  text: >-
+    评价 "review, rating".
+new_words:
+- hanzi: 网浪
+  en: online
+- hanzi: 收到
+  en: to receive
+- hanzi: 合身
+  en: to fit (clothes)
+- hanzi: 失望
+  en: disappointed
+- hanzi: 着着看
+  en: to try on
+- hanzi: 大小
+  en: size
+- hanzi: 号
+  en: size; number
+- hanzi: 着勿落
+  en: can't get into (clothes)
+- hanzi: 伸
+  en: to stretch out
+- hanzi: 退
+  en: to return (goods), refund
+- hanzi: 客服
+  en: customer service
+- hanzi: 尺寸
+  en: size, measurements
+- hanzi: 回
+  en: to reply
+- hanzi: 运费
+  en: postage
+- hanzi: 算是
+  en: can be counted as
+- hanzi: 道理
+  en: reason, sense
+- hanzi: 店
+  en: shop
+- hanzi: 骗
+  en: to cheat, trick
+- hanzi: 评价
+  en: review, rating
+exercises:
+  translate:
+  - hanzi: 外婆 个 快递 收到 了 伐 ？
+    en: Has Grandma's parcel arrived?
+  - hanzi: 伊 拨 人家 骗 了 两百 块 。
+    en: He was cheated out of two hundred yuan.
+  - hanzi: 搿 件 衬衫 我 着 了 老 合身 。
+    en: This shirt fits me really well.
+  fill:
+  - hanzi: 侬 讲 了 交关 ， 一眼 也 勿 讲 ＿ 。
+    en: You've said a lot, but none of it makes sense.
+    answer: 道理
+  - hanzi: 伊 一 趟 也 呒没 ＿ 过 我 个 微信 。
+    en: He has never once replied to my WeChat.
+    answer: 回
+  - hanzi: 网浪 买 个 物事 好 ＿ 伐 ？
+    en: Can things bought online be returned?
+    answer: 退
+  say:
+  - hanzi: 侬 个 外套 啥个 尺寸 ？
+    en: What size is your jacket?
+  - hanzi: 我 微信 浪 回 侬 了 。
+    en: I've replied to you on WeChat.
+  - hanzi: 搿 家 店 个 评价 老 好 。
+    en: This shop has very good reviews.

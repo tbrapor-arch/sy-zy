@@ -1,0 +1,200 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 47
+title:
+  en: An argument
+  hanzi: 吵相骂
+review: false
+setting: >-
+  Saturday morning, a long queue outside a famous pastry shop. Sam is queuing with the auntie when a man walks straight
+  to the front.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: 喂 ， 侬 哪能 插队 啊 ？ 后头 去 排 ！
+  en: Hey, why are you cutting in? Go to the back!
+- n: 2
+  speaker: 男人
+  hanzi: 我 就 买 一 只[ʦᴀʔ55] 鲜肉月饼 ， 帮帮忙 。
+  en: I'm only buying one pork mooncake, give me a break.
+- n: 3
+  speaker: 阿姨
+  hanzi: 帮帮忙 ！ 阿拉 侪 排队 排 了 半 个 钟头 。
+  en: Give YOU a break! We've all been queuing for half an hour.
+- n: 4
+  speaker: 男人
+  hanzi: 我 有 急 事体 ， 让 我 先 买 。
+  en: I'm in a hurry, let me go first.
+- n: 5
+  speaker: 阿姨
+  hanzi: 有 急 事体 也 要 讲 先来后到 。
+  en: In a hurry or not, it’s first come, first served.
+- n: 6
+  speaker: Sam
+  hanzi: 阿姨 ， 覅 动气 ， 声音 轻 一眼 。
+  en: Auntie, don't get worked up, keep your voice down.
+- n: 7
+  speaker: 男人
+  hanzi: 搭 侬 啥 搭界 ？ 侬 管 侬 自家 ！
+  en: What has it got to do with you? Mind your own business!
+- n: 8
+  speaker: Sam
+  hanzi: 侬 插队 ， 后头 个 人 侪 看见 个 。
+  en: You cut in, everyone behind saw it.
+- n: 9
+  speaker: 男人
+  hanzi: 一 个 外国人 也 来 管 闲事 ！
+  en: Now a foreigner is poking his nose in too!
+- n: 10
+  speaker: 阿姨
+  hanzi: 侬 再 凶 ， 我 叫 警察 来 了 ！
+  en: Any more of your rudeness and I'll call the police!
+- n: 11
+  speaker: 男人
+  hanzi: 好 好 好 ， 我 勿 买 了 ， 算 我 倒霉 。
+  en: All right, all right, I won't buy any, just my luck.
+- n: 12
+  speaker: 男人
+  hanzi: 覅 推 我 ， 我 自家 排 到 后头 去 。
+  en: Don't push me, I'll go to the back myself.
+- n: 13
+  speaker: 阿姨
+  hanzi: 搿 种 人 ， 插队 还 要 骂 人 。
+  en: 'People like that: they cut in and then they insult you.'
+- n: 14
+  speaker: Sam
+  hanzi: 阿姨 ， 侬 结棍 ， 一 句 闲话 就 吓脱 伊 。
+  en: Auntie, you were great, one sentence and he was off.
+- n: 15
+  speaker: 阿姨
+  hanzi: 上海人 讲 道理 ， 必过 也 勿 好 欺负 。
+  en: Shanghai people are reasonable, but nobody pushes us around.
+- n: 16
+  speaker: Sam
+  hanzi: 以后 我 吵相骂 ， 也 要 寻 侬 帮忙 。
+  en: Next time I have a row, I'll get you to help.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    喂 "hey!" to get someone's attention, and "hello" on the phone. 插队 "to cut in, jump the queue"; 排 "to line up", 排队 "to
+    queue" (line 3).
+- ref: 2
+  topic: culture
+  text: >-
+    鲜肉月饼 are the flaky pork-filled mooncakes Shanghai queues for in the weeks before Mid-Autumn.
+- ref: 2
+  topic: vocab
+  text: >-
+    帮帮忙 "please, help me out", and, said back with an edge (line 3), "give me a break, come off it": one of the most Shanghai
+    of all phrases. 帮忙 "to help" (line 16).
+- ref: 3
+  topic: grammar
+  text: >-
+    排队排了半个钟头 "have queued for half an hour": with a verb + object (排队), repeat the verb before the time.
+- ref: 4
+  topic: vocab
+  text: >-
+    让 "to let, to give way": 让我先买 "let me buy first", 让位子 "give up one's seat".
+- ref: 5
+  topic: vocab
+  text: >-
+    先来后到 "first come, first served", literally "first came, later arrived".
+- ref: 7
+  topic: vocab
+  text: >-
+    搭侬啥搭界？ "what's it to do with you?": 搭界 "to be connected, to concern"; 勿搭界 "nothing to do with it". 管 "to mind, to look
+    after": 侬管侬自家 "mind your own business".
+- ref: 9
+  topic: vocab
+  text: >-
+    管闲事 "to poke one's nose in": 闲事 "other people's business".
+- ref: 10
+  topic: vocab
+  text: >-
+    凶 "fierce, rude, aggressive". 警察 "police (officer)".
+- ref: 11
+  topic: vocab
+  text: >-
+    算我倒霉 "just my luck": 倒霉 "unlucky", 算 "count as" (lesson 16). 好好好 "all right, all right" gives in.
+- ref: 12
+  topic: vocab
+  text: >-
+    推 "to push".
+- ref: 13
+  topic: vocab
+  text: >-
+    骂 "to scold, to insult": 骂人 "swear at people".
+- ref: 14
+  topic: vocab
+  text: >-
+    吓脱 "scare off": 吓 + 脱 "away". 一句闲话 "one sentence": 句 (lesson 11).
+- ref: 16
+  topic: culture
+  text: >-
+    吵相骂 "to have a row, a shouting match", a celebrated Shanghai street art; the crowd that gathers is part of it. 帮忙 "to
+    help".
+new_words:
+- hanzi: 吵相骂
+  en: to have a row
+- hanzi: 鲜肉月饼
+  en: pork mooncake
+- hanzi: 喂
+  en: hey; hello (on the phone)
+- hanzi: 插队
+  en: to cut in, jump the queue
+- hanzi: 排
+  en: to line up
+- hanzi: 帮帮忙
+  en: please; come off it!
+- hanzi: 排队
+  en: to queue
+- hanzi: 让
+  en: to let; to give way
+- hanzi: 先来后到
+  en: first come, first served
+- hanzi: 搭界
+  en: to be connected, concern
+- hanzi: 管
+  en: to mind, look after
+- hanzi: 闲事
+  en: other people's business
+- hanzi: 凶
+  en: fierce, rude
+- hanzi: 警察
+  en: police
+- hanzi: 倒霉
+  en: unlucky
+- hanzi: 推
+  en: to push
+- hanzi: 骂
+  en: to scold, insult
+- hanzi: 吓脱
+  en: to scare off
+- hanzi: 帮忙
+  en: to help
+exercises:
+  translate:
+  - hanzi: 搿 件 事体 搭 我 勿 搭界 。
+    en: This has nothing to do with me.
+  - hanzi: 地铁 浪 人 多 ， 覅 推 。
+    en: There are a lot of people on the metro, don't push.
+  - hanzi: 伊 凶 是 凶 ， 必过 心 老 好 。
+    en: She can be fierce, but she has a good heart.
+  fill:
+  - hanzi: 菜场 门口 人 交关 多 ， 侪 辣 ＿ 。
+    en: There are lots of people at the market entrance, all queuing.
+    answer: 排队
+  - hanzi: 侬 ＿ 我 拎 一 只[ʦᴀʔ55] 包 好 伐 ？
+    en: Could you help me carry a bag?
+    answer: 帮
+  - hanzi: 今朝 落雨 ， 钥匙 又 落脱 了 ， 真 ＿ 。
+    en: It rained today and I lost my keys again, so unlucky.
+    answer: 倒霉
+  say:
+  - hanzi: 喂 ， 侬 是 小李 伐 ？
+    en: Hello, is that Xiao Li?
+  - hanzi: 侬 覅 管 闲事 。
+    en: Mind your own business.
+  - hanzi: 排队 ， 覅 插队 ！
+    en: Queue up, no cutting in!

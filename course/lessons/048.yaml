@@ -1,0 +1,195 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 48
+title:
+  en: Making up
+  hanzi: 和好
+review: false
+setting: >-
+  A week later, in the café of their language exchange. Xiao Zhang's boyfriend A-Qiang has come to find her; Sam arrives
+  at the end.
+dialogue:
+- n: 1
+  speaker: 阿强
+  hanzi: 小张 ， 对勿起 ， 上趟 是 我 勿 对 。
+  en: Xiao Zhang, I'm sorry, last time it was my fault.
+- n: 2
+  speaker: 小张
+  hanzi: 侬 现在 来 讲 对勿起 ， 有 啥 用场 ？
+  en: What's the use of saying sorry now?
+- n: 3
+  speaker: 阿强
+  hanzi: 我 一直 想 侬 ， 夜里 也 困勿着 。
+  en: I've been thinking about you all the time, I can't sleep at night.
+- n: 4
+  speaker: 小张
+  hanzi: 侬 讲 我 脾气 大 ， 我 到 现在 还 气 。
+  en: You said I had a temper, I'm still angry about it.
+- n: 5
+  speaker: 阿强
+  hanzi: 是 我 讲 错 了 ， 侬 原谅 我 好 伐 ？
+  en: I said the wrong thing, will you forgive me?
+- n: 6
+  speaker: 小张
+  hanzi: 侬 为啥 要 介 讲 我 ？ 我 老 委屈 个 。
+  en: Why did you say that about me? It really hurt.
+- n: 7
+  speaker: 阿强
+  hanzi: 我 吃醋 了 ， 看见 侬 搭 外国 朋友 一道 。
+  en: I was jealous, I saw you with a foreign friend.
+- n: 8
+  speaker: 小张
+  hanzi: Sam 是 我 个 法文 老师 ， 侬 误会 了 ！
+  en: Sam is my French teacher, you've got it wrong!
+- n: 9
+  speaker: 阿强
+  hanzi: 原来 是 介 ， 我 老 后悔 个 。
+  en: So that's how it is. I really regret it.
+- n: 10
+  speaker: 阿强
+  hanzi: 搿 束 花 送 拨 侬 ， 赔 个 礼 。
+  en: These flowers are for you, to say sorry.
+- n: 11
+  speaker: 小张
+  hanzi: 算了 ， 我 也 勿 怨 侬 了 。
+  en: All right, never mind, I don't hold it against you any more.
+- n: 12
+  speaker: 阿强
+  hanzi: 我 保证 ， 下趟 一定 勿 会 了 。
+  en: I promise it won't happen again.
+- n: 13
+  speaker: Sam
+  hanzi: 小张 ， 搿 位 是 侬 男朋友 伐 ？
+  en: Xiao Zhang, is this your boyfriend?
+- n: 14
+  speaker: 小张
+  hanzi: 是个 ， 阿强 ， 搿 个 就是 Sam 。
+  en: Yes. A-Qiang, this is Sam.
+- n: 15
+  speaker: 阿强
+  hanzi: Sam ， 勿好意思 ， 我 误会 侬 了 。
+  en: Sam, I'm so sorry, I got you wrong.
+- n: 16
+  speaker: Sam
+  hanzi: 勿要紧 ， 㑚 和好 就 好 。
+  en: That's all right, the main thing is you've made up.
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    是我勿对 "it's my fault", literally "it is I (who was) not right". 阿强: 阿 + a syllable of the name is the usual familiar
+    name in Shanghai (阿强, 阿毛, 阿三).
+- ref: 2
+  topic: vocab
+  text: >-
+    用场 "use": 有啥用场？ "what's the use?", 呒没用场 "useless". Very Shanghainese.
+- ref: 3
+  topic: vocab
+  text: >-
+    一直 "all the time, all along" (lesson 4: "straight on"). 困勿着 "can't (get to) sleep": 着 as in 寻勿着 (lesson 23); 困 "to sleep".
+- ref: 4
+  topic: vocab
+  text: >-
+    气 "angry" (Mandarin 生气): 我还气 "I'm still angry"; 气煞 "furious". 动气 (lesson 41) is "to get angry".
+- ref: 5
+  topic: vocab
+  text: >-
+    错 "wrong": 讲错 "say the wrong thing", 弄错 "get it wrong". 原谅 "to forgive".
+- ref: 6
+  topic: vocab
+  text: >-
+    委屈 "wronged, hurt (by unfair treatment)".
+- ref: 7
+  topic: vocab
+  text: >-
+    吃醋 "to be jealous", literally "eat vinegar", as in Mandarin.
+- ref: 8
+  topic: vocab
+  text: >-
+    误会 "to misunderstand; a misunderstanding".
+- ref: 9
+  topic: vocab
+  text: >-
+    后悔 "to regret". 原来是介 "so that's how it is" (原来, lesson 29).
+- ref: 10
+  topic: vocab
+  text: >-
+    束 "bunch (of flowers)". 赔个礼 "to apologise": 赔礼 "make amends"; 赔 is "to pay back, compensate" (赔钞票).
+- ref: 11
+  topic: vocab
+  text: >-
+    算了 "never mind, forget it, let it go". 怨 "to blame, to hold against".
+- ref: 12
+  topic: vocab
+  text: >-
+    保证 "to promise, guarantee".
+- ref: 15
+  topic: vocab
+  text: >-
+    勿好意思 "sorry, how embarrassing" (Mandarin 不好意思): lighter than 对勿起, for small wrongs and for asking favours.
+- ref: 16
+  topic: vocab
+  text: >-
+    和好 "to make up, be reconciled". …就好 "as long as …, that's fine".
+new_words:
+- hanzi: 和好
+  en: to make up
+- hanzi: 阿强
+  en: A-Qiang (a name)
+- hanzi: 用场
+  en: use
+- hanzi: 委屈
+  en: wronged, hurt
+- hanzi: 困勿着
+  en: can't sleep
+- hanzi: 气
+  en: angry
+- hanzi: 错
+  en: wrong
+- hanzi: 原谅
+  en: to forgive
+- hanzi: 吃醋
+  en: to be jealous
+- hanzi: 误会
+  en: to misunderstand
+- hanzi: 后悔
+  en: to regret
+- hanzi: 束
+  en: bunch (of flowers)
+- hanzi: 赔
+  en: to pay back, compensate
+- hanzi: 礼
+  en: courtesy; (赔礼) amends
+- hanzi: 算了
+  en: never mind, forget it
+- hanzi: 怨
+  en: to blame
+- hanzi: 保证
+  en: to promise
+- hanzi: 勿好意思
+  en: sorry, how embarrassing
+exercises:
+  translate:
+  - hanzi: 伊 一直 辣 屋里 等 侬 。
+    en: She's been waiting for you at home all along.
+  - hanzi: 我 讲 错 了 ， 勿好意思 。
+    en: I said it wrong, sorry.
+  - hanzi: 伊 讲 伊 后悔 了 ， 侬 就 原谅 伊 。
+    en: He says he regrets it, so forgive him.
+  fill:
+  - hanzi: 侬 打 错 电话 了 ？ ＿ ， 再 打 一 趟 。
+    en: You dialled the wrong number? Never mind, call again.
+    answer: 算了
+  - hanzi: 搿 部 洗衣机 已经 呒没 ＿ 了 。
+    en: This washing machine is no use any more.
+    answer: 用场
+  - hanzi: 我 勿 是 搿 个 意思 ， 侬 ＿ 了 。
+    en: That's not what I meant, you've misunderstood.
+    answer: 误会
+  say:
+  - hanzi: 对勿起 ， 是 我 勿 对 。
+    en: Sorry, it was my fault.
+  - hanzi: 我 保证 明朝 勿 迟到 。
+    en: I promise I won't be late tomorrow.
+  - hanzi: 昨日 夜里 我 困勿着 。
+    en: I couldn't sleep last night.

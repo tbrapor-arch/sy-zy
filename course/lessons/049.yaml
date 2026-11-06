@@ -1,0 +1,119 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 49
+title:
+  en: Review
+  hanzi: 复习
+review: true
+setting: >-
+  A Sunday in late spring. Sam knocks on the auntie's kitchen door; something has been simmering all afternoon.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: Sam ， 侬 个 新 手机 用 了 灵光 伐 ？
+  en: Sam, is your new phone working well?
+- n: 2
+  speaker: Sam
+  hanzi: 老 灵光 ， 拍 照片 比 旧 个 好 交关 。
+  en: Very well, it takes much better photos than the old one.
+- n: 3
+  speaker: 阿姨
+  hanzi: 上趟 网浪 买 个 外套 退 了 伐 ？
+  en: Did you return the jacket you bought online?
+- n: 4
+  speaker: Sam
+  hanzi: 退 了 ， 钞票 也 收到 了 。
+  en: Yes, and I got the money back.
+- n: 5
+  speaker: 阿姨
+  hanzi: 介末 侬 已经 勿是 拎勿清 了 ！
+  en: So you're not so clueless any more!
+- n: 6
+  speaker: Sam
+  hanzi: 是个 ， 我 还 学 了 交关 老底子 个 讲法 。
+  en: Right, and I've learnt lots of old sayings too.
+- n: 7
+  speaker: 阿姨
+  hanzi: 吵相骂 个 事体 ， 小张 晓得 伐 ？
+  en: Does Xiao Zhang know about the row?
+- n: 8
+  speaker: Sam
+  hanzi: 晓得 个 ， 伊 笑 了 交关 辰光 。
+  en: She does, she laughed for ages.
+- n: 9
+  speaker: 阿姨
+  hanzi: 伊 搭 男朋友 和好 了 伐 ？
+  en: Has she made up with her boyfriend?
+- n: 10
+  speaker: Sam
+  hanzi: 和好 了 ， 伊 男朋友 送 了 一 束 花 。
+  en: Yes, her boyfriend gave her a bunch of flowers.
+- n: 11
+  speaker: 阿姨
+  hanzi: 原来 是 误会 ， 讲 清爽 就 好 了 。
+  en: 'So it was a misunderstanding: once it was cleared up, all was fine.'
+- n: 12
+  speaker: Sam
+  hanzi: 阿姨 ， 今朝 侬 烧 啥 ？ 我 肚皮 饿煞 了 。
+  en: Auntie, what are you cooking today? I'm starving.
+- n: 13
+  speaker: 阿姨
+  hanzi: 腌笃鲜 ， 已经 笃 了 两 个 钟头 了 。
+  en: 腌笃鲜, it's been simmering for two hours already.
+- n: 14
+  speaker: Sam
+  hanzi: 介末 我 来 摆 筷子 ， 好 吃 了 伐 ？
+  en: Then I'll lay the chopsticks. Can we eat now?
+notes:
+- ref: 2
+  topic: grammar
+  text: >-
+    Comparing: A 比 B + adjective (比旧个好), + 交关 "much" (好交关); A 勿及 B "A is not as good as B"; 越来越 "more and more"; 加二 / 更加
+    "even more"; 两样 "different", 一样 "the same".
+- ref: 4
+  topic: grammar
+  text: >-
+    Results with 到: 收到 "received", 闻到 "smelt"; and the passive with 拨: 拨人家骗 "be cheated" (lesson 46).
+- ref: 6
+  topic: vocab
+  text: >-
+    Shanghai words of the last weeks: 嘎讪胡 chat, 拎勿清 / 识相, 老克勒, 洋泾浜, 吹牛皮, 坍台, 难为情, 帮帮忙, 搭侬啥搭界, 勿好意思, 算了.
+- ref: 8
+  topic: grammar
+  text: >-
+    Verb + 了 + time: 笑了交关辰光 "laughed for ages", 笃了两个钟头了 "has been simmering two hours (so far)": a second 了 at the end means
+    it is still going on.
+- ref: 11
+  topic: vocab
+  text: >-
+    Making up: 对勿起, 勿好意思, 原谅, 误会, 后悔, 赔礼, 和好; and getting angry: 气, 动气, 凶, 骂, 吵相骂.
+- ref: 14
+  topic: vocab
+  text: >-
+    摆筷子 "lay the chopsticks": 摆 "to put, set" (lesson 30). 好吃了伐？ "can we eat now?": 好 + verb "may".
+new_words: []
+exercises:
+  translate:
+  - hanzi: 搿 只[ʦᴀʔ55] 手机 比 埃 只[ʦᴀʔ55] 轻 交关 。
+    en: This phone is much lighter than that one.
+  - hanzi: 伊 一直 讲 对勿起 ， 侬 就 原谅 伊 算了 。
+    en: He keeps saying sorry, just forgive him and let it go.
+  - hanzi: 网浪 个 评价 侬 要 看 清爽 ， 覅 拨 人家 骗 。
+    en: Read the online reviews carefully, don't get cheated.
+  fill:
+  - hanzi: 今朝 个 汤 比 昨日 个 ＿ 鲜 。
+    en: Today's soup is even tastier than yesterday's.
+    answer: 加二
+  - hanzi: 伊 讲 错 了 闲话 ， 现在 老 ＿ 个 。
+    en: He said the wrong thing and now he really regrets it.
+    answer: 后悔
+  - hanzi: 排队 要 讲 ＿ ， 覅 插队 。
+    en: Queuing is first come, first served, no cutting in.
+    answer: 先来后到
+  say:
+  - hanzi: 算了 ， 阿拉 勿 去 了 。
+    en: Never mind, let's not go.
+  - hanzi: 搿 件 衬衫 我 着 了 勿 合身 。
+    en: This shirt doesn't fit me.
+  - hanzi: 侬 帮帮忙 ， 覅 吹 牛皮 了 ！
+    en: Come off it, stop boasting!

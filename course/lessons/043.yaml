@@ -1,0 +1,183 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 43
+title:
+  en: Comparing
+  hanzi: 买 手机
+review: false
+setting: >-
+  Saturday afternoon. Sam has dropped his phone; Xiao Li goes with him to a phone shop on Huaihai Road.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 我 手机 掼 坏脱 了 ， 要 买 新 个 。
+  en: I dropped my phone and broke it, I need a new one.
+- n: 2
+  speaker: 营业员
+  hanzi: 侬 看看 搿 两 部 ， 侪 是 新 个 。
+  en: Have a look at these two, both new models.
+- n: 3
+  speaker: Sam
+  hanzi: 搿 两 部 啥个 两样 ？ 牌子 一样 伐 ？
+  en: What's the difference between them? Same brand?
+- n: 4
+  speaker: 营业员
+  hanzi: 牌子 一样 ， 搿 部 屏幕 大 。
+  en: Same brand. This one has a bigger screen.
+- n: 5
+  speaker: 小李
+  hanzi: 大 个 拍 照片 比 小 个 好 。
+  en: The big one takes better photos than the small one.
+- n: 6
+  speaker: Sam
+  hanzi: 必过 大 个 重 ， 价钿 也 贵 交关 。
+  en: But the big one is heavy, and a lot more expensive.
+- n: 7
+  speaker: 营业员
+  hanzi: 贵 是 贵 ， 质量 加二 好 。
+  en: It's dearer, yes, but the quality is even better.
+- n: 8
+  speaker: 小李
+  hanzi: 价钿 差勿多 ， 我 看 大 个 合算 。
+  en: The prices are close, I'd say the big one is better value.
+- n: 9
+  speaker: Sam
+  hanzi: 旧 手机 用 了 五 年 ， 也 勿 推扳 。
+  en: My old phone lasted five years, it wasn't bad either.
+- n: 10
+  speaker: 营业员
+  hanzi: 现在 个 手机 越 来 越 灵光 。
+  en: Phones get better and better these days.
+- n: 11
+  speaker: 小李
+  hanzi: 旧 个 勿及 新 个 ， 覅 舍勿得 。
+  en: The old one is no match for a new one, don't cling to it.
+- n: 12
+  speaker: Sam
+  hanzi: 就 买 大 个 ， 颜色 要 黑 个 。
+  en: I'll take the big one, in black.
+- n: 13
+  speaker: 营业员
+  hanzi: 今朝 打九折 ， 再 送 只[ʦᴀʔ55] 壳子 。
+  en: It's 10% off today, and we'll throw in a case.
+- n: 14
+  speaker: Sam
+  hanzi: 小李 ， 侬 比 我 懂 ， 是 专家 。
+  en: Xiao Li, you know more than me, you're the expert.
+- n: 15
+  speaker: 小李
+  hanzi: 下趟 手机 覅 再 掼 了 ！
+  en: Next time don't drop your phone!
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    掼 gue is "to throw, to drop (and break)" (Mandarin 摔、扔): 掼坏脱 "dropped and broke", 掼脱 "throw away". 手机 "mobile phone":
+    counted with 部 or 只.
+- ref: 3
+  topic: vocab
+  text: >-
+    两样 "different" (Mandarin 不一样): 啥个两样？ "what's the difference?"; 一样 "the same". 牌子 "brand".
+- ref: 4
+  topic: vocab
+  text: >-
+    屏幕 "screen".
+- ref: 5
+  topic: grammar
+  text: >-
+    A 比 B + adjective: 大个比小个好 "the big one is better than the small one" (lesson 15). To say "much more", add 交关 after:
+    贵交关 (line 6).
+- ref: 6
+  topic: vocab
+  text: >-
+    重 "heavy", 轻 "light" (lesson 26).
+- ref: 7
+  topic: grammar
+  text: >-
+    加二 "even more, all the more" (Mandarin 更加), an old Shanghai word: 质量加二好 "the quality is even better". 更加 (lesson 36)
+    says the same. 质量 "quality".
+- ref: 9
+  topic: vocab
+  text: >-
+    旧 "old, used (of things)": 旧手机; 老 is old for people and buildings. 推扳 tha-pe "poor, bad (quality)": 勿推扳 "not bad at
+    all", a typical understatement.
+- ref: 10
+  topic: grammar
+  text: >-
+    越来越 + adjective "more and more": 越来越灵光 "better and better" (lesson 7 had 越…越…).
+- ref: 11
+  topic: grammar
+  text: >-
+    A 勿及 B "A is not as good as B" (Mandarin 不如、比不上). 舍勿得 "can't bear to part with", 舍得 "be willing to give up".
+- ref: 12
+  topic: vocab
+  text: >-
+    颜色 "colour"; 黑 "black", 白 "white" (lesson 15). 黑个 "the black one": adjective + 个.
+- ref: 13
+  topic: vocab
+  text: >-
+    打九折 "10% off" (打八折, lesson 15). 壳子 "case, shell": 手机壳子 "phone case".
+- ref: 14
+  topic: vocab
+  text: >-
+    专家 "expert". 侬比我懂 "you know (it) better than me".
+new_words:
+- hanzi: 手机
+  en: mobile phone
+- hanzi: 掼
+  en: to throw, drop
+- hanzi: 两样
+  en: different
+- hanzi: 牌子
+  en: brand
+- hanzi: 屏幕
+  en: screen
+- hanzi: 重
+  en: heavy
+- hanzi: 质量
+  en: quality
+- hanzi: 加二
+  en: even more
+- hanzi: 旧
+  en: old, used (of things)
+- hanzi: 推扳
+  en: poor, bad (quality)
+- hanzi: 勿及
+  en: not as good as
+- hanzi: 舍勿得
+  en: can't bear to part with
+- hanzi: 颜色
+  en: colour
+- hanzi: 黑
+  en: black
+- hanzi: 打九折
+  en: 10% off
+- hanzi: 壳子
+  en: case, shell
+- hanzi: 专家
+  en: expert
+exercises:
+  translate:
+  - hanzi: 搿 件 外套 比 埃 件 重 交关 。
+    en: This jacket is a lot heavier than that one.
+  - hanzi: 伊 个 上海闲话 越 来 越 好 了 。
+    en: His Shanghainese is getting better and better.
+  - hanzi: 侬 搿 只[ʦᴀʔ55] 包 用 了 十 年 ， 还 勿 推扳 。
+    en: You've used that bag ten years and it's still not bad.
+  fill:
+  - hanzi: 苏州 个 面 搭 上海 个 面 ＿ 伐 ？
+    en: Are Suzhou noodles different from Shanghai ones?
+    answer: 两样
+  - hanzi: 坐 汽车 ＿ 坐 火车 快 。
+    en: Going by coach isn't as fast as the train.
+    answer: 勿及
+  - hanzi: 我 欢喜 搿 个 ＿ ， 蓝 个 。
+    en: I like this colour, the blue one.
+    answer: 颜色
+  say:
+  - hanzi: 我 个 手机 比 侬 个 旧 。
+    en: My phone is older than yours.
+  - hanzi: 搿 部 手机 质量 好 伐 ？
+    en: Is this phone good quality?
+  - hanzi: 旧 衣裳 我 舍勿得 掼 。
+    en: I can't bear to throw away old clothes.

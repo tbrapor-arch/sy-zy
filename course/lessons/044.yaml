@@ -1,0 +1,189 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 44
+title:
+  en: Shanghai sayings
+  hanzi: 老 上海 个 讲法
+review: false
+setting: >-
+  An evening in the lane, after dinner. Sam sits down on a stool beside the auntie with a question.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 阿姨 ， 嘎讪胡 是 上海闲话 里 啥个 讲法 ？
+  en: Auntie, what does 嘎讪胡 mean in Shanghainese?
+- n: 2
+  speaker: 阿姨
+  hanzi: 就是 几 个 人 坐 辣 一道 讲 闲话 。
+  en: It's a few people sitting together and chatting.
+- n: 3
+  speaker: Sam
+  hanzi: 昨日 夜里 小李 讲 我 拎勿清 。
+  en: Last night Xiao Li said I was 拎勿清.
+- n: 4
+  speaker: Sam
+  hanzi: 伊 讲 个 拎勿清 是 啥个 意思 ？
+  en: What did he mean by 拎勿清?
+- n: 5
+  speaker: 阿姨
+  hanzi: 就是 勿 识相 ， 看 勿 懂 面孔 。
+  en: It means having no tact, not reading people's faces.
+- n: 6
+  speaker: Sam
+  hanzi: 啊呀 ， 我 是 有 一眼 拎勿清 。
+  en: Oh dear, I am a bit like that.
+- n: 7
+  speaker: 阿姨
+  hanzi: 覅 难为情 ， 外国人 刚刚 来 ， 侪 介 个 。
+  en: Don't be embarrassed, all foreigners are like that at first.
+- n: 8
+  speaker: Sam
+  hanzi: 还有 老克勒 ， 是 啥个 样子 个 人 ？
+  en: And 老克勒, what sort of people are they?
+- n: 9
+  speaker: 阿姨
+  hanzi: 老底子 个 先生 ， 着 得 老 清爽 。
+  en: Gentlemen of the old days, always very neatly dressed.
+- n: 10
+  speaker: 阿姨
+  hanzi: 弄堂口 个 老伯伯 就是 一 个 。
+  en: The old man at the mouth of the lane is one.
+- n: 11
+  speaker: Sam
+  hanzi: 我 以后 也 要 做 一 个 老克勒 ！
+  en: I want to be one too one day!
+- n: 12
+  speaker: 阿姨
+  hanzi: 小赤佬 ， 先 拿 上海闲话 学 好 再讲 ！
+  en: You little rascal, learn Shanghainese properly first, then we’ll see!
+- n: 13
+  speaker: Sam
+  hanzi: 我 个 上海闲话 已经 勿是 洋泾浜 了 。
+  en: My Shanghainese isn't pidgin any more!
+- n: 14
+  speaker: 阿姨
+  hanzi: 侬 牛皮 吹 得 结棍 ， 当心 坍台 ！
+  en: You certainly know how to boast, careful you don’t lose face!
+- n: 15
+  speaker: Sam
+  hanzi: 阿姨 ， 侬 再 笑 我 ， 我 要 难为情 了 呀 ！
+  en: Auntie, if you keep laughing at me I'll be embarrassed!
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    嘎讪胡 "to chat, to shoot the breeze" (Mandarin 聊天), very Shanghainese. 讲法 is "a way of saying, an expression".
+- ref: 3
+  topic: vocab
+  text: >-
+    昨日 "yesterday" (今朝 today, 明朝 tomorrow). 拎勿清 "doesn't get it, can't read a situation", literally "can't lift (it) clearly";
+    the opposite is 拎得清 "tactful, quick".
+- ref: 5
+  topic: vocab
+  text: >-
+    识相 "tactful, knowing when to back off": 勿识相 "tactless". 面孔 is "face" (Mandarin 脸): 看面孔 "read someone's face", 面孔红了 "blushed".
+- ref: 6
+  topic: vocab
+  text: >-
+    啊呀 "oh dear, oh no": surprise or dismay.
+- ref: 7
+  topic: vocab
+  text: >-
+    难为情 "embarrassed, shy" (Mandarin 不好意思). 介个 "like that".
+- ref: 8
+  topic: culture
+  text: >-
+    老克勒 "old-style gentleman" (from English "class" or "colour"): a man of old Shanghai taste, well dressed, fond of coffee
+    and jazz.
+- ref: 9
+  topic: vocab
+  text: >-
+    老底子 "in the old days" (Mandarin 从前). 着得老清爽 "dressed very neatly": verb + 得 + how.
+- ref: 8
+  topic: vocab
+  text: >-
+    样子 "appearance, kind, look": 啥个样子个人 "what kind of person".
+- ref: 10
+  topic: vocab
+  text: >-
+    老伯伯 "grandpa, old man" (said to an old man you don't know), as 阿婆 is to an old woman.
+- ref: 12
+  topic: vocab
+  text: >-
+    小赤佬 "little rascal": rude between strangers, affectionate from an older neighbour.
+- ref: 13
+  topic: vocab
+  text: >-
+    已经 "already". 洋泾浜 "pidgin (English, Shanghainese)", from the name of an old creek on the edge of the foreign concessions,
+    where traders mixed languages.
+- ref: 14
+  topic: vocab
+  text: >-
+    吹牛皮 "to boast", literally "blow up a cowhide": 牛皮吹得结棍 "what a boaster". 坍台 "to lose face, to make a fool of oneself",
+    a word Shanghai people fear.
+- ref: 15
+  topic: vocab
+  text: >-
+    呀 at the end makes a plea warmer. 再 + verb, … "if you … again, …": 侬再笑我，我要难为情了.
+new_words:
+- hanzi: 讲法
+  en: way of saying, expression
+- hanzi: 嘎讪胡
+  en: to chat
+- hanzi: 昨日
+  en: yesterday
+- hanzi: 拎勿清
+  en: doesn't get it, tactless
+- hanzi: 识相
+  en: tactful
+- hanzi: 面孔
+  en: face
+- hanzi: 啊呀
+  en: oh dear, oh no
+- hanzi: 难为情
+  en: embarrassed, shy
+- hanzi: 老克勒
+  en: old-style Shanghai gentleman
+- hanzi: 老底子
+  en: in the old days
+- hanzi: 老伯伯
+  en: grandpa (an old man)
+- hanzi: 小赤佬
+  en: little rascal
+- hanzi: 样子
+  en: appearance, kind
+- hanzi: 已经
+  en: already
+- hanzi: 坍台
+  en: to lose face
+- hanzi: 洋泾浜
+  en: pidgin
+- hanzi: 牛皮
+  en: cowhide; (吹牛皮) boasting
+- hanzi: 呀
+  en: '(particle: warm plea or surprise)'
+exercises:
+  translate:
+  - hanzi: 伊 面孔 红 了 ， 有 一眼 难为情 。
+    en: She blushed, a bit embarrassed.
+  - hanzi: 老底子 弄堂 里 个 人 侪 认得 个 。
+    en: In the old days everyone in the lane knew each other.
+  - hanzi: 我 已经 吃 过 夜饭 了 。
+    en: I've already had dinner.
+  fill:
+  - hanzi: 阿拉 坐 辣 弄堂口 ＿ 。
+    en: We're sitting at the mouth of the lane, chatting.
+    answer: 嘎讪胡
+  - hanzi: 侬 覅 吹 ＿ ， 侬 自家 会 啥 ？
+    en: Stop boasting, what can you actually do?
+    answer: 牛皮
+  - hanzi: 伊 老 ＿ 个 ， 看见 侬 有 事体 就 转去 了 。
+    en: 'She is very tactful: seeing you were busy, she went home.'
+    answer: 识相
+  say:
+  - hanzi: 搿 个 讲法 啥个 意思 ？
+    en: What does this expression mean?
+  - hanzi: 昨日 我 碰着 小张 了 。
+    en: I ran into Xiao Zhang yesterday.
+  - hanzi: 啊呀 ， 我 忘记 带 钥匙 了 ！
+    en: Oh no, I've forgotten my keys!

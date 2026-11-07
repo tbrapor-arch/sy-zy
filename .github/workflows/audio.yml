@@ -1,7 +1,7 @@
 # Synthetic Shanghainese audio for the lesson dialogues (tools/tts.py, Azure Speech, wuu-CN voices).
 # One-time setup: Settings › Secrets and variables › Actions › New repository secret:
 #   AZURE_SPEECH_KEY     key of a Speech resource (Azure portal, free tier F0 is enough)
-#   AZURE_SPEECH_REGION  its region, e.g. eastasia
+#   AZURE_SPEECH_REGION  its region (optional: eastasia when not set)
 # Runs when a lesson, course/voices.tsv or course/tts_fix.tsv changes (only changed lines are made again),
 # or by hand (Actions › Lesson audio › Run workflow). Commits audio/ and then rebuilds the site.
 name: Lesson audio
@@ -40,7 +40,7 @@ jobs:
       - name: Make the audio
         env:
           AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
-          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION || 'eastasia' }}
           LESSONS: ${{ inputs.lessons }}
           FORCE: ${{ inputs.force }}
         run: |

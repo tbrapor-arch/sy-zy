@@ -17,11 +17,21 @@ New words (as in Tsheh-tû): each lesson declares its new_words (hanzi, with [IP
           a dialogue word declared neither here nor earlier (numbers are free; a word with a forced reading counts
           as declared when the same form, or the bare word, was declared).
   exercises 3 translate + 3 fill + 3 say, none copied from a dialogue line
+  readings  a new word whose reading the build would compose character by character (not in the lexicon, core.tsv or
+            overrides.tsv, not confirmed in verified.tsv, not forced with 字[IPA]): error from lesson 50, warning
+            before. Needs data/build/lexicon.jsonl (`make db`); skipped with a notice without it.
 """
 import glob, os, re, statistics, sys
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, 'tools'))
+import plan_check
+try:
+    LEX = plan_check.load_lexicon()
+except FileNotFoundError as e:
+    LEX = None
+    print('lint: readings not checked,', e)
 HAN = re.compile(r'[㐀-鿿\U00020000-\U0003ffff]')
 PUNCT = re.compile(r'^[，。！？：、；…＿,.!?“”"「」（）()]+$')
 
@@ -120,6 +130,9 @@ def check(path, strict):
                 errors.append(f'new word {h} is already declared')
             if not w.get('en'):
                 errors.append(f'new word {h} has no English')
+            if LEX is not None and '[' not in h and plan_check.reading(h, LEX)[2] in ('composed', 'none'):
+                (errors if n >= 50 else warns).append(f'new word {h}: reading composed from its characters, not checked '
+                                                      '(give it one in course/core.tsv, or 字[IPA])')
             mine.add(h)
         known = before | mine
         for t in sorted(toks):

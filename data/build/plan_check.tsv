@@ -1,0 +1,944 @@
+# Words planned for lessons 50–100 (course/syllabus.yaml), as the build reads them. tools/plan_check.py
+n	word	qian	ipa	src	type	gloss	flags
+50	噢	ao	ɔ	lexicon	same	oh (I see); sentence particle: mind you, all right?	
+50	嘛	ma	mᴀ53	core	same	(particle: obviously, after all)	
+50	啦	la	lᴀ	lexicon	same	sentence particle: 了 + 啊, lively	
+50	呢	ni	ȵi13	lexicon	same	sentence particle: and…? what about…?	
+50	喔唷	oyok	o53 ioʔ55	lexicon	sh	oh my! (surprise, pain)	
+50	咦	yi	i53	core	same	(interjection of surprise) eh?	
+50	哎	e	ᴇ53	lexicon	same	hey!	
+50	嗯	en	ən53	lexicon	same	mm, yes	
+50	消息	xiaoxik	ɕiɔ53 ɕiɪʔ55	lexicon	same	(piece of) news; information; message	
+50	方言	fangyhi	fɑ̃53 ɦi13	lexicon	same	dialect	
+50	普通话	putonghho	pʰu34 tʰoŋ53 ɦo13	core	same	Mandarin	
+50	口语	kounyu	kʰɤ34 ȵy13	composed	same	colloquial speech	composed
+50	发音	fakyin	fᴀʔ55 in53	composed	same	to pronounce	composed
+50	语言	nyuyhi	ȵy13 ɦi13	lexicon	same	language	
+50	词	shy	zɿ13	lexicon	same	word; statement; speech; lyrics	
+50	文读	fhendhok	vən13 doʔ12	lexicon	same	literary (rather than colloquial) pronunciation of a Chinese character	
+50	白读	bhakdhok	bᴀʔ12 doʔ12	lexicon	same	colloquial (rather than literary) pronunciation of a Chinese character	
+50	表示	biaoshy	piɔ34 zɿ13	composed	same	(of sb) to express; to state; to show	composed
+50	哦	o	o53	lexicon	same	oh; also a spelling of the question particle 伐	
+51	早浪向	zaolangxiang	ʦɔ34 lɑ̃13 ɕiã34	lexicon	sh	in the morning	
+51	上半日	shangboenik	zɑ̃13 pø34 ȵiɪʔ12	core	sh	morning	
+51	中浪向	zonglangxiang	ʦoŋ53 lɑ̃13 ɕiã34	lexicon	sh	at midday	
+51	下半天	hhoboeti	ɦo13 pø34 tʰi53	lexicon	same	afternoon	
+51	夜里向	yhalixiang	ɦiᴀ13 li13 ɕiã34	lexicon	sh	at night	
+51	半夜里	boeyhali	pø34 ɦiᴀ13 li13	lexicon	sh	in the middle of the night	
+51	每日天	menikti	mᴇ53 ȵiɪʔ12 tʰi53	lexicon	sh	every day	
+51	日脚	shakjiak	zəʔ12 ʨiᴀʔ55	lexicon	sh	day; days, life	
+51	昨日子	shoknikzy	zoʔ12 ȵiɪʔ12 ʦɿ34	core	sh	yesterday	
+51	常庄	shangzang	zã13 ʦɑ̃53	lexicon	sh	often	
+51	平常	bhinshang	bin13 zã13	checked	same	ordinary	
+51	老是	laoshy	lɔ13 zɿ13	lexicon	same	always	
+51	有常时	yhoushangshy	ɦiɤ13 zã13 zɿ13	lexicon	sh	sometimes	
+51	起床	qishang	ʨʰi34 zɑ̃13	composed	same	to get out of bed; to get up	composed
+51	揩面	kami	kʰᴀ53 mi13	lexicon	sh	to wash one's face	
+51	刷	sak	səʔ55	lexicon	same	a brush; to paint; to daub; to brush; to scrub	
+51	牙齿	ngacy	ŋᴀ13 ʦʰɿ34	lexicon	same	tooth; dental	
+51	泡饭	paofhe	pʰɔ34 vᴇ13	lexicon	same	to soak cooked rice in soup or water; cooked rice reheated in boiling water	
+51	晏	yi	i34	lexicon	same	late; quiet	
+51	困	kun	kʰuən34	lexicon	same	to trap; to surround; hard-pressed	
+51	清早	qinzao	ʨʰin53 ʦɔ34	lexicon	same	first thing in the morning; at daybreak	
+51	夜快头	yhakuadhou	ɦiᴀ13 kʰuᴀ34 dɤ13	lexicon	sh	towards evening	
+52	屋里向	oklixiang	oʔ55 li13 ɕiã34	lexicon	sh	at home, indoors	
+52	浪向	langxiang	lɑ̃13 ɕiã34	lexicon	sh	on, on top of	
+52	门口头	menkoudhou	mən13 kʰɤ34 dɤ13	lexicon	sh	at the door, by the entrance	
+52	边浪向	bilangxiang	pi53 lɑ̃13 ɕiã34	lexicon	sh	at the side, beside	
+52	里向头	lixiangdhou	li13 ɕiã34 dɤ13	lexicon	sh	inside	
+52	底下头	dihhodhou	ti34 ɦo13 dɤ13	lexicon	sh	underneath	
+52	隔壁头	gakbikdhou	kᴀʔ55 piɪʔ55 dɤ13	lexicon	sh	next door	
+52	转弯角子	zoewegokzy	ʦø34 uᴇ53 koʔ55 ʦɿ34	lexicon	sh	street corner	
+52	当中	dangzong	tɑ̃53 ʦoŋ53	lexicon	same	among; in the middle; in the center	
+52	对面	demi	tᴇ34 mi13	checked	same	opposite; across (the street etc)	
+52	旁边	bhangbi	bɑ̃13 pi53	lexicon	same	side; adjacent place	
+52	右面	yhoumi	ɦiɤ13 mi13	lexicon	same	right side	
+52	搿面	ghakmi	gəʔ12 mi13	core	sh	this side	
+52	伊面	yhimi	ɦi13 mi13	core	sh	that side, over there	
+52	埃面	emi	ᴇ53 mi13	checked	sh	over there	
+52	阿里搭	alidak	ᴀ53 li13 tᴀʔ55	composed	sh	where	composed
+52	眼镜	ngejin	ŋᴇ13 ʨin34	lexicon	same	spectacles; eyeglasses	
+52	抽斗	coudou	ʦʰɤ53 tɤ34	lexicon	same	drawer	
+52	角角	gokgok	koʔ55 koʔ55	lexicon	sh	corner	
+52	镜子	jinzy	ʨin34 ʦɿ34	lexicon	same	mirror	
+53	医院	yiyhuoe	i53 ɦyø13	checked	same	hospital	
+53	医生	yisang	i53 sã53	lexicon	same	doctor; medical practitioner	
+53	护士	whushy	ɦu13 zɿ13	lexicon	same	nurse	
+53	检查	jisho	ʨi34 zo13	lexicon	same	inspection; to examine; to inspect	
+53	病	bhin	bin13	lexicon	same	illness; disease; to fall ill	
+53	症状	zenshang	ʦən34 zɑ̃13	lexicon	same	symptom (of an illness)	
+53	药水	yhaksy	ɦiᴀʔ12 sɿ34	lexicon	same	medicine in liquid form; bottled medicine; lotion	
+53	药片	yhakpi	ɦiᴀʔ12 pʰi34	lexicon	same	a (medicine) pill or tablet	
+53	血	xuik	ɕyɪʔ55	lexicon	same	blood; colloquial pr.	
+53	骨折	guakzak	kuəʔ55 ʦəʔ55	lexicon	same	to suffer a fracture; (of a bone) to break; fracture	
+53	救命车	jiuminco	ʨiɤ34 min13 ʦʰo53	lexicon	sh	ambulance	
+53	躺	tang	tʰɑ̃34	lexicon	same	to recline; to lie down	
+53	休息	xiuxik	ɕiɤ53 ɕiɪʔ55	lexicon	same	rest; to rest	
+53	严重	nishong	ȵi13 zoŋ13	lexicon	same	grave; serious; severe; critical	
+53	要紧	yaojin	iɔ53 ʨin34	lexicon	same	important; urgent	
+53	担心	dexin	tᴇ53 ɕin53	lexicon	same	anxious; worried; uneasy	
+53	望望	mangmang	mɑ̃13 mɑ̃13	lexicon	sh	to visit (someone ill), have a look	
+53	腿	te	tʰᴇ34	lexicon	same	leg	
+53	水果	sygu	sɿ34 ku34	lexicon	same	fruit	
+53	生毛病	sangmaobhin	sã53 mɔ13 bin13	lexicon	sh	to fall ill	
+54	天气	tiqi	tʰi53 ʨʰi34	lexicon	same	weather	
+54	预报	yhubao	ɦy13 pɔ34	composed	same	forecast	composed
+54	雨	yhu	ɦy13	lexicon	same	rain	
+54	湿	sak	sᴀʔ55	lexicon	same	moist; wet	
+54	温度	wendhu	uən53 du13	lexicon	same	temperature	
+54	度	dhu	du13	lexicon	same	to pass; to spend (time); measure	
+54	关脱	guetak	kuᴇ53 tʰəʔ55	lexicon	sh	to turn off, shut	
+54	塞牢	selao	sᴇ34 lɔ13	lexicon	sh	to block up, plug	
+54	电	dhi	di13	lexicon	same	lightning; electricity; electric (bound form)	
+54	灯	den	tən53	lexicon	same	lamp; light; lantern	
+54	电灯	dhiden	di13 tən53	lexicon	same	electric light	
+54	暗	oe	ø34	lexicon	same	dark; to turn dark; secret; hidden	
+54	危险	whexi	ɦuᴇ13 ɕi34	lexicon	same	danger; dangerous	
+54	小心	xiaoxin	ɕiɔ34 ɕin53	lexicon	same	to be careful; to take care	
+54	来勿及	lefhakjhik	lᴇ13 vəʔ12 ʥiɪʔ12	composed	sh	there isn't time, too late to	composed
+54	豪燥	hhaosao	ɦɔ13 sɔ34	lexicon	sh	quickly, hurry up	
+54	就要	xhiuyao	ʑiɤ13 iɔ34	composed	same	will	composed
+54	注意	zyyi	ʦɿ34 i34	composed	same	to take note of; to pay attention to	composed
+54	阵头雨	shendhouyhu	zən13 dɤ13 ɦy13	lexicon	sh	shower, thundery shower	
+54	台风	dhefong	dᴇ13 foŋ53	lexicon	same	stage presence, poise	
+54	打雷	dangle	tã34 lᴇ13	lexicon	same	to rumble with thunder; clap of thunder	
+54	霍险	hokxi	hoʔ55 ɕi34	lexicon	sh	lightning	
+55	单位	dewhe	tᴇ53 ɦuᴇ13	lexicon	same	unit (of measure); unit (group of people as a whole)	
+55	专业	zoenik	ʦø53 ȵiɪʔ12	composed	same	specialty	composed
+55	毕业	biknik	piɪʔ55 ȵiɪʔ12	lexicon	same	graduation; to graduate; to finish school	
+55	经理	jinli	ʨin53 li13	checked	same	manager	
+55	能力	nenlik	nən13 liɪʔ12	lexicon	same	capability; ability	
+55	条件	dhiaojhi	diɔ13 ʥi13	lexicon	same	condition; circumstance; term; factor; requirement; prerequisite; qualification; situation; state; condition	
+55	机会	jiwhe	ʨi53 ɦuᴇ13	lexicon	same	opportunity; chance; occasion	
+55	希望	xiwhang	ɕi53 ɦuɑ̃13	book	same	to hope	
+55	问题	fhendhi	vən13 di13	core	same	question, problem	
+55	合同	hhakdhong	ɦəʔ12 doŋ13	lexicon	same	contract; agreement	
+55	下班	hhobe	ɦo13 pᴇ53	core	same	to finish work	
+55	出差	cakca	ʦʰəʔ55 ʦʰᴀ53	lexicon	same	to go on an official or business trip	
+55	同学	dhonghhok	doŋ13 ɦoʔ12	lexicon	same	to study at the same school; fellow student; classmate	
+55	努力	nulik	nu13 liɪʔ12	composed	same	to make an effort; to try hard; to strive	composed
+55	成功	shengong	zən13 koŋ53	composed	same	to succeed	composed
+55	设计	sakji	səʔ55 ʨi34	composed	same	to design; to plan	composed
+55	技术	jhishak	ʥi13 zəʔ12	lexicon	same	technology; technique; skill	
+55	办公室	bhegongsak	bᴇ13 koŋ53 səʔ55	checked	same	office; business premises	
+55	忙	mang	mɑ̃13	core	same	busy	
+55	重要	shongyao	zoŋ13 iɔ53	lexicon	same	important; significant; major	
+55	勿错	fhakcu	vəʔ12 ʦʰu34	composed	sh	not bad, quite good	composed
+55	跳槽	tiaoshao	tʰiɔ34 zɔ13	lexicon	same	to leave one's job to take up a position elsewhere	
+57	麻将	mojiang	mo13 ʨiã53	lexicon	same	mahjong	
+57	麻将牌	mojiangbha	mo13 ʨiã53 bᴀ13	lexicon	same	mahjong tile	
+57	搓	cu	ʦʰu53	lexicon	same	to rub or roll between the hands or fingers; to twist	
+57	牌	bha	bᴀ13	lexicon	same	signboard; plaque; plate; tablet (CL:塊); brand; trademark; mahjong tile; domino; playing card (CL:張)	
+57	赢	yhin	ɦin13	lexicon	same	to beat; to win; to profit	
+57	搭子	dakzy	tᴀʔ55 ʦɿ34	lexicon	same	(slang) companion	
+57	额角头	ngakgokdhou	ŋᴀʔ12 koʔ55 dɤ13	lexicon	sh	forehead; good luck	
+57	门槛精	menlejin	mən13 lᴇ13 ʨin53	lexicon	sh	shrewd, sharp (with money)	
+57	懂经	dongjin	toŋ34 ʨin53	lexicon	sh	to know the ropes	
+57	扎劲	zakjin	ʦᴀʔ55 ʨin34	lexicon	sh	exciting, great fun	
+57	有劲	yhoujin	ɦiɤ13 ʨin34	lexicon	same	vigorous; energetic; interesting; amusing	
+57	老酒	laojiu	lɔ13 ʨiɤ34	lexicon	same	wine, esp. Shaoxing wine	
+57	瓜子	gozy	ko53 ʦɿ34	lexicon	same	melon seed	
+57	一歇歇	yikxikxik	iɪʔ55 ɕiɪʔ55 ɕiɪʔ55	lexicon	sh	a short while	
+57	白相相	bhakxiangxiang	bᴀʔ12 ɕiã53 ɕiã53	lexicon	sh	to have a bit of fun	
+57	好白相	haobhakxiang	hɔ34 bᴀʔ12 ɕiã53	lexicon	sh	fun	
+57	有得	yhoudak	ɦiɤ13 təʔ55	lexicon	sh	there is … to (have a lot still to do)	
+57	呒啥	msa	m̩13 sᴀ34	lexicon	same	dialectal equivalent of 沒什麼	
+57	桩	zang	ʦɑ̃53	lexicon	same	stump; stake; pile; classifier for events, cases, transactions, affairs etc	
+57	来三	lese	lᴇ13 sᴇ53	lexicon	sh	capable; it will do, OK	
+58	喜酒	xijiu	ɕi34 ʨiɤ34	lexicon	same	wedding feast; liquor drunk at a wedding feast	
+58	新郎	xinlang	ɕin53 lɑ̃13	lexicon	same	bridegroom; groom	
+58	新娘	xinniang	ɕin53 ȵiã13	checked	same	bride	
+58	请帖	qintik	ʨʰin34 tʰiɪʔ55	lexicon	same	invitation card; written invitation	
+58	夫妻	fuqi	fu53 ʨʰi53	lexicon	same	husband and wife; married couple	
+58	礼物	lifhak	li13 vəʔ12	lexicon	same	gift; present	
+58	祝	zok	ʦoʔ55	lexicon	same	to pray for; to wish (sb bon voyage, happy birthday etc)	
+58	快乐	kualok	kʰuᴀ34 loʔ12	lexicon	same	happy; joyful	
+58	戒指	gazy	kᴀ34 ʦɿ34	lexicon	same	(finger) ring	
+58	项链	hhangli	ɦɑ̃13 li13	lexicon	same	necklace	
+58	西装	xizang	ɕi53 ʦɑ̃53	lexicon	same	suit; Western-style clothes	
+58	领带	linda	lin13 tᴀ34	composed	same	necktie	composed
+58	连衫裙	lisejhun	li13 sᴇ53 ʥyn13	lexicon	sh	dress	
+58	登样	denyhang	tən53 ɦiã13	lexicon	sh	good-looking, presentable	
+58	嫁	ga	kᴀ34	lexicon	same	(of a woman) to marry; to marry off a daughter; to shift (blame etc)	
+58	家主婆	gazybhu	kᴀ53 ʦɿ34 bu13	lexicon	sh	wife (informal)	
+58	台面	dhemi	dᴇ13 mi13	lexicon	same	tabletop; countertop; (fig.) public view	
+58	参加	coega	ʦʰø53 kᴀ53	lexicon	same	to participate; to take part; to join	
+58	聚会	xhuwhe	ʑy13 ɦuᴇ13	lexicon	same	party; gathering; to meet	
+58	耳环	hherghue	ɦəl13 guᴇ13	lexicon	same	earring	
+58	标致	biaozy	piɔ53 ʦɿ34	lexicon	same	Peugeot (automobile brand)	
+59	几化	jiho	ʨi53 ho34	lexicon	sh	how much, how many	
+59	洋钿	yhangdhi	ɦiã13 di13	lexicon	sh	money; yuan	
+59	卖	ma	mᴀ13	core	same	to sell	
+59	讨价还价	taogahhega	tʰɔ34 kᴀ34 ɦᴇ13 kᴀ34	lexicon	same	to haggle over price; to bargain	
+59	货	hu	hu34	lexicon	same	goods; money; commodity	
+59	货色	husak	hu34 səʔ55	lexicon	same	goods; (derog.) stuff; trash	
+59	卖相	maxiang	mᴀ13 ɕiã53	lexicon	same	outward appearance; demeanor	
+59	生意	sangyi	sã53 i34	lexicon	same	life force; vitality	
+59	生意经	sangyijin	sã53 i34 ʨin53	lexicon	same	knack of doing business; business sense	
+59	零头	lindhou	lin13 dɤ13	checked	same	odd	
+59	对折	dezak	tᴇ34 ʦəʔ55	lexicon	same	to sell at a 50% discount; to fold in two	
+59	称	cen	ʦʰən53	lexicon	same	to fit; to match; to suit; (coll.) to have; to possess; Taiwan pr.	
+59	份量	fhenliang	vən13 liã13	lexicon	same	variant of 分量[fen4 liang5]	
+59	值	shak	zəʔ12	lexicon	same	value; (to be) worth; to happen to	
+59	一塌刮子	yiktakguakzy	iɪʔ55 tʰᴀʔ55 kuᴀʔ55 ʦɿ34	lexicon	sh	altogether, all told	
+59	票子	piaozy	pʰiɔ34 ʦɿ34	lexicon	same	(coll.) cash; bill	
+59	横里	whangli	ɦuã13 li13	lexicon	sh	crosswise; anyway	
+59	左右	zuyhou	ʦu34 ɦiɤ13	checked	same	left and right	
+59	还价	whega	ɦuᴇ13 kᴀ34	lexicon	same	to make a counteroffer when haggling; to bargain	
+59	打烊	dangyhang	tã34 ɦiã13	lexicon	same	to close shop in the evening	
+59	涨价	zangga	ʦã34 kᴀ34	lexicon	same	to appreciate (in value); to increase in price	
+60	运动	yhundhong	ɦyn13 doŋ13	lexicon	same	to move; to exercise; sports	
+60	锻炼	doeli	tø34 li13	lexicon	same	to toughen; to temper; to engage in physical exercise	
+60	健身房	jhisenfhang	ʥi13 sən53 vɑ̃13	checked	same	gym; fitness club	
+60	游泳	yhouyhong	ɦiɤ13 ɦioŋ13	book	same	swimming	
+60	足球	zokjhiu	ʦoʔ55 ʥiɤ13	checked	same	soccer; football	
+60	篮球	lejhiu	lᴇ13 ʥiɤ13	composed	same	basketball	composed
+60	网球	mangjhiu	mɑ̃13 ʥiɤ13	composed	same	tennis	composed
+60	比赛	bise	pi34 sᴇ34	lexicon	same	competition (sports etc); match; to compete	
+60	踢	tik	tʰiɪʔ55	lexicon	same	to kick; to play (e.g. soccer); (slang) butch (in a lesbian relationship)	
+60	跳	tiao	tʰiɔ34	lexicon	same	to jump; to hop; to skip over	
+60	爬	bho	bo13	lexicon	same	to crawl; to climb; to get up or sit up	
+60	爬山	bhose	bo13 sᴇ53	composed	same	to go for a hike (esp. in the hills or mountains)	composed
+60	吃力	qiklik	ʨʰiɪʔ55 liɪʔ12	lexicon	same	to entail strenuous effort; to toil at a task; strenuous	
+60	胖	pang	pʰɑ̃34	lexicon	same	healthy; at ease	
+60	瘦	sou	sɤ34	lexicon	same	thin; to lose weight; (of clothing) tight	
+60	大块头	dhukuedhou	du13 kʰuᴇ34 dɤ13	lexicon	same	heavy man; fat man; lunkhead	
+60	腰	yao	iɔ53	lexicon	same	the waist and lower back; (bound form) kidney of an animal (as food); the waist of trousers or a skirt	
+60	吃勿消	qikfhakxiao	ʨʰiɪʔ55 vəʔ12 ɕiɔ53	lexicon	sh	can't take it, too much for me	
+60	高	gao	kɔ53	lexicon	same	high; tall; above average	
+60	矮	a	ᴀ34	lexicon	same	(of a person) short; (of a wall etc) low; (of rank) inferior (to); lower (than)	
+60	背心	bexin	pᴇ34 ɕin53	lexicon	same	sleeveless garment (vest, waistcoat, singlet, tank top etc)	
+60	力道	likdhao	liɪʔ12 dɔ13	lexicon	same	strength; power; efficacy	
+61	小学	xiaohhok	ɕiɔ34 ɦoʔ12	lexicon	same	elementary school; primary school	
+61	课	ku	kʰu34	lexicon	same	subject; course; class	
+61	功课	gongku	koŋ53 kʰu34	composed	same	homework	composed
+61	考	kao	kʰɔ34	lexicon	same	to beat; to hit; to inspect	
+61	考试	kaosy	kʰɔ34 sɿ34	checked	same	to take an exam	
+61	成绩	shenjik	zən13 ʨiɪʔ55	lexicon	same	achievement; performance records; grades	
+61	数学	suhhok	su34 ɦoʔ12	lexicon	same	mathematics	
+61	英语	yinnyu	in53 ȵy13	composed	same	English (language)	composed
+61	题目	dhimok	di13 moʔ12	composed	same	subject; title; topic	composed
+61	聪明	congmin	ʦʰoŋ53 min13	lexicon	same	intelligent; clever; bright; acute (of sight and hearing)	
+61	笨	bhen	bən13	lexicon	same	stupid; foolish; silly	
+61	乖	gua	kuᴀ53	lexicon	same	(of a child) obedient, well-behaved; clever; shrewd	
+61	笔	bik	piɪʔ55	lexicon	same	writing brush; writing implement (pen, pencil etc) (CL:支,枝); brushstroke; stroke (in painting or calligraphy); (classifier) stroke of a Chinese character	
+61	搿能	ghaknen	gəʔ12 nən13	lexicon	sh	like this, so	
+61	搿能介	ghaknenga	gəʔ12 nən13 kᴀ34	lexicon	sh	like this, in this way	
+61	哪能介	nanenga	nᴀ13 nən13 kᴀ34	lexicon	sh	how come so	
+61	搿眼	ghaknge	gəʔ12 ŋᴇ13	composed	sh	these, this bit of	composed
+61	学生	hhoksang	ɦoʔ12 sã53	core	same	student	
+61	读	dhok	doʔ12	lexicon	same	comma; phrase marked by pause	
+61	纸	zy	ʦɿ34	lexicon	same	paper (CL:張,沓); classifier for documents, letters etc	
+61	中学	zonghhok	ʦoŋ53 ɦoʔ12	lexicon	same	middle school	
+61	橡皮	xhiangbhi	ʑiã13 bi13	lexicon	same	rubber; an eraser	
+62	戏	xi	ɕi34	lexicon	same	trick; drama; play	
+62	越剧	yhuikjhik	ɦyɪʔ12 ʥiɪʔ12	checked	same	Shaoxing opera	
+62	京戏	jinxi	ʨin53 ɕi34	lexicon	same	Beijing opera	
+62	节目	jikmok	ʨiɪʔ55 moʔ12	composed	same	(TV or radio) program; show	composed
+62	噱头	xuikdhou	ɕyɪʔ55 dɤ13	lexicon	same	amusing speech or act; jokes; antics	
+62	唱歌	canggu	ʦʰɑ̃34 ku53	lexicon	same	to sing a song	
+62	歌	gu	ku53	lexicon	same	song (CL:首,支); (bound form) to sing	
+62	音乐	yinyhak	in53 ɦiᴀʔ12	lexicon	same	music	
+62	音乐会	yinyhakgue	in53 ɦiᴀʔ12 kuᴇ34	lexicon	same	concert	
+62	位子	whezy	ɦuᴇ13 ʦɿ34	lexicon	same	place; seat	
+62	场	shang	zã13	lexicon	same	threshing floor; classifier for events and happenings: spell, episode, bout	
+62	好听	haotin	hɔ34 tʰin53	composed	same	pleasant to hear	composed
+62	有趣	yhouqu	ɦiɤ13 ʨʰy34	lexicon	same	interesting; fascinating; amusing	
+62	有意思	yhouyisy	ɦiɤ13 i34 sɿ53	lexicon	same	interesting; meaningful; enjoyable	
+62	咾啥	laosa	lɔ13 sᴀ34	lexicon	sh	and so on, and the like	
+62	来死	lexi	lᴇ13 ɕi34	lexicon	sh	extremely (after 勿要忒…)	
+62	勿得了	fhakdakliao	vəʔ12 təʔ55 liɔ13	core	sh	terribly, extremely; awful	
+62	真叫	zenjiao	ʦən53 ʨiɔ34	lexicon	sh	really, truly	
+62	拍手	paksou	pʰᴀʔ55 sɤ34	lexicon	same	to clap one's hands	
+62	大剧院	dhajhikyhuoe	dᴀ13 ʥiɪʔ12 ɦyø13	core	same	grand theatre	
+62	电影	dhiyin	di13 in34	checked	same	movie; film	
+62	结束	jiksok	ʨiɪʔ55 soʔ55	lexicon	same	to end; to finish; to conclude	
+64	搬场	boeshang	pø53 zã13	lexicon	same	to move (house); to relocate; removal	
+64	箱	xiang	ɕiã53	lexicon	same	box; trunk; chest	
+64	家生	gasang	kᴀ53 sã53	lexicon	sh	furniture; tools	
+64	大橱	dhushy	du13 zɿ13	lexicon	sh	wardrobe	
+64	沙发	sofak	so53 fᴀʔ55	lexicon	same	(loanword) sofa (CL:條,張); (Internet slang) first reply to a forum post	
+64	床	shang	zɑ̃13	lexicon	same	bed; couch (furniture that one can lie down on) (CL:張); bed; bottom (of rivers, oceans, gardens etc); frame; chassis	
+64	被头	bhidhou	bi13 dɤ13	lexicon	sh	quilt	
+64	凳子	denzy	tən34 ʦɿ34	lexicon	same	stool; small seat	
+64	抬	dhe	dᴇ13	lexicon	same	to lift; to raise; (of two or more persons) to carry	
+64	出来	cakle	ʦʰəʔ55 lᴇ13	composed	same	to come out	composed
+64	上来	shangle	zɑ̃13 lᴇ13	lexicon	same	to come up; to approach; (verb complement indicating success)	
+64	进	jin	ʨin34	lexicon	same	to go forward; to advance; to go in	
+64	打破	dangpu	tã34 pʰu34	lexicon	same	to break; to smash	
+64	楼	lou	lɤ13	lexicon	same	house with more than 1 story; storied building; floor	
+64	层	shen	zən13	lexicon	same	to pile on top of one another; layer; stratum; floor (of a building); story	
+64	阳台	yhangdhe	ɦiã13 dᴇ13	lexicon	same	balcony; porch	
+64	厨房间	shyfhangge	zɿ13 vɑ̃13 kᴇ53	lexicon	sh	kitchen	
+64	住	shy	zɿ13	lexicon	same	to live; to reside; to stay; to stop; to cease	
+64	椅子	yizy	i34 ʦɿ34	lexicon	same	chair	
+64	枕头	zendhou	ʦən34 dɤ13	lexicon	same	pillow	
+64	热水瓶	niksybhin	ȵiɪʔ12 sɿ34 bin13	lexicon	same	thermos bottle; vacuum bottle; hot water dispenser (appliance)	
+64	卡车	kaco	kʰᴀ34 ʦʰo53	lexicon	same	truck	
+65	轧	ghak	gᴀʔ12	lexicon	same	to crush together (in a crowd); to make friends; to check (accounts)	
+65	塞车	seco	sᴇ34 ʦʰo53	lexicon	same	traffic jam	
+65	堵	du	tu34	lexicon	same	to block up (a road, pipe etc); to stop up (a hole); (fig.) (of a person) choked up with anxiety or stress	
+65	高架	gaoga	kɔ53 kᴀ34	checked	same	overhead	
+65	隧道	shoedhao	zø13 dɔ13	checked	same	tunnel	
+65	公交	gongjiao	koŋ53 ʨiɔ53	lexicon	same	public transportation; mass transit; abbr. for 公共交通	
+65	号线	hhaoxi	ɦɔ13 ɕi34	composed	same	line number … (metro)	composed
+65	站头	shedhou	zᴇ13 dɤ13	lexicon	sh	(bus, metro) stop	
+65	红绿灯	hhonglokden	ɦoŋ13 loʔ12 tən53	composed	same	traffic light	composed
+65	司机	syji	sɿ53 ʨi53	checked	same	chauffeur; driver	
+65	开车	keco	kʰᴇ53 ʦʰo53	lexicon	same	to drive a car (or train etc)	
+65	交通	jiaotong	ʨiɔ53 tʰoŋ53	composed	same	to be connected	composed
+65	事故	shygu	zɿ13 ku34	composed	same	accident	composed
+65	撞	shang	zɑ̃13	lexicon	same	to knock against; to bump into; to run into	
+65	从	shong	zoŋ13	lexicon	same	from; through; via; (bound form) to follow; (bound form) to obey	
+65	离	li	li13	lexicon	same	mythical beast (archaic)	
+65	近	jhin	ʥin13	core	same	near	
+65	准时	zenshy	ʦən34 zɿ13	composed	same	on time	composed
+65	提早	dhizao	di13 ʦɔ34	lexicon	same	ahead of schedule; sooner than planned; to bring forward (to an earlier time)	
+65	赶	jhuik	ʥyɪʔ12	lexicon	same	to overtake; to catch up with; to hurry; to rush; to try to catch (the bus etc)	
+65	调头	dhiaodhou	diɔ13 dɤ13	lexicon	same	tone (of voice); tune	
+65	停车	dhinco	din13 ʦʰo53	lexicon	same	to pull up (stop one's vehicle); to park; (of a machine) to stop working	
+66	脚踏车	jiakdhakju	ʨiᴀʔ55 dᴀʔ12 ʨy53	lexicon	same	(Tw) bicycle; bike	
+66	踏	dhak	dᴀʔ12	lexicon	same	to tread; to stamp; to step on	
+66	骑	jhi	ʥi13	lexicon	same	(Tw) saddle horse; mounted soldier	
+66	苏州河	suzouwhu	su53 ʦɤ53 ɦu13	checked	same	Suzhou Creek (river in Shanghai)	
+66	河浜	whubang	ɦu13 pã53	lexicon	sh	creek, small river	
+66	桥	jhiao	ʥiɔ13	lexicon	same	bridge	
+66	黄浦江	whangpugang	ɦuɑ̃13 pʰu34 kɑ̃53	lexicon	same	Huangpu River, major river flowing through Shanghai, dividing the city into Puxi 浦西 (west of the river) and Pudong 浦東 (east of the river)	
+66	江	gang	kɑ̃53	lexicon	same	(bound form) Yangtze River; (bound form) Jiangsu Province (abbr. for 江蘇)	
+66	船	shoe	zø13	lexicon	same	boat; vessel; ship	
+66	绕	niao	ȵiɔ13	lexicon	same	to wind; to coil (thread); to rotate around	
+66	转弯	zoewe	ʦø34 uᴇ53	composed	same	to turn	composed
+66	笔直	bikshak	piɪʔ55 zəʔ12	lexicon	same	perfectly straight; straight as a ramrod; bolt upright	
+66	朝	shao	zɔ13	lexicon	same	abbr. for 朝鮮 Korea	
+66	对牢	delao	tᴇ34 lɔ13	lexicon	sh	facing, towards	
+66	跟牢	genlao	kən53 lɔ13	lexicon	sh	following close behind	
+66	看牢	koelao	kʰø34 lɔ13	composed	sh	to keep an eye on	composed
+66	捉牢	zoklao	ʦoʔ55 lɔ13	lexicon	sh	to catch hold of	
+66	滑	whak	ɦuᴀʔ12	lexicon	same	to slip; to slide; slippery; smooth; sly; slippery; not to be trusted	
+66	跤	gao	kɔ34	lexicon	same	a tumble; a fall	
+66	仔	zy	ʦɿ34	lexicon	same	(dialect) (bound form) young man	
+66	搭仔	dakzy	tᴀʔ55 ʦɿ34	lexicon	sh	and, together with (older form)	
+66	顺带便	shendabhi	zən13 tᴀ34 bi13	lexicon	sh	on the way, while you are at it	
+67	猫	mao	mɔ53	lexicon	same	cat (CL:隻); (dialect) to hide oneself; (loanword) (coll.) modem	
+67	狗	gou	kɤ34	lexicon	same	dog	
+67	养	yhang	ɦiã13	lexicon	same	to raise (animals); to bring up (children); to keep (pets)	
+67	鸟	diao	tiɔ34	lexicon	same	penis	
+67	乌龟	wuju	u53 ʨy53	lexicon	same	tortoise; cuckold	
+67	老虫	laoshong	lɔ13 zoŋ13	lexicon	sh	mouse, rat	
+67	咬	ngao	ŋɔ13	lexicon	same	to bite; to nip	
+67	抱	bhao	bɔ13	lexicon	same	to hold; to carry (in one's arms); to hug	
+67	逃	dhao	dɔ13	lexicon	same	to escape; to run away; to flee	
+67	追	zoe	ʦø53	lexicon	same	to sculpt; to carve; musical instrument (old)	
+67	寻到	xhindao	ʑin13 tɔ34	lexicon	sh	to find	
+67	寻勿到	xhinfhakdao	ʑin13 vəʔ12 tɔ34	lexicon	sh	can't find	
+67	关关	guegue	kuᴇ53 kuᴇ53	composed	sh	to shut (for a moment)	composed
+67	龌龊	okcok	oʔ55 ʦʰoʔ55	lexicon	same	dirty; filthy; vile; despicable; (literary) narrow-minded; petty	
+67	臭	cou	ʦʰɤ34	lexicon	same	stench; smelly; to smell (bad)	
+67	毛	mao	mɔ13	lexicon	same	hair; feather; down	
+67	宝贝	baobe	pɔ34 pᴇ34	lexicon	same	treasured object; treasure; darling	
+67	发嗲	fakdia	fᴀʔ55 tiᴀ34	lexicon	sh	to act cute, play the coquette	
+67	急煞	jiksak	ʨiɪʔ55 sᴀʔ55	lexicon	sh	worried to death	
+67	动物	dhongfhak	doŋ13 vəʔ12	lexicon	same	animal	
+67	喊	he	hᴇ34	lexicon	same	to yell; to shout; to call out for (a person)	
+67	摸	mok	moʔ12	lexicon	same	to feel with the hand; to touch; to stroke	
+68	补	bu	pu34	lexicon	same	to repair; to patch; to mend	
+68	营养	yhinyhang	ɦin13 ɦiã13	composed	same	nutrition	composed
+68	健康	jhikang	ʥi13 kʰɑ̃53	composed	same	health	composed
+68	胃	whe	ɦuᴇ13	lexicon	same	stomach	
+68	火气	huqi	hu34 ʨʰi34	lexicon	same	anger; internal heat (TCM)	
+68	伤风	sangfong	sɑ̃53 foŋ53	lexicon	same	to catch cold	
+68	咳	kak	kʰəʔ55	lexicon	same	sound of sighing; damn; wow	
+68	痒	yhang	ɦiã13	lexicon	same	to itch; to tickle	
+68	口干	kougoe	kʰɤ34 kø53	lexicon	sh	thirsty	
+68	舌头	shakdhou	zəʔ12 dɤ13	lexicon	same	tongue	
+68	面色	misak	mi13 səʔ55	composed	same	complexion	composed
+68	浑身	whensen	ɦuən13 sən53	lexicon	same	all over; from head to foot	
+68	焐	wu	u53	lexicon	same	to warm sth up	
+68	苦	ku	kʰu34	lexicon	same	bitter; hardship; pain	
+68	酸	soe	sø53	lexicon	same	sour; tart; sick at heart	
+68	淡	dhe	dᴇ13	lexicon	same	insipid; diluted; weak	
+68	假使	jiasy	ʨiᴀ34 sɿ34	lexicon	same	if; in case; suppose	
+68	要是	yaoshy	iɔ53 zɿ13	lexicon	same	(coll.) if	
+68	既然	jishoe	ʨi53 zø13	checked	same	since; as; this being the case	
+68	恐怕	kongpa	kʰoŋ34 pʰᴀ34	lexicon	same	fear; to dread; I'm afraid that...	
+68	作兴	zokxin	ʦoʔ55 ɕin53	lexicon	same	maybe; possibly; there is reason to believe	
+68	好处	haocy	hɔ34 ʦʰɿ34	lexicon	same	easy to get along with	
+69	早点	zaodi	ʦɔ34 ti34	composed	same	breakfast	composed
+69	大饼	dhabin	dᴀ13 pin34	lexicon	same	large flat bread	
+69	油条	yhoudhiao	ɦiɤ13 diɔ13	core	same	fried dough stick	
+69	生煎馒头	sangjimoedhou	sã53 ʨi53 mø13 dɤ13	lexicon	sh	pan-fried pork buns	
+69	馒头	moedhou	mø13 dɤ13	lexicon	same	steamed bun	
+69	馄饨	whendhen	ɦuən13 dən13	composed	same	wonton; Chinese ravioli (served in soup)	composed
+69	饺子	jiaozy	ʨiɔ34 ʦɿ34	lexicon	same	dumpling; pot-sticker	
+69	春卷	cenjuoe	ʦʰən53 ʨyø34	lexicon	same	egg roll; spring roll	
+69	糕	gao	kɔ53	lexicon	same	cake	
+69	小摊头	xiaotedhou	ɕiɔ34 tʰᴇ53 dɤ13	lexicon	sh	street stall	
+69	摊头	tedhou	tʰᴇ53 dɤ13	lexicon	same	a vendor's stall	
+69	小吃	xiaoqik	ɕiɔ34 ʨʰiɪʔ55	lexicon	same	street food; snack	
+69	袋袋	dhedhe	dᴇ13 dᴇ13	lexicon	sh	pocket; bag	
+69	过过	gugu	ku34 ku34	lexicon	sh	to go with (food, drink)	
+69	咸菜	hhece	ɦᴇ13 ʦʰᴇ34	lexicon	same	salted vegetables; pickles	
+69	皮蛋	bhidhe	bi13 dᴇ13	lexicon	same	century egg; preserved egg	
+69	蛋	dhe	dᴇ13	lexicon	same	egg; oval-shaped thing	
+69	牛奶	niuna	ȵiɤ13 nᴀ13	checked	same	cow's milk	
+69	面包	mibao	mi13 pɔ53	lexicon	same	bread	
+69	顿	den	tən34	lexicon	same	to stop; to pause; to arrange	
+69	葱油饼	congyhoubin	ʦʰoŋ53 ɦiɤ13 pin34	core	same	scallion pancake	
+69	阳春面	yhangcenmi	ɦiã13 ʦʰən53 mi13	lexicon	same	plain noodles in broth	
+71	旅游	lyuyhou	ly13 ɦiɤ13	checked	same	trip	
+71	旅行	lyuyhin	ly13 ɦin13	lexicon	same	to travel; journey; trip	
+71	计划	jiwhak	ʨi34 ɦuᴀʔ12	lexicon	same	plan; project; program	
+71	订	din	tin34	lexicon	same	to agree; to conclude; to draw up	
+71	高铁	gaotik	kɔ53 tʰiɪʔ55	composed	same	high speed rail	composed
+71	动车	dhongco	doŋ13 ʦʰo53	lexicon	same	(PRC) (D- or C-class) high-speed train; power car; multiple-unit train (abbr. for 動車組)	
+71	飞机	fiji	fi53 ʨi53	composed	same	airplane	composed
+71	航班	hhangbe	ɦɑ̃13 pᴇ53	composed	same	(scheduled) flight; (scheduled) sailing	composed
+71	火车站	hucoshe	hu34 ʦʰo53 zᴇ13	composed	same	train station	composed
+71	酒店	jiudi	ʨiɤ34 ti34	checked	same	wine shop	
+71	宾馆	binguoe	pin53 kuø34	checked	same	guesthouse	
+71	行李	hhangli	ɦã13 li13	lexicon	same	luggage	
+71	地图	dhidhu	di13 du13	lexicon	same	map	
+71	身份证	senfhenzen	sən53 vən13 ʦən34	composed	same	identity card	composed
+71	假期	gajhi	kᴀ34 ʥi13	lexicon	same	vacation	
+71	度假	dhuga	du13 kᴀ34	lexicon	same	to go on holidays; to spend one's vacation	
+71	出发	cakfak	ʦʰəʔ55 fᴀʔ55	composed	same	to set off	composed
+71	提前	dhixhi	di13 ʑi13	lexicon	same	to shift to an earlier date; to do sth ahead of time; in advance	
+71	要末	yaomak	iɔ53 məʔ12	lexicon	same	variant of 要麼|要么[yao4 me5]	
+71	或者	hhokze	ɦoʔ12 ʦᴇ34	lexicon	same	or; possibly; maybe; perhaps	
+71	大概	dhage	dᴀ13 kᴇ34	lexicon	same	roughly; probably; rough	
+71	开年	keni	kʰᴇ53 ȵi13	lexicon	same	beginning of a year	
+72	湖	whu	ɦu13	lexicon	same	lake	
+72	山	se	sᴇ53	lexicon	same	mountain; hill (CL:座)	
+72	塔	tak	tʰᴀʔ55	lexicon	same	(loanword) (pastry) tart	
+72	风光	fongguang	foŋ53 kuɑ̃53	lexicon	same	scene; view; sight	
+72	园林	yhuoelin	ɦyø13 lin13	composed	same	gardens; park; landscape garden	composed
+72	花园	hoyhuoe	ho53 ɦyø13	composed	same	garden (for flowers, ornamental plants etc); (landscaped) park; yard with decorative plants	composed
+72	太阳	tayhang	tʰᴀ34 ɦiã13	lexicon	same	sun; sunlight; sunshine; temple (on the side of the human head) (abbr. for 太陽穴)	
+72	月亮	yhuikliang	ɦyɪʔ12 liã13	lexicon	same	the moon	
+72	星星	xinxin	ɕin53 ɕin53	lexicon	same	(coll.) a star; the stars in the sky	
+72	云	yhun	ɦyn13	lexicon	same	(classical) to say	
+72	海	he	hᴇ34	lexicon	same	ocean; sea; great number of people or things	
+72	游	yhou	ɦiɤ13	lexicon	same	to swim	
+72	参观	coeguoe	ʦʰø53 kuø53	lexicon	same	to visit (a place, e.g. museum or factory); to tour; to look around	
+72	合影	hhakyin	ɦəʔ12 in34	lexicon	same	group photo; to take a group photo	
+72	相机	xiangji	ɕiã53 ʨi53	lexicon	same	camera (abbr. for 照相機); at the opportune moment; as the circumstances allow	
+72	值得	shakdak	zəʔ12 təʔ55	lexicon	same	worth the money; to merit; to deserve; to be worth (doing sth)	
+72	出名	cakmin	ʦʰəʔ55 min13	composed	same	well-known for sth	composed
+72	名气	minqi	min13 ʨʰi34	checked	same	reputation; fame	
+72	人人	ninnin	ȵin13 ȵin13	lexicon	same	everyone; every person	
+72	到处	daocy	tɔ34 ʦʰɿ34	lexicon	same	everywhere	
+72	看到	koedao	kʰø34 tɔ34	composed	same	to see	composed
+72	博物馆	bokfhakguoe	poʔ55 vəʔ12 kuø34	core	same	museum	
+73	老里八早	laolibakzao	lɔ13 li13 pᴀʔ55 ʦɔ34	lexicon	sh	long, long ago	
+73	从前	shongxhi	zoŋ13 ʑi13	lexicon	same	previously; formerly; once upon a time	
+73	从小	shongxiao	zoŋ13 ɕiɔ34	lexicon	same	from childhood; from a young age	
+73	长大	zangdha	ʦã34 dᴀ13	lexicon	same	to grow up	
+73	玩具	whoejhu	ɦuø13 ʥy13	lexicon	same	plaything; toy	
+73	游戏	yhouxi	ɦiɤ13 ɕi34	lexicon	same	game (CL:場); to play	
+73	弹	dhe	dᴇ13	lexicon	same	crossball; bullet; shot	
+73	球	jhiu	ʥiɤ13	lexicon	same	ball used for playing games (variant of 球)	
+73	石库门	shakkumen	zᴀʔ12 kʰu53 mən13	checked	same	"shikumen" style architecture: traditional (ca. 19th century) residences with courtyards, once common in Shanghai	
+73	亭子间	dhinzyge	din13 ʦɿ34 kᴇ53	lexicon	sh	the small room over the kitchen (in a lane house)	
+73	灶披间	zaopige	ʦɔ34 pʰi53 kᴇ53	lexicon	sh	kitchen (in a lane house)	
+73	天井	tijin	tʰi53 ʨin34	lexicon	same	courtyard; atrium; opening in a roof	
+73	客堂	kakdhang	kʰᴀʔ55 dɑ̃13	lexicon	same	(old) reception room; living room	
+73	马桶	modhong	mo13 doŋ13	lexicon	same	chamber pot; wooden pan used as toilet; toilet bowl	
+73	煤	me	mᴇ13	lexicon	same	coal	
+73	炉子	luzy	lu13 ʦɿ34	lexicon	same	stove; oven; furnace	
+73	穷	jhiong	ʥioŋ13	lexicon	same	poor; destitute; to use up	
+73	想起来	xiangqile	ɕiã34 ʨʰi34 lᴇ13	lexicon	same	to remember; to recall	
+73	记得	jidak	ʨi34 təʔ55	lexicon	same	to remember	
+73	长远	shangyhuoe	zã13 ɦyø13	checked	same	long-term	
+73	出生	caksen	ʦʰəʔ55 sən53	lexicon	same	to be born	
+73	旧年	jhiuni	ʥiɤ13 ȵi13	lexicon	same	last year	
+74	量	liang	liã13	lexicon	same	to measure	
+74	布	bu	pu34	lexicon	same	to announce; to spread	
+74	大衣	dhayi	dᴀ13 i53	lexicon	same	overcoat; topcoat; cloak	
+74	裤子	kuzy	kʰu34 ʦɿ34	lexicon	same	trousers; pants	
+74	裙子	jhunzy	ʥyn13 ʦɿ34	lexicon	same	skirt	
+74	狭	hhak	ɦᴀʔ12	lexicon	same	narrow; narrow-minded	
+74	厚	hhou	ɦɤ13	lexicon	same	thick; deep or profound; kind	
+74	薄	bhok	boʔ12	lexicon	same	thin; cold in manner; indifferent	
+74	紧	jin	ʨin34	lexicon	same	tight; strict; close at hand	
+74	松	song	soŋ53	lexicon	same	pine	
+74	式样	sakyhang	səʔ55 ɦiã13	composed	same	style	composed
+74	时髦	shymao	zɿ13 mɔ13	lexicon	same	in vogue; fashionable	
+74	考究	kaojiu	kʰɔ34 ʨiɤ53	lexicon	same	to investigate; to check and research; exquisite	
+74	挺括	tinguak	tʰin34 kuᴀʔ55	lexicon	sh	crisp, smart (of clothes)	
+74	稍为	saowhe	sɔ53 ɦuᴇ13	lexicon	sh	a little, slightly	
+74	而且	hherqi	ɦəl13 ʨʰi34	lexicon	same	(not only ...) but also; moreover; in addition; furthermore	
+74	鞋子	hhazy	ɦᴀ13 ʦɿ34	lexicon	same	shoe	
+74	帽子	maozy	mɔ13 ʦɿ34	lexicon	same	hat; cap; (fig.) label	
+74	阔	kuak	kʰuəʔ55	lexicon	same	rich; wide; broad	
+74	袜子	makzy	mᴀʔ12 ʦɿ34	lexicon	same	socks; stockings	
+74	手套	soutao	sɤ34 tʰɔ34	lexicon	same	glove; mitten	
+74	围巾	yhujin	ɦy13 ʨin53	lexicon	same	scarf; shawl	
+75	方向	fangxiang	fɑ̃53 ɕiã34	lexicon	same	direction; orientation	
+75	东	dong	toŋ53	lexicon	same	east; host (i.e. sitting on east side of guest); landlord	
+75	南	noe	nø13	lexicon	same	used in 南無; Taiwan pr.	
+75	西	xi	ɕi53	lexicon	same	the West; abbr. for Spain 西班牙; Spanish	
+75	北	bok	poʔ55	lexicon	same	north; (classical) to be defeated	
+75	街	ga	kᴀ53	lexicon	same	street	
+75	道口	dhaokou	dɔ13 kʰɤ34	composed	same	crossing, junction	composed
+75	步行街	bhuhhangga	bu13 ɦã13 kᴀ53	lexicon	same	car-free zone; pedestrian street	
+75	广场	guangshang	kuɑ̃34 zã13	lexicon	same	public square; plaza	
+75	人民广场	shenminguangshang	zən13 min13 kuɑ̃34 zã13	lexicon	same	People's Square	
+75	市中心	shyzongxin	zɿ13 ʦoŋ53 ɕin53	composed	same	city center	composed
+75	徐家汇	xhigawhe	ʑi13 kᴀ53 ɦuᴇ13	composed	same	Xujiahui, an area in 徐匯區|徐汇区[Xu2 hui4 qu1], Xuhui district, central Shanghai	composed
+75	南京路	noejinlu	nø13 ʨin53 lu13	composed	same	Nanjing St., large commercial street in Shanghai	composed
+75	淮海路	whahelu	ɦuᴀ13 hᴇ34 lu13	composed	same	Huaihai Road	composed
+75	地下	dhihho	di13 ɦo13	lexicon	same	underground; subterranean; covert	
+75	大楼	dhulou	du13 lɤ13	lexicon	same	building (a relatively large, multistory one)	
+75	大厦	dhahho	dᴀ13 ɦo13	lexicon	same	(used in the names of grand buildings such as 百老匯大廈 Broadway Mansions (in Shanghai) or 帝國大廈 Empire State Building etc)	
+75	走过去	zouguqi	ʦɤ34 ku34 ʨʰi34	composed	same	to walk over there	composed
+75	回转来	whezoele	ɦuᴇ13 ʦø34 lᴇ13	lexicon	sh	to come back	
+75	回转去	whezoeqi	ɦuᴇ13 ʦø34 ʨʰi34	lexicon	sh	to go back	
+75	阿是	akshy	ᴀʔ55 zɿ13	book	sh	is it that…? (question opener)	
+75	一家头	yikgadhou	iɪʔ55 kᴀ53 dɤ13	lexicon	sh	alone, by oneself	
+76	爷娘	yhaniang	ɦiᴀ13 ȵiã53	lexicon	sh	parents	
+76	阿哥	akgu	ᴀʔ55 ku53	core	sh	elder brother	
+76	阿弟	adhi	ᴀ53 di13	lexicon	same	younger brother	
+76	阿妹	ame	ᴀ53 mᴇ13	lexicon	same	younger sister	
+76	阿伯	abak	ᴀ53 pᴀʔ55	lexicon	sh	uncle (father's elder brother)	
+76	阿爷	ayha	ᴀ53 ɦiᴀ13	lexicon	sh	grandfather (father's father)	
+76	孃孃	niangniang	ȵiã53 ȵiã53	book	sh	aunt (father's sister)	
+76	舅妈	jhiuma	ʥiɤ13 mᴀ53	lexicon	same	(coll.) aunt; maternal uncle's wife	
+76	囡儿	noehhng	nø53 ɦŋ̩13	lexicon	sh	daughter	
+76	囡囡	noenoe	nø53 nø53	lexicon	same	little darling; baby	
+76	兄弟	xiongdhi	ɕioŋ53 di13	lexicon	same	brothers; younger brother; I, me (humble term used by men in public speech)	
+76	姐妹	jime	ʨi34 mᴇ13	lexicon	same	sisters; siblings; sister (school, city etc)	
+76	老人	laonin	lɔ13 ȵin13	lexicon	same	old man or woman; the elderly; one's aged parents or grandparents	
+76	老太	laota	lɔ13 tʰᴀ34	lexicon	same	old lady	
+76	退休	texiu	tʰᴇ34 ɕiɤ53	lexicon	same	to retire (from the workforce); to go into retirement	
+76	照顾	zaogu	ʦɔ34 ku34	lexicon	same	to take care of; to show consideration; to attend to	
+76	姓	xin	ɕin34	lexicon	same	family name; surname; to be surnamed ...	
+76	儿子	nizy	ȵi13 ʦɿ34	lexicon	same	son	
+76	妹妹	meme	mᴇ13 mᴇ13	core	same	younger sister	
+76	弟弟	dhidhi	di13 di13	core	same	younger brother	
+76	女婿	nyuxi	ȵy13 ɕi34	lexicon	same	daughter's husband; son-in-law	
+76	新妇	xinfhu	ɕin53 vu13	lexicon	same	bride; (dialect) daughter-in-law	
+78	浓	niong	ȵioŋ13	lexicon	same	concentrated; dense; strong (smell etc)	
+78	炒	cao	ʦʰɔ34	lexicon	same	to sauté; to stir-fry; to speculate (in real estate etc); to scalp; to hype up	
+78	烤	kao	kʰɔ34	lexicon	same	to roast; to grill; to broil; to bake; to toast (bread); to warm oneself by a fire	
+78	拌	bhoe	bø13	lexicon	same	to mix; to mix in; to toss (a salad)	
+78	斩	ze	ʦᴇ34	lexicon	same	to behead (as form of capital punishment); to chop	
+78	熟	shok	zoʔ12	lexicon	same	ripe; mature; thoroughly cooked; done; familiar; acquainted	
+78	蹄髈	dhipang	di13 pʰɑ̃34	lexicon	same	variant of 蹄膀[ti2 pang5]	
+78	带鱼	dahhng	tᴀ34 ɦŋ̩13	lexicon	same	ribbonfish; hairtail; beltfish	
+78	虾	ho	ho53	lexicon	same	used in 蝦蟆	
+78	牛肉	niuniok	ȵiɤ13 ȵioʔ12	lexicon	same	beef	
+78	鸡	ji	ʨi53	lexicon	same	fowl; chicken; (slang) prostitute	
+78	鸭子	akzy	ᴀʔ55 ʦɿ34	lexicon	same	duck (CL:隻); (slang) male prostitute	
+78	荠菜	xhice	ʑi13 ʦʰᴇ34	composed	same	shepherd's purse (Capsella bursa-pastoris)	composed
+78	荤	hun	huən53	lexicon	same	strong-smelling vegetable (garlic etc); non-vegetarian food (meat, fish etc); vulgar	
+78	素	su	su34	lexicon	same	raw silk; white; plain, unadorned	
+78	烧饭	saofhe	sɔ53 vᴇ13	lexicon	sh	to cook (a meal)	
+78	落苏	loksu	loʔ12 su53	lexicon	sh	aubergine, eggplant	
+78	洋山芋	yhangseyhu	ɦiã13 sᴇ53 ɦy13	lexicon	sh	potato	
+78	鸡毛菜	jimaoce	ʨi53 mɔ13 ʦʰᴇ34	lexicon	sh	baby pak choi	
+78	硬	ngang	ŋã13	lexicon	same	hard; stiff; solid; (fig.) strong; firm; resolutely; uncompromisingly	
+78	细	xi	ɕi34	lexicon	same	thin or slender; finely particulate; thin and soft	
+78	粗	cu	ʦʰu53	lexicon	same	(of sth long) wide; thick; (of sth granular) coarse; (of a voice) gruff	
+79	存款	shenkuoe	zən13 kʰuø34	composed	same	to deposit money (in a bank etc)	composed
+79	活期	whakjhi	ɦuəʔ12 ʥi13	lexicon	same	(banking) current (account); checking (account); demand (deposit etc)	
+79	定期	dhinjhi	din13 ʥi13	lexicon	same	at set dates; at regular intervals; periodic	
+79	人民币	shenminbhi	zən13 min13 bi13	lexicon	same	Renminbi, the official currency of the PRC (currency codes: RMB or CNY)	
+79	省	sang	sã34	lexicon	same	to save; to economize; to be frugal; to omit; to delete; to leave out; province	
+79	节约	jikyak	ʨiɪʔ55 iᴀʔ55	lexicon	same	to economize; to conserve (resources); economy	
+79	浪费	langfi	lɑ̃13 fi34	lexicon	same	to waste; to squander	
+79	费	fi	fi34	lexicon	same	to cost; to spend; fee	
+79	电费	dhifi	di13 fi34	lexicon	same	electricity bill	
+79	租金	zujin	ʦu53 ʨin53	composed	same	rent	composed
+79	账	zang	ʦã34	lexicon	same	account; bill; debt	
+79	账单	zangde	ʦã34 tᴇ53	lexicon	same	bill	
+79	勿大	fhakdhu	vəʔ12 du13	composed	sh	not very, not much	composed
+79	稍许	saoxu	sɔ53 ɕy34	lexicon	same	a little; a bit	
+79	老老	laolao	lɔ13 lɔ13	lexicon	same	variant of 姥姥[lao3 lao5]	
+79	最最	zoezoe	ʦø34 ʦø34	lexicon	sh	the very most	
+79	顶顶	dindin	tin34 tin34	lexicon	sh	the very most	
+79	至少	zysao	ʦɿ34 sɔ34	lexicon	same	at least; (to say the) least	
+79	有点	yhoudi	ɦiɤ13 ti34	checked	same	a little	
+79	勿少	fhaksao	vəʔ12 sɔ34	composed	sh	quite a few, a good deal	composed
+79	发票	fakpiao	fᴀʔ55 pʰiɔ34	lexicon	same	invoice; receipt; bill; uniform invoice (abbr. for 統一發票)	
+79	进账	jinzang	ʨin34 ʦã34	lexicon	same	(of money) to come into an account; to get; to earn; income; receipts	
+80	修理	xiuli	ɕiɤ53 li13	composed	same	to repair	composed
+80	维修	fhixiu	vi13 ɕiɤ53	composed	same	maintenance (of equipment)	composed
+80	工具	gongjhu	koŋ53 ʥy13	composed	same	tool	composed
+80	老虎钳	laohujhi	lɔ13 hu34 ʥi13	lexicon	same	vise; pincer pliers	
+80	开关	kegue	kʰᴇ53 kuᴇ53	checked	same	power switch	
+80	煤气	meqi	mᴇ13 ʨʰi34	checked	same	coal gas	
+80	浴缸	yhokgang	ɦioʔ12 kɑ̃53	checked	same	bathtub	
+80	抽水马桶	cousymodhong	ʦʰɤ53 sɿ34 mo13 doŋ13	checked	same	flush toilet	
+80	天花板	tihuabe	tʰi53 huᴀ53 pᴇ34	lexicon	same	ceiling (of a room)	
+80	墙壁	xhiangbik	ʑiã13 piɪʔ55	lexicon	same	wall	
+80	墙头	xhiangdhou	ʑiã13 dɤ13	lexicon	sh	wall	
+80	油漆	yhouqik	ɦiɤ13 ʨʰiɪʔ55	composed	same	oil paints	composed
+80	装修	zangxiu	ʦɑ̃53 ɕiɤ53	composed	same	to decorate	composed
+80	物业	fhaknik	vəʔ12 ȵiɪʔ12	lexicon	same	property; real estate; abbr. for 物業管理, property management	
+80	管理费	guoelifi	kuø34 li13 fi34	composed	same	management fee	composed
+80	麻烦	mofhe	mo13 vᴇ13	lexicon	same	trouble; inconvenience; inconvenient; troublesome; annoying; to bother sb; to put sb to trouble	
+80	负责	fhouzak	vɤ13 ʦəʔ55	lexicon	same	conscientious	
+80	钟点工	zongdigong	ʦoŋ53 ti34 koŋ53	checked	same	hourly worker	
+80	敲	kao	kʰɔ53	lexicon	same	to hit; to strike; to tap	
+80	坏	wha	ɦuᴀ13	lexicon	same	bad; spoiled; broken	
+80	漏水	lousy	lɤ13 sɿ34	composed	same	(of pipes, ceilings, roofs etc) to leak water; to have a water leak	composed
+80	装	zang	ʦɑ̃53	lexicon	same	adornment; to adorn; dress	
+81	困难	kunne	kʰuən34 nᴇ13	lexicon	same	difficult; challenging; straitened circumstances	
+81	办法	bhefak	bᴇ13 fᴀʔ55	checked	same	way of handling sth; means; measure; (practical) solution to a problem	
+81	法子	fakzy	fᴀʔ55 ʦɿ34	lexicon	same	way; method; Taiwan pr.	
+81	商量	sangliang	sɑ̃53 liã13	lexicon	same	to consult; to talk over; to discuss	
+81	答应	dakyin	tᴀʔ55 in53	lexicon	same	to answer; to respond; to answer positively; to agree; to accept; to promise	
+81	相信	xiangxin	ɕiã53 ɕin34	lexicon	same	to believe; to be convinced; to accept as true	
+81	关照	guezao	kuᴇ53 ʦɔ34	lexicon	same	to take care; to keep an eye on; to look after	
+81	托	tok	tʰoʔ55	lexicon	same	to hold up in one's hand; to support with one's palm; sth serving as a support: a prop, a rest (e.g. arm rest); (bound form) a shill	
+81	辛苦	xinku	ɕin53 kʰu34	lexicon	same	exhausting; hard; tough	
+81	怪勿得	guafhakdak	kuᴀ34 vəʔ12 təʔ55	lexicon	sh	no wonder	
+81	所以	suyi	su34 i34	composed	same	therefore	composed
+81	因为	yinwhe	in53 ɦuᴇ13	lexicon	same	because; owing to; on account of	
+81	反正	fezen	fᴇ34 ʦən53	lexicon	same	anyway; in any case; to come over from the enemy's side	
+81	实在	shakshe	zəʔ12 zᴇ13	lexicon	same	really; actually; indeed	
+81	其实	jhishak	ʥi13 zəʔ12	lexicon	same	actually; in fact; really	
+81	勿搭界	fhakdakga	vəʔ12 tᴀʔ55 kᴀ34	checked	sh	nothing to do with it; no connection	
+81	人情	ninxhin	ȵin13 ʑin13	lexicon	same	human emotions; social relationship; friendship; favor; a good turn	
+81	撑	cang	ʦʰã53	lexicon	same	to support; to prop up; to push or move with a pole	
+81	关系	guexi	kuᴇ53 ɕi34	lexicon	same	relation; relationship; connection; to concern; to involve; to affect; guanxi (personal connections)	
+81	告诉	gaosu	kɔ53 su34	lexicon	same	to press charges; to file a complaint	
+81	上路	shanglu	zɑ̃13 lu13	lexicon	same	to start on a journey; to be on one's way	
+81	无所谓	whusuwhe	ɦu13 su34 ɦuᴇ13	lexicon	same	to be indifferent; not to matter; cannot be said to be	
+82	泡	pao	pʰɔ34	lexicon	same	puffed; swollen; spongy; small lake (esp. in place names); classifier for urine or feces	
+82	壶	whu	ɦu13	lexicon	same	pot; classifier for bottled liquid	
+82	杯子	bezy	pᴇ53 ʦɿ34	lexicon	same	cup; glass	
+82	红茶	hhongsho	ɦoŋ13 zo13	lexicon	same	black tea	
+82	白开水	bhakkesy	bᴀʔ12 kʰᴇ53 sɿ34	lexicon	same	plain boiled water	
+82	热水	niksy	ȵiɪʔ12 sɿ34	lexicon	same	hot water	
+82	笃悠悠	dokyouyou	toʔ55 iɤ53 iɤ53	lexicon	sh	unhurried, taking one's time	
+82	写意	xiayi	ɕiᴀ34 i34	lexicon	same	to suggest (rather than depict in detail)	
+82	闲	hhe	ɦᴇ13	lexicon	same	enclosure; (variant of 閒) idle; unoccupied	
+82	休闲	xiuhhe	ɕiɤ53 ɦᴇ13	lexicon	same	leisure; relaxation; not working	
+82	悠哉	youze	iɤ53 ʦᴇ53	lexicon	same	see 悠哉悠哉[you1 zai1 you1 zai1]	
+82	情调	xhindhiao	ʑin13 diɔ13	lexicon	same	ambience; mood; flavor	
+82	城隍庙	shenwhangmiao	zən13 ɦuɑ̃13 miɔ13	composed	same	the City God Temple (and its bazaar)	composed
+82	老朋友	laobhangyhou	lɔ13 bã13 ɦiɤ13	lexicon	same	old friend; (slang) period; menstruation	
+82	茄山河	ghasewhu	gᴀ13 sᴇ53 ɦu13	lexicon	sh	to chat idly, shoot the breeze	
+82	谈	dhe	dᴇ13	lexicon	same	to speak; to talk; to converse	
+82	谈谈	dhedhe	dᴇ13 dᴇ13	composed	same	to discuss; to have a chat	composed
+82	讲讲	ganggang	kɑ̃34 kɑ̃34	lexicon	same	to talk a bit	
+82	讲讲看	ganggangkoe	kɑ̃34 kɑ̃34 kʰø34	composed	sh	tell me, let's hear it	composed
+82	听听看	tintinkoe	tʰin53 tʰin53 kʰø34	composed	sh	have a listen	composed
+83	报纸	baozy	pɔ34 ʦɿ34	checked	same	newspaper	
+83	电视	dhishy	di13 zɿ13	checked	same	television; TV	
+83	电视台	dhishydhe	di13 zɿ13 dᴇ13	composed	same	television station	composed
+83	广播	guangbu	kuɑ̃34 pu53	lexicon	same	broadcast; broadcasting; to broadcast	
+83	社会	showhe	zo13 ɦuᴇ13	lexicon	same	society	
+83	国家	gokjia	koʔ55 ʨiᴀ53	lexicon	same	country; nation; state	
+83	世界	syga	sɿ53 kᴀ34	lexicon	same	world	
+83	城市	shenshy	zən13 zɿ13	composed	same	city; town	composed
+83	发生	faksen	fᴀʔ55 sən53	lexicon	same	to happen; to occur; to take place; to arise (e.g. 發生問題 "a problem arises")	
+83	情况	xhinhuang	ʑin13 huɑ̃34	lexicon	same	circumstances; state of affairs; situation	
+83	变化	biho	pi34 ho34	lexicon	same	(intransitive) to change; to vary; change; variation	
+83	影响	yinxiang	in34 ɕiã34	composed	same	influence	composed
+83	改革	gegak	kᴇ34 kəʔ55	lexicon	same	reform; to reform	
+83	开放	kefang	kʰᴇ53 fɑ̃34	composed	same	to bloom	composed
+83	据说	jusak	ʨy34 səʔ55	lexicon	same	it is said that; reportedly	
+83	听说	tinsak	tʰin53 səʔ55	lexicon	same	to hear (sth said); one hears (that); hearsay	
+83	乃末	nemak	nᴇ53 məʔ12	composed	sh	and then, so then; now	composed
+83	真相	zenxiang	ʦən53 ɕiã53	lexicon	same	the truth about sth; the actual facts	
+83	肯定	kendhin	kʰən34 din13	lexicon	same	to be certain; to be positive; assuredly; definitely; to give recognition; to affirm	
+83	可能	kunen	kʰu34 nən13	lexicon	same	might (happen); possible; probable	
+83	认为	ninwhe	ȵin13 ɦuᴇ13	lexicon	same	to believe; to think; to consider; to feel	
+83	最近	zoejhin	ʦø34 ʥin13	checked	same	recently	
+85	公园	gongyhuoe	koŋ53 ɦyø13	composed	same	park (for public recreation)	composed
+85	散步	sebhu	sᴇ34 bu13	lexicon	same	to take a walk; to go for a walk	
+85	走路	zoulu	ʦɤ34 lu13	checked	same	to walk; to go on foot	
+85	跳舞	tiaowhu	tʰiɔ34 ɦu13	lexicon	same	to dance	
+85	象棋	xhiangjhi	ʑiã13 ʥi13	checked	same	Chinese chess	
+85	棋子	jhizy	ʥi13 ʦɿ34	composed	same	chess piece	composed
+85	早起	zaoqi	ʦɔ34 ʨʰi34	lexicon	same	to get up early	
+85	耳朵	nidu	ȵi13 tu34	lexicon	same	ear; handle (on a cup)	
+85	骨头	guakdhou	kuəʔ55 dɤ13	lexicon	same	bone; moral character; bitterness	
+85	挨下来	ahhole	ᴀ53 ɦo13 lᴇ13	lexicon	sh	next, after that	
+85	随后	shoehhou	zø13 ɦɤ13	composed	same	afterward; later; subsequently; following that	composed
+85	最后	zoehhou	ʦø34 ɦɤ13	checked	same	final; last; ultimate	
+85	日日	shakshak	zəʔ12 zəʔ12	lexicon	same	every day	
+85	一日天	yikshakti	iɪʔ55 zəʔ12 tʰi53	lexicon	sh	a whole day	
+85	一夜天	yikyhati	iɪʔ55 ɦiᴀ13 tʰi53	lexicon	sh	a whole night	
+85	老样子	laoyhangzy	lɔ13 ɦiã13 ʦɿ34	lexicon	same	old situation; things as they were	
+85	安静	oexhin	ø53 ʑin13	lexicon	same	quiet; peaceful; calm	
+85	眼乌珠	ngewuzy	ŋᴇ13 u53 ʦɿ53	lexicon	sh	eyeball, eye	
+85	手节头	soujikdhou	sɤ34 ʨiɪʔ55 dɤ13	lexicon	sh	finger	
+85	脑子	naozy	nɔ13 ʦɿ34	lexicon	same	brains; mind	
+85	着棋	zakjhi	ʦᴀʔ55 ʥi13	lexicon	same	to play chess	
+85	着末脚	zymakjiak	ʦɿ34 məʔ12 ʨiᴀʔ55	lexicon	sh	last of all, in the end	
+86	潮	shao	zɔ13	lexicon	same	tide; damp; moist; humid; fashionable; trendy	
+86	闷	men	mən53	lexicon	same	stuffy; shut indoors; to smother	
+86	烂泥	leni	lᴇ13 ȵi13	lexicon	same	mud; mire	
+86	洋伞	yhangse	ɦiã13 sᴇ34	lexicon	sh	umbrella	
+86	雨伞	yhuse	ɦy13 sᴇ34	lexicon	same	umbrella	
+86	蚊子	menzy	mən13 ʦɿ34	lexicon	same	mosquito	
+86	电风扇	dhifongsoe	di13 foŋ53 sø34	lexicon	same	electric fan	
+86	冷天	langti	lã13 tʰi53	checked	same	cold day	
+86	热天	nikti	ȵiɪʔ12 tʰi53	checked	same	hot day	
+86	冬天	dongti	toŋ53 tʰi53	lexicon	same	winter	
+86	夏天	hhoti	ɦo13 tʰi53	lexicon	same	summer	
+86	落雪	lokxik	loʔ12 ɕiɪʔ55	lexicon	same	(literary or dialectal) to snow; (literary) fallen snow; settled snow	
+86	身浪向	senlangxiang	sən53 lɑ̃13 ɕiã34	composed	sh	on one's body, on oneself	composed
+86	触气	cokqi	ʦʰoʔ55 ʨʰi34	lexicon	sh	annoying, hateful	
+86	霉头	medhou	mᴇ13 dɤ13	lexicon	sh	bad luck (触霉头 'to have bad luck')	
+86	吃光	qikguang	ʨʰiɪʔ55 kuɑ̃53	lexicon	same	to eat up	
+86	做完	zuwhoe	ʦu34 ɦuø13	composed	same	to finish	composed
+86	煞根	sakgen	sᴀʔ55 kən53	lexicon	sh	to the full, thoroughly satisfying	
+86	阴天	yinti	in53 tʰi53	lexicon	same	cloudy day; overcast sky	
+86	毛毛雨	maomaoyhu	mɔ13 mɔ13 ɦy13	lexicon	same	drizzle; light rain; (fig.) mere trifle; sth that has only a weak effect	
+86	回潮	wheshao	ɦuᴇ13 zɔ13	lexicon	same	to become moist again; to revive (usually of sth bad); resurgence	
+86	气闷	qimen	ʨʰi34 mən53	lexicon	sh	stuffy; depressing	
+87	酒吧	jiuba	ʨiɤ34 pᴀ53	lexicon	same	bar (place to buy drinks)	
+87	酒吧间	jiubaji	ʨiɤ34 pᴀ53 ʨi53	lexicon	sh	bar	
+87	咖啡厅	gafitin	kᴀ53 fi53 tʰin53	lexicon	same	coffee shop	
+87	餐厅	coetin	ʦʰø53 tʰin53	checked	same	dining hall	
+87	服务员	fhokwhuyhuoe	voʔ12 ɦu13 ɦyø13	lexicon	same	waiter; waitress; attendant	
+87	盒饭	hhakfhe	ɦᴀʔ12 vᴇ13	checked	same	meal in a partitioned box	
+87	饿	ngu	ŋu13	lexicon	same	hungry; to starve (sb)	
+87	一枪头	yikqiangdhou	iɪʔ55 ʨʰiã53 dɤ13	lexicon	sh	in one go, at the first try	
+87	滑脚	whakjiak	ɦuᴀʔ12 ʨiᴀʔ55	lexicon	sh	to slip away	
+87	夜	yha	ɦiᴀ13	lexicon	same	night	
+87	吵醒	caoxin	ʦʰɔ34 ɕin34	composed	same	to wake sb up with a noise	composed
+87	困着	kunzy	kʰuən34 ʦɿ34	lexicon	sh	to fall asleep, be asleep	
+87	醒	xin	ɕin34	lexicon	same	to wake up; to be awake; to become aware	
+87	上床	shangshang	zɑ̃13 zɑ̃13	lexicon	same	to go to bed; (coll.) to have sex	
+87	一听	yikten	iɪʔ55 tʰən53	lexicon	same	a can (of drink)	
+87	尝尝	shangshang	zɑ̃13 zɑ̃13	lexicon	same	to have a taste	
+87	一顿	yikden	iɪʔ55 tən34	lexicon	same	one meal	
+87	搿趟	ghaktang	gəʔ12 tʰɑ̃34	lexicon	sh	this time	
+87	手表	soubiao	sɤ34 piɔ53	lexicon	same	wristwatch	
+88	唱片	cangpi	ʦʰɑ̃34 pʰi34	lexicon	same	gramophone record; LP; music CD	
+88	碟片	dhikpi	diɪʔ12 pʰi34	lexicon	same	disc	
+88	歌曲	guqiok	ku53 ʨʰioʔ55	lexicon	same	song	
+88	钢琴	gangjhin	kɑ̃53 ʥin13	composed	same	piano	composed
+88	吉他	jikta	ʨiɪʔ55 tʰᴀ53	composed	same	(loanword) guitar	composed
+88	琴	jhin	ʥin13	lexicon	same	guqin 古琴 (a type of zither); musical instrument in general	
+88	拉	la	lᴀ53	lexicon	same	to pull; to play (a bowed instrument); to drag	
+88	音响	yinxiang	in53 ɕiã34	composed	same	sound; acoustics; audio	composed
+88	卡拉	kala	kʰᴀ34 lᴀ53	lexicon	same	Kara, city in northern Togo 多哥; Cara, Karla etc (name)	
+88	流行	liuyhin	liɤ13 ɦin13	lexicon	same	(of a contagious disease etc) to spread; to propagate; (of a style of clothing, song etc) popular; fashionable	
+88	年代	nidhe	ȵi13 dᴇ13	composed	same	a decade of a century (e.g. the Sixties)	composed
+88	时代	shydhe	zɿ13 dᴇ13	composed	same	Time, US weekly news magazine	composed
+88	年轻	niqin	ȵi13 ʨʰin53	checked	same	young	
+88	年轻人	niqinnin	ȵi13 ʨʰin53 ȵin13	composed	same	young people	composed
+88	跳跳	tiaotiao	tʰiɔ34 tʰiɔ34	composed	same	to dance, jump a bit	composed
+88	唱唱	cangcang	ʦʰɑ̃34 ʦʰɑ̃34	composed	same	to sing a bit	composed
+88	听听	tintin	tʰin53 tʰin53	composed	same	to listen a bit	composed
+88	感觉	goejiao	kø34 ʨiɔ34	lexicon	same	feeling; impression; sensation; to feel; to perceive	
+88	感情	goexhin	kø34 ʑin13	lexicon	same	emotion; sentiment; affection; feelings between two persons	
+88	眼泪	ngeli	ŋᴇ13 li13	lexicon	same	tear; teardrop	
+88	兴趣	xinqu	ɕin53 ʨʰy34	lexicon	same	interest (desire to know about sth); interest (thing in which one is interested); hobby	
+88	画	hho	ɦo13	lexicon	same	to draw; to paint; picture; painting (CL:幅,張); to draw (a line) (variant of 劃)	
+89	习惯	xhikgue	ʑiɪʔ12 kuᴇ34	composed	same	habit	composed
+89	规矩	gueju	kuᴇ53 ʨy34	lexicon	same	lit. compass and set square; fig. established standard; rule	
+89	规律	guelik	kuᴇ53 liɪʔ12	composed	same	rule (e.g. of science)	composed
+89	改	ge	kᴇ34	lexicon	same	to change; to alter; to transform	
+89	变	bi	pi34	lexicon	same	to change; to become different; to transform	
+89	适应	sakyin	səʔ55 in53	lexicon	same	to adapt; to fit; to suit	
+89	随随便便	shoeshoebhibhi	zø13 zø13 bi13 bi13	lexicon	same	casually, any old how	
+89	马马虎虎	mamahuhu	mᴀ13 mᴀ13 hu34 hu34	lexicon	same	careless; casual; vague	
+89	仔细	zyxi	ʦɿ34 ɕi34	lexicon	same	careful; attentive; cautious; to be careful; to look out; (dialect) thrifty; frugal	
+89	勿响	fhakxiang	vəʔ12 ɕiã34	lexicon	sh	to say nothing, keep quiet	
+89	一向	yikxiang	iɪʔ55 ɕiã34	lexicon	same	a period of time in the recent past	
+89	从来	shongle	zoŋ13 lᴇ13	lexicon	same	always; at all times; never (if used in negative sentence)	
+89	倒是	daoshy	tɔ34 zɿ13	lexicon	same	contrary to what one might expect; actually; contrariwise	
+89	反而	fehher	fᴇ34 ɦəl13	checked	same	on the contrary; instead	
+89	但是	dheshy	dᴇ13 zɿ13	lexicon	same	but; however	
+89	不过	bakgu	pəʔ55 ku34	lexicon	same	only; merely; no more than	
+89	烟	yi	i53	lexicon	same	cigarette or pipe tobacco; smoke; mist	
+89	劝	quoe	ʨʰyø34	lexicon	same	to advise; to urge; to try to persuade	
+89	肯	ken	kʰən34	lexicon	same	to agree; to consent; to be willing to	
+89	舍得	sodak	so34 təʔ55	lexicon	same	to be willing to part with sth	
+89	生活	sangwhak	sã53 ɦuəʔ12	lexicon	same	to live; life; livelihood	
+89	有辰光	yhoushenguang	ɦiɤ13 zən13 kuɑ̃53	lexicon	sh	sometimes	
+90	将来	jiangle	ʨiã53 lᴇ13	lexicon	same	in the future; future; the future	
+90	决定	juikdhin	ʨyɪʔ55 din13	composed	same	to decide; to determine; to make up one's mind	composed
+90	考虑	kaolyu	kʰɔ34 ly13	composed	same	to think over	composed
+90	愿意	nyuoeyi	ȵyø13 i34	checked	same	to wish	
+90	敢	goe	kø34	lexicon	same	to dare; daring; (polite) may I venture	
+90	需要	xuyao	ɕy53 iɔ34	composed	same	to need; to want; to demand; to require	composed
+90	必须	bikxu	piɪʔ55 ɕy53	checked	same	to have to	
+90	出国	cakgok	ʦʰəʔ55 koʔ55	composed	same	to go abroad; to leave the country	composed
+90	研究生	nijiusang	ȵi53 ʨiɤ53 sã53	lexicon	same	graduate student; postgraduate student; research student	
+90	博士	bokshy	poʔ55 zɿ13	composed	same	doctor (as an academic degree)	composed
+90	独立	dhoklik	doʔ12 liɪʔ12	composed	same	independent	composed
+90	结果	jikgu	ʨiɪʔ55 ku34	lexicon	same	to bear fruit	
+90	成为	shenwhe	zən13 ɦuᴇ13	lexicon	same	to become; to turn into	
+90	只要	zakyao	ʦəʔ55 iɔ34	checked	same	so long as; provided; if	
+90	勿管	fhakguoe	vəʔ12 kuø34	checked	sh	no matter (what, who…)	
+90	除脱	shytak	zɿ13 tʰəʔ55	lexicon	sh	apart from, except	
+90	为仔	whezy	ɦuᴇ13 ʦɿ34	lexicon	sh	for, in order to (older form)	
+90	为了	wheliao	ɦuᴇ13 liɔ13	lexicon	same	for; for the purpose of; in order to	
+90	无论	whulen	ɦu13 lən13	lexicon	same	no matter what or how; regardless of whether...	
+90	外语	nganyu	ŋᴀ13 ȵy13	composed	same	foreign language	composed
+90	国际	gokji	koʔ55 ʨi34	composed	same	international	composed
+90	索性	sokxin	soʔ55 ɕin34	lexicon	same	you might as well (do it); simply; just	
+92	北方	bokfang	poʔ55 fɑ̃53	lexicon	same	north; the northern part a country; China north of the Yellow River	
+92	江南	gangnoe	kɑ̃53 nø13	lexicon	same	region of China immediately south of the lower Yangtze River, including Shanghai and adjoining parts of Jiangsu, Anhui, Jiangxi and Zhejiang	
+92	北京	bokjin	poʔ55 ʨin53	lexicon	same	Beijing municipality, capital of the People's Republic of China (short name 京)	
+92	宁波	ninbu	ȵin13 pu53	lexicon	same	see 寧波市|宁波市[Ning2 bo1 Shi4]	
+92	台湾	dhewe	dᴇ13 uᴇ53	composed	same	variant of 臺灣|台湾[Tai2 wan1]	composed
+92	中国	zonggok	ʦoŋ53 koʔ55	composed	same	China	composed
+92	中国人	zonggoknin	ʦoŋ53 koʔ55 ȵin13	lexicon	same	Chinese person	
+92	郊区	jiaoqu	ʨiɔ53 ʨʰy53	lexicon	same	Jiao District or Jiaoqu, a district of Tongling City 銅陵市, Anhui	
+92	人口	ninkou	ȵin13 kʰɤ34	lexicon	same	population; people	
+92	环境	ghuejin	guᴇ13 ʨin34	composed	same	environment	composed
+92	空气	kongqi	kʰoŋ53 ʨʰi34	lexicon	same	air; atmosphere	
+92	风格	fonggak	foŋ53 kᴀʔ55	composed	same	style	composed
+92	特色	dhaksak	dəʔ12 səʔ55	composed	same	a characteristic; a distinctive feature or quality	composed
+92	特别	dhakbhik	dəʔ12 biɪʔ12	checked	same	unusual; special	
+92	普通	putong	pʰu34 tʰoŋ53	checked	same	common	
+92	一般	yikbe	iɪʔ55 pᴇ53	lexicon	same	same; ordinary; so-so	
+92	传统	shoetong	zø13 tʰoŋ34	lexicon	same	tradition; traditional	
+92	海派	hepa	hᴇ34 pʰᴀ34	checked	sh	Shanghai-style	
+92	最	zoe	ʦø34	lexicon	same	(before an adjective or verb) to the highest degree; (the) most ...; -est	
+92	比较	bijiao	pi34 ʨiɔ34	lexicon	same	to compare; to contrast; comparatively	
+92	别个	bhikhhak	biɪʔ12 ɦəʔ12	lexicon	sh	other, another	
+92	讲到	gangdao	kɑ̃34 tɔ34	lexicon	same	to talk about sth	
+93	客人	kaknin	kʰᴀʔ55 ȵin13	lexicon	same	visitor; guest; customer	
+93	主人	zynin	ʦɿ34 ȵin13	lexicon	same	owner; host; master	
+93	招待	zaodhe	ʦɔ53 dᴇ13	lexicon	same	to hold a reception; to offer hospitality; to entertain (guests); to serve (customers)	
+93	欢迎	huoenin	huø53 ȵin13	core	same	welcome	
+93	光临	guanglin	kuɑ̃53 lin13	lexicon	same	(formal) to honor with one's presence; to attend	
+93	香蕉	xiangjiao	ɕiã53 ʨiɔ53	composed	same	banana	composed
+93	橘子	jiokzy	ʨioʔ55 ʦɿ34	lexicon	same	tangerine	
+93	葡萄	bhudhao	bu13 dɔ13	lexicon	same	grape	
+93	冰淇淋	binjhilin	pin53 ʥi13 lin13	lexicon	same	ice cream	
+93	阿要	akyao	ᴀʔ55 iɔ34	book	sh	do you want…? would you like…?	
+93	拜哎	bae	pᴀ34 ᴇ53	composed	sh	bye-bye	composed
+93	招呼	zaohu	ʦɔ53 hu53	lexicon	same	to call out to; to greet; to say hello to	
+93	和气	whuqi	ɦu13 ʨʰi34	lexicon	same	friendly; polite; amiable	
+93	大方	dhafang	dᴀ13 fɑ̃53	lexicon	same	expert; scholar; mother earth	
+93	爸爸	baba	pᴀ53 pᴀ53	lexicon	same	(coll.) father; dad	
+93	翻译	feyhik	fᴇ53 ɦiɪʔ12	composed	same	to translate	composed
+93	邀请	yaoqin	iɔ53 ʨʰin34	composed	same	to invite	composed
+93	走好	zouhao	ʦɤ34 hɔ34	lexicon	sh	take care (said to someone leaving)	
+93	添麻烦	timofhe	tʰi53 mo13 vᴇ13	lexicon	same	to cause trouble for sb; to inconvenience	
+93	明朝会	minzaowhe	min13 ʦɔ53 ɦuᴇ13	lexicon	sh	see you tomorrow	
+93	生梨	sangli	sã53 li13	lexicon	sh	pear	
+94	服务	fhokwhu	voʔ12 ɦu13	composed	same	to serve	composed
+94	损坏	senwha	sən34 ɦuᴀ13	lexicon	same	to damage; to injure	
+94	解释	jiasak	ʨiᴀ34 səʔ55	lexicon	same	explanation; to explain; to interpret	
+94	抱歉	bhaoqi	bɔ13 ʨʰi34	composed	same	to be sorry	composed
+94	讨厌	taoyi	tʰɔ34 i34	lexicon	same	to dislike; to loathe; disagreeable	
+94	恶心	okxin	oʔ55 ɕin53	lexicon	same	nausea; to feel sick; disgust	
+94	辣手	laksou	lᴀʔ12 sɤ34	lexicon	sh	tough, ruthless; thorny	
+94	刁	diao	tiɔ53	lexicon	same	artful; wicked	
+94	存心	shenxin	zən13 ɕin53	lexicon	same	deliberately	
+94	根本	genben	kən53 pən34	composed	same	fundamental	composed
+94	硬碰硬	ngangbhangngang	ŋã13 bã13 ŋã13	lexicon	same	to meet force with force; painstaking	
+94	作孽	zoknik	ʦoʔ55 ȵiɪʔ12	lexicon	same	to sin	
+94	勿来三	fhaklese	vəʔ12 lᴇ13 sᴇ53	lexicon	sh	won't do, not capable	
+94	嫌	yhi	ɦi13	lexicon	same	to dislike; suspicion; resentment	
+94	罚	fhak	vᴀʔ12	lexicon	same	to punish; to penalize; to fine	
+94	满意	moeyi	mø13 i34	checked	same	satisfied	
+94	处理	cyli	ʦʰɿ34 li13	lexicon	same	to handle; to deal with; to punish; to treat sth by a special process; to process	
+94	惹气	shaqi	zᴀ13 ʨʰi34	lexicon	sh	infuriating, annoying	
+94	搞	ghao	gɔ13	lexicon	same	to do; to make; to go in for	
+94	笃定	dokdhin	toʔ55 din13	lexicon	same	certain; confident (of some outcome); calm and unhurried	
+95	邻舍隔壁	linsogakbik	lin13 so34 kᴀʔ55 piɪʔ55	lexicon	sh	the neighbours	
+95	小菜场	xiaoceshang	ɕiɔ34 ʦʰᴇ34 zã13	lexicon	sh	food market	
+95	后门	hhoumen	ɦɤ13 mən13	lexicon	same	back door; back gate; (fig.) back-door influence; under-the-table dealings; anus	
+95	门槛	menke	mən13 kʰᴇ34	checked	same	doorstep	
+95	排门板	bhamenbe	bᴀ13 mən13 pᴇ34	lexicon	sh	shop-front board; a tall thin person	
+95	长脚	zangjiak	ʦã34 ʨiᴀʔ55	lexicon	sh	long-legs (nickname for a tall person)	
+95	柏油桶	bakyhoudhong	pᴀʔ55 ɦiɤ13 doŋ13	composed	sh	tar barrel; a short fat person	composed
+95	巴子	bazy	pᴀ53 ʦɿ34	lexicon	sh	country bumpkin (rude)	
+95	瘪三	bikse	piɪʔ55 sᴇ53	lexicon	same	(Wu dialect) bum; wretched-looking tramp who lives by begging or stealing	
+95	赤佬	caklao	ʦʰᴀʔ55 lɔ13	lexicon	same	(dialect) scoundrel; rascal	
+95	阿飞	afi	ᴀ53 fi53	lexicon	same	hoodlum; hooligan; young rowdy	
+95	贼骨头	shakguakdhou	zəʔ12 kuəʔ55 dɤ13	lexicon	sh	thief	
+95	花头	huadhou	huᴀ53 dɤ13	lexicon	same	trick; pattern; novel idea	
+95	名堂	mindhang	min13 dɑ̃13	lexicon	same	item (in a program of entertainments); trick (act of mischief); worthwhile result	
+95	闹猛	naomang	nɔ13 mã13	lexicon	same	(dialect) bustling; lively	
+95	一天世界	yiktisyga	iɪʔ55 tʰi53 sɿ53 kᴀ34	lexicon	sh	all over the place, a complete mess	
+95	行情行事	hhangxhinhhangshy	ɦɑ̃13 ʑin13 ɦɑ̃13 zɿ13	lexicon	sh	a great many	
+95	兮兮	xixi	ɕi53 ɕi53	lexicon	same	(particle used to exaggerate certain adjectives, in particular 神經兮兮 髒兮兮 可憐兮兮 and 慘兮兮	
+95	偷	tou	tʰɤ53	lexicon	same	to steal; to pilfer; to snatch	
+95	派头	padhou	pʰᴀ34 dɤ13	lexicon	same	manner; style; panache	
+95	老油条	laoyhoudhiao	lɔ13 ɦiɤ13 diɔ13	lexicon	same	old fox; slick customer	
+95	揩油	kayhou	kʰᴀ53 ɦiɤ13	lexicon	same	to grope a woman or girl	
+96	浦东	pudong	pʰu34 toŋ53	composed	same	Pudong, a district of Shanghai to the east of the Huangpu River, full name 浦東新區|浦东新区[Pu3 dong1 Xin1 qu1]	composed
+96	浦西	puxi	pʰu34 ɕi53	composed	same	Puxi, the area of Shanghai located west of the Huangpu River 黃浦江|黄浦江[Huang2 pu3 Jiang1], known as the historic urban center of the city	composed
+96	大桥	dhujhiao	du13 ʥiɔ13	lexicon	same	Da Qiao, one of the Two Qiaos, according to Romance of the Three Kingdoms 三國演義, the two great beauties of ancient China	
+96	建筑	jizok	ʨi34 ʦoʔ55	lexicon	same	to construct; building	
+96	造好	shaohao	zɔ13 hɔ34	lexicon	same	built, finished building	
+96	改造	geshao	kᴇ34 zɔ13	composed	same	to transform	composed
+96	动迁	dhongqi	doŋ13 ʨʰi53	composed	sh	to be moved out for redevelopment	composed
+96	开发	kefak	kʰᴇ53 fᴀʔ55	lexicon	same	to exploit (a resource); to open up (for development); to develop	
+96	规划	guewhak	kuᴇ53 ɦuᴀʔ12	lexicon	same	to draw up a plan; to map out a program; a plan; a program	
+96	世纪	syji	sɿ53 ʨi34	composed	same	century	composed
+96	历史	liksy	liɪʔ12 sɿ34	composed	same	history	composed
+96	年数	nisu	ȵi13 su34	lexicon	sh	number of years	
+96	高级	gaojik	kɔ53 ʨiɪʔ55	composed	same	high level	composed
+96	别墅	bhikshy	biɪʔ12 zɿ13	composed	same	villa	composed
+96	公寓	gongyhu	koŋ53 ɦy13	checked	same	apartment building; block of flats (may be a public housing block or a condominium etc) (CL:套[tao4])	
+96	住宅	shyshak	zɿ13 zᴀʔ12	lexicon	same	residence; dwelling; abode	
+96	地段	dhidhoe	di13 dø13	lexicon	same	section; district	
+96	面积	mijik	mi13 ʨiɪʔ55	composed	same	area (of a floor, piece of land etc)	composed
+96	平方	bhinfang	bin13 fɑ̃53	composed	same	square (as in square foot, square mile, square root)	composed
+96	滨江	bingang	pin53 kɑ̃53	lexicon	same	along the bank of a river; riverside	
+96	陆家嘴	lokgazy	loʔ12 kᴀ53 ʦɿ34	lexicon	same	Lujiazui (the financial district in Pudong)	
+96	工厂	gongcang	koŋ53 ʦʰã34	composed	same	factory	composed
+97	起飞	qifi	ʨʰi34 fi53	composed	same	(of an aircraft or rocket) to take off; to lift off	composed
+97	离开	like	li13 kʰᴇ53	checked	same	to depart; to leave	
+97	回去	wheqi	ɦuᴇ13 ʨʰi34	core	same	to go back (home)	
+97	想念	xiangni	ɕiã34 ȵi13	lexicon	same	to miss; to remember with longing; to long to see again	
+97	联系	liyhi	li13 ɦi13	lexicon	same	connection; contact; relation	
+97	电子邮件	dhizyyhoujhi	di13 ʦɿ34 ɦiɤ13 ʥi13	composed	same	email	composed
+97	邮件	yhoujhi	ɦiɤ13 ʥi13	composed	same	mail	composed
+97	信	xin	ɕin34	lexicon	same	letter; mail; to trust	
+97	明信片	minxinpi	min13 ɕin34 pʰi34	lexicon	same	postcard	
+97	纪念	jini	ʨi34 ȵi13	lexicon	same	to commemorate; to honor the memory of; memento; keepsake; souvenir	
+97	之前	zyxhi	ʦɿ34 ʑi13	composed	same	before	composed
+97	之后	zyhhou	ʦɿ34 ɦɤ13	composed	same	after; behind	composed
+97	一辈子	yikbezy	iɪʔ55 pᴇ53 ʦɿ34	lexicon	same	(for) a lifetime	
+97	忘记脱	mangjitak	mɑ̃13 ʨi34 tʰəʔ55	lexicon	sh	to forget (completely)	
+97	送到	songdao	soŋ34 tɔ34	composed	same	to deliver to, see someone to	composed
+97	见面	jimi	ʨi34 mi13	lexicon	same	to meet; to see each other	
+97	快点	kuadi	kʰuᴀ34 ti34	composed	same	to do sth more quickly	composed
+97	飞	fi	fi53	lexicon	same	to fly	
+99	故事	gushy	ku34 zɿ13	lexicon	same	old practice	
+99	突然	dhakshoe	dəʔ12 zø13	lexicon	same	sudden; abrupt; unexpected	
+99	想勿到	xiangfhakdao	ɕiã34 vəʔ12 tɔ34	composed	sh	didn't expect, who would have thought	composed
+99	齐巧	xhiqiao	ʑi13 ʨʰiɔ34	lexicon	sh	just then, as luck would have it	
+99	于是	yhushy	ɦy13 zɿ13	lexicon	same	thereupon; as a result; consequently; thus; hence	
+99	当时	dangshy	tɑ̃53 zɿ13	lexicon	same	then; at that time	
+99	曾经	shenjin	zən13 ʨin53	lexicon	same	once; already; former	
+99	一门心思	yikmenxinsy	iɪʔ55 mən13 ɕin53 sɿ53	lexicon	same	to set one's heart on sth (idiom)	
+99	刚	gang	kɑ̃53	lexicon	same	(literary) hard; firm; strong; exactly; precisely; barely; only just	
+99	才	she	zᴇ13	lexicon	same	ability; talent; sb of a certain type; a capable individual	
+99	正	zen	ʦən53	lexicon	same	first month of the lunar year	
+99	总	zong	ʦoŋ34	lexicon	same	(bound form) general; overall; to sum up; in every case; always; invariably	
+99	完成	whoeshen	ɦuø13 zən13	composed	same	to complete; to accomplish	composed
+99	经常	jinshang	ʨin53 zã13	checked	same	frequently; constantly; regularly; often	
+99	通常	tongshang	tʰoŋ53 zã13	composed	same	regular; usual; normal	composed
+99	重新	shongxin	zoŋ13 ɕin53	lexicon	same	again; once more; re-	
+99	害怕	hhepo	ɦᴇ13 pʰo34	lexicon	same	to be afraid; to be scared	
+99	讲过	ganggu	kɑ̃34 ku34	lexicon	same	have said	
+99	辣陌生头	lakmaksangdhou	lᴀʔ12 mᴀʔ12 sã53 dɤ13	lexicon	sh	all of a sudden	
+100	小说	xiaosak	ɕiɔ34 səʔ55	lexicon	same	novel; fiction	
+100	作家	zokjia	ʦoʔ55 ʨiᴀ53	lexicon	same	author	
+100	文章	fhenzang	vən13 ʦɑ̃53	composed	same	article	composed
+100	文学	fhenhhok	vən13 ɦoʔ12	lexicon	same	literature	
+100	作品	zokpin	ʦoʔ55 pʰin34	composed	same	work (of art)	composed
+100	内容	neyhong	nᴇ13 ɦioŋ13	lexicon	same	content; substance; details	
+100	迭个	dhikhhak	diɪʔ12 ɦəʔ12	lexicon	sh	this (a novel's spelling of 搿个)	
+100	辣盖	lakge	lᴀʔ12 kᴇ34	composed	sh	to be there; in the middle of (a novel's spelling)	composed
+100	来西	lexi	lᴇ13 ɕi53	lexicon	sh	very, so (after an adjective; a novel's spelling)	
+100	倷	na	nᴀ13	core	sh	you (several people)	
+100	鞋里	hhali	ɦᴀ13 li13	composed	sh	where; which (a novel's spelling of 阿里)	composed
+100	鞋里只	hhalizak	ɦᴀ13 li13 ʦᴀʔ55	core	sh	which one	
+100	豪悛	hhaosao	ɦɔ13 sɔ34	core	sh	quickly, hurry	
+100	尔奶	ngna	ŋ̩53 nᴀ13	book	sh	grandmother (father's mother)	
+100	来得个	ledakghak	lᴇ13 təʔ55 gəʔ12	book	sh	so very, ever so	
+100	个嘛	hhakma	ɦəʔ12 mᴀ53	core	sh	(particle: that's how it is)	
+100	海头	hedhou	hᴇ34 dɤ13	lexicon	sh	there, over there (after a person or place; novels)	
+100	搿抢里	ghakqiangli	gəʔ12 ʨʰiã34 li13	composed	sh	these days, lately	composed
+100	睏觉	kungao	kʰuən34 kɔ34	core	sh	to sleep	
+100	脱仔	takzy	tʰəʔ55 ʦɿ34	lexicon	sh	and, with (older form)	
+100	葛末	gakmak	kəʔ55 məʔ12	lexicon	sh	well then, in that case (a novel's spelling of 介末)	
+100	葛	gak	kəʔ55	lexicon	same	kudzu (Pueraria lobata); hemp cloth	

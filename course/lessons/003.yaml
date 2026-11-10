@@ -49,20 +49,20 @@ dialogue:
 notes:
 - ref: 1
   text: >-
-    几钿 ci-di is "how much money", the question you will ask most at a market. For "how many" of anything else, use
+    几钿 {几钿} is "how much money", the question you will ask most at a market. For "how many" of anything else, use
     几 with a measure word: 几只, 几斤.
 - ref: 2
   text: >-
     A 斤 is half a kilo, the unit for fruit and vegetables at Chinese markets. 块 is "yuan" when you count money.
 - ref: 3
   text: >-
-    忒 theq is "too (much)": 忒贵 too expensive, 忒烫 too hot. 好伐 at the end of a request softens it: "…, all right?"
+    忒 {忒} is "too (much)": 忒贵 too expensive, 忒烫 too hot. 好伐 at the end of a request softens it: "…, all right?"
 - ref: 4
   text: >-
-    廿 gnie is "twenty", one syllable. Shanghainese counts 十, 十一 … 十九, 廿, 廿一 … and then 三十 for thirty.
+    廿 {廿} is "twenty", one syllable. Shanghainese counts 十, 十一 … 十九, 廿, 廿一 … and then 三十 for thirty.
 - ref: 6
   text: >-
-    拨 peq is "to give" (Mandarin 给), and also "to, for" before a person. 铜钿 is "money" (Mandarin 钱); 钞票 is another
+    拨 {拨} is "to give" (Mandarin 给), and also "to, for" before a person. 铜钿 is "money" (Mandarin 钱); 钞票 is another
     everyday word for it.
 - ref: 7
   text: >-

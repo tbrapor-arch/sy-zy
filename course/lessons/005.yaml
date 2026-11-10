@@ -54,7 +54,7 @@ dialogue:
 notes:
 - ref: 1
   text: >-
-    屋里 is "home" (Mandarin 家). 个 ghe' after a noun or pronoun marks who something belongs to, like Mandarin 的: 阿拉屋里个照片
+    屋里 is "home" (Mandarin 家). 个 {个} after a noun or pronoun marks who something belongs to, like Mandarin 的: 阿拉屋里个照片
     "our family's photo".
 - ref: 3
   text: >-
@@ -68,13 +68,13 @@ notes:
     小人 is a false friend: in Mandarin it is "a petty person", in Shanghainese simply "child".
 - ref: 6
   text: >-
-    嗲 dia is a very Shanghainese word: "lovely, cute, charming", and also "great". 老嗲个 "really cute".
+    嗲 {嗲} is a very Shanghainese word: "lovely, cute, charming", and also "great". 老嗲个 "really cute".
 - ref: 7
   text: >-
     个 is also the general measure word, as in Mandarin: 几个人 "how many people", 四个 "four (of them)".
 - ref: 8
   text: >-
-    The family: 爷 ya is father, 姆妈 m-ma is mother, 阿姐 is big sister, 阿哥 big brother. 搭 is "and".
+    The family: 爷 {爷} is father, 姆妈 {姆妈} is mother, 阿姐 is big sister, 阿哥 big brother. 搭 is "and".
 new_words:
 - hanzi: 阿拉
   en: we, us

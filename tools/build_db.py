@@ -167,14 +167,30 @@ with open(db_dir / 'lexicon.jsonl', 'w', encoding='utf8') as f:
             f.write(json.dumps(e, ensure_ascii=False) + '\n')
 
 # ---------- 5. lessons
+SPELL = re.compile(r'\{([^{}\[\]]+)(?:\[([^\]]+)\])?\}')
+def note(nt, path):
+    """A note's text, with {字} or {字[IPA]} turned into a spelling the app shows in the learner's system.
+    Never type a romanization in a note: write {伐}, or {只[ʦᴀʔ55]} for a reading other than the lexicon's."""
+    sp = []
+    def put(m):
+        word, forced = m.group(1), m.group(2)
+        e = entry(word, forced.replace('_', ' ') if forced else None)
+        if not e:
+            raise SystemExit(f'{path}: no reading for {{{word}}} in a note')
+        sp.append({k: e[k] for k in ('qian', 'wugniu', 'ipa', 'tone', 'contour')})
+        return '{' + str(len(sp) - 1) + '}'
+    out = {'ref': nt['ref'], 'text': SPELL.sub(put, nt['text'].strip())}
+    if sp: out['sp'] = sp
+    if nt.get('topic'): out['topic'] = nt['topic']
+    return out
+
 def parse_lesson(path):
     """course/lessons/NNN.yaml -> the shape the rest of this script uses"""
     y = yaml.safe_load(open(path, encoding='utf8'))
     L = {'title': f"{y['title']['hanzi']} | {y['title']['en']}", 'setting': y.get('setting', '').strip(),
          'review': 'yes' if y.get('review') else 'no',
          'lines': [{'speaker': d['speaker'], 'src': d['hanzi'], 'en': d['en'], 'lit': d.get('lit', '')} for d in y['dialogue']],
-         'notes': [{'ref': nt['ref'], 'text': nt['text'].strip(), **({'topic': nt['topic']} if nt.get('topic') else {})}
-                   for nt in y.get('notes', [])],
+         'notes': [note(nt, path) for nt in y.get('notes', [])],
          'exercises': [], 'declared': y.get('new_words')}
     for kind, items in (y.get('exercises') or {}).items():
         for e in items:

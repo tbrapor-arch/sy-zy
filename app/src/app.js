@@ -363,7 +363,8 @@ const REVEAL = {};
 function enHTML(en, lit) { return `<span class="en">${esc(en)}</span>${lit && prefs.lit ? `<span class="zh lit">lit. ${esc(lit)}</span>` : ''}`; }
 function enLine(en, lit, k) { REVEAL[k] = [en, lit]; return prefs.en ? enHTML(en, lit) : `<button class="reveal" data-reveal="${k}">Show English</button>`; }
 function wireReveal(root) { $$('[data-reveal]', root).forEach(b => b.onclick = () => { const [en, lit] = REVEAL[b.dataset.reveal]; b.outerHTML = enHTML(en, lit); }); }
-function fmt(t) { return esc(hzt(t)).replace(/([㐀-鿿\u{20000}-\u{3ffff}豈-﫿]+)/gu, '<span class="han">$1</span>'); }
+// a note's {0}, {1}…: spellings the build resolved from {字} markup, shown in the learner's system
+function fmt(t, sp) { return esc(hzt(t)).replace(/([㐀-鿿\u{20000}-\u{3ffff}豈-﫿]+)/gu, '<span class="han">$1</span>').replace(/\{(\d+)\}/g, (m, k) => sp && sp[k] ? `<i class="rom">${esc(spell(sp[k]))}</i>` : m); }
 
 // ---------- lesson
 function showLesson(L) {
@@ -392,7 +393,7 @@ function showLesson(L) {
         <div class="under">${enLine(ln.en, ln.lit, 'l' + li)}${(notesBy[ln.n] || []).map(k => `<button class="nlink" data-note="${k}" aria-label="Note ${k}">${k}</button>`).join('')}</div>
       </div>`).join('')}</div>
     <details class="allnotes" id="sec-notes"><summary><span class="han">${esc(hzt('注解'))}</span> All notes (${L.notes.length})</summary>
-    <ol class="notes">${L.notes.map((n, i) => `<li class="note" id="note-${i + 1}"><span class="nn">${i + 1}</span><p><span class="tag">Line ${n.ref}</span>${fmt(n.text)}</p></li>`).join('')}</ol></details>
+    <ol class="notes">${L.notes.map((n, i) => `<li class="note" id="note-${i + 1}"><span class="nn">${i + 1}</span><p><span class="tag">Line ${n.ref}</span>${fmt(n.text, n.sp)}</p></li>`).join('')}</ol></details>
     <h2 id="sec-words"><span class="han">${esc(hzt('新词'))}</span> New words</h2>
     <div class="wgrid">${L.new_words.map(id => { const e = DATA.dict[id]; return `<button class="wchip ${cog(id)[2]} ${CARDS && deck[id] ? 'indeck' : ''}" data-word="${esc(id)}"><b>${esc(H(e))}</b><span class="r">${esc(spell(e))}</span><span class="g">${esc((L.new_en || {})[id] || e.gloss || '')}</span></button>`; }).join('')}</div>
     <div class="row"><button class="btn small quiet" id="anki">Copy for Anki</button>${CARDS ? `<span class="sub" style="font-size:.85rem">${L.new_words.filter(w => deck[w]).length} of ${L.new_words.length} in your review deck</span>` : ''}</div>
@@ -569,7 +570,7 @@ function openNote(L, k) {
   const n = L.notes[k - 1], sh = $('#sheet'), total = L.notes.length;
   sh.innerHTML = `<div class="grab"></div>
     <div class="wc-top"><div><span class="eyebrow">Note ${k} of ${total} · line ${n.ref}</span></div><button class="x" aria-label="Close">×</button></div>
-    <p class="note-body">${fmt(n.text)}</p>
+    <p class="note-body">${fmt(n.text, n.sp)}</p>
     <div class="row"><button class="btn small line" id="nprev" ${k <= 1 ? 'disabled' : ''}>‹ Previous</button>
       <button class="btn small" id="nnext" ${k >= total ? 'disabled' : ''}>Next ›</button></div>`;
   $('.x', sh).onclick = closeSheet;

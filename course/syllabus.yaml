@@ -2,6 +2,9 @@
 # the plan (10 Nov 2026): title, setting, grammar point (focus) and target new words, picked from the private master
 # vocabulary by rank (untaught at L49, Shanghainese words first). Check with `make coverage` before each batch.
 # Every 7th lesson is a review; the second wave starts at lesson 50. Lessons 85–100 move towards narrated passages.
+# Refined 10 Nov 2026 after a check against Qian Nairong's word handbook and grammar: everyday basics that were missing
+# (family, body, clothes, home, food, shops, weather) replace rarer or bookish words; 了 is the completion marker and 仔
+# is taught as the older form; 辣海, 拿 and the modal words come back; every review has its focus.
 lessons:
 - {n: 1, en: 'Good morning!', focus: '侬早, 侬/我, 是/是个, 伐 questions, 讲得蛮好, 一眼眼'}
 - {n: 2, en: 'Have you eaten?', focus: '吃过了伐 / 还呒没, 搿搭, 只 (measure), 老 "very", 甜个 / 咸个, 还是'}
@@ -57,13 +60,13 @@ lessons:
   hanzi: 写上海闲话
   setting: 'Sam posts in the lane''s WeChat group in Shanghainese for the first time; the auntie''s grandson corrects his characters. Second wave starts.'
   focus: 'Final particles and interjections in writing (噢, 嘛, 啦, 呢, 喔唷, 咦); one word, several spellings (伐/哦, 介末/葛末, 搿/迭); 文读 and 白读'
-  words: [噢, 嘛, 啦, 呢, 喔唷, 咦, 哎, 嗯, 消息, 方言, 普通话, 口语, 发音, 语言, 词, 文读, 白读, 表示, 意见, 回答, 哦]
+  words: [噢, 嘛, 啦, 呢, 喔唷, 咦, 哎, 嗯, 消息, 方言, 普通话, 口语, 发音, 语言, 词, 文读, 白读, 表示, 哦]
 - n: 51
   en: 'From morning to night'
   hanzi: 一日到夜
   setting: 'Sam has changed jobs; the auntie wants to know what his days look like now.'
   focus: 'Times of day with 向 (早浪向, 中浪向, 夜里向), 上半日 / 下半天; habit adverbs 常庄, 老是, 有常时, 平常'
-  words: [早浪向, 上半日, 中浪向, 下半天, 夜里向, 半夜里, 每日天, 日脚, 昨日子, 常庄, 平常, 老是, 有常时, 起床, 揩面, 刷, 牙齿, 泡饭, 晏, 困, 最近]
+  words: [早浪向, 上半日, 中浪向, 下半天, 夜里向, 半夜里, 每日天, 日脚, 昨日子, 常庄, 平常, 老是, 有常时, 起床, 揩面, 刷, 牙齿, 泡饭, 晏, 困, 清早, 夜快头]
 - n: 52
   en: 'Where did I put it?'
   hanzi: 摆辣阿里搭
@@ -75,20 +78,20 @@ lessons:
   hanzi: 医院里
   setting: 'Xiao Li''s father has broken his leg; Sam visits him on the ward with a bag of fruit.'
   focus: '辣海: a state that lasts (坐辣海, 困辣海, 门开辣海) against 辣辣 for an action going on; existence sentences with 有 / 辣辣 / 是'
-  words: [医院, 医生, 护士, 检查, 生病, 病, 症状, 药水, 药片, 血, 骨折, 救命车, 躺, 休息, 严重, 要紧, 担心, 望望, 腿, 水果]
+  words: [医院, 医生, 护士, 检查, 病, 症状, 药水, 药片, 血, 骨折, 救命车, 躺, 休息, 严重, 要紧, 担心, 望望, 腿, 水果, 生毛病]
 - n: 54
   en: 'A typhoon'
   hanzi: 台风来了
   setting: 'A typhoon warning in August; Sam and the auntie get the lane ready before the rain.'
   focus: 'About to happen: 要…快了, 快…了, 就要…了; 来得及 / 来勿及; 豪燥 for hurry'
-  words: [天气, 预报, 雨, 雷阵雨, 湿, 气温, 温度, 度, 降, 关脱, 塞牢, 漏水, 电, 灯, 电灯, 暗, 危险, 小心, 来勿及, 豪燥, 就要, 注意]
+  words: [天气, 预报, 雨, 湿, 温度, 度, 关脱, 塞牢, 电, 灯, 电灯, 暗, 危险, 小心, 来勿及, 豪燥, 就要, 注意, 阵头雨, 台风, 打雷, 霍险]
 - n: 55
   en: 'A job interview'
   hanzi: 面试
   setting: 'Xiao Zhang has an interview at a design company on Monday; Sam helps her rehearse.'
-  focus: '搭 before a person: ''to, for, with'' (搭我讲, 搭侬介绍); careful versus everyday wording for the same thing'
-  words: [单位, 专业, 毕业, 学历, 经理, 能力, 条件, 机会, 希望, 问题, 合同, 下班, 出差, 同学, 努力, 成功, 设计, 技术, 办公室, 忙, 重要, 勿错]
-- {n: 56, en: 'Review', review: true}
+  focus: '搭 before a person: ''to, for, with'' (搭我讲, 搭侬介绍); careful versus everyday wording for the same thing; 会得 / 好 / 可以 for what you can and may do'
+  words: [单位, 专业, 毕业, 经理, 能力, 条件, 机会, 希望, 问题, 合同, 下班, 出差, 同学, 努力, 成功, 设计, 技术, 办公室, 忙, 重要, 勿错, 跳槽]
+- {n: 56, en: 'Review', review: true, focus: 'place endings (里向, 浪向, 口头), times of day with 向, 辣海 against 辣辣, about to happen (要…快了, 快…了), 搭 + person, 会得 / 好 / 可以, particles in writing'}
 - n: 57
   en: 'Mahjong'
   hanzi: 搓麻将
@@ -100,56 +103,56 @@ lessons:
   hanzi: 吃喜酒
   setting: 'A colleague is getting married; Sam and Xiao Li work out what to wear and what to give.'
   focus: 'Two objects: 拨伊一只红包, 送拨伊, 拿 X 拨 Y; who gets what, in which order'
-  words: [喜酒, 新郎, 新娘, 请帖, 证婚人, 夫妻, 礼物, 祝, 祝贺, 快乐, 戒指, 项链, 西装, 领带, 连衫裙, 登样, 嫁, 家主婆, 台面, 参加, 聚会]
+  words: [喜酒, 新郎, 新娘, 请帖, 夫妻, 礼物, 祝, 快乐, 戒指, 项链, 西装, 领带, 连衫裙, 登样, 嫁, 家主婆, 台面, 参加, 聚会, 耳环, 标致]
 - n: 59
   en: 'Bargaining'
   hanzi: 讨价还价
   setting: 'A Sunday at the antique market on Dongtai Road; the auntie shows Sam how it is done.'
   focus: '几化 ''how much, how many''; rough amounts (横里, 左右, 十几, 几十); 勿要忒…噢 ''isn''t that just too…'''
-  words: [几化, 洋钿, 卖, 讨价还价, 嚡, 货, 货色, 卖相, 生意, 做生意, 生意经, 零头, 折扣, 对折, 称, 份量, 值, 一塌刮子, 票子, 横里, 左右]
+  words: [几化, 洋钿, 卖, 讨价还价, 货, 货色, 卖相, 生意, 生意经, 零头, 对折, 称, 份量, 值, 一塌刮子, 票子, 横里, 左右, 还价, 打烊, 涨价]
 - n: 60
   en: 'Sport'
   hanzi: 锻炼身体
   setting: 'Xiao Li has signed up at a gym and drags Sam along on a Sunday morning.'
   focus: '得来 after a verb or adjective for degree and result (吃力得来, 跑得来浑身是汗); V得快 / V勿动'
-  words: [运动, 锻炼, 健身房, 游泳, 足球, 篮球, 网球, 比赛, 踢, 跳, 爬, 爬山, 吃力, 力气, 胖, 瘦, 大块头, 腰, 背, 吃勿消, 高, 矮]
+  words: [运动, 锻炼, 健身房, 游泳, 足球, 篮球, 网球, 比赛, 踢, 跳, 爬, 爬山, 吃力, 胖, 瘦, 大块头, 腰, 吃勿消, 高, 矮, 背心, 力道]
 - n: 61
   en: 'Homework'
   hanzi: 做功课
   setting: 'The auntie''s grandson has a maths test tomorrow; Sam is asked to sit with him.'
   focus: '搿能 / 搿能介 ''like this, so'', 哪能介 ''how come so…''; 搿眼 ''these, this bit of'''
-  words: [小学, 上课, 课, 功课, 作业, 考, 考试, 成绩, 数学, 英语, 题目, 聪明, 笨, 乖, 笔, 搿能, 搿能介, 哪能介, 搿眼, 学生, 读, 纸]
+  words: [小学, 课, 功课, 考, 考试, 成绩, 数学, 英语, 题目, 聪明, 笨, 乖, 笔, 搿能, 搿能介, 哪能介, 搿眼, 学生, 读, 纸, 中学, 橡皮]
 - n: 62
   en: 'An evening at the theatre'
   hanzi: 看戏
   setting: 'The auntie has two tickets for a comedy show at the Lyceum and nobody to go with.'
   focus: '咾啥 ''and so on''; the strongest degree words: 来死, 勿得了, 真叫, 一塌糊涂 after the adjective'
   words: [戏, 越剧, 京戏, 节目, 噱头, 唱歌, 歌, 音乐, 音乐会, 位子, 场, 好听, 有趣, 有意思, 咾啥, 来死, 勿得了, 真叫, 拍手, 大剧院, 电影, 结束]
-- {n: 63, en: 'Review', review: true}
+- {n: 63, en: 'Review', review: true, focus: '有得 + verb, two objects (拨, 送拨, 拿…拨), 几化 and rough amounts, 得来 for degree, 搿能 / 搿能介, the strongest degree words'}
 - n: 64
   en: 'Moving house'
   hanzi: 搬场
   setting: 'Xiao Zhang is moving into a flat on the fifth floor with no lift; Sam and A-Qiang carry.'
-  focus: 'Verb + object + direction (搬只箱子上去, 拿物事出来); 出来 / 进去 / 上来; V勿动 ''can''t move it'''
-  words: [搬场, 箱, 家生, 大橱, 沙发, 床, 被头, 凳子, 抬, 出来, 上来, 进, 破, 打破, 碎, 楼, 层, 阳台, 厨房间, 煤卫, 客厅, 住]
+  focus: 'Verb + object + direction (搬只箱子上去, 拿物事出来); 出来 / 进去 / 上来; V勿动 ''can''t move it''; left where it is: 摆辣海, 放辣海 (辣海 again)'
+  words: [搬场, 箱, 家生, 大橱, 沙发, 床, 被头, 凳子, 抬, 出来, 上来, 进, 打破, 楼, 层, 阳台, 厨房间, 住, 椅子, 枕头, 热水瓶, 卡车]
 - n: 65
   en: 'Rush hour'
   hanzi: 轧地铁
   setting: 'Monday, 8.15, line 2: Sam and Xiao Li are stuck on the platform and already late.'
   focus: 'Where from, how far, which way: 从…到, 离, 朝; and sentences that manage without a preposition (我屋里去, 伊上海来)'
-  words: [轧, 塞车, 堵, 高架, 隧道, 公交, 号线, 站头, 车站, 红绿灯, 司机, 开车, 交通, 事故, 撞, 从, 离, 近, 准时, 提早, 方便, 赶]
+  words: [轧, 塞车, 堵, 高架, 隧道, 公交, 号线, 站头, 红绿灯, 司机, 开车, 交通, 事故, 撞, 从, 离, 近, 准时, 提早, 赶, 调头, 停车]
 - n: 66
   en: 'A bike ride'
   hanzi: 踏脚踏车
   setting: 'A clear autumn Sunday: Sam and Xiao Zhang cycle along Suzhou Creek to the river.'
-  focus: '仔: ''having done'' before the next action (吃仔饭再去), and inside 搭仔 ''and, with'', 为仔 ''for''; 牢 for keeping on (看牢, 跟牢, 对牢)'
+  focus: '牢 for keeping on (看牢, 跟牢, 对牢); one thing, then the next: 吃了饭再去, and the older 仔 (吃仔饭再去) of older speakers and the novels, also inside 搭仔 and 为仔'
   words: [脚踏车, 踏, 骑, 苏州河, 河浜, 桥, 黄浦江, 江, 船, 绕, 转弯, 笔直, 朝, 对牢, 跟牢, 看牢, 捉牢, 滑, 跤, 仔, 搭仔, 顺带便]
 - n: 67
   en: 'The cat is gone'
   hanzi: 猫逃脱了
   setting: 'The upstairs neighbours'' cat has slipped out; half the lane is looking for it.'
   focus: 'Verb + 脱伊 and doubled verb + 伊 in orders (吃脱伊, 关关伊, 寻寻伊); the object first, then 伊'
-  words: [猫, 狗, 养, 鸟, 乌龟, 老虫, 咬, 抱, 逃, 追, 寻到, 寻勿到, 关关, 甩, 龌龊, 臭, 毛, 宝贝, 发嗲, 急煞, 动物, 喊]
+  words: [猫, 狗, 养, 鸟, 乌龟, 老虫, 咬, 抱, 逃, 追, 寻到, 寻勿到, 关关, 龌龊, 臭, 毛, 宝贝, 发嗲, 急煞, 动物, 喊, 摸]
 - n: 68
   en: 'Chinese medicine'
   hanzi: 看中医
@@ -161,14 +164,14 @@ lessons:
   hanzi: 吃早点
   setting: 'Xiao Li takes Sam round the stalls for the ''four guardians'' of a Shanghai breakfast.'
   focus: 'What 吃 covers (吃茶, 吃香烟, 吃力, 吃勿消); doubled nouns (袋袋, 角角, 洞洞); 过 ''to eat with'' (过泡饭)'
-  words: [早点, 大饼, 油条, 生煎馒头, 馒头, 馄饨, 饺子, 春卷, 糕, 小摊头, 摊头, 小吃, 袋袋, 过过, 咸菜, 皮蛋, 蛋, 牛奶, 面包, 顿]
-- {n: 70, en: 'Review', review: true}
+  words: [早点, 大饼, 油条, 生煎馒头, 馒头, 馄饨, 饺子, 春卷, 糕, 小摊头, 摊头, 小吃, 袋袋, 过过, 咸菜, 皮蛋, 蛋, 牛奶, 面包, 顿, 葱油饼, 阳春面]
+- {n: 70, en: 'Review', review: true, focus: 'verb + object + direction, sentences without a preposition, 牢 after verbs, 了…再 and the older 仔, verb + 脱伊, if and since, what 吃 covers; 辣海 again'}
 - n: 71
   en: 'Planning a trip'
   hanzi: 出去旅游
   setting: 'The October holiday is coming; Sam, Xiao Zhang and A-Qiang argue over where to go.'
   focus: 'Plans and choices: 要 / 会 for the future, 或者 in statements against 还是 in questions, 要末…要末'
-  words: [旅游, 旅行, 计划, 订, 高铁, 动车, 飞机, 航班, 火车站, 酒店, 宾馆, 行李, 地图, 身份证, 假期, 度假, 出发, 提前, 要末, 或者, 大概]
+  words: [旅游, 旅行, 计划, 订, 高铁, 动车, 飞机, 航班, 火车站, 酒店, 宾馆, 行李, 地图, 身份证, 假期, 度假, 出发, 提前, 要末, 或者, 大概, 开年]
 - n: 72
   en: 'Hangzhou'
   hanzi: 到杭州去
@@ -179,14 +182,14 @@ lessons:
   en: 'When I was small'
   hanzi: 小辰光
   setting: 'A rainy afternoon; the auntie tells Sam what the lane was like when she was a girl.'
-  focus: 'Talking about the past: 老里八早, 从前, 从小, 过歇; V过 against V了; ''…个辰光'' for ''when'''
-  words: [老里八早, 从前, 从小, 长大, 儿歌, 玩具, 游戏, 弹, 球, 石库门, 亭子间, 灶披间, 天井, 客堂, 马桶, 煤, 炉子, 穷, 想起来, 记得, 长远, 出生]
+  focus: 'Talking about the past: 老里八早, 从前, 从小; V过歇 for long ago against V过 and V了; ''…个辰光'' for ''when'''
+  words: [老里八早, 从前, 从小, 长大, 玩具, 游戏, 弹, 球, 石库门, 亭子间, 灶披间, 天井, 客堂, 马桶, 煤, 炉子, 穷, 想起来, 记得, 长远, 出生, 旧年]
 - n: 74
   en: 'At the tailor''s'
   hanzi: 做衣裳
   setting: 'The auntie wants a padded jacket made for New Year and takes Sam to the fabric market.'
   focus: 'Adding up: 勿但…而且, 又…又, 外加; 稍为 / 稍许 + adjective + 一眼'
-  words: [量, 布, 大衣, 裤子, 裙子, 宽, 狭, 厚, 薄, 紧, 松, 式样, 时髦, 考究, 挺括, 合适, 三青四绿, 稍为, 而且, 鞋子, 帽子, 绿]
+  words: [量, 布, 大衣, 裤子, 裙子, 狭, 厚, 薄, 紧, 松, 式样, 时髦, 考究, 挺括, 稍为, 而且, 鞋子, 帽子, 阔, 袜子, 手套, 围巾]
 - n: 75
   en: 'Lost in the city'
   hanzi: 寻勿着路
@@ -197,33 +200,33 @@ lessons:
   en: 'The grandparents'
   hanzi: 望望老人
   setting: 'Xiao Li takes Sam to Songjiang to see his grandmother, who has a name for every relative.'
-  focus: 'Family names and 阿 (阿哥, 阿弟, 阿妹, 阿伯, 阿爷, 阿嫂); father''s side against mother''s side; 老 / 小 + surname'
-  words: [爷娘, 阿哥, 阿弟, 阿妹, 阿伯, 阿爷, 阿嫂, 孃孃, 舅妈, 囡儿, 囡囡, 子女, 兄弟, 姐妹, 老人, 老太, 岁数, 退休, 照顾, 走好, 松江, 姓]
-- {n: 77, en: 'Review', review: true}
+  focus: 'Family names and 阿 (阿哥, 阿弟, 阿妹, 阿伯, 阿爷, 阿嫂); father''s side against mother''s side; 老 / 小 + surname; 儿子 / 囡儿, 女婿 / 新妇'
+  words: [爷娘, 阿哥, 阿弟, 阿妹, 阿伯, 阿爷, 孃孃, 舅妈, 囡儿, 囡囡, 兄弟, 姐妹, 老人, 老太, 退休, 照顾, 姓, 儿子, 妹妹, 弟弟, 女婿, 新妇]
+- {n: 77, en: 'Review', review: true, focus: 'plans and choices (或者 / 还是 / 要末), topic first, the past (V过 / V过歇 / V了), adding up (勿但…而且, 又…又), 阿是 and tags, family names with 阿'}
 - n: 78
   en: 'Local cooking'
   hanzi: 本帮菜
   setting: 'Xiao Li''s mother teaches Sam red-braised pork; every step has its own verb.'
-  focus: 'Vivid adjectives (蜡蜡黄, 血血红, 冰冰冷, 滚滚壮) and AA叫 adverbs (慢慢叫, 好好叫, 轻轻叫)'
-  words: [浓, 炒, 炖, 煮, 烤, 拌, 斩, 熟, 蹄髈, 带鱼, 虾, 虾仁, 牛肉, 羊肉, 鸡, 鸭子, 荠菜, 生姜, 滋味, 荤, 素, 烧饭]
+  focus: 'Vivid adjectives (蜡蜡黄, 血血红, 冰冰冷, 滚滚壮) and AA叫 adverbs (慢慢叫, 好好叫, 轻轻叫); 拿 + object + verb for each step'
+  words: [浓, 炒, 烤, 拌, 斩, 熟, 蹄髈, 带鱼, 虾, 牛肉, 鸡, 鸭子, 荠菜, 荤, 素, 烧饭, 落苏, 洋山芋, 鸡毛菜, 硬, 细, 粗]
 - n: 79
   en: 'Money'
   hanzi: 钞票
   setting: 'End of the month: Sam looks at his bank app and asks Xiao Li how he manages to save.'
   focus: 'Turning it down or up: 勿大 ''not very'', 稍许, against 老老, 最最, 顶顶; 省 and 用脱'
-  words: [存款, 活期, 定期, 人民币, 省, 节约, 浪费, 费, 电费, 水费, 租金, 账, 账单, 穷人, 勿大, 稍许, 老老, 最最, 顶顶, 至少, 有点, 勿少]
+  words: [存款, 活期, 定期, 人民币, 省, 节约, 浪费, 费, 电费, 租金, 账, 账单, 勿大, 稍许, 老老, 最最, 顶顶, 至少, 有点, 勿少, 发票, 进账]
 - n: 80
   en: 'A leak'
   hanzi: 漏水了
   setting: 'Water is coming through Sam''s bathroom ceiling; the neighbour upstairs says it isn''t hers.'
   focus: 'Getting things done by others: 叫 / 让 / 拨 + person + verb; 帮 and 代 ''for, on behalf of'''
-  words: [修理, 维修, 工具, 老虎钳, 开关, 煤气, 浴缸, 浴室, 抽水马桶, 天花板, 墙壁, 墙头, 油漆, 装修, 物业, 管理费, 麻烦, 保修单, 负责, 钟点工, 敲, 坏]
+  words: [修理, 维修, 工具, 老虎钳, 开关, 煤气, 浴缸, 抽水马桶, 天花板, 墙壁, 墙头, 油漆, 装修, 物业, 管理费, 麻烦, 负责, 钟点工, 敲, 坏, 漏水, 装]
 - n: 81
   en: 'Helping a friend'
   hanzi: 帮帮朋友
   setting: 'A-Qiang has lost his job and hasn''t told Xiao Zhang; he asks Sam what to do.'
-  focus: 'Cause and effect: 因为…所以, 咾 for ''because'', 怪勿得 ''no wonder''; 反正, 其实, 实在'
-  words: [困难, 办法, 法子, 解决, 商量, 答应, 相信, 关照, 托, 辛苦, 怪勿得, 所以, 因为, 反正, 实在, 其实, 勿搭界, 人情, 撑, 关系, 告诉]
+  focus: 'Cause and effect: 因为…所以, 咾 for ''because'', 怪勿得 ''no wonder''; 反正, 其实, 实在; V下去 for going on (讲下去, 做下去)'
+  words: [困难, 办法, 法子, 商量, 答应, 相信, 关照, 托, 辛苦, 怪勿得, 所以, 因为, 反正, 实在, 其实, 勿搭界, 人情, 撑, 关系, 告诉, 上路, 无所谓]
 - n: 82
   en: 'A teahouse'
   hanzi: 吃茶去
@@ -235,26 +238,26 @@ lessons:
   hanzi: 新闻
   setting: 'The evening news is on at the auntie''s; she has something to say about every item.'
   focus: 'Passing on what was said: 伊讲, 听说, 据说; filler and link words 就是讲, 乃末, 搿个'
-  words: [报纸, 电视, 电视台, 广播, 社会, 国家, 世界, 城市, 发生, 情况, 变化, 影响, 改革, 开放, 据说, 听说, 乃末, 真相, 肯定, 可能, 认为]
-- {n: 84, en: 'Review', review: true}
+  words: [报纸, 电视, 电视台, 广播, 社会, 国家, 世界, 城市, 发生, 情况, 变化, 影响, 改革, 开放, 据说, 听说, 乃末, 真相, 肯定, 可能, 认为, 最近]
+- {n: 84, en: 'Review', review: true, focus: 'vivid adjectives and AA叫, 拿 + object + verb, 勿大 / 稍许 / 顶顶, 叫 / 让 / 拨 + person + verb, cause and effect, V下去, 末 in full, passing on what was said'}
 - n: 85
   en: 'Old Wang''s day'
   hanzi: 老王个一日天
   setting: 'First narrated passage: a retired neighbour''s day, from the park at six to chess at four.'
-  focus: 'Telling things in order: 先…再…, 挨下来, 随后, 最后; 一日天, 一夜天 for a whole day or night'
-  words: [老年人, 公园, 散步, 走路, 跳舞, 棋, 象棋, 棋子, 早起, 耳朵, 牙, 骨头, 手指头, 节头, 挨下来, 随后, 最后, 日日, 一日天, 一夜天, 老样子, 安静]
+  focus: 'Telling things in order: 先…再…, 挨下来, 随后, 最后 / 着末脚; 一日天, 一夜天 for a whole day or night'
+  words: [公园, 散步, 走路, 跳舞, 象棋, 棋子, 早起, 耳朵, 骨头, 挨下来, 随后, 最后, 日日, 一日天, 一夜天, 老样子, 安静, 眼乌珠, 手节头, 脑子, 着棋, 着末脚]
 - n: 86
   en: 'Plum rain'
   hanzi: 黄梅天
   setting: 'Narrated: three weeks of rain in June, and what it does to the washing, the walls and the mood.'
-  focus: 'Words that only finish a verb: 好, 完, 光, 脱, 煞根 (做完, 吃光, 烂脱); weather and season words'
-  words: [潮, 闷, 阴, 烂泥, 洋伞, 雨伞, 蚊子, 苍蝇, 虫, 电风扇, 冷天, 热天, 冬天, 夏天, 冷天介, 落雪, 身浪向, 触气, 霉头, 吃光, 做完, 煞根]
+  focus: 'Words that only finish a verb: 好, 完, 光, 脱, 煞根 (做完, 吃光, 烂脱); weather and season words; sound words for rain and thunder'
+  words: [潮, 闷, 烂泥, 洋伞, 雨伞, 蚊子, 电风扇, 冷天, 热天, 冬天, 夏天, 落雪, 身浪向, 触气, 霉头, 吃光, 做完, 煞根, 阴天, 毛毛雨, 回潮, 气闷]
 - n: 87
   en: 'Late-night snacks'
   hanzi: 吃夜宵
   setting: 'After the last metro: Sam, Xiao Li and A-Qiang end up at a street stall at one in the morning.'
   focus: '一 + … 头 for ''in one go, on one''s own'' (一枪头, 一记头, 一家头); 一…就 ''as soon as'''
-  words: [酒吧, 酒吧间, 咖啡厅, 餐厅, 服务员, 盒饭, 饿, 一枪头, 滑脚, 夜, 吵醒, 困着, 醒, 上床, 一听, 尝尝, 一顿, 搿趟]
+  words: [酒吧, 酒吧间, 咖啡厅, 餐厅, 服务员, 盒饭, 饿, 一枪头, 滑脚, 夜, 吵醒, 困着, 醒, 上床, 一听, 尝尝, 一顿, 搿趟, 手表]
 - n: 88
   en: 'Old songs'
   hanzi: 老歌
@@ -266,14 +269,14 @@ lessons:
   hanzi: 老习惯
   setting: 'Narrated: Xiao Li''s father has smoked for forty years; the doctor and his wife have other ideas.'
   focus: '''Although … but'': 虽然…但是, 不过, 倒是, 反而; 从来 + negative, 一向'
-  words: [习惯, 规矩, 规律, 改, 变, 适应, 随随便便, 马马虎虎, 仔细, 勿响, 一向, 从来, 倒是, 反而, 但是, 不过, 烟, 劝, 肯, 舍得, 生活]
+  words: [习惯, 规矩, 规律, 改, 变, 适应, 随随便便, 马马虎虎, 仔细, 勿响, 一向, 从来, 倒是, 反而, 但是, 不过, 烟, 劝, 肯, 舍得, 生活, 有辰光]
 - n: 90
   en: 'Plans'
   hanzi: 打算
   setting: 'Xiao Zhang has an offer to study abroad; the four friends talk it through over dinner.'
   focus: 'Purpose and condition: 为仔 / 为了, 只要…就, 勿管…侪, 除脱…, 无论, 否则, 索性'
-  words: [将来, 今后, 决定, 考虑, 愿意, 敢, 需要, 必须, 出国, 研究生, 博士, 独立, 结果, 成为, 只要, 勿管, 除脱, 为仔, 为了, 无论, 外语, 国际]
-- {n: 91, en: 'Review', review: true}
+  words: [将来, 决定, 考虑, 愿意, 敢, 需要, 必须, 出国, 研究生, 博士, 独立, 结果, 成为, 只要, 勿管, 除脱, 为仔, 为了, 无论, 外语, 国际, 索性]
+- {n: 91, en: 'Review', review: true, focus: 'telling things in order, words that only finish a verb (好, 完, 光, 脱), 一…头 and 一…就, verb + 法, although…but, purpose and condition'}
 - n: 92
   en: 'Shanghai and elsewhere'
   hanzi: 上海搭外地
@@ -285,19 +288,19 @@ lessons:
   hanzi: 做人客
   setting: 'Sam''s parents are in Shanghai for a week; the auntie invites all three to lunch.'
   focus: 'Host and guest formulas: 阿要…, 勿要客气, 走好, 光临; softening with 稍为…一眼 and doubled verbs'
-  words: [客人, 主人, 招待, 欢迎, 光临, 久仰, 坐下, 香蕉, 橘子, 葡萄, 橙子, 冰淇淋, 阿要, 拜哎, 招呼, 和气, 大方, 妈妈, 爸爸, 翻译, 邀请]
+  words: [客人, 主人, 招待, 欢迎, 光临, 香蕉, 橘子, 葡萄, 冰淇淋, 阿要, 拜哎, 招呼, 和气, 大方, 爸爸, 翻译, 邀请, 走好, 添麻烦, 明朝会, 生梨]
 - n: 94
   en: 'A complaint'
   hanzi: 讲道理
   setting: 'The repairman from lesson 80 has made things worse; Sam rings the management office.'
   focus: 'Arguing your case: 又勿…, 哪能好…, double negatives (勿…勿来三), 勿得, 根本'
-  words: [服务, 损坏, 解释, 抱歉, 讨厌, 恶心, 辣手, 刁, 存心, 根本, 硬碰硬, 作孽, 勿来三, 嫌, 罚, 满意, 处理, 说明, 态度]
+  words: [服务, 损坏, 解释, 抱歉, 讨厌, 恶心, 辣手, 刁, 存心, 根本, 硬碰硬, 作孽, 勿来三, 嫌, 罚, 满意, 处理, 惹气, 搞, 笃定]
 - n: 95
   en: 'Lane life'
   hanzi: 弄堂里向
   setting: 'Narrated, in the manner of a lane memoir: the people of one lane and the names they go by.'
   focus: 'Nicknames and picture-words (大块头, 长脚, 排门板, 柏油桶); 兮兮 after an adjective; 行情行事, 一天世界'
-  words: [邻舍隔壁, 小菜场, 后门, 大门, 门槛, 排门板, 长脚, 柏油桶, 长脚鹭鸶, 巴子, 瘪三, 赤佬, 阿飞, 贼骨头, 老茄三千, 花头, 名堂, 闹猛, 一天世界, 行情行事, 兮兮, 偷]
+  words: [邻舍隔壁, 小菜场, 后门, 门槛, 排门板, 长脚, 柏油桶, 巴子, 瘪三, 赤佬, 阿飞, 贼骨头, 花头, 名堂, 闹猛, 一天世界, 行情行事, 兮兮, 偷, 派头, 老油条, 揩油]
 - n: 96
   en: 'Pudong and Puxi'
   hanzi: 浦东浦西
@@ -310,13 +313,13 @@ lessons:
   setting: 'Xiao Zhang leaves for a year abroad; the lane and the friends see her off at Pudong airport.'
   focus: 'Before and after: 之前, 之后, 等…再; wishes and goodbyes; 忘记脱 and 记牢'
   words: [起飞, 离开, 回去, 想念, 联系, 电子邮件, 邮件, 信, 明信片, 纪念, 之前, 之后, 一辈子, 忘记脱, 送到, 见面, 快点, 飞]
-- {n: 98, en: 'Review', review: true}
+- {n: 98, en: 'Review', review: true, focus: 'comparing on a topic, host and guest formulas, arguing your case, nicknames and 兮兮, change over time (V好, 越来越, passive 拨), before and after'}
 - n: 99
   en: 'Sam''s story'
   hanzi: Sam 个故事
   setting: 'A full narrated page: how Sam came to the lane two years ago, told in the past.'
-  focus: 'Story links: 介末, 后首来, 结果, 于是, 当时, 曾经; the unexpected: 突然, 想勿到, 齐巧, 一门心思'
-  words: [故事, 突然, 想勿到, 齐巧, 于是, 当时, 曾经, 一门心思, 刚, 才, 正, 总, 完成, 经常, 通常, 重新, 害怕, 讲过]
+  focus: 'Story links: 介末, 后首来, 结果, 于是, 当时, 曾经; the unexpected: 突然, 辣陌生头, 想勿到, 齐巧, 一门心思'
+  words: [故事, 突然, 想勿到, 齐巧, 于是, 当时, 曾经, 一门心思, 刚, 才, 正, 总, 完成, 经常, 通常, 重新, 害怕, 讲过, 辣陌生头]
 - n: 100
   en: 'Opening a novel'
   hanzi: 翻开小说

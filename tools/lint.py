@@ -6,8 +6,11 @@
 Curve (docs/course-plan.md §3):
   lines     6 at L1–5, +1 every 5 lessons → 15 at L46–50, plus 1 from L8 on (4 Nov 2026: one line added to every
             lesson 8–35 to bring in frequent words); a review lesson has 2 fewer lines
-  syllables median per line: 7 (L1–10), 8, 9, 10, 11 (L41–50); more than 1 syllable off = warning
-  new words 12 → 20, linear (±2); review lessons: none (counted from the lesson's declared new_words)
+            L51–100 (10 Nov 2026): 17 at L51–55, then +1 per review block (18 at L57–62 … 24 at L99–100); in the
+            narrated lessons (85–100) a line is a numbered sentence
+  syllables median per line: 7 (L1–10), 8, 9, 10, 11 (L41–50), 12 (L51–69), 13 (L70–83), 14 (L84–100);
+            more than 1 syllable off = warning
+  new words 12 → 20, linear (±2), then 20 ±2 from L50; review lessons: none (counted from the lesson's declared new_words)
 
 New words (as in Tsheh-tû): each lesson declares its new_words (hanzi, with [IPA] when the reading is forced, + en).
   errors: a declared word that is not a word of the lesson's title or dialogue; a word declared twice in the course;
@@ -28,16 +31,21 @@ def is_review(n):
 
 
 def target_lines(n):
-    lines = 6 + (n - 1) // 5 + (n >= 8)   # L1–5: 6, L6–7: 7, L8–10: 8 … L46–50: 16
+    if n <= 55:
+        lines = 6 + (n - 1) // 5 + (n >= 8)   # L1–5: 6, L6–7: 7, L8–10: 8 … L46–50: 16, L51–55: 17
+    else:
+        lines = 18 + (n - 56) // 7            # +1 per review block: L57–62: 18 … L85–90: 22, L99–100: 24
     return lines - 2 if is_review(n) else lines
 
 
 def target_syllables(n):
-    return 7 + (n - 1) // 10           # L1–10: 7 … L41–50: 11
+    if n <= 50:
+        return 7 + (n - 1) // 10       # L1–10: 7 … L41–50: 11
+    return 12 if n < 70 else 13 if n < 84 else 14   # L51–69: 12, L70–83: 13, L84–100: 14
 
 
 def target_new_words(n):
-    return 0 if is_review(n) else round(12 + (n - 1) * 8 / 49)
+    return 0 if is_review(n) else min(20, round(12 + (n - 1) * 8 / 49))   # 20 from L50 on
 
 
 def syllables(text):
@@ -119,10 +127,10 @@ def check(path, strict):
             if t in known or b in known or all(c in NUM for c in b):
                 continue
             errors.append(f'{t} is used but declared neither here nor earlier')
-        if n <= 50 and abs(len(nw or []) - target_new_words(n)) > 2:
+        if n <= 100 and abs(len(nw or []) - target_new_words(n)) > 2:
             warns.append(f'{len(nw or [])} new words, curve says {target_new_words(n)}')
 
-    if n <= 50:
+    if n <= 100:
         want = target_lines(n)
         if lines != want:
             warns.append(f'{lines} lines, curve says {want}')

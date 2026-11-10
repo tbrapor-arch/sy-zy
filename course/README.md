@@ -8,7 +8,9 @@ characters as Mandarin are learned as pronunciation; teaching time goes to false
 - 100 lessons, a review every 7th lesson, second wave from lesson 50.
 - Progression L1–50 by number of lines (`tools/lint.py`, `docs/course-plan.md` §3): 6 lines at L1–5, one more every
   5 lessons, plus one from L8 (16 at L46–50); a median line of 7 syllables at L1–10, rising by 1 every 10 lessons; 12 → 20 new words;
-  review lessons 2 lines shorter, no new words. Exercises: 3 translate + 3 fill + 3 say, new sentences (never a dialogue line), words already met only.
+  from L51 (10 Nov 2026): 17 lines at L51–55, then one more per review block (20 at L71–76, 24 at L99–100), a
+  median line of 12 → 14 syllables, 20 ±2 new words; lessons 85–100 move towards narrated passages (a line is then a
+  numbered sentence); review lessons 2 lines shorter, no new words. Exercises: 3 translate + 3 fill + 3 say, new sentences (never a dialogue line), words already met only.
 
 ## Rules for content
 1. Everything here is original. No sentences, dialogues or notes from published courses or from the books in the

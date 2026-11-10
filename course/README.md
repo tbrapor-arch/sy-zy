@@ -66,3 +66,13 @@ Lesson 0 (how to read the spellings) is `lessons/000-reading.html`.
 - `core.tsv`: ~230 core words written by hand (type, English, Mandarin, corrected IPA). Check the flagged ones first.
 - `overrides.tsv`: corrections confirmed against a book: they win over everything else.
 - `verified.tsv`, `book_notes.tsv`: written by `tools/import_notes.py` from the app's "book notes" file.
+
+## Writing lessons 50–100: the loop
+1. `make db`, then `make packet N=50` (add `PRIVATE=../syzy-private` for the books): one file in `data/build/packets/`
+   with the syllabus entry, the curve targets, the target words with their readings, warnings, and words to bring
+   back. It is never committed. Read it with `card.md` (what reviews have found) and `state.md` (cast and story).
+2. Write the lesson. A new word whose reading is only composed from its characters fails lint from lesson 50: check
+   it, then give it a reading in `core.tsv` (or `overrides.tsv` when a book confirms it). `make plan` lists them all
+   (`data/build/plan_check.tsv`).
+3. `make db lint`: fix every error; fix or justify every warning. Add two lines to `state.md`. Commit.
+4. After seven lessons: a review by a fresh reader; each finding becomes a lint rule or one line of `card.md`.

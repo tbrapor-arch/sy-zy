@@ -7,3 +7,4 @@ app/dist/
 data/build/lexicon.jsonl
 _site/
 data/raw/fonts/
+data/build/packets/

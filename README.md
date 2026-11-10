@@ -67,7 +67,7 @@ book, note), then rebuild. `tools/import_notes.py` still reads an old book-notes
 
 The app follows **new urban Shanghainese** (five tones: 53, 34, 13, 55ʔ, 12ʔ). Word tunes use the left-dominant sandhi patterns (the first syllable sets the melody). That is right for compound words and noun phrases; verb + object phrases can follow other patterns.
 
-Qian's pinyin is generated with his "new speakers" rules (əʔ and ᴀʔ both written -ak), and was tested against the examples he published with his input software (whangpugang, makshy, bhakxiang, cakyhangxiang, linfhakqin, dhaojiangwhu, ghakbhangyhou, shanghehhehho).
+Qian's pinyin is generated with his "new speakers" rules (əʔ and ᴀʔ both written -ak), and was tested against the examples he published with his input software (whangpugang, makshy, bhakxiang, cakyhangxiang, linfhakqin, dhaojiangwhu, ghakbhangyhou, shanghehhehho) and against the spelling rules of his 2011 word handbook: ny only before yu (人 nin, 女 nyu), no y after j q x (区 qu, 血 xuik), iu and un after an initial (救 jiu, 困 kun), hh before a voiced syllabic nasal (五 hhng).
 
 ## Lesson audio (synthetic)
 

@@ -125,10 +125,11 @@ def _pinyin_zero(f):
 
 
 def qian_syl(syl):
+    """Qian's 上海话拼音 as printed in his 《实用上海话词语手册》 (2011, rules pp. 9-16) and his course book."""
     ini, fin, _ = split(syl)
     f = Q_FIN[fin]
     if fin in SYLLABIC:
-        return ('h' if ini == 'ɦ' else '') + f        # 五 hng, 呒 hm (Qian marks the voiced breath)
+        return ('hh' if ini == 'ɦ' else '') + f       # 五 鱼 hhng, 吴 hhm (voiced); 姆 m, 呒 m
     if ini == 'ɦ':
         if f.startswith('yu'):
             return 'yh' + f[1:]                        # 雨 yhu, 园 yhuoe
@@ -138,9 +139,20 @@ def qian_syl(syl):
         return 'hh' + f                                # 闲 hhe, 话 hho
     if ini == '':
         return _pinyin_zero(f)
-    if ini == 'ȵ' and (f.startswith('i') or f.startswith('yu')):
-        return 'n' + _pinyin_zero(f)                   # 娘 nyang, 人 nyin, 女 nyu
-    return Q_INIT[ini] + f
+    if ini == 'ȵ':
+        if f.startswith('yu'):
+            return 'n' + f                             # 女 nyu, 软 nyuoe: ny only before yu
+        if f.startswith('i'):
+            return 'n' + _short(f)                     # 人 nin, 娘 niang, 日 nik, 牛 niu
+    q = Q_INIT[ini] + (_short(f) if ini else f)
+    if ini in ('ʨ', 'ʨʰ', 'ʥ', 'ɕ', 'ʑ') and f.startswith('yu'):
+        q = Q_INIT[ini] + 'u' + f[2:]                  # 区 qu, 贵 ju, 血 xuik, 君 jun (the y drops after j q x)
+    return q
+
+
+def _short(f):
+    """After an initial, iou and uen are written iu and un, as in Hanyu Pinyin: 救 jiu, 困 kun."""
+    return {'iou': 'iu', 'uen': 'un'}.get(f, f)
 
 
 def word(syls):
@@ -171,16 +183,19 @@ if __name__ == '__main__':
         '黄浦江': 'ɦuɑ̃113 pʰu334 kɑ̃53', '物事': 'məʔ12 zɿ113', '出洋相': 'ʦʰəʔ55 ɦiã113 ɕiã53',
         '拎勿清': 'lin53 vəʔ12 ʨʰin53', '淘浆糊': 'dɔ113 ʨiã53 ɦu113', '轧朋友': 'gəʔ12 bã113 ɦiɤ113',
         '五': 'ɦŋ̩113', '瀴': 'in53', '上海闲话': 'zɑ̃113 hᴇ334 ɦᴇ113 ɦo113', '谢谢侬': 'ʑiᴀ113 ʑiᴀ113 noŋ113',
+        '女': 'ȵy113', '区': 'ʨʰy53', '血': 'ɕyɪʔ55', '救': 'ʨiɤ334', '困觉': 'kʰuən334 kɔ334',
     }
     # expected: Wugniu, Qian, word contour. The 8 Qian spellings marked * are the examples Qian published with his
     # input software; the rest freeze today's output, so a change to the rules shows up here (`make test`).
     expect = {
-        '上海人': 'zaon-he-gnin shanghenyin 22-55-21', '白相': 'baq-shian bhakxiang* 11-23',
+        '上海人': 'zaon-he-gnin shanghenin 22-55-21', '白相': 'baq-shian bhakxiang* 11-23',
         '洋': 'yan yhang 13', '友': 'yeu yhou 13', '黄浦江': 'waon-phu-kaon whangpugang* 22-55-21',
         '物事': 'meq-zy makshy* 11-23', '出洋相': 'tsheq-yan-shian cakyhangxiang* 33-55-21',
         '拎勿清': 'lin-veq-chin linfhakqin* 55-33-21', '淘浆糊': 'dau-cian-wu dhaojiangwhu* 22-55-21',
-        '轧朋友': 'geq-ban-yeu ghakbhangyhou* 11-22-23', '五': 'ng hng 13', '瀴': 'in yin 53',
+        '轧朋友': 'geq-ban-yeu ghakbhangyhou* 11-22-23', '五': 'ng hhng 13', '瀴': 'in yin 53',
         '上海闲话': 'zaon-he-ghe-gho shanghehhehho* 22-55-33-21', '谢谢侬': 'zhia-zhia-non xhiaxhianong 22-55-21',
+        # rules of the handbook (pp. 12-13): ny only before yu; no y after j q x; iou -> iu, uen -> un
+        '女': 'gniu nyu 13', '区': 'chiu qu 53', '血': 'shiuq xuik 55', '救': 'cieu jiu 34', '困觉': 'khuen-kau kungao 33-44',
     }
     import sys
     bad = 0

@@ -1,8 +1,8 @@
 # Build report (2026-11-11)
 
-- lexicon: 95916 words · app dictionary: 6649 words · lessons: 63 · bridge: 220 characters
+- lexicon: 95956 words · app dictionary: 6748 words · lessons: 77 · bridge: 220 characters
 
-## composed (46)
+## composed (56)
 
 - 有名 → yeu-min (lesson 8 line 3)
 - 米饭 → mi-ve (lesson 8 line 7)
@@ -50,8 +50,18 @@
 - 足球 → tsoq-jieu (lesson 60 line 8)
 - 考试 → khau-sy (lesson 61 line 1)
 - 电影 → di-in (lesson 62 line 10)
+- 高架 → kau-ka (lesson 65 line 8)
+- 苏州河 → su-tseu-wu (lesson 66 line 5)
+- 既然 → ci-zoe (lesson 68 line 3)
+- 旅游 → liu-yeu (lesson 71 line 1)
+- 酒店 → cieu-ti (lesson 71 line 11)
+- 石库门 → zaq-khu-men (lesson 73 line 4)
+- 七八 → chiq-paq (lesson 73 line 5)
+- 长远 → zan-yoe (lesson 73 line 20)
+- 一百五十 → iq-paq-ng-zeq (lesson 74 line 7)
+- 九十一 → cieu-zeq-iq (lesson 76 line 4)
 
-## no gloss (11)
+## no gloss (15)
 
 - 一万 (lesson 24 line 6)
 - 廿五 (lesson 25 line 8)
@@ -64,4 +74,8 @@
 - 三百五 (lesson 59 line 10)
 - 三百八 (lesson 59 line 11)
 - 三百六 (lesson 59 line 12)
+- 四五 (lesson 71 line 8)
+- 七八 (lesson 73 line 5)
+- 一百五十 (lesson 74 line 7)
+- 九十一 (lesson 76 line 4)
 

@@ -62,3 +62,29 @@ his first Shanghainese novel (100).
 - **62** The auntie takes Sam to a 滑稽戏 at the Grand Theatre; he laughs all evening and misses only a line or two.
   Remember: Sam now follows a whole show in Shanghainese; they mean to go again.
 - **63** (review) Canteen, Monday: the wedding told, the weekend planned. Remember: Sam's back still hurts from the gym.
+- **64** Xiao Zhang moves to a fifth-floor flat with no lift; Sam and A-Qiang carry the wardrobe up.
+  Remember: she lives alone on her floor; the bed came later; the stairs are a running joke.
+- **65** Rush hour on line 2: an incident holds the trains; Sam and Xiao Li run from the station to a 9.00 meeting.
+  Remember: Sam leaves at seven and is always early; Xiao Li is never on time and gets home late.
+- **66** Sam and Xiao Zhang cycle along Suzhou Creek to the Huangpu; an old man fishing speaks with 仔.
+  Remember: 仔 / 搭仔 / 为仔 are taught as older forms; the course keeps 了.
+- **67** The upstairs family's cat, 宝贝 (white), escapes; Sam gets it down from a tree and is bitten.
+  Remember: the upstairs girl calls Sam 爷叔; the window was left open by her mother.
+- **68** Sam's two-week cough: the auntie takes him to her doctor of Chinese medicine; pear soup cures him.
+  Remember: Sam works too late (L51); the auntie's pear soup.
+- **69** Xiao Li's breakfast tour: the four guardians, savoury soy milk, pan-fried buns.
+  Remember: Xiao Li's father eats his dough stick with rice porridge.
+- **70** (review) Sam visits Xiao Zhang's flat; they plan a bike ride. Remember: Xiao Zhang lives far from Sam (by metro).
+- **71** National Day plans: Hangzhou two days, then the Yellow Mountains three; Sam books, Xiao Zhang plans.
+  Remember: Sam can't drive; A-Qiang has never been to Beijing and wants to go.
+- **72** Hangzhou: West Lake, the pagoda, Dongpo pork, Longjing tea; clouds hide the moon.
+  Remember: Xiao Zhang has been ten times; Sam wants to go back in spring (L77).
+- **73** A rainy afternoon: the auntie on her childhood in a shikumen house (pavilion room, coal stove, chamber pots).
+  Remember: she was born in the lane, is seventy, family of five in the 亭子间; she still has a marble.
+- **74** December: the auntie has a padded jacket and trousers made by her tailor; Sam orders an overcoat, she gives him a scarf.
+  Remember: the auntie wants "well made, crisp", not fashionable; Sam is tall.
+- **75** Sam takes the wrong exit at People's Square; an old man directs him north to Nanjing Road by the compass.
+  Remember: Sam says he is still learning; Shanghainese give directions by the compass.
+- **76** Songjiang: Xiao Li's paternal grandmother 阿娘 (91, retired 30 years, three sons, one daughter married to a Suzhou man).
+  Remember: she calls Sam 小马 (from his surname, Martin); Xiao Li's 外婆 (mother's side) is in Suzhou (L36).
+- **77** (review) A café in mid-December with Xiao Zhang. Remember: next trip Beijing in spring, with A-Qiang.

@@ -28,3 +28,8 @@
 - A book-confirmed reading that differs from the lexicon goes into `overrides.tsv` with the lesson cited (阿里 ɦᴀ,
   勿错 and 搓 in -o, 呢 nəʔ).
 - A number used in an exercise must have been met in a dialogue first.
+- Check the printed course for everyday verbs too, not only new words: 乘 is ʦʰən (printed cen, 16 times), not the
+  lexicon's zən; 恐怕 has 怕 in -o; 塞车 has a checked 塞; 脚踏车 has 车 ʦʰo (review of 64–77).
+- 阿 in kin terms (阿哥, 阿弟, 阿妹, 阿伯, 阿娘) is the checked syllable ᴀʔ55, as in 阿姐 and 阿拉: the lexicon's ᴀ53 is wrong
+  for them.
+- Write 每日天 for "every day" (not 天天), 日[ȵiɪʔ12] for a day counted (一日, 两日), 着 for wearing clothes.

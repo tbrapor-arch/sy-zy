@@ -1,0 +1,132 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 56
+title:
+  en: Review
+  hanzi: 复习
+review: true
+setting: >-
+  The morning after the typhoon. The lane is washed clean; the auntie is sweeping leaves from her doorstep when Sam comes
+  out.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: 台风 走 了 ， 侬 屋里向 湿 伐 ？
+  en: The typhoon has gone. Is it wet inside your place?
+- n: 2
+  speaker: Sam
+  hanzi: 勿 湿 ， 门 底下头 我 用 旧 衣裳 塞牢 了 。
+  en: No, I blocked the gap under the door with old clothes.
+- n: 3
+  speaker: 阿姨
+  hanzi: 侬 昨日子 夜里向 阿里搭 去 了 ？ 灯 暗 辣海 。
+  en: Where were you last night? Your light was off.
+- n: 4
+  speaker: Sam
+  hanzi: 我 到 医院 去 望望 小李 个 爷 。
+  en: I went to the hospital to see Xiao Li's father.
+- n: 5
+  speaker: 阿姨
+  hanzi: 伊 个 腿 哪能 了 ？ 还 躺 辣海 啊 ？
+  en: How is his leg? Is he still lying in bed?
+- n: 6
+  speaker: Sam
+  hanzi: 好 交关 了 ， 医生 讲 就要 好 转去 了 。
+  en: Much better. The doctor says he can go home very soon.
+- n: 7
+  speaker: 阿姨
+  hanzi: 介末 小张 呢 ？ 伊 个 面试 成功 了 伐 ？
+  en: And Xiao Zhang? Did her interview go well?
+- n: 8
+  speaker: Sam
+  hanzi: 成功 了 ！ 新 单位 条件 勿错 ， 下 个 号头 上班 。
+  en: It did! The new place has good terms; she starts next month.
+- n: 9
+  speaker: 阿姨
+  hanzi: 嗯 ， 年纪 轻 个 人 机会 多 ， 要 努力 嘛 。
+  en: Mm. Young people have plenty of chances; they should work hard, of course.
+- n: 10
+  speaker: Sam
+  hanzi: 阿姨 ， 侬 个 眼镜 呢 ？ 又 寻勿着 了 啊 ？
+  en: Auntie, where are your glasses? Can't you find them again?
+- n: 11
+  speaker: 阿姨
+  hanzi: 咦 ？ 刚刚 还 摆 辣 台子 浪向 个 嘛 。
+  en: Eh? They were on the table just a moment ago.
+- n: 12
+  speaker: Sam
+  hanzi: 覅 急 ， 辣辣 抽斗 里向头 ， 我 看见 了 。
+  en: Don't worry, they're inside the drawer, I can see them.
+- n: 13
+  speaker: 阿姨
+  hanzi: 喔唷 ， 我 搿 个 人 ， 每日天 老是 寻 眼镜 。
+  en: 'Oh dear, what am I like: every single day I''m hunting for my glasses.'
+- n: 14
+  speaker: Sam
+  hanzi: 我 搭 侬 讲 ， 眼镜 平常 摆 辣 门口头 好 了 。
+  en: 'I''ll tell you what: just keep your glasses by the door.'
+- n: 15
+  speaker: 阿姨
+  hanzi: 好 ， 听 侬 个 。 要 落雨 快 了 ， 豪燥 进来 坐 。
+  en: 'All right, I''ll do as you say. It''s about to rain: quick, come in and sit down.'
+- n: 16
+  speaker: Sam
+  hanzi: 我 可以 帮 侬 烧 泡饭 ， 我 会得 烧 了 ！
+  en: 'I can make you some 泡饭: I know how to now!'
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    Place endings: 屋里向, 台子浪向, 抽斗里向头, 门底下头, 门口头, 隔壁头, 边浪向. Pointing: 搿面 "over here", 伊面 / 埃面 "over there"; 阿里搭 "where".
+- ref: 3
+  topic: grammar
+  text: >-
+    Times of day with 向: 早浪向, 中浪向, 夜里向; also 清早, 上半日, 下半天, 夜快头, 半夜里. Days: 昨日子, 每日天. Habits: 平常 "usually", 常庄 "often", 有常时
+    "sometimes", 老是 "always".
+- ref: 3
+  topic: grammar
+  text: >-
+    辣海 after a verb for a lasting state: 灯暗辣海 "the light is off", 躺辣海, 坐辣海, 门开辣海. 辣辣 before a verb for what is going on:
+    辣辣烧汤; before a place for "to be at": 辣辣抽斗里向头 (line 12).
+- ref: 6
+  topic: grammar
+  text: >-
+    About to happen: 就要…了 (就要好转去了), 要…快了 (要落雨快了, line 15), 快…了. In time or not: 来得及 / 来勿及. To hurry someone: 豪燥！
+- ref: 9
+  topic: grammar
+  text: >-
+    Particles in writing: 嗯 "mm", 咦 "eh?", 喔唷 "oh my", 哎 "hey", 噢 "oh, I see"; at the end 嘛 "obviously", 啦, 呢 "and …?".
+- ref: 14
+  topic: grammar
+  text: >-
+    搭 + person: 我搭侬讲 "let me tell you", 搭我准备 "prepare with me", 搭侬准备好了 "ready for you".
+- ref: 16
+  topic: grammar
+  text: >-
+    "Can": 可以 (possible, acceptable), 好 (allowed), 会得 (know how to; will). 我会得烧了 "I know how to cook it now".
+new_words: []
+exercises:
+  translate:
+  - hanzi: 侬 个 手机 辣辣 台子 底下头 。
+    en: Your phone is under the table.
+  - hanzi: 面试 就要 开始 了 ， 豪燥 进来 。
+    en: The interview is about to start, come in quickly.
+  - hanzi: 我 上半日 平常 辣 办公室 ， 下半天 有常时 出去 。
+    en: In the morning I'm usually in the office; in the afternoon I sometimes go out.
+  fill:
+  - hanzi: 门 开 ＿ ， 屋里向 呒没 人 。
+    en: The door is open and there's nobody inside.
+    answer: 辣海
+  - hanzi: 现在 去 火车 站 还 ＿ 伐 ？
+    en: Is there still time to get to the station now?
+    answer: 来得及
+  - hanzi: 我 ＿ 侬 讲 一声 ， 明朝 我 勿 来 了 。
+    en: 'Just to let you know: I''m not coming tomorrow.'
+    answer: 搭
+  say:
+  - hanzi: 我 个 眼镜 摆 辣 阿里搭 了 ？
+    en: Where have I put my glasses?
+  - hanzi: 伊 每日天 清早 六 点钟 起床 。
+    en: He gets up at six every morning.
+  - hanzi: 我 可以 进来 伐 ？
+    en: May I come in?

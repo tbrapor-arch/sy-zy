@@ -1,0 +1,208 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 55
+title:
+  en: A job interview
+  hanzi: 面试
+review: false
+setting: >-
+  Sunday afternoon in the café of the language exchange. Xiao Zhang has an interview at a design company tomorrow; Sam plays
+  the manager so that she can rehearse.
+dialogue:
+- n: 1
+  speaker: 小张
+  hanzi: 明朝 我 要 面试 ， 侬 搭 我 准备 。
+  en: I have an interview tomorrow. Help me prepare.
+- n: 2
+  speaker: Sam
+  hanzi: 好个 ， 我 来 做 经理 。 是 啥个 单位 ？
+  en: All right, I'll be the manager. What sort of employer is it?
+- n: 3
+  speaker: 小张
+  hanzi: 一 家 设计 公司 ， 条件 勿错 。
+  en: A design company. The terms are pretty good.
+- n: 4
+  speaker: Sam
+  hanzi: 侬好 ， 请 坐 。 侬 是 啥个 专业 毕业 个 ？
+  en: Good morning, please sit down. What did you graduate in?
+- n: 5
+  speaker: 小张
+  hanzi: 我 学 个 是 设计 ， 两 年 以前 毕业 个 。
+  en: I studied design. I graduated two years ago.
+- n: 6
+  speaker: Sam
+  hanzi: 侬 为啥 想 跳槽 ？ 老 单位 有 问题 伐 ？
+  en: Why do you want to change jobs? Is there a problem at your old place?
+- n: 7
+  speaker: 小张
+  hanzi: 呒没 。 我 希望 有 机会 学 新 技术 。
+  en: No. I hope to have the chance to learn new techniques.
+- n: 8
+  speaker: Sam
+  hanzi: 侬 觉着 自家 个 能力 哪能 ？
+  en: How would you rate your own abilities?
+- n: 9
+  speaker: 小张
+  hanzi: 我 做 事体 蛮 努力 ， 老 单位 侪 晓得 。
+  en: I work hard, everyone at my old place knows that.
+- n: 10
+  speaker: Sam
+  hanzi: 阿拉 办公室 老 忙 个 ， 八 点钟 下班 。
+  en: 'Our office is very busy: we finish at eight in the evening.'
+- n: 11
+  speaker: 小张
+  hanzi: 我 可以 个 。 工作 重要 ， 忙 勿要紧 。
+  en: I can do that. Work is important, being busy doesn't matter.
+- n: 12
+  speaker: Sam
+  hanzi: 勿错 ， 合同 我 搭 侬 准备 好 了 。
+  en: Not bad. I've got the contract ready for you.
+- n: 13
+  speaker: 小张
+  hanzi: 真个 啊 ？ 介 便当 就 成功 了 ？
+  en: Really? I got it as easily as that?
+- n: 14
+  speaker: Sam
+  hanzi: 我 勿是 真 个 经理 嘛 ！ 侬 讲 得 蛮 好 。
+  en: I'm not a real manager, remember! You spoke very well.
+- n: 15
+  speaker: 小张
+  hanzi: 就是 有 一眼 急 。 经理 会得 问 我 啥 ？
+  en: I'm just a bit nervous. What will the manager ask me?
+- n: 16
+  speaker: Sam
+  hanzi: 伊 会得 问 侬 ， 常庄 出差 可以 伐 ？
+  en: He will ask you whether frequent business trips are all right.
+- n: 17
+  speaker: 小张
+  hanzi: 侪 可以 ！ 我 再 搭 阿强 讲 一声 。
+  en: Everything is fine! I'll just let A-Qiang know.
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    搭 before a person covers "with", "for" and "to": 搭我准备 "prepare with me, help me prepare", 合同我搭侬准备好了 (line 12) "I've
+    prepared the contract for you", 搭阿强讲一声 (line 17) "say a word to A-Qiang". You met it as "and" (lesson 2) and "with"
+    (lesson 7).
+- ref: 1
+  topic: vocab
+  text: >-
+    面试 "job interview", also a verb: 我要面试 "I have an interview".
+- ref: 2
+  topic: vocab
+  text: >-
+    经理 "manager". 单位 "work unit" is the careful, slightly official word for an employer: 老单位 "my old workplace". Among friends
+    people say 公司.
+- ref: 3
+  topic: vocab
+  text: >-
+    设计 "design". 条件 "conditions, terms". 勿错 {勿错} "not bad, pretty good": listen to how 错 sounds in this word.
+- ref: 4
+  topic: grammar
+  text: >-
+    Careful and everyday wording. An interview is the place for 侬好，请坐 and for words shared with Mandarin: 专业 "field of study",
+    毕业 "to graduate", 能力 "ability", 希望 "to hope". At home the same people would say 侬学啥个？ and 我想….
+- ref: 6
+  topic: vocab
+  text: >-
+    跳槽 "to change jobs", literally "to jump troughs". 问题 {问题} "problem, question": 问 has its literary reading here, not
+    the {问} of 问 "to ask" (lesson 11).
+- ref: 7
+  topic: vocab
+  text: >-
+    机会 "chance, opportunity"; 技术 "technique, technology".
+- ref: 9
+  topic: vocab
+  text: >-
+    努力 "hard-working; to make an effort". 做事体 "to do things, to work".
+- ref: 10
+  topic: vocab
+  text: >-
+    办公室 "office". 忙 "busy". 下班 "to finish work", the opposite of 上班 (lesson 11).
+- ref: 11
+  topic: grammar
+  text: >-
+    Three words for "can": 可以 "it's possible, it's acceptable" (我可以个 "I can manage that"), 好 "may, it's all right to" (lesson
+    12), and 会得 "know how to" or "will" (lessons 31, 41): 经理会得问我啥？ "what will the manager ask me?".
+- ref: 12
+  topic: vocab
+  text: >-
+    合同 "contract".
+- ref: 13
+  topic: vocab
+  text: >-
+    成功 "to succeed; success".
+- ref: 16
+  topic: vocab
+  text: >-
+    出差 "to go on a business trip".
+new_words:
+- hanzi: 面试
+  en: job interview
+- hanzi: 经理
+  en: manager
+- hanzi: 单位
+  en: employer, workplace
+- hanzi: 设计
+  en: design
+- hanzi: 条件
+  en: conditions, terms
+- hanzi: 勿错
+  en: not bad, pretty good
+- hanzi: 专业
+  en: field of study
+- hanzi: 毕业
+  en: to graduate
+- hanzi: 跳槽
+  en: to change jobs
+- hanzi: 问题
+  en: problem, question
+- hanzi: 希望
+  en: to hope
+- hanzi: 机会
+  en: chance, opportunity
+- hanzi: 技术
+  en: technique, technology
+- hanzi: 能力
+  en: ability
+- hanzi: 努力
+  en: hard-working; to make an effort
+- hanzi: 办公室
+  en: office
+- hanzi: 忙
+  en: busy
+- hanzi: 下班
+  en: to finish work
+- hanzi: 重要
+  en: important
+- hanzi: 合同
+  en: contract
+- hanzi: 成功
+  en: to succeed
+- hanzi: 出差
+  en: to go on a business trip
+exercises:
+  translate:
+  - hanzi: 我 搭 老板 讲 过 了 ， 伊 同意 个 。
+    en: I've spoken to the boss, he agrees.
+  - hanzi: 伊 大学 毕业 以后 就 到 上海 来 工作 。
+    en: After graduating from university she came to work in Shanghai.
+  - hanzi: 搿 个 机会 老 重要 个 ， 侬 要 努力 。
+    en: This chance is very important, you must work hard.
+  fill:
+  - hanzi: 下 个 礼拜 我 要 到 苏州 ＿ 。
+    en: Next week I'm going to Suzhou on business.
+    answer: 出差
+  - hanzi: 侬 有 啥 ＿ ， 侪 好 问 我 。
+    en: If you have any questions, you can ask me.
+    answer: 问题
+  - hanzi: 今朝 勿 加班 ， 六 点钟 就 ＿ 。
+    en: 'No overtime today: I finish at six.'
+    answer: 下班
+  say:
+  - hanzi: 我 希望 侬 成功 。
+    en: I hope you succeed.
+  - hanzi: 侬 学 个 是 啥 专业 ？
+    en: What did you study?
+  - hanzi: 办公室 里 呒没 人 。
+    en: There's nobody in the office.

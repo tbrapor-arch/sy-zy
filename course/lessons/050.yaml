@@ -1,0 +1,207 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 50
+title:
+  en: Sam writes in Shanghainese
+  hanzi: 写 上海闲话
+review: false
+setting: >-
+  Sunday evening. Sam has just posted in the lane's WeChat group, in Shanghainese for the first time. The auntie's grandson,
+  phone in hand, comes to find him.
+dialogue:
+- n: 1
+  speaker: 外孙
+  hanzi: 爷叔 ， 侬 辣 微信 群 里 发 消息 啦 ？
+  en: Uncle, you posted a message in the WeChat group?
+- n: 2
+  speaker: Sam
+  hanzi: 嗯 ， 我 第 一 趟 用 上海闲话 写 。
+  en: Mm, it's the first time I've written in Shanghainese.
+- n: 3
+  speaker: 外孙
+  hanzi: 喔唷 ， 搿 个 哦[vᴀʔ12] 字 表示 啥 意思 ？
+  en: Wow. What is this character 哦 supposed to mean?
+- n: 4
+  speaker: Sam
+  hanzi: 书 里 写 哦[vᴀʔ12] ， 嘴巴 里 讲 个 就是 伐 。
+  en: Books write 哦; what you say out loud is simply 伐.
+- n: 5
+  speaker: 外孙
+  hanzi: 咦 ， 介末 侬 为啥 又 写 葛末 呢 ？
+  en: Eh? Then why did you also write 葛末?
+- n: 6
+  speaker: Sam
+  hanzi: 葛末 就是 介末 嘛 ， 一 个 词 ， 两 种 字 。
+  en: '葛末 is just 介末, you know: one word, two ways of writing it.'
+- n: 7
+  speaker: 阿姨
+  hanzi: 哎 ， 㑚 两 个 人 辣辣 讲 啥 物事 ？
+  en: Hey, what are you two talking about?
+- n: 8
+  speaker: 外孙
+  hanzi: 外婆 ， 爷叔 辣辣 学 方言 个 字 。
+  en: Grandma, Uncle is learning the characters for the dialect.
+- n: 9
+  speaker: 阿姨
+  hanzi: 老底子 只 讲 勿 写 ， 侪 是 口语 。
+  en: 'In the old days we only spoke it, never wrote it: it was all spoken language.'
+- n: 10
+  speaker: Sam
+  hanzi: 噢 ， 原来 一 个 发音 有 介 多 字 。
+  en: Oh, so that's why one pronunciation has so many characters.
+- n: 11
+  speaker: 外孙
+  hanzi: 老师 讲 ， 学堂 里 只好 讲 普通话 。
+  en: The teacher says that at school we can only speak Mandarin.
+- n: 12
+  speaker: 阿姨
+  hanzi: 屋里 末 ， 外婆 搭 侬 讲 上海闲话 。
+  en: And at home, Grandma speaks Shanghainese with you.
+- n: 13
+  speaker: Sam
+  hanzi: 大学 个 大[dᴀ13] 搭 大小 个 大 ， 为啥 两样 ？
+  en: 'The 大 of 大学 and the 大 of 大小: why are they different?'
+- n: 14
+  speaker: 外孙
+  hanzi: 我 晓得 ！ 大学 是 文读 ， 大小 是 白读 。
+  en: I know! 大学 has the literary reading, 大小 the colloquial one.
+- n: 15
+  speaker: 阿姨
+  hanzi: 文读 是 书 里 个 词 ， 白读 是 屋里 个 闲话 。
+  en: Literary readings are for book words, colloquial ones for the words of home.
+- n: 16
+  speaker: Sam
+  hanzi: 语言 真 有 意思 ， 我 再 发 一 条 。
+  en: Language really is interesting. I'll send another one.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    发消息 "to send a message": 发 is "to send out" (and "to break out", lesson 41). 群 is a (chat) group. 啦 at the end is 了
+    + 啊 run together: a lively "…, have you?".
+- ref: 2
+  topic: vocab
+  text: >-
+    嗯 "mm, yes": the everyday way to agree without a full 是个. 第一趟 "the first time" (第, lesson 26; 趟, lesson 13).
+- ref: 3
+  topic: pronunciation
+  text: >-
+    One word, several spellings. Shanghainese has no official spelling, so writers choose their own characters. The question
+    particle this course writes 伐 {伐} is written 哦 in 钱乃荣's books, and 𠲎 by others; it is the same word and the same sound.
+    表示 "to show, to mean".
+- ref: 3
+  topic: vocab
+  text: >-
+    喔唷 {喔唷} is the all-purpose exclamation of surprise, pain or admiration (Mandarin 哎哟).
+- ref: 5
+  topic: grammar
+  text: >-
+    呢 {呢} at the end of a question asks "and …? so why …?": 侬呢？ "and you?". 咦 is a small "eh?" of surprise.
+- ref: 5
+  topic: vocab
+  text: >-
+    葛末 {葛末} and 介末 {介末} are two forms of the same linking word, "so, in that case"; you will read both. In the same way
+    搿 "this" is written 迭 in older books and in novels. This course keeps one form: 伐, 介末, 搿.
+- ref: 6
+  topic: grammar
+  text: >-
+    嘛 at the end says "obviously, as you know": 就是介末嘛 "it's just 介末, of course". 词 is "word".
+- ref: 7
+  topic: vocab
+  text: >-
+    哎 "hey": calls for attention before you speak.
+- ref: 8
+  topic: vocab
+  text: >-
+    方言 "dialect". The lane says 上海闲话; 上海话 and 沪语 are what books and newspapers call it.
+- ref: 9
+  topic: vocab
+  text: >-
+    口语 "spoken language". 只讲勿写 "only spoken, not written": two verbs set against each other, no linking word needed.
+- ref: 10
+  topic: vocab
+  text: >-
+    噢 at the start of a sentence is "oh, I see"; at the end it softens a reminder (lesson 59). 发音 "pronunciation".
+- ref: 11
+  topic: culture
+  text: >-
+    普通话 "Mandarin" (the "common speech"). Schools have taught in Mandarin only for decades; many Shanghai children understand
+    Shanghainese but answer in Mandarin, and families like the auntie's make a point of speaking it at home.
+- ref: 13
+  topic: pronunciation
+  text: >-
+    文读 and 白读: many characters have two readings, a literary one that came with book words and a colloquial one of everyday
+    speech. 大 is {大学} in 大学 "university", a learned word, and {大小} in 大小 "size". 日 is {日脚} in 日脚 "days" (lesson 51). When
+    a new word surprises you, this is usually why.
+- ref: 16
+  topic: vocab
+  text: >-
+    语言 "language". 条 counts messages, as it counts lanes and fish (lesson 39): 发一条 "send one".
+new_words:
+- hanzi: 群
+  en: (chat) group
+- hanzi: 消息
+  en: message; news
+- hanzi: 啦
+  en: '(particle: 了 + 啊, lively)'
+- hanzi: 嗯
+  en: mm, yes
+- hanzi: 喔唷
+  en: oh my! wow! ouch!
+- hanzi: 哦[vᴀʔ12]
+  en: (another spelling of the question particle 伐)
+- hanzi: 表示
+  en: to show, to mean
+- hanzi: 咦
+  en: eh? (surprise)
+- hanzi: 葛末
+  en: so, in that case (another form of 介末)
+- hanzi: 呢
+  en: '(particle: and …? so why …?)'
+- hanzi: 嘛
+  en: '(particle: obviously, as you know)'
+- hanzi: 词
+  en: word
+- hanzi: 哎
+  en: hey
+- hanzi: 方言
+  en: dialect
+- hanzi: 口语
+  en: spoken language
+- hanzi: 噢
+  en: oh, I see; (at the end) mind you
+- hanzi: 发音
+  en: pronunciation
+- hanzi: 普通话
+  en: Mandarin
+- hanzi: 文读
+  en: literary reading (of a character)
+- hanzi: 白读
+  en: colloquial reading (of a character)
+- hanzi: 语言
+  en: language
+exercises:
+  translate:
+  - hanzi: 我 用 上海闲话 发 了 一 条 消息 拨 小李 。
+    en: I sent Xiao Li a message in Shanghainese.
+  - hanzi: 侬 个 发音 比 我 好 交关 。
+    en: Your pronunciation is much better than mine.
+  - hanzi: 咦 ， 搿 个 词 我 呒没 学 过 嘛 。
+    en: Eh? But I've never learnt this word.
+  fill:
+  - hanzi: 学堂 里 老师 讲 ＿ ， 屋里 讲 上海闲话 。
+    en: At school the teachers speak Mandarin; at home we speak Shanghainese.
+    answer: 普通话
+  - hanzi: 搿 个 ＿ 是 啥 意思 ？
+    en: What does this word mean?
+    answer: 词
+  - hanzi: 我 去 买 菜 ， 侬 ＿ ？
+    en: I'm going to buy food. What about you?
+    answer: 呢
+  say:
+  - hanzi: 喔唷 ， 介 贵 啊 ！
+    en: Wow, that expensive!
+  - hanzi: 苏州闲话 也 是 一 种 方言 。
+    en: Suzhou speech is a dialect too.
+  - hanzi: 嗯 ， 我 晓得 了 。
+    en: Mm, I see.

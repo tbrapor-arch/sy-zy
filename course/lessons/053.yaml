@@ -1,0 +1,210 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 53
+title:
+  en: At the hospital
+  hanzi: 医院 里
+review: false
+setting: >-
+  A ward in a Hongkou hospital, visiting hours. Xiao Li's father slipped in the lane two days ago and broke his leg. Sam
+  arrives with a bag of fruit; Xiao Li is already there.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 爷叔 ， 我 来 望望 侬 ， 买 了 一眼 水果 。
+  en: Uncle, I've come to see you. I've brought a bit of fruit.
+- n: 2
+  speaker: 小李爷
+  hanzi: Sam 来 了 啊 ！ 坐 ， 坐 ， 覅 立 辣海 。
+  en: Sam, you came! Sit down, sit down, don't stay standing.
+- n: 3
+  speaker: Sam
+  hanzi: 侬 个 腿 哪能 了 ？ 小李 讲 是 骨折 。
+  en: How is your leg? Xiao Li says it's a fracture.
+- n: 4
+  speaker: 小李爷
+  hanzi: 落雨 天 ， 我 辣 弄堂口 掼 了 一 跤 。
+  en: It was a rainy day, and I took a fall at the mouth of the lane.
+- n: 5
+  speaker: 小李
+  hanzi: 是 救命车 送 到 医院 来 个 ， 吓煞 人 。
+  en: An ambulance brought him to hospital. It scared us to death.
+- n: 6
+  speaker: Sam
+  hanzi: 医生 检查 过 了 伐 ？ 严重 伐 ？
+  en: Has the doctor examined you? Is it serious?
+- n: 7
+  speaker: 小李爷
+  hanzi: 勿 算 严重 ， 就是 要 躺 一 个 月 。
+  en: It's not that serious, I just have to lie down for a month.
+- n: 8
+  speaker: 小李
+  hanzi: 血 也 检查 过 了 ， 呒没 啥 病 。
+  en: They've tested his blood too. Nothing wrong there.
+- n: 9
+  speaker: 护士
+  hanzi: 爷叔 ， 吃 药 了 ， 药水 搭 药片 一道 吃 。
+  en: Time for your medicine, sir. Take the syrup and the tablets together.
+- n: 10
+  speaker: 小李爷
+  hanzi: 护士 ， 药水 味道 忒 推扳 了 ， 我 勿 要 吃 。
+  en: Nurse, that syrup tastes awful. I don't want it.
+- n: 11
+  speaker: 护士
+  hanzi: 生毛病 就 要 吃 药 ， 侬 像 小囡 一样 。
+  en: When you're ill you take your medicine. You're just like a child.
+- n: 12
+  speaker: Sam
+  hanzi: 爷叔 ， 症状 好 一眼 了 伐 ？ 腿 还 痛 伐 ？
+  en: Uncle, are you feeling any better? Does the leg still hurt?
+- n: 13
+  speaker: 小李爷
+  hanzi: 躺 辣海 勿 痛 ， 立 起来 就 痛 。
+  en: Lying down it doesn't hurt; as soon as I stand up it does.
+- n: 14
+  speaker: 小李
+  hanzi: 侬 看 ， 伊 一日到夜 躺 辣海 看 手机 。
+  en: 'Look at him: he lies there on his phone from morning to night.'
+- n: 15
+  speaker: 小李爷
+  hanzi: 医院 里 呒没 事体 做 ， 只好 休息 。
+  en: There's nothing to do in hospital. All I can do is rest.
+- n: 16
+  speaker: Sam
+  hanzi: 身体 顶 要紧 ， 侬 好好叫 休息 。
+  en: Your health matters most. Have a proper rest.
+- n: 17
+  speaker: 小李
+  hanzi: 姆妈 担心 伊 吃 勿 好 ， 辣辣 屋里 烧 汤 。
+  en: 'Mum is worried he''s not eating well: she''s at home making soup.'
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    望望 "to go and see (someone ill or old), to have a look": 望 (lesson 40) doubled. 水果 "fruit" is what you take to a hospital.
+- ref: 2
+  topic: grammar
+  text: >-
+    辣海 {辣海} after a verb says that a state lasts: 立辣海 "(be) standing there", 躺辣海 "lying there" (line 13), 坐辣海 "sitting",
+    门开辣海 "the door is (standing) open". Compare 辣辣 before a verb, for an action going on right now: 辣辣烧汤 "is making soup"
+    (line 17). 立辣海 is where you are; 辣辣立起来 is what you are doing.
+- ref: 3
+  topic: vocab
+  text: >-
+    腿 "leg" (the whole leg; 脚, lesson 38, is the foot, and loosely the leg too). 骨折 "fracture".
+- ref: 4
+  topic: vocab
+  text: >-
+    掼跤 "to fall over" (Mandarin 摔跤): 掼 "to throw, to drop" (lesson 43) + 跤. With a number: 掼了一跤 "had a fall".
+- ref: 5
+  topic: vocab
+  text: >-
+    救命车 "ambulance", literally "save-life car" (Mandarin 救护车). 医院 "hospital". 吓煞人 "frightening" (吓煞, lesson 37).
+- ref: 6
+  topic: vocab
+  text: >-
+    检查 "to examine, to check". 严重 "serious".
+- ref: 7
+  topic: vocab
+  text: >-
+    躺 "to lie down". 勿算 + adjective "not really, not that …" (算, lesson 16).
+- ref: 8
+  topic: grammar
+  text: >-
+    呒没啥 + noun "no … to speak of": 呒没啥病 "no illness to speak of", 呒没啥事体 "nothing much". 血 is "blood"; 病 "illness" is the
+    short word, 毛病 (lesson 13) the everyday one.
+- ref: 9
+  topic: vocab
+  text: >-
+    药水 "liquid medicine, syrup", 药片 "tablet". 护士 "nurse". A nurse calls an older patient 爷叔 or 阿姨, like everyone else.
+- ref: 11
+  topic: vocab
+  text: >-
+    生毛病 "to fall ill, to be ill" (Mandarin 生病). 就要 as two words here: "then (you) must".
+- ref: 12
+  topic: vocab
+  text: >-
+    症状 "symptoms", a hospital word; at home people just ask 好一眼了伐？
+- ref: 15
+  topic: vocab
+  text: >-
+    休息 "to rest". 只好 "can only" (lesson 23).
+- ref: 16
+  topic: vocab
+  text: >-
+    要紧 {要紧} "important, what matters" (and "serious": 勿要紧, lesson 13, "it doesn't matter"). 身体顶要紧 "health comes first".
+- ref: 17
+  topic: grammar
+  text: >-
+    Existence and location. 辣辣屋里 "(she) is at home": 辣辣 + place is "to be at". 医院里呒没事体做 (line 15) "in hospital there is
+    nothing to do": place first, then 有 or 呒没. 担心 "to worry (about)".
+new_words:
+- hanzi: 望望
+  en: to go and see (someone), have a look
+- hanzi: 水果
+  en: fruit
+- hanzi: 辣海
+  en: '(after a verb: in that state)'
+- hanzi: 腿
+  en: leg
+- hanzi: 骨折
+  en: fracture
+- hanzi: 跤
+  en: a fall (掼跤 to fall over)
+- hanzi: 救命车
+  en: ambulance
+- hanzi: 医院
+  en: hospital
+- hanzi: 医生
+  en: doctor
+- hanzi: 检查
+  en: to examine, check
+- hanzi: 严重
+  en: serious
+- hanzi: 躺
+  en: to lie down
+- hanzi: 血
+  en: blood
+- hanzi: 病
+  en: illness
+- hanzi: 药水
+  en: liquid medicine
+- hanzi: 药片
+  en: tablet
+- hanzi: 护士
+  en: nurse
+- hanzi: 生毛病
+  en: to fall ill
+- hanzi: 症状
+  en: symptoms
+- hanzi: 休息
+  en: to rest
+- hanzi: 要紧
+  en: important; serious
+- hanzi: 担心
+  en: to worry
+exercises:
+  translate:
+  - hanzi: 外婆 生毛病 了 ， 我 要 去 望望 伊 。
+    en: Grandma is ill, I must go and see her.
+  - hanzi: 医生 讲 我 个 病 勿 严重 。
+    en: The doctor says my illness isn't serious.
+  - hanzi: 门 开 辣海 ， 侬 自家 进来 。
+    en: The door is open, come in by yourself.
+  fill:
+  - hanzi: 侬 覅 ＿ ， 伊 明朝 就 好 转去 了 。
+    en: Don't worry, he can go home tomorrow.
+    answer: 担心
+  - hanzi: 小囡 困 ＿ ， 侬 声音 轻 一眼 。
+    en: The child is asleep, keep your voice down.
+    answer: 辣海
+  - hanzi: 伊 腿 ＿ 了 ， 一 个 月 勿 好 上班 。
+    en: He has broken his leg and can't go to work for a month.
+    answer: 骨折
+  say:
+  - hanzi: 侬 要 多 休息 。
+    en: You need to rest more.
+  - hanzi: 医院 辣 阿里搭 ？
+    en: Where is the hospital?
+  - hanzi: 我 买 了 一眼 水果 拨 侬 。
+    en: I've bought you a bit of fruit.

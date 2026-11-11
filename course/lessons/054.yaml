@@ -1,0 +1,210 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 54
+title:
+  en: A typhoon
+  hanzi: 台风 来 了
+review: false
+setting: >-
+  A heavy August afternoon. The forecast has announced a typhoon for the evening; the auntie is hurrying round the lane
+  and knocks on Sam's door.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: Sam ， 天气 预报 讲 ， 台风 就要 来 了 ！
+  en: Sam, the weather forecast says the typhoon is about to arrive!
+- n: 2
+  speaker: Sam
+  hanzi: 啥辰光 到 ？ 现在 天 还 蛮 好 个 嘛 。
+  en: When does it get here? The sky still looks fine.
+- n: 3
+  speaker: 阿姨
+  hanzi: 夜快头 就 到 ， 马上 要 落雨 快 了 。
+  en: Towards evening. It's going to rain any minute now.
+- n: 4
+  speaker: 阿姨
+  hanzi: 豪燥 ， 外头 晒 个 衣裳 侪 拿 进来 ！
+  en: Quick, bring in all the washing that is drying outside!
+- n: 5
+  speaker: Sam
+  hanzi: 来得及 伐 ？ 天 已经 暗 下来 了 。
+  en: Is there time? The sky has already gone dark.
+- n: 6
+  speaker: 阿姨
+  hanzi: 快 一眼 还 来得及 ， 再 晏 就 来勿及 了 。
+  en: If you're quick there's still time; any later and it will be too late.
+- n: 7
+  speaker: Sam
+  hanzi: 喔唷 ， 打雷 了 ！ 侬 看 ， 还 有 霍险 。
+  en: Whoa, thunder! Look, there's lightning too.
+- n: 8
+  speaker: 阿姨
+  hanzi: 搿 是 阵头雨 ， 台风 还 呒没 到 。
+  en: That's just a thundery shower, the typhoon isn't here yet.
+- n: 9
+  speaker: 阿姨
+  hanzi: 窗门 侪 关脱 ， 门 底下头 用 旧 衣裳 塞牢 。
+  en: Shut all the windows, and block the gap under the door with old clothes.
+- n: 10
+  speaker: Sam
+  hanzi: 门 底下头 为啥 要 塞牢 ？ 水 会 进来 啊 ？
+  en: Why block under the door? Will water come in?
+- n: 11
+  speaker: 阿姨
+  hanzi: 老房子 嘛 ， 雨 大 了 地浪 侪 是 湿 个 。
+  en: 'It''s an old house: when the rain is heavy the floor gets wet everywhere.'
+- n: 12
+  speaker: Sam
+  hanzi: 电 会 停 伐 ？ 我 屋里 只 有 手机 个 灯 。
+  en: Will the power go off? All I have at home is the light on my phone.
+- n: 13
+  speaker: 阿姨
+  hanzi: 老底子 常庄 停 电 ， 电灯 一 暗 就 点 蜡烛 。
+  en: 'In the old days the power often went: when the lights went out we lit candles.'
+- n: 14
+  speaker: Sam
+  hanzi: 现在 温度 几 度 ？ 我 觉着 有 一眼 冷 。
+  en: What's the temperature now? I feel a bit cold.
+- n: 15
+  speaker: 阿姨
+  hanzi: 廿五 度 。 台风 天 侬 覅 出去 ， 外头 危险 。
+  en: Twenty-five degrees. Don't go out in a typhoon, it's dangerous out there.
+- n: 16
+  speaker: Sam
+  hanzi: 晓得 了 ， 我 会 小心 个 。 侬 也 要 注意 。
+  en: I know, I'll be careful. You take care too.
+- n: 17
+  speaker: 阿姨
+  hanzi: 台风 我 看 得 多 了 ， 豪燥 去 关脱 窗门 ！
+  en: I've seen plenty of typhoons. Now hurry up and shut those windows!
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    Three ways to say "about to": 就要…了 (台风就要来了), 要…快了 (要落雨快了, line 3) and 快…了 (快到了 "nearly there"). The middle one, with
+    快 after the verb, is the most Shanghainese: 饭要好快了 "the rice is nearly ready".
+- ref: 1
+  topic: vocab
+  text: >-
+    天气 "weather", 预报 "forecast"; 台风 "typhoon": several reach Shanghai between July and September.
+- ref: 4
+  topic: vocab
+  text: >-
+    豪燥 {豪燥} is "quick! hurry up" (Mandarin 赶快), said to get someone moving. 快一眼 (line 6) is the plainer "a bit faster".
+- ref: 5
+  topic: vocab
+  text: >-
+    暗 "dark": 暗下来 "to get dark", with 下来 for a change that sets in. 黑 (lesson 52) is the colour, and pitch dark.
+- ref: 6
+  topic: grammar
+  text: >-
+    来得及 "there is time, can make it" (lesson 32) and its opposite 来勿及 "too late, no time": 得 for can, 勿 for can't. 再晏就…
+    "any later and …": 晏 "late" (lesson 51).
+- ref: 7
+  topic: vocab
+  text: >-
+    打雷 "to thunder"; 霍险 {霍险} "lightning" (Mandarin 闪电), an old Wu word.
+- ref: 8
+  topic: vocab
+  text: >-
+    阵头雨 "a sudden shower", the summer downpour that comes and goes; 雨 is "rain" (落雨 "to rain", lesson 10).
+- ref: 9
+  topic: vocab
+  text: >-
+    关脱 "to shut, to turn off": 脱 for something done away with (lesson 11). 塞牢 {塞牢} "to block up, to plug": 牢 "tight, for
+    good" (记牢, lesson 30).
+- ref: 11
+  topic: vocab
+  text: >-
+    湿 "wet". 地浪 "on the floor" (lesson 30).
+- ref: 12
+  topic: vocab
+  text: >-
+    电 "electricity": 停电 "a power cut". 灯 "light, lamp"; 电灯 (line 13) "electric light".
+- ref: 13
+  topic: grammar
+  text: >-
+    一 + verb/adjective + 就 "as soon as … , then": 电灯一暗就点蜡烛 "the moment the lights went out, we lit candles". 点 here is "to
+    light".
+- ref: 14
+  topic: vocab
+  text: >-
+    温度 "temperature"; 度 "degree": 几度？ "how many degrees?".
+- ref: 15
+  topic: vocab
+  text: >-
+    危险 "dangerous". 台风天 "a typhoon day": 天 for weather days, as in 落雨天 (lesson 53), 黄梅天 (lesson 27).
+- ref: 16
+  topic: vocab
+  text: >-
+    小心 and 当心 (lesson 26) both mean "careful"; 当心 is the more local word. 注意 "to pay attention, to take care".
+new_words:
+- hanzi: 天气
+  en: weather
+- hanzi: 预报
+  en: forecast
+- hanzi: 台风
+  en: typhoon
+- hanzi: 就要
+  en: about to
+- hanzi: 豪燥
+  en: quick! hurry up
+- hanzi: 暗
+  en: dark
+- hanzi: 来勿及
+  en: too late, there isn't time
+- hanzi: 打雷
+  en: to thunder
+- hanzi: 霍险
+  en: lightning
+- hanzi: 阵头雨
+  en: sudden shower
+- hanzi: 雨
+  en: rain
+- hanzi: 关脱
+  en: to shut, turn off
+- hanzi: 塞牢
+  en: to block up, plug
+- hanzi: 湿
+  en: wet
+- hanzi: 电
+  en: electricity
+- hanzi: 灯
+  en: light, lamp
+- hanzi: 电灯
+  en: electric light
+- hanzi: 温度
+  en: temperature
+- hanzi: 度
+  en: degree
+- hanzi: 危险
+  en: dangerous
+- hanzi: 小心
+  en: careful
+- hanzi: 注意
+  en: to pay attention, take care
+exercises:
+  translate:
+  - hanzi: 天 暗 下来 了 ， 就要 落雨 了 。
+    en: The sky has gone dark, it's about to rain.
+  - hanzi: 外头 落雨 ， 地浪 侪 是 湿 个 。
+    en: It's raining outside and the ground is wet everywhere.
+  - hanzi: 现在 去 机场 来勿及 了 。
+    en: It's too late to go to the airport now.
+  fill:
+  - hanzi: ＿ 吃 ， 汤 要 冷脱 了 。
+    en: Eat up quickly, the soup is going cold.
+    answer: 豪燥
+  - hanzi: 出去 个 辰光 ， 拿 灯 ＿ 。
+    en: Turn off the light when you go out.
+    answer: 关脱
+  - hanzi: 马路 浪 车子 多 ， 侬 要 ＿ 。
+    en: There are a lot of cars in the street, be careful.
+    answer: 小心
+  say:
+  - hanzi: 明朝 天气 哪能 ？
+    en: What's the weather like tomorrow?
+  - hanzi: 今朝 外头 三十 度 。
+    en: It's thirty degrees outside today.
+  - hanzi: 火车 要 开 快 了 。
+    en: The train is about to leave.

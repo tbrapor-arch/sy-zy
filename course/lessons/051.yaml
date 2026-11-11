@@ -1,0 +1,206 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 51
+title:
+  en: From morning to night
+  hanzi: 一日到夜
+review: false
+setting: >-
+  A Saturday morning in the lane. Sam started a new job two weeks ago and the auntie has hardly seen him since.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: Sam ， 换 了 新 工作 ， 日脚 过 得 哪能 ？
+  en: Sam, how is life now that you've changed jobs?
+- n: 2
+  speaker: Sam
+  hanzi: 蛮 好 ， 就是 每日天 清早 六 点钟 起床 。
+  en: Fine, except that I get up at six every single morning.
+- n: 3
+  speaker: 阿姨
+  hanzi: 介 早 ！ 侬 老早 勿是 八 点钟 起来 个 伐 ？
+  en: So early! Didn't you use to get up at eight?
+- n: 4
+  speaker: Sam
+  hanzi: 新 公司 远 ， 坐 地铁 要 一 个 钟头 。
+  en: The new office is far, it's an hour on the metro.
+- n: 5
+  speaker: 阿姨
+  hanzi: 早浪向 介 急 ， 侬 早饭 吃 啥 ？
+  en: With mornings that rushed, what do you have for breakfast?
+- n: 6
+  speaker: Sam
+  hanzi: 揩面 刷 牙齿 ， 再 吃 一 碗 泡饭 就 走 。
+  en: I wash my face, brush my teeth, have a bowl of rice in hot water and go.
+- n: 7
+  speaker: 阿姨
+  hanzi: 泡饭 好 ！ 上半日 做 啥 ， 下半天 做 啥 ？
+  en: Good, 泡饭! What do you do in the morning, and in the afternoon?
+- n: 8
+  speaker: Sam
+  hanzi: 上半日 常庄 开会 ， 中浪向 困 一歇 。
+  en: In the morning there are often meetings; at midday I have a nap.
+- n: 9
+  speaker: Sam
+  hanzi: 下半天 平常 辣 公司 ， 有常时 出去 。
+  en: In the afternoon I'm usually in the office, and sometimes I go out.
+- n: 10
+  speaker: 阿姨
+  hanzi: 夜快头 侬 几 点钟 好 转来 ？
+  en: And towards evening, what time can you come home?
+- n: 11
+  speaker: Sam
+  hanzi: 七 点钟 。 必过 新 公司 老是 要 加班 。
+  en: Seven. But at the new place we always have to work late.
+- n: 12
+  speaker: Sam
+  hanzi: 昨日子 到 屋里 已经 夜里向 十 点 了 。
+  en: Yesterday it was already ten at night when I got home.
+- n: 13
+  speaker: 阿姨
+  hanzi: 喔唷 ， 介 晏 啊 ！ 介末 夜饭 吃 过 了 伐 ？
+  en: Goodness, that late! Had you had dinner, then?
+- n: 14
+  speaker: Sam
+  hanzi: 辣 公司 里 吃 个 ， 转来 汏浴 就 困 了 。
+  en: I ate at the office, came home, showered and went to bed.
+- n: 15
+  speaker: 阿姨
+  hanzi: 半夜里 我 看见 侬 窗门 还 是 亮 个 。
+  en: In the middle of the night I saw your window still lit.
+- n: 16
+  speaker: Sam
+  hanzi: 有常时 困勿着 ， 就 起来 学 上海闲话 。
+  en: Sometimes I can't sleep, so I get up and study Shanghainese.
+- n: 17
+  speaker: 阿姨
+  hanzi: 侬 要 当心 身体 ！ 夜里向 早 一眼 困 。
+  en: You must look after yourself! Go to bed a bit earlier at night.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    日脚 {日脚} is "days, life as one lives it" (Mandarin 日子): 日脚过得哪能？ "how is life?", 好日脚 "good times". 日 has its everyday
+    reading here.
+- ref: 2
+  topic: vocab
+  text: >-
+    每日天 "every day" (Mandarin 每天). 清早 "early in the morning, at first light". 起床 "to get out of bed"; 起来 (line 3) is "to
+    get up" in general.
+- ref: 5
+  topic: grammar
+  text: >-
+    向 rounds off the times of day: 早浪 → 早浪向 "in the morning", 中浪向 "at midday", 夜里 → 夜里向 "at night". The short forms (lessons
+    6, 16) are just as right; the long ones are what you hear most in relaxed speech.
+- ref: 6
+  topic: vocab
+  text: >-
+    揩面 "to wash one's face", literally "wipe the face" (揩, lesson 30). 刷牙齿 "to brush one's teeth": 牙齿 is "tooth, teeth".
+- ref: 6
+  topic: culture
+  text: >-
+    泡饭 {泡饭}: yesterday's rice boiled up in water, eaten with pickles. It is the old Shanghai family breakfast, quick and
+    thrifty, which is why the auntie approves.
+- ref: 7
+  topic: vocab
+  text: >-
+    上半日 "morning" and 下半天 "afternoon": 下半日 (lesson 10) and 下半天 are both said.
+- ref: 8
+  topic: vocab
+  text: >-
+    常庄 {常庄} is "often" (Mandarin 经常): both syllables sound alike, whatever the characters suggest. 困一歇 "sleep a moment,
+    take a nap": 困 is "to sleep" (困觉, lesson 29).
+- ref: 9
+  topic: vocab
+  text: >-
+    平常 "usually, ordinarily"; 有常时 "sometimes" (Mandarin 有时候).
+- ref: 10
+  topic: vocab
+  text: >-
+    夜快头 "towards evening, at dusk": 夜 + 快 "nearly" + 头.
+- ref: 11
+  topic: vocab
+  text: >-
+    老是 "always, all the time", usually with a sigh: 老是加班 "forever working late". 总归 (lesson 23) is close.
+- ref: 12
+  topic: vocab
+  text: >-
+    昨日子 "yesterday": 昨日 (lesson 44) with 子. 夜里向十点 "ten at night".
+- ref: 13
+  topic: vocab
+  text: >-
+    晏 {晏} is "late" (Mandarin 晚): 介晏 "so late", 晏歇会 "see you later". 早 "early" is its opposite.
+- ref: 15
+  topic: vocab
+  text: >-
+    半夜里 "in the middle of the night". 亮 "bright, lit" (lesson 12).
+new_words:
+- hanzi: 日脚
+  en: days, life (as one lives it)
+- hanzi: 每日天
+  en: every day
+- hanzi: 清早
+  en: early in the morning
+- hanzi: 起床
+  en: to get out of bed
+- hanzi: 早浪向
+  en: in the morning
+- hanzi: 揩面
+  en: to wash one's face
+- hanzi: 刷
+  en: to brush
+- hanzi: 牙齿
+  en: tooth, teeth
+- hanzi: 泡饭
+  en: rice boiled up in water (a breakfast)
+- hanzi: 上半日
+  en: morning
+- hanzi: 下半天
+  en: afternoon
+- hanzi: 常庄
+  en: often
+- hanzi: 中浪向
+  en: at midday
+- hanzi: 困
+  en: to sleep
+- hanzi: 平常
+  en: usually, ordinarily
+- hanzi: 有常时
+  en: sometimes
+- hanzi: 夜快头
+  en: towards evening
+- hanzi: 老是
+  en: always, all the time
+- hanzi: 昨日子
+  en: yesterday
+- hanzi: 夜里向
+  en: at night
+- hanzi: 晏
+  en: late
+- hanzi: 半夜里
+  en: in the middle of the night
+exercises:
+  translate:
+  - hanzi: 我 每日天 夜里向 十 点钟 困 。
+    en: I go to bed at ten every night.
+  - hanzi: 伊 老是 迟到 ， 老板 动气 了 。
+    en: He's always late, and the boss has got angry.
+  - hanzi: 有常时 我 清早 去 菜场 买 鱼 。
+    en: Sometimes I go to the market early in the morning to buy fish.
+  fill:
+  - hanzi: 侬 ＿ 几 点钟 起床 ？
+    en: What time do you usually get up?
+    answer: 平常
+  - hanzi: 昨日子 我 困 得 忒 ＿ 了 。
+    en: I went to bed too late yesterday.
+    answer: 晏
+  - hanzi: 上半日 我 勿 空 ， ＿ 好 伐 ？
+    en: I'm not free in the morning. Would the afternoon do?
+    answer: 下半天
+  say:
+  - hanzi: 我 常庄 吃 泡饭 。
+    en: I often have 泡饭.
+  - hanzi: 快 去 刷 牙齿 ！
+    en: Go and brush your teeth, quick!
+  - hanzi: 搿 两 天 日脚 过 得 蛮 开心 。
+    en: Life has been pretty good these last few days.

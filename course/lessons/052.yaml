@@ -1,0 +1,194 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 52
+title:
+  en: Where did I put it?
+  hanzi: 摆 辣 阿里搭
+review: false
+setting: >-
+  A weekday evening. The auntie stands in the middle of her flat, looking lost: her glasses have vanished. Sam comes in
+  to help.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: Sam ， 我 个 眼镜 勿晓得 摆 辣 阿里搭 了 。
+  en: Sam, I don't know where I've put my glasses.
+- n: 2
+  speaker: Sam
+  hanzi: 覅 急 ， 阿拉 屋里向 一 间 一 间 寻 。
+  en: Don't worry, we'll search the flat room by room.
+- n: 3
+  speaker: 阿姨
+  hanzi: 台子 浪向 我 看 过 了 ， 呒没 。
+  en: I've looked on the table. Not there.
+- n: 4
+  speaker: Sam
+  hanzi: 抽斗 里向头 寻 过 了 伐 ？ 我 来 开 。
+  en: Have you looked inside the drawers? I'll open them.
+- n: 5
+  speaker: 阿姨
+  hanzi: 搿面 个 抽斗 寻 过 了 ， 伊面 个 还 呒没 。
+  en: I've done the drawers on this side, not yet the ones over there.
+- n: 6
+  speaker: Sam
+  hanzi: 伊面 也 呒没 。 台子 底下头 我 看看 。
+  en: Nothing over there either. Let me look under the table.
+- n: 7
+  speaker: 阿姨
+  hanzi: 底下头 忒 黑 ， 侬 当心 碰着 头 。
+  en: It's very dark under there, mind you don't bang your head.
+- n: 8
+  speaker: Sam
+  hanzi: 呒没 。 卫生间 镜子 边浪向 呢 ？
+  en: No. What about beside the bathroom mirror?
+- n: 9
+  speaker: 阿姨
+  hanzi: 镜子 旁边 我 也 寻 过 了 ， 呒没 。
+  en: I've looked next to the mirror too. Nothing.
+- n: 10
+  speaker: Sam
+  hanzi: 门口头 呢 ？ 侬 刚刚 出去 倒 过 垃圾 。
+  en: And by the door? You went out just now to empty the rubbish.
+- n: 11
+  speaker: 阿姨
+  hanzi: 对 个 ！ 我 还 到 隔壁头 阿婆 屋里 去 过 。
+  en: That's right! And I went round to the old lady's next door.
+- n: 12
+  speaker: Sam
+  hanzi: 介末 我 去 问 。 是 右面 搿 家 伐 ？
+  en: Then I'll go and ask. Is it this house on the right?
+- n: 13
+  speaker: 阿姨
+  hanzi: 勿是 ， 是 对面 转弯角子 搿 家 。
+  en: No, it's the one opposite, on the corner.
+- n: 14
+  speaker: Sam
+  hanzi: 等 一歇 ！ 阿姨 ， 侬 头 浪向 是 啥 物事 ？
+  en: Wait a moment! Auntie, what's that on your head?
+- n: 15
+  speaker: 阿姨
+  hanzi: 喔唷 ！ 眼镜 就 辣 我 自家 头 浪向 嘛 ！
+  en: Oh my! The glasses are on my own head!
+- n: 16
+  speaker: Sam
+  hanzi: 寻 了 半 个 钟头 ， 角角 里 侪 寻 过 了 。
+  en: Half an hour of searching, and we've been through every corner.
+- n: 17
+  speaker: 阿姨
+  hanzi: 下趟 眼镜 就 摆 辣 埃面 台子 当中 。
+  en: From now on the glasses go over there, in the middle of the table.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    阿里搭 {阿里搭} is "where" (Mandarin 哪里): 阿里 "which, where" + 搭 "place" (搿搭 "here", lesson 2). It says the same as 啥地方. 眼镜
+    "glasses".
+- ref: 2
+  topic: grammar
+  text: >-
+    Place endings. Shanghainese likes a long ending after a place word: 里 → 里向 → 里向头 "inside", 浪 → 浪向 "on", 边浪 → 边浪向 "beside",
+    门口 → 门口头 "by the door", 底下 → 底下头 "underneath", 隔壁 → 隔壁头 "next door". The short forms you know (lessons 8, 24, 26) mean
+    the same; the long ones are slower and more local. 屋里向 "at home, indoors".
+- ref: 2
+  topic: grammar
+  text: >-
+    一间一间 "room by room": measure word doubled with 一 for "one after another" (一只一只, 一趟一趟).
+- ref: 4
+  topic: vocab
+  text: >-
+    抽斗 "drawer" (Mandarin 抽屉).
+- ref: 5
+  topic: grammar
+  text: >-
+    Here and there: 搿面 "this side, over here", 伊面 and 埃面 "over there". 伊面 and 埃面 mean the same, as 伊 and 埃 both serve for
+    "that" (lesson 22).
+- ref: 7
+  topic: vocab
+  text: >-
+    碰着 "to bump into" (and "to run into" someone, lesson 33). 黑 "dark" as well as "black".
+- ref: 8
+  topic: vocab
+  text: >-
+    镜子 "mirror". 旁边 (line 9) is the word shared with Mandarin for "beside"; 边浪向 is the local one.
+- ref: 12
+  topic: vocab
+  text: >-
+    右面 "on the right"; the left is 左面. 家 counts households (lesson 22): 搿家 "this household".
+- ref: 13
+  topic: vocab
+  text: >-
+    对面 "opposite" (对过, lesson 36, is the more local word). 转弯角子 "street corner": 转弯 "to turn" + 角子 "corner".
+- ref: 16
+  topic: vocab
+  text: >-
+    角角 "corner" inside a room or a box: 角角里 "in the corners". Doubling a noun is common for small things.
+- ref: 17
+  topic: vocab
+  text: >-
+    当中 "in the middle, among": 台子当中 "in the middle of the table".
+new_words:
+- hanzi: 眼镜
+  en: glasses
+- hanzi: 阿里搭
+  en: where
+- hanzi: 屋里向
+  en: at home, indoors
+- hanzi: 浪向
+  en: on, on top of
+- hanzi: 抽斗
+  en: drawer
+- hanzi: 里向头
+  en: inside
+- hanzi: 搿面
+  en: this side, over here
+- hanzi: 伊面
+  en: over there
+- hanzi: 底下头
+  en: underneath
+- hanzi: 镜子
+  en: mirror
+- hanzi: 边浪向
+  en: beside
+- hanzi: 旁边
+  en: beside, next to
+- hanzi: 门口头
+  en: by the door
+- hanzi: 隔壁头
+  en: next door
+- hanzi: 右面
+  en: on the right
+- hanzi: 对面
+  en: opposite
+- hanzi: 转弯角子
+  en: street corner
+- hanzi: 角角
+  en: corner (of a room)
+- hanzi: 埃面
+  en: over there
+- hanzi: 当中
+  en: in the middle, among
+exercises:
+  translate:
+  - hanzi: 钥匙 就 辣 台子 浪向 。
+    en: The keys are right there on the table.
+  - hanzi: 银行 辣 地铁站 对面 ， 小店 旁边 。
+    en: The bank is opposite the metro station, next to the little shop.
+  - hanzi: 侬 个 包 摆 辣 阿里搭 ？
+    en: Where have you put your bag?
+  fill:
+  - hanzi: 垃圾 摆 辣 ＿ ， 我 等歇 去 倒 。
+    en: Leave the rubbish by the door, I'll take it out in a moment.
+    answer: 门口头
+  - hanzi: 侬 立 辣 搿面 ， 我 立 辣 ＿ 。
+    en: You stand on this side, I'll stand over there.
+    answer: 伊面
+  - hanzi: 物事 侪 辣 抽斗 ＿ 。
+    en: Everything is inside the drawer.
+    answer: 里向头
+  say:
+  - hanzi: 我 寻勿着 我 个 眼镜 了 。
+    en: I can't find my glasses.
+  - hanzi: 屋里向 冷 ， 外头 热 。
+    en: It's cold indoors and hot outside.
+  - hanzi: 镜子 底下头 有 一 只[ʦᴀʔ55] 抽斗 。
+    en: There is a drawer under the mirror.

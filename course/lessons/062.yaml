@@ -1,0 +1,214 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 62
+title:
+  en: An evening at the theatre
+  hanzi: 看 戏
+review: false
+setting: >-
+  The auntie has been given two tickets for a comedy show and nobody to go with. In the afternoon she knocks on Sam's door;
+  the last lines are spoken on the pavement afterwards.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: Sam ， 我 有 两 张 戏 票 ， 今朝 夜里向 侬 有 空 伐 ？
+  en: Sam, I've got two theatre tickets. Are you free this evening?
+- n: 2
+  speaker: Sam
+  hanzi: 有 空 个 。 是 啥个 戏 ？ 京戏 啊 ？
+  en: I am. What sort of show is it? Peking opera?
+- n: 3
+  speaker: 阿姨
+  hanzi: 勿是 ， 是 滑稽戏 ， 噱头 多 来死 。
+  en: No, it's a Shanghai comedy, absolutely full of gags.
+- n: 4
+  speaker: Sam
+  hanzi: 滑稽戏 我 听得懂 伐 ？ 侪 是 上海闲话 。
+  en: Will I understand a Shanghai comedy? It's all in Shanghainese.
+- n: 5
+  speaker: 阿姨
+  hanzi: 侬 现在 上海闲话 好 得 勿得了 ， 呒没 问题 。
+  en: Your Shanghainese is tremendously good now. No problem.
+- n: 6
+  speaker: Sam
+  hanzi: 辣 阿里搭 看 ？ 是 大剧院 伐 ？
+  en: Where is it on? At the Grand Theatre?
+- n: 7
+  speaker: 阿姨
+  hanzi: 对 ， 位子 也 好 ， 第 三 排 当中 。
+  en: 'Yes, and the seats are good: third row, in the middle.'
+- n: 8
+  speaker: Sam
+  hanzi: 几 点钟 开始 ？ 啥辰光 结束 ？
+  en: What time does it start? When does it finish?
+- n: 9
+  speaker: 阿姨
+  hanzi: 七 点 半 开始 ， 一 场 两 个 钟头 左右 。
+  en: It starts at half past seven. A show lasts about two hours.
+- n: 10
+  speaker: Sam
+  hanzi: 好 ！ 我 平常 只 看 电影 、 听 音乐 咾啥 。
+  en: Good! Usually I only watch films, listen to music and so on.
+- n: 11
+  speaker: 阿姨
+  hanzi: 年纪 轻 个 人 侪 去 音乐会 ， 戏 呒没 人 看 了 。
+  en: Young people all go to concerts. Nobody watches plays any more.
+- n: 12
+  speaker: Sam
+  hanzi: 我 欢喜 个 ！ 节目 里 有 唱歌 伐 ？
+  en: I like them! Is there singing in the programme?
+- n: 13
+  speaker: 阿姨
+  hanzi: 有 个 ， 唱 两 只[ʦᴀʔ55] 老 歌 ， 真叫 好听 。
+  en: 'There is: they sing two old songs, really lovely to hear.'
+- n: 14
+  speaker: Sam
+  hanzi: 阿姨 ， 我 笑 得来 肚皮 也 痛 了 ！
+  en: Auntie, I laughed so much my stomach hurts!
+- n: 15
+  speaker: 阿姨
+  hanzi: 有趣 伐 ？ 我 看 侬 一直 辣辣 拍手 。
+  en: Funny, wasn’t it? I saw you clapping the whole time.
+- n: 16
+  speaker: Sam
+  hanzi: 有意思 得 一塌糊涂 ， 就是 两 句 呒没 懂 。
+  en: It was terrifically good. There were just a couple of lines I didn't get.
+- n: 17
+  speaker: 阿姨
+  hanzi: 啥个 闲话 ？ 转去 个 路 浪向 我 搭 侬 讲 。
+  en: Which ones? I'll explain them to you on the way home.
+- n: 18
+  speaker: Sam
+  hanzi: 好 ！ 下趟 有 噱头 个 戏 ， 再 叫 我 一道 去 。
+  en: Great! Next time there is a funny show, ask me along again.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    戏 "play, show, opera" of any kind: 看戏 "to go to the theatre", 戏票 "theatre ticket".
+- ref: 2
+  topic: culture
+  text: >-
+    京戏 is Peking opera. Shanghai's own stage traditions are 沪剧 (opera in Shanghainese), 越剧 (Shaoxing opera, sung by women)
+    and 滑稽戏 (line 3).
+- ref: 3
+  topic: culture
+  text: >-
+    滑稽戏 {滑稽戏} is Shanghai's comic theatre: sketches in Shanghainese and a dozen other dialects, built on wordplay. 噱头 {噱头}
+    is a gag, a funny trick; 有噱头 "funny, entertaining".
+- ref: 3
+  topic: grammar
+  text: >-
+    The strongest degree words come after the adjective. 多来死 "an awful lot": adjective + 来死 "to death". 好得勿得了 (line 5) "tremendously
+    good": adjective + 得 + 勿得了 {勿得了}. 有意思得一塌糊涂 (line 16) "terrifically interesting". Before the adjective: 真叫好听 (line 13)
+    "really lovely". They add to 老, 蛮, 交关, 邪气 and 煞, which you know.
+- ref: 6
+  topic: vocab
+  text: >-
+    大剧院 "the Grand Theatre", on People's Square.
+- ref: 7
+  topic: vocab
+  text: >-
+    位子 "seat, place". 第三排 "the third row": 排 "row" (and "to queue", lesson 47).
+- ref: 8
+  topic: vocab
+  text: >-
+    结束 "to end, to finish", the opposite of 开始 (lesson 16).
+- ref: 9
+  topic: vocab
+  text: >-
+    场 counts shows, films and matches: 一场电影, 一场比赛. 左右 "about" (lesson 59).
+- ref: 10
+  topic: grammar
+  text: >-
+    咾啥 {咾啥} "and so on, and the like" closes a list: 看电影、听音乐咾啥. It is 咾 "and" (lesson 25) + 啥 "what". 电影 "film"; 音乐 "music".
+- ref: 11
+  topic: pronunciation
+  text: >-
+    音乐会 {音乐会} "concert": listen to 会 "meeting" in this word, different from 会 {会} "can".
+- ref: 12
+  topic: vocab
+  text: >-
+    节目 "programme, act, item". 唱歌 "to sing"; 歌 (line 13) "song", counted with 只.
+- ref: 13
+  topic: vocab
+  text: >-
+    好听 "nice to hear", as 好看 is nice to see and 好吃 nice to eat.
+- ref: 14
+  topic: grammar
+  text: >-
+    Verb + 得来 + result (lesson 60): 笑得来肚皮也痛了 "laughed until my stomach hurt".
+- ref: 15
+  topic: vocab
+  text: >-
+    有趣 "funny, amusing"; 有意思 (line 16) "interesting". 拍手 "to clap".
+new_words:
+- hanzi: 戏
+  en: play, show, opera
+- hanzi: 京戏
+  en: Peking opera
+- hanzi: 滑稽戏
+  en: Shanghai comic theatre
+- hanzi: 噱头
+  en: gag, funny trick
+- hanzi: 来死
+  en: (after an adjective) extremely
+- hanzi: 勿得了
+  en: (after 得) tremendously
+- hanzi: 大剧院
+  en: the Grand Theatre
+- hanzi: 位子
+  en: seat, place
+- hanzi: 结束
+  en: to end, finish
+- hanzi: 场
+  en: (measure word for shows, films, matches)
+- hanzi: 电影
+  en: film
+- hanzi: 音乐
+  en: music
+- hanzi: 咾啥
+  en: and so on
+- hanzi: 音乐会
+  en: concert
+- hanzi: 节目
+  en: programme, act
+- hanzi: 唱歌
+  en: to sing
+- hanzi: 歌
+  en: song
+- hanzi: 真叫
+  en: really, truly
+- hanzi: 好听
+  en: nice to hear
+- hanzi: 有趣
+  en: funny, amusing
+- hanzi: 拍手
+  en: to clap
+- hanzi: 有意思
+  en: interesting
+exercises:
+  translate:
+  - hanzi: 搿 只[ʦᴀʔ55] 歌 真叫 好听 。
+    en: This song is really lovely.
+  - hanzi: 我 礼拜天 平常 汏 衣裳 、 买 菜 咾啥 。
+    en: On Sundays I usually do the washing, buy food and so on.
+  - hanzi: 电影 结束 个 辰光 ， 大家 侪 拍手 。
+    en: When the film ended, everybody clapped.
+  fill:
+  - hanzi: 今朝 热 得 ＿ ， 我 勿 想 出去 。
+    en: It's tremendously hot today, I don't want to go out.
+    answer: 勿得了
+  - hanzi: 伊 讲 闲话 ＿ 多 ， 大家 侪 欢喜 听 。
+    en: He is full of jokes when he talks; everyone likes listening to him.
+    answer: 噱头
+  - hanzi: 礼拜六 夜里向 有 ＿ ， 侬 去 听 伐 ？
+    en: There's a concert on Saturday night. Are you going?
+    answer: 音乐会
+  say:
+  - hanzi: 搿 只[ʦᴀʔ55] 戏 有趣 伐 ？
+    en: Is this show funny?
+  - hanzi: 我 欢喜 听 音乐 。
+    en: I like listening to music.
+  - hanzi: 阿拉 个 位子 辣 阿里搭 ？
+    en: Where are our seats?

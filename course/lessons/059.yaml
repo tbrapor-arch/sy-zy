@@ -1,0 +1,208 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 59
+title:
+  en: Bargaining
+  hanzi: 讨价还价
+review: false
+setting: >-
+  Sunday morning at the antique market on Dongtai Road. Sam has fallen for an old mirror; the auntie, who came along for
+  the walk, takes charge.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 阿姨 ， 搿 只[ʦᴀʔ55] 老 镜子 卖相 蛮 好 ， 我 想 买 。
+  en: Auntie, this old mirror looks rather good. I'd like to buy it.
+- n: 2
+  speaker: 阿姨
+  hanzi: 覅 急 ， 买 物事 先 要 讨价还价 。
+  en: Don't rush. When you buy something, first you bargain.
+- n: 3
+  speaker: Sam
+  hanzi: 师傅 ， 搿 只[ʦᴀʔ55] 镜子 几化 洋钿 ？
+  en: Excuse me, how much is this mirror?
+- n: 4
+  speaker: 摊主
+  hanzi: 老 货色 了 ， 一百 年 横里 ， 八百 块 。
+  en: It's an old piece, a hundred years or so. Eight hundred.
+- n: 5
+  speaker: 阿姨
+  hanzi: 八百 ？ 勿要 忒 贵 噢 ！ 值 三百 左右 。
+  en: Eight hundred? That's far too much! It's worth about three hundred.
+- n: 6
+  speaker: 摊主
+  hanzi: 现在 侪 涨价 了 ， 三百 我 也 买 勿 到 。
+  en: Everything has gone up. I couldn't get it for three hundred myself.
+- n: 7
+  speaker: 阿姨
+  hanzi: 侬 看 ， 搿面 角角 里 坏脱 了 ， 货 勿 灵 。
+  en: Look, it's damaged in this corner here. It's not good stuff.
+- n: 8
+  speaker: 摊主
+  hanzi: 介末 打 对折 ， 四百 ， 零头 也 勿 要 了 。
+  en: 'Then half price: four hundred, and I''ll forget the odd change.'
+- n: 9
+  speaker: Sam
+  hanzi: 阿姨 ， 四百 可以 了 伐 ？
+  en: Auntie, is four hundred all right?
+- n: 10
+  speaker: 阿姨
+  hanzi: 再 还价 ！ 生意经 侬 勿 懂 。 师傅 ， 三百五 。
+  en: Keep bargaining! You don't know how business works. Three fifty.
+- n: 11
+  speaker: 摊主
+  hanzi: 侬 搿 位 阿姨 忒 门槛精 了 ！ 三百八 。
+  en: You're too sharp for me, madam! Three eighty.
+- n: 12
+  speaker: 阿姨
+  hanzi: 我 包 里 个 票子 一塌刮子 三百六 。
+  en: The notes in my bag come to three sixty all told.
+- n: 13
+  speaker: 摊主
+  hanzi: 好 好 好 ， 三百六 就 三百六 ， 今朝 生意 勿 好 。
+  en: All right, all right, three sixty it is. Business is bad today.
+- n: 14
+  speaker: Sam
+  hanzi: 阿姨 ， 侬 结棍 ！ 一半 也 勿 到 。
+  en: Auntie, you're amazing! Not even half.
+- n: 15
+  speaker: 阿姨
+  hanzi: 买 物事 末 ， 份量 要 自家 称 ， 价钿 要 自家 还[ɦuᴇ13] 。
+  en: When you buy, weigh the goods yourself and name your own price.
+- n: 16
+  speaker: 摊主
+  hanzi: 阿姨 ， 下趟 侬 覅 来 了 ， 我 要 打烊 了 ！
+  en: 'Madam, don''t come back next time: I''m closing up!'
+- n: 17
+  speaker: 阿姨
+  hanzi: 侬 卖 了 一 只[ʦᴀʔ55] 旧 镜子 ， 还 勿 开心 啊 ？
+  en: You've sold an old mirror and you're still not happy?
+- n: 18
+  speaker: Sam
+  hanzi: 谢谢 师傅 ！ 几 十 年 个 老 物事 ， 我 邪气 欢喜 。
+  en: Thank you! I love things that are decades old.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    卖相 "looks, appearance" of goods and, jokingly, of people: 卖相好 "looks good", literally "selling face".
+- ref: 2
+  topic: vocab
+  text: >-
+    讨价还价 {讨价还价} "to haggle": 讨价 is the seller asking a price, 还价 (line 10) the buyer's counter-offer.
+- ref: 3
+  topic: grammar
+  text: >-
+    几化 {几化} is "how much, how many" for any amount (Mandarin 多少): 几化洋钿？ "how much money?", 几化人？ "how many people?". 几钿 (lesson
+    3) asks only about prices. 洋钿 "money, yuan": from the foreign silver dollars of old Shanghai.
+- ref: 4
+  topic: grammar
+  text: >-
+    Rough amounts: number + 横里 "or so" (一百年横里 "a hundred years or so"), number + 左右 "about" (三百左右, line 5), 几 + 十 "some
+    tens of" (几十年, line 18), 十几 "ten-odd". 货色 "goods, stuff, quality": 老货色 "an old piece".
+- ref: 5
+  topic: grammar
+  text: >-
+    勿要忒 + adjective + 噢 is an exclamation, not a request: "isn't that just too …!". 勿要忒贵噢 "how expensive can you get!",
+    勿要忒开心噢 "couldn't be happier!". 值 "to be worth".
+- ref: 6
+  topic: vocab
+  text: >-
+    涨价 "to go up in price". 买勿到 "can't get (to buy)": 到 for the result (lesson 46).
+- ref: 7
+  topic: vocab
+  text: >-
+    货 "goods". 勿灵 "no good" (灵, lesson 7).
+- ref: 8
+  topic: vocab
+  text: >-
+    打对折 "to sell at half price": 对折 is 50% (打八折, lesson 15). 零头 "the odd bit left over": the 20 of 420.
+- ref: 10
+  topic: pronunciation
+  text: >-
+    还价 "to make a counter-offer": 还 is the verb "to give back" {还[ɦuᴇ13]} (lesson 10), not 还 "still" {还}. 生意经 "the ways
+    of business, business sense"; 生意 (line 13) "business, trade".
+- ref: 12
+  topic: vocab
+  text: >-
+    一塌刮子 {一塌刮子} "all told, the whole lot" (Mandarin 总共), stronger than 一共. 票子 "banknotes".
+- ref: 14
+  topic: vocab
+  text: >-
+    一半 "half". 一半也勿到 "not even half".
+- ref: 15
+  topic: vocab
+  text: >-
+    份量 "weight, amount"; 称 "to weigh". An old market rule in two halves: trust your own scales and your own price.
+- ref: 16
+  topic: vocab
+  text: >-
+    打烊 "to close (a shop) for the day". 卖 (line 17) "to sell".
+new_words:
+- hanzi: 讨价还价
+  en: to haggle
+- hanzi: 卖相
+  en: looks, appearance
+- hanzi: 几化
+  en: how much, how many
+- hanzi: 洋钿
+  en: money, yuan
+- hanzi: 货色
+  en: goods, stuff
+- hanzi: 横里
+  en: (after a number) or so
+- hanzi: 值
+  en: to be worth
+- hanzi: 左右
+  en: (after a number) about
+- hanzi: 涨价
+  en: to go up in price
+- hanzi: 货
+  en: goods
+- hanzi: 对折
+  en: half price
+- hanzi: 零头
+  en: odd bit left over
+- hanzi: 还价
+  en: to make a counter-offer
+- hanzi: 生意经
+  en: business sense
+- hanzi: 票子
+  en: banknotes
+- hanzi: 一塌刮子
+  en: all told, the whole lot
+- hanzi: 生意
+  en: business, trade
+- hanzi: 份量
+  en: weight, amount
+- hanzi: 称
+  en: to weigh
+- hanzi: 打烊
+  en: to close for the day
+- hanzi: 卖
+  en: to sell
+exercises:
+  translate:
+  - hanzi: 搿 件 衬衫 打 对折 ， 一百 块 左右 。
+    en: This shirt is half price, about a hundred yuan.
+  - hanzi: 现在 菜场 个 菜 侪 涨价 了 。
+    en: Everything at the market has gone up in price.
+  - hanzi: 伊 包 里 一塌刮子 只 有 两 张 票子 。
+    en: He has only two banknotes in his bag all told.
+  fill:
+  - hanzi: 搿 只[ʦᴀʔ55] 西瓜 ＿ 洋钿 一 斤 ？
+    en: How much a jin is this watermelon?
+    answer: 几化
+  - hanzi: 小店 夜里向 八 点钟 ＿ 。
+    en: The little shop closes at eight at night.
+    answer: 打烊
+  - hanzi: 搿 只[ʦᴀʔ55] 包 勿 ＿ 八百 块 。
+    en: This bag isn't worth eight hundred yuan.
+    answer: 值
+  say:
+  - hanzi: 勿要 忒 贵 噢 ！
+    en: That's far too expensive!
+  - hanzi: 搿 只[ʦᴀʔ55] 包 卖相 老 好 个 。
+    en: This bag looks really good.
+  - hanzi: 今朝 生意 哪能 ？
+    en: How's business today?

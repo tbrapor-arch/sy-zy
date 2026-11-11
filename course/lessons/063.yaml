@@ -1,0 +1,135 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 63
+title:
+  en: Review
+  hanzi: 复习
+review: true
+setting: >-
+  Monday lunchtime in the office canteen. Xiao Li wants to hear about Saturday's wedding and to fill his weekend.
+dialogue:
+- n: 1
+  speaker: 小李
+  hanzi: Sam ， 喜酒 吃 得 哪能 ？ 送 了 啥 礼物 ？
+  en: Sam, how was the wedding? What present did you give?
+- n: 2
+  speaker: Sam
+  hanzi: 我 拿 巧克力 拨 新娘 ， 伊 开心 得来 。
+  en: I gave the bride the chocolates. She was so pleased.
+- n: 3
+  speaker: 小李
+  hanzi: 红包 呢 ？ 一塌刮子 拨 了 几化 ？
+  en: And the red envelope? How much did you give in all?
+- n: 4
+  speaker: Sam
+  hanzi: 一千 左右 ， 票子 侪 呒没 了 。
+  en: About a thousand. I've no cash left.
+- n: 5
+  speaker: 小李
+  hanzi: 吃 喜酒 就是 搿能 个 。 侬 着 得 蛮 登样 。
+  en: That's weddings for you. You were very smartly dressed.
+- n: 6
+  speaker: Sam
+  hanzi: 新娘 真叫 标致 ， 台面 浪向 菜 多 来死 。
+  en: The bride was really pretty, and there was a huge amount of food on the table.
+- n: 7
+  speaker: 小李
+  hanzi: 礼拜六 来 搓 麻将 伐 ？ 阿拉 少 一 个 搭子 。
+  en: Coming to play mahjong on Saturday? We're one player short.
+- n: 8
+  speaker: Sam
+  hanzi: 勿 来三 ， 我 要 帮 阿姨 外孙 看 功课 。
+  en: I can't, I have to help the auntie's grandson with his homework.
+- n: 9
+  speaker: 小李
+  hanzi: 伊 考试 考 得 哪能 ？
+  en: How did his test go?
+- n: 10
+  speaker: Sam
+  hanzi: 数学 成绩 勿错 ， 小囡 聪明 得 勿得了 。
+  en: His maths mark was pretty good. That child is tremendously clever.
+- n: 11
+  speaker: 小李
+  hanzi: 介末 礼拜天 去 健身房 ， 多 跳 一歇 。
+  en: Then the gym on Sunday, and a bit more jumping this time.
+- n: 12
+  speaker: Sam
+  hanzi: 覅 讲 了 ， 我 腰 痛 得 一塌糊涂 。
+  en: Don't talk about it, my back hurts terribly.
+- n: 13
+  speaker: 小李
+  hanzi: 哪能介 推扳 ！ 多 锻炼 就 有 力道 了 。
+  en: How feeble can you be! Train more and you'll get stronger.
+- n: 14
+  speaker: Sam
+  hanzi: 礼拜天 我 搭 阿姨 再 去 看 戏 ， 有得 笑 了 。
+  en: On Sunday I'm going to the theatre with the auntie again. We're in for a lot of laughing.
+- n: 15
+  speaker: 小李
+  hanzi: 戏 票 几化 洋钿 一 张 ？ 贵 伐 ？
+  en: How much is a theatre ticket? Expensive?
+- n: 16
+  speaker: Sam
+  hanzi: 勿 贵 ， 阿姨 会得 讨价还价 。
+  en: Not expensive. The auntie knows how to bargain.
+- n: 17
+  speaker: 小李
+  hanzi: 㑚 两 个 人 真叫 好白相 。
+  en: You two really are a funny pair.
+notes:
+- ref: 2
+  topic: grammar
+  text: >-
+    Two objects: 拨 + person + thing (拨伊一只红包), 送拨 + person + thing (送拨伊拉一件礼物), 拿 + thing + 拨 + person (拿巧克力拨新娘).
+- ref: 2
+  topic: grammar
+  text: >-
+    得来 for degree and result: 开心得来 "so pleased", 吃力得来, 笑得来肚皮也痛了. V勿动 "can't … any more": 跳勿动, 拎勿动.
+- ref: 3
+  topic: grammar
+  text: >-
+    几化 "how much, how many"; rough amounts: 一千左右, 一百年横里, 几十年. 一塌刮子 "all told". 勿要忒贵噢 "far too expensive!".
+- ref: 5
+  topic: grammar
+  text: >-
+    搿能 / 搿能介 "like this": 就是搿能个 "that's how it is"; 哪能介 + adjective "how come so …" (哪能介推扳, line 13); 搿眼 "these".
+- ref: 6
+  topic: grammar
+  text: >-
+    The strongest degree words: 真叫 + adjective; adjective + 来死; adjective + 得 + 勿得了 (line 10); adjective + 得 + 一塌糊涂 (line
+    12).
+- ref: 14
+  topic: grammar
+  text: >-
+    有得 + verb "plenty of … ahead": 有得笑了, 有得等, 有得白相. 呒啥 + adjective "nothing …": 呒啥难个. A doubled verb for a relaxed activity:
+    搓搓, 白相相.
+- ref: 17
+  topic: vocab
+  text: >-
+    Words of praise and teasing from these lessons: 门槛精, 懂经, 额角头高, 登样, 标致, 聪明, 乖, 扎劲, 有劲, 好白相, 来三.
+new_words: []
+exercises:
+  translate:
+  - hanzi: 我 拿 搿眼 水果 拨 隔壁头 阿婆 。
+    en: I'm giving this fruit to the old lady next door.
+  - hanzi: 今朝 有 比赛 ， 地铁 浪向 人 多 来死 。
+    en: 'There''s a match today: the metro is terribly crowded.'
+  - hanzi: 伊 一塌刮子 只 赢 过 一 趟 。
+    en: He has only ever won once, all told.
+  fill:
+  - hanzi: 搿 只[ʦᴀʔ55] 镜子 ＿ 洋钿 ？
+    en: How much is this mirror?
+    answer: 几化
+  - hanzi: 我 吃力 得 ＿ ， 要 困 了 。
+    en: I'm tremendously tired, I'm off to bed.
+    answer: 勿得了
+  - hanzi: 功课 介 多 ， 今朝 夜里向 ＿ 做 了 。
+    en: 'So much homework: there''s plenty to do tonight.'
+    answer: 有得
+  say:
+  - hanzi: 搿能介 做 ， 来三 伐 ？
+    en: Will it do if I do it like this?
+  - hanzi: 侬 着 西装 真叫 登样 。
+    en: You look really smart in a suit.
+  - hanzi: 我 跳 勿 动 了 。
+    en: I can't jump any more.

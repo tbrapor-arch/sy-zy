@@ -1,0 +1,213 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 61
+title:
+  en: Homework
+  hanzi: 做 功课
+review: false
+setting: >-
+  A weekday evening at the auntie's. Her grandson has a maths test tomorrow and a page of exercises he cannot do. Sam is
+  called in.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: Sam ， 外孙 明朝 数学 考试 ， 侬 帮 伊 看看 功课 。
+  en: Sam, my grandson has a maths test tomorrow. Have a look at his homework with him.
+- n: 2
+  speaker: Sam
+  hanzi: 好个 。 小学 个 数学 ， 我 应该 还 可以 。
+  en: All right. Primary-school maths I should still be able to manage.
+- n: 3
+  speaker: 外孙
+  hanzi: 爷叔 ， 搿眼 题目 我 侪 勿 会 做 。
+  en: Uncle, I can't do any of these questions.
+- n: 4
+  speaker: Sam
+  hanzi: 我 看看 。 喔唷 ， 现在 小学 个 题目 哪能介 难 ？
+  en: Let me see. Goodness, how come primary-school questions are so hard these days?
+- n: 5
+  speaker: 外孙
+  hanzi: 老师 讲 要 搿能介 做 ， 我 看 勿 懂 。
+  en: The teacher says to do it like this, and I don't understand it.
+- n: 6
+  speaker: Sam
+  hanzi: 拿 纸 搭 笔 来 ， 阿拉 慢慢叫 做 。
+  en: Get some paper and a pen, and we'll take it slowly.
+- n: 7
+  speaker: 外孙
+  hanzi: 我 个 橡皮 寻勿着 了 ， 写 错 了 哪能 办 ？
+  en: I can't find my rubber. What do I do if I make a mistake?
+- n: 8
+  speaker: 阿姨
+  hanzi: 抽斗 里向头 有 。 侬 物事 老是 落脱 。
+  en: There's one in the drawer. You're always losing things.
+- n: 9
+  speaker: Sam
+  hanzi: 侬 看 ， 先 搿能 ， 再 搿能 ， 懂 了 伐 ？
+  en: 'Look: first like this, then like this. Do you see?'
+- n: 10
+  speaker: 外孙
+  hanzi: 噢 ， 原来 是 搿能介 个 ！ 爷叔 侬 真 聪明 。
+  en: Oh, so that's how it goes! You're really clever, Uncle.
+- n: 11
+  speaker: Sam
+  hanzi: 勿是 我 聪明 ， 侬 课 浪向 勿 好好叫 听 。
+  en: 'It''s not that I''m clever: you don''t listen properly in class.'
+- n: 12
+  speaker: 外孙
+  hanzi: 我 听 个 ！ 必过 我 笨 ， 成绩 一直 勿 好 。
+  en: I do listen! But I'm stupid, my marks are never good.
+- n: 13
+  speaker: 阿姨
+  hanzi: 瞎讲 ！ 侬 英语 考 得 好 ， 数学 也 会 好 个 。
+  en: Nonsense! You do well in English tests, and maths will come too.
+- n: 14
+  speaker: Sam
+  hanzi: 对 ， 多 做 几 只[ʦᴀʔ55] 题目 就 好 了 。 侬 勿 笨 。
+  en: Right, do a few more questions and you'll be fine. You're not stupid.
+- n: 15
+  speaker: 外孙
+  hanzi: 爷叔 ， 侬 做 学生 个 辰光 成绩 好 伐 ？
+  en: Uncle, were your marks good when you were a pupil?
+- n: 16
+  speaker: Sam
+  hanzi: 小学 蛮 好 ， 中学 读 得 一塌糊涂 。
+  en: Quite good in primary school; in secondary school I was hopeless.
+- n: 17
+  speaker: 阿姨
+  hanzi: Sam ！ 覅 搭 小囡 讲 搿眼 闲话 。
+  en: Sam! Don't say that sort of thing to a child.
+- n: 18
+  speaker: 外孙
+  hanzi: 外婆 ， 功课 做 好 了 ， 我 乖 伐 ？
+  en: Grandma, I've finished my homework. Am I a good boy?
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    数学 "maths", 考试 "test, exam; to take an exam". 功课 "homework, schoolwork": 做功课 "to do one's homework" (Mandarin 做作业).
+- ref: 2
+  topic: vocab
+  text: >-
+    小学 "primary school"; 中学 (line 16) "secondary school"; 大学 (lesson 39). 应该 "should" (lesson 41).
+- ref: 3
+  topic: grammar
+  text: >-
+    搿眼 "these, this bit of": 眼 is the "some" of 一眼 (lesson 1), so 搿眼题目 "these questions", 搿眼闲话 (line 17) "talk like that",
+    搿眼钞票 "this bit of money". 题目 "(test) question".
+- ref: 4
+  topic: grammar
+  text: >-
+    哪能介 + adjective "how come so …?": 哪能介难？ "how can it be this hard?", 哪能介贵？. 哪能 "how" (lesson 4) + 介 "so" (lesson 24).
+- ref: 5
+  topic: grammar
+  text: >-
+    搿能 and 搿能介 "like this, this way" (Mandarin 这样): 搿能介做 "do it this way", 先搿能，再搿能 (line 9) "first like this, then like
+    this", 原来是搿能介个 (line 10) "so that's how it is". The two forms are interchangeable.
+- ref: 6
+  topic: vocab
+  text: >-
+    纸 "paper", 笔 "pen, pencil". 拿…来 "bring (here)".
+- ref: 7
+  topic: vocab
+  text: >-
+    橡皮 "rubber, eraser". 写错 "to write wrongly": 错 after a verb (lesson 48). 哪能办？ "what's to be done?".
+- ref: 10
+  topic: vocab
+  text: >-
+    聪明 "clever".
+- ref: 11
+  topic: vocab
+  text: >-
+    课 "class, lesson": 课浪向 "in class", 上课 "to have class". 好好叫 "properly" (lesson 22).
+- ref: 12
+  topic: vocab
+  text: >-
+    笨 "stupid, slow"; 戆 (lesson 41) is "daft". 成绩 "marks, results".
+- ref: 13
+  topic: vocab
+  text: >-
+    英语 "English" as a school subject (英文, lesson 32, is the everyday word). 考 "to take a test": 考得好 "to do well in a test".
+- ref: 15
+  topic: pronunciation
+  text: >-
+    学生 {学生} "pupil, student": 生 has its everyday reading, as in 先生 and 医生.
+- ref: 16
+  topic: vocab
+  text: >-
+    读 "to study, to read aloud": 读中学 "to be at secondary school", 读书 (lesson 39). 一塌糊涂 after 得: "terribly, hopelessly" (lessons
+    30, 62).
+- ref: 18
+  topic: vocab
+  text: >-
+    乖 "good, well-behaved" of a child: 乖小囡 "good child".
+new_words:
+- hanzi: 功课
+  en: homework, schoolwork
+- hanzi: 数学
+  en: maths
+- hanzi: 考试
+  en: test, exam
+- hanzi: 小学
+  en: primary school
+- hanzi: 搿眼
+  en: these, this bit of
+- hanzi: 题目
+  en: (test) question
+- hanzi: 哪能介
+  en: how come so …
+- hanzi: 搿能介
+  en: like this, this way
+- hanzi: 纸
+  en: paper
+- hanzi: 笔
+  en: pen, pencil
+- hanzi: 橡皮
+  en: rubber, eraser
+- hanzi: 搿能
+  en: like this
+- hanzi: 聪明
+  en: clever
+- hanzi: 课
+  en: class, lesson
+- hanzi: 笨
+  en: stupid, slow
+- hanzi: 成绩
+  en: marks, results
+- hanzi: 英语
+  en: English (school subject)
+- hanzi: 考
+  en: to take a test
+- hanzi: 学生
+  en: pupil, student
+- hanzi: 中学
+  en: secondary school
+- hanzi: 读
+  en: to study, read
+- hanzi: 乖
+  en: good, well-behaved
+exercises:
+  translate:
+  - hanzi: 搿眼 苹果 侪 是 拨 侬 个 。
+    en: These apples are all for you.
+  - hanzi: 今朝 哪能介 冷 ？
+    en: How come it is so cold today?
+  - hanzi: 伊 读 中学 个 辰光 ， 成绩 邪气 好 。
+    en: When she was at secondary school her marks were very good.
+  fill:
+  - hanzi: 侬 ＿ 做 勿 对 ， 我 教 侬 。
+    en: You're doing it wrong like that, I'll show you.
+    answer: 搿能
+  - hanzi: 小囡 老 ＿ 个 ， 一眼 也 勿 吵 。
+    en: The child is very good, not noisy at all.
+    answer: 乖
+  - hanzi: 明朝 要 ＿ ， 今朝 夜里向 早 一眼 困 。
+    en: 'There''s a test tomorrow: go to bed a bit earlier tonight.'
+    answer: 考试
+  say:
+  - hanzi: 我 是 大学 个 学生 。
+    en: I'm a university student.
+  - hanzi: 功课 做 好 了 伐 ？
+    en: Have you finished your homework?
+  - hanzi: 搿 只[ʦᴀʔ55] 题目 忒 难 了 。
+    en: This question is too hard.

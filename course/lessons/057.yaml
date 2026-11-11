@@ -1,0 +1,210 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 57
+title:
+  en: Mahjong
+  hanzi: 搓 麻将
+review: false
+setting: >-
+  Saturday night at Xiao Li's parents' in Hongkou. The mahjong table is out, the tiles are mixed, and one of the four regular
+  players has not come. Sam has only dropped in to say hello.
+dialogue:
+- n: 1
+  speaker: 小李姆妈
+  hanzi: 今朝 少 一 个 搭子 ， Sam ， 侬 来 搓 麻将 ！
+  en: We're one player short today. Sam, come and play mahjong!
+- n: 2
+  speaker: Sam
+  hanzi: 我 勿 会 搓 ， 麻将牌 我 一 只[ʦᴀʔ55] 也 勿 认得 。
+  en: I can't play, I don't recognise a single tile.
+- n: 3
+  speaker: 小李
+  hanzi: 呒啥 难 个 ， 我 坐 辣 侬 旁边 教 侬 。
+  en: There's nothing hard about it. I'll sit next to you and teach you.
+- n: 4
+  speaker: 小李爷
+  hanzi: 搓 搓 白相相 ， 勿 来 钞票 个 。
+  en: We're just playing for fun, not for money.
+- n: 5
+  speaker: Sam
+  hanzi: 介末 我 试试看 。 搿 桩 事体 我 一眼 也 勿 懂 。
+  en: Then I'll have a go. I don't understand the first thing about it.
+- n: 6
+  speaker: 小李
+  hanzi: 先 拿 十三 只[ʦᴀʔ55] 牌 ， 摆 好 ， 覅 拨 人家 看见 。
+  en: First take thirteen tiles and line them up. Don't let the others see them.
+- n: 7
+  speaker: 小李姆妈
+  hanzi: 来 ， 一面 搓 一面 吃 瓜子 ， 老酒 也 有 。
+  en: Here, have some melon seeds while we play. There's rice wine too.
+- n: 8
+  speaker: Sam
+  hanzi: 搿 只[ʦᴀʔ55] 牌 我 勿 要 ， 好 打 出去 伐 ？
+  en: I don't want this tile. Can I throw it out?
+- n: 9
+  speaker: 小李
+  hanzi: 等 一歇歇 ！ 搿 只[ʦᴀʔ55] 牌 侬 有得 用 个 。
+  en: Wait a second! You're going to need that tile.
+- n: 10
+  speaker: 小李爷
+  hanzi: 小李 覅 帮 伊 ， 自家 搓 顶 扎劲 。
+  en: Xiao Li, stop helping him. It's most fun when you play for yourself.
+- n: 11
+  speaker: Sam
+  hanzi: 咦 ， 我 个 牌 是勿是 好 赢 了 ？
+  en: Eh? Can I win with these tiles?
+- n: 12
+  speaker: 小李
+  hanzi: 喔唷 ， 侬 赢 了 ！ 额角头 真 高 ！
+  en: Good grief, you've won! What luck!
+- n: 13
+  speaker: 小李姆妈
+  hanzi: 第 一 趟 搓 就 赢 ， Sam 门槛精 个 ！
+  en: 'Winning the very first time: Sam is a sharp one!'
+- n: 14
+  speaker: Sam
+  hanzi: 勿是 门槛精 ， 是 小李 懂经 ， 教 得 好 。
+  en: 'Not sharp at all: Xiao Li knows the game and teaches well.'
+- n: 15
+  speaker: 小李爷
+  hanzi: 再 来 ， 再 来 ！ 今朝 有得 白相 了 。
+  en: Again, again! We're in for a good long game tonight.
+- n: 16
+  speaker: Sam
+  hanzi: 搓 麻将 真 好白相 ， 比 荡马路 有劲 。
+  en: Mahjong really is fun, more fun than strolling the streets.
+- n: 17
+  speaker: 小李姆妈
+  hanzi: 好白相 末 常庄 来 ， 阿拉 老是 少 搭子 。
+  en: 'If you like it, come often: we''re always short of a player.'
+- n: 18
+  speaker: 小李
+  hanzi: 来三 ！ 必过 下趟 侬 赢 了 要 请客 个 。
+  en: Deal! But next time you win, you're buying dinner.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    搓麻将 "to play mahjong": 搓 {搓} is "to rub, to shuffle", from the way the tiles are mixed. 搭子 is a partner for a game or
+    an activity: 麻将搭子, 饭搭子 "someone to eat with".
+- ref: 2
+  topic: vocab
+  text: >-
+    麻将牌 "mahjong tile"; 牌 (line 6) is a tile or a playing card, counted with 只 or 张.
+- ref: 3
+  topic: grammar
+  text: >-
+    呒啥 + adjective or verb "nothing (much) …": 呒啥难个 "nothing hard about it", 呒啥好讲 "nothing to say", 呒啥 on its own "it's
+    nothing, never mind".
+- ref: 4
+  topic: grammar
+  text: >-
+    A verb said twice makes the activity light and unhurried: 搓搓 "have a little game", 讲讲 "have a chat", 看看 (lesson 8).
+    白相 "to play" becomes 白相相 by doubling its last syllable: 搓搓白相相 "play a bit, just for fun". 来钞票 "to play for money".
+- ref: 5
+  topic: vocab
+  text: >-
+    桩 counts matters and affairs: 一桩事体 "a matter", 搿桩事体 "this business".
+- ref: 7
+  topic: vocab
+  text: >-
+    瓜子 "melon seeds", cracked between the teeth through any long game or chat. 老酒 "rice wine" (黄酒, lesson 31), and wine
+    in general: 吃老酒 "to have a drink".
+- ref: 9
+  topic: grammar
+  text: >-
+    有得 + verb says there is plenty of something still to come: 有得用 "(it) will come in useful", 有得白相了 (line 15) "lots of
+    playing ahead", 有得等了 "we're in for a long wait". 一歇歇 "a tiny moment": 一歇 (lesson 41) made smaller by doubling.
+- ref: 10
+  topic: vocab
+  text: >-
+    扎劲 {扎劲} "great fun, exciting" (Mandarin 带劲): 顶扎劲 "the most fun". 有劲 (line 16) is close: "enjoyable, lively".
+- ref: 12
+  topic: culture
+  text: >-
+    额角头高 "a high forehead" means good luck: 额角头 is the forehead. 侬额角头高！ is what you say to someone who has just had a lucky
+    break. 赢 "to win"; 高 "high, tall".
+- ref: 13
+  topic: vocab
+  text: >-
+    门槛精 {门槛精} "shrewd, sharp", literally "threshold-smart": someone who never loses out, half praise, half tease.
+- ref: 14
+  topic: vocab
+  text: >-
+    懂经 "to know the ropes, to be in the know": 伊老懂经个 "he really knows his stuff".
+- ref: 16
+  topic: vocab
+  text: >-
+    好白相 "fun" (of a thing or a place): 搿搭好白相伐？ "is it fun here?".
+- ref: 18
+  topic: vocab
+  text: >-
+    来三 {来三} "all right, it works, can do" (and "capable"), like 来事 (lesson 34): 来三伐？ "OK?", 勿来三 "no good".
+new_words:
+- hanzi: 搭子
+  en: partner (for a game, a meal)
+- hanzi: 搓
+  en: to rub; to play (mahjong)
+- hanzi: 麻将
+  en: mahjong
+- hanzi: 麻将牌
+  en: mahjong tile
+- hanzi: 呒啥
+  en: nothing (much)
+- hanzi: 白相相
+  en: to play a bit, for fun
+- hanzi: 桩
+  en: (measure word for matters)
+- hanzi: 牌
+  en: tile, card
+- hanzi: 瓜子
+  en: melon seeds
+- hanzi: 老酒
+  en: rice wine; wine
+- hanzi: 一歇歇
+  en: a tiny moment
+- hanzi: 有得
+  en: there is plenty still to (+ verb)
+- hanzi: 扎劲
+  en: great fun, exciting
+- hanzi: 赢
+  en: to win
+- hanzi: 额角头
+  en: forehead; luck
+- hanzi: 高
+  en: high, tall
+- hanzi: 门槛精
+  en: shrewd, sharp
+- hanzi: 懂经
+  en: to know the ropes
+- hanzi: 好白相
+  en: fun
+- hanzi: 有劲
+  en: enjoyable, lively
+- hanzi: 来三
+  en: all right, can do; capable
+exercises:
+  translate:
+  - hanzi: 外头 人 多 ， 有得 等 了 。
+    en: 'There are a lot of people outside: we''re in for a long wait.'
+  - hanzi: 搿 桩 事体 呒啥 好 讲 个 。
+    en: There's nothing to say about this business.
+  - hanzi: 伊 门槛精 ， 买 物事 老 懂经 个 。
+    en: 'She''s sharp: she really knows what she''s doing when she shops.'
+  fill:
+  - hanzi: 礼拜天 阿拉 去 外滩 ＿ 。
+    en: On Sunday we're going to the Bund for a bit of fun.
+    answer: 白相相
+  - hanzi: 明朝 一道 吃 夜饭 ， ＿ 伐 ？
+    en: 'Dinner together tomorrow: is that all right?'
+    answer: 来三
+  - hanzi: 等 我 ＿ ， 我 马上 就 来 。
+    en: Wait a second for me, I'm coming right away.
+    answer: 一歇歇
+  say:
+  - hanzi: 侬 会 搓 麻将 伐 ？
+    en: Can you play mahjong?
+  - hanzi: 今朝 我 赢 了 ！
+    en: I've won today!
+  - hanzi: 搓 麻将 老 扎劲 个 。
+    en: Mahjong is great fun.

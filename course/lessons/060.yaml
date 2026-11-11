@@ -1,0 +1,212 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 60
+title:
+  en: Sport
+  hanzi: 锻炼 身体
+review: false
+setting: >-
+  Sunday morning. Xiao Li has joined a gym near the office and has dragged Sam along for his first session.
+dialogue:
+- n: 1
+  speaker: 小李
+  hanzi: 我 开始 到 健身房 锻炼 了 ， 侬 也 来 ！
+  en: I've started working out at the gym. You come too!
+- n: 2
+  speaker: Sam
+  hanzi: 我 礼拜天 只 想 困觉 ， 勿 欢喜 运动 。
+  en: On Sundays I only want to sleep. I don't like exercise.
+- n: 3
+  speaker: 小李
+  hanzi: 侬 一日到夜 坐 辣海 ， 腰 勿 痛 啊 ？ 人 也 胖 了 。
+  en: You sit all day long. Doesn't your back hurt? And you've put on weight.
+- n: 4
+  speaker: Sam
+  hanzi: 我 勿 算 胖 ， 是 侬 自家 忒 瘦 了 。
+  en: I'm not really fat, it's you who are too thin.
+- n: 5
+  speaker: 小李
+  hanzi: 来 ， 先 跟 我 一道 跳 五 分钟 。
+  en: Come on, first jump with me for five minutes.
+- n: 6
+  speaker: Sam
+  hanzi: 喔唷 ， 吃力 得来 ！ 我 跳 勿 动 了 。
+  en: Oof, this is so tiring! I can't jump any more.
+- n: 7
+  speaker: 小李
+  hanzi: 刚刚 两 分钟 ！ 侬 力道 忒 小 了 。
+  en: That was only two minutes! You've got no strength at all.
+- n: 8
+  speaker: Sam
+  hanzi: 我 老早 踢 足球 、 打 篮球 ， 现在 勿 来事 了 。
+  en: I used to play football and basketball. Now I'm useless.
+- n: 9
+  speaker: 小李
+  hanzi: 侬 人 高 ， 打 篮球 好 。 我 矮 ， 只好 游泳 。
+  en: 'You''re tall, good for basketball. I''m short: swimming is all I can do.'
+- n: 10
+  speaker: Sam
+  hanzi: 游泳 我 欢喜 个 ， 比 跳 适意 交关 。
+  en: 'Swimming I do like: it''s much more pleasant than jumping.'
+- n: 11
+  speaker: 小李
+  hanzi: 下 个 礼拜 有 网球 比赛 ， 侬 参加 伐 ？
+  en: There's a tennis tournament next week. Are you in?
+- n: 12
+  speaker: Sam
+  hanzi: 网球 我 打 勿 来 。 爬山 还 可以 。
+  en: I can't play tennis. Hiking I could manage.
+- n: 13
+  speaker: 小李
+  hanzi: 介末 礼拜六 去 爬山 ， 爬 到 上头 吃 中饭 。
+  en: Then let's go hiking on Saturday and have lunch at the top.
+- n: 14
+  speaker: Sam
+  hanzi: 来三 。 喔唷 ， 侬 看 伊面 搿 个 大块头 ！
+  en: Deal. Wow, look at that big fellow over there!
+- n: 15
+  speaker: 小李
+  hanzi: 伊 每日天 来 锻炼 ， 力道 大 得来 。
+  en: He comes to train every day. He's incredibly strong.
+- n: 16
+  speaker: Sam
+  hanzi: 像 伊 介 锻炼 ， 我 身体 吃勿消 个 。
+  en: If I trained like him, my body couldn't take it.
+- n: 17
+  speaker: 小李
+  hanzi: 慢慢叫 来 。 今朝 锻炼 得来 一 身 汗 ， 蛮 好 。
+  en: Take it slowly. Today you've worked up a good sweat, that's fine.
+- n: 18
+  speaker: Sam
+  hanzi: 好 ， 我 去 汏浴 ， 再 买 一 件 运动 背心 。
+  en: Right, I'm off to shower, and then to buy a sports vest.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    健身房 "gym"; 锻炼 "to exercise, to train". 锻炼身体 "to keep fit". 运动 (line 2) "sport, exercise".
+- ref: 3
+  topic: vocab
+  text: >-
+    腰 "waist, lower back": 腰痛 "backache". 胖 "fat", 瘦 (line 4) "thin". 坐辣海 "sitting (there)": 辣海 for a state (lesson 53).
+- ref: 5
+  topic: false-friend
+  text: >-
+    跳 "to jump". Remember that 跑 is "to walk" in Shanghainese (lesson 4): "to run" is 奔.
+- ref: 6
+  topic: grammar
+  text: >-
+    得来 after an adjective or a verb, with nothing after it, is an exclamation of degree: 吃力得来！ "so tiring!", 力道大得来 (line
+    15) "so strong!". 吃力 "tiring, hard going; tired out".
+- ref: 6
+  topic: grammar
+  text: >-
+    Verb + 勿动 "can't … (any more), not strong enough to": 跳勿动 "can't jump any more", 跑勿动 "can't walk another step", 拎勿动
+    "can't lift it". The positive is 跳得动. 动 alone is "to move".
+- ref: 7
+  topic: vocab
+  text: >-
+    力道 "strength" (Mandarin 力气): 力道大 "strong", 力道小 "weak".
+- ref: 8
+  topic: vocab
+  text: >-
+    踢足球 "to play football" (踢 "to kick"), 打篮球 "to play basketball", 打网球 "tennis": 打 for games played with the hands.
+- ref: 9
+  topic: vocab
+  text: >-
+    高 "tall" (lesson 57), 矮 "short". 游泳 "to swim; swimming".
+- ref: 11
+  topic: vocab
+  text: >-
+    比赛 "match, competition".
+- ref: 13
+  topic: vocab
+  text: >-
+    爬山 "to go hiking, to climb a hill"; 爬 "to climb, to crawl". 爬到上头 "climb to the top".
+- ref: 14
+  topic: vocab
+  text: >-
+    大块头 "a big, heavy man", said with a smile.
+- ref: 16
+  topic: vocab
+  text: >-
+    吃勿消 "can't take it, too much for me" (Mandarin 吃不消、受不了): 身体吃勿消 "my body can't cope".
+- ref: 17
+  topic: grammar
+  text: >-
+    Verb + 得来 + result: 锻炼得来一身汗 "exercised until (he was) covered in sweat". 得来 links an action to what came of it; plain
+    得 does the same (lesson 62).
+- ref: 18
+  topic: vocab
+  text: >-
+    背心 "vest, sleeveless top".
+new_words:
+- hanzi: 锻炼
+  en: to exercise, train
+- hanzi: 健身房
+  en: gym
+- hanzi: 运动
+  en: sport, exercise
+- hanzi: 腰
+  en: waist, lower back
+- hanzi: 胖
+  en: fat
+- hanzi: 瘦
+  en: thin
+- hanzi: 跳
+  en: to jump
+- hanzi: 吃力
+  en: tiring; tired out
+- hanzi: 动
+  en: to move
+- hanzi: 力道
+  en: strength
+- hanzi: 踢
+  en: to kick
+- hanzi: 足球
+  en: football
+- hanzi: 篮球
+  en: basketball
+- hanzi: 矮
+  en: short (not tall)
+- hanzi: 游泳
+  en: to swim
+- hanzi: 网球
+  en: tennis
+- hanzi: 比赛
+  en: match, competition
+- hanzi: 爬山
+  en: to go hiking
+- hanzi: 爬
+  en: to climb
+- hanzi: 大块头
+  en: big, heavy man
+- hanzi: 吃勿消
+  en: can't take it
+- hanzi: 背心
+  en: vest
+exercises:
+  translate:
+  - hanzi: 伊 力道 大 得来 ， 一 只[ʦᴀʔ55] 手 好 拎 两 只[ʦᴀʔ55] 包 。
+    en: He's so strong he can carry two bags in one hand.
+  - hanzi: 我 爬 勿 动 了 ， 阿拉 休息 一歇 。
+    en: I can't climb any further, let's rest a moment.
+  - hanzi: 伊 每日天 清早 去 游泳 。
+    en: She goes swimming early every morning.
+  fill:
+  - hanzi: 搿 只[ʦᴀʔ55] 包 忒 重 了 ， 我 拎 勿 ＿ 。
+    en: This bag is too heavy, I can't lift it.
+    answer: 动
+  - hanzi: 一日到夜 加班 ， 我 身体 ＿ 了 。
+    en: Working late day after day, my body can't take it any more.
+    answer: 吃勿消
+  - hanzi: 明朝 有 足球 ＿ ， 侬 看 伐 ？
+    en: There's a football match tomorrow. Are you watching?
+    answer: 比赛
+  say:
+  - hanzi: 我 欢喜 打 篮球 。
+    en: I like playing basketball.
+  - hanzi: 今朝 吃力 得来 。
+    en: I'm so tired today.
+  - hanzi: 侬 比 我 高 。
+    en: You're taller than me.

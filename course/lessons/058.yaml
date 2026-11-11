@@ -1,0 +1,217 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 58
+title:
+  en: A wedding
+  hanzi: 吃 喜酒
+review: false
+setting: >-
+  Thursday, at the office. The manager is getting married on Saturday and the invitations have gone round. Sam has never
+  been to a Shanghai wedding and asks Xiao Li what to do.
+dialogue:
+- n: 1
+  speaker: 小李
+  hanzi: Sam ， 请帖 收到 了 伐 ？ 经理 礼拜六 结婚 。
+  en: Sam, did you get the invitation? The manager's getting married on Saturday.
+- n: 2
+  speaker: Sam
+  hanzi: 收到 了 。 我 第 一 趟 参加 上海人 个 喜酒 。
+  en: I did. It's the first time I've been to a Shanghai wedding banquet.
+- n: 3
+  speaker: 小李
+  hanzi: 吃 喜酒 要 拨 新郎 新娘 一 只[ʦᴀʔ55] 红包 。
+  en: At a wedding you give the bride and groom a red envelope.
+- n: 4
+  speaker: Sam
+  hanzi: 拨 多少 好 ？ 少 了 坍台 ， 多 了 我 呒没 。
+  en: How much should I give? Too little is embarrassing, and too much I don't have.
+- n: 5
+  speaker: 小李
+  hanzi: 一千 块 差勿多 。 再 送 拨 伊拉 一 件 礼物 。
+  en: A thousand is about right. And give them a present as well.
+- n: 6
+  speaker: Sam
+  hanzi: 送 啥 好 ？ 戒指 、 项链 、 耳环 是 新郎 买 个 。
+  en: What shall I give? Rings, necklaces and earrings are for the groom to buy.
+- n: 7
+  speaker: 小李
+  hanzi: 对 ， 搿 种 物事 是 新郎 拨 家主婆 个 。
+  en: Right, those are things a groom gives his wife.
+- n: 8
+  speaker: 小李
+  hanzi: 侬 拿 法国 带 来 个 巧克力 拨 伊拉 好 了 。
+  en: Just give them the chocolates you brought from France.
+- n: 9
+  speaker: Sam
+  hanzi: 好 主意 ！ 介末 我 着 啥 ？ 要 着 西装 伐 ？
+  en: Good idea! And what do I wear? Do I need a suit?
+- n: 10
+  speaker: 小李
+  hanzi: 要 个 ， 西装 、 领带 ， 着 得 登样 一眼 。
+  en: 'Yes: suit and tie. Dress a bit smartly.'
+- n: 11
+  speaker: Sam
+  hanzi: 新娘 着 啥 ？ 白 个 连衫裙 啊 ？
+  en: What does the bride wear? A white dress?
+- n: 12
+  speaker: 小李
+  hanzi: 先 着 白 个 ， 再 换 一 件 红 个 连衫裙 。
+  en: White first, then she changes into a red dress.
+- n: 13
+  speaker: Sam
+  hanzi: 新娘 是 啥地方 人 ？ 标致 伐 ？
+  en: Where is the bride from? Is she pretty?
+- n: 14
+  speaker: 小李
+  hanzi: 苏州 人 ， 邪气 标致 。 伊 是 嫁 拨 大学 同学 个 。
+  en: From Suzhou, and very pretty. She is marrying someone she was at university with.
+- n: 15
+  speaker: Sam
+  hanzi: 一 只[ʦᴀʔ55] 台面 坐 几 个 人 ？ 我 坐 辣 阿里搭 ？
+  en: How many people sit at one table? Where do I sit?
+- n: 16
+  speaker: 小李
+  hanzi: 十 个 人 。 搿 种 聚会 ， 公司 个 人 坐 一道 。
+  en: Ten. At this kind of gathering, people from the office sit together.
+- n: 17
+  speaker: Sam
+  hanzi: 碰着 新郎 新娘 ， 我 要 讲 啥 ？
+  en: When I meet the bride and groom, what do I say?
+- n: 18
+  speaker: 小李
+  hanzi: 就 讲 祝 㑚 夫妻 快乐 ， 再 吃 杯 老酒 。
+  en: Just say "I wish you both happiness", and drink a glass with them.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    请帖 "(written) invitation". 结婚 "to get married" (lesson 33).
+- ref: 2
+  topic: culture
+  text: >-
+    喜酒 "wedding banquet", literally "joy wine": 吃喜酒 "to go to a wedding". It is a dinner of ten or more courses in a hotel
+    or restaurant, the couple going from table to table to toast the guests. 参加 "to take part in, to attend".
+- ref: 3
+  topic: grammar
+  text: >-
+    Two objects, order one: 拨 + person + thing. 拨新郎新娘一只红包 "give the bride and groom a red envelope". 新郎 "groom", 新娘 "bride".
+- ref: 5
+  topic: grammar
+  text: >-
+    Order two: 送拨 + person + thing, for a present: 送拨伊拉一件礼物 "give them a present". 礼物 {礼物} "present": 物 has its literary
+    reading here; in 物事 {物事} "thing" it has the everyday one.
+- ref: 6
+  topic: vocab
+  text: >-
+    戒指 "ring", 项链 "necklace", 耳环 "earrings".
+- ref: 7
+  topic: vocab
+  text: >-
+    家主婆 "wife", the familiar, slightly old-fashioned word, literally "mistress of the house"; 老婆 and 太太 are also said. The
+    husband is 老公 (lesson 5).
+- ref: 8
+  topic: grammar
+  text: >-
+    Order three: 拿 + thing + 拨 + person, when the thing is known and comes first: 拿巧克力拨伊拉 "give them the chocolates". 拿
+    does the work of Mandarin 把 (lesson 18).
+- ref: 10
+  topic: vocab
+  text: >-
+    西装 "suit", 领带 "tie". 登样 {登样} "smart, presentable, good-looking" of a person or an outfit: 着得登样 "well turned out".
+- ref: 11
+  topic: vocab
+  text: >-
+    连衫裙 "dress" (Mandarin 连衣裙): 衫 "top" + 裙 "skirt" in one piece.
+- ref: 13
+  topic: vocab
+  text: >-
+    标致 "pretty, lovely", the old Shanghai word for a good-looking woman; 漂亮 (lesson 40) is used for anything.
+- ref: 14
+  topic: vocab
+  text: >-
+    嫁 "to marry" is said of the woman: 嫁拨 + person "to marry (a man)"; of the man one says 讨 (讨家主婆 "to take a wife"). 同学
+    "classmate, fellow student": 大学同学 "someone one was at university with". 苏州人: place + 人, as in 上海人.
+- ref: 15
+  topic: vocab
+  text: >-
+    台面 is a banquet table with everything on it, and the meal served there: 一只台面 "one table (of guests)". 上台面 "presentable
+    enough for company".
+- ref: 16
+  topic: vocab
+  text: >-
+    聚会 "gathering, get-together".
+- ref: 18
+  topic: vocab
+  text: >-
+    祝 "to wish": 祝侬生日快乐 "happy birthday to you". 夫妻 "husband and wife". 快乐 "happy" belongs to wishes; of your own mood you
+    say 开心.
+new_words:
+- hanzi: 喜酒
+  en: wedding banquet
+- hanzi: 请帖
+  en: invitation
+- hanzi: 参加
+  en: to take part in, attend
+- hanzi: 新郎
+  en: groom
+- hanzi: 新娘
+  en: bride
+- hanzi: 礼物
+  en: present
+- hanzi: 戒指
+  en: ring
+- hanzi: 项链
+  en: necklace
+- hanzi: 耳环
+  en: earrings
+- hanzi: 家主婆
+  en: wife (familiar)
+- hanzi: 西装
+  en: suit
+- hanzi: 领带
+  en: tie
+- hanzi: 登样
+  en: smart, presentable
+- hanzi: 连衫裙
+  en: dress
+- hanzi: 标致
+  en: pretty
+- hanzi: 嫁
+  en: to marry (of a woman)
+- hanzi: 同学
+  en: classmate, fellow student
+- hanzi: 台面
+  en: banquet table
+- hanzi: 聚会
+  en: gathering
+- hanzi: 祝
+  en: to wish
+- hanzi: 夫妻
+  en: husband and wife
+- hanzi: 快乐
+  en: happy (in wishes)
+exercises:
+  translate:
+  - hanzi: 我 送 拨 姆妈 一 条 项链 。
+    en: I gave my mother a necklace.
+  - hanzi: 侬 拿 搿 只[ʦᴀʔ55] 请帖 拨 小李 。
+    en: Give this invitation to Xiao Li.
+  - hanzi: 伊 着 了 西装 ， 邪气 登样 。
+    en: He looks very smart in a suit.
+  fill:
+  - hanzi: 礼拜六 侬 来 ＿ 阿拉 个 聚会 伐 ？
+    en: Are you coming to our get-together on Saturday?
+    answer: 参加
+  - hanzi: ＿ 侬 生日 快乐 ！
+    en: Happy birthday to you!
+    answer: 祝
+  - hanzi: 伊拉 是 大学 ＿ ， 认得 十 年 了 。
+    en: They were at university together; they've known each other ten years.
+    answer: 同学
+  say:
+  - hanzi: 新娘 邪气 标致 。
+    en: The bride is very pretty.
+  - hanzi: 我 拨 伊 一 只[ʦᴀʔ55] 红包 。
+    en: I give him a red envelope.
+  - hanzi: 礼拜六 阿拉 去 吃 喜酒 。
+    en: On Saturday we're going to a wedding.

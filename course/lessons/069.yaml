@@ -1,0 +1,215 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 69
+title:
+  en: A breakfast tour
+  hanzi: 吃 早点
+review: false
+setting: >-
+  A weekday, seven in the morning. Xiao Li has promised to show Sam the "four guardians" of a Shanghai breakfast, and takes
+  him round the stalls near the office.
+dialogue:
+- n: 1
+  speaker: 小李
+  hanzi: 今朝 带 侬 吃 上海 早点 ： 四大金刚 。
+  en: 'Today I''m taking you for a Shanghai breakfast: the four guardians.'
+- n: 2
+  speaker: Sam
+  hanzi: 四大金刚 ？ 是 啥 物事 ？
+  en: The four guardians? What are they?
+- n: 3
+  speaker: 小李
+  hanzi: 大饼 、 油条 、 粢饭 、 豆浆 ， 搿 只[ʦᴀʔ55] 摊头 侪 有 。
+  en: Flatbread, fried dough sticks, sticky-rice rolls and soy milk. This stall has them all.
+- n: 4
+  speaker: 摊主
+  hanzi: 两 位 要 啥 ？ 油条 是 刚刚 做 个 ， 老 脆 。
+  en: What will you have? The dough sticks are fresh, nice and crisp.
+- n: 5
+  speaker: 小李
+  hanzi: 一 副 大饼 油条 ， 两 碗 豆浆 ， 一 甜 一 咸 。
+  en: One flatbread with a dough stick, and two bowls of soy milk, one sweet, one savoury.
+- n: 6
+  speaker: Sam
+  hanzi: 豆浆 还 有 咸 个 ？ 我 只 吃 过 甜 个 。
+  en: There's savoury soy milk? I've only had the sweet kind.
+- n: 7
+  speaker: 小李
+  hanzi: 咸 个 里向 有 葱 搭 酱油 ， 侬 尝尝 看 。
+  en: The savoury one has spring onion and soy sauce in it. Try it.
+- n: 8
+  speaker: Sam
+  hanzi: 味道 勿错 ！ 油条 好 浸 辣 豆浆 里 伐 ？
+  en: It's good! Can I dip the dough stick in the soy milk?
+- n: 9
+  speaker: 小李
+  hanzi: 好 个 。 阿拉 爷 还 欢喜 拿 油条 过 泡饭 。
+  en: Sure. My dad likes his dough stick with rice porridge, too.
+- n: 10
+  speaker: 摊主
+  hanzi: 粢饭 要 伐 ？ 当中 包 一 根 油条 。
+  en: Want a sticky-rice roll? It has a dough stick in the middle.
+- n: 11
+  speaker: Sam
+  hanzi: 吃勿落 了 ， 装 辣 袋袋 里 带 走 。
+  en: I can't eat any more. Put it in a bag and I'll take it with me.
+- n: 12
+  speaker: 小李
+  hanzi: 对面 还 有 生煎馒头 ， 当心 里向 个 汤 。
+  en: Across the road there are pan-fried buns. Mind the soup inside.
+- n: 13
+  speaker: Sam
+  hanzi: 喔唷 ， 烫 ！ 汤 侪 滴 到 衣裳 浪 了 。
+  en: Ouch, hot! The soup has dripped all over my clothes.
+- n: 14
+  speaker: 小李
+  hanzi: 先 咬 一 只[ʦᴀʔ55] 小 洞洞 ， 汤 先 吃脱 伊 。
+  en: Bite a little hole first and drink the soup up.
+- n: 15
+  speaker: Sam
+  hanzi: 汤 也 是 吃 ， 茶 也 是 吃 ？
+  en: Soup is 'eaten', and tea is 'eaten' too?
+- n: 16
+  speaker: 小李
+  hanzi: 是个 ， 吃 茶 ， 吃 香烟 ， 吃力 也 是 吃 。
+  en: 'That''s right: you ''eat'' tea, you ''eat'' cigarettes, and ''tired'' is ''eat strength''.'
+- n: 17
+  speaker: Sam
+  hanzi: 早点 吃 了 介 多 ， 我 吃勿消 了 。
+  en: I've eaten so much breakfast I can't take any more.
+- n: 18
+  speaker: 小李
+  hanzi: 还 有 阳春面 搭 馄饨 ， 明朝 再 来 ！
+  en: There's still plain noodles and wontons. Same again tomorrow!
+- n: 19
+  speaker: Sam
+  hanzi: 明朝 ？ 我 一 个 礼拜 只 好 来 一 趟 ！
+  en: Tomorrow? Once a week is all I can manage!
+notes:
+- ref: 1
+  topic: culture
+  text: >-
+    早点 "breakfast (bought out)". 四大金刚 {四大金刚} "the four guardians", named after the four temple guardian kings: the four
+    classics of a Shanghai breakfast stall. 大 has its everyday reading here.
+- ref: 3
+  topic: vocab
+  text: >-
+    大饼 "flatbread with sesame", 油条 "fried dough stick", 粢饭 {粢饭} "sticky rice rolled round a dough stick", 豆浆 "soy milk"
+    (lesson 2). 摊头 {摊头} "stall".
+- ref: 4
+  topic: vocab
+  text: >-
+    脆 "crisp". 两位 "you two", a polite way of counting customers (位, lesson 8).
+- ref: 5
+  topic: vocab
+  text: >-
+    副 "a set": 一副大饼油条 "a flatbread with a dough stick", the classic pair.
+- ref: 7
+  topic: vocab
+  text: >-
+    酱油 "soy sauce". 尝尝看 "have a taste and see": verb doubled + 看.
+- ref: 8
+  topic: vocab
+  text: >-
+    浸 "to dip, to soak".
+- ref: 9
+  topic: vocab
+  text: >-
+    过 "to go with (a staple)": 拿油条过泡饭 "eat the dough stick with rice porridge", 啥个菜过饭？ "what is there to go with the rice?".
+    阿拉爷 "my father".
+- ref: 10
+  topic: vocab
+  text: >-
+    根 counts long thin things: 一根油条, 一根香烟.
+- ref: 11
+  topic: grammar
+  text: >-
+    吃勿落 "can't eat any more" (lesson 31). 装 "to put (into a container)". Nouns are often doubled in Shanghainese: 袋袋 "a
+    bag, a pocket", 洞洞 (line 14) "a hole", 角角 "a corner".
+- ref: 12
+  topic: vocab
+  text: >-
+    生煎馒头 {生煎馒头} "pan-fried pork buns": in Shanghainese a 馒头 can have a filling.
+- ref: 13
+  topic: vocab
+  text: >-
+    滴 "to drip".
+- ref: 14
+  topic: grammar
+  text: >-
+    汤先吃脱伊 "drink up the soup first": the thing first, then verb + 脱伊 (lesson 67).
+- ref: 16
+  topic: grammar
+  text: >-
+    吃 covers far more than eating: 吃汤 "have soup", 吃茶 "drink tea", 吃香烟 "smoke", 吃老酒 "drink wine", and figures of speech:
+    吃力 "tiring", 吃勿消 (line 17) "can't take it", 吃生活 "get a beating".
+- ref: 18
+  topic: vocab
+  text: >-
+    阳春面 {阳春面} "plain noodles in broth", 馄饨 "wontons".
+new_words:
+- hanzi: 早点
+  en: breakfast
+- hanzi: 四大金刚
+  en: the four guardians (of breakfast)
+- hanzi: 大饼
+  en: flatbread
+- hanzi: 油条
+  en: fried dough stick
+- hanzi: 粢饭
+  en: sticky-rice roll
+- hanzi: 摊头
+  en: stall
+- hanzi: 脆
+  en: crisp
+- hanzi: 副
+  en: a set, a pair
+- hanzi: 酱油
+  en: soy sauce
+- hanzi: 尝尝
+  en: to taste
+- hanzi: 浸
+  en: to dip, to soak
+- hanzi: 根
+  en: (measure word for long thin things)
+- hanzi: 装
+  en: to put in
+- hanzi: 袋袋
+  en: bag, pocket
+- hanzi: 生煎馒头
+  en: pan-fried pork buns
+- hanzi: 滴
+  en: to drip
+- hanzi: 洞洞
+  en: hole
+- hanzi: 吃脱
+  en: to eat up
+- hanzi: 阳春面
+  en: plain noodles in broth
+- hanzi: 馄饨
+  en: wontons
+exercises:
+  translate:
+  - hanzi: 我 早浪 只 吃 一 副 大饼 油条 。
+    en: In the morning I only have a flatbread and a dough stick.
+  - hanzi: 搿 只[ʦᴀʔ55] 摊头 个 生煎馒头 老 好吃 个 。
+    en: This stall's pan-fried buns are delicious.
+  - hanzi: 侬 吃 甜 豆浆 还是 咸 豆浆 ？
+    en: Do you have sweet soy milk or savoury?
+  fill:
+  - hanzi: 拿 油条 ＿ 辣 豆浆 里 。
+    en: Dip the dough stick in the soy milk.
+    answer: 浸
+  - hanzi: 我 要 两 ＿ 油条 。
+    en: I'd like two dough sticks.
+    answer: 根
+  - hanzi: 当心 ， 汤 要 ＿ 到 衣裳 浪 。
+    en: Careful, the soup will drip on your clothes.
+    answer: 滴
+  say:
+  - hanzi: 我 欢喜 吃 生煎馒头 。
+    en: I love pan-fried buns.
+  - hanzi: 侬 吃 过 早点 了 伐 ？
+    en: Have you had breakfast?
+  - hanzi: 搿 碗 馄饨 我 吃脱 伊 。
+    en: I'll finish off this bowl of wontons.

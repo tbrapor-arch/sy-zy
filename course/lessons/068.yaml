@@ -1,0 +1,221 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 68
+title:
+  en: Chinese medicine
+  hanzi: 看 中医
+review: false
+setting: >-
+  Sam has been coughing for two weeks and still goes to work. On Saturday the auntie marches him to the old doctor of Chinese
+  medicine she has seen for thirty years.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: 侬 咳嗽 两 个 礼拜 了 ， 跟 我 去 看 中医 。
+  en: You've been coughing for two weeks. Come with me to see a doctor of Chinese medicine.
+- n: 2
+  speaker: Sam
+  hanzi: 恐怕 是 伤风 ， 吃 一眼 药 就 好 了 。
+  en: I expect it's a cold. A bit of medicine and it'll be gone.
+- n: 3
+  speaker: 阿姨
+  hanzi: 既然 药 吃 了 勿 灵 ， 就 试试看 中药 。
+  en: Since the medicine hasn't worked, try Chinese medicine.
+- n: 4
+  speaker: 医生
+  hanzi: 坐 。 啥 地方 勿 适意 ？ 舌头 伸 出来 看看 。
+  en: Sit down. What's the trouble? Put out your tongue.
+- n: 5
+  speaker: Sam
+  hanzi: 喉咙 痒 ， 夜里 咳嗽 得来 困勿着 。
+  en: My throat itches; at night I cough so much I can't sleep.
+- n: 6
+  speaker: 医生
+  hanzi: 口干 伐 ？ 夜里 出 汗 伐 ？
+  en: Is your mouth dry? Do you sweat at night?
+- n: 7
+  speaker: Sam
+  hanzi: 口干 个 ， 浑身 一眼 力道 也 呒没 。
+  en: It's dry, and I've no strength anywhere.
+- n: 8
+  speaker: 医生
+  hanzi: 舌头 老 红 ， 是 火气 忒 大 。
+  en: 'Your tongue is very red: too much internal heat.'
+- n: 9
+  speaker: 阿姨
+  hanzi: 伊 每日天 做 到 半夜里 ， 饭 也 勿 好好叫 吃 。
+  en: He works till midnight every day and doesn't eat properly.
+- n: 10
+  speaker: 医生
+  hanzi: 要是 一直 搿能 ， 身体 要 坏脱 个 。
+  en: If it goes on like this, your health will break down.
+- n: 11
+  speaker: Sam
+  hanzi: 医生 ， 中药 老 苦 个 ， 有 勿 苦 个 伐 ？
+  en: Doctor, Chinese medicine is very bitter. Is there any that isn't?
+- n: 12
+  speaker: 医生
+  hanzi: 药 总归 苦 个 。 一 日[ȵiɪʔ12] 两 趟 ， 吃 七 日[ȵiɪʔ12] 。
+  en: Medicine is always bitter. Twice a day, for seven days.
+- n: 13
+  speaker: 医生
+  hanzi: 少 吃 油 个 ， 吃 得 淡 一眼 ， 覅 吃 香烟 。
+  en: Eat less oily food, keep it plain, and no smoking.
+- n: 14
+  speaker: 阿姨
+  hanzi: 假使 夜里 还 咳嗽 ， 我 烧 梨 汤 拨 侬 吃 。
+  en: If you're still coughing at night, I'll make you pear soup.
+- n: 15
+  speaker: 医生
+  hanzi: 好个 。 困觉 个 辰光 ， 脚 要 焐 热 。
+  en: Good. And keep your feet warm when you sleep.
+- n: 16
+  speaker: Sam
+  hanzi: 医生 ， 礼拜一 我 好 去 上班 伐 ？
+  en: Doctor, can I go to work on Monday?
+- n: 17
+  speaker: 医生
+  hanzi: 作兴 可以 ， 必过 先 屋里 歇 两 日[ȵiɪʔ12] 。
+  en: Perhaps, but rest at home for a couple of days first.
+- n: 18
+  speaker: 阿姨
+  hanzi: 听见 伐 ？ 健康 顶 要紧 ， 钞票 少 赚 一眼 也 好 。
+  en: Hear that? Health comes first; better to earn a bit less money.
+- n: 19
+  speaker: Sam
+  hanzi: 晓得 了 。 侬 烧 个 梨 汤 ， 比 药 还 灵 。
+  en: All right. Your pear soup works better than medicine anyway.
+notes:
+- ref: 1
+  topic: culture
+  text: >-
+    中医 "Chinese medicine; a doctor of it", against 西医 "Western medicine". 看中医 "to see a Chinese doctor": the doctor looks
+    at the tongue and the face and feels the pulse, then writes out a mixture of herbs to be boiled at home.
+- ref: 2
+  topic: grammar
+  text: >-
+    恐怕 {恐怕} "I'm afraid, I expect": a guess, often about something unwelcome. 怕 is read with -o here, as in 怕 "to fear"
+    (lesson 29). 伤风 "a cold; to catch a cold".
+- ref: 3
+  topic: grammar
+  text: >-
+    既然…就… "since …, then …": 既然侬勿适意，就覅去了 "since you're not well, don't go". 中药 "Chinese medicine (the herbs)", 西药 "Western
+    medicine". 灵 "to work, to be effective" (lesson 6).
+- ref: 4
+  topic: vocab
+  text: >-
+    舌头 "tongue". 伸出来 "stick out" (伸, lesson 46).
+- ref: 5
+  topic: vocab
+  text: >-
+    痒 "itchy, ticklish". 咳嗽得来困勿着 "cough so much I can't sleep": 得来 for the result.
+- ref: 6
+  topic: vocab
+  text: >-
+    口干 "thirsty, dry-mouthed". 出汗 "to sweat".
+- ref: 7
+  topic: vocab
+  text: >-
+    浑身 "all over (the body)": 浑身呒没力道 "no strength anywhere".
+- ref: 8
+  topic: culture
+  text: >-
+    火气 "internal heat", in Chinese medicine the cause of a red tongue, a dry mouth and sores; 火气大 also means "hot-tempered".
+- ref: 10
+  topic: grammar
+  text: >-
+    要是 "if" is the everyday word; 假使 (line 14) is the same, a little more careful. The second half often has 就: 要是落雨，就勿去.
+- ref: 11
+  topic: vocab
+  text: >-
+    苦 "bitter"; also "hard (of a life)".
+- ref: 13
+  topic: vocab
+  text: >-
+    淡 "bland, not salty": 吃得淡一眼 "eat plainer food". 油个 "oily things". 吃香烟 "to smoke" (lesson 69 has more of 吃).
+- ref: 14
+  topic: culture
+  text: >-
+    梨 "pear": pear boiled with rock sugar is the classic home remedy for a cough.
+- ref: 15
+  topic: vocab
+  text: >-
+    焐 {焐} "to warm up (by covering or holding close)": 焐热 "get warm", 焐被头 "warm the quilt".
+- ref: 17
+  topic: grammar
+  text: >-
+    作兴 {作兴} "maybe, it could be": 伊作兴勿来了 "he may not come after all". 歇 "to rest": 歇两日 "take a couple of days off".
+- ref: 18
+  topic: vocab
+  text: >-
+    健康 "health; healthy". 赚 "to earn": 少赚一眼 "earn a bit less".
+new_words:
+- hanzi: 中医
+  en: Chinese medicine; its doctor
+- hanzi: 恐怕
+  en: I'm afraid, I expect
+- hanzi: 伤风
+  en: a cold
+- hanzi: 既然
+  en: since
+- hanzi: 中药
+  en: Chinese medicine
+- hanzi: 舌头
+  en: tongue
+- hanzi: 痒
+  en: itchy
+- hanzi: 口干
+  en: dry-mouthed, thirsty
+- hanzi: 浑身
+  en: all over
+- hanzi: 火气
+  en: internal heat; temper
+- hanzi: 要是
+  en: if
+- hanzi: 苦
+  en: bitter
+- hanzi: 淡
+  en: bland
+- hanzi: 假使
+  en: if
+- hanzi: 梨
+  en: pear
+- hanzi: 焐
+  en: to warm up
+- hanzi: 作兴
+  en: maybe
+- hanzi: 歇
+  en: to rest
+- hanzi: 健康
+  en: health
+- hanzi: 赚
+  en: to earn
+- hanzi: 地方
+  en: place
+- hanzi: 礼拜一
+  en: Monday
+exercises:
+  translate:
+  - hanzi: 要是 明朝 落雨 ， 阿拉 就 勿 去 了 。
+    en: If it rains tomorrow we won't go.
+  - hanzi: 既然 侬 勿 适意 ， 今朝 就 覅 上班 了 。
+    en: Since you're not well, don't go to work today.
+  - hanzi: 搿 只[ʦᴀʔ55] 菜 忒 淡 ， 摆 一眼 盐 。
+    en: 'This dish is too bland: add a bit of salt.'
+  fill:
+  - hanzi: 已经 十 点 了 ， 伊 ＿ 勿 来 了 。
+    en: 'It''s already ten: I''m afraid he isn''t coming.'
+    answer: 恐怕
+  - hanzi: ＿ 侬 有 辰光 ， 一道 去 吃 饭 。
+    en: If you have time, let's go and eat together.
+    answer: 要是
+  - hanzi: 中药 老 ＿ 个 。
+    en: Chinese medicine is very bitter.
+    answer: 苦
+  say:
+  - hanzi: 我 喉咙 痒 。
+    en: My throat itches.
+  - hanzi: 侬 伤风 了 伐 ？
+    en: Have you caught a cold?
+  - hanzi: 我 浑身 呒没 力道 。
+    en: I've no strength at all.

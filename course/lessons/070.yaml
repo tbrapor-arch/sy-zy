@@ -1,0 +1,128 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 70
+title:
+  en: Review
+  hanzi: 复习
+review: true
+setting: >-
+  A Saturday evening a few weeks later. Sam climbs the five floors to Xiao Zhang's flat for the first time since moving
+  day.
+dialogue:
+- n: 1
+  speaker: 小张
+  hanzi: Sam ， 侬 来 了 ！ 楼梯 走 上来 吃力 伐 ？
+  en: Sam, you made it! Were the stairs hard work?
+- n: 2
+  speaker: Sam
+  hanzi: 侬 忘记 了 ？ 大橱 我 也 抬 上来 过 。
+  en: Have you forgotten? I've carried a wardrobe up them.
+- n: 3
+  speaker: 小张
+  hanzi: 进来 坐 。 床 买 好 了 ， 房间 也 弄 清爽 了 。
+  en: Come in and sit down. The bed's bought and the room's tidy now.
+- n: 4
+  speaker: Sam
+  hanzi: 搿 只[ʦᴀʔ55] 沙发 摆 辣海 老 好 ， 对牢 阳台 。
+  en: The sofa looks good there, facing the balcony.
+- n: 5
+  speaker: 小张
+  hanzi: 阿强 讲 侬 拨 猫 咬 了 ， 手 好 了 伐 ？
+  en: A-Qiang says you got bitten by a cat. Is your hand better?
+- n: 6
+  speaker: Sam
+  hanzi: 好 了 。 医生 讲 要是 再 痛 ， 就 再 去 看 。
+  en: It's fine. The doctor says if it hurts again I should go back.
+- n: 7
+  speaker: 小张
+  hanzi: 侬 咳嗽 也 好 了 伐 ？ 中药 吃 了 几 日[ȵiɪʔ12] ？
+  en: And your cough? How many days did you take the Chinese medicine?
+- n: 8
+  speaker: Sam
+  hanzi: 吃 了 七 日[ȵiɪʔ12] ， 苦 是 苦 ， 必过 老 灵 个 。
+  en: Seven days. Bitter it was, but it really worked.
+- n: 9
+  speaker: 小张
+  hanzi: 既然 好 了 ， 明朝 一道 去 踏 脚踏车 ？
+  en: Since you're better, shall we go cycling tomorrow?
+- n: 10
+  speaker: Sam
+  hanzi: 好个 。 吃 了 早点 再 去 ， 我 请 侬 吃 大饼 油条 。
+  en: 'All right. We''ll go after breakfast: I''ll buy you flatbread and dough sticks.'
+- n: 11
+  speaker: 小张
+  hanzi: 生煎馒头 覅 了 ， 汤 老 烫 个 。
+  en: 'No pan-fried buns, though: the soup''s too hot.'
+- n: 12
+  speaker: Sam
+  hanzi: 先 咬 只[ʦᴀʔ55] 洞洞 ， 汤 吃脱 伊 ， 就 勿 烫 了 。
+  en: Bite a hole first and drink the soup up, then it isn't hot.
+- n: 13
+  speaker: 小张
+  hanzi: 侬 比 我 还 懂经 ！ 明朝 骑 到 阿里搭 去 ？
+  en: You know more about it than I do! Where shall we ride tomorrow?
+- n: 14
+  speaker: Sam
+  hanzi: 沿 苏州河 骑 到 黄浦江 ， 侬 跟牢 我 。
+  en: Along Suzhou Creek to the Huangpu. You stay behind me.
+- n: 15
+  speaker: 小张
+  hanzi: 我 屋里 离 侬 远 ， 我 乘 地铁 过来 。
+  en: My place is far from yours; I'll come over by metro.
+- n: 16
+  speaker: Sam
+  hanzi: 侬 从 二 号线 出来 ， 朝 前头 走 五 分钟 。
+  en: Come out of line 2 and walk straight ahead for five minutes.
+- n: 17
+  speaker: 小张
+  hanzi: 晓得 了 。 夜饭 吃 了 再 走 ， 我 烧 了 汤 。
+  en: Got it. Stay for dinner before you go, I've made soup.
+- n: 18
+  speaker: Sam
+  hanzi: 侬 烧 个 汤 ， 我 一 碗 是 勿 够 个 ！
+  en: With your soup, one bowl won't be enough!
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    Review of lessons 64–69. Verb + direction: 走上来, 抬上来, 拿进去, 出来 (64). No preposition before a place: 摆客厅, 屋里去 (64, 65).
+    从…到, 离, 朝 (65). 牢 after a verb: 跟牢, 看牢, 对牢, 捉牢 (66). 吃了早点再去, with the older 仔 for 了 (66). The thing first, then verb
+    + 脱伊 or a doubled verb + 伊: 汤吃脱伊, 窗关关伊 (67). 要是, 假使, 既然…就, 恐怕, 作兴 (68). What 吃 covers (69).
+- ref: 2
+  topic: grammar
+  text: >-
+    抬上来过 "have carried (it) up before": 过 for experience goes after the direction.
+- ref: 8
+  topic: grammar
+  text: >-
+    苦是苦，必过… "bitter, yes, but …": an adjective, 是, the same adjective again, then 必过, grants a point before the "but".
+- ref: 18
+  topic: grammar
+  text: >-
+    是勿够个 "is simply not enough": 是…个 around a statement makes it firm.
+new_words: []
+exercises:
+  translate:
+  - hanzi: 侬 拿 箱子 搬 到 楼下 去 。
+    en: Take the box downstairs.
+  - hanzi: 要是 侬 吃勿消 ， 就 歇 两 日[ȵiɪʔ12] 。
+    en: If it's too much for you, take a couple of days off.
+  - hanzi: 我 屋里 去 了 ， 侬 慢慢叫 吃 。
+    en: 'I''m off home: take your time eating.'
+  fill:
+  - hanzi: 伊 每日天 ＿ 脚踏车 上班 。
+    en: She cycles to work every day.
+    answer: 骑
+  - hanzi: ＿ 侬 勿 适意 ， 就 覅 来 了 。
+    en: Since you're not well, don't come.
+    answer: 既然
+  - hanzi: 侬 ＿ 我 ， 覅 跑 开 。
+    en: Stay close to me, don't run off.
+    answer: 跟牢
+  say:
+  - hanzi: 我 拿 椅子 搬 上来 。
+    en: I'll bring the chair up.
+  - hanzi: 侬 屋里 离 地铁 近 伐 ？
+    en: Is your place near the metro?
+  - hanzi: 吃 了 夜饭 再 去 。
+    en: We'll go after dinner.

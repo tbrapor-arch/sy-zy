@@ -1,0 +1,229 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 66
+title:
+  en: A bike ride
+  hanzi: 踏 脚踏车
+review: false
+setting: >-
+  A clear autumn Sunday. Xiao Zhang has talked Sam into a bike ride along Suzhou Creek, down to where it meets the Huangpu.
+dialogue:
+- n: 1
+  speaker: 小张
+  hanzi: 今朝 天 好 ， 踏 脚踏车 到 黄浦江 去 。
+  en: 'The weather''s lovely today: let''s cycle to the Huangpu.'
+- n: 2
+  speaker: Sam
+  hanzi: 吃 了 中饭 再 去 ， 还是 马上 走 ？
+  en: Shall we go after lunch, or right now?
+- n: 3
+  speaker: 小张
+  hanzi: 马上 走 ， 中饭 到 外滩 吃 。 侬 跟牢 我 。
+  en: Right now; we'll have lunch at the Bund. Stay right behind me.
+- n: 4
+  speaker: Sam
+  hanzi: 我 好几 年 勿 骑 了 ， 侬 覅 踏 得 忒 快 。
+  en: I haven't ridden for years, don't pedal too fast.
+- n: 5
+  speaker: 小张
+  hanzi: 沿 苏州河 一直 骑 ， 一 路 侪 是 桥 。
+  en: We ride straight along Suzhou Creek; there are bridges all the way.
+- n: 6
+  speaker: Sam
+  hanzi: 苏州河 老早 水 是 黑 个 ， 现在 清爽 了 。
+  en: The creek's water used to be black; it's clean now.
+- n: 7
+  speaker: 小张
+  hanzi: 当心 ， 前头 转弯 ， 地浪 有 水 ， 滑 个 。
+  en: 'Careful, there''s a bend ahead and water on the ground: it''s slippery.'
+- n: 8
+  speaker: Sam
+  hanzi: 看见 了 ， 我 眼睛 看牢 地浪 个 。
+  en: I see them. I'm keeping my eyes on the ground.
+- n: 9
+  speaker: 老伯伯
+  hanzi: 慢慢叫 ， 搿搭 交关 人 滑 过 跤 。
+  en: 'Take it slowly: lots of people have slipped here.'
+- n: 10
+  speaker: Sam
+  hanzi: 谢谢 老伯伯 ！ 侬 辣 搿搭 钓鱼 啊 ？
+  en: Thank you, sir! Are you fishing here?
+- n: 11
+  speaker: 老伯伯
+  hanzi: 每日天 来 。 吃 仔 早饭 ， 搭仔 朋友 一道 来 。
+  en: Every day. After breakfast I come along with a friend.
+  lit: every day come. eat (done) breakfast, with friend together come
+- n: 12
+  speaker: 小张
+  hanzi: 伊 讲 个 仔 就是 了 ， 老早 个 讲法 。
+  en: 'His 仔 is just 了: it''s the old way of saying it.'
+- n: 13
+  speaker: Sam
+  hanzi: 我 晓得 ， 小说 里 也 常庄 看见 仔 。
+  en: I know, I often see 仔 in novels too.
+- n: 14
+  speaker: 小张
+  hanzi: 看 ， 前头 就是 黄浦江 ， 江 对面 是 浦东 。
+  en: Look, there's the Huangpu ahead, and Pudong across the river.
+- n: 15
+  speaker: Sam
+  hanzi: 对牢 浦东 拍 张 照片 ， 侬 立 到 桥 浪 去 。
+  en: Let me take a photo facing Pudong. Go and stand on the bridge.
+- n: 16
+  speaker: 小张
+  hanzi: 顺带便 拿 脚踏车 也 拍 进去 。
+  en: And while you're at it, get the bike in the picture too.
+- n: 17
+  speaker: Sam
+  hanzi: 笔直 骑 转去 ， 要 多少 辰光 ？
+  en: How long does it take to ride straight back?
+- n: 18
+  speaker: 小张
+  hanzi: 半 个 钟头 。 先 吃 了 饭 再 骑 ， 好 伐 ？
+  en: Half an hour. We'll eat first and then ride, all right?
+- n: 19
+  speaker: Sam
+  hanzi: 为仔 搿 顿 饭 ， 再 骑 一 个 钟头 也 来三 。
+  en: For that meal I'd happily ride another hour.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    脚踏车 {脚踏车} "bicycle" (Mandarin 自行车): 车 has its colloquial reading here. 踏 "to tread, to pedal": 踏脚踏车 "to ride a bike".
+    黄浦江 "the Huangpu River": 江 (line 14) is a big river, 河 a smaller one.
+- ref: 2
+  topic: grammar
+  text: >-
+    吃了中饭再去 "have lunch, then go": verb + 了 + object, then 再 + the next action. This is the usual way today. Older speakers
+    and novels use 仔 for 了 here (line 11).
+- ref: 3
+  topic: grammar
+  text: >-
+    牢 after a verb says "keep hold, keep close": 跟牢 "keep right behind", 看牢 (line 8) "keep your eyes on", 对牢 (line 15) "facing,
+    pointed at", 捉牢 "to catch hold of". 塞牢 (lesson 54) was "stuck fast".
+- ref: 4
+  topic: vocab
+  text: >-
+    骑 "to ride (a bike, a horse)". 踏得忒快 "pedal too fast": a verb + 得 + how it is done.
+- ref: 5
+  topic: vocab
+  text: >-
+    沿 "along": 沿苏州河 "along Suzhou Creek", 沿马路 "along the road". 桥 "bridge". 苏州河 "Suzhou Creek", the river that crosses the
+    north of the city.
+- ref: 6
+  topic: vocab
+  text: >-
+    老早 "in the old days" (lesson 5).
+- ref: 7
+  topic: vocab
+  text: >-
+    转弯 "to turn; a bend". 地浪 "on the ground" (lesson 30). 滑 "slippery; to slip": 滑一跤 "to slip and fall".
+- ref: 9
+  topic: vocab
+  text: >-
+    老伯伯 "sir", for an old man (lesson 44). 滑过跤 "have slipped (before now)": 过 for experience.
+- ref: 10
+  topic: vocab
+  text: >-
+    钓鱼 "to fish (with a line)".
+- ref: 11
+  topic: grammar
+  text: >-
+    仔 {仔} after a verb is the older word for 了: 吃仔早饭 "having had breakfast". It is still heard from older people and is
+    everywhere in novels, also inside 搭仔 "with, together with" (as 搭, lesson 8) and 为仔 (line 19) "for the sake of". The
+    course keeps 了, 搭 and 为了 in its own lines.
+- ref: 13
+  topic: vocab
+  text: >-
+    小说 "novel".
+- ref: 14
+  topic: vocab
+  text: >-
+    浦东 "Pudong", the east bank of the Huangpu; the old city is on the west bank, 浦西.
+- ref: 15
+  topic: vocab
+  text: >-
+    拍张照片 "take a photo" (照片, lesson 5).
+- ref: 16
+  topic: vocab
+  text: >-
+    顺带便 {顺带便} "while you are at it, on the way": 顺带便买眼菜 "buy some vegetables on the way". 拍进去 "get into the picture": verb
+    + 进去.
+- ref: 17
+  topic: vocab
+  text: >-
+    笔直 "dead straight": 笔直骑 "ride straight on".
+- ref: 19
+  topic: vocab
+  text: >-
+    顿 counts meals: 搿顿饭 "this meal".
+new_words:
+- hanzi: 踏
+  en: to tread, to pedal
+- hanzi: 脚踏车
+  en: bicycle
+- hanzi: 黄浦江
+  en: the Huangpu River
+- hanzi: 跟牢
+  en: to keep close behind
+- hanzi: 骑
+  en: to ride
+- hanzi: 沿
+  en: along
+- hanzi: 苏州河
+  en: Suzhou Creek
+- hanzi: 桥
+  en: bridge
+- hanzi: 转弯
+  en: to turn; a bend
+- hanzi: 滑
+  en: slippery; to slip
+- hanzi: 看牢
+  en: to keep an eye on
+- hanzi: 钓鱼
+  en: to fish
+- hanzi: 仔
+  en: (older form of 了)
+- hanzi: 搭仔
+  en: with (older form)
+- hanzi: 小说
+  en: novel
+- hanzi: 江
+  en: river (a big one)
+- hanzi: 对牢
+  en: facing
+- hanzi: 浦东
+  en: Pudong
+- hanzi: 顺带便
+  en: while you are at it
+- hanzi: 笔直
+  en: dead straight
+- hanzi: 为仔
+  en: for the sake of (older form)
+- hanzi: 顿
+  en: (measure word for meals)
+exercises:
+  translate:
+  - hanzi: 吃 了 夜饭 再 去 看 电影 。
+    en: We'll have dinner and then go to the cinema.
+  - hanzi: 侬 看牢 小人 ， 覅 拨 伊 跑 出去 。
+    en: Keep an eye on the child, don't let him run out.
+  - hanzi: 落雨 天 路 滑 ， 骑 脚踏车 当心 。
+    en: 'The roads are slippery when it rains: careful on the bike.'
+  fill:
+  - hanzi: 侬 ＿ 我 走 ， 覅 走 开 。
+    en: Stay right behind me, don't wander off.
+    answer: 跟牢
+  - hanzi: 去 公司 ＿ 买 一眼 水果 。
+    en: Buy some fruit on your way to the office.
+    answer: 顺带便
+  - hanzi: 前头 ＿ ， 慢 一眼 。
+    en: 'There is a bend ahead: slow down.'
+    answer: 转弯
+  say:
+  - hanzi: 侬 会 骑 脚踏车 伐 ？
+    en: Can you ride a bike?
+  - hanzi: 我 欢喜 看 小说 。
+    en: I like reading novels.
+  - hanzi: 黄浦江 对面 就是 浦东 。
+    en: Pudong is just across the Huangpu.

@@ -1,0 +1,219 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 67
+title:
+  en: The cat is gone
+  hanzi: 猫 逃脱 了
+review: false
+setting: >-
+  A Sunday afternoon in the lane. The little girl from the family upstairs comes running down in tears: their cat has slipped
+  out. The auntie and Sam join the search.
+dialogue:
+- n: 1
+  speaker: 小囡
+  hanzi: 阿姨 ， 急煞 了 ！ 阿拉 只[ʦᴀʔ55] 猫 逃脱 了 ！
+  en: Auntie, it's awful! Our cat has run away!
+- n: 2
+  speaker: 阿姨
+  hanzi: 覅 哭 ， 慢慢叫 讲 。 啥 辰光 逃 出去 个 ？
+  en: Don't cry, tell me slowly. When did it get out?
+- n: 3
+  speaker: 小囡
+  hanzi: 早浪 姆妈 窗 忘记 关 ， 伊 跳 出去 了 。
+  en: This morning Mum forgot to shut the window, and it jumped out.
+  lit: morning mum window forgot shut, it jumped out
+- n: 4
+  speaker: Sam
+  hanzi: 猫 跑 勿 远 个 ， 阿拉 一道 寻寻 伊 。
+  en: Cats don't go far. Let's all look for it.
+- n: 5
+  speaker: 阿姨
+  hanzi: 伊 叫 啥 名字 ？ 喊 伊 名字 ， 伊 会 出来 个 。
+  en: What's its name? Call its name and it'll come out.
+- n: 6
+  speaker: 小囡
+  hanzi: 伊 叫 宝贝 ， 白 个 ， 老 标致 个 。
+  en: It's called Baobei. It's white, and very pretty.
+- n: 7
+  speaker: Sam
+  hanzi: 宝贝 ！ 宝贝 ！ 听 ， 垃圾桶 后头 有 声音 。
+  en: Baobei! Baobei! Listen, there's a noise behind the bin.
+- n: 8
+  speaker: 阿姨
+  hanzi: 勿是 猫 ， 是 只[ʦᴀʔ55] 老虫 ！ 吓煞 我 了 。
+  en: That's not a cat, it's a mouse! It gave me a fright.
+- n: 9
+  speaker: 小囡
+  hanzi: 宝贝 欢喜 寻 老虫 ， 伊 一定 辣 附近 。
+  en: Baobei loves hunting mice. It must be nearby.
+- n: 10
+  speaker: Sam
+  hanzi: 听 ， 隔壁 只[ʦᴀʔ55] 狗 辣辣 叫 。 宝贝 怕 狗 伐 ？
+  en: Listen, the dog next door is barking. Is Baobei scared of dogs?
+- n: 11
+  speaker: 小囡
+  hanzi: 怕 个 ！ 一 看见 狗 ， 伊 就 爬 到 树 浪 去 。
+  en: Yes! As soon as it sees a dog it climbs up a tree.
+- n: 12
+  speaker: 阿姨
+  hanzi: 看 ， 树 浪 有 只[ʦᴀʔ55] 白 个 ！
+  en: Look, there's a white one up the tree!
+- n: 13
+  speaker: Sam
+  hanzi: 是 伊 ！ 我 爬 上去 抱 伊 下来 。
+  en: It's her! I'll climb up and carry her down.
+- n: 14
+  speaker: 阿姨
+  hanzi: 当心 ， 伊 吓煞 了 ， 要 咬 人 个 。
+  en: Careful, she's frightened, she'll bite.
+- n: 15
+  speaker: Sam
+  hanzi: 捉牢 了 ！ 喔唷 ， 伊 咬 我 ！
+  en: Got her! Ow, she's biting me!
+- n: 16
+  speaker: 小囡
+  hanzi: 谢谢 爷叔 ！ 侬 看 ， 伊 又 辣 发嗲 了 。
+  en: Thank you! Look, she's playing the sweetheart again.
+- n: 17
+  speaker: 阿姨
+  hanzi: 伊 老 龌龊 ， 抱 转去 汏汏 伊 ， 窗 关关 伊 。
+  en: She's filthy. Take her home and wash her, and shut that window.
+  lit: she very dirty, carry back wash-wash her, window shut-shut it
+- n: 18
+  speaker: Sam
+  hanzi: 我 只[ʦᴀʔ55] 手 出 血 了 ， 先 汏脱 伊 。
+  en: My hand is bleeding. I'll wash the blood off first.
+- n: 19
+  speaker: 阿姨
+  hanzi: 猫 咬 个 要 当心 ， 明朝 去 医院 看看 。
+  en: 'A cat bite is no joke: go to the hospital tomorrow.'
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    急煞 "frantic, worried to death": 急 "anxious" + 煞 "to death" (吓煞, lesson 37). 逃脱 "to run away, to escape": 逃 "to flee"
+    + 脱 "away, gone" (坏脱, lesson 11).
+- ref: 3
+  topic: grammar
+  text: >-
+    窗忘记关 "forgot to shut the window": the thing talked about comes first, then what was (not) done to it. Shanghainese does
+    this far more than Mandarin. 窗 "window".
+- ref: 4
+  topic: grammar
+  text: >-
+    寻寻伊 "look for it": in orders and suggestions a doubled verb is often followed by 伊 "it", even when the thing is already
+    named: 汏汏伊 "give it a wash", 关关伊 "shut it" (line 17). 伊 here does not mean a person; it rounds off the order. 跑勿远 "can't
+    go far".
+- ref: 5
+  topic: vocab
+  text: >-
+    喊 "to call (out); to shout": 喊伊名字 "call its name".
+- ref: 6
+  topic: vocab
+  text: >-
+    宝贝 "treasure, darling": a common name for a pet or a pampered child.
+- ref: 7
+  topic: vocab
+  text: >-
+    垃圾桶 "rubbish bin" (倒垃圾, lesson 52).
+- ref: 8
+  topic: vocab
+  text: >-
+    老虫 {老虫} "mouse, rat" (Mandarin 老鼠).
+- ref: 10
+  topic: vocab
+  text: >-
+    狗 "dog"; 叫 "to bark" (and "to be called", line 5). 辣辣叫 "is barking": 辣辣 + verb for an action in progress.
+- ref: 13
+  topic: vocab
+  text: >-
+    抱 "to carry in one's arms, to hold": 抱伊下来 "carry her down".
+- ref: 14
+  topic: vocab
+  text: >-
+    咬 "to bite": 咬了一口 "took a bite".
+- ref: 15
+  topic: vocab
+  text: >-
+    捉牢 "to catch hold of": 牢 "fast, firmly" (lesson 66).
+- ref: 16
+  topic: vocab
+  text: >-
+    发嗲 {发嗲} "to act cute, to play the sweetheart" (嗲, lesson 5). 爷叔 is what a child calls a younger man.
+- ref: 17
+  topic: grammar
+  text: >-
+    窗关关伊 "shut the window": the thing first, then the doubled verb + 伊. A verb + 脱伊 does the same for getting rid of something:
+    吃脱伊 "eat it up", 汏脱伊 (line 18) "wash it off", 掼脱伊 "throw it away". 龌龊 {龌龊} "dirty, filthy".
+- ref: 18
+  topic: vocab
+  text: >-
+    出血 "to bleed" (血, lesson 53).
+new_words:
+- hanzi: 急煞
+  en: frantic, worried to death
+- hanzi: 猫
+  en: cat
+- hanzi: 逃脱
+  en: to run away
+- hanzi: 逃
+  en: to flee
+- hanzi: 窗
+  en: window
+- hanzi: 寻寻
+  en: to look for (a bit)
+- hanzi: 喊
+  en: to call (out)
+- hanzi: 宝贝
+  en: treasure, darling
+- hanzi: 垃圾桶
+  en: rubbish bin
+- hanzi: 老虫
+  en: mouse, rat
+- hanzi: 狗
+  en: dog
+- hanzi: 抱
+  en: to carry in the arms
+- hanzi: 咬
+  en: to bite
+- hanzi: 捉牢
+  en: to catch hold of
+- hanzi: 发嗲
+  en: to act cute
+- hanzi: 龌龊
+  en: dirty
+- hanzi: 汏汏
+  en: to give a wash
+- hanzi: 关关
+  en: to shut
+- hanzi: 汏脱
+  en: to wash off
+- hanzi: 关
+  en: to shut
+- hanzi: 出来
+  en: out (towards the speaker)
+exercises:
+  translate:
+  - hanzi: 侬 拿 窗 关关 伊 ， 外头 落雨 了 。
+    en: Shut the window, it's raining outside.
+  - hanzi: 隔壁 只[ʦᴀʔ55] 狗 夜里 老 欢喜 叫 个 。
+    en: The dog next door loves barking at night.
+  - hanzi: 我 只[ʦᴀʔ55] 猫 欢喜 爬 树 。
+    en: My cat likes climbing trees.
+  fill:
+  - hanzi: 侬 只[ʦᴀʔ55] 手 老 ＿ ， 去 汏汏 伊 。
+    en: Your hands are filthy, go and wash them.
+    answer: 龌龊
+  - hanzi: 猫 ＿ 出去 了 ， 快 点 寻 。
+    en: The cat has got out, quick, look for it.
+    answer: 逃
+  - hanzi: 当心 ， 伊 要 ＿ 人 个 。
+    en: Careful, it bites.
+    answer: 咬
+  say:
+  - hanzi: 我 来 寻寻 伊 。
+    en: I'll look for it.
+  - hanzi: 猫 爬 到 树 浪 去 了 。
+    en: The cat has climbed up a tree.
+  - hanzi: 侬 欢喜 猫 还是 狗 ？
+    en: Do you prefer cats or dogs?

@@ -1,0 +1,234 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 64
+title:
+  en: Moving house
+  hanzi: 搬场
+review: false
+setting: >-
+  Saturday morning. Xiao Zhang is moving into a flat on the fifth floor of an old block with no lift. A-Qiang has borrowed
+  a small lorry; Sam has come to carry.
+dialogue:
+- n: 1
+  speaker: 小张
+  hanzi: 今朝 搬场 ， 谢谢 侬 搭 阿强 来 帮忙 。
+  en: Thank you and A-Qiang for coming to help with the move today.
+- n: 2
+  speaker: 阿强
+  hanzi: 卡车 停 辣 门口 ， 物事 侪 辣 车子 浪 。
+  en: The lorry is parked at the door; everything is on it.
+- n: 3
+  speaker: Sam
+  hanzi: 侬 新 房子 辣 几 楼 ？ 有 电梯 伐 ？
+  en: What floor is your new flat on? Is there a lift?
+- n: 4
+  speaker: 小张
+  hanzi: 五 楼 ， 呒没 电梯 ， 只好 走 楼梯 上去 。
+  en: The fifth. There's no lift, we'll have to take the stairs up.
+- n: 5
+  speaker: 阿强
+  hanzi: 先 拿 大橱 抬 上去 ， 大橱 顶 重 。
+  en: 'Let''s carry the wardrobe up first: it''s the heaviest.'
+- n: 6
+  speaker: Sam
+  hanzi: 一 二 三 ， 起来 ！ 喔唷 ， 重 得来 ， 抬 勿 动 。
+  en: One, two, three, lift! Oof, it's so heavy, I can't move it.
+- n: 7
+  speaker: 阿强
+  hanzi: 侬 抬 下头 ， 我 抬 上头 ， 慢慢叫 走 。
+  en: You take the bottom, I'll take the top, and we go slowly.
+- n: 8
+  speaker: 小张
+  hanzi: 当心 ， 楼梯 暗 ， 覅 掼 跤 ！
+  en: Careful, the stairs are dark, don't fall!
+- n: 9
+  speaker: Sam
+  hanzi: 好 了 ， 抬 上来 了 ！ 大橱 摆 辣 阿里搭 ？
+  en: There, it's up! Where does the wardrobe go?
+- n: 10
+  speaker: 小张
+  hanzi: 摆 辣 房间 里 ， 床 对面 。 床 明朝 再 买 。
+  en: In the bedroom, opposite the bed. The bed I'm buying tomorrow.
+- n: 11
+  speaker: 阿强
+  hanzi: 沙发 搭 椅子 摆 当中 ， 凳子 摆 阳台 浪 。
+  en: The sofa and the chairs go in the middle, the stools on the balcony.
+  lit: sofa and chair put middle, stool put balcony on
+- n: 12
+  speaker: Sam
+  hanzi: 搿 只[ʦᴀʔ55] 箱子 里向 是 啥 ？ 交关 重 。
+  en: What's in this box? It's very heavy.
+- n: 13
+  speaker: 小张
+  hanzi: 是 碗 搭 热水瓶 ， 轻 一眼 ， 覅 打破 ！
+  en: Bowls and thermos flasks. Gently, don't break them!
+- n: 14
+  speaker: 阿强
+  hanzi: 热水瓶 拿 进 厨房间 去 ， 我 来 。
+  en: The flasks go into the kitchen. I'll do it.
+- n: 15
+  speaker: 小张
+  hanzi: 被头 先 放 辣海 ， 等 床 来 了 再 讲 。
+  en: Leave the quilt where it is until the bed comes.
+- n: 16
+  speaker: Sam
+  hanzi: 楼下 还有 物事 伐 ？ 我 去 拿 上来 。
+  en: Is there anything left downstairs? I'll go and bring it up.
+- n: 17
+  speaker: 小张
+  hanzi: 呒没 了 ， 侪 搬 好 了 。 㑚 坐 一歇 ， 吃 杯 茶 。
+  en: No, that's everything. Sit down for a bit and have a cup of tea.
+- n: 18
+  speaker: 阿强
+  hanzi: 搿 层 楼 就 侬 一 家 住 ？ 蛮 好 ， 清爽 。
+  en: You're the only household on this floor? That's nice and quiet.
+- n: 19
+  speaker: Sam
+  hanzi: 下趟 侬 再 搬场 ， 一定 要 寻 有 电梯 个 ！
+  en: Next time you move, make sure you find one with a lift!
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    搬场 {搬场} "to move house" (Mandarin 搬家). 搬 on its own is to move things (lesson 22). 帮忙 "to help" (lesson 47).
+- ref: 2
+  topic: vocab
+  text: >-
+    卡车 "lorry, truck": 卡 is read {卡}, as in Mandarin kǎ, not as the 卡 of 卡住.
+- ref: 3
+  topic: vocab
+  text: >-
+    几楼 "which floor": 楼 counts the floors of a building, 五楼 "the fifth floor"; the ground floor is 一楼. 电梯 "lift", 楼梯 (line
+    4) "stairs".
+- ref: 4
+  topic: grammar
+  text: >-
+    A verb takes a direction after it: 走楼梯上去 "go up by the stairs". 上去 is "up, away from the speaker", 上来 (line 9) "up,
+    towards the speaker"; so too 下去 / 下来, 进去 / 出来. Sam, now upstairs, says 抬上来; someone still on the ground floor would
+    say 抬上去.
+- ref: 5
+  topic: grammar
+  text: >-
+    拿 + object + verb + direction: 拿大橱抬上去 "carry the wardrobe up". With a measure word the object can also go between verb
+    and direction: 搬只箱子上去 "take a box up". 大橱 {大橱} "wardrobe" (Mandarin 衣柜): 大 has its everyday reading here (lesson 50).
+    抬 "to carry (two or more people together); to lift".
+- ref: 6
+  topic: grammar
+  text: >-
+    抬勿动 "can't lift it": verb + 勿动 says the thing will not move however hard you try (跳勿动, lesson 60). 重得来 "so heavy": 得来
+    after an adjective (lesson 60). 起来！ shouted on "three" means "up!".
+- ref: 7
+  topic: vocab
+  text: >-
+    上头 "the top part", 下头 "the bottom part" (lessons 17 and 40).
+- ref: 8
+  topic: vocab
+  text: >-
+    掼跤 "to fall over" (lesson 53).
+- ref: 10
+  topic: vocab
+  text: >-
+    床 "bed". 房间 here is the bedroom; the room where guests sit is the 客堂 or, in new flats, the 客厅.
+- ref: 11
+  topic: grammar
+  text: >-
+    A place can follow the verb with no 辣: 摆当中 "put in the middle", 摆阳台浪 "put on the balcony", as 摆辣阳台浪. 沙发 "sofa" ({沙发}:
+    沙 has the vowel o), 椅子 "chair", 凳子 "stool", 阳台 "balcony".
+- ref: 12
+  topic: vocab
+  text: >-
+    箱子 "box, case", counted with 只: 一只箱子.
+- ref: 13
+  topic: vocab
+  text: >-
+    热水瓶 "thermos flask": every household once filled them with boiled water from the stove. 打破 "to break (by knocking or
+    dropping)": 碗打破了 "the bowl broke". 轻一眼 "gently", from 轻 "light (in weight)".
+- ref: 14
+  topic: grammar
+  text: >-
+    拿进厨房间去 "take into the kitchen": verb + 进 + place + 去. 进 "to enter" is mostly found in such phrases: 进去, 进来, 走进房间. 厨房间
+    "kitchen": 厨房 (lesson 12) + 间 "room".
+- ref: 15
+  topic: grammar
+  text: >-
+    放辣海 "leave it there": verb + 辣海 for a state that lasts (lesson 53), here "put down and left as it is". 等…再讲 "wait until
+    …, then we'll see". 被头 {被头} "quilt" (Mandarin 被子).
+- ref: 16
+  topic: vocab
+  text: >-
+    楼下 "downstairs" (the course says 楼高头 for "upstairs", lesson 22).
+- ref: 18
+  topic: vocab
+  text: >-
+    层 counts storeys and layers: 搿层楼 "this floor". 住 "to live (somewhere)": 侬住辣阿里搭？ "where do you live?"; 蹲 (lesson 23)
+    is the more colloquial word. 清爽 (lesson 12) "clean" also means "quiet, uncluttered".
+new_words:
+- hanzi: 搬场
+  en: to move house
+- hanzi: 卡车
+  en: lorry, truck
+- hanzi: 楼
+  en: floor (of a building)
+- hanzi: 电梯
+  en: lift, elevator
+- hanzi: 楼梯
+  en: stairs
+- hanzi: 大橱
+  en: wardrobe
+- hanzi: 抬
+  en: to carry, to lift
+- hanzi: 上来
+  en: up (towards the speaker)
+- hanzi: 床
+  en: bed
+- hanzi: 沙发
+  en: sofa
+- hanzi: 椅子
+  en: chair
+- hanzi: 凳子
+  en: stool
+- hanzi: 阳台
+  en: balcony
+- hanzi: 箱子
+  en: box, case
+- hanzi: 热水瓶
+  en: thermos flask
+- hanzi: 打破
+  en: to break
+- hanzi: 进
+  en: to enter, into
+- hanzi: 厨房间
+  en: kitchen
+- hanzi: 被头
+  en: quilt
+- hanzi: 楼下
+  en: downstairs
+- hanzi: 层
+  en: storey, layer
+- hanzi: 住
+  en: to live (somewhere)
+exercises:
+  translate:
+  - hanzi: 搿 只[ʦᴀʔ55] 箱子 忒 重 ， 我 一 个 人 抬 勿 动 。
+    en: This box is too heavy, I can't lift it on my own.
+  - hanzi: 我 住 三 楼 ， 楼下 是 阿姨 屋里 。
+    en: I live on the third floor; downstairs is the auntie's.
+  - hanzi: 侬 拿 椅子 搬 到 阳台 浪 去 。
+    en: Take the chair out to the balcony.
+  fill:
+  - hanzi: 电梯 坏脱 了 ， 阿拉 走 ＿ 上去 。
+    en: The lift is broken, let's take the stairs up.
+    answer: 楼梯
+  - hanzi: 当心 ， 覅 拿 碗 ＿ 。
+    en: Careful, don't break the bowls.
+    answer: 打破
+  - hanzi: 侬 新 房子 辣 第 几 ＿ ？
+    en: Which floor is your new flat on?
+    answer: 楼
+  say:
+  - hanzi: 我 下去 拿 物事 上来 。
+    en: I'll go down and bring the things up.
+  - hanzi: 被头 先 放 辣海 ， 覅 动 。
+    en: Leave the quilt there for now, don't touch it.
+  - hanzi: 搿 只[ʦᴀʔ55] 沙发 老 重 个 。
+    en: This sofa is really heavy.

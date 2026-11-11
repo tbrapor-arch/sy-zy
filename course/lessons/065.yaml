@@ -1,0 +1,224 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 65
+title:
+  en: Rush hour
+  hanzi: 轧 地铁
+review: false
+setting: >-
+  Monday, a quarter past eight, on a line 2 platform. Sam and Xiao Li met on the way in; two trains have already gone by
+  too full to board, and they have a meeting at nine.
+dialogue:
+- n: 1
+  speaker: 小李
+  hanzi: 今朝 地铁 介 轧 ， 两 部 车子 侪 轧 勿 上去 。
+  en: The metro is so packed today, we couldn't squeeze onto two trains.
+- n: 2
+  speaker: Sam
+  hanzi: 早浪 八 点 个 二 号线 ， 每日天 搿能 个 。
+  en: 'Line 2 at eight in the morning: it''s like this every day.'
+- n: 3
+  speaker: 小李
+  hanzi: 阿拉 九 点 要 开会 ， 来勿及 了 。
+  en: We have a meeting at nine. We won't make it.
+- n: 4
+  speaker: Sam
+  hanzi: 从 搿搭 到 公司 ， 有 几 站 路 ？
+  en: How many stops is it from here to the office?
+- n: 5
+  speaker: 小李
+  hanzi: 六 站 。 出 了 站头 ， 公司 离 搿搭 还 有 十 分钟 路 。
+  en: Six. And from the station the office is another ten minutes' walk.
+- n: 6
+  speaker: Sam
+  hanzi: 前头 出 了 事故 ， 车子 侪 停 辣海 了 。
+  en: There's been an incident ahead; all the trains are held.
+- n: 7
+  speaker: 小李
+  hanzi: 勿 好 再 等 了 ， 出去 叫 部 差头 。
+  en: We can't wait any longer. Let's go out and get a taxi.
+- n: 8
+  speaker: Sam
+  hanzi: 早浪 高架 也 塞车 ， 开车 比 走 还 慢 。
+  en: 'The elevated road is jammed in the morning too: driving is slower than walking.'
+- n: 9
+  speaker: 小李
+  hanzi: 乘 公交 呢 ？ 公交 站头 就 辣 出口 。
+  en: What about the bus? The bus stop is right at the exit.
+- n: 10
+  speaker: Sam
+  hanzi: 公交 更加 慢 ， 一 路 侪 是 红绿灯 。
+  en: 'The bus is even slower: it''s traffic lights all the way.'
+- n: 11
+  speaker: 小李
+  hanzi: 侬 屋里 离 公司 近 伐 ？ 平常 几 点 出门 ？
+  en: Is your place near the office? What time do you usually leave?
+- n: 12
+  speaker: Sam
+  hanzi: 七 点 出门 ， 总归 提早 半 个 钟头 到 。
+  en: At seven. I always get in half an hour early.
+- n: 13
+  speaker: 小李
+  hanzi: 我 从来 勿 准时 ， 经理 讲 过 我 好几 趟 。
+  en: I'm never on time. The manager has had words with me several times.
+- n: 14
+  speaker: Sam
+  hanzi: 车子 来 了 ！ 朝 里向 轧 ， 覅 立 辣 门口 。
+  en: Here's a train! Push towards the middle, don't stand by the doors.
+- n: 15
+  speaker: 小李
+  hanzi: 喔唷 ， 轧 得来 动 也 动 勿 来 。
+  en: Oof, it's so packed I can't move at all.
+- n: 16
+  speaker: Sam
+  hanzi: 下趟 提早 一刻钟 出门 ， 就 勿 会 介 轧 。
+  en: Next time leave a quarter of an hour earlier and it won't be so packed.
+- n: 17
+  speaker: 小李
+  hanzi: 提早 ？ 我 夜里 十二 点 屋里 去 ， 早浪 起床 老 难 个 。
+  en: Earlier? I get home at midnight, I can't get up in the morning.
+- n: 18
+  speaker: Sam
+  hanzi: 到 了 ！ 九 点 差 五 分钟 ， 跑 ！
+  en: 'We''re here! Five to nine: run!'
+- n: 19
+  speaker: 小李
+  hanzi: 从 站头 跑 到 公司 ， 今朝 锻炼 好 了 。
+  en: 'Running from the station to the office: that''s today''s workout done.'
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    轧 {轧} "to squeeze, to be packed": 地铁老轧 "the metro is packed", 轧地铁 "to fight your way onto the metro". 轧勿上去 "can't squeeze
+    on": verb + 勿 + direction says it cannot be done (上勿来, lesson 19).
+- ref: 2
+  topic: vocab
+  text: >-
+    号线 "line (of the metro)": 二号线 "line 2".
+- ref: 4
+  topic: grammar
+  text: >-
+    从…到… "from … to …": 从搿搭到公司 "from here to the office". 站 "stop, station": 几站路 "how many stops".
+- ref: 5
+  topic: grammar
+  text: >-
+    离 "from, away from" for distance: A 离 B 远 / 近 "A is far from / near B", 公司离搿搭还有十分钟路 "the office is another ten minutes
+    from here". 站头 {站头} "stop, station" (the colloquial word; 出了站头 "once out of the station").
+- ref: 6
+  topic: vocab
+  text: >-
+    事故 "accident, incident": 出事故 "to have an accident". 停辣海 "held, standing still": 辣海 for a lasting state.
+- ref: 7
+  topic: vocab
+  text: >-
+    差头 {差头} "taxi" (lesson 9): 叫差头 "to get a taxi".
+- ref: 8
+  topic: vocab
+  text: >-
+    高架 "the elevated expressway" that crosses the city. 塞车 {塞车} "traffic jam": 塞 is read with a checked syllable, as in
+    塞牢 (lesson 54). 开车 "to drive".
+- ref: 9
+  topic: vocab
+  text: >-
+    乘 "to take (a bus, the metro)": 乘地铁, 乘公交; 坐 is also used. 公交 "bus, public transport", 出口 "exit".
+- ref: 10
+  topic: vocab
+  text: >-
+    红绿灯 "traffic lights". 一路 "all the way".
+- ref: 11
+  topic: vocab
+  text: >-
+    近 "near", the opposite of 远 "far". 出门 "to leave home, to go out". 平常 "usually" (lesson 51).
+- ref: 12
+  topic: vocab
+  text: >-
+    提早 "early, ahead of time": 提早半个钟头 "half an hour early".
+- ref: 13
+  topic: vocab
+  text: >-
+    从来 + negative "never (at any time)": 从来勿准时 "never on time", 从来呒没去过 "have never been". 准时 "on time".
+- ref: 14
+  topic: grammar
+  text: >-
+    朝 "towards, facing": 朝里向轧 "push inwards", 朝前头走 "walk ahead". Like 从, 离 and 到, it comes before the place.
+- ref: 15
+  topic: grammar
+  text: >-
+    动也动勿来 "can't even move": a verb, 也, then the same verb in the negative, says "not even a little".
+- ref: 17
+  topic: grammar
+  text: >-
+    屋里去 "go home", with no 到: with 去 and 来 Shanghainese often leaves out the preposition, 我屋里去 "I'm going home", 伊上海来了 "she's
+    come to Shanghai".
+- ref: 18
+  topic: grammar
+  text: >-
+    差 "short of" in clock times: 九点差五分钟 "five to nine"; 八点一刻 "a quarter past eight".
+new_words:
+- hanzi: 轧
+  en: to squeeze; packed
+- hanzi: 号线
+  en: line (metro)
+- hanzi: 从
+  en: from
+- hanzi: 离
+  en: from, away from
+- hanzi: 站头
+  en: stop, station
+- hanzi: 事故
+  en: accident, incident
+- hanzi: 高架
+  en: elevated expressway
+- hanzi: 塞车
+  en: traffic jam
+- hanzi: 开车
+  en: to drive
+- hanzi: 乘
+  en: to take (transport)
+- hanzi: 公交
+  en: bus
+- hanzi: 出口
+  en: exit
+- hanzi: 红绿灯
+  en: traffic lights
+- hanzi: 近
+  en: near
+- hanzi: 出门
+  en: to leave home
+- hanzi: 提早
+  en: early, ahead of time
+- hanzi: 从来
+  en: ever; never (with a negative)
+- hanzi: 准时
+  en: on time
+- hanzi: 朝
+  en: towards
+- hanzi: 一刻钟
+  en: a quarter of an hour
+- hanzi: 差
+  en: short of, to (in clock times)
+exercises:
+  translate:
+  - hanzi: 我 屋里 离 地铁 站头 老 近 个 。
+    en: My place is very near the metro station.
+  - hanzi: 伊 从来 勿 开车 ， 每日天 乘 公交 。
+    en: He never drives, he takes the bus every day.
+  - hanzi: 朝 前头 走 ， 出口 就 辣 对面 。
+    en: Walk on ahead; the exit is just opposite.
+  fill:
+  - hanzi: 明朝 要 开会 ， 侬 ＿ 一眼 出门 。
+    en: There's a meeting tomorrow, leave a bit early.
+    answer: 提早
+  - hanzi: ＿ 搿搭 到 外滩 要 几 站 ？
+    en: How many stops is it from here to the Bund?
+    answer: 从
+  - hanzi: 高架 浪 ＿ ， 阿拉 乘 地铁 去 。
+    en: 'The elevated road is jammed: let''s take the metro.'
+    answer: 塞车
+  say:
+  - hanzi: 今朝 地铁 老 轧 个 。
+    en: The metro is really packed today.
+  - hanzi: 我 平常 七 点 出门 。
+    en: I usually leave home at seven.
+  - hanzi: 侬 屋里 离 公司 远 伐 ？
+    en: Is your place far from the office?

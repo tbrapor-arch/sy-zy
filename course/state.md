@@ -35,3 +35,30 @@ Old Wang's day, plum rain, the lane's people, Pudong; Xiao Zhang leaves (97); Sa
 his first Shanghainese novel (100).
 
 ## Lessons written from 50 on (two lines each: what happened; what to remember)
+- **50** Sam posts in the lane's WeChat group in Shanghainese; the grandson asks about 哦 / 葛末 and 大学 / 大小.
+  Remember: the grandson calls Sam 爷叔; spellings and 文读 / 白读 are now explained, the course keeps 伐 and 介末.
+- **51** Sam's day in the new job, told to the auntie: up at six, an hour of metro, overtime, 泡饭 for breakfast.
+  Remember: the new office is far and keeps him late; he sometimes cannot sleep.
+- **52** The auntie's glasses are lost; they search the flat and find them on her head.
+  Remember: the glasses are a running joke (back at L56); position words and 辣海 for where things lie.
+- **53** Xiao Li's father slipped in the lane on a rainy day and broke his leg: Sam visits him in a Hongkou hospital.
+  Remember: a month lying down, hates his syrup; Sam calls him 爷叔; a nurse (护士) speaks.
+- **54** A typhoon in August: the auntie has Sam bring in the washing, shut the windows and block the door.
+  Remember: the old house lets water in under the door; power cuts were common in her youth.
+- **55** Xiao Zhang rehearses a job interview at a design company with Sam playing the manager.
+  Remember: she graduated in design two years ago; she is nervous but good.
+- **56** (review) The morning after the typhoon. Remember: the father goes home soon; Xiao Zhang got the job and
+  starts next month; the glasses now live by the door.
+- **57** Mahjong at Xiao Li's parents': Sam fills the fourth seat and wins his first hand.
+  Remember: they play for fun, not money; the father is back home; Sam is now called 门槛精.
+- **58** The manager marries on Saturday: Xiao Li explains the red envelope, the present, suit and tie.
+  Remember: the bride is from Suzhou and was at university with the manager; Sam gives a thousand and French chocolates.
+- **59** Dongtai Road antique market: the auntie bargains an old mirror down from 800 to 360 for Sam.
+  Remember: Sam owns the mirror; the auntie bargains for everything from now on.
+- **60** Xiao Li drags Sam to the gym; Sam gives up after two minutes of jumping; they plan a hike on Saturday.
+  Remember: Sam is tall and used to play football and basketball; Xiao Li is short and thin and swims.
+- **61** The grandson's maths homework the night before a test; Sam helps, the auntie scolds.
+  Remember: the boy is good at English, weaker at maths, loses his things; the test went well (L63).
+- **62** The auntie takes Sam to a 滑稽戏 at the Grand Theatre; he laughs all evening and misses only a line or two.
+  Remember: Sam now follows a whole show in Shanghainese; they mean to go again.
+- **63** (review) Canteen, Monday: the wedding told, the weekend planned. Remember: Sam's back still hurts from the gym.

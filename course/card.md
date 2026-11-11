@@ -21,3 +21,10 @@
 ## Notes
 - Never type a romanization: `{伐}` or `{只[ʦᴀʔ55]}` in a note shows the spelling in the learner's system.
 - A note that names a reading "everyday" or "literary" must be checked against a dictionary.
+
+## Readings (review of 50–63)
+- A reading goes into `core.tsv` only after it is checked against a printed source, tone class included: four
+  "corrections" made from memory in 1–49 were wrong (看见, 错, 又, 美国) and were undone here.
+- A book-confirmed reading that differs from the lexicon goes into `overrides.tsv` with the lesson cited (阿里 ɦᴀ,
+  勿错 and 搓 in -o, 呢 nəʔ).
+- A number used in an exercise must have been met in a dialogue first.

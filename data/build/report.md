@@ -1,8 +1,8 @@
-# Build report (2026-11-10)
+# Build report (2026-11-11)
 
-- lexicon: 95894 words · app dictionary: 6563 words · lessons: 49 · bridge: 220 characters
+- lexicon: 95916 words · app dictionary: 6649 words · lessons: 63 · bridge: 220 characters
 
-## composed (27)
+## composed (46)
 
 - 有名 → yeu-min (lesson 8 line 3)
 - 米饭 → mi-ve (lesson 8 line 7)
@@ -31,8 +31,27 @@
 - 四百 → sy-paq (lesson 32 line 4)
 - 一百 → iq-paq (lesson 32 line 8)
 - 两百 → lian-paq (lesson 34 line 7)
+- 平常 → bin-zan (lesson 51 line 9)
+- 对面 → te-mi (lesson 52 line 13)
+- 埃面 → e-mi (lesson 52 line 17)
+- 医院 → i-yoe (lesson 53 line 5)
+- 经理 → cin-li (lesson 55 line 2)
+- 办公室 → be-kon-seq (lesson 55 line 10)
+- 新娘 → shin-gnian (lesson 58 line 3)
+- 一千 → iq-chi (lesson 58 line 5)
+- 八百 → paq-paq (lesson 59 line 4)
+- 左右 → tsu-yeu (lesson 59 line 5)
+- 零头 → lin-deu (lesson 59 line 8)
+- 三百五 → se-paq-ng (lesson 59 line 10)
+- 三百八 → se-paq-paq (lesson 59 line 11)
+- 三百六 → se-paq-loq (lesson 59 line 12)
+- 一半 → iq-poe (lesson 59 line 14)
+- 健身房 → ji-sen-vaon (lesson 60 line 1)
+- 足球 → tsoq-jieu (lesson 60 line 8)
+- 考试 → khau-sy (lesson 61 line 1)
+- 电影 → di-in (lesson 62 line 10)
 
-## no gloss (6)
+## no gloss (11)
 
 - 一万 (lesson 24 line 6)
 - 廿五 (lesson 25 line 8)
@@ -40,4 +59,9 @@
 - 四百 (lesson 32 line 4)
 - 一百 (lesson 32 line 8)
 - 两百 (lesson 34 line 7)
+- 一千 (lesson 58 line 5)
+- 八百 (lesson 59 line 4)
+- 三百五 (lesson 59 line 10)
+- 三百八 (lesson 59 line 11)
+- 三百六 (lesson 59 line 12)
 

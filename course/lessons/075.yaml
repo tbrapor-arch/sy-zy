@@ -1,0 +1,209 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 75
+title:
+  en: Lost in the city
+  hanzi: 寻勿着 路
+review: false
+setting: >-
+  A Saturday afternoon. Sam has come up from the metro at People's Square by the wrong exit and has no idea which way he
+  is facing. An old man is reading his paper on a bench.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 老伯伯 ， 对勿起 ， 我 寻勿着 路 了 。
+  en: Excuse me, sir, I'm lost.
+- n: 2
+  speaker: 老伯伯
+  hanzi: 侬 要 到 阿里搭 去 ？ 搿搭 是 人民广场 。
+  en: Where do you want to go? This is People's Square.
+- n: 3
+  speaker: Sam
+  hanzi: 我 要 去 南京路 ， 是 朝 东 还是 朝 西 ？
+  en: I want to go to Nanjing Road. Is it east or west?
+- n: 4
+  speaker: 老伯伯
+  hanzi: 朝 北 ！ 侬 出口 走 错 了 ， 搿搭 是 南 面 。
+  en: 'North! You took the wrong exit: this is the south side.'
+- n: 5
+  speaker: Sam
+  hanzi: 阿是 要 回转去 ， 再 乘 一 趟 地铁 ？
+  en: Do I have to go back and take the metro again?
+- n: 6
+  speaker: 老伯伯
+  hanzi: 覅 乘 了 ， 走过去 只 要 十 分钟 。
+  en: 'No need: it''s only ten minutes on foot.'
+- n: 7
+  speaker: 老伯伯
+  hanzi: 朝 北 笔直 走 ， 第 二 个 道口 朝 右 转弯 。
+  en: Go straight north and turn right at the second crossroads.
+- n: 8
+  speaker: Sam
+  hanzi: 朝 右 ， 是伐 ？ 道口 有 一 幢 大楼 ， 对伐 ？
+  en: Right, is it? There's a tall building at the crossroads, isn't there?
+- n: 9
+  speaker: 老伯伯
+  hanzi: 是个 ， 就是 搿 幢 大楼 ， 一 楼 是 银行 。
+  en: That's right, that very building. There's a bank on the ground floor.
+- n: 10
+  speaker: Sam
+  hanzi: 我 一家头 出来 ， 东 西 南 北 侪 弄 勿 清爽 。
+  en: When I come out on my own I can't tell north from south.
+- n: 11
+  speaker: 老伯伯
+  hanzi: 上海 人 讲 路 ， 欢喜 讲 东 南 西 北 。
+  en: Shanghai people like to give directions by the compass.
+- n: 12
+  speaker: Sam
+  hanzi: 我 只 晓得 黄浦江 辣 东 面 。
+  en: All I know is that the Huangpu is to the east.
+- n: 13
+  speaker: 老伯伯
+  hanzi: 对 ！ 南京路 是 朝 东 个 ， 一直 走 到 外滩 。
+  en: Right! Nanjing Road runs east, all the way to the Bund.
+- n: 14
+  speaker: Sam
+  hanzi: 淮海路 呢 ？ 辣 南 面 还是 北 面 ？
+  en: And Huaihai Road? Is it to the south or the north?
+- n: 15
+  speaker: 老伯伯
+  hanzi: 南 面 。 徐家汇 还 要 过去 ， 辣 西 面 。
+  en: South. Xujiahui is further on, to the west.
+- n: 16
+  speaker: 老伯伯
+  hanzi: 侬 阿是 外国 人 ？ 上海 闲话 讲 得 老 好 。
+  en: Are you from abroad? You speak Shanghainese very well.
+- n: 17
+  speaker: Sam
+  hanzi: 是个 ， 法国人 。 上海 闲话 还 辣 学 。
+  en: Yes, French. I'm still learning Shanghainese.
+- n: 18
+  speaker: 老伯伯
+  hanzi: 南京路 人 多 ， 当心 侬 个 包 。
+  en: Nanjing Road is crowded. Mind your bag.
+- n: 19
+  speaker: Sam
+  hanzi: 谢谢 老伯伯 ！ 我 走过去 了 。
+  en: Thank you, sir! I'll walk over there now.
+- n: 20
+  speaker: 老伯伯
+  hanzi: 覅 再 乘 地铁 ， 侬 又 要 寻勿着 路 个 ！
+  en: Don't take the metro again, or you'll get lost again!
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    寻勿着 {寻勿着} "can't find": 寻 "to look for" + 勿着 "without success" (着 here is read zak, as in 寻着 "found"). 寻勿着路 "to be lost".
+- ref: 2
+  topic: vocab
+  text: >-
+    人民广场 "People's Square", the centre of the city, where several metro lines meet.
+- ref: 3
+  topic: grammar
+  text: >-
+    是…还是… "is it … or …?": 是朝东还是朝西？ "east or west?". 东 "east", 西 "west", 南 "south", 北 (line 4) "north".
+- ref: 4
+  topic: vocab
+  text: >-
+    南面 "the south side": 面 "side" (lesson 36), 东面, 西面, 北面. 走错 "to go the wrong way".
+- ref: 5
+  topic: grammar
+  text: >-
+    阿是 {阿是} "is it that …?" opens a yes–no question, as 伐 closes one: 阿是要回转去？ "do I have to go back?", 侬阿是外国人？ (line 16)
+    "are you from abroad?". Both are common; never use the two in the same question. 回转去 "to go back".
+- ref: 6
+  topic: vocab
+  text: >-
+    走过去 "to walk over there".
+- ref: 7
+  topic: vocab
+  text: >-
+    道口 "crossroads". 右 "right"; 左 is "left".
+- ref: 8
+  topic: grammar
+  text: >-
+    是伐？ {是伐} and 对伐？ {对伐} after a statement ask for agreement: "right?", "isn't it?". 幢 counts buildings (lesson 73), 大楼
+    "tall building".
+- ref: 9
+  topic: vocab
+  text: >-
+    一楼 "the ground floor" (lesson 64).
+- ref: 10
+  topic: vocab
+  text: >-
+    一家头 {一家头} "on one's own": 两家头 "the two of (us)", 三家头 "the three of (us)". 弄勿清爽 "can't make out".
+- ref: 11
+  topic: culture
+  text: >-
+    The old city's streets run mostly east–west and north–south, so Shanghai people give directions by the compass: 朝北走
+    "go north", 辣东面 "to the east".
+- ref: 14
+  topic: vocab
+  text: >-
+    淮海路 "Huaihai Road", the shopping street of the old French Concession.
+- ref: 15
+  topic: vocab
+  text: >-
+    徐家汇 {徐家汇} "Xujiahui", a district to the south-west. 还要过去 "further on".
+new_words:
+- hanzi: 人民广场
+  en: People's Square
+- hanzi: 南京路
+  en: Nanjing Road
+- hanzi: 东
+  en: east
+- hanzi: 西
+  en: west
+- hanzi: 北
+  en: north
+- hanzi: 南
+  en: south
+- hanzi: 阿是
+  en: is it that …?
+- hanzi: 回转去
+  en: to go back
+- hanzi: 走过去
+  en: to walk over there
+- hanzi: 道口
+  en: crossroads
+- hanzi: 右
+  en: right
+- hanzi: 是伐
+  en: is it?, right?
+- hanzi: 大楼
+  en: tall building
+- hanzi: 对伐
+  en: isn't it?, right?
+- hanzi: 一家头
+  en: on one's own
+- hanzi: 淮海路
+  en: Huaihai Road
+- hanzi: 徐家汇
+  en: Xujiahui
+- hanzi: 过去
+  en: over, past
+exercises:
+  translate:
+  - hanzi: 侬 阿是 辣 南京路 上班 ？
+    en: Do you work on Nanjing Road?
+  - hanzi: 银行 辣 道口 ， 朝 右 转弯 就 到 。
+    en: 'The bank is at the crossroads: turn right and you''re there.'
+  - hanzi: 我 一家头 去 ， 侬 覅 来 了 。
+    en: I'll go on my own, you needn't come.
+  fill:
+  - hanzi: 侬 是 法国人 ， ＿ ？
+    en: You're French, aren't you?
+    answer: 对伐
+  - hanzi: 外滩 辣 人民广场 个 ＿ 面 。
+    en: The Bund is to the east of People's Square.
+    answer: 东
+  - hanzi: 我 ＿ 路 了 ， 侬 来 接 我 。
+    en: 'I''m lost: come and get me.'
+    answer: 寻勿着
+  say:
+  - hanzi: 侬 阿是 上海 人 ？
+    en: Are you from Shanghai?
+  - hanzi: 朝 右 转弯 ， 是伐 ？
+    en: Turn right, is that it?
+  - hanzi: 我 要 回转去 了 。
+    en: I have to go back now.

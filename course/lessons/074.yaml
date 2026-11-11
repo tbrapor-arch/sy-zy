@@ -1,0 +1,214 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 74
+title:
+  en: At the tailor's
+  hanzi: 做 衣裳
+review: false
+setting: >-
+  December. The auntie wants a new padded jacket for Chinese New Year and takes Sam to the fabric market, where her tailor
+  has a stall.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: 过年 我 想 寻 裁缝 做 件 棉袄 ， 侬 陪 我 去 。
+  en: I want a tailor to make me a padded jacket for New Year. Come with me.
+- n: 2
+  speaker: Sam
+  hanzi: 为啥 勿 到 店 里 去 买 一 件 ？
+  en: Why not just buy one in a shop?
+- n: 3
+  speaker: 阿姨
+  hanzi: 店 里 个 勿但 贵 ， 而且 式样 老 难看 。
+  en: The shop ones are not only dear, they're ugly too.
+- n: 4
+  speaker: 阿姨
+  hanzi: 师傅 ， 搿 块 布 几钿 ？ 稍为 便宜 一眼 伐 ？
+  en: Master, how much is this cloth? Could you go a little lower?
+- n: 5
+  speaker: 裁缝
+  hanzi: 搿 块 布 又 软 又 厚 ， 冬天 着 老 适意 个 。
+  en: 'This cloth is soft and thick: lovely to wear in winter.'
+- n: 6
+  speaker: 裁缝
+  hanzi: 搿 块 布 一百 块 ， 做 一 件 棉袄 正好 。
+  en: This piece is a hundred, just right for a padded jacket.
+- n: 7
+  speaker: 阿姨
+  hanzi: 棉袄 外加 一 条 裤子 ， 算 一百五十 块 好 伐 ？
+  en: 'A jacket plus a pair of trousers: call it a hundred and fifty?'
+- n: 8
+  speaker: 裁缝
+  hanzi: 好个 ， 阿姨 是 老 朋友 了 。 先 量 一 量 。
+  en: All right, we're old friends. Let me measure you first.
+- n: 9
+  speaker: 裁缝
+  hanzi: 阿姨 ， 侬 欢喜 松 一眼 还是 紧 一眼 ？
+  en: Do you like it a bit loose or a bit close-fitting?
+- n: 10
+  speaker: 阿姨
+  hanzi: 稍许 大 一眼 ， 里向 还 要 着 衣裳 个 。
+  en: 'A little bigger: I''ll be wearing things underneath.'
+- n: 11
+  speaker: Sam
+  hanzi: 阿姨 ， 搿 种 式样 老 时髦 个 ， 侬 试试看 。
+  en: Auntie, this style is very fashionable. Try it.
+- n: 12
+  speaker: 阿姨
+  hanzi: 时髦 个 我 勿 要 ， 我 要 考究 、 挺括 。
+  en: I don't want fashionable. I want well-made and crisp.
+- n: 13
+  speaker: 裁缝
+  hanzi: 阿姨 懂经 ！ 挺括 个 棉袄 ， 着 十 年 也 勿 会 坏 。
+  en: You know your stuff! A crisp jacket lasts ten years.
+- n: 14
+  speaker: Sam
+  hanzi: 我 也 想 做 一 件 大衣 ， 法国 带 来 个 忒 薄 。
+  en: 'I''d like a coat made too: the one I brought from France is too thin.'
+- n: 15
+  speaker: 裁缝
+  hanzi: 先生 人 长 ， 着 大衣 一定 好看 。
+  en: 'You''re tall, sir: a coat will look good on you.'
+- n: 16
+  speaker: 阿姨
+  hanzi: 再 买 一 条 围巾 ， 我 送 拨 侬 。
+  en: 'And a scarf: that''s my present.'
+- n: 17
+  speaker: Sam
+  hanzi: 覅 ， 覅 ！ 侬 已经 帮 我 交关 忙 了 。
+  en: No, no! You've already helped me so much.
+- n: 18
+  speaker: 阿姨
+  hanzi: 冬天 冷 ， 侬 一 个 人 辣 上海 ， 我 勿 放心 。
+  en: Winter is cold and you're on your own in Shanghai. I worry.
+- n: 19
+  speaker: 裁缝
+  hanzi: 下 个 礼拜 来 拿 ， 一定 做 好 。
+  en: Come and collect them next week. They'll be ready.
+- n: 20
+  speaker: Sam
+  hanzi: 阿姨 ， 着 了 新 棉袄 ， 过年 侬 顶 时髦 了 ！
+  en: Auntie, in your new jacket you'll be the most fashionable one at New Year!
+notes:
+- ref: 1
+  topic: culture
+  text: >-
+    棉袄 {棉袄} "padded jacket": cotton-wadded, buttoned across the front, made to measure by a tailor, 裁缝, and worn for New
+    Year (过年, lesson 34). 布 (line 4) "cloth". 陪 "to go with, to keep company" (lesson 41).
+- ref: 3
+  topic: grammar
+  text: >-
+    勿但…而且… "not only … but also …": 勿但贵，而且难看 "not only dear but ugly". 而且 can also stand alone: 而且伊勿来 "and besides, he isn't
+    coming". 式样 "style, cut".
+- ref: 4
+  topic: grammar
+  text: >-
+    稍为 {稍为} + adjective + 一眼 "a little (more) …": 稍为便宜一眼 "a bit cheaper", 稍为快一眼 "a bit faster". 稍许 (line 10) is the same.
+- ref: 5
+  topic: grammar
+  text: >-
+    又…又… "both … and …": 又软又厚 "soft and thick", 又便宜又好 "cheap and good". 厚 "thick", 薄 (line 14) "thin". 着 {着} "to wear" (Mandarin
+    穿).
+- ref: 7
+  topic: grammar
+  text: >-
+    外加 {外加} "plus, on top of that": 棉袄外加一条裤子 "a jacket plus trousers"; 外加伊还勿来 "and on top of that he didn't come". 裤子 "trousers".
+    算 "to count as, to charge": 算一百五十块 "call it a hundred and fifty".
+- ref: 8
+  topic: vocab
+  text: >-
+    量 "to measure": 量一量 "take the measurements".
+- ref: 9
+  topic: vocab
+  text: >-
+    松 "loose", 紧 "tight". Of width, Shanghainese says 阔 {阔} "wide" (Mandarin 宽).
+- ref: 11
+  topic: vocab
+  text: >-
+    时髦 {时髦} "fashionable".
+- ref: 12
+  topic: vocab
+  text: >-
+    考究 {考究} "well made, of good quality; particular". 挺括 {挺括} "crisp, holding its shape" (of clothes and cloth).
+- ref: 14
+  topic: vocab
+  text: >-
+    大衣 "overcoat".
+- ref: 15
+  topic: vocab
+  text: >-
+    人长 "tall": Shanghainese says 长 "long" of a person where Mandarin says 高.
+- ref: 16
+  topic: vocab
+  text: >-
+    围巾 "scarf".
+new_words:
+- hanzi: 棉袄
+  en: padded jacket
+- hanzi: 裁缝
+  en: tailor
+- hanzi: 布
+  en: cloth
+- hanzi: 勿但
+  en: not only
+- hanzi: 而且
+  en: but also, and besides
+- hanzi: 式样
+  en: style, cut
+- hanzi: 稍为
+  en: a little, slightly
+- hanzi: 厚
+  en: thick
+- hanzi: 外加
+  en: plus, on top of that
+- hanzi: 裤子
+  en: trousers
+- hanzi: 量
+  en: to measure
+- hanzi: 紧
+  en: tight
+- hanzi: 稍许
+  en: a little
+- hanzi: 松
+  en: loose
+- hanzi: 时髦
+  en: fashionable
+- hanzi: 考究
+  en: well made
+- hanzi: 挺括
+  en: crisp
+- hanzi: 大衣
+  en: overcoat
+- hanzi: 薄
+  en: thin
+- hanzi: 围巾
+  en: scarf
+- hanzi: 冬天
+  en: winter
+- hanzi: 坏
+  en: to break, to wear out
+exercises:
+  translate:
+  - hanzi: 搿 只[ʦᴀʔ55] 饭店 勿但 便宜 ， 而且 好吃 。
+    en: This restaurant is not only cheap but good.
+  - hanzi: 侬 稍为 快 一眼 ， 来勿及 了 。
+    en: Go a bit faster, we'll be late.
+  - hanzi: 冬天 着 大衣 ， 外加 一 条 围巾 。
+    en: In winter wear a coat, plus a scarf.
+  fill:
+  - hanzi: 搿 条 裤子 忒 ＿ 了 ， 我 着 勿 进去 。
+    en: These trousers are too tight, I can't get into them.
+    answer: 紧
+  - hanzi: 伊 个 衣裳 侪 老 ＿ 个 。
+    en: Her clothes are always very fashionable.
+    answer: 时髦
+  - hanzi: 搿 件 棉袄 又 软 ＿ 厚 。
+    en: This padded jacket is soft and thick.
+    answer: 又
+  say:
+  - hanzi: 我 想 做 一 件 大衣 。
+    en: I'd like to have a coat made.
+  - hanzi: 搿 块 布 几钿 ？
+    en: How much is this cloth?
+  - hanzi: 稍为 便宜 一眼 好 伐 ？
+    en: Could you make it a little cheaper?

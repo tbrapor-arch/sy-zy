@@ -1,0 +1,219 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 71
+title:
+  en: Planning a trip
+  hanzi: 出去 旅游
+review: false
+setting: >-
+  Late September, at Xiao Zhang's. The October holiday is a week away and Sam, Xiao Zhang and A-Qiang still have not agreed
+  where to go.
+dialogue:
+- n: 1
+  speaker: 小张
+  hanzi: 国庆 假期 有 七 日[ȵiɪʔ12] ， 阿拉 出去 旅游 好 伐 ？
+  en: The National Day holiday is seven days. Shall we go on a trip?
+- n: 2
+  speaker: 阿强
+  hanzi: 好 呀 ！ 我 想 去 北京 ， 我 从来 呒没 去 过 。
+  en: Yes! I'd like to go to Beijing, I've never been.
+- n: 3
+  speaker: Sam
+  hanzi: 国庆 北京 人 多 得来 ， 我 勿 去 。
+  en: Beijing is packed at National Day. Count me out.
+- n: 4
+  speaker: 小张
+  hanzi: 要末 去 杭州 ， 要末 去 黄山 ， 侬 讲 呢 ？
+  en: Either Hangzhou or the Yellow Mountains. What do you say?
+- n: 5
+  speaker: Sam
+  hanzi: 杭州 近 ， 乘 高铁 一 个 钟头 就 到 了 。
+  en: 'Hangzhou is close: an hour on the high-speed train.'
+- n: 6
+  speaker: 阿强
+  hanzi: 黄山 远 ， 必过 老 好看 ， 我 一直 想 去 爬 山 。
+  en: The Yellow Mountains are far, but they're beautiful. I've always wanted to climb them.
+- n: 7
+  speaker: 小张
+  hanzi: 去 黄山 是 乘 飞机 还是 乘 火车 ？
+  en: Do you fly to the Yellow Mountains, or take the train?
+- n: 8
+  speaker: 阿强
+  hanzi: 乘 火车 或者 开车 ， 大概 四五 个 钟头 。
+  en: 'The train, or drive: four or five hours, roughly.'
+- n: 9
+  speaker: Sam
+  hanzi: 我 勿 会 开车 ， 侬 一 个 人 开 忒 吃力 。
+  en: I can't drive, and it's too tiring for you to drive alone.
+- n: 10
+  speaker: 小张
+  hanzi: 介末 订 高铁 票子 ， 先 到 杭州 ， 再 去 黄山 。
+  en: 'Then let''s book high-speed train tickets: Hangzhou first, then the mountains.'
+- n: 11
+  speaker: 阿强
+  hanzi: 好 主意 ！ 酒店 侬 来 订 ， 还是 我 来 订 ？
+  en: Good idea! Will you book the hotels, or shall I?
+- n: 12
+  speaker: Sam
+  hanzi: 我 来 。 要 提前 订 ， 国庆 会 贵 交关 个 。
+  en: 'I''ll do it. They have to be booked early: prices go way up at National Day.'
+- n: 13
+  speaker: 小张
+  hanzi: 身份证 覅 忘记 带 ， 乘 高铁 要 用 个 。
+  en: 'Don''t forget your ID card: you need it for the train.'
+- n: 14
+  speaker: 阿强
+  hanzi: 行李 少 带 一眼 ， 爬 山 老 吃力 个 。
+  en: 'Pack light: climbing the mountain is hard work.'
+- n: 15
+  speaker: Sam
+  hanzi: 礼拜六 早浪 出发 ， 还是 礼拜天 出发 ？
+  en: Do we leave on Saturday morning or on Sunday?
+- n: 16
+  speaker: 小张
+  hanzi: 礼拜六 。 计划 我 已经 做 好 了 ， 侬 看 地图 。
+  en: 'Saturday. I''ve already made a plan: look at the map.'
+- n: 17
+  speaker: 阿强
+  hanzi: 小张 做 事体 ， 侪 有 计划 个 。
+  en: Whatever Xiao Zhang does, she has a plan.
+- n: 18
+  speaker: Sam
+  hanzi: 落雨 呢 ？ 天气 预报 讲 国庆 要 落雨 。
+  en: And if it rains? The forecast says it will rain over the holiday.
+- n: 19
+  speaker: 小张
+  hanzi: 落雨 也 去 ， 西湖 落雨 天 更加 好看 。
+  en: 'We go anyway: West Lake is even prettier in the rain.'
+- n: 20
+  speaker: 阿强
+  hanzi: 介末 讲 好 了 ： 杭州 两 日[ȵiɪʔ12] ， 黄山 三 日[ȵiɪʔ12] 。
+  en: 'Settled, then: two days in Hangzhou, three in the mountains.'
+notes:
+- ref: 1
+  topic: culture
+  text: >-
+    国庆 "National Day", 1 October: with the weekends around it, a week off for everyone, and the busiest travel week of the
+    year. 假期 "holiday (period)". 旅游 "to travel (for pleasure), tourism": 出去旅游 "go on a trip".
+- ref: 2
+  topic: grammar
+  text: >-
+    从来呒没去过 "have never been": 从来 + 呒没 + verb + 过 (lesson 65).
+- ref: 4
+  topic: grammar
+  text: >-
+    要末…要末… {要末} "either … or …" sets out two choices: 要末侬来，要末我去 "either you come or I go". 要末 alone is "or else": 快点，要末来勿及了.
+- ref: 5
+  topic: vocab
+  text: >-
+    高铁 "high-speed rail", 火车 "train" (lesson 36), 飞机 (line 7) "plane".
+- ref: 6
+  topic: vocab
+  text: >-
+    黄山 "the Yellow Mountains", in Anhui. 山 "hill, mountain": 爬山 "to climb a mountain, to hike" (lesson 60).
+- ref: 7
+  topic: grammar
+  text: >-
+    还是 asks between choices: 乘飞机还是乘火车？ "plane or train?" (lesson 2). In a statement the word is 或者 (line 8): 乘动车或者开车 "the
+    train or the car". Mandarin works the same way.
+- ref: 8
+  topic: vocab
+  text: >-
+    大概 "roughly, probably": 大概四五个钟头 "four or five hours or so".
+- ref: 10
+  topic: vocab
+  text: >-
+    订 "to book, to order": 订票子, 订酒店. 酒店 (line 11) "hotel"; 宾馆 is also heard.
+- ref: 12
+  topic: grammar
+  text: >-
+    会 for what is bound to happen: 国庆会贵交关个 "it will be much dearer at National Day"; 要 (line 18) for what is about to happen
+    or is announced: 国庆要落雨. 提前 "in advance".
+- ref: 13
+  topic: vocab
+  text: >-
+    身份证 "identity card", needed for every train ticket in China.
+- ref: 14
+  topic: vocab
+  text: >-
+    行李 "luggage".
+- ref: 15
+  topic: vocab
+  text: >-
+    出发 "to set off".
+- ref: 16
+  topic: vocab
+  text: >-
+    计划 "plan; to plan". 地图 "map".
+- ref: 19
+  topic: vocab
+  text: >-
+    西湖 "West Lake", in Hangzhou.
+new_words:
+- hanzi: 国庆
+  en: National Day
+- hanzi: 假期
+  en: holiday
+- hanzi: 旅游
+  en: to travel; tourism
+- hanzi: 北京
+  en: Beijing
+- hanzi: 杭州
+  en: Hangzhou
+- hanzi: 黄山
+  en: the Yellow Mountains
+- hanzi: 要末
+  en: either … or; or else
+- hanzi: 高铁
+  en: high-speed rail
+- hanzi: 飞机
+  en: plane
+- hanzi: 或者
+  en: or (in statements)
+- hanzi: 大概
+  en: roughly, probably
+- hanzi: 订
+  en: to book
+- hanzi: 酒店
+  en: hotel
+- hanzi: 提前
+  en: in advance
+- hanzi: 身份证
+  en: identity card
+- hanzi: 行李
+  en: luggage
+- hanzi: 出发
+  en: to set off
+- hanzi: 计划
+  en: plan
+- hanzi: 地图
+  en: map
+- hanzi: 山
+  en: hill, mountain
+- hanzi: 西湖
+  en: West Lake
+exercises:
+  translate:
+  - hanzi: 要末 今朝 去 ， 要末 明朝 去 ， 侬 讲 。
+    en: 'Either today or tomorrow: you decide.'
+  - hanzi: 伊 大概 礼拜六 出发 。
+    en: He's probably setting off on Saturday.
+  - hanzi: 飞机 票子 要 提前 订 。
+    en: Plane tickets have to be booked in advance.
+  fill:
+  - hanzi: 侬 吃 茶 ＿ 吃 咖啡 ？
+    en: Will you have tea or coffee?
+    answer: 还是
+  - hanzi: 明朝 我 乘 地铁 ＿ 乘 公交 去 。
+    en: Tomorrow I'll go by metro or by bus.
+    answer: 或者
+  - hanzi: 侬 带 了 ＿ 伐 ？ 乘 高铁 要 用 个 。
+    en: Have you got your ID card? You need it for the train.
+    answer: 身份证
+  say:
+  - hanzi: 阿拉 国庆 出去 旅游 。
+    en: We're going on a trip at National Day.
+  - hanzi: 酒店 我 已经 订 好 了 。
+    en: I've already booked the hotel.
+  - hanzi: 杭州 我 从来 呒没 去 过 。
+    en: I've never been to Hangzhou.

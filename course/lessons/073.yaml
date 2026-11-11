@@ -1,0 +1,233 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 73
+title:
+  en: When I was small
+  hanzi: 小辰光
+review: false
+setting: >-
+  A rainy afternoon. The auntie has found an old tin box while tidying, and Sam asks her what the lane was like when she
+  was a girl.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 阿姨 ， 侬 从小 就 住 辣 搿 条 弄堂 里 ？
+  en: Auntie, have you lived in this lane since you were small?
+- n: 2
+  speaker: 阿姨
+  hanzi: 我 是 辣 搿搭 生 个 ， 七十 年 了 。
+  en: I was born here. Seventy years ago.
+- n: 3
+  speaker: Sam
+  hanzi: 侬 小 个 辰光 ， 弄堂 是 啥 样子 ？
+  en: When you were small, what was the lane like?
+- n: 4
+  speaker: 阿姨
+  hanzi: 老里八早 ， 搿搭 侪 是 石库门 房子 。
+  en: Long, long ago, it was all shikumen houses here.
+- n: 5
+  speaker: 阿姨
+  hanzi: 从前 一 幢 石库门 ， 要 住 七八 家 人家 。
+  en: In those days one shikumen house had seven or eight households in it.
+- n: 6
+  speaker: Sam
+  hanzi: 七八 家 ？ 介末 哪能 住 得 落 ？
+  en: Seven or eight? How did they all fit?
+- n: 7
+  speaker: 阿姨
+  hanzi: 阿拉 一 家 五 个 人 ， 就 住 辣 亭子间 里 。
+  en: The five of us lived in the little room over the kitchen.
+- n: 8
+  speaker: 阿姨
+  hanzi: 客堂 是 大家 个 ， 灶披间 也 是 大家 用 个 。
+  en: The front room was shared, and so was the kitchen.
+- n: 9
+  speaker: Sam
+  hanzi: 天井 呢 ？ 我 看 石库门 侪 有 天井 。
+  en: And the courtyard? I see every shikumen house has one.
+- n: 10
+  speaker: 阿姨
+  hanzi: 天井 里 小囡 白相 ， 姆妈 汏 衣裳 、 生 炉子 。
+  en: The children played in the courtyard, the mothers did the washing and lit the stove.
+- n: 11
+  speaker: Sam
+  hanzi: 生 炉子 ？ 老早 烧 饭 用 煤 啊 ？
+  en: Lit the stove? You used to cook on coal?
+- n: 12
+  speaker: 阿姨
+  hanzi: 是个 ， 每日天 早浪 ， 弄堂 里 侪 是 煤 个 味道 。
+  en: Yes. Every morning the whole lane smelled of coal.
+- n: 13
+  speaker: 阿姨
+  hanzi: 还有 马桶 ， 每日天 早浪 要 拎 出去 倒 。
+  en: And the chamber pot, which had to be carried out and emptied every morning.
+- n: 14
+  speaker: Sam
+  hanzi: 侬 讲 个 搿眼 ， 我 辣 小说 里 看见 过 。
+  en: What you're describing, I've read about in novels.
+- n: 15
+  speaker: 阿姨
+  hanzi: 小说 里 写 个 ， 我 侪 做 过歇 个 。
+  en: Everything they write in novels, I did, long ago.
+- n: 16
+  speaker: Sam
+  hanzi: 侬 小 个 辰光 白相 啥 ？ 有 玩具 伐 ？
+  en: What did you play when you were small? Did you have toys?
+- n: 17
+  speaker: 阿姨
+  hanzi: 穷 ， 呒没 玩具 ， 阿拉 辣 弄堂 里 打 弹子 。
+  en: We were poor, no toys. We played marbles in the lane.
+- n: 18
+  speaker: Sam
+  hanzi: 现在 个 小囡 只 晓得 白相 手机 。
+  en: Children today only know how to play on their phones.
+- n: 19
+  speaker: 阿姨
+  hanzi: 我 想起来 了 ， 我 还 有 一 只[ʦᴀʔ55] 弹子 ， 侬 看 。
+  en: 'That reminds me: I''ve still got one marble. Look.'
+- n: 20
+  speaker: Sam
+  hanzi: 侬 还 记得 ？ 搿 只[ʦᴀʔ55] 弹子 长远 了 ！
+  en: You still remember? That marble must be ancient!
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    从小 "since childhood": 伊从小辣上海 "she's been in Shanghai since she was little". 生 (line 2) "to be born" (出生 in writing);
+    it also means "to light (a fire)", line 10.
+- ref: 3
+  topic: grammar
+  text: >-
+    …个辰光 "when …": 侬小个辰光 "when you were small", 我去个辰光 "when I went". The clause comes first, ending in 个辰光, and the main
+    sentence follows.
+- ref: 4
+  topic: vocab
+  text: >-
+    老里八早 {老里八早} "long, long ago", stronger than 老早 (lesson 5) and 从前 (line 5) "in the past, formerly". 石库门 {石库门} "shikumen",
+    the stone-framed lane houses of old Shanghai.
+- ref: 5
+  topic: vocab
+  text: >-
+    幢 counts houses and buildings: 一幢房子.
+- ref: 6
+  topic: grammar
+  text: >-
+    住得落 "have room to live": 落 after a verb says there is space for it: 坐得落 "there is room to sit", 摆勿落 "won't fit" (吃勿落,
+    lesson 31).
+- ref: 7
+  topic: culture
+  text: >-
+    亭子间 {亭子间} "pavilion room": the small room over the kitchen at the back of a shikumen house, cheap to rent; many writers
+    of the 1930s lived in one.
+- ref: 8
+  topic: culture
+  text: >-
+    客堂 {客堂} "front room, hall", 灶披间 {灶披间} "kitchen (of a lane house)", shared by every household in the house. 大家个 "everyone's".
+- ref: 9
+  topic: vocab
+  text: >-
+    天井 "the small open courtyard" at the front of a shikumen house.
+- ref: 10
+  topic: vocab
+  text: >-
+    生炉子 "to light the stove": 炉子 "stove".
+- ref: 11
+  topic: vocab
+  text: >-
+    煤 "coal".
+- ref: 13
+  topic: culture
+  text: >-
+    马桶 "chamber pot": until the 1990s many lane houses had no toilet, and emptying the pots in the morning was part of lane
+    life. 拎 "to carry (by a handle)".
+- ref: 15
+  topic: grammar
+  text: >-
+    做过歇 {过歇} "did (it), long ago": 过歇 after a verb is a past experience now far behind, 我去过歇 "I went there once, long ago".
+    过 alone is any experience (去过), 了 a finished action (去了).
+- ref: 16
+  topic: vocab
+  text: >-
+    玩具 "toy".
+- ref: 17
+  topic: vocab
+  text: >-
+    穷 "poor". 打弹子 "to play marbles": 弹子 "marble".
+- ref: 19
+  topic: vocab
+  text: >-
+    想起来 "to remember (suddenly)": 我想起来了 "now I remember, that reminds me". 记得 (line 20) "to remember (keep in mind)".
+- ref: 20
+  topic: vocab
+  text: >-
+    长远 {长远} "a long time": 长远勿见 "long time no see".
+new_words:
+- hanzi: 从小
+  en: since childhood
+- hanzi: 小辰光
+  en: childhood
+- hanzi: 老里八早
+  en: long, long ago
+- hanzi: 石库门
+  en: shikumen (lane house)
+- hanzi: 从前
+  en: formerly
+- hanzi: 幢
+  en: (measure word for buildings)
+- hanzi: 亭子间
+  en: pavilion room
+- hanzi: 客堂
+  en: front room
+- hanzi: 灶披间
+  en: kitchen (of a lane house)
+- hanzi: 天井
+  en: courtyard
+- hanzi: 生
+  en: to be born; to light (a fire)
+- hanzi: 落
+  en: (after 得 / 勿) room for
+- hanzi: 炉子
+  en: stove
+- hanzi: 煤
+  en: coal
+- hanzi: 马桶
+  en: chamber pot
+- hanzi: 过歇
+  en: (long-past experience)
+- hanzi: 玩具
+  en: toy
+- hanzi: 穷
+  en: poor
+- hanzi: 弹子
+  en: marble
+- hanzi: 想起来
+  en: to remember
+- hanzi: 记得
+  en: to remember
+- hanzi: 长远
+  en: a long time
+exercises:
+  translate:
+  - hanzi: 我 小 个 辰光 ， 屋里 老 穷 个 。
+    en: When I was small, my family was very poor.
+  - hanzi: 伊 从小 就 住 辣 上海 。
+    en: She has lived in Shanghai since she was small.
+  - hanzi: 麻将 我 年纪 轻 个 辰光 搓 过歇 个 。
+    en: I played mahjong once, long ago, when I was young.
+  fill:
+  - hanzi: 侬 还 ＿ 伐 ？ 阿拉 辣 杭州 见 过 个 。
+    en: Do you still remember? We met in Hangzhou.
+    answer: 记得
+  - hanzi: ＿ 勿 见 ， 侬 好 伐 ？
+    en: Long time no see, how are you?
+    answer: 长远
+  - hanzi: 我 ＿ 了 ， 钥匙 辣 包 里 。
+    en: 'Now I remember: the keys are in the drawer.'
+    answer: 想起来
+  say:
+  - hanzi: 我 是 辣 法国 生 个 。
+    en: I was born in France.
+  - hanzi: 从前 搿搭 侪 是 石库门 。
+    en: This used to be all shikumen houses.
+  - hanzi: 侬 小 个 辰光 白相 啥 ？
+    en: What did you play when you were small?

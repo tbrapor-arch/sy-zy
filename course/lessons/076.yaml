@@ -1,0 +1,217 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 76
+title:
+  en: The grandparents
+  hanzi: 望望 老人
+review: false
+setting: >-
+  A Sunday in Songjiang, on the south-western edge of Shanghai. Xiao Li visits his father's mother every month, and this
+  time he has brought Sam.
+dialogue:
+- n: 1
+  speaker: 小李
+  hanzi: 阿娘 ， 搿 是 Sam ， 我 个 同事 ， 法国人 。
+  en: Grandma, this is Sam, my colleague. He's French.
+- n: 2
+  speaker: 阿娘
+  hanzi: 噢 ， 外国 朋友 ！ 快 坐 ， 吃 杯 茶 。
+  en: Oh, a friend from abroad! Sit down, have some tea.
+- n: 3
+  speaker: Sam
+  hanzi: 阿娘 好 ！ 小李 讲 侬 九十 岁 了 ， 身体 介 好 。
+  en: Hello, Grandma! Xiao Li says you're ninety, and so well.
+- n: 4
+  speaker: 阿娘
+  hanzi: 九十一 了 ！ 退休 三十 年 ， 每日天 还 自家 买 菜 。
+  en: Ninety-one! Retired thirty years, and I still do my own shopping every day.
+- n: 5
+  speaker: Sam
+  hanzi: 小李 ， 侬 外婆 辣 苏州 ， 阿娘 辣 松江 ？
+  en: Xiao Li, your grandmother on your mother's side is in Suzhou, and this one in Songjiang?
+- n: 6
+  speaker: 小李
+  hanzi: 是个 。 爷 个 姆妈 叫 阿娘 ， 姆妈 个 姆妈 叫 外婆 。
+  en: Yes. Your father's mother is 阿娘, your mother's mother is 外婆.
+- n: 7
+  speaker: 阿娘
+  hanzi: 我 养 了 三 个 儿子 ， 一 个 囡儿 。
+  en: I had three sons and one daughter.
+- n: 8
+  speaker: 小李
+  hanzi: 爷 个 阿哥 ， 我 叫 阿伯 ； 爷 个 阿弟 ， 叫 爷叔 。
+  en: My father's elder brother I call 阿伯; his younger brother, 爷叔.
+- n: 9
+  speaker: Sam
+  hanzi: 爷叔 ？ 弄堂 里 我 也 叫 人家 爷叔 个 。
+  en: 爷叔? In the lane I call people 爷叔 too.
+- n: 10
+  speaker: 小李
+  hanzi: 是个 ， 外头 人 也 好 叫 。 爷 个 阿妹 叫 孃孃 。
+  en: Yes, you can call anyone that. My father's younger sister is 孃孃.
+- n: 11
+  speaker: 阿娘
+  hanzi: 孃孃 嫁 到 苏州 去 了 ， 女婿 是 苏州 人 。
+  en: Your aunt married into Suzhou; my son-in-law is a Suzhou man.
+- n: 12
+  speaker: Sam
+  hanzi: 介末 姆妈 搿面 呢 ？ 姆妈 个 阿哥 叫 啥 ？
+  en: And on the mother's side? What do you call her elder brother?
+- n: 13
+  speaker: 小李
+  hanzi: 叫 娘舅 ， 娘舅 个 家主婆 叫 舅妈 。
+  en: 娘舅, and his wife is 舅妈.
+- n: 14
+  speaker: 阿娘
+  hanzi: 侬 姆妈 是 我 个 新妇 ， 常庄 来 照顾 我 。
+  en: Your mother is my daughter-in-law; she often comes to look after me.
+- n: 15
+  speaker: Sam
+  hanzi: 我 只 有 一 个 阿姐 ， 辣 巴黎 ， 呒没 兄弟 。
+  en: I only have an elder sister, in Paris. No brothers.
+- n: 16
+  speaker: 阿娘
+  hanzi: 侬 姓 啥 ？ 外国 人 也 有 姓 个 伐 ？
+  en: What's your surname? Do foreigners have surnames too?
+- n: 17
+  speaker: Sam
+  hanzi: 有 个 。 我 姓 Martin ， Sam 是 名字 。
+  en: We do. My surname is Martin; Sam is my first name.
+- n: 18
+  speaker: 阿娘
+  hanzi: Martin ？ 我 讲 勿 来 ， 叫 侬 小马 好 了 。
+  en: Martin? I can't say that. I'll call you Xiao Ma.
+- n: 19
+  speaker: 小李
+  hanzi: 小马 ！ 阿娘 当 侬 自家 人 了 。
+  en: Xiao Ma! Grandma counts you as family now.
+- n: 20
+  speaker: 阿娘
+  hanzi: 下趟 再 来 ， 我 烧 一 台子 菜 拨 㑚 吃 。
+  en: Come again, and I'll cook you a whole table of dishes.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    阿娘 {阿娘} "grandma (father's mother)"; the father's father is 阿爷 {阿爷}. On the mother's side: 外婆 and 外公 (lessons 36 and
+    20). 同事 "colleague".
+- ref: 4
+  topic: vocab
+  text: >-
+    退休 "to retire".
+- ref: 5
+  topic: vocab
+  text: >-
+    松江 "Songjiang", once its own town, now a district of Shanghai.
+- ref: 7
+  topic: vocab
+  text: >-
+    养 "to give birth to, to raise": 养了三个儿子 "had three sons". 儿子 "son", 囡儿 {囡儿} "daughter".
+- ref: 8
+  topic: culture
+  text: >-
+    Family names with 阿: 阿哥 "elder brother", 阿弟 "younger brother", 阿姐 "elder sister" (lesson 5), 阿妹 (line 10) "younger sister".
+    The father's brothers are 阿伯 {阿伯} (older than him) and 爷叔 (younger); 阿 here is a checked syllable.
+- ref: 10
+  topic: culture
+  text: >-
+    孃孃 {孃孃} "aunt (father's sister)". 爷叔, 阿姨 and 孃孃 are also said to people who are no relation, out of politeness.
+- ref: 11
+  topic: vocab
+  text: >-
+    女婿 "son-in-law", 新妇 {新妇} (line 14) "daughter-in-law" (Mandarin 儿媳妇). 嫁到苏州 "married into Suzhou" (嫁, lesson 58).
+- ref: 13
+  topic: vocab
+  text: >-
+    娘舅 "mother's brother" (lesson 33), 舅妈 "his wife".
+- ref: 14
+  topic: vocab
+  text: >-
+    照顾 "to look after".
+- ref: 15
+  topic: vocab
+  text: >-
+    兄弟 "brothers".
+- ref: 16
+  topic: vocab
+  text: >-
+    姓 "surname; to be surnamed": 侬姓啥？ "what's your surname?".
+- ref: 18
+  topic: grammar
+  text: >-
+    小 + surname for a younger person, 老 + surname for an older one: 小李, 小张, 老王. The grandmother makes 小马 from the first
+    sound of Martin, and 马 is a real Chinese surname.
+- ref: 19
+  topic: vocab
+  text: >-
+    当…自家人 "treat as family": 当 "to treat as" (lesson 31).
+- ref: 20
+  topic: vocab
+  text: >-
+    一台子菜 "a whole table of dishes" (台子, lesson 30).
+new_words:
+- hanzi: 阿娘
+  en: grandma (father's mother)
+- hanzi: 同事
+  en: colleague
+- hanzi: 退休
+  en: to retire
+- hanzi: 松江
+  en: Songjiang
+- hanzi: 养
+  en: to have (children), to raise
+- hanzi: 儿子
+  en: son
+- hanzi: 囡儿
+  en: daughter
+- hanzi: 阿哥
+  en: elder brother
+- hanzi: 阿伯
+  en: uncle (father's elder brother)
+- hanzi: 阿弟
+  en: younger brother
+- hanzi: 阿妹
+  en: younger sister
+- hanzi: 孃孃
+  en: aunt (father's sister)
+- hanzi: 女婿
+  en: son-in-law
+- hanzi: 舅妈
+  en: aunt (mother's brother's wife)
+- hanzi: 新妇
+  en: daughter-in-law
+- hanzi: 照顾
+  en: to look after
+- hanzi: 兄弟
+  en: brothers
+- hanzi: 姓
+  en: surname; to be surnamed
+- hanzi: 小马
+  en: Xiao Ma (a name)
+- hanzi: 老人
+  en: old people, the elderly
+exercises:
+  translate:
+  - hanzi: 我 个 阿哥 辣 北京 上班 。
+    en: My elder brother works in Beijing.
+  - hanzi: 伊 姓 张 ， 侪 叫 伊 小张 。
+    en: Her surname is Zhang; everyone calls her Xiao Zhang.
+  - hanzi: 阿娘 老 了 ， 要 人 照顾 。
+    en: Grandma is old and needs looking after.
+  fill:
+  - hanzi: 侬 ＿ 啥 ？ 我 姓 张 。
+    en: What's your surname? Mine is Zhang.
+    answer: 姓
+  - hanzi: 我 爷 个 阿哥 ， 我 叫 伊 ＿ 。
+    en: My father's elder brother I call 阿伯.
+    answer: 阿伯
+  - hanzi: 伊 有 一 个 儿子 ， 一 个 ＿ 。
+    en: She has a son and a daughter.
+    answer: 囡儿
+  say:
+  - hanzi: 我 有 一 个 阿姐 。
+    en: I have an elder sister.
+  - hanzi: 侬 有 兄弟 伐 ？
+    en: Do you have brothers?
+  - hanzi: 阿娘 九十 岁 了 。
+    en: Grandma is ninety.

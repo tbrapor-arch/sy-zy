@@ -1,0 +1,221 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 72
+title:
+  en: Hangzhou
+  hanzi: 到 杭州 去
+review: false
+setting: >-
+  The first afternoon of the holiday, on the shore of West Lake. Xiao Zhang has been ten times; Sam never. A-Qiang carries
+  the camera.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 西湖 我 是 第 一 趟 来 ， 老早 就 想 来 了 。
+  en: This is my first time at West Lake. I've wanted to come for ages.
+- n: 2
+  speaker: 小张
+  hanzi: 西湖 我 来 过 十 趟 了 ， 还是 欢喜 。
+  en: I've been to West Lake ten times, and I still love it.
+  lit: West Lake I have come ten times, still like (it)
+- n: 3
+  speaker: 阿强
+  hanzi: 绕 西湖 走 一 圈 ， 要 三 个 钟头 。
+  en: Walking round the whole lake takes three hours.
+- n: 4
+  speaker: Sam
+  hanzi: 搿 座 塔 叫 啥 ？ 侬 看 ， 辣 山 浪 。
+  en: What's that pagoda called? Look, up on the hill.
+- n: 5
+  speaker: 小张
+  hanzi: 是 老 塔 ， 一千 多 年 了 ， 老 出名 个 。
+  en: It's an old pagoda, over a thousand years old, very famous.
+- n: 6
+  speaker: Sam
+  hanzi: 我 帮 㑚 拍 张 合影 ， 对牢 塔 。
+  en: Let me take a photo of you two together, with the pagoda behind.
+- n: 7
+  speaker: 阿强
+  hanzi: 太阳 要 落山 了 ， 湖 先 拍 ， 人 等 一歇 拍 。
+  en: 'The sun''s about to set: the lake first, people afterwards.'
+  lit: sun about-to set, lake first shoot, people wait a-while shoot
+- n: 8
+  speaker: 小张
+  hanzi: 夜饭 我 已经 订 好 了 ， 就 辣 湖 对面 。
+  en: I've booked dinner already, just across the lake.
+- n: 9
+  speaker: Sam
+  hanzi: 杭州 菜 我 呒没 吃 过 ， 有 啥 好吃 个 ？
+  en: I've never had Hangzhou food. What's good?
+- n: 10
+  speaker: 小张
+  hanzi: 东坡肉 ， 人人 侪 晓得 ， 侬 一定 要 尝尝 。
+  en: 'Dongpo pork: everyone knows it. You must try it.'
+- n: 11
+  speaker: 阿强
+  hanzi: 东坡肉 搭 上海 个 红烧肉 差勿多 。
+  en: Dongpo pork is much like Shanghai red-braised pork.
+- n: 12
+  speaker: Sam
+  hanzi: 明朝 做 啥 ？ 博物馆 去 伐 ？
+  en: What shall we do tomorrow? Go to the museum?
+- n: 13
+  speaker: 小张
+  hanzi: 博物馆 落雨 天 再 去 ， 天 好 去 爬 山 。
+  en: The museum can wait for a rainy day. If it's fine we'll climb the hills.
+- n: 14
+  speaker: 阿强
+  hanzi: 山 浪 侪 是 茶 ， 龙井 茶 老 出名 个 。
+  en: 'The hills are all tea: Longjing tea is famous.'
+- n: 15
+  speaker: Sam
+  hanzi: 风光 真 好 ， 怪勿得 来 个 人 介 多 。
+  en: The scenery is wonderful. No wonder so many people come.
+- n: 16
+  speaker: 小张
+  hanzi: 夜里 湖 浪 看 月亮 ， 比 白天 还 要 好看 。
+  en: At night, watching the moon over the lake is even prettier than by day.
+- n: 17
+  speaker: Sam
+  hanzi: 今朝 云 多 ， 月亮 星星 侪 看 勿 到 。
+  en: 'There''s a lot of cloud today: no moon, no stars.'
+- n: 18
+  speaker: 阿强
+  hanzi: 勿要紧 ， 明朝 夜里 再 来 看 。
+  en: Never mind, we'll come back and look tomorrow night.
+- n: 19
+  speaker: Sam
+  hanzi: 杭州 真 值得 来 ， 到处 侪 好看 。
+  en: Hangzhou is really worth coming to. It's lovely everywhere.
+- n: 20
+  speaker: 小张
+  hanzi: 我 讲 个 呀 ， 西湖 侬 看 一 趟 ， 就 会 再 来 。
+  en: What did I tell you? See West Lake once and you'll come back.
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    西湖我是第一趟来 "this is my first time at West Lake": the topic, the thing talked about, opens the sentence, and the rest says
+    something about it. Shanghainese does this all the time: 西湖我来过 (line 2), 夜饭我已经订好了 (line 8), 杭州菜我呒没吃过 (line 9).
+- ref: 2
+  topic: grammar
+  text: >-
+    The object as topic: 西湖我来过十趟了 rather than 我来过西湖十趟了. Both are possible; the first is the everyday order when the thing
+    is already in mind.
+- ref: 3
+  topic: vocab
+  text: >-
+    绕 "to go round": 绕一圈 "go round once", 圈 "circle, round". 湖 (line 7) "lake".
+- ref: 4
+  topic: vocab
+  text: >-
+    座 counts mountains, bridges, pagodas and big buildings. 塔 "pagoda, tower".
+- ref: 5
+  topic: vocab
+  text: >-
+    出名 "famous".
+- ref: 6
+  topic: vocab
+  text: >-
+    合影 "a group photo": 拍张合影 "take a photo of (us) together".
+- ref: 7
+  topic: grammar
+  text: >-
+    湖先拍，人等一歇拍 "the lake first, the people in a minute": with the topic first, two halves set side by side make a contrast.
+    太阳 "the sun", 落山 "to set (of the sun)".
+- ref: 10
+  topic: vocab
+  text: >-
+    东坡肉 "Dongpo pork", pork belly braised in wine, named after the poet Su Dongpo. 人人 "everyone".
+- ref: 12
+  topic: grammar
+  text: >-
+    博物馆去伐？ "shall we go to the museum?": the place first, then 去, with no 到 (lesson 65). 博物馆 "museum".
+- ref: 14
+  topic: vocab
+  text: >-
+    龙井茶 "Longjing (Dragon Well) tea", the green tea of the hills west of the lake.
+- ref: 15
+  topic: vocab
+  text: >-
+    风光 "scenery, view" (a little more literary than 风景). 怪勿得 {怪勿得} "no wonder".
+- ref: 16
+  topic: vocab
+  text: >-
+    月亮 "the moon", 白天 "daytime".
+- ref: 17
+  topic: vocab
+  text: >-
+    云 "cloud", 星星 "star". 看勿到 "can't be seen".
+- ref: 19
+  topic: vocab
+  text: >-
+    值得 "worth it": 值得来 "worth coming". 到处 "everywhere".
+new_words:
+- hanzi: 绕
+  en: to go round
+- hanzi: 圈
+  en: circle, round
+- hanzi: 座
+  en: (measure word for mountains, buildings)
+- hanzi: 塔
+  en: pagoda
+- hanzi: 出名
+  en: famous
+- hanzi: 合影
+  en: group photo
+- hanzi: 太阳
+  en: the sun
+- hanzi: 落山
+  en: to set (of the sun)
+- hanzi: 湖
+  en: lake
+- hanzi: 东坡肉
+  en: Dongpo pork
+- hanzi: 人人
+  en: everyone
+- hanzi: 博物馆
+  en: museum
+- hanzi: 龙井
+  en: Longjing (tea)
+- hanzi: 风光
+  en: scenery, view
+- hanzi: 怪勿得
+  en: no wonder
+- hanzi: 月亮
+  en: the moon
+- hanzi: 白天
+  en: daytime
+- hanzi: 云
+  en: cloud
+- hanzi: 星星
+  en: star
+- hanzi: 值得
+  en: worth it
+- hanzi: 到处
+  en: everywhere
+exercises:
+  translate:
+  - hanzi: 搿 只[ʦᴀʔ55] 电影 我 看 过 两 趟 了 。
+    en: I've seen this film twice.
+  - hanzi: 太阳 落山 了 ， 阿拉 屋里 去 。
+    en: The sun has set, let's go home.
+  - hanzi: 搿 只[ʦᴀʔ55] 博物馆 值得 去 看看 。
+    en: This museum is worth a visit.
+  fill:
+  - hanzi: 夜里 云 少 ， 星星 老 多 ， ＿ 也 老 亮 。
+    en: 'Few clouds tonight: lots of stars, and a bright moon.'
+    answer: 月亮
+  - hanzi: 伊 每日天 锻炼 ， ＿ 身体 介 好 。
+    en: 'He runs every day: no wonder he is so fit.'
+    answer: 怪勿得
+  - hanzi: 上海 ＿ 侪 是 人 。
+    en: There are people everywhere in Shanghai.
+    answer: 到处
+  say:
+  - hanzi: 杭州 菜 我 吃 过 了 。
+    en: I've had Hangzhou food.
+  - hanzi: 搿 座 山 老 出名 个 。
+    en: This mountain is very famous.
+  - hanzi: 阿拉 拍 张 合影 。
+    en: Let's take a photo together.

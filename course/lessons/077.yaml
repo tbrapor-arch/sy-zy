@@ -1,0 +1,123 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 77
+title:
+  en: Review
+  hanzi: 复习
+review: true
+setting: >-
+  Mid-December, a café near the office. Sam turns up in his new overcoat; Xiao Zhang has not seen him since the trip.
+dialogue:
+- n: 1
+  speaker: 小张
+  hanzi: 侬 搿 件 大衣 老 挺括 ， 阿是 新 做 个 ？
+  en: That coat looks really sharp. Is it new?
+- n: 2
+  speaker: Sam
+  hanzi: 是个 ， 阿姨 带 我 到 裁缝 搭 去 做 个 。
+  en: It is. The auntie took me to her tailor's to have it made.
+- n: 3
+  speaker: 小张
+  hanzi: 式样 又 时髦 又 考究 ， 阿姨 真 懂经 。
+  en: 'The style is fashionable and well made: the auntie knows her stuff.'
+- n: 4
+  speaker: Sam
+  hanzi: 礼拜天 我 到 松江 去 了 ， 望 小李 个 阿娘 。
+  en: On Sunday I went to Songjiang to see Xiao Li's grandmother.
+- n: 5
+  speaker: 小张
+  hanzi: 阿娘 是 爷 个 姆妈 ， 对伐 ？
+  en: 阿娘 is the father's mother, isn't she?
+- n: 6
+  speaker: Sam
+  hanzi: 对 ， 外婆 是 姆妈 个 姆妈 。 我 现在 侪 记得 了 。
+  en: Right, and 外婆 is the mother's mother. I've got them all now.
+- n: 7
+  speaker: 小张
+  hanzi: 听 小李 讲 ， 阿娘 叫 侬 小马 ？
+  en: Xiao Li says his grandmother calls you Xiao Ma?
+- n: 8
+  speaker: Sam
+  hanzi: 是个 ， 我 现在 是 小马 了 。
+  en: That's right. I'm Xiao Ma now.
+- n: 9
+  speaker: 小张
+  hanzi: 礼拜六 侬 阿是 辣 人民广场 寻勿着 路 ？
+  en: Is it true you got lost at People's Square on Saturday?
+- n: 10
+  speaker: Sam
+  hanzi: 出口 走 错 了 ， 东 西 南 北 侪 弄 勿 清爽 。
+  en: I took the wrong exit and couldn't tell north from south.
+- n: 11
+  speaker: 小张
+  hanzi: 下趟 侬 要末 带 地图 ， 要末 打 电话 拨 我 。
+  en: Next time either take a map or ring me.
+- n: 12
+  speaker: Sam
+  hanzi: 西湖 我 还 想 去 ， 春天 侬 有 空 伐 ？
+  en: I'd like to go to West Lake again. Are you free in spring?
+- n: 13
+  speaker: 小张
+  hanzi: 春天 我 要 去 北京 ， 或者 去 黄山 。
+  en: In spring I'm going to Beijing, or the Yellow Mountains.
+- n: 14
+  speaker: Sam
+  hanzi: 黄山 阿拉 去 过 了 ， 北京 还 呒没 去 过 。
+  en: We've been to the Yellow Mountains; Beijing we haven't done yet.
+- n: 15
+  speaker: 小张
+  hanzi: 介末 北京 ！ 阿强 也 一直 想 去 。
+  en: Beijing it is, then! A-Qiang has always wanted to go.
+- n: 16
+  speaker: Sam
+  hanzi: 昨日 阿姨 拿 出来 一 只[ʦᴀʔ55] 老 弹子 ， 六十 年 了 。
+  en: Yesterday the auntie brought out an old marble, sixty years old.
+- n: 17
+  speaker: 小张
+  hanzi: 是 阿姨 小辰光 白相 过歇 个 ？
+  en: One she played with as a little girl?
+- n: 18
+  speaker: Sam
+  hanzi: 是个 。 伊 讲 从前 一 幢 石库门 要 住 七八 家 。
+  en: Yes. She says one shikumen house used to hold seven or eight families.
+- n: 19
+  speaker: 小张
+  hanzi: 我 外婆 也 讲 过 ， 从前 苦 是 苦 ， 人 老 开心 。
+  en: 'My grandmother says so too: life was hard, but people were happy.'
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    Review of lessons 71–76. Choices: 还是 in questions, 或者 in statements, 要末…要末 (71). The topic first: 西湖我还想去 (72). The past:
+    V了, V过, and V过歇 for long ago (73). Adding up: 勿但…而且, 又…又, 外加, and 稍为 + adjective + 一眼 (74). 阿是 and the tags 是伐, 对伐 (75).
+    Family names with 阿, 小 / 老 + surname (76).
+- ref: 2
+  topic: grammar
+  text: >-
+    裁缝搭 "at the tailor's": a person + 搭 "the place of": 阿姨搭 "the auntie's", 我搭 "my place".
+new_words: []
+exercises:
+  translate:
+  - hanzi: 要末 侬 来 ， 要末 我 去 ， 侪 可以 。
+    en: 'Either you come or I go: either is fine.'
+  - hanzi: 搿 件 衣裳 勿但 贵 ， 而且 难看 。
+    en: This garment is not only dear but ugly.
+  - hanzi: 伊 阿是 侬 个 阿哥 ？
+    en: Is he your elder brother?
+  fill:
+  - hanzi: 侬 去 北京 ＿ 去 杭州 ？
+    en: Are you going to Beijing or Hangzhou?
+    answer: 还是
+  - hanzi: 搿 块 布 又 软 又 ＿ 。
+    en: This cloth is soft and thick.
+    answer: 厚
+  - hanzi: 我 姆妈 个 阿哥 ， 我 叫 伊 ＿ 。
+    en: My mother's elder brother I call 娘舅.
+    answer: 娘舅
+  say:
+  - hanzi: 西湖 我 去 过 了 。
+    en: I've been to West Lake.
+  - hanzi: 侬 阿是 法国人 ？
+    en: Are you French?
+  - hanzi: 我 有 一 个 阿妹 。
+    en: I have a younger sister.

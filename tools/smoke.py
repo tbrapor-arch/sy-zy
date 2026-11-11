@@ -10,7 +10,7 @@ from playwright.async_api import async_playwright
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 URL = (ROOT / 'app/dist/index.html').as_uri()
-PAGES = ['lessons', 'lesson-0', 'lesson-1', 'lesson-7', 'review', 'lists', 'dict', 'drills', 'bridge', 'settings', 'books', 'read', 'video', 'vid-kaixin-1']
+PAGES = ['lessons', 'lesson-0', 'lesson-1', 'lesson-7', 'wave-1', 'lesson-50', 'review', 'lists', 'dict', 'drills', 'bridge', 'settings', 'books', 'read', 'video', 'vid-kaixin-1']
 SHOTS = sys.argv[sys.argv.index('--shots') + 1] if '--shots' in sys.argv else None
 
 

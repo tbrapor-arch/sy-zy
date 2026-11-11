@@ -30,7 +30,14 @@ const ROM_NAME = Object.fromEntries(ROMS);
 // progress: lesson id -> date finished
 const doneAt = store.get('doneAt', {});
 const done = new Set(Object.keys(doneAt).map(Number));
-function saveDone() { store.set('doneAt', doneAt); }
+// second wave (as in Tsheh-tû): from lesson 50, each lesson brings back lesson N-49 in active mode. lesson id -> date done
+const waveAt = store.get('waveAt', {});
+const WAVE_OFF = 49;       // 49 = 7 x 7, so a review's wave is brought by a review
+let WAVE = false;          // true on #wave-N: lesson N shown in active mode
+function setWave(id, on) { if (on) waveAt[id] = today(); else delete waveAt[id]; saveDone(); }
+function saveDone() { store.set('doneAt', doneAt); store.set('waveAt', waveAt); }
+// the first lesson whose second wave is not done and whose lesson N+49 is done
+function nextWave() { for (const l of DATA.lessons) { if (waveAt[l.id]) continue; return done.has(l.id + WAVE_OFF) ? l : null; } return null; }
 let deck = store.get('deck', {});
 // the flashcard system (Leitner review deck) is switched off for now: its code and the saved deck stay, finished lessons
 // still add their words to the deck, but nothing about it is shown. Set to true to bring it back.
@@ -256,9 +263,10 @@ function route() {
   const h = location.hash.slice(1) || 'lessons';
   if (!route.keepSheet) closeSheet();
   let m;
+  WAVE = false;
   if (h === 'lessons') return showLessons();
   if (h === 'lesson-0') return showLesson0();
-  if ((m = h.match(/^lesson-(\d+)$/))) { const L = DATA.lessons.find(l => l.id === +m[1]); if (L) { store.set('last', L.id); return showLesson(L); } }
+  if ((m = h.match(/^(lesson|wave)-(\d+)$/))) { const L = DATA.lessons.find(l => l.id === +m[2]); if (L) { WAVE = m[1] === 'wave'; store.set('last', L.id); return showLesson(L); } }
   if (h === 'dict') return showDict();
   if (h === 'lists') return showLists();
   if ((m = h.match(/^list-(.+)$/))) return showList(decodeURIComponent(m[1]));
@@ -294,12 +302,13 @@ function renderTabs(cur) {
 function showLessons() {
   renderTabs('lessons');
   const next = DATA.lessons.find(l => !done.has(l.id));
-  const last = store.get('last', null), dt = Object.values(doneAt).filter(d => d === today()).length, st = streak();
+  const last = store.get('last', null), wv = nextWave(), dt = Object.values(doneAt).filter(d => d === today()).length, st = streak();
   const tile = l => {
     const st = done.has(l.id) ? 'done' : (next && next.id === l.id ? 'next' : '');
-    return `<button class="lt ${st} ${l.review ? 'rev' : ''}" data-go="lesson-${l.id}" aria-label="Lesson ${l.id}: ${esc(l.title.en)}${done.has(l.id) ? ', done' : ''}"><span class="ln">${done.has(l.id) ? '✓ ' : ''}${l.id}</span><span class="lh">${esc(T(l.title))}</span></button>`;
+    return `<button class="lt ${st} ${l.review ? 'rev' : ''}" data-go="lesson-${l.id}" aria-label="Lesson ${l.id}: ${esc(l.title.en)}${done.has(l.id) ? ', done' : ''}${waveAt[l.id] ? ', second wave done' : ''}"><span class="ln">${done.has(l.id) ? '✓ ' : ''}${l.id}</span><span class="lh">${esc(T(l.title))}</span></button>`;
   };
-  const journal = Object.entries(doneAt).filter(x => x[1]).sort((a, b) => b[1].localeCompare(a[1]) || b[0] - a[0]);
+  const journal = Object.entries(doneAt).map(([n, d]) => [d, +n, 'lesson']).concat(Object.entries(waveAt).map(([n, d]) => [d, +n, 'wave']))
+    .filter(x => x[0]).sort((a, b) => b[0].localeCompare(a[0]) || b[1] - a[1]);
   const byId = Object.fromEntries(DATA.lessons.map(l => [l.id, l]));
   $('#main').innerHTML = `<div class="col">
     <div class="head"><span class="eyebrow">Course</span><h1>${esc(hzt('课程'))}</h1>
@@ -310,12 +319,15 @@ function showLessons() {
       <div class="nc-main"><span class="nc-n">${next.id}</span><span class="nc-t"><span class="han">${esc(T(next.title))}</span><span class="rom sub">${esc(lineRom(next.title.tokens))} · ${esc(next.title.en)}</span></span>
         <button class="btn" data-go="lesson-${next.id}">${last === next.id ? 'Resume' : 'Start'} →</button></div></div>`
       : `<div class="card raised"><span class="eyebrow">All written lessons are done</span><span>New lessons will appear here as they are written.</span></div>`}
+    ${wv ? `<div class="card wave"><span class="eyebrow">${wv.review ? 'Review · second wave' : 'Second wave'}</span>
+      <div class="nc-main"><span class="nc-n">${wv.id}</span><span class="nc-t"><span class="han">${esc(T(wv.title))}</span><span class="rom sub">${esc(wv.title.en)} · English first, say it in Shanghainese</span></span>
+        <button class="btn line" data-go="wave-${wv.id}">Do it →</button></div></div>` : ''}
     <button class="item" data-go="lesson-0"><span class="no">0</span><span><span class="tt">${esc(hzt('读拼音'))}</span><br><span class="ts">The spellings · start here</span></span><span class="chev">›</span></button>
     ${Module.bookcourse ? `<button class="item" data-go="bookcourse"><span class="no han">${esc(hzt('课'))}</span><span><span class="tt">Book course</span><br><span class="ts">Your course book, with its audio</span></span><span class="chev">›</span></button>` : ''}
     <div class="lgrid">${DATA.lessons.map(tile).join('')}</div>
-    <p class="sub" style="margin:0;font-size:.85rem">Every 7th lesson (复习) is a review. Each lesson: a short dialogue to read and understand (passive phase), notes, the new words and a few exercises. ${CARDS ? 'Mark it done and its words go into your review deck.' : 'Mark it done when you have finished it.'}</p>
+    <p class="sub" style="margin:0;font-size:.85rem">Every 7th lesson (复习) is a review. From lesson 50 the second wave starts: each lesson you finish brings back lesson N−49 in active mode (English first, you say the Shanghainese). Each lesson: a short dialogue to read and understand (passive phase), notes, the new words and a few exercises. ${CARDS ? 'Mark it done and its words go into your review deck.' : 'Mark it done when you have finished it.'}</p>
     <details class="journal"><summary><span class="han">${esc(hzt('日记'))}</span> Journal (${journal.length})</summary>
-      ${journal.length ? `<ul>${journal.map(([n, d]) => `<li><time>${fmtDate(d)}</time><button class="linkish" data-go="lesson-${n}">Lesson ${n} · ${esc(byId[n] ? byId[n].title.en : '')}</button></li>`).join('')}</ul>`
+      ${journal.length ? `<ul>${journal.map(([d, n, k]) => `<li><time>${fmtDate(d)}</time><button class="linkish" data-go="${k}-${n}">${k === 'wave' ? 'Second wave · ' : ''}Lesson ${n} · ${esc(byId[n] ? byId[n].title.en : '')}</button></li>`).join('')}</ul>`
         : '<p class="sub">Lessons you finish show up here with their date.</p>'}</details>
   </div>`;
   wireGo($('#main'));
@@ -374,24 +386,28 @@ function showLesson(L) {
   const speakers = [...new Set(L.lines.map(l => l.speaker))];
   const ids = DATA.lessons.map(l => l.id), at = ids.indexOf(L.id);
   const prev = ids[at - 1], nxt = ids[at + 1];
-  const chips = [['dlg', 'Dialogue'], ['sec-notes', 'Notes'], ['sec-words', 'New words'], ['sec-ex', 'Practice']];
+  const chips = WAVE ? [] : [['dlg', 'Dialogue'], ['sec-notes', 'Notes'], ['sec-words', 'New words'], ['sec-ex', 'Practice']];
+  const wback = L.id - WAVE_OFF, kind = WAVE ? 'wave' : 'lesson';
   $('#main').innerHTML = `<div class="col mode-${prefs.mode}">
     <div class="lbar"><button class="icon" data-go="lessons" aria-label="Back to lessons">←</button>
-      <span class="where">Lesson ${L.id} · ${esc(L.title.en)}</span>
-      <button class="icon" data-go="lesson-${prev}" aria-label="Previous lesson" ${prev ? '' : 'disabled'}>‹</button>
-      <button class="icon" data-go="lesson-${nxt}" aria-label="Next lesson" ${nxt ? '' : 'disabled'}>›</button></div>
-    <div class="head"><span class="eyebrow">Lesson ${L.id}${L.review ? ' · Review' : ''}</span>
+      <span class="where">${WAVE ? '2nd wave · ' : ''}Lesson ${L.id} · ${esc(L.title.en)}</span>
+      <button class="icon" data-go="${kind}-${prev}" aria-label="Previous lesson" ${prev ? '' : 'disabled'}>‹</button>
+      <button class="icon" data-go="${kind}-${nxt}" aria-label="Next lesson" ${nxt ? '' : 'disabled'}>›</button></div>
+    <div class="head"><span class="eyebrow">${WAVE ? (L.review ? 'Review · second wave' : 'Second wave') + ` · Lesson ${L.id}` : `Lesson ${L.id}${L.review ? ' · Review' : ''}`}</span>
       <h1>${esc(T(L.title))}</h1><span class="rom">${esc(lineRom(L.title.tokens))} · ${esc(L.title.en)}</span></div>
-    <nav class="lnav" aria-label="Sections">${chips.map(([id, t]) => `<button data-jump="${id}">${t}</button>`).join('')}</nav>
-    <p class="setting" style="margin:0">${esc(L.setting)}</p>
-    ${L.lines.some(l => l.audio) ? `<div class="row listen"><button class="btn small line" id="playall">▶ Listen to the dialogue</button><span class="sub">Synthetic voice (Microsoft, Wu): a guide to the rhythm, not a native speaker</span></div>` : ''}
+    ${chips.length ? `<nav class="lnav" aria-label="Sections">${chips.map(([id, t]) => `<button data-jump="${id}">${t}</button>`).join('')}</nav>` : ''}
+    ${WAVE ? `<p class="wave-intro">Each line shows the English. Say it in Shanghainese out loud, then tap <b>Show Shanghainese</b> to check. Tap a word to open its card; the notes are in the normal lesson.</p>`
+      : `<p class="setting" style="margin:0">${esc(L.setting)}</p>`}
+    ${!WAVE && DATA.lessons.some(l => l.id === wback) ? `<button class="card wave" data-go="wave-${wback}"><span class="eyebrow">${L.review ? 'Review · second wave' : 'Second wave'}${waveAt[wback] ? ' · done ✓' : ''}</span><span>With this lesson, also redo <b>lesson ${wback}</b> in active mode: read the English, say it in Shanghainese.</span></button>` : ''}
+    ${!WAVE && L.lines.some(l => l.audio) ? `<div class="row listen"><button class="btn small line" id="playall">▶ Listen to the dialogue</button><span class="sub">Synthetic voice (Microsoft, Wu): a guide to the rhythm, not a native speaker</span></div>` : ''}
     ${toolbar()}
     <div class="lines" id="dlg">${L.lines.map((ln, li) => `
       <div class="sent" id="line-${ln.n}">
         <div class="who"><span class="av ${speakers.indexOf(ln.speaker) % 2 ? 'b' : ''}">${esc(ln.speaker[0])}</span>${esc(ln.speaker)}<span class="n">${ln.n}</span>${ln.audio ? `<button class="say" data-play="${li}" aria-label="Listen to line ${ln.n}">▶</button>` : ''}</div>
-        <div class="txt">${sentence(ln.tokens, 'L' + li)}</div>
-        <div class="under">${enLine(ln.en, ln.lit, 'l' + li)}${(notesBy[ln.n] || []).map(k => `<button class="nlink" data-note="${k}" aria-label="Note ${k}">${k}</button>`).join('')}</div>
+        ${WAVE ? `<div class="en act">${esc(ln.en)}</div><button class="reveal" data-tw="${li}">Show Shanghainese</button><div class="txt" id="tw-${li}" hidden>${sentence(ln.tokens, 'L' + li)}</div>` : `<div class="txt">${sentence(ln.tokens, 'L' + li)}</div>`}
+        <div class="under">${WAVE ? '' : enLine(ln.en, ln.lit, 'l' + li)}${WAVE ? [] : (notesBy[ln.n] || []).map(k => `<button class="nlink" data-note="${k}" aria-label="Note ${k}">${k}</button>`).join('')}</div>
       </div>`).join('')}</div>
+    ${WAVE ? `<div class="row"><button class="btn small quiet" id="show-all">Show all the Shanghainese</button></div>` : `
     <details class="allnotes" id="sec-notes"><summary><span class="han">${esc(hzt('注解'))}</span> All notes (${L.notes.length})</summary>
     <ol class="notes">${L.notes.map((n, i) => `<li class="note" id="note-${i + 1}"><span class="nn">${i + 1}</span><p><span class="tag">Line ${n.ref}</span>${fmt(n.text, n.sp)}</p></li>`).join('')}</ol></details>
     <h2 id="sec-words"><span class="han">${esc(hzt('新词'))}</span> New words</h2>
@@ -399,7 +415,7 @@ function showLesson(L) {
     <div class="row"><button class="btn small quiet" id="anki">Copy for Anki</button>${CARDS ? `<span class="sub" style="font-size:.85rem">${L.new_words.filter(w => deck[w]).length} of ${L.new_words.length} in your review deck</span>` : ''}</div>
     <h2 id="sec-ex"><span class="han">${esc(hzt('练习'))}</span> Practice</h2>
     <p class="sub" style="margin:0;font-size:.85rem">Type the answer in characters or in any of the three spellings; hyphens, spaces and tone numbers do not matter.</p>
-    <div class="ex">${L.exercises.map((e, i) => exHTML(e, i)).join('')}</div>
+    <div class="ex">${L.exercises.map((e, i) => exHTML(e, i)).join('')}</div>`}
     <div class="card raised finish" id="finish"></div>
   </div>`;
   const main = $('#main');
@@ -407,9 +423,11 @@ function showLesson(L) {
   $$('[data-jump]', main).forEach(b => b.onclick = () => { const el = document.getElementById(b.dataset.jump); if (el.tagName === 'DETAILS') el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
   $$('[data-note]', main).forEach(b => b.onclick = () => openNote(L, +b.dataset.note));
   $$('[data-word]', main).forEach(b => b.onclick = () => openCard(b.dataset.word));
-  $('#anki', main).onclick = e => copyText(L.new_words.map(id => { const d = DATA.dict[id]; return [d.h, d.wugniu, d.qian, d.ipa, (L.new_en || {})[id] || d.gloss || '', (d.zh || []).join('、'), `Lesson ${L.id}`].join('\t'); }).join('\n'), e.target, 'Copied · in Anki: File › Import, fields separated by Tab');
+  $$('[data-tw]', main).forEach(b => b.onclick = () => { $('#tw-' + b.dataset.tw).hidden = false; b.remove(); });
+  const sa = $('#show-all', main); if (sa) sa.onclick = () => { $$('[data-tw]', main).forEach(b => b.click()); sa.remove(); };
+  if (!WAVE) $('#anki', main).onclick = e => copyText(L.new_words.map(id => { const d = DATA.dict[id]; return [d.h, d.wugniu, d.qian, d.ipa, (L.new_en || {})[id] || d.gloss || '', (d.zh || []).join('、'), `Lesson ${L.id}`].join('\t'); }).join('\n'), e.target, 'Copied · in Anki: File › Import, fields separated by Tab');
   wireAudio(L, main);
-  wireExercises(L.exercises, main);
+  if (!WAVE) wireExercises(L.exercises, main);
   finishBlock(L);
 }
 // ---------- dialogue audio (tools/tts.py): one player; ▶ on a line plays it, "Listen" plays the lines in turn
@@ -439,6 +457,17 @@ function wireAudio(L, root) {
 }
 function finishBlock(L) {
   const box = $('#finish'), nxt = DATA.lessons.find(l => l.id > L.id), d = doneAt[L.id];
+  if (WAVE) {
+    const w = waveAt[L.id];
+    box.innerHTML = `<div><b>${w !== undefined ? `✓ Second wave done ${fmtDate(w)}` : 'Second wave done?'}</b><div class="sub" style="font-size:.9rem">The normal lesson keeps the notes and the word list.</div></div>
+      <div class="row">${w !== undefined ? '<button class="btn small quiet" id="undo">Undo</button>' : '<button class="btn" id="mark">Mark as done</button>'}
+        <button class="btn small line" data-go="lesson-${L.id}">Normal lesson</button><button class="btn small line" data-go="lessons">Lessons</button></div>`;
+    wireGo(box);
+    const mk = $('#mark', box), un = $('#undo', box);
+    if (mk) mk.onclick = () => { setWave(L.id, true); studied(); toast('Second wave marked as done'); finishBlock(L); };
+    if (un) un.onclick = () => { setWave(L.id, false); toast('Undone'); finishBlock(L); };
+    return;
+  }
   box.innerHTML = `<div><b>${d !== undefined ? `✓ Lesson done${d ? ' ' + fmtDate(d) : ''}` : 'Finished with this lesson?'}</b>
       <div class="sub" style="font-size:.9rem">${d !== undefined ? (CARDS ? 'Its new words are in your review deck. Come back to it any time.' : 'Come back to it any time.') : (CARDS ? 'Read, reveal, check the notes and do the practice. Then mark it done: its new words go into your review deck.' : 'Read, reveal, check the notes and do the practice. Then mark it done.')}</div></div>
     <div class="row">${d !== undefined ? '<button class="btn small quiet" id="undo">Undo</button>' : '<button class="btn" id="mark">Mark as done</button>'}
@@ -565,7 +594,7 @@ function openCard(id, w) {
   $('.x', sh).onclick = closeSheet;
   sh.classList.add('open'); sh.setAttribute('aria-hidden', 'false');
 }
-function rerenderCurrent() { const keep = window.scrollY; const h = location.hash.slice(1); if (/^lesson-[1-9]/.test(h) || h === 'dict' || /^read-\d+$/.test(h)) { route.keepSheet = true; route(); route.keepSheet = false; window.scrollTo(0, keep); } }
+function rerenderCurrent() { const keep = window.scrollY; const h = location.hash.slice(1); if (/^(lesson|wave)-[1-9]/.test(h) || h === 'dict' || /^read-\d+$/.test(h)) { route.keepSheet = true; route(); route.keepSheet = false; window.scrollTo(0, keep); } }
 function openNote(L, k) {
   const n = L.notes[k - 1], sh = $('#sheet'), total = L.notes.length;
   sh.innerHTML = `<div class="grab"></div>
@@ -589,7 +618,7 @@ document.addEventListener('keydown', e => {
     if (e.key === ' ' || e.key === 'Enter') click('#flip'); else if (e.key === '1') click('#again'); else if (e.key === '2') click('#good');
   } else if (h === 'bridge') {
     if (/^[1-4]$/.test(e.key)) click(`.opt:nth-child(${e.key})`); else if (e.key === ' ' || e.key === 'Enter') click('#next');
-  } else if (/^lesson-\d+$/.test(h) && !e.target.closest('.tok')) {
+  } else if (/^(lesson|wave)-\d+$/.test(h) && !e.target.closest('.tok')) {
     if (e.key === 'ArrowLeft') click('.lbar [aria-label="Previous lesson"]'); else if (e.key === 'ArrowRight') click('.lbar [aria-label="Next lesson"]');
   }
 });
@@ -598,7 +627,7 @@ document.addEventListener('click', e => {
   if (!sh.classList.contains('open') || !e.target.isConnected || sh.contains(e.target) || e.target.closest('.tok, [data-note], [data-word], [data-ann], [data-sheet], .tab')) return;
   closeSheet();
 });
-function currentTab() { const h = location.hash.slice(1) || 'lessons'; return /^(lesson|bookcourse)/.test(h) ? 'lessons' : /^(dict|lists?|list-|drills|bridge|review)/.test(h) ? 'review' : /^(video|vid-)/.test(h) ? 'video' : /^books/.test(h) ? 'books' : Module.tabOf(h) || h; }
+function currentTab() { const h = location.hash.slice(1) || 'lessons'; return /^(lesson|wave|bookcourse)/.test(h) ? 'lessons' : /^(dict|lists?|list-|drills|bridge|review)/.test(h) ? 'review' : /^(video|vid-)/.test(h) ? 'video' : /^books/.test(h) ? 'books' : Module.tabOf(h) || h; }
 
 // ---------- review deck (Leitner boxes, kept in this browser)
 function addToDeck(ids) { let n = 0; ids.forEach(id => { if (id && DATA.dict[id] && !deck[id]) { deck[id] = { box: 0, due: Date.now(), at: Date.now() }; n++; } }); store.set('deck', deck); return n; }
@@ -775,7 +804,7 @@ function showSettings() {
       <b>IPA</b> shows each syllable with the pitch it has inside its word. <b>Word tone number</b> puts Wugniu's tone class in front of each word, as Wiktionary does (⁶zaon-he-gnin): one number per word, because the first syllable sets the tune.</p>
     ${syncBlock()}
     <h2><span class="han">${esc(hzt('进度'))}</span> Your progress</h2>
-    <div class="card"><span>${done.size} lessons done · ${CARDS ? Object.keys(deck).length + ' words in review · ' : ''}${studyDays.size} days studied</span>
+    <div class="card"><span>${done.size} lessons done · ${Object.keys(waveAt).length} second-wave · ${CARDS ? Object.keys(deck).length + ' words in review · ' : ''}${studyDays.size} days studied</span>
       <span class="sub" style="font-size:.9rem">Progress is kept in this browser, and in your gist when sync is on (above). A file is a copy you can keep or move by hand.</span>
       <div class="row"><button class="btn small" id="exp">Save progress file</button><button class="btn small line" id="imp">Load progress file</button>
         <input type="file" id="imp-file" accept=".json,application/json" hidden></div></div>

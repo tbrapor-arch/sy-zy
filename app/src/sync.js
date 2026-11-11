@@ -2,15 +2,16 @@
 // One fine-grained token does both jobs: Gists read/write (sync) and Contents read on the private repo (Books tab).
 // It stays in this browser. Pull + merge when the app opens, push a few seconds after any change.
 const HOSTED = !!document.querySelector('link[rel=manifest]');
-const SYNC_KEYS = new Set(['doneAt', 'deck', 'days', 'bookNotes', 'lists', 'bookRead', 'modSync']);   // modSync: the private module's own progress, { key: { at, … } }
+const SYNC_KEYS = new Set(['doneAt', 'waveAt', 'deck', 'days', 'bookNotes', 'lists', 'bookRead', 'modSync']);   // modSync: the private module's own progress, { key: { at, … } }
 const _set = store.set.bind(store);
 store.set = (k, v) => { _set(k, v); if (SYNC_KEYS.has(k) && typeof Sync !== 'undefined') Sync.soon(); };
 
-function progressData() { return { app: 'syzy', v: 2, at: new Date().toISOString(), doneAt, deck, lists, bookNotes, days: [...studyDays], bookRead: store.get('bookRead', {}), modSync: store.get('modSync', {}), last: store.get('last', null) }; }
+function progressData() { return { app: 'syzy', v: 2, at: new Date().toISOString(), doneAt, waveAt, deck, lists, bookNotes, days: [...studyDays], bookRead: store.get('bookRead', {}), modSync: store.get('modSync', {}), last: store.get('last', null) }; }
 // merge another copy into this one: earliest finish dates, the most recently reviewed card, the latest book note
 function mergeProgress(d) {
   if (!d || d.app !== 'syzy') throw new Error('not a progress file');
   Object.entries(d.doneAt || {}).forEach(([k, v]) => { if (!(k in doneAt) || (v && (!doneAt[k] || v < doneAt[k]))) doneAt[k] = v; done.add(+k); });
+  Object.entries(d.waveAt || {}).forEach(([k, v]) => { if (!(k in waveAt) || (v && v < waveAt[k])) waveAt[k] = v; });
   Object.entries(d.deck || {}).forEach(([k, v]) => { const m = deck[k]; if (!m || (v.at || 0) > (m.at || 0) || (!v.at && !m.at && v.box > m.box)) deck[k] = v; });
   Object.entries(d.bookNotes || {}).forEach(([k, v]) => { const r = bookNotes[k]; if (!r || (v.at || '') >= (r.at || '')) bookNotes[k] = v; });
   const br = store.get('bookRead', {}); Object.entries(d.bookRead || {}).forEach(([k, v]) => { if (!br[k] || (v && v < br[k])) br[k] = v; });

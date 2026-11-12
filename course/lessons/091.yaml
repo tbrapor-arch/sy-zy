@@ -1,0 +1,132 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 91
+title:
+  en: Review
+  hanzi: 复习
+review: true
+setting: >-
+  Narrated, with a few lines spoken: one Sunday in July, after the plum rain, from Sam's first morning walk with Old Wang
+  to a late snack with his friends.
+dialogue:
+- n: 1
+  speaker: Text
+  hanzi: 出 了 黄梅 ， 上海 一记头 就 热 煞根 了 。
+  en: Once the plum rain was over, Shanghai turned scorching hot all at once.
+- n: 2
+  speaker: Text
+  hanzi: Sam 想起来 老王 个 闲话 ， 礼拜天 早浪 五 点 半 就 起来 了 。
+  en: Sam remembered Old Wang's words and got up at half past five on Sunday.
+- n: 3
+  speaker: Text
+  hanzi: 伊 先 吃 了 一 杯 热 茶 ， 再 到 公园 去 散步 。
+  en: First he had a cup of hot tea, then went for a walk in the park.
+- n: 4
+  speaker: Text
+  hanzi: 公园 里 ， 老王 一面 散步 ， 一面 唱 老 歌 。
+  en: In the park Old Wang was walking and singing old songs.
+- n: 5
+  speaker: 老王
+  hanzi: 侬 来 了 ！ 我 讲 过 ， 只要 一 个 礼拜 ， 侬 就 会 欢喜 。
+  en: 'You came! I told you: give it a week and you''ll love it.'
+- n: 6
+  speaker: Sam
+  hanzi: 虽然 五 点 半 起来 ， 但是 我 一夜天 困 得 老 好 。
+  en: Although I got up at half past five, I slept very well all night.
+- n: 7
+  speaker: Text
+  hanzi: 挨下来 ， 伊拉 一道 去 吃 大饼 油条 。
+  en: Next, they went together for flatbread and dough sticks.
+- n: 8
+  speaker: Text
+  hanzi: 摊头 浪 ， 伊拉 看见 小李 个 爷 ， 手 里 拿 了 一 包 糖 。
+  en: At the stall they saw Xiao Li's father, with a bag of sweets in his hand.
+- n: 9
+  speaker: 小李爷
+  hanzi: 香烟 我 戒脱 三 个 月 了 ， 现在 吃 糖 。
+  en: I gave up smoking three months ago. Now it's sweets.
+- n: 10
+  speaker: 老王
+  hanzi: 戒脱 末 好 ， 不过 糖 也 覅 吃 忒 多 。
+  en: Giving up is good, but don't eat too many sweets either.
+- n: 11
+  speaker: Text
+  hanzi: 中饭 以后 ， 外头 三十八 度 ， Sam 辣 屋里 开 了 电风扇 。
+  en: After lunch it was thirty-eight degrees outside, and Sam stayed in with the fan on.
+- n: 12
+  speaker: Text
+  hanzi: 下半日 ， 伊 到 阿姨 屋里 去 ， 阿姨 辣 听 老 唱片 。
+  en: In the afternoon he went to the auntie's; she was listening to her old records.
+- n: 13
+  speaker: 阿姨
+  hanzi: 搿 只[ʦᴀʔ55] 歌 个 唱法 ， 现在 个 年轻人 侪 勿 会 了 。
+  en: Young people today can't sing this song the way it should be sung.
+- n: 14
+  speaker: Sam
+  hanzi: 侬 教 我 ， 我 来 学 。
+  en: Teach me, I'll learn it.
+- n: 15
+  speaker: Text
+  hanzi: 夜里 ， 四 个 朋友 又 去 吃 夜宵 。
+  en: That night the four friends went out for a late snack again.
+- n: 16
+  speaker: Text
+  hanzi: 小张 签证 拿 到 了 ， 下个月 就 要 走 了 。
+  en: 'Xiao Zhang had her visa: she was leaving next month.'
+- n: 17
+  speaker: 阿强
+  hanzi: 勿管 侬 走 到 阿里搭 ， 侪 要 打 电话 拨 我 。
+  en: Wherever you go, you must ring me.
+- n: 18
+  speaker: 小张
+  hanzi: 只要 有 空 ， 我 就 打 。 否则 侬 又 要 瞒 我 啥 事体 了 。
+  en: Whenever I have time I'll ring. Otherwise you'll be hiding something from me again.
+- n: 19
+  speaker: 小李
+  hanzi: 索性 阿拉 一枪头 吃 到 明朝 早浪 ！
+  en: We might as well eat straight through till morning!
+- n: 20
+  speaker: Sam
+  hanzi: 勿 来三 ， 明朝 五 点 半 我 要 去 公园 。
+  en: 'No good: I have to be in the park at half past five tomorrow.'
+- n: 21
+  speaker: Text
+  hanzi: 大家 侪 笑 了 。 搿 是 Sam 一日天 里 顶 开心 个 辰光 。
+  en: They all laughed. It was the happiest moment of Sam's whole day.
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    Review of lessons 85–90. Telling things in order: 先…再…, 挨下来, 随后, 着末脚; 一日天, 一夜天 (85). Words that finish a verb: 好, 完,
+    光, 脱, 煞根 (86). 一枪头, 一记头 and 一…就 (87). Verb + 法, 一面…一面, …个辰光 (88). 虽然…但是, 不过, 倒是, 反而, 一向 (89). 只要…就, 勿管…侪, 除脱, 无论, 否则,
+    索性, 为了 (90).
+- ref: 20
+  topic: vocab
+  text: >-
+    勿来三 "no good, that won't do" (来三, lesson 57).
+new_words: []
+exercises:
+  translate:
+  - hanzi: 只要 侬 讲 ， 我 就 做 。
+    en: As long as you say so, I'll do it.
+  - hanzi: 伊 一面 走 ， 一面 打 电话 。
+    en: She was walking and phoning at the same time.
+  - hanzi: 虽然 老 热 ， 伊 还是 出去 散步 了 。
+    en: Although it was very hot, he still went out for a walk.
+  fill:
+  - hanzi: 饭 吃 ＿ 了 ， 一眼 也 呒没 了 。
+    en: The rice is all eaten, none left.
+    answer: 光
+  - hanzi: ＿ ， 伊 还是 勿 肯 来 。
+    en: In the end he still refused to come.
+    answer: 着末脚
+  - hanzi: 今朝 热 ＿ 。
+    en: It's terribly hot today.
+    answer: 煞根
+  say:
+  - hanzi: 我 一夜天 困 得 老 好 。
+    en: I slept well all night.
+  - hanzi: 勿管 啥人 侪 好 来 。
+    en: Anyone at all can come.
+  - hanzi: 侬 先 走 ， 我 随后 来 。
+    en: You go first, I'll come after.

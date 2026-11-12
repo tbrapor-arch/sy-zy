@@ -1,0 +1,231 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 86
+title:
+  en: Plum rain
+  hanzi: 黄梅天
+review: false
+setting: >-
+  Narrated: June, and three weeks of the "plum rain" that comes to Shanghai every year, told through Sam's first one and
+  the auntie's advice.
+dialogue:
+- n: 1
+  speaker: Text
+  hanzi: 每 年 六 月 ， 上海 就 进 黄梅天 了 。
+  en: Every year in June, Shanghai enters the plum-rain season.
+- n: 2
+  speaker: Text
+  hanzi: 黄梅天 勿 是 冷天 ， 也 勿 是 热天 ， 又 闷 又 潮 。
+  en: 'The plum rain is neither the cold season nor the hot one: it''s stuffy and damp.'
+- n: 3
+  speaker: Text
+  hanzi: 雨 一 落 就 是 三 个 礼拜 ， 毛毛雨 落 了 停 ， 停 了 又 落 。
+  en: 'Once the rain starts it lasts three weeks: drizzle that stops, then starts again.'
+- n: 4
+  speaker: Text
+  hanzi: Sam 第 一 年 勿 晓得 啥 叫 黄梅天 。
+  en: In his first year Sam didn't know what the plum rain was.
+- n: 5
+  speaker: Text
+  hanzi: 伊 衣裳 汏 好 晒 辣 阳台 浪 ， 三 日[ȵiɪʔ12] 也 勿 干 。
+  en: 'He washed his clothes and hung them on the balcony: three days later they still weren''t dry.'
+- n: 6
+  speaker: Text
+  hanzi: 鞋子 一直 是 湿 个 ， 墙头 也 回潮 了 。
+  en: His shoes were always wet, and the walls sweated with damp.
+- n: 7
+  speaker: 阿姨
+  hanzi: 黄梅天 ， 物事 侪 要 收 好 ， 要末 侪 烂脱 。
+  en: In the plum rain, put everything away properly, or it all goes mouldy.
+- n: 8
+  speaker: 阿姨
+  hanzi: 菜 一 顿 吃光 ， 覅 摆 到 明朝 。
+  en: 'Finish the food at one meal: don''t leave it till tomorrow.'
+- n: 9
+  speaker: Text
+  hanzi: 出门 要 带 洋伞 ， 洋伞 是 上海 人 讲 个 雨伞 。
+  en: 'You take a 洋伞 when you go out: that''s the Shanghai word for an umbrella.'
+- n: 10
+  speaker: Text
+  hanzi: 落 大 雨 个 辰光 ， 雨 打 辣 窗 浪 ， 噼噼啪啪 。
+  en: When it pours, the rain beats on the windows, pitter-patter.
+- n: 11
+  speaker: Text
+  hanzi: 夜里 还 打雷 ， 轰隆隆 ， 小囡 吓煞 了 。
+  en: At night there's thunder too, boom, and the children are terrified.
+- n: 12
+  speaker: Text
+  hanzi: 屋里 闷 得来 ， 电风扇 开 了 也 呒没 用 。
+  en: Indoors it's so stuffy that the electric fan does no good.
+- n: 13
+  speaker: Text
+  hanzi: 蚊子 也 来 了 ， 一夜天 咬 了 Sam 十 几 只 包 。
+  en: 'The mosquitoes come too: in one night they gave Sam a dozen bites.'
+- n: 14
+  speaker: Sam
+  hanzi: 搿 种 天气 ， 我 浑身 勿 适意 ， 触气 煞根 ！
+  en: This weather makes me feel awful all over. It's so annoying!
+- n: 15
+  speaker: 阿姨
+  hanzi: 覅 触气 ， 黄梅天 总归 会 过去 个 。
+  en: 'Don''t fret: the plum rain always passes.'
+- n: 16
+  speaker: Text
+  hanzi: 有 一 日[ȵiɪʔ12] 早浪 ， 阴天 呒没 了 ， 窗 外头 太阳 老 好 。
+  en: One morning the grey skies were gone and the sun was shining outside the window.
+- n: 17
+  speaker: Text
+  hanzi: 阿姨 已经 拿 被头 衣裳 侪 晒 出去 了 。
+  en: The auntie had already put all her quilts and clothes out to air.
+- n: 18
+  speaker: 阿姨
+  hanzi: 出 黄梅 了 ！ 侬 衣裳 快 点 拿 出来 晒 。
+  en: The plum rain is over! Quick, bring your clothes out to dry.
+- n: 19
+  speaker: Text
+  hanzi: 出 了 黄梅 ， 就 是 夏天 了 。
+  en: After the plum rain comes summer.
+- n: 20
+  speaker: Text
+  hanzi: 上海 个 夏天 热 煞根 ， 三十八 度 是 常庄 个 。
+  en: 'Shanghai summers are fiercely hot: thirty-eight degrees is normal.'
+- n: 21
+  speaker: Sam
+  hanzi: 冬天 冷 ， 黄梅天 潮 ， 夏天 热 ， 上海 呒没 好 天 ！
+  en: 'Cold winters, damp plum rain, hot summers: Shanghai has no good weather!'
+- n: 22
+  speaker: 阿姨
+  hanzi: 有 个 ， 秋天 ！ 十 月 个 上海 ， 顶顶 适意 。
+  en: 'Yes it does: autumn! Shanghai in October is the loveliest of all.'
+notes:
+- ref: 1
+  topic: culture
+  text: >-
+    黄梅天 {黄梅天} "the plum-rain season", from mid-June to early July, when the plums ripen; 进黄梅 "to enter", 出黄梅 (line 18) "to
+    leave the plum rain". 每年 "every year".
+- ref: 2
+  topic: vocab
+  text: >-
+    冷天 "the cold season", 热天 "the hot season". 闷 "stuffy, close", 潮 "damp, humid".
+- ref: 3
+  topic: grammar
+  text: >-
+    一…就… "as soon as, once": 雨一落就是三个礼拜 "once the rain starts, it's three weeks". 毛毛雨 "drizzle". 停 "to stop".
+- ref: 5
+  topic: grammar
+  text: >-
+    Words that finish a verb, saying how it ends: 汏好 "washed (done)", 收好 (line 7) "put away properly", 烂脱 (line 7) "rotted
+    (away)", 吃光 (line 8) "eaten up, all gone", 做完 "done, finished". 煞根 (line 14) after an adjective is "to the limit": 热煞根
+    "terribly hot".
+- ref: 6
+  topic: vocab
+  text: >-
+    鞋子 "shoes". 回潮 "to become damp again, to sweat (of walls, floors)".
+- ref: 7
+  topic: vocab
+  text: >-
+    收 "to put away, to gather in". 烂脱 "to go rotten, mouldy". 要末 "or else" (lesson 71).
+- ref: 9
+  topic: vocab
+  text: >-
+    洋伞 {洋伞} "umbrella", the Shanghai word (literally "foreign umbrella"); 雨伞 is the general one.
+- ref: 10
+  topic: grammar
+  text: >-
+    Sound words: 噼噼啪啪 {噼噼啪啪} for rain on the glass, 轰隆隆 (line 11) for thunder. They close a sentence on their own, as here.
+- ref: 11
+  topic: vocab
+  text: >-
+    打雷 "to thunder".
+- ref: 12
+  topic: vocab
+  text: >-
+    电风扇 "electric fan".
+- ref: 13
+  topic: vocab
+  text: >-
+    蚊子 "mosquito"; 包 "a bump, a bite".
+- ref: 14
+  topic: vocab
+  text: >-
+    触气 {触气} "annoying, aggravating; to be irritated". 煞根 {煞根} "extremely, to the limit".
+- ref: 15
+  topic: vocab
+  text: >-
+    过去 "to pass, to go by".
+- ref: 16
+  topic: vocab
+  text: >-
+    阴天 "overcast (day)".
+- ref: 20
+  topic: vocab
+  text: >-
+    度 "degree (of temperature)".
+- ref: 22
+  topic: vocab
+  text: >-
+    秋天 "autumn".
+new_words:
+- hanzi: 冷天
+  en: the cold season
+- hanzi: 热天
+  en: the hot season
+- hanzi: 毛毛雨
+  en: drizzle
+- hanzi: 阴天
+  en: overcast day
+- hanzi: 闷
+  en: stuffy, close
+- hanzi: 潮
+  en: damp, humid
+- hanzi: 鞋子
+  en: shoes
+- hanzi: 回潮
+  en: to become damp
+- hanzi: 烂脱
+  en: to go rotten
+- hanzi: 吃光
+  en: to eat up
+- hanzi: 洋伞
+  en: umbrella
+- hanzi: 雨伞
+  en: umbrella
+- hanzi: 噼噼啪啪
+  en: pitter-patter
+- hanzi: 轰隆隆
+  en: boom (thunder)
+- hanzi: 电风扇
+  en: electric fan
+- hanzi: 蚊子
+  en: mosquito
+- hanzi: 触气
+  en: annoying
+- hanzi: 煞根
+  en: extremely
+- hanzi: 黄梅
+  en: the plum rain
+exercises:
+  translate:
+  - hanzi: 今朝 阴天 ， 侬 带 把 洋伞 。
+    en: 'It''s overcast today: take an umbrella.'
+  - hanzi: 菜 侪 吃光 了 。
+    en: The food is all eaten.
+  - hanzi: 屋里 老 闷 ， 开 开 窗 。
+    en: 'It''s very stuffy in here: open the window.'
+  fill:
+  - hanzi: 伊 一 到 屋里 ＿ 困 了 。
+    en: As soon as he got home he went to sleep.
+    answer: 就
+  - hanzi: 夜里 有 ＿ ， 咬 了 我 交关 只 包 。
+    en: 'There were mosquitoes last night: they bit me all over.'
+    answer: 蚊子
+  - hanzi: 今朝 热 ＿ ！
+    en: It's terribly hot today!
+    answer: 煞根
+  say:
+  - hanzi: 出 黄梅 了 。
+    en: The plum rain is over.
+  - hanzi: 我 欢喜 秋天 。
+    en: I like autumn.
+  - hanzi: 鞋子 湿 了 。
+    en: My shoes are wet.

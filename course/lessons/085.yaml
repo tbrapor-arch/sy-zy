@@ -1,0 +1,236 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 85
+title:
+  en: Old Wang's day
+  hanzi: 老王 个 一日天
+review: false
+setting: >-
+  The first narrated lesson: a day in the life of Old Wang, a retired neighbour in the lane, told from morning to night.
+  At the end Sam has a word with him.
+dialogue:
+- n: 1
+  speaker: Text
+  hanzi: 老王 是 阿拉 弄堂 里 个 老 邻舍 ， 今年 七十八 岁 。
+  en: Old Wang is one of the old neighbours in our lane; he is seventy-eight this year.
+- n: 2
+  speaker: Text
+  hanzi: 伊 退休 二十 年 了 ， 日日 侪 是 老样子 。
+  en: He retired twenty years ago, and every day is the same.
+- n: 3
+  speaker: Text
+  hanzi: 早浪 五 点 半 ， 老王 就 起来 了 。
+  en: At half past five in the morning Old Wang is already up.
+- n: 4
+  speaker: Text
+  hanzi: 伊 讲 ， 早起 对 身体 好 。
+  en: He says getting up early is good for you.
+- n: 5
+  speaker: Text
+  hanzi: 先 吃 一 杯 热 茶 ， 再 戴 好 眼镜 ， 到 公园 去 。
+  en: First a cup of hot tea, then he puts on his glasses and goes to the park.
+- n: 6
+  speaker: Text
+  hanzi: 公园 里 人 老 多 ， 有 人 跳舞 ， 有 人 散步 。
+  en: 'The park is full of people: some dancing, some taking a walk.'
+- n: 7
+  speaker: Text
+  hanzi: 老王 勿 跳舞 ， 伊 讲 伊 个 骨头 吃勿消 。
+  en: 'Old Wang doesn''t dance: he says his bones couldn''t take it.'
+- n: 8
+  speaker: Text
+  hanzi: 伊 沿 湖 走 ， 一 圈 ， 两 圈 ， 三 圈 。
+  en: 'He walks round the lake: once, twice, three times.'
+- n: 9
+  speaker: Text
+  hanzi: 挨下来 ， 伊 到 摊头 浪 买 一 副 大饼 油条 。
+  en: Next, he buys a flatbread and a dough stick at the stall.
+- n: 10
+  speaker: Text
+  hanzi: 随后 ， 伊 坐 辣 门口 ， 看 一歇 新闻 。
+  en: After that he sits by his door and reads the news for a while.
+- n: 11
+  speaker: Text
+  hanzi: 伊 个 眼乌珠 勿大 好 ， 手机 要 拿 得 老 远 看 。
+  en: 'His eyes aren''t very good: he holds the phone a long way off to read it.'
+- n: 12
+  speaker: Text
+  hanzi: 中饭 吃 好 ， 伊 要 困 一 个 钟头 。
+  en: After lunch he sleeps for an hour.
+- n: 13
+  speaker: Text
+  hanzi: 下半日 四 点 ， 是 伊 一日天 里 顶 开心 个 辰光 。
+  en: Four in the afternoon is the happiest time of his whole day.
+- n: 14
+  speaker: Text
+  hanzi: 隔壁 个 老 朋友 侪 来 了 ， 大家 一道 着棋 。
+  en: His old friends from next door all come round and they play chess.
+- n: 15
+  speaker: Text
+  hanzi: 老王 着 象棋 ， 欢喜 用 手节头 敲 台子 。
+  en: When Old Wang plays chess, he likes to tap the table with his fingers.
+- n: 16
+  speaker: Text
+  hanzi: 伊 耳朵 勿大 灵 ， 讲 闲话 声音 老 大 。
+  en: His hearing isn't good, so he talks very loud.
+- n: 17
+  speaker: Text
+  hanzi: 着末脚 ， 太阳 落山 ， 伊 收 好 象棋 转去 吃 夜饭 。
+  en: In the end, at sunset, he puts the chess away and goes home for dinner.
+- n: 18
+  speaker: Sam
+  hanzi: 老伯伯 ， 侬 一日天 介 忙 ， 夜里 困 得 好 伐 ？
+  en: Mr Wang, you're busy all day long. Do you sleep well at night?
+- n: 19
+  speaker: 老王
+  hanzi: 困 得 好 ！ 一夜天 困 到 早浪 ， 勿 用 脑子 个 。
+  en: 'Very well! I sleep the whole night through: I don''t use my brain.'
+- n: 20
+  speaker: Sam
+  hanzi: 我 一夜天 困勿着 ， 脑子 里 侪 是 公司 个 事体 。
+  en: I lie awake all night with the office going round my head.
+- n: 21
+  speaker: 老王
+  hanzi: 侬 搭 我 一道 来 公园 散步 ， 一 个 礼拜 就 好 了 。
+  en: 'Come and walk in the park with me: in a week you''ll be fine.'
+- n: 22
+  speaker: Text
+  hanzi: 第 二 日[ȵiɪʔ12] 早浪 五 点 半 ， Sam 呒没 起来 。
+  en: At half past five the next morning, Sam did not get up.
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    From this lesson on, some lessons are told: the lines marked Text are a narrator, in the same Shanghainese as the dialogues.
+    老王 "Old Wang": 老 + surname for an older man (lesson 76). 邻舍 {邻舍} "neighbour".
+- ref: 2
+  topic: vocab
+  text: >-
+    日日 "every day, day after day" (每日天 is the same). 老样子 "the same as ever".
+- ref: 4
+  topic: vocab
+  text: >-
+    早起 "to get up early". 对身体好 "good for the health": 对 "for, towards".
+- ref: 5
+  topic: grammar
+  text: >-
+    Telling things in order: 先…再… "first …, then …" (lesson 66), 挨下来 (line 9) "next", 随后 (line 10) "after that", 着末脚 (line
+    17) "in the end, finally". 戴 "to put on, to wear (glasses, a hat, a watch)": clothes take 着 (lesson 74). 公园 "park".
+- ref: 6
+  topic: vocab
+  text: >-
+    跳舞 "to dance", 散步 "to take a walk".
+- ref: 7
+  topic: vocab
+  text: >-
+    骨头 "bones".
+- ref: 8
+  topic: vocab
+  text: >-
+    走 "to walk" (lesson 4); 走路 is "to go on foot".
+- ref: 9
+  topic: vocab
+  text: >-
+    挨下来 {挨下来} "next, after that": 挨 "to come in turn".
+- ref: 10
+  topic: vocab
+  text: >-
+    随后 "after that, then".
+- ref: 11
+  topic: vocab
+  text: >-
+    眼乌珠 {眼乌珠} "eyes, eyeballs", the everyday word (Mandarin 眼珠).
+- ref: 13
+  topic: vocab
+  text: >-
+    一日天 "the whole day" and 一夜天 (line 19) "the whole night": 一 + 日天 / 夜天 counts a full stretch of time.
+- ref: 14
+  topic: vocab
+  text: >-
+    着棋 {着棋} "to play chess": 着 here is the zak of 着 "to make a move", as in 着象棋 (line 15) "play Chinese chess".
+- ref: 15
+  topic: vocab
+  text: >-
+    手节头 {手节头} "finger" (Mandarin 手指头).
+- ref: 16
+  topic: vocab
+  text: >-
+    耳朵 "ear": 耳朵勿灵 "hard of hearing".
+- ref: 17
+  topic: vocab
+  text: >-
+    着末脚 {着末脚} "in the end, at last", the colloquial word for 最后.
+- ref: 19
+  topic: vocab
+  text: >-
+    脑子 "brain, mind".
+new_words:
+- hanzi: 老王
+  en: Old Wang
+- hanzi: 邻舍
+  en: neighbour
+- hanzi: 日日
+  en: every day
+- hanzi: 老样子
+  en: the same as ever
+- hanzi: 早起
+  en: to get up early
+- hanzi: 戴
+  en: to put on, to wear (glasses, a hat)
+- hanzi: 公园
+  en: park
+- hanzi: 跳舞
+  en: to dance
+- hanzi: 散步
+  en: to take a walk
+- hanzi: 骨头
+  en: bones
+- hanzi: 挨下来
+  en: next
+- hanzi: 随后
+  en: after that
+- hanzi: 眼乌珠
+  en: eyes
+- hanzi: 一日天
+  en: the whole day
+- hanzi: 着棋
+  en: to play chess
+- hanzi: 象棋
+  en: Chinese chess
+- hanzi: 手节头
+  en: finger
+- hanzi: 敲
+  en: to tap, to knock
+- hanzi: 耳朵
+  en: ear
+- hanzi: 着末脚
+  en: in the end
+- hanzi: 一夜天
+  en: the whole night
+- hanzi: 脑子
+  en: brain, mind
+exercises:
+  translate:
+  - hanzi: 先 吃 早饭 ， 再 去 上班 。
+    en: First breakfast, then work.
+  - hanzi: 我 一日天 侪 辣 屋里 。
+    en: I was at home all day.
+  - hanzi: 着末脚 ， 伊 还是 来 了 。
+    en: In the end he came after all.
+  fill:
+  - hanzi: 伊 看 手机 要 ＿ 眼镜 。
+    en: He needs glasses to read his phone.
+    answer: 戴
+  - hanzi: 吃 好 夜饭 ， 阿拉 去 公园 ＿ 。
+    en: After dinner let's go for a walk in the park.
+    answer: 散步
+  - hanzi: ＿ ， 伊 到 摊头 浪 买 早点 。
+    en: Next, he goes to the stall to buy breakfast.
+    answer: 挨下来
+  say:
+  - hanzi: 我 日日 侪 早起 。
+    en: I get up early every day.
+  - hanzi: 侬 会 着 象棋 伐 ？
+    en: Can you play Chinese chess?
+  - hanzi: 伊 耳朵 勿大 灵 。
+    en: He's a bit hard of hearing.

@@ -102,3 +102,16 @@ his first Shanghainese novel (100).
   Remember: Sam has never seen snow in Shanghai; the auntie counts herself young.
 - **84** (review) Sam cooks red-braised pork for his three friends. Remember: A-Qiang's new job came through Sam; Xiao
   Zhang is still a little cross; the auntie now says Sam "knows how to live".
+- **85** (narrated) Old Wang, 78, retired neighbour: up at 5.30, park, breakfast, news, nap, chess at four; deaf-ish.
+  Remember: he invites Sam to walk with him; Sam doesn't get up the next day (does at L91).
+- **86** (narrated) The plum rain, three weeks in June: wet washing, damp walls, mosquitoes; the auntie's advice.
+  Remember: 洋伞 is the Shanghai umbrella; the auntie loves October.
+- **87** Last metro missed: Sam, Xiao Li, A-Qiang at an all-night stall; A-Qiang eats in one go; Sam sleeps till 1 p.m.
+  Remember: a Friday; Xiao Li forgets it's the weekend.
+- **88** (narrated) The auntie's record player and the pop songs of the 1980s; she learnt the piano for a year.
+  Remember: one song is from her wedding and brings back "someone"; she does not say who.
+- **89** (narrated) Xiao Li's father gives up forty years of smoking: bad temper, sweets, then morning walks.
+  Remember: he now eats sweets; Xiao Li's mother keeps him to a regular life.
+- **90** Xiao Zhang is offered a year of study in England; the friends push her to go; A-Qiang will wait.
+  Remember: the school pays fees and living costs; visa takes two months; she worries about A-Qiang and her grandmother.
+- **91** (review, narrated) A July Sunday: Sam walks with Old Wang at 5.30; Xiao Zhang has her visa and leaves next month.

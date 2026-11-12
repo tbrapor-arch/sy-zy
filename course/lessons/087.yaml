@@ -1,0 +1,222 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 87
+title:
+  en: Late-night snacks
+  hanzi: 吃 夜宵
+review: false
+setting: >-
+  A Friday, past midnight. Sam, Xiao Li and A-Qiang have stayed too long in a bar and missed the last metro.
+dialogue:
+- n: 1
+  speaker: Text
+  hanzi: 礼拜五 夜里 ， 三 个 人 辣 酒吧 里 坐 到 十二 点 半 。
+  en: On Friday night the three of them sat in a bar until half past twelve.
+- n: 2
+  speaker: 小李
+  hanzi: 喔唷 ， 末班 地铁 呒没 了 ！
+  en: Oh no, the last metro's gone!
+- n: 3
+  speaker: 阿强
+  hanzi: 呒没 就 呒没 ， 叫 部 差头 。 我 肚皮 饿 了 。
+  en: So what, we'll get a taxi. I'm hungry.
+- n: 4
+  speaker: Sam
+  hanzi: 我 也 饿 了 。 搿 辰光 还 有 啥 地方 开 门 ？
+  en: Me too. Is anywhere still open at this hour?
+- n: 5
+  speaker: 小李
+  hanzi: 跟 我 来 ， 弄堂 门口 有 只[ʦᴀʔ55] 摊头 ， 一夜天 开 个 。
+  en: Follow me. There's a stall at the end of a lane that's open all night.
+- n: 6
+  speaker: Text
+  hanzi: 摊头 浪 人 老 多 ， 侪 是 夜 里 刚刚 下班 个 人 。
+  en: The stall was crowded with people just off the night shift.
+- n: 7
+  speaker: 摊主
+  hanzi: 三 位 要 吃 啥 ？ 有 炒面 、 馄饨 、 烤 串 。
+  en: What'll it be, you three? There's fried noodles, wontons, skewers.
+- n: 8
+  speaker: 阿强
+  hanzi: 先 来 三 碗 馄饨 ， 再 点 一 盘 炒面 。
+  en: Three bowls of wontons to start, and a plate of fried noodles.
+- n: 9
+  speaker: Text
+  hanzi: 馄饨 一 端 上来 ， 阿强 就 一枪头 吃脱 一 碗 。
+  en: As soon as the wontons arrived, A-Qiang downed a bowl in one go.
+- n: 10
+  speaker: Sam
+  hanzi: 侬 一枪头 吃光 ， 烫 伐 ？
+  en: 'You finished it in one go: wasn''t it hot?'
+- n: 11
+  speaker: 阿强
+  hanzi: 饿 了 末 ， 烫 也 勿 觉着 。
+  en: When you're hungry, you don't feel the heat.
+- n: 12
+  speaker: 小李
+  hanzi: 我 一 吃 夜宵 就 困勿着 ， 明朝 要 迟到 了 。
+  en: Every time I eat this late I can't sleep, and tomorrow I'll be late.
+- n: 13
+  speaker: Sam
+  hanzi: 明朝 礼拜六 ！ 侬 困 到 下半日 也 呒没 人 管 侬 。
+  en: Tomorrow's Saturday! You can sleep till noon and nobody'll mind.
+- n: 14
+  speaker: 小李
+  hanzi: 对 ！ 我 一 开心 就 忘记 了 。
+  en: Right! I was having such fun I forgot.
+- n: 15
+  speaker: Text
+  hanzi: 吃 好 夜宵 ， 已经 两 点 了 ， 马路 浪 一 辆 车子 也 呒没 。
+  en: When they'd eaten it was two o'clock, and there wasn't a car on the road.
+- n: 16
+  speaker: 阿强
+  hanzi: 差头 一 部 也 呒没 ， 走 转去 好 了 。
+  en: Not a single taxi. Let's walk home.
+- n: 17
+  speaker: Sam
+  hanzi: 走 转去 要 一 个 钟头 ， 我 走 到 一半 就 要 困着 了 。
+  en: 'Walking home takes an hour: I''ll be asleep halfway.'
+- n: 18
+  speaker: Text
+  hanzi: 着末脚 ， 小李 手机 浪 叫 到 一 部 车子 。
+  en: In the end Xiao Li got a car on his phone.
+- n: 19
+  speaker: Text
+  hanzi: Sam 到 屋里 ， 上床 ， 一记头 就 困着 了 。
+  en: Sam got home, went to bed and was asleep all at once.
+- n: 20
+  speaker: Text
+  hanzi: 第 二 日[ȵiɪʔ12] ， 楼高头 敲 墙头 个 声音 拿 伊 吵醒 了 。
+  en: The next day he was woken by someone knocking on a wall upstairs.
+- n: 21
+  speaker: Text
+  hanzi: 伊 醒 过来 ， 看看 手表 ： 下半日 一 点 。
+  en: 'He woke up and looked at his watch: one in the afternoon.'
+- n: 22
+  speaker: Sam
+  hanzi: 一 顿 夜宵 ， 困 了 半 日[ȵiɪʔ12] ， 下趟 覅 了 。
+  en: One late-night snack and half a day slept away. Never again.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    酒吧 "bar". 礼拜五 "Friday".
+- ref: 2
+  topic: vocab
+  text: >-
+    末班 "the last (bus, train)": 末班地铁, 末班车.
+- ref: 3
+  topic: grammar
+  text: >-
+    呒没就呒没 "if there isn't, there isn't": the same phrase twice with 就 shrugs a problem off. 饿 "hungry".
+- ref: 6
+  topic: vocab
+  text: >-
+    夜里 "at night"; 夜 alone "night".
+- ref: 7
+  topic: vocab
+  text: >-
+    炒面 "fried noodles", 烤串 "grilled skewers".
+- ref: 8
+  topic: vocab
+  text: >-
+    点 "to order (a dish)": 点菜. 盘 "plate".
+- ref: 9
+  topic: grammar
+  text: >-
+    一 + … + 头: 一枪头 {一枪头} "in one go, at one stroke", 一记头 "all at once", 一家头 (lesson 75) "on one's own". 一…就… (lesson 86)
+    "as soon as": 馄饨一端上来，阿强就… . 端 "to carry (a dish) in both hands".
+- ref: 11
+  topic: vocab
+  text: >-
+    觉着 {觉着} "to feel, to notice": 勿觉着 "not notice".
+- ref: 12
+  topic: vocab
+  text: >-
+    夜宵 "late-night snack": 吃夜宵.
+- ref: 13
+  topic: vocab
+  text: >-
+    管 "to mind, to bother about": 呒没人管侬 "nobody will bother you".
+- ref: 15
+  topic: vocab
+  text: >-
+    辆 counts vehicles; in Shanghainese 部 (lesson 9) is more usual.
+- ref: 17
+  topic: vocab
+  text: >-
+    困着 {困着} "to fall asleep": 着 is the zak of success, as in 寻着. 困勿着 "can't get to sleep" (lesson 51).
+- ref: 19
+  topic: vocab
+  text: >-
+    上床 "to go to bed".
+- ref: 20
+  topic: vocab
+  text: >-
+    吵醒 "to wake (someone) with noise": 醒 "to wake".
+- ref: 21
+  topic: vocab
+  text: >-
+    手表 "watch".
+new_words:
+- hanzi: 礼拜五
+  en: Friday
+- hanzi: 酒吧
+  en: bar
+- hanzi: 末班
+  en: the last (bus, train)
+- hanzi: 饿
+  en: hungry
+- hanzi: 夜
+  en: night
+- hanzi: 烤
+  en: to grill
+- hanzi: 串
+  en: skewer
+- hanzi: 盘
+  en: plate
+- hanzi: 端
+  en: to carry (a dish)
+- hanzi: 一枪头
+  en: in one go
+- hanzi: 夜宵
+  en: late-night snack
+- hanzi: 辆
+  en: (measure word for vehicles)
+- hanzi: 困着
+  en: to fall asleep
+- hanzi: 上床
+  en: to go to bed
+- hanzi: 吵醒
+  en: to wake (with noise)
+- hanzi: 手表
+  en: watch
+- hanzi: 醒
+  en: to wake up
+- hanzi: 炒面
+  en: fried noodles
+exercises:
+  translate:
+  - hanzi: 我 一 到 屋里 就 上床 了 。
+    en: As soon as I got home I went to bed.
+  - hanzi: 搿 碗 面 我 一枪头 吃光 了 。
+    en: I finished this bowl of noodles in one go.
+  - hanzi: 侬 覅 吵醒 小人 。
+    en: Don't wake the child.
+  fill:
+  - hanzi: 我 ＿ 了 ， 阿拉 去 吃 饭 。
+    en: 'I''m hungry: let''s go and eat.'
+    answer: 饿
+  - hanzi: 昨日 夜里 我 十二 点 就 ＿ 了 。
+    en: Last night I fell asleep at midnight.
+    answer: 困着
+  - hanzi: 侬 ＿ 菜 ， 我 去 买 酒 。
+    en: You order the dishes, I'll get the drinks.
+    answer: 点
+  say:
+  - hanzi: 我 看看 手表 。
+    en: I'll look at my watch.
+  - hanzi: 末班 地铁 几 点 ？
+    en: What time is the last metro?
+  - hanzi: 一 吃 就 困着 了 。
+    en: Fell asleep as soon as I ate.

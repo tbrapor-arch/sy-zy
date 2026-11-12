@@ -1,0 +1,220 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 90
+title:
+  en: Plans
+  hanzi: 打算
+review: false
+setting: >-
+  A Friday dinner in a small restaurant. Xiao Zhang has asked her three friends to come because she has news, and a decision
+  to make.
+dialogue:
+- n: 1
+  speaker: 小张
+  hanzi: 今朝 请 㑚 吃 饭 ， 因为 我 有 桩 事体 要 讲 。
+  en: I've invited you to dinner because I have something to tell you.
+- n: 2
+  speaker: 小张
+  hanzi: 我 拿 到 了 一 只[ʦᴀʔ55] 机会 ， 到 英国 去 读 一 年 书 。
+  en: I've been offered a chance to study in England for a year.
+- n: 3
+  speaker: 小李
+  hanzi: 啊 ？ 出国 留学 ？ 恭喜 恭喜 ， 真 是 好 事体 ！
+  en: What? Studying abroad? Congratulations, that's wonderful!
+- n: 4
+  speaker: 阿强
+  hanzi: 一 年 ？ 侬 已经 决定 了 ？ 啥 辰光 走 ？
+  en: A year? Have you already decided? When do you leave?
+- n: 5
+  speaker: 小张
+  hanzi: 还 呒没 ， 我 想 先 听 㑚 讲 ， 再 决定 。
+  en: Not yet. I want to hear what you think first, then decide.
+- n: 6
+  speaker: Sam
+  hanzi: 只要 侬 自家 想 去 ， 就 去 ， 覅 想 忒 多 。
+  en: 'As long as you want to go yourself, go: don''t think too much.'
+- n: 7
+  speaker: 小李
+  hanzi: 搿 种 机会 ， 勿管 啥人 侪 会 去 个 。
+  en: With a chance like that, anyone would go.
+- n: 8
+  speaker: 小张
+  hanzi: 必过 学费 老 贵 ， 一 年 要 二十 几 万 。
+  en: 'But the fees are very high: over two hundred thousand a year.'
+- n: 9
+  speaker: 阿强
+  hanzi: 钞票 末 ， 我 帮 侬 一道 想 办法 。
+  en: As for the money, I'll help you find a way.
+- n: 10
+  speaker: 小张
+  hanzi: 侬 刚刚 寻 到 新 工作 ， 我 勿 要 侬 个 钞票 。
+  en: 'You''ve only just found a new job: I don''t want your money.'
+- n: 11
+  speaker: Sam
+  hanzi: 学校 会 帮 侬 一眼 伐 ？ 侬 问 过 伐 ？
+  en: Will the school help you a bit? Have you asked?
+- n: 12
+  speaker: 小张
+  hanzi: 会 个 ， 除脱 学费 ， 还 拨 我 一眼 生活费 。
+  en: 'It will: besides the fees, they give me a bit to live on.'
+- n: 13
+  speaker: 小李
+  hanzi: 介末 还 有 啥 好 考虑 个 ？ 去 ！ 一定 要 去 ！
+  en: Then what is there to think about? Go! You must go!
+- n: 14
+  speaker: 小张
+  hanzi: 我 担心 阿强 ， 还 有 我 个 外婆 。
+  en: I'm worried about A-Qiang, and about my grandmother.
+- n: 15
+  speaker: 阿强
+  hanzi: 我 末 ， 侬 覅 担心 。 无论 侬 到 阿里搭 ， 我 侪 等 侬 。
+  en: Don't worry about me. Wherever you go, I'll wait for you.
+- n: 16
+  speaker: Sam
+  hanzi: 一 年 老 快 个 ， 侬 一歇 就 转来 了 。
+  en: 'A year goes very fast: you''ll be back in no time.'
+- n: 17
+  speaker: 小张
+  hanzi: 签证 要 两 个 月 ， 必须 提前 准备 。
+  en: 'The visa takes two months: I have to prepare in advance.'
+- n: 18
+  speaker: 小李
+  hanzi: 英语 呢 ？ 侬 英语 讲 得 哪能 ？
+  en: And English? How well do you speak it?
+- n: 19
+  speaker: 小张
+  hanzi: 还 可以 ， 必过 要 再 学 ， 否则 听勿懂 老师 讲 啥 。
+  en: Not bad, but I need to study more, or I won't understand the teachers.
+- n: 20
+  speaker: 阿强
+  hanzi: 索性 阿拉 一道 去 ， 我 也 去 学 英语 。
+  en: 'We might as well both go: I''ll learn English too.'
+- n: 21
+  speaker: 小张
+  hanzi: 侬 ？ 侬 英语 一 句 也 勿 会 讲 ！
+  en: You? You can't say a word of English!
+- n: 22
+  speaker: Sam
+  hanzi: 好 了 ， 为了 小张 个 将来 ， 阿拉 吃 一 杯 ！
+  en: 'All right: to Xiao Zhang''s future, let''s drink!'
+notes:
+- ref: 2
+  topic: vocab
+  text: >-
+    机会 "chance, opportunity", counted with 只. 读书 "to study (at school)": 读一年书 "study for a year". 英国 "England, Britain".
+- ref: 3
+  topic: vocab
+  text: >-
+    出国 "to go abroad", 留学 "to study abroad". 恭喜 "congratulations".
+- ref: 4
+  topic: vocab
+  text: >-
+    决定 "to decide; a decision".
+- ref: 6
+  topic: grammar
+  text: >-
+    只要…就… "as long as …, then …": 只要侬想去，就去.
+- ref: 7
+  topic: grammar
+  text: >-
+    勿管…侪… "no matter …, all …": 勿管啥人侪会去 "anyone at all would go". 无论 (line 15) is the same, more careful: 无论侬到阿里搭，我侪等侬.
+- ref: 8
+  topic: vocab
+  text: >-
+    学费 "school fees". 万 "ten thousand": 二十几万 "over two hundred thousand".
+- ref: 11
+  topic: vocab
+  text: >-
+    学校 "school, university".
+- ref: 12
+  topic: grammar
+  text: >-
+    除脱…，还… "besides …, also …": 除脱学费，还拨我生活费. Without 还 it is "except": 除脱伊，侪来了 "everyone came except him". 生活费 "living costs".
+- ref: 13
+  topic: vocab
+  text: >-
+    考虑 "to think over, to consider": 有啥好考虑个 "what is there to think about?".
+- ref: 17
+  topic: vocab
+  text: >-
+    签证 "visa". 必须 "must, have to". 准备 "to prepare" (lesson 11).
+- ref: 19
+  topic: grammar
+  text: >-
+    否则 "otherwise, or else", more careful than 要末 (lesson 71). 听勿懂 "can't understand (what is said)".
+- ref: 20
+  topic: vocab
+  text: >-
+    索性 {索性} "might as well, simply": 索性一道去 "we might as well go together".
+- ref: 22
+  topic: grammar
+  text: >-
+    为了 "for, for the sake of": 为了小张个将来 "for Xiao Zhang's future"; 为仔 (lesson 66) is the older form. 将来 "the future".
+new_words:
+- hanzi: 英国
+  en: England, Britain
+- hanzi: 出国
+  en: to go abroad
+- hanzi: 留学
+  en: to study abroad
+- hanzi: 恭喜
+  en: congratulations
+- hanzi: 决定
+  en: to decide
+- hanzi: 只要
+  en: as long as
+- hanzi: 勿管
+  en: no matter
+- hanzi: 学费
+  en: school fees
+- hanzi: 万
+  en: ten thousand
+- hanzi: 学校
+  en: school
+- hanzi: 除脱
+  en: besides, except
+- hanzi: 生活费
+  en: living costs
+- hanzi: 考虑
+  en: to consider
+- hanzi: 无论
+  en: no matter
+- hanzi: 签证
+  en: visa
+- hanzi: 必须
+  en: must
+- hanzi: 否则
+  en: otherwise
+- hanzi: 听勿懂
+  en: can't understand
+- hanzi: 索性
+  en: might as well
+- hanzi: 为了
+  en: for the sake of
+- hanzi: 将来
+  en: the future
+exercises:
+  translate:
+  - hanzi: 只要 侬 来 ， 我 就 开心 。
+    en: As long as you come, I'm happy.
+  - hanzi: 除脱 伊 ， 大家 侪 来 了 。
+    en: Everyone came except him.
+  - hanzi: 勿管 落雨 勿 落雨 ， 我 侪 去 。
+    en: Rain or no rain, I'm going.
+  fill:
+  - hanzi: 快 点 走 ， ＿ 来勿及 了 。
+    en: Hurry up, otherwise we'll be late.
+    answer: 否则
+  - hanzi: 我 还 要 ＿ 一 下 。
+    en: I need to think it over a bit more.
+    answer: 考虑
+  - hanzi: 雨 落 得 介 大 ， 阿拉 ＿ 屋里 吃 饭 。
+    en: 'It''s pouring: we might as well eat at home.'
+    answer: 索性
+  say:
+  - hanzi: 恭喜 侬 ！
+    en: Congratulations!
+  - hanzi: 我 已经 决定 了 。
+    en: I've made up my mind.
+  - hanzi: 侬 打算 出国 伐 ？
+    en: Are you planning to go abroad?

@@ -1,0 +1,228 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 89
+title:
+  en: Habits
+  hanzi: 老 习惯
+review: false
+setting: >-
+  Narrated: Xiao Li's father has smoked for forty years. His doctor and his wife have other ideas, and he gives in, after
+  his own fashion.
+dialogue:
+- n: 1
+  speaker: Text
+  hanzi: 小李 个 爷 吃 香烟 吃 了 四十 年 了 。
+  en: Xiao Li's father has smoked for forty years.
+- n: 2
+  speaker: Text
+  hanzi: 伊 一向 讲 ： 香烟 是 伊 个 老 朋友 。
+  en: He has always said that cigarettes are his old friends.
+- n: 3
+  speaker: Text
+  hanzi: 早浪 一 起来 ， 伊 先 点 一 根 香烟 。
+  en: As soon as he gets up in the morning, he lights a cigarette.
+- n: 4
+  speaker: Text
+  hanzi: 小李 姆妈 从来 勿 欢喜 屋里 有 烟 个 味道 。
+  en: Xiao Li's mother has never liked the smell of smoke in the house.
+- n: 5
+  speaker: Text
+  hanzi: 伊 劝 过 交关 趟 ， 但是 伊 一向 勿 肯 听 。
+  en: She has tried many times to talk him out of it, but he has never been willing to listen.
+- n: 6
+  speaker: Text
+  hanzi: 旧年 冬天 ， 伊 咳嗽 了 一 个 月 ， 去 看 医生 。
+  en: Last winter he coughed for a month and went to the doctor.
+- n: 7
+  speaker: Text
+  hanzi: 医生 讲 ， 身体 虽然 还 可以 ， 香烟 一定 要 戒脱 。
+  en: The doctor said that although his health was still fair, he had to give up smoking.
+- n: 8
+  speaker: Text
+  hanzi: 小李 个 爷 勿响 ， 转去 了 。
+  en: Xiao Li's father said nothing and went home.
+- n: 9
+  speaker: Text
+  hanzi: 第 一 个 礼拜 ， 伊 一 根 也 勿 吃 ， 脾气 反而 大 了 。
+  en: The first week he didn't smoke a single one, and his temper got worse instead.
+- n: 10
+  speaker: Text
+  hanzi: 吃 饭 嫌 咸 ， 看 电视 嫌 吵 ， 啥 侪 勿 适意 。
+  en: 'The food was too salty, the TV too noisy: nothing was right.'
+- n: 11
+  speaker: 小李姆妈
+  hanzi: 伊 勿 吃 香烟 ， 我 倒是 吃勿消 了 。
+  en: Now he's stopped smoking, I'm the one who can't stand it.
+- n: 12
+  speaker: Text
+  hanzi: 第 二 个 礼拜 ， 伊 开始 吃 糖 ， 一 日[ȵiɪʔ12] 吃 一 包 。
+  en: The second week he started eating sweets, a bag a day.
+- n: 13
+  speaker: Text
+  hanzi: 一 个 礼拜 ， 人 就 重 了 两 斤 。
+  en: In a week he put on a kilo.
+- n: 14
+  speaker: Text
+  hanzi: 第 三 个 礼拜 ， 伊 改 了 ： 每日天 早浪 去 公园 散步 。
+  en: 'The third week he changed: every morning he went for a walk in the park.'
+- n: 15
+  speaker: Text
+  hanzi: 伊 讲 ， 走 走 路 ， 反而 勿 想 香烟 了 。
+  en: He says that when he walks, he doesn't even think of cigarettes.
+- n: 16
+  speaker: Text
+  hanzi: 一 个 月 以后 ， 伊 个 咳嗽 也 好 了 。
+  en: A month later his cough was gone too.
+- n: 17
+  speaker: 小李
+  hanzi: 爷 ， 侬 真 了勿起 ， 四十 年 个 习惯 也 改 了 。
+  en: 'Dad, you''re amazing: you''ve broken a forty-year habit.'
+- n: 18
+  speaker: 小李爷
+  hanzi: 习惯 末 ， 改 是 好 改 个 ， 就是 要 舍得 。
+  en: 'A habit can be broken all right: you just have to be willing to let go.'
+- n: 19
+  speaker: 小李
+  hanzi: 舍得 啥 ？
+  en: Let go of what?
+- n: 20
+  speaker: 小李爷
+  hanzi: 舍得 搿 个 老 朋友 呀 。 不过 我 有辰光 还 是 想 伊 。
+  en: Of my old friend. Though I still miss him sometimes.
+- n: 21
+  speaker: 小李姆妈
+  hanzi: 想 末 想 ， 覅 吃 就 好 。 侬 现在 生活 有 规律 了 。
+  en: Miss it all you like, just don't smoke. Your life has some order now.
+- n: 22
+  speaker: Text
+  hanzi: 小李 个 爷 笑 了 笑 ， 拿 一 块 糖 摆 进 嘴巴 里 。
+  en: Xiao Li's father smiled and popped a sweet into his mouth.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    吃香烟 "to smoke" (吃, lesson 69): 吃了四十年 "for forty years", the time after the verb.
+- ref: 2
+  topic: grammar
+  text: >-
+    一向 "always, all along" for a lasting state or habit: 伊一向勿肯听 (line 5) "he has never been willing to listen". 从来 (line
+    4) is stronger, mostly with a negative: 从来勿欢喜 "has never once liked".
+- ref: 3
+  topic: vocab
+  text: >-
+    点 "to light": 点香烟. 根 counts cigarettes (lesson 69).
+- ref: 4
+  topic: vocab
+  text: >-
+    烟 "smoke; tobacco".
+- ref: 5
+  topic: grammar
+  text: >-
+    但是 "but", with 劝 "to try to persuade, to advise", 肯 "to be willing to".
+- ref: 7
+  topic: grammar
+  text: >-
+    虽然…，… "although …": 身体虽然还可以，香烟一定要戒脱 "although his health was fair, he had to stop smoking". A 但是 or 必过 can follow in
+    the second half. 戒脱 "to give up (a habit)".
+- ref: 9
+  topic: grammar
+  text: >-
+    反而 "instead, on the contrary": the opposite of what was expected. 脾气 "temper": 脾气大 "bad-tempered".
+- ref: 10
+  topic: vocab
+  text: >-
+    嫌 "to find fault with, to complain that it is too …": 嫌咸 "find it too salty", 嫌吵 "find it too noisy".
+- ref: 11
+  topic: grammar
+  text: >-
+    倒是 "actually, for my part": an unexpected turn, softer than 反而.
+- ref: 12
+  topic: vocab
+  text: >-
+    开始 "to begin". 一包 "a bag, a packet".
+- ref: 13
+  topic: vocab
+  text: >-
+    重了两斤 "put on a kilo": 斤 is half a kilo (lesson 3).
+- ref: 14
+  topic: vocab
+  text: >-
+    改 "to change, to correct": 改习惯 (line 17) "break a habit".
+- ref: 17
+  topic: vocab
+  text: >-
+    了勿起 {了勿起} "amazing, remarkable". 习惯 "habit".
+- ref: 18
+  topic: vocab
+  text: >-
+    舍得 {舍得} "to be willing to part with": 勿舍得 "can't bear to give up".
+- ref: 20
+  topic: grammar
+  text: >-
+    不过 "but, though", a little more careful than 必过. 有辰光 "sometimes".
+- ref: 21
+  topic: vocab
+  text: >-
+    想末想 "miss it all you like": verb + 末 + the same verb. 生活 "life, way of living"; 规律 "regularity, order".
+new_words:
+- hanzi: 一向
+  en: always, all along
+- hanzi: 烟
+  en: smoke, tobacco
+- hanzi: 劝
+  en: to try to persuade
+- hanzi: 但是
+  en: but
+- hanzi: 肯
+  en: to be willing to
+- hanzi: 虽然
+  en: although
+- hanzi: 戒脱
+  en: to give up (a habit)
+- hanzi: 反而
+  en: instead, on the contrary
+- hanzi: 嫌
+  en: to complain it is too …
+- hanzi: 倒是
+  en: actually, for my part
+- hanzi: 改
+  en: to change
+- hanzi: 了勿起
+  en: amazing
+- hanzi: 习惯
+  en: habit
+- hanzi: 舍得
+  en: to be willing to part with
+- hanzi: 不过
+  en: but, though
+- hanzi: 有辰光
+  en: sometimes
+- hanzi: 生活
+  en: life
+- hanzi: 规律
+  en: regularity, order
+exercises:
+  translate:
+  - hanzi: 伊 一向 困 得 老 早 。
+    en: He has always gone to bed very early.
+  - hanzi: 虽然 落雨 ， 但是 伊 还是 来 了 。
+    en: Although it was raining, he still came.
+  - hanzi: 我 有辰光 也 想 屋里 人 。
+    en: Sometimes I miss my family too.
+  fill:
+  - hanzi: 伊 勿 ＿ 听 我 个 闲话 。
+    en: He isn't willing to listen to me.
+    answer: 肯
+  - hanzi: 吃 了 药 ， 咳嗽 ＿ 重 了 。
+    en: After the medicine the cough got worse instead.
+    answer: 反而
+  - hanzi: 四十 年 个 ＿ ， 老 难 改 个 。
+    en: A forty-year habit is very hard to break.
+    answer: 习惯
+  say:
+  - hanzi: 我 勿 吃 香烟 。
+    en: I don't smoke.
+  - hanzi: 侬 真 了勿起 ！
+    en: You're amazing!
+  - hanzi: 我 勿 舍得 。
+    en: I can't bear to part with it.

@@ -1,0 +1,222 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 88
+title:
+  en: Old songs
+  hanzi: 老 歌
+review: false
+setting: >-
+  Narrated, then a short exchange: a Sunday afternoon at the auntie's, her old record player, and the songs of her youth.
+dialogue:
+- n: 1
+  speaker: Text
+  hanzi: 阿姨 屋里 有 一 只[ʦᴀʔ55] 老 唱机 ， 比 Sam 年纪 还 大 。
+  en: The auntie has an old record player at home, older than Sam.
+- n: 2
+  speaker: Text
+  hanzi: 礼拜天 下半日 ， 伊 欢喜 拿 出 老 唱片 来 听 。
+  en: On Sunday afternoons she likes to bring out her old records and listen.
+- n: 3
+  speaker: Text
+  hanzi: 唱片 是 伊 年纪 轻 个 辰光 买 个 ， 八十 年代 个 。
+  en: She bought the records when she was young, in the eighties.
+- n: 4
+  speaker: Text
+  hanzi: 搿 个 时代 ， 外头 个 流行 歌曲 刚刚 进来 。
+  en: In those times, pop songs from outside were just coming in.
+- n: 5
+  speaker: Text
+  hanzi: 阿姨 讲 ， 伊 第 一 趟 听 到 ， 眼泪 侪 落 下来 了 。
+  en: The auntie says that the first time she heard them, she wept.
+- n: 6
+  speaker: Text
+  hanzi: 老早 个 歌 ， 呒没 搿 种 唱法 ， 也 呒没 搿 种 感情 。
+  en: The old songs had neither that way of singing nor that kind of feeling.
+- n: 7
+  speaker: Text
+  hanzi: 伊 一面 听 ， 一面 跟 了 唱 ， 声音 轻轻叫 个 。
+  en: She listens and sings along at the same time, softly.
+- n: 8
+  speaker: Sam
+  hanzi: 阿姨 ， 侬 唱 得 老 好 ， 年纪 轻 个 辰光 学 过 伐 ？
+  en: Auntie, you sing very well. Did you have lessons when you were young?
+- n: 9
+  speaker: 阿姨
+  hanzi: 学 过歇 钢琴 ， 屋里 穷 ， 一 年 就 停 了 。
+  en: I learnt the piano for a while, long ago; we were poor, and it stopped after a year.
+- n: 10
+  speaker: Sam
+  hanzi: 我 小 辰光 学 过 吉他 ， 现在 呒没 兴趣 了 。
+  en: I learnt the guitar as a boy, but I've lost interest.
+- n: 11
+  speaker: 阿姨
+  hanzi: 搿 只[ʦᴀʔ55] 歌 侬 听 过 伐 ？ 上海 老 歌 ， 夜上海 。
+  en: 'Have you heard this one? An old Shanghai song: Night Shanghai.'
+- n: 12
+  speaker: Sam
+  hanzi: 听 过 个 ， 搿 种 唱法 老 嗲 个 。
+  en: I have. That way of singing is so charming.
+- n: 13
+  speaker: 阿姨
+  hanzi: 现在 个 年轻人 ， 唱法 、 听法 侪 勿 一样 了 。
+  en: Young people today sing differently and listen differently.
+- n: 14
+  speaker: Sam
+  hanzi: 是个 ， 阿拉 用 手机 听 ， 一 只[ʦᴀʔ55] 歌 只 听 一半 。
+  en: 'True: we listen on our phones and only hear half of each song.'
+- n: 15
+  speaker: 阿姨
+  hanzi: 搿 种 听法 ， 有 啥 感觉 ？ 歌 要 从 头 听 到 底 。
+  en: What can you feel listening like that? A song should be heard from start to finish.
+- n: 16
+  speaker: Text
+  hanzi: 阿姨 拿 唱片 翻 了 个 面 ， 又 放 了 一 只[ʦᴀʔ55] 。
+  en: The auntie turned the record over and put on another song.
+- n: 17
+  speaker: Text
+  hanzi: 搿 只[ʦᴀʔ55] 歌 是 伊 结婚 个 辰光 听 个 。
+  en: This was the song from when she got married.
+- n: 18
+  speaker: 阿姨
+  hanzi: 搿 只[ʦᴀʔ55] 歌 末 ， 我 听 一 趟 ， 就 想起来 一 趟 。
+  en: 'This song: every time I hear it, it all comes back.'
+- n: 19
+  speaker: Sam
+  hanzi: 想起来 啥 ？ 侬 讲讲看 。
+  en: What comes back? Tell me.
+- n: 20
+  speaker: 阿姨
+  hanzi: 想起来 年纪 轻 ， 想起来 跳舞 ， 想起来 一 个 人 。
+  en: Being young, dancing, and someone.
+- n: 21
+  speaker: Text
+  hanzi: 阿姨 勿 讲 下去 了 。 伊 一面 听 ， 一面 笑 。
+  en: The auntie said no more. She listened and smiled.
+- n: 22
+  speaker: Text
+  hanzi: Sam 也 勿响 ， 坐 辣海 一道 听 。
+  en: Sam said nothing either, and sat and listened with her.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    唱机 "record player", 唱片 (line 2) "record".
+- ref: 3
+  topic: vocab
+  text: >-
+    年代 "decade": 八十年代 "the eighties".
+- ref: 4
+  topic: culture
+  text: >-
+    流行歌曲 "pop songs": from the late 1970s songs from Hong Kong and Taiwan came into Shanghai on cassettes and records, and
+    were sung everywhere. 流行 "popular, in fashion".
+- ref: 5
+  topic: vocab
+  text: >-
+    眼泪 "tears": 眼泪落下来 "the tears came".
+- ref: 6
+  topic: grammar
+  text: >-
+    Verb + 法 "way of doing": 唱法 "way of singing", 听法 (line 13) "way of listening", 讲法 "way of saying" (lesson 66), 吃法 "way
+    of eating". 感情 "feeling, emotion".
+- ref: 7
+  topic: grammar
+  text: >-
+    一面…一面… "while …, at the same time …": 一面听，一面唱 "listening and singing along". 跟了唱 "sing along".
+- ref: 9
+  topic: vocab
+  text: >-
+    钢琴 "piano". 学过歇 "learnt for a while, long ago" (过歇, lesson 73).
+- ref: 10
+  topic: vocab
+  text: >-
+    吉他 "guitar". 兴趣 "interest": 有兴趣 "to be interested".
+- ref: 11
+  topic: culture
+  text: >-
+    夜上海 "Night Shanghai", a famous song of the 1940s, the sound of the old city; Shanghai's old songs of that time are called
+    老上海歌曲.
+- ref: 13
+  topic: vocab
+  text: >-
+    年轻人 "young people".
+- ref: 15
+  topic: vocab
+  text: >-
+    感觉 "feeling; to feel". 从头听到底 "listen from start to end": 底 "bottom, end".
+- ref: 16
+  topic: vocab
+  text: >-
+    翻 "to turn over": 翻面 "turn to the other side".
+- ref: 17
+  topic: vocab
+  text: >-
+    结婚 "to marry" (lesson 33).
+- ref: 22
+  topic: vocab
+  text: >-
+    勿响 {勿响} "to say nothing, to keep quiet".
+new_words:
+- hanzi: 唱机
+  en: record player
+- hanzi: 唱片
+  en: record
+- hanzi: 年代
+  en: decade
+- hanzi: 时代
+  en: times, era
+- hanzi: 兴趣
+  en: interest
+- hanzi: 流行
+  en: popular
+- hanzi: 歌曲
+  en: song
+- hanzi: 眼泪
+  en: tears
+- hanzi: 唱法
+  en: way of singing
+- hanzi: 感情
+  en: feeling
+- hanzi: 钢琴
+  en: piano
+- hanzi: 吉他
+  en: guitar
+- hanzi: 夜上海
+  en: Night Shanghai (a song)
+- hanzi: 年轻人
+  en: young people
+- hanzi: 听法
+  en: way of listening
+- hanzi: 感觉
+  en: feeling; to feel
+- hanzi: 底
+  en: bottom, end
+- hanzi: 翻
+  en: to turn over
+- hanzi: 勿响
+  en: to say nothing
+exercises:
+  translate:
+  - hanzi: 伊 一面 吃 饭 ， 一面 看 手机 。
+    en: He eats while looking at his phone.
+  - hanzi: 搿 只[ʦᴀʔ55] 歌 八十 年代 老 流行 个 。
+    en: This song was very popular in the eighties.
+  - hanzi: 侬 个 讲法 搭 我 勿 一样 。
+    en: You say it differently from me.
+  fill:
+  - hanzi: 伊 坐 辣海 ， 一眼 也 ＿ 。
+    en: She sat there without saying a word.
+    answer: 勿响
+  - hanzi: 侬 听 了 有 啥 ＿ ？
+    en: How does it make you feel?
+    answer: 感觉
+  - hanzi: 我 小 辰光 学 过歇 ＿ 。
+    en: I learnt the piano for a while as a child.
+    answer: 钢琴
+  say:
+  - hanzi: 我 欢喜 听 老 歌 。
+    en: I love old songs.
+  - hanzi: 侬 会 唱 伐 ？
+    en: Can you sing?
+  - hanzi: 搿 张 唱片 老 好听 。
+    en: This record is lovely.

@@ -23,6 +23,10 @@
 - A note that names a reading "everyday" or "literary" must be checked against a dictionary.
 
 ## Readings (review of 50–63)
+- The standard (owner, 12 Nov 2026): 《上海话大词典》 decides the reading of a word; Qian's course book《新上海人学说
+  上海话》 decides particles and grammar words (个 gəʔ, 也 ɦᴀ, 阿拉 ᴀʔ lᴀʔ, 再 and 介 in the 53 class, 呀 iᴀ). When the two
+  disagree on a word, the dictionary wins; when neither covers it, the lexicon stays and the word goes on the doubts
+  list in the private repo.
 - A reading goes into `core.tsv` only after it is checked against a printed source, tone class included: four
   "corrections" made from memory in 1–49 were wrong (看见, 错, 又, 美国) and were undone here.
 - A book-confirmed reading that differs from the lexicon goes into `overrides.tsv` with the lesson cited (阿里 ɦᴀ,

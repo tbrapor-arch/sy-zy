@@ -8,13 +8,13 @@
 我	same	I, me	我
 侬	sh	you (one person)	你	noŋ13
 伊	sh	he, she; him, her	他、她	ɦi13	Also written 渠 in old texts.
-阿拉	sh	we, us	我们	ᴀʔ55 lᴀ53
+阿拉	sh	we, us	我们	ᴀʔ55 lᴀʔ12
 㑚	sh	you (several people)	你们	nᴀ13
 伊拉	sh	they, them	他们	ɦi13 lᴀ53
 自家	sh	oneself; one's own	自己	zɿ13 kᴀ53
 # this, that, where
 搿	sh	this	这	gəʔ12
-搿个	sh	this one; this	这个	gəʔ12 ɦəʔ12
+搿个	sh	this one; this	这个	gəʔ12 gəʔ12
 搿搭	sh	here	这里	gəʔ12 tᴀʔ55
 伊搭	sh	there	那里	ɦi13 tᴀʔ55
 埃	sh	that	那	ᴇ53
@@ -22,7 +22,7 @@
 啥地方	sh	where	什么地方	sᴀ34 di13 fɑ̃53
 # questions
 啥	sh	what	什么	sᴀ34
-啥个	sh	what	什么	sᴀ34 ɦəʔ12
+啥个	sh	what	什么	sᴀ34 gəʔ12
 啥人	sh	who	谁	sᴀ34 ȵin13
 哪能	sh	how	怎么、怎么样	nᴀ13 nən13
 为啥	sh	why	为什么	ɦuᴇ13 sᴀ34
@@ -43,7 +43,7 @@
 勿客气	sh	you're welcome	不客气	vəʔ12 kʰᴀʔ55 ʨʰi34
 覅客气	sh	don't mention it	别客气	viɔ13 kʰᴀʔ55 ʨʰi34
 # small words
-个	ff	(possessive, like 的; also the measure word)	的；个	ɦəʔ12	As the ending of 我个 "my", it is ɦəʔ; as a measure word after a number it is also ɦəʔ.
+个	ff	(possessive, like 的; also the measure word)	的；个	gəʔ12	As the ending of 我个 "my", it is ɦəʔ; as a measure word after a number it is also ɦəʔ.
 辣	sh	at, in; (doing) now	在	lᴀʔ12	辣 + place = "at"; 辣 + verb = "is doing".
 辣辣	sh	is there; (doing) now	在	lᴀʔ12 lᴀʔ12
 搭	sh	and, with	和、跟	tᴀʔ55
@@ -54,7 +54,7 @@
 还	same	still; also	还	ɦᴇ13
 就	same	just, right; then	就	ʑiɤ13
 只	same	only	只	ʦəʔ55
-也	same	also	也	ɦiᴀ13
+也	same	also	也	ɦᴀ13
 老	ff	very (before an adjective)	很	lɔ13	Before an adjective 老 means "very": 老好 very good. Not "old" here.
 蛮	sh	quite, rather	挺	mᴇ53
 交关	sh	very; a lot	非常、很多	ʨiɔ53 kuᴇ53
@@ -104,11 +104,11 @@
 侬早	sh	good morning	早上好	noŋ13 ʦɔ34
 谢谢	same	thank you	谢谢	ʑiᴀ13 ʑiᴀ13
 谢谢侬	sh	thank you	谢谢你	ʑiᴀ13 ʑiᴀ13 noŋ13
-再会	sh	goodbye	再见	ʦᴇ34 ɦuᴇ13
+再会	sh	goodbye	再见	ʦᴇ53 ɦuᴇ13
 对勿起	sh	sorry	对不起	tᴇ34 vəʔ12 ʨʰi34
-好个	sh	OK, sure	好的	hɔ34 ɦəʔ12
+好个	sh	OK, sure	好的	hɔ34 gəʔ12
 对个	sh	right, that's it	对的	tᴇ34 ɦəʔ12
-是个	sh	yes, that's right	是的	zɿ13 ɦəʔ12
+是个	sh	yes, that's right	是的	zɿ13 gəʔ12
 请问	same	excuse me (may I ask)	请问	ʨʰin34 mən13
 一声	same	(a word, a moment)	一声	iɪʔ55 sã53
 欢迎	same	welcome	欢迎	huø53 ȵin13
@@ -171,7 +171,7 @@
 茶	same	tea	茶	zo13
 水	same	water	水	sɿ34
 咖啡	same	coffee	咖啡	
-钞票	sh	money; banknotes	钱	ʦʰɔ53 pʰiɔ34
+钞票	sh	money; banknotes	钱	ʦʰɔ34 pʰiɔ34
 铜钿	sh	money	钱	doŋ13 di13
 块	same	yuan (counting money)	块	kʰuᴇ34
 马路	same	street, road	马路	mo13 lu13
@@ -236,7 +236,7 @@
 苹果	same	apple	苹果	bin13 ku34
 斤	same	jin (half a kilo)	斤	ʨin53
 葱	same	spring onion	葱	ʦʰoŋ53
-再	same	again; also	再	ʦᴇ34
+再	same	again; also	再	ʦᴇ53
 甜	same	sweet	甜	di13
 咸	same	salty	咸	ɦᴇ13
 烫	same	hot (to the touch)	烫	tʰɑ̃34
@@ -277,7 +277,7 @@
 下半日	sh	afternoon	下午	ɦo13 pø34 ȵiɪʔ12
 上半日	sh	morning	上午	zɑ̃13 pø34 ȵiɪʔ12
 落雨	sh	to rain	下雨	loʔ12 ɦy13
-真个	sh	really, truly	真的	ʦən53 ɦəʔ12
+真个	sh	really, truly	真的	ʦən53 gəʔ12
 着	sh	to wear, put on (clothes, shoes)	穿	ʦᴀʔ55	After a verb the same character has another reading and means "succeed in" (寻着 "found").
 趟	same	(times, trips)	次、趟	tʰɑ̃34
 坏脱	sh	broken, broken down	坏了	ɦuᴀ13 tʰəʔ55
@@ -318,7 +318,7 @@
 汤	same	soup	汤	tʰɑ̃53
 下来	same	to come down	下来	ɦo13 lᴇ13	The lexicon's ɕiᴀ is a book reading.
 上勿来	sh	can't come up	上不来	zɑ̃13 vəʔ12 lᴇ13
-介末	sh	so, in that case, then	那么	kᴀ34 məʔ12
+介末	sh	so, in that case, then	那么	kᴀ53 məʔ12
 冷脱	sh	gone cold	凉了	lã13 tʰəʔ55
 过	same	(have done); to pass; to celebrate (a birthday)	过	ku34
 生日歌	same	birthday song	生日歌	sã53 ȵiɪʔ12 ku53
@@ -341,7 +341,7 @@
 蹲	ff	to live, to stay	住	tən53	Not "to squat": in Shanghainese 蹲 is to live somewhere.
 只好	same	have no choice but to	只好	ʦəʔ55 hɔ34
 用勿着	sh	no need	用不着	ɦioŋ13 vəʔ12 zᴀʔ12
-介	sh	so, such	这么	kᴀ34
+介	sh	so, such	这么	kᴀ53
 便当	ff	convenient, easy	方便	bi13 tɑ̃53	Not a lunchbox, as in Taiwan and Japan.
 闹忙	sh	lively, busy, bustling	热闹	nɔ13 mɑ̃13
 赛过	sh	just like, as if	好像	sᴇ34 ku34
@@ -380,7 +380,7 @@
 机场	same	airport	机场	ʨi53 zã13
 接	same	to meet, pick up (someone)	接	ʨiɪʔ55
 怕	same	to be afraid	怕	pʰo34
-再讲	sh	besides; (at the end) we'll see later	再说	ʦᴇ34 kɑ̃34
+再讲	sh	besides; (at the end) we'll see later	再说	ʦᴇ53 kɑ̃34
 原来	same	so (it turns out)	原来	ȵyø13 lᴇ13
 收作	sh	to tidy up	收拾	sɤ53 ʦoʔ55
 晒	same	to dry in the sun	晒	so34
@@ -423,7 +423,7 @@
 本	same	(measure word for books)	本	pən34
 书	same	book	书	sɿ53
 公斤	same	kilo	公斤	koŋ53 ʨin53
-个话	sh	if (after a clause)	的话	ɦəʔ12 ɦo13
+个话	sh	if (after a clause)	的话	gəʔ12 ɦo13
 末	sh	(topic marker) as for…; (after a condition) then	呢；的话	məʔ12
 来得及	same	(still) in time	来得及	lᴇ13 təʔ55 ʥiɪʔ12
 地址	same	address	地址	di13 ʦɿ34
@@ -628,7 +628,7 @@
 拎勿清	sh	doesn't get it, tactless	不识趣	lin53 vəʔ12 ʨʰin53
 识相	sh	tactful	识趣	səʔ55 ɕiã34	相 has the departing tone here.
 面孔	sh	face	脸	mi13 kʰoŋ34
-啊呀	same	oh dear, oh no	哎呀	ᴀ53 iᴀ53
+啊呀	same	oh dear, oh no	哎呀	ᴀʔ55 iᴀ53
 难为情	sh	embarrassed, shy	不好意思	nᴇ13 ɦuᴇ13 ʑin13
 老克勒	sh	old-style Shanghai gentleman	老派绅士	lɔ13 kʰəʔ55 ləʔ12
 老底子	sh	in the old days	从前	lɔ13 ti34 ʦɿ34
@@ -639,7 +639,7 @@
 坍台	sh	to lose face	丢脸	tʰᴇ53 dᴇ13
 洋泾浜	sh	pidgin	洋泾浜	ɦiã13 ʨin53 pã53
 牛皮	same	cowhide; (吹牛皮) boasting	牛皮	ȵiɤ13 bi13
-呀	same	(particle: warm plea or surprise)	呀	ɦiᴀ13
+呀	same	(particle: warm plea or surprise)	呀	iᴀ53
 腌笃鲜	sh	spring soup of salt and fresh pork with bamboo shoots	腌笃鲜	i53 toʔ55 ɕi53
 春天	same	spring	春天	ʦʰən53 tʰi53
 笋	same	bamboo shoot	笋	sən34
@@ -680,7 +680,7 @@
 评价	same	review, rating	评价	bin13 kᴀ34
 吵相骂	sh	to have a row	吵架	ʦʰɔ34 ɕiã53 mo13	骂 is said mo.
 鲜肉月饼	sh	pork mooncake	鲜肉月饼	ɕi53 ȵioʔ12 ɦyɪʔ12 pin34
-喂	same	hey; hello (on the phone)	喂	uᴇ53
+喂	same	hey; hello (on the phone)	喂	ɦuᴇ13
 插队	same	to cut in, jump the queue	插队	ʦʰᴀʔ55 dᴇ13
 排	same	to line up	排	bᴀ13
 排队	same	to queue	排队	bᴀ13 dᴇ13

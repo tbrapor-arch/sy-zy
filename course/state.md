@@ -115,3 +115,18 @@ his first Shanghainese novel (100).
 - **90** Xiao Zhang is offered a year of study in England; the friends push her to go; A-Qiang will wait.
   Remember: the school pays fees and living costs; visa takes two months; she worries about A-Qiang and her grandmother.
 - **91** (review, narrated) A July Sunday: Sam walks with Old Wang at 5.30; Xiao Zhang has her visa and leaves next month.
+- **92** (narrated) Shanghai against other cities: food, weather, dialects (阿拉 from Ningbo), 海派; Sam compares with Paris.
+  Remember: Sam thinks Shanghai is the best "except for the plum rain".
+- **93** Sam's parents visit; the auntie has them to lunch (腌笃鲜, ice cream, a scarf for Sam's mother).
+  Remember: they speak no Shanghainese (Sam translates); his mother learnt 侬好 and 拜哎.
+- **94** The same repairman breaks Sam's ceiling light; Sam complains to the management; the manager pays.
+  Remember: a new, young repairman did the job well.
+- **95** (narrated) The lane's nicknames: Big Lump, Long Legs, Shutter Board, Tar Barrel; the summer nights.
+  Remember: the insults are explained, never used at Sam; Sam's own nickname is 小法国 "Little France".
+- **96** (narrated) The auntie's younger brother 老周 crossed by ferry to a Pudong factory for thirty years; ferry ride with Sam.
+  Remember: his family was rehoused to Pudong; he still likes the ferry.
+- **97** End of August: Xiao Zhang leaves for England from Pudong airport; A-Qiang gives her a postcard of the Bund.
+  Remember: she comes back next summer; England is seven hours behind.
+- **98** (review) September: Sam's email to Xiao Zhang. Remember: Sam walks in the park every Sunday with Old Wang.
+- **99** (narrated by Sam) Sam's story: Paris, the offer, the lane, the auntie's 侬早; he signs on for two more years.
+- **100** Sam reads his first Shanghainese novel with the auntie (a page written for the course): other writers' spellings.

@@ -1,4 +1,4 @@
-# The 100 lessons (as Tsheh-tû's syllabus.yaml): title + what each one teaches. Lessons 1–77 are written; 78–100 are
+# The 100 lessons (as Tsheh-tû's syllabus.yaml): title + what each one teaches. Lessons 1–100 are written. 78–100 were
 # the plan (10 Nov 2026): title, setting, grammar point (focus) and target new words, picked from the private master
 # vocabulary by rank (untaught at L49, Shanghainese words first). Check with `make coverage` before each batch.
 # Every 7th lesson is a review; the second wave starts at lesson 50. Lessons 85–100 move towards narrated passages.

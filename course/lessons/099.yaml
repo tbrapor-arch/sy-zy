@@ -1,0 +1,230 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 99
+title:
+  en: Sam's story
+  hanzi: Sam 个 故事
+review: false
+setting: >-
+  Sam tells his own story, from Paris two years ago to the lane today: a full narrated page, in the past.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 两 年 之前 ， 我 一 句 上海 闲话 也 勿 会 讲 。
+  en: Two years ago I couldn't say a word of Shanghainese.
+- n: 2
+  speaker: Sam
+  hanzi: 当时 我 辣 巴黎 上班 ， 每日天 一样 个 生活 。
+  en: At the time I worked in Paris, the same life every day.
+- n: 3
+  speaker: Sam
+  hanzi: 有 一 日[ȵiɪʔ12] ， 经理 突然 问 我 ： 阿要 到 上海 去 ？
+  en: 'One day my manager suddenly asked me: would you like to go to Shanghai?'
+- n: 4
+  speaker: Sam
+  hanzi: 我 想 也 呒没 想 ， 就 答应 了 。
+  en: 'I didn''t even think: I said yes.'
+- n: 5
+  speaker: Sam
+  hanzi: 我 曾经 看 过 一 本 老 上海 个 小说 。
+  en: I had once read a novel about old Shanghai.
+- n: 6
+  speaker: Sam
+  hanzi: 公司 帮 我 寻 了 房子 ， 齐巧 辣 搿 条 弄堂 里 。
+  en: The company found me a room, and as luck would have it, it was in this lane.
+- n: 7
+  speaker: Sam
+  hanzi: 第 一 日[ȵiɪʔ12] 早浪 ， 辣陌生头 有 人 讲 ： 侬 早 ！
+  en: 'On the first morning, out of the blue, someone said: Good morning!'
+- n: 8
+  speaker: Sam
+  hanzi: 是 楼下 个 阿姨 。 我 才 晓得 ， 伊 个 闲话 我 听勿懂 。
+  en: It was the auntie downstairs. Only then did I realise I couldn't understand a word she said.
+- n: 9
+  speaker: Sam
+  hanzi: 于是 ， 我 一门心思 要 学 上海 闲话 。
+  en: So I set my heart on learning Shanghainese.
+- n: 10
+  speaker: Sam
+  hanzi: 一 开始 老 难 ， 阿姨 经常 要 笑 半 日[ȵiɪʔ12] 。
+  en: 'At first it was very hard: the auntie often laughed at me for ages.'
+- n: 11
+  speaker: Sam
+  hanzi: 后首来 ， 我 认得 了 小李 ， 到 伊 屋里 吃 饭 。
+  en: Later I got to know Xiao Li, and ate at his family's.
+- n: 12
+  speaker: Sam
+  hanzi: 再 后首来 ， 认得 了 小张 搭 阿强 。
+  en: Later still I met Xiao Zhang and A-Qiang.
+- n: 13
+  speaker: Sam
+  hanzi: 我 搬 过 房子 ， 换 过 工作 ， 也 生 过 毛病 。
+  en: I've moved house, changed jobs, and been ill.
+- n: 14
+  speaker: Sam
+  hanzi: 每 趟 有 事体 ， 弄堂 里 总 有 人 来 帮 我 。
+  en: Each time something happened, someone from the lane always came to help.
+- n: 15
+  speaker: Sam
+  hanzi: 有 一 趟 我 寻勿着 路 ， 是 一 个 老伯伯 帮 我 个 。
+  en: Once I got lost, and it was an old man who helped me.
+- n: 16
+  speaker: Sam
+  hanzi: 我 本来 只 打算 蹲 两 年 ， 结果 越 蹲 越 欢喜 。
+  en: I had only meant to stay two years, but the longer I stayed, the more I liked it.
+- n: 17
+  speaker: Sam
+  hanzi: 上个月 ， 经理 问 我 ： 侬 阿要 转去 ？
+  en: 'Last month my manager asked me: do you want to go back?'
+- n: 18
+  speaker: Sam
+  hanzi: 我 讲 ： 勿 转去 ， 我 想 重新 签 两 年 。
+  en: 'I said: no, I''d like to sign on for another two years.'
+- n: 19
+  speaker: Sam
+  hanzi: 经理 笑 了 ： 侬 现在 是 上海 人 了 。
+  en: 'My manager laughed: you''re a Shanghai person now.'
+- n: 20
+  speaker: Sam
+  hanzi: 我 害怕 个 是 ， 法国 闲话 要 忘记脱 了 。
+  en: What I'm afraid of is forgetting my French.
+- n: 21
+  speaker: Sam
+  hanzi: 必过 我 永远 是 弄堂 里 个 小 法国 。
+  en: But I'll always be Little France in the lane.
+- n: 22
+  speaker: Sam
+  hanzi: 两 年 之前 我 刚 到 ， 只 会 听 侬 早 。
+  en: Two years ago, just arrived, all I could understand was Good morning.
+- n: 23
+  speaker: Sam
+  hanzi: 现在 ， 我 好 用 上海 闲话 ， 讲 我 自家 个 故事 了 。
+  en: Now I can tell my own story in Shanghainese.
+- n: 24
+  speaker: Sam
+  hanzi: 介末 ， 我 个 故事 讲 好 了 。 侬 个 呢 ？
+  en: Well, that's my story. What's yours?
+notes:
+- ref: 2
+  topic: grammar
+  text: >-
+    Story links: 当时 "at the time", 突然 (line 3) "suddenly", 于是 (line 9) "so, thereupon", 后首来 (line 11) "later, afterwards",
+    结果 (line 16) "in the end, as it turned out", 介末 (line 24) "so, well then".
+- ref: 3
+  topic: vocab
+  text: >-
+    突然 "suddenly". 阿要 "would you like" (lesson 93).
+- ref: 4
+  topic: grammar
+  text: >-
+    想也呒没想 "didn't even think": verb + 也 + negative + the same verb (lesson 65). 答应 "to agree, to say yes".
+- ref: 5
+  topic: vocab
+  text: >-
+    曾经 "once, at one time (in the past)". 本 counts books.
+- ref: 6
+  topic: vocab
+  text: >-
+    齐巧 {齐巧} "as luck would have it, just".
+- ref: 7
+  topic: vocab
+  text: >-
+    辣陌生头 {辣陌生头} "all of a sudden, out of the blue", the colloquial 突然.
+- ref: 9
+  topic: vocab
+  text: >-
+    于是 "so, and so". 一门心思 {一门心思} "single-mindedly, with all one's heart".
+- ref: 11
+  topic: vocab
+  text: >-
+    后首来 {后首来} "later on". 认得 "to know (a person), to get to know".
+- ref: 14
+  topic: vocab
+  text: >-
+    总 "always, in any case": 总有人来帮我 "there was always someone to help".
+- ref: 16
+  topic: grammar
+  text: >-
+    越…越… "the more …, the more …" (lesson 7): 越蹲越欢喜. 结果 "in the end". 本来 (lesson 94) "originally".
+- ref: 18
+  topic: vocab
+  text: >-
+    重新 "again, anew". 签 "to sign".
+- ref: 20
+  topic: vocab
+  text: >-
+    害怕 "to be afraid".
+- ref: 21
+  topic: vocab
+  text: >-
+    永远 "for ever, always".
+- ref: 22
+  topic: vocab
+  text: >-
+    刚 "just (now)": 刚到 "just arrived".
+- ref: 23
+  topic: vocab
+  text: >-
+    故事 "story".
+new_words:
+- hanzi: 故事
+  en: story
+- hanzi: 当时
+  en: at the time
+- hanzi: 突然
+  en: suddenly
+- hanzi: 答应
+  en: to agree
+- hanzi: 曾经
+  en: once (in the past)
+- hanzi: 齐巧
+  en: as luck would have it
+- hanzi: 辣陌生头
+  en: all of a sudden
+- hanzi: 于是
+  en: so, thereupon
+- hanzi: 一门心思
+  en: single-mindedly
+- hanzi: 总
+  en: always
+- hanzi: 结果
+  en: in the end
+- hanzi: 重新
+  en: again, anew
+- hanzi: 签
+  en: to sign
+- hanzi: 害怕
+  en: to be afraid
+- hanzi: 永远
+  en: for ever
+- hanzi: 刚
+  en: just
+- hanzi: 才
+  en: only then
+- hanzi: 经常
+  en: often
+exercises:
+  translate:
+  - hanzi: 当时 我 一 句 也 听勿懂 。
+    en: At the time I couldn't understand a word.
+  - hanzi: 伊 突然 勿响 了 。
+    en: He suddenly fell silent.
+  - hanzi: 我 曾经 去 过 苏州 。
+    en: I've been to Suzhou once.
+  fill:
+  - hanzi: 伊 问 我 ， 我 就 ＿ 了 。
+    en: He asked me, and I said yes.
+    answer: 答应
+  - hanzi: 我 刚 出门 ， ＿ 落雨 了 。
+    en: I had just gone out, and as luck would have it, it rained.
+    answer: 齐巧
+  - hanzi: 伊 ＿ 要 学 上海 闲话 。
+    en: She has set her heart on learning Shanghainese.
+    answer: 一门心思
+  say:
+  - hanzi: 我 害怕 。
+    en: I'm afraid.
+  - hanzi: 后首来 呢 ？
+    en: And then?
+  - hanzi: 搿 是 我 个 故事 。
+    en: This is my story.

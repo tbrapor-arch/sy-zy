@@ -1,0 +1,229 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 100
+title:
+  en: Opening a novel
+  hanzi: 翻开 小说
+review: false
+setting: >-
+  A Sunday afternoon. Sam has bought a novel written in Shanghainese and has not dared to open it. He brings it to the auntie,
+  and they read the first page together. (The page is written for this course.)
+dialogue:
+- n: 1
+  speaker: Text
+  hanzi: Sam 拿 了 一 本 小说 ， 到 阿姨 屋里 去 。
+  en: Sam took a novel round to the auntie's.
+- n: 2
+  speaker: Sam
+  hanzi: 搿 本 书 我 买 了 半 年 ， 一直 勿 敢 翻开 。
+  en: I bought this book six months ago and have never dared to open it.
+- n: 3
+  speaker: 阿姨
+  hanzi: 为啥 勿 敢 ？ 侬 上海 闲话 已经 讲 得 介 好 了 。
+  en: Why not? You already speak Shanghainese so well.
+- n: 4
+  speaker: Sam
+  hanzi: 讲 是 一 桩 事体 ， 看 小说 是 另外 一 桩 事体 。
+  en: Speaking is one thing; reading a novel is another.
+- n: 5
+  speaker: 阿姨
+  hanzi: 来 ， 阿拉 一道 看 第 一 页 。 我 读 ， 侬 跟 了 看 。
+  en: Come on, let's look at the first page together. I'll read, you follow.
+- n: 6
+  speaker: 书
+  hanzi: 迭个 礼拜天 ， 天 热 来西 ， 弄堂 里 呒没 人 。
+  en: That Sunday it was terribly hot, and there was nobody in the lane.
+- n: 7
+  speaker: Sam
+  hanzi: 迭个 ？ 是 搿个 伐 ？
+  en: 迭个? Is that 搿个?
+- n: 8
+  speaker: 阿姨
+  hanzi: 是个 。 写法 勿 一样 ， 读法 是 一样 个 。
+  en: Yes. The spelling's different, but it reads the same.
+- n: 9
+  speaker: 阿姨
+  hanzi: 来西 末 ， 就是 侬 学 过 个 来死 ： 热 来死 。
+  en: 'And 来西 is the 来死 you''ve learnt: terribly hot.'
+- n: 10
+  speaker: 书
+  hanzi: 小 阿毛 坐 辣盖 ， 问 尔奶 ： 姆妈 到 鞋里 去 ？
+  en: 'Little A-Mao sat there and asked his grandma: where has Mum gone?'
+- n: 11
+  speaker: Sam
+  hanzi: 辣盖 就是 辣海 ， 鞋里 就是 阿里搭 ？ 尔奶 是 啥人 ？
+  en: 辣盖 is 辣海, 鞋里 is 阿里? And who is 尔奶?
+- n: 12
+  speaker: 阿姨
+  hanzi: 尔奶 末 ， 就是 阿娘 ， 爷 个 姆妈 。
+  en: '尔奶 is 阿娘: Dad''s mother.'
+- n: 13
+  speaker: 书
+  hanzi: 尔奶 讲 ： 姆妈 到 外婆 海头 去 了 。
+  en: 'Grandma said: Mum has gone to Granny''s.'
+- n: 14
+  speaker: 阿姨
+  hanzi: 海头 ， 就是 外婆 搿搭 ， 外婆 屋里 。
+  en: 海头 means Granny's place, Granny's home.
+- n: 15
+  speaker: 书
+  hanzi: 阿毛 讲 ： 搿抢里 姆妈 来得个 忙 。
+  en: 'A-Mao said: Mum''s ever so busy these days.'
+- n: 16
+  speaker: Sam
+  hanzi: 搿抢里 是 最近 ， 来得个 是 交关 ？
+  en: 搿抢里 is 'lately', 来得个 is 'very'?
+- n: 17
+  speaker: 阿姨
+  hanzi: 对 ！ 侬 看 ， 侬 一 看 就 懂 了 。
+  en: Right! You see, you understand at a glance.
+- n: 18
+  speaker: 书
+  hanzi: 尔奶 讲 ： 倷 豪悛 去 睏觉 ， 明朝 脱仔 姆妈 白相 。
+  en: 'Grandma said: off to bed quickly, all of you; tomorrow you''ll play with Mum.'
+- n: 19
+  speaker: Sam
+  hanzi: 倷 是 㑚 ， 豪悛 是 豪燥 ， 睏觉 是 困觉 ， 脱仔 是 搭仔 ！
+  en: 倷 is 㑚, 豪悛 is 豪燥, 睏觉 is 困觉, 脱仔 is 搭仔!
+- n: 20
+  speaker: 阿姨
+  hanzi: 侬 侪 晓得 了 ， 我 还 要 教 侬 啥 ？
+  en: 'You know it all: what is there left for me to teach you?'
+- n: 21
+  speaker: Sam
+  hanzi: 原来 小说 里 个 字 ， 侪 是 阿拉 讲 个 闲话 。
+  en: So the words in the novel are just the way we talk.
+- n: 22
+  speaker: 阿姨
+  hanzi: 当然 个嘛 。 闲话 写 下来 ， 就 是 书 。
+  en: Of course. Write down what people say, and you have a book.
+- n: 23
+  speaker: Text
+  hanzi: 搿 日[ȵiɪʔ12] 夜里 ， Sam 一 个 人 看 了 二十 页 。
+  en: That night Sam read twenty pages on his own.
+- n: 24
+  speaker: Text
+  hanzi: 伊 晓得 ， 伊 个 上海 闲话 ， 又 翻开 了 新 个 一 页 。
+  en: He knew that his Shanghainese had turned a new page.
+notes:
+- ref: 1
+  topic: culture
+  text: >-
+    Novels in Shanghainese (沪语小说) have been written since the 19th century, and new ones keep appearing. Each writer spells
+    some words in his own way; the course's own written forms are the ones taught in lessons 1–99. The page read in this
+    lesson was written for the course.
+- ref: 2
+  topic: vocab
+  text: >-
+    翻开 "to open (a book)". 本 counts books (lesson 99).
+- ref: 4
+  topic: vocab
+  text: >-
+    另外 "other, another; besides".
+- ref: 5
+  topic: vocab
+  text: >-
+    页 "page". 读 "to read aloud".
+- ref: 6
+  topic: grammar
+  text: >-
+    Other writers' spellings of words you know: 迭个 {迭个} = 搿个 "this", 来西 {来西} = 来死 "terribly" (lesson 62). The reading is
+    close or the same; only the characters differ, as with 哦 / 伐 and 葛末 / 介末 (lesson 50).
+- ref: 8
+  topic: vocab
+  text: >-
+    写法 "way of writing, spelling", 读法 "way of reading, pronunciation" (verb + 法, lesson 88).
+- ref: 10
+  topic: grammar
+  text: >-
+    辣盖 {辣盖} = 辣海 "there, (sitting) there": an older pronunciation, still in many novels. 鞋里 {鞋里} = 阿里 "where, which". 尔奶
+    {尔奶} "grandma (father's mother)", an older word for 阿娘 (lesson 76). 阿毛 is a child's name.
+- ref: 13
+  topic: vocab
+  text: >-
+    海头 {海头} "(at) someone's place, over there", after a person: 外婆海头 "at Granny's".
+- ref: 15
+  topic: vocab
+  text: >-
+    搿抢里 {搿抢里} "these days, lately". 来得个 {来得个} "ever so, very" before an adjective: 来得个忙 "ever so busy".
+- ref: 18
+  topic: grammar
+  text: >-
+    倷 {倷} = 㑚 "you (several)"; 豪悛 {豪悛} = 豪燥 "quickly"; 睏觉 = 困觉 "to sleep"; 脱仔 {脱仔} "with, and", the older 搭仔 (lesson 66).
+- ref: 21
+  topic: vocab
+  text: >-
+    原来 "so, it turns out (that)". 字 "character, written word".
+- ref: 22
+  topic: vocab
+  text: >-
+    个嘛 {个嘛} at the end: "of course, that's how it is". 当然 "of course" (lesson 93).
+- ref: 24
+  topic: culture
+  text: >-
+    This is the last lesson of the course. The novels in the app's library, the second wave and the book courses go on from
+    here.
+new_words:
+- hanzi: 翻开
+  en: to open (a book)
+- hanzi: 另外
+  en: other, another
+- hanzi: 页
+  en: page
+- hanzi: 迭个
+  en: this (a novel spelling)
+- hanzi: 来西
+  en: terribly (a novel spelling)
+- hanzi: 写法
+  en: way of writing
+- hanzi: 读法
+  en: way of reading
+- hanzi: 阿毛
+  en: A-Mao (a name)
+- hanzi: 辣盖
+  en: there (a novel spelling)
+- hanzi: 尔奶
+  en: grandma
+- hanzi: 鞋里
+  en: where (a novel spelling)
+- hanzi: 海头
+  en: someone's place
+- hanzi: 搿抢里
+  en: these days
+- hanzi: 来得个
+  en: ever so
+- hanzi: 倷
+  en: you (several; a novel spelling)
+- hanzi: 豪悛
+  en: quickly (a novel spelling)
+- hanzi: 睏觉
+  en: to sleep (a novel spelling)
+- hanzi: 脱仔
+  en: with, and (older form)
+- hanzi: 个嘛
+  en: of course
+exercises:
+  translate:
+  - hanzi: 搿 本 小说 我 看 了 一半 。
+    en: I've read half of this novel.
+  - hanzi: 原来 侬 也 是 上海 人 ！
+    en: So you're from Shanghai too!
+  - hanzi: 搿抢里 我 老 忙 个 。
+    en: I'm very busy these days.
+  fill:
+  - hanzi: 侬 ＿ 书 ， 看 第 一 页 。
+    en: Open the book and look at the first page.
+    answer: 翻开
+  - hanzi: 搿 个 字 个 ＿ 搭 搿个 一样 。
+    en: This word is read the same as 搿个.
+    answer: 读法
+  - hanzi: 我 到 外婆 ＿ 去 。
+    en: I'm going to Granny's.
+    answer: 海头
+  say:
+  - hanzi: 我 欢喜 看 小说 。
+    en: I love reading novels.
+  - hanzi: 侬 读 ， 我 听 。
+    en: You read, I'll listen.
+  - hanzi: 又 是 新 个 一 页 。
+    en: It's a new page again.

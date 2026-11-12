@@ -1,0 +1,226 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 79
+title:
+  en: Money
+  hanzi: 钞票
+review: false
+setting: >-
+  The last day of the month, in the office canteen. Sam's bank app shows almost nothing left, and he asks Xiao Li how he
+  manages to save.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 小李 ， 月底 了 ， 我 个 钞票 又 用脱 了 。
+  en: Xiao Li, it's the end of the month and my money is gone again.
+- n: 2
+  speaker: 小李
+  hanzi: 又 用脱 了 ？ 侬 上个月 也 是 搿能 讲 个 。
+  en: Gone again? You said the same last month.
+- n: 3
+  speaker: Sam
+  hanzi: 房钿 、 吃 饭 、 买 物事 ， 每 个 月 侪 要 用 。
+  en: 'Rent, food, shopping: every month it all costs money.'
+- n: 4
+  speaker: 小李
+  hanzi: 网上 买 个 物事 也 勿少 ， 侬 门口 每日天 有 快递 。
+  en: 'And you buy plenty online: there''s a parcel at your door every day.'
+- n: 5
+  speaker: Sam
+  hanzi: 网上 买 物事 老 方便 ， 一 揿 就 好 了 。
+  en: 'Buying online is so convenient: one tap and it''s done.'
+- n: 6
+  speaker: 小李
+  hanzi: 方便 是 方便 ， 必过 钞票 也 用 得 顶顶 快 。
+  en: Convenient, yes, but that's also the fastest way to spend money.
+- n: 7
+  speaker: Sam
+  hanzi: 侬 赚 个 搭 我 差勿多 ， 哪能 省 得 下来 ？
+  en: You earn about the same as me. How do you manage to save?
+- n: 8
+  speaker: 小李
+  hanzi: 我 每 个 月 至少 存 两千 块 ， 先 存 再 用 。
+  en: I put away at least two thousand a month. Save first, spend after.
+- n: 9
+  speaker: Sam
+  hanzi: 先 存 再 用 ？ 我 是 先 用 ， 用 好 再 存 。
+  en: Save first? I spend first, and save what's left.
+- n: 10
+  speaker: 小李
+  hanzi: 怪勿得 侬 银行 里 一眼 也 呒没 。
+  en: No wonder there's nothing in your account.
+- n: 11
+  speaker: Sam
+  hanzi: 我 勿大 买 衣裳 ， 也 勿大 出去 吃 饭 。
+  en: I don't buy many clothes, and I don't eat out much.
+- n: 12
+  speaker: 小李
+  hanzi: 侬 拿 账单 拨 我 看看 。
+  en: Show me your statement.
+- n: 13
+  speaker: 小李
+  hanzi: 咖啡 ！ 一 个 月 咖啡 就 用脱 一千 多 块 ！
+  en: Coffee! More than a thousand a month on coffee!
+- n: 14
+  speaker: Sam
+  hanzi: 咖啡 是 老老 要紧 个 ， 呒没 咖啡 我 做 勿 动 。
+  en: 'Coffee is terribly important: without it I can''t work.'
+- n: 15
+  speaker: 小李
+  hanzi: 到 超市 去 买 咖啡 ， 自家 烧 ， 稍许 省 一眼 。
+  en: 'Buy coffee at the supermarket and make it yourself: you''d save a bit.'
+- n: 16
+  speaker: Sam
+  hanzi: 还有 搿 只[ʦᴀʔ55] 电脑 ， 是 上个月 网上 买 个 。
+  en: And this computer, I bought online last month.
+- n: 17
+  speaker: 小李
+  hanzi: 电脑 好 用 三四 年 ， 搿 个 勿 算 浪费 。
+  en: 'A computer lasts three or four years: that doesn''t count as waste.'
+- n: 18
+  speaker: 小李
+  hanzi: 最最 浪费 个 ， 是 买 了 勿 用 个 物事 。
+  en: The very worst waste is things you buy and never use.
+- n: 19
+  speaker: Sam
+  hanzi: 侬 讲 得 对 。 下个月 开始 ， 我 要 节约 。
+  en: You're right. From next month I'm going to economise.
+- n: 20
+  speaker: 小李
+  hanzi: 发票 侪 摆 好 ， 月底 自家 算 一 算 。
+  en: Keep all the receipts and add it all up at the end of the month.
+- n: 21
+  speaker: Sam
+  hanzi: 好 ， 先 存 再 用 ， 存款 一 个 月 比 一 个 月 多 。
+  en: 'Right: save first, spend after, and the savings grow month by month.'
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    月底 "the end of the month". 用脱 "spent, used up": 用 + 脱 (lesson 11).
+- ref: 2
+  topic: vocab
+  text: >-
+    上个月 "last month", 下个月 (line 19) "next month"; in the same way 上个礼拜 "last week", 下个礼拜 "next week".
+- ref: 3
+  topic: grammar
+  text: >-
+    每 + measure word + noun "every": 每个月 "every month", 每趟 "every time", 每个人 "everyone"; 侪 usually follows.
+- ref: 4
+  topic: vocab
+  text: >-
+    网上 "online": 网上买物事 "to shop online". 勿少 "quite a lot, not a few".
+- ref: 5
+  topic: vocab
+  text: >-
+    方便 "convenient". 一揿就好 "one tap and it's done": 一…就 "as soon as" (lesson 87 has more).
+- ref: 6
+  topic: grammar
+  text: >-
+    Degree, turned up: 顶顶 "the very most", 最最 (line 18) "the very, very most" and 老老 (line 14) "terribly" are 顶, 最 and 老
+    doubled. Turned down: 勿大 (line 11) "not very, hardly", 稍许 "a little" (lesson 74).
+- ref: 7
+  topic: vocab
+  text: >-
+    省 "to save, to spare": 省得下来 "manage to save".
+- ref: 8
+  topic: vocab
+  text: >-
+    至少 "at least". 存 "to save, to deposit": 存款 (line 21) "savings".
+- ref: 11
+  topic: grammar
+  text: >-
+    勿大 + verb "not often, hardly": 勿大出去 "hardly ever go out"; 勿大 + adjective "not very": 勿大好 "not very good". {勿大}: 大 has
+    its literary reading here.
+- ref: 12
+  topic: vocab
+  text: >-
+    账单 "bill, statement".
+- ref: 15
+  topic: vocab
+  text: >-
+    超市 "supermarket".
+- ref: 16
+  topic: vocab
+  text: >-
+    电脑 "computer", counted with 只 or 部.
+- ref: 17
+  topic: vocab
+  text: >-
+    浪费 "to waste; wasteful".
+- ref: 19
+  topic: vocab
+  text: >-
+    节约 "to economise".
+- ref: 20
+  topic: vocab
+  text: >-
+    发票 "receipt, official invoice".
+new_words:
+- hanzi: 月底
+  en: end of the month
+- hanzi: 用脱
+  en: to spend, to use up
+- hanzi: 上个月
+  en: last month
+- hanzi: 每
+  en: every
+- hanzi: 网上
+  en: online
+- hanzi: 勿少
+  en: quite a lot
+- hanzi: 方便
+  en: convenient
+- hanzi: 顶顶
+  en: the very most
+- hanzi: 省
+  en: to save, to spare
+- hanzi: 至少
+  en: at least
+- hanzi: 勿大
+  en: not very, hardly
+- hanzi: 账单
+  en: bill, statement
+- hanzi: 老老
+  en: terribly
+- hanzi: 超市
+  en: supermarket
+- hanzi: 电脑
+  en: computer
+- hanzi: 浪费
+  en: to waste
+- hanzi: 最最
+  en: the very most
+- hanzi: 下个月
+  en: next month
+- hanzi: 节约
+  en: to economise
+- hanzi: 发票
+  en: receipt
+- hanzi: 存款
+  en: savings
+exercises:
+  translate:
+  - hanzi: 我 每 个 礼拜 侪 去 超市 买 菜 。
+    en: I go to the supermarket every week.
+  - hanzi: 伊 勿大 讲 闲话 。
+    en: He hardly talks.
+  - hanzi: 搿 只[ʦᴀʔ55] 电脑 是 我 上个月 买 个 。
+    en: I bought this computer last month.
+  fill:
+  - hanzi: 侬 买 了 介 多 勿 用 ， 真 ＿ 。
+    en: 'You bought so much and don''t use it: such a waste.'
+    answer: 浪费
+  - hanzi: 一 个 月 ＿ 要 存 一千 块 。
+    en: You need to save at least a thousand a month.
+    answer: 至少
+  - hanzi: ＿ 买 物事 老 方便 。
+    en: Shopping online is very convenient.
+    answer: 网上
+  say:
+  - hanzi: 我 银行 里 呒没 钞票 了 。
+    en: There's no money left in my account.
+  - hanzi: 下个月 我 要 节约 。
+    en: Next month I'm going to economise.
+  - hanzi: 侬 拿 发票 拨 我 。
+    en: Give me the receipt.

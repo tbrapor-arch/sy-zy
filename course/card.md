@@ -36,4 +36,6 @@
   lexicon's zən; 恐怕 has 怕 in -o; 塞车 has a checked 塞; 脚踏车 has 车 ʦʰo (review of 64–77).
 - 阿 in kin terms (阿哥, 阿弟, 阿妹, 阿伯, 阿娘) is the checked syllable ᴀʔ55, as in 阿姐 and 阿拉: the lexicon's ᴀ53 is wrong
   for them.
+- Lexicon compounds keep old readings the standard has changed: check any word with 个 (gəʔ), 日 (ȵiɪʔ), 五 (ɦŋ̩),
+  黄 (ɦuɑ̃, not the lexicon's huɑ̃ in 黄酒, 蜡蜡黄) or 花 (ho) before declaring it (review of 78–84).
 - Write 每日天 for "every day" (not 天天), 日[ȵiɪʔ12] for a day counted (一日, 两日), 着 for wearing clothes.

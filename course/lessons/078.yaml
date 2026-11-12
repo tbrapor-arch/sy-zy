@@ -1,0 +1,227 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 78
+title:
+  en: Local cooking
+  hanzi: 本帮菜
+review: false
+setting: >-
+  A Sunday afternoon in Xiao Li's parents' kitchen. His mother has promised to teach Sam her red-braised pork, and Xiao
+  Li is there to watch.
+dialogue:
+- n: 1
+  speaker: 小李姆妈
+  hanzi: 今朝 我 教 侬 烧 红烧肉 ， 阿拉 个 本帮菜 。
+  en: Today I'm teaching you red-braised pork, our local cooking.
+- n: 2
+  speaker: Sam
+  hanzi: 好 ！ 我 只 会 烧 泡饭 搭 炒 鸡蛋 。
+  en: Great! All I can make is rice porridge and scrambled eggs.
+- n: 3
+  speaker: 小李姆妈
+  hanzi: 先 拿 肉 斩 开 ， 覅 斩 得 忒 小 。
+  en: First chop up the meat, not too small.
+- n: 4
+  speaker: Sam
+  hanzi: 搿 块 肉 肥 个 多 ， 是 五花肉 伐 ？
+  en: This piece has a lot of fat. Is it pork belly?
+- n: 5
+  speaker: 小李姆妈
+  hanzi: 对 ， 肥 个 多 一眼 ， 烧 出来 顶 好吃 。
+  en: 'Yes: a bit more fat makes it taste best.'
+- n: 6
+  speaker: 小李姆妈
+  hanzi: 肉 摆 辣 冷 水 里 ， 烧 开 ， 拿 血 水 倒 了 。
+  en: Put the meat in cold water, bring it to the boil, and pour the bloody water away.
+- n: 7
+  speaker: Sam
+  hanzi: 水 冰冰冷 个 辰光 就 摆 进去 ？
+  en: In while the water is still ice-cold?
+- n: 8
+  speaker: 小李姆妈
+  hanzi: 是个 。 再 拿 锅子 烧 热 ， 摆 油 搭 糖 。
+  en: That's right. Then heat the wok and put in oil and sugar.
+- n: 9
+  speaker: 小李姆妈
+  hanzi: 糖 慢慢叫 炒 ， 炒 到 蜡蜡黄 ， 就 好 摆 肉 了 。
+  en: Melt the sugar slowly; when it's golden yellow, the meat goes in.
+- n: 10
+  speaker: Sam
+  hanzi: 喔唷 ， 油 跳 出来 了 ！ 我 只[ʦᴀʔ55] 手 ！
+  en: Ow, the oil's spitting! My hand!
+- n: 11
+  speaker: 小李
+  hanzi: 侬 只[ʦᴀʔ55] 手 烫 得来 血血红 ， 快 点 用 冷 水 汏汏 伊 。
+  en: Your hand's gone bright red. Quick, run it under cold water.
+- n: 12
+  speaker: 小李姆妈
+  hanzi: 拿 肉 倒 进去 ， 轻轻叫 炒 ， 再 摆 酱油 搭 黄酒 。
+  en: Tip the meat in, stir it gently, then add soy sauce and yellow wine.
+- n: 13
+  speaker: Sam
+  hanzi: 要 摆 多少 ？ 侬 讲 ， 我 写 下来 。
+  en: How much? Tell me and I'll write it down.
+- n: 14
+  speaker: 小李姆妈
+  hanzi: 阿拉 烧 菜 呒没 多少 ， 看 颜色 ， 尝 味道 。
+  en: 'We don''t cook by quantities: you look at the colour and taste.'
+- n: 15
+  speaker: 小李姆妈
+  hanzi: 加 热 水 ， 水 要 浸 过 肉 ， 小 火 烧 一 个 钟头 。
+  en: Add hot water to cover the meat, and simmer for an hour.
+- n: 16
+  speaker: Sam
+  hanzi: 一 个 钟头 ？ 介末 先 炒 只[ʦᴀʔ55] 素 菜 。
+  en: An hour? Then let's do a vegetable dish first.
+- n: 17
+  speaker: 小李
+  hanzi: 炒 鸡毛菜 ， 一 荤 一 素 ， 正好 。
+  en: 'Stir-fry some baby pak choi: one meat, one vegetable, just right.'
+- n: 18
+  speaker: 小李姆妈
+  hanzi: 辰光 到 了 ， 大 火 收 汤 ， 汤 要 浓 一眼 。
+  en: 'Time''s up. Turn the heat up to reduce the sauce: it should be thick.'
+- n: 19
+  speaker: Sam
+  hanzi: 我 尝尝 看 。 肉 熟 了 伐 ？
+  en: Let me taste. Is the meat done?
+- n: 20
+  speaker: 小李姆妈
+  hanzi: 熟 了 ， 又 软 又 糯 ， 筷子 一 夹 就 开 。
+  en: 'It''s done: soft and melting, it falls apart with the chopsticks.'
+- n: 21
+  speaker: Sam
+  hanzi: 味道 真 好 ！ 搿能 吃 下去 ， 我 要 滚滚壮 了 。
+  en: Delicious! If I keep eating like this I'll get round as a barrel.
+notes:
+- ref: 1
+  topic: culture
+  text: >-
+    本帮菜 {本帮菜} "Shanghai home cooking", as against the cuisines of other cities (外帮): sweet, dark, rich in soy sauce. 红烧肉
+    "red-braised pork" is its best-known dish. 教 "to teach".
+- ref: 3
+  topic: grammar
+  text: >-
+    拿 + object + verb: each step of a recipe is told this way: 拿肉斩开 "chop up the meat", 拿血水倒了 (line 6) "pour away the bloody
+    water", 拿锅子烧热 (line 8) "heat the wok". 斩 "to chop (with a cleaver)".
+- ref: 4
+  topic: vocab
+  text: >-
+    肥 "fat (of meat)"; lean meat is 精肉. 五花肉 "pork belly", the five layers of fat and lean.
+- ref: 6
+  topic: vocab
+  text: >-
+    烧开 "bring to the boil" (also 烧滚). 倒 "to pour, to tip out" (倒垃圾, lesson 52).
+- ref: 7
+  topic: grammar
+  text: >-
+    Vivid adjectives: a sound or a thing doubled before the adjective makes it stronger and more pictorial: 冰冰冷 "ice-cold",
+    蜡蜡黄 (line 9) "waxy yellow, golden", 血血红 (line 11) "blood-red", 滚滚壮 (line 21) "round and fat". They take 个 or 了 like
+    an adjective and are never used with 老 or 交关.
+- ref: 8
+  topic: vocab
+  text: >-
+    锅子 "wok, pan". 糖 "sugar".
+- ref: 9
+  topic: grammar
+  text: >-
+    慢慢叫 "slowly" (lesson 8), and 轻轻叫 (line 12) "gently": an adjective doubled + 叫 makes an adverb of manner. 好好叫 "properly"
+    is the third common one.
+- ref: 12
+  topic: vocab
+  text: >-
+    黄酒 "yellow (rice) wine" (lesson 31), used in all Shanghai cooking.
+- ref: 14
+  topic: vocab
+  text: >-
+    尝 "to taste" (尝尝, lesson 69). 颜色 "colour" (lesson 43).
+- ref: 15
+  topic: vocab
+  text: >-
+    火 "fire, heat": 小火 "low heat", 大火 (line 18) "high heat". 浸过肉 "cover the meat": 浸 "to soak" + 过 "past, over".
+- ref: 16
+  topic: vocab
+  text: >-
+    素菜 "vegetable dish", 荤菜 "meat or fish dish": 一荤一素 (line 17) "one of each".
+- ref: 17
+  topic: vocab
+  text: >-
+    鸡毛菜 {鸡毛菜} "baby pak choi", the young greens of every Shanghai market.
+- ref: 18
+  topic: vocab
+  text: >-
+    收汤 "reduce the sauce": 收 "to gather in". 浓 "thick, strong".
+- ref: 19
+  topic: vocab
+  text: >-
+    熟 "cooked, done; ripe".
+- ref: 20
+  topic: vocab
+  text: >-
+    糯 "soft and sticky, melting", the texture of good red-braised pork. 夹 "to pick up with chopsticks".
+new_words:
+- hanzi: 本帮菜
+  en: Shanghai home cooking
+- hanzi: 炒
+  en: to stir-fry
+- hanzi: 斩
+  en: to chop
+- hanzi: 肥
+  en: fat (of meat)
+- hanzi: 五花肉
+  en: pork belly
+- hanzi: 冰冰冷
+  en: ice-cold
+- hanzi: 锅子
+  en: wok, pan
+- hanzi: 蜡蜡黄
+  en: golden yellow
+- hanzi: 血血红
+  en: blood-red
+- hanzi: 轻轻叫
+  en: gently
+- hanzi: 尝
+  en: to taste
+- hanzi: 素
+  en: vegetable (dish)
+- hanzi: 鸡毛菜
+  en: baby pak choi
+- hanzi: 荤
+  en: meat (dish)
+- hanzi: 收
+  en: to gather in; to reduce
+- hanzi: 浓
+  en: thick, strong
+- hanzi: 熟
+  en: cooked, done
+- hanzi: 糯
+  en: soft and sticky
+- hanzi: 夹
+  en: to pick up (with chopsticks)
+- hanzi: 滚滚壮
+  en: round and fat
+exercises:
+  translate:
+  - hanzi: 侬 拿 菜 汏 清爽 ， 再 斩 开 。
+    en: Wash the vegetables clean, then chop them up.
+  - hanzi: 冬天 外头 冰冰冷 ， 侬 多 着 一眼 。
+    en: 'It''s ice-cold outside in winter: wear more.'
+  - hanzi: 慢慢叫 吃 ， 汤 老 烫 个 。
+    en: Eat slowly, the soup is very hot.
+  fill:
+  - hanzi: 肉 烧 ＿ 了 ， 好 吃 了 。
+    en: The meat's done, you can eat now.
+    answer: 熟
+  - hanzi: 搿 只[ʦᴀʔ55] 菜 要 用 小 ＿ 烧 。
+    en: This dish needs low heat.
+    answer: 火
+  - hanzi: 侬 ＿ 讲 ， 小人 辣 困 。
+    en: Speak gently, the child is asleep.
+    answer: 轻轻叫
+  say:
+  - hanzi: 我 欢喜 吃 红烧肉 。
+    en: I love red-braised pork.
+  - hanzi: 一 荤 一 素 ， 够 了 。
+    en: 'One meat, one vegetable: that''s enough.'
+  - hanzi: 侬 尝尝 看 味道 。
+    en: Taste it and see.

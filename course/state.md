@@ -88,3 +88,17 @@ his first Shanghainese novel (100).
 - **76** Songjiang: Xiao Li's paternal grandmother 阿娘 (91, retired 30 years, three sons, one daughter married to a Suzhou man).
   Remember: she calls Sam 小马 (from his surname, Martin); Xiao Li's 外婆 (mother's side) is in Suzhou (L36).
 - **77** (review) A café in mid-December with Xiao Zhang. Remember: next trip Beijing in spring, with A-Qiang.
+- **78** Xiao Li's mother teaches Sam red-braised pork; Sam burns his hand on spitting oil.
+  Remember: she cooks by colour and taste, with lots of sugar; Sam cooks it himself at L84.
+- **79** Month's end: Sam's money is gone (online parcels, coffee); Xiao Li saves two thousand a month, "save first".
+  Remember: Sam promises to economise; he bought a computer online.
+- **80** A leak through Sam's bathroom ceiling: the upstairs neighbour denies it, the repairman finds her split pipe.
+  Remember: she has the ceiling repainted for Sam and offers her cleaner; the repairman is the one of L94.
+- **81** A-Qiang's company closed; he hid it from Xiao Zhang for two weeks, leaving home at eight as if to work.
+  Remember: Sam's friend is hiring (A-Qiang gets the job, L84); A-Qiang tells Xiao Zhang that night.
+- **82** Wednesday tea at the City God Temple with the auntie's friend Mrs Chen (陈师母); 茄山河.
+  Remember: Mrs Chen wants to try French black tea; the auntie and she meet every Wednesday.
+- **83** The evening news in Shanghainese at the auntie's: an accident, tourists, the weather, the elderly, a hot summer.
+  Remember: Sam has never seen snow in Shanghai; the auntie counts herself young.
+- **84** (review) Sam cooks red-braised pork for his three friends. Remember: A-Qiang's new job came through Sam; Xiao
+  Zhang is still a little cross; the auntie now says Sam "knows how to live".

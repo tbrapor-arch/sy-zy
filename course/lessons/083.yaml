@@ -1,0 +1,229 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 83
+title:
+  en: The news
+  hanzi: 新闻
+review: false
+setting: >-
+  Seven in the evening at the auntie's. The local news is on, in Shanghainese, and she has something to say about every
+  item. Sam has come down to borrow some soy sauce.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: 新闻 开始 了 ， 侬 坐 下来 一道 看 。
+  en: The news is starting. Sit down and watch with me.
+- n: 2
+  speaker: 电视
+  hanzi: 早浪 高架 浪 发生 事故 ， 三 部 车子 撞 了 。
+  en: 'This morning there was an accident on the elevated road: three cars collided.'
+- n: 3
+  speaker: 阿姨
+  hanzi: 又 是 落雨 天 ， 开车 个 人 侪 开 得 忒 快 。
+  en: Another rainy day, and the drivers all going too fast.
+- n: 4
+  speaker: Sam
+  hanzi: 听说 呒没 人 受伤 ， 还 好 。
+  en: Apparently nobody was hurt, thank goodness.
+- n: 5
+  speaker: 电视
+  hanzi: 旧年 来 上海 旅游 个 外国 人 ， 多 了 交关 。
+  en: Last year many more foreign tourists came to Shanghai.
+- n: 6
+  speaker: 阿姨
+  hanzi: 怪勿得 南京路 浪 侪 是 外国 人 。
+  en: No wonder Nanjing Road is full of foreigners.
+- n: 7
+  speaker: Sam
+  hanzi: 我 勿 是 旅游 个 ， 我 是 上海 人 了 ！
+  en: I'm not a tourist, I'm a Shanghai person now!
+- n: 8
+  speaker: 电视
+  hanzi: 后日 要 落 大 雨 ， 天 要 冷 下来 了 。
+  en: There will be heavy rain the day after tomorrow, and it will turn colder.
+- n: 9
+  speaker: 阿姨
+  hanzi: 前日 还 老 热 ， 天气 变化 介 大 。
+  en: The day before yesterday it was still hot. The weather changes so much.
+- n: 10
+  speaker: Sam
+  hanzi: 电视 里 每 只[ʦᴀʔ55] 新闻 ， 侬 侪 有 闲话 。
+  en: You have something to say about every item on the TV.
+- n: 11
+  speaker: 阿姨
+  hanzi: 看 新闻 就是 要 讲 ， 勿 讲 有 啥 意思 ？
+  en: 'That''s what the news is for: what''s the point if you don''t talk about it?'
+- n: 12
+  speaker: 电视
+  hanzi: 上海 三 个 人 里 ， 有 一 个 是 老人 。
+  en: In Shanghai, one person in three is elderly.
+- n: 13
+  speaker: 阿姨
+  hanzi: 我 也 算 老人 ， 必过 我 认为 自家 还 年纪 轻 。
+  en: I count as elderly too, but I think of myself as young.
+- n: 14
+  speaker: Sam
+  hanzi: 侬 比 阿拉 年纪 轻 个 人 还 忙 。
+  en: You're busier than us young people.
+- n: 15
+  speaker: 电视
+  hanzi: 据说 今年 夏天 ， 世界 浪 到处 侪 老 热 。
+  en: It is reported that this summer it was very hot all over the world.
+- n: 16
+  speaker: 阿姨
+  hanzi: 乃末 好 了 ， 夏天 越来越 长 ， 冬天 越来越 短 。
+  en: 'There you are: summers longer and longer, winters shorter and shorter.'
+- n: 17
+  speaker: Sam
+  hanzi: 肯定 有 影响 个 ， 人家 也 搿能 讲 。
+  en: It must have an effect; other people say so too.
+- n: 18
+  speaker: 阿姨
+  hanzi: 就是讲 ， 阿拉 小 辰光 冬天 会 落雪 。
+  en: I mean, when we were small it used to snow in winter.
+- n: 19
+  speaker: Sam
+  hanzi: 可能 是 个 。 我 来 上海 ， 还 呒没 看见 过 雪 。
+  en: Maybe so. Since I came to Shanghai I've never seen snow.
+- n: 20
+  speaker: 电视
+  hanzi: 今朝 个 新闻 就 到 搿搭 ， 明朝会 。
+  en: That's the end of today's news. Goodbye until tomorrow.
+- n: 21
+  speaker: 阿姨
+  hanzi: 新闻 看 好 了 ， 我 个 闲话 也 讲 光 了 。
+  en: 'There: the news is over, and I''ve run out of things to say.'
+notes:
+- ref: 1
+  topic: culture
+  text: >-
+    新闻 "the news". Shanghai television has a daily news programme in Shanghainese, and the radio has more; most news is
+    in Mandarin.
+- ref: 2
+  topic: vocab
+  text: >-
+    发生 "to happen, to occur" (a news word). 撞 "to crash into, to bump".
+- ref: 4
+  topic: grammar
+  text: >-
+    Passing on what was said: 听说 "I hear that, apparently", 伊讲… "she says …", 电视讲… "the TV says …"; 据说 (line 15) "it is
+    said that" is more formal. 受伤 "to be hurt". 还好 "luckily, thank goodness".
+- ref: 5
+  topic: vocab
+  text: >-
+    旧年 {旧年} "last year" (Mandarin 去年); 今年 "this year", 开年 "next year".
+- ref: 8
+  topic: vocab
+  text: >-
+    后日 "the day after tomorrow", 前日 (line 9) "the day before yesterday": 日 is read nik, as in 一日.
+- ref: 9
+  topic: vocab
+  text: >-
+    天气 "weather". 变化 "change; to change".
+- ref: 10
+  topic: grammar
+  text: >-
+    每只新闻 "every news item": 每 + measure word (lesson 79). 电视 "television".
+- ref: 13
+  topic: vocab
+  text: >-
+    认为 "to think, to consider (that)", more careful than 想.
+- ref: 15
+  topic: vocab
+  text: >-
+    世界 "the world".
+- ref: 16
+  topic: grammar
+  text: >-
+    乃末 {乃末} "and so, now then": it moves the story on or draws a conclusion, 乃末好了 "there you are". 越来越 "more and more":
+    越来越长 "longer and longer" (越…越, lesson 7).
+- ref: 17
+  topic: vocab
+  text: >-
+    肯定 "certainly; to be sure". 影响 "effect, influence". 人家 "other people".
+- ref: 18
+  topic: grammar
+  text: >-
+    就是讲 "I mean, that is": a link word that restates or explains, as is 搿个 "er, well" while thinking.
+- ref: 19
+  topic: vocab
+  text: >-
+    可能 "maybe, possible". 雪 "snow": 落雪 "to snow".
+- ref: 20
+  topic: vocab
+  text: >-
+    明朝会 "see you tomorrow" (会 as in 再会).
+- ref: 21
+  topic: grammar
+  text: >-
+    讲光 "say it all, run out of words": 光 "all gone" after a verb.
+new_words:
+- hanzi: 电视
+  en: television
+- hanzi: 发生
+  en: to happen
+- hanzi: 撞
+  en: to crash into
+- hanzi: 听说
+  en: to hear (that)
+- hanzi: 受伤
+  en: to be hurt
+- hanzi: 旧年
+  en: last year
+- hanzi: 后日
+  en: the day after tomorrow
+- hanzi: 前日
+  en: the day before yesterday
+- hanzi: 变化
+  en: change
+- hanzi: 认为
+  en: to think, to consider
+- hanzi: 据说
+  en: it is said
+- hanzi: 夏天
+  en: summer
+- hanzi: 世界
+  en: the world
+- hanzi: 乃末
+  en: and so, now then
+- hanzi: 越来越
+  en: more and more
+- hanzi: 肯定
+  en: certainly
+- hanzi: 影响
+  en: effect
+- hanzi: 就是讲
+  en: I mean, that is
+- hanzi: 落雪
+  en: to snow
+- hanzi: 可能
+  en: maybe
+- hanzi: 雪
+  en: snow
+- hanzi: 明朝会
+  en: see you tomorrow
+exercises:
+  translate:
+  - hanzi: 旧年 我 去 了 一 趟 北京 。
+    en: Last year I went to Beijing once.
+  - hanzi: 据说 后日 要 落雪 。
+    en: They say it's going to snow the day after tomorrow.
+  - hanzi: 上海 个 外国 人 越来越 多 。
+    en: There are more and more foreigners in Shanghai.
+  fill:
+  - hanzi: 前头 ＿ 了 啥 事体 ？
+    en: What happened up ahead?
+    answer: 发生
+  - hanzi: 伊 今朝 ＿ 勿 来 了 。
+    en: He probably won't come today.
+    answer: 可能
+  - hanzi: 我 ＿ 侬 讲 得 对 。
+    en: I think you're right.
+    answer: 认为
+  say:
+  - hanzi: 夏天 上海 老 热 个 。
+    en: Shanghai is very hot in summer.
+  - hanzi: 侬 看 新闻 伐 ？
+    en: Do you watch the news?
+  - hanzi: 明朝会 ！
+    en: See you tomorrow!

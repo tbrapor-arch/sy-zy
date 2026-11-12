@@ -1,0 +1,222 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 80
+title:
+  en: A leak
+  hanzi: 漏水 了
+review: false
+setting: >-
+  Since last week water has been dripping through Sam's bathroom ceiling. He goes upstairs to ask the neighbour, then rings
+  the property management office.
+dialogue:
+- n: 1
+  speaker: Sam
+  hanzi: 上个礼拜 开始 ， 卫生间 天花板 一直 辣 漏水 。
+  en: Since last week the bathroom ceiling has been leaking.
+- n: 2
+  speaker: Sam
+  hanzi: 今朝 水 滴 到 地板 浪 ， 墙头 也 湿 了 。
+  en: Today it's dripping onto the floor, and the wall is wet too.
+- n: 3
+  speaker: Sam
+  hanzi: 阿姨 ， 我 卫生间 辣 滴 水 ， 阿是 侬 屋里 漏 ？
+  en: Excuse me, water's dripping in my bathroom. Is it a leak from your flat?
+- n: 4
+  speaker: 邻舍
+  hanzi: 勿 会 个 ， 阿拉 刚刚 装修 过 ， 侪 是 新 个 。
+  en: 'It can''t be. We''ve just had the place done up: everything''s new.'
+- n: 5
+  speaker: Sam
+  hanzi: 介末 我 打 电话 ， 叫 物业 派 人 来 看看 。
+  en: Then I'll ring the management and have them send someone to look.
+- n: 6
+  speaker: 物业
+  hanzi: 好个 ， 我 让 师傅 下半日 两 点 来 。
+  en: Fine, I'll have a repairman come at two this afternoon.
+- n: 7
+  speaker: 师傅
+  hanzi: 我 来 看看 。 喔唷 ， 墙头 侪 湿 了 ， 老 臭 个 。
+  en: Let me look. Ugh, the wall's soaked, and it smells.
+- n: 8
+  speaker: Sam
+  hanzi: 是 楼高头 个 管子 破 了 伐 ？
+  en: Is it a burst pipe upstairs?
+- n: 9
+  speaker: 师傅
+  hanzi: 要 到 楼高头 去 看 ， 侬 帮 我 敲敲 门 。
+  en: We have to look upstairs. Knock on the door for me.
+- n: 10
+  speaker: 邻舍
+  hanzi: 又 是 侬 ？ 我 讲 过 了 ， 勿 是 阿拉 屋里 。
+  en: You again? I've told you, it's not our flat.
+- n: 11
+  speaker: 师傅
+  hanzi: 阿姨 ， 让 我 看 一 看 侬 个 抽水马桶 ， 五 分钟 。
+  en: 'Madam, let me have a look at your toilet: five minutes.'
+- n: 12
+  speaker: 师傅
+  hanzi: 寻 到 了 ， 马桶 后头 个 管子 破 了 。
+  en: 'Found it: the pipe behind the toilet has split.'
+- n: 13
+  speaker: 邻舍
+  hanzi: 啊呀 ， 真 是 阿拉 屋里 ？ 对勿起 ， 对勿起 ！
+  en: Oh dear, it really is ours? I'm so sorry!
+- n: 14
+  speaker: 师傅
+  hanzi: 我 先 修 ， 侬 拿 工具 拨 我 。
+  en: I'll fix it first. Pass me the tools.
+- n: 15
+  speaker: Sam
+  hanzi: 我 屋里 个 天花板 呢 ？ 啥人 来 修 ？
+  en: And my ceiling? Who's going to repair that?
+- n: 16
+  speaker: 邻舍
+  hanzi: 是 阿拉 勿 好 ， 我 叫 人 来 代 侬 油漆 。
+  en: 'It''s our fault: I''ll get someone to repaint it for you.'
+- n: 17
+  speaker: Sam
+  hanzi: 谢谢 。 墙头 要 拨 伊 干 一 个 礼拜 ， 再 油漆 。
+  en: Thank you. The wall has to be left to dry for a week before painting.
+- n: 18
+  speaker: 邻舍
+  hanzi: 阿拉 有 钟点工 ， 我 让 伊 来 帮 侬 打扫 。
+  en: 'We have a cleaner who comes by the hour: I''ll send her to clean up for you.'
+- n: 19
+  speaker: Sam
+  hanzi: 覅 麻烦 了 ， 我 自家 打扫 。
+  en: Don't trouble yourself, I'll clean up myself.
+- n: 20
+  speaker: 邻舍
+  hanzi: 勿 麻烦 ， 侬 覅 客气 。
+  en: It's no trouble, don't be polite.
+- n: 21
+  speaker: 师傅
+  hanzi: 好 了 ， 管子 换 好 了 。 再 漏 ， 打 电话 拨 我 。
+  en: There, the pipe's replaced. If it leaks again, ring me.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    上个礼拜 "last week" (上个月, lesson 79). 漏水 "to leak": 漏 (line 3) "to leak, to drip through". 天花板 {天花板} "ceiling": 花 has its
+    everyday reading ho.
+- ref: 2
+  topic: vocab
+  text: >-
+    墙头 "wall (of a room or a yard)". 湿 "wet".
+- ref: 4
+  topic: vocab
+  text: >-
+    装修 "to renovate, to do up (a flat)".
+- ref: 5
+  topic: grammar
+  text: >-
+    叫 + person + verb "to have someone do something": 叫物业派人来 "get the management to send someone". 派 "to send (a person)".
+    物业 "the property management (office)", which every block of flats has.
+- ref: 6
+  topic: grammar
+  text: >-
+    让 + person + verb "to let, to have someone do": 我让师傅来 "I'll have a repairman come"; 让我看一看 (line 11) "let me have a look".
+    叫 is more of an order, 让 more of a permission.
+- ref: 7
+  topic: vocab
+  text: >-
+    臭 "smelly, to stink".
+- ref: 8
+  topic: vocab
+  text: >-
+    管子 "pipe". 破 "broken, split; to break".
+- ref: 9
+  topic: vocab
+  text: >-
+    敲敲门 "knock (on the door)": 敲 "to knock, to tap", doubled for a quick action.
+- ref: 11
+  topic: vocab
+  text: >-
+    抽水马桶 {抽水马桶} "flush toilet", against the old 马桶 of lesson 73.
+- ref: 14
+  topic: vocab
+  text: >-
+    修 "to repair". 工具 "tool(s)".
+- ref: 16
+  topic: grammar
+  text: >-
+    代 "for, in someone's place": 代侬油漆 "paint it for you", 我代伊去 "I'll go instead of him". 帮 (line 18) is "for, to help":
+    帮侬打扫 "clean up for you". 油漆 "to paint; paint".
+- ref: 17
+  topic: grammar
+  text: >-
+    拨 + person/thing + verb "to let, to leave to": 拨伊干一个礼拜 "let it dry for a week" (拨 as "let", lesson 47). 干 "dry".
+- ref: 18
+  topic: vocab
+  text: >-
+    钟点工 {钟点工} "home help paid by the hour". 打扫 "to clean, to sweep up".
+- ref: 19
+  topic: vocab
+  text: >-
+    麻烦 "trouble; to trouble": 覅麻烦了 "don't go to any trouble", 麻烦侬 "sorry to trouble you; thank you".
+new_words:
+- hanzi: 上个礼拜
+  en: last week
+- hanzi: 天花板
+  en: ceiling
+- hanzi: 漏水
+  en: to leak
+- hanzi: 墙头
+  en: wall
+- hanzi: 漏
+  en: to leak, to drip
+- hanzi: 装修
+  en: to renovate
+- hanzi: 物业
+  en: property management
+- hanzi: 派
+  en: to send (a person)
+- hanzi: 臭
+  en: smelly
+- hanzi: 管子
+  en: pipe
+- hanzi: 破
+  en: broken, split
+- hanzi: 敲敲
+  en: to knock
+- hanzi: 抽水马桶
+  en: flush toilet
+- hanzi: 工具
+  en: tool
+- hanzi: 代
+  en: for, instead of
+- hanzi: 油漆
+  en: to paint; paint
+- hanzi: 干
+  en: dry
+- hanzi: 钟点工
+  en: home help (by the hour)
+- hanzi: 打扫
+  en: to clean
+- hanzi: 麻烦
+  en: trouble; to trouble
+exercises:
+  translate:
+  - hanzi: 我 叫 伊 明朝 早 点 来 。
+    en: I told him to come early tomorrow.
+  - hanzi: 侬 让 我 想 一 想 。
+    en: Let me think about it.
+  - hanzi: 我 代 侬 去 买 票子 。
+    en: I'll go and buy the tickets for you.
+  fill:
+  - hanzi: 衣裳 还 呒没 ＿ ， 覅 着 。
+    en: The clothes aren't dry yet, don't wear them.
+    answer: 干
+  - hanzi: 侬 屋里 介 龌龊 ， 要 ＿ 了 。
+    en: Your place is so dirty, it needs a clean.
+    answer: 打扫
+  - hanzi: 搿 只[ʦᴀʔ55] 碗 ＿ 了 ， 覅 用 。
+    en: This bowl is cracked, don't use it.
+    answer: 破
+  say:
+  - hanzi: 卫生间 漏水 了 。
+    en: The bathroom is leaking.
+  - hanzi: 麻烦 侬 了 。
+    en: Sorry to trouble you.
+  - hanzi: 我 自家 来 修 。
+    en: I'll fix it myself.

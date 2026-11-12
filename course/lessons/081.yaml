@@ -1,0 +1,225 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 81
+title:
+  en: Helping a friend
+  hanzi: 帮帮 朋友
+review: false
+setting: >-
+  A weekday evening in a noodle shop. A-Qiang has asked Sam to meet him alone; he has something he has not told Xiao Zhang.
+dialogue:
+- n: 1
+  speaker: 阿强
+  hanzi: Sam ， 有 桩 事体 ， 我 实在 勿 晓得 哪能 办 。
+  en: Sam, there's something I really don't know what to do about.
+- n: 2
+  speaker: Sam
+  hanzi: 啥 事体 ？ 侬 慢慢叫 讲 。
+  en: What is it? Take your time.
+- n: 3
+  speaker: 阿强
+  hanzi: 阿拉 公司 关门 了 ， 我 上个礼拜 就 呒没 工作 了 。
+  en: My company has closed. I've had no job since last week.
+- n: 4
+  speaker: Sam
+  hanzi: 啊 ？ 怪勿得 侬 最近 介 勿 开心 。
+  en: What? No wonder you've been so down lately.
+- n: 5
+  speaker: 阿强
+  hanzi: 因为 公司 生意 勿 好 ， 所以 一半 人 早 就 走 了 。
+  en: Business was bad, so half the staff had already left.
+- n: 6
+  speaker: Sam
+  hanzi: 小张 晓得 伐 ？ 侬 告诉 伊 了 伐 ？
+  en: Does Xiao Zhang know? Have you told her?
+- n: 7
+  speaker: 阿强
+  hanzi: 还 呒没 。 伊 新 工作 刚刚 开始 ， 我 勿 想 拨 伊 担心 。
+  en: Not yet. She's only just started her new job; I don't want to worry her.
+- n: 8
+  speaker: Sam
+  hanzi: 其实 伊 总归 会 晓得 个 ， 还是 早 点 讲 好 。
+  en: She'll find out anyway. Better to tell her soon.
+- n: 9
+  speaker: 阿强
+  hanzi: 我 怕 伊 看勿起 我 咾 ， 一直 勿 敢 讲 。
+  en: I've been scared she'd look down on me, so I never dared tell her.
+- n: 10
+  speaker: Sam
+  hanzi: 伊 勿 会 个 。 侬 搭 伊 商量 ， 一道 想 办法 。
+  en: She wouldn't. Talk it over with her and find a way together.
+- n: 11
+  speaker: 阿强
+  hanzi: 反正 也 瞒 勿 过 了 ， 伊 已经 问 过 我 两 趟 。
+  en: 'I can''t hide it any longer anyway: she''s asked me twice already.'
+- n: 12
+  speaker: Sam
+  hanzi: 侬 有 啥 打算 ？ 还 想 做 老 工作 伐 ？
+  en: What are you planning? Do you still want to do the same work?
+- n: 13
+  speaker: 阿强
+  hanzi: 想 个 。 我 做 了 十 年 ， 想 做 下去 。
+  en: I do. I've done it for ten years and I want to carry on.
+- n: 14
+  speaker: Sam
+  hanzi: 我 有 个 朋友 辣 招 人 ， 我 托 伊 帮 侬 问 。
+  en: A friend of mine is hiring. I'll ask him for you.
+- n: 15
+  speaker: 阿强
+  hanzi: 真个 ？ 介末 实在 好 ， 麻烦 侬 了 。
+  en: Really? That would be wonderful. Thanks so much.
+- n: 16
+  speaker: Sam
+  hanzi: 覅 客气 ， 朋友 就是 要 帮 个 。
+  en: 'Don''t mention it: that''s what friends are for.'
+- n: 17
+  speaker: 阿强
+  hanzi: 我 每日天 还 是 八 点 出门 ， 像 去 上班 一样 。
+  en: Every day I still leave home at eight, as if I were going to work.
+- n: 18
+  speaker: Sam
+  hanzi: 啊呀 ， 侬 搿能 撑 下去 ， 忒 辛苦 了 。
+  en: Oh no. Keeping that up must be exhausting.
+- n: 19
+  speaker: 阿强
+  hanzi: 是个 ， 我 吃勿消 了 。 今朝 夜里 就 告诉 伊 。
+  en: It is, I can't take any more. I'll tell her tonight.
+- n: 20
+  speaker: Sam
+  hanzi: 讲 好 了 ， 打 只[ʦᴀʔ55] 电话 拨 我 。
+  en: When you've told her, give me a ring.
+- n: 21
+  speaker: 阿强
+  hanzi: 好个 。 有 侬 搿 种 朋友 ， 我 相信 会 好 起来 个 。
+  en: I will. With a friend like you, I believe it'll turn out all right.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    桩 counts matters and affairs: 一桩事体. 实在 "really, truly". 办 "to deal with, to handle".
+- ref: 3
+  topic: vocab
+  text: >-
+    关门 "to close down (a business); to shut the door". 工作 "job, work" (lesson 29).
+- ref: 4
+  topic: grammar
+  text: >-
+    怪勿得 "no wonder" (lesson 72) gives the effect when the cause has just been learnt. 最近 "lately".
+- ref: 5
+  topic: grammar
+  text: >-
+    因为…所以… "because … so …": 因为生意勿好，所以人走了. In speech either half often goes alone. {所以}: 所 starts high in this word. 一半
+    "half".
+- ref: 6
+  topic: vocab
+  text: >-
+    告诉 "to tell (someone something)".
+- ref: 7
+  topic: grammar
+  text: >-
+    拨伊担心 "make her worry": 拨 + person + verb, "to let, to cause" (lesson 80).
+- ref: 8
+  topic: vocab
+  text: >-
+    其实 "in fact, actually". 总归 "in the end, anyway" (lesson 65).
+- ref: 9
+  topic: grammar
+  text: >-
+    咾 {咾} at the end of a clause gives the reason: 我怕伊看勿起我咾，一直勿敢讲 "because I was afraid …, I never dared". It is the spoken
+    equivalent of 因为. 看勿起 "to look down on". 敢 "to dare".
+- ref: 10
+  topic: vocab
+  text: >-
+    商量 "to talk over, to discuss". 办法 "a way, a solution": 想办法 "to find a way".
+- ref: 11
+  topic: vocab
+  text: >-
+    反正 "anyway, in any case". 瞒 "to hide (from someone)": 瞒勿过 "can't keep it hidden".
+- ref: 12
+  topic: vocab
+  text: >-
+    打算 "plan; to plan".
+- ref: 13
+  topic: grammar
+  text: >-
+    V下去 "go on V-ing": 做下去 "carry on doing it", 讲下去 "go on talking", 撑下去 (line 18) "keep it up".
+- ref: 14
+  topic: vocab
+  text: >-
+    招人 "to hire, to take on staff": 招 "to recruit". 托 "to ask (someone to do something for you)".
+- ref: 18
+  topic: vocab
+  text: >-
+    撑 "to prop up, to hold out". 辛苦 "hard, tiring".
+- ref: 21
+  topic: vocab
+  text: >-
+    相信 "to believe". 好起来 "get better, turn out well".
+new_words:
+- hanzi: 帮帮
+  en: to help (a bit)
+- hanzi: 实在
+  en: really
+- hanzi: 关门
+  en: to close down
+- hanzi: 最近
+  en: lately
+- hanzi: 因为
+  en: because
+- hanzi: 所以
+  en: so, therefore
+- hanzi: 一半
+  en: half
+- hanzi: 告诉
+  en: to tell
+- hanzi: 其实
+  en: in fact
+- hanzi: 看勿起
+  en: to look down on
+- hanzi: 敢
+  en: to dare
+- hanzi: 商量
+  en: to talk over
+- hanzi: 办法
+  en: a way, a solution
+- hanzi: 反正
+  en: anyway
+- hanzi: 瞒
+  en: to hide
+- hanzi: 打算
+  en: plan
+- hanzi: 招
+  en: to recruit
+- hanzi: 托
+  en: to ask (a favour)
+- hanzi: 撑
+  en: to hold out
+- hanzi: 辛苦
+  en: hard, tiring
+- hanzi: 相信
+  en: to believe
+exercises:
+  translate:
+  - hanzi: 因为 落雨 ， 所以 伊 勿 来 了 。
+    en: Because it's raining, he isn't coming.
+  - hanzi: 其实 伊 是 上海 人 ， 勿 是 苏州 人 。
+    en: Actually she's from Shanghai, not Suzhou.
+  - hanzi: 侬 讲 下去 ， 我 辣辣 听 。
+    en: Go on, I'm listening.
+  fill:
+  - hanzi: 我 勿 ＿ 一 个 人 夜里 出去 。
+    en: I don't dare go out alone at night.
+    answer: 敢
+  - hanzi: 伊 ＿ 勿 来 ， 阿拉 先 吃 。
+    en: He's not coming anyway, let's eat.
+    answer: 反正
+  - hanzi: 搿 桩 事体 侬 搭 伊 ＿ 。
+    en: Talk this over with her.
+    answer: 商量
+  say:
+  - hanzi: 我 相信 侬 。
+    en: I believe you.
+  - hanzi: 侬 有 啥 打算 ？
+    en: What are your plans?
+  - hanzi: 怪勿得 伊 勿 开心 。
+    en: No wonder he's unhappy.

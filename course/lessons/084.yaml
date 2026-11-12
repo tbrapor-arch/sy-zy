@@ -1,0 +1,133 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 84
+title:
+  en: Review
+  hanzi: 复习
+review: true
+setting: >-
+  Saturday evening. Sam has cooked his first red-braised pork and invited Xiao Li, Xiao Zhang and A-Qiang to his newly repainted
+  flat.
+dialogue:
+- n: 1
+  speaker: 小张
+  hanzi: 侬 屋里 啥 物事 介 香 ？
+  en: What smells so good in here?
+- n: 2
+  speaker: Sam
+  hanzi: 红烧肉 ！ 小李 姆妈 教 个 ， 我 第 一 趟 自家 烧 。
+  en: Red-braised pork! Xiao Li's mother taught me; it's my first time on my own.
+- n: 3
+  speaker: 小李
+  hanzi: 颜色 勿错 ， 又 红 又 亮 。
+  en: 'Nice colour: red and glossy.'
+- n: 4
+  speaker: 阿强
+  hanzi: 天花板 修 好 了 伐 ？ 听 侬 讲 ， 楼高头 漏水 。
+  en: Is the ceiling fixed? You said the flat upstairs was leaking.
+- n: 5
+  speaker: Sam
+  hanzi: 修 好 了 。 楼高头 个 阿姨 叫 人 来 帮 我 油漆 了 。
+  en: It's fixed. The lady upstairs had someone come and repaint it for me.
+- n: 6
+  speaker: 小张
+  hanzi: 阿强 ， 侬 新 工作 哪能 ？ 做 得 下去 伐 ？
+  en: A-Qiang, how's the new job? Can you stick with it?
+- n: 7
+  speaker: 阿强
+  hanzi: 老 好 。 因为 是 Sam 介绍 个 ， 老板 对 我 老 客气 。
+  en: Very good. Because Sam introduced me, the boss is very kind to me.
+- n: 8
+  speaker: 小张
+  hanzi: 侬 瞒 了 我 两 个 礼拜 ， 我 还 勿大 开心 。
+  en: 'You hid it from me for two weeks: I''m still not too pleased.'
+- n: 9
+  speaker: 阿强
+  hanzi: 是 我 勿 好 ， 我 怕 侬 担心 咾 。
+  en: It was my fault. I was afraid you'd worry, that's all.
+- n: 10
+  speaker: 小李
+  hanzi: 好 了 ， 肉 末 吃 肉 ， 闲话 少 讲 。
+  en: 'Come on: the meat''s for eating, less talk.'
+- n: 11
+  speaker: Sam
+  hanzi: 慢慢叫 吃 ， 烫 个 。 我 还 炒 了 一 只[ʦᴀʔ55] 鸡毛菜 。
+  en: Eat slowly, it's hot. I've also stir-fried some baby pak choi.
+- n: 12
+  speaker: 小张
+  hanzi: 肉 软 是 软 ， 稍许 甜 了 一眼 。
+  en: The meat's tender all right, though a little sweet.
+- n: 13
+  speaker: Sam
+  hanzi: 糖 我 顶顶 少 摆 了 ， 小李 姆妈 摆 得 更加 多 。
+  en: I put in as little sugar as I could. Xiao Li's mother puts in even more.
+- n: 14
+  speaker: 小李
+  hanzi: 是个 ， 阿拉 姆妈 烧 菜 ， 糖 末 从来 勿 省 个 。
+  en: 'That''s true: when my mother cooks, she never saves on sugar.'
+- n: 15
+  speaker: 阿强
+  hanzi: Sam ， 侬 现在 钞票 省 得 下来 伐 ？
+  en: Sam, are you managing to save money now?
+- n: 16
+  speaker: Sam
+  hanzi: 稍许 好 一眼 了 。 咖啡 自家 烧 ， 网上 勿大 买 了 。
+  en: A little better. I make my own coffee and hardly buy anything online.
+- n: 17
+  speaker: 小李
+  hanzi: 据说 侬 门口 个 快递 少 了 一半 。
+  en: They say the parcels at your door have halved.
+- n: 18
+  speaker: 小张
+  hanzi: 阿姨 讲 个 。 伊 讲 侬 现在 老 会 过 日脚 了 。
+  en: The auntie said so. She says you know how to manage your life now.
+- n: 19
+  speaker: Sam
+  hanzi: 阿姨 啥 事体 侪 晓得 ， 比 电视 新闻 还 快 。
+  en: The auntie knows everything, faster than the TV news.
+- n: 20
+  speaker: 阿强
+  hanzi: 来 ， 吃 ！ 再 讲 下去 ， 红烧肉 要 冰冰冷 了 。
+  en: Come on, eat! If we keep talking the pork will be stone-cold.
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    Review of lessons 78–83. Vivid adjectives (冰冰冷, 蜡蜡黄, 血血红) and AA叫 (慢慢叫, 轻轻叫); 拿 + object + verb for each step (78).
+    Degree turned up and down: 顶顶, 最最, 老老 against 勿大, 稍许 (79). Getting things done: 叫 / 让 / 拨 + person + verb, 帮 and 代 (80).
+    Cause and effect: 因为…所以, 咾, 怪勿得, 反正, 其实; V下去 (81). 末 for topic, condition and list (82). Passing on what was said: 伊讲,
+    听说, 据说; 乃末, 就是讲 (83).
+- ref: 10
+  topic: grammar
+  text: >-
+    肉末吃肉 "the meat's for eating": noun + 末 + verb + the same noun (lesson 82).
+- ref: 18
+  topic: vocab
+  text: >-
+    过日脚 "to live one's life, to manage day to day" (日脚, lesson 51).
+new_words: []
+exercises:
+  translate:
+  - hanzi: 侬 叫 伊 明朝 来 拿 。
+    en: Tell him to come and collect it tomorrow.
+  - hanzi: 因为 塞车 ， 所以 我 来勿及 了 。
+    en: Because of the traffic I didn't make it.
+  - hanzi: 据说 搿 只[ʦᴀʔ55] 饭店 个 红烧肉 顶顶 好吃 。
+    en: They say this restaurant's red-braised pork is the very best.
+  fill:
+  - hanzi: 伊 ＿ 出去 ， 每日天 辣 屋里 。
+    en: 'He hardly goes out: he''s at home every day.'
+    answer: 勿大
+  - hanzi: 水 ＿ 个 ， 覅 吃 。
+    en: The water's ice-cold, don't drink it.
+    answer: 冰冰冷
+  - hanzi: 侬 讲 ＿ ， 我 辣辣 听 。
+    en: Go on talking, I'm listening.
+    answer: 下去
+  say:
+  - hanzi: 让 我 来 。
+    en: Let me do it.
+  - hanzi: 茶 末 吃 茶 。
+    en: Tea is for drinking.
+  - hanzi: 听说 侬 搬场 了 ？
+    en: I hear you've moved?

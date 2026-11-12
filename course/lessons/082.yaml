@@ -1,0 +1,224 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 82
+title:
+  en: A teahouse
+  hanzi: 吃 茶 去
+review: false
+setting: >-
+  A Wednesday afternoon at a teahouse by the City God Temple. The auntie meets her old friend Mrs Chen there every week,
+  and today she has brought Sam.
+dialogue:
+- n: 1
+  speaker: 阿姨
+  hanzi: 每 个 礼拜三 ， 阿拉 侪 到 城隍庙 来 吃 茶 。
+  en: Every Wednesday we come to the City God Temple for tea.
+- n: 2
+  speaker: 陈师母
+  hanzi: 侬 就是 Sam 啊 ？ 侬 阿姨 常庄 讲 侬 。
+  en: So you're Sam? Your auntie talks about you all the time.
+- n: 3
+  speaker: Sam
+  hanzi: 师母 好 ！ 阿姨 讲 我 啥 ？ 好个 还是 勿 好 个 ？
+  en: Hello, Mrs Chen! What does she say about me? Good things or bad?
+- n: 4
+  speaker: 陈师母
+  hanzi: 好个 末 ， 讲 侬 上海 闲话 讲 得 好 。
+  en: 'The good: that you speak Shanghainese well.'
+- n: 5
+  speaker: 陈师母
+  hanzi: 勿 好 个 末 ， 讲 侬 咖啡 吃 得 忒 多 。
+  en: 'The bad: that you drink too much coffee.'
+- n: 6
+  speaker: 阿姨
+  hanzi: 茶 末 吃 茶 ， 覅 讲 我 坏话 。
+  en: 'Tea is for drinking: no talking behind my back.'
+- n: 7
+  speaker: Sam
+  hanzi: 阿拉 要 一 壶 龙井 ， 还 有 啥 点心 ？
+  en: We'll have a pot of Longjing. What snacks are there?
+- n: 8
+  speaker: 陈师母
+  hanzi: 搿搭 个 小笼 顶 出名 ， 侬 要 尝尝 。
+  en: 'The soup dumplings here are famous: you must try them.'
+- n: 9
+  speaker: Sam
+  hanzi: 茶 要 自家 泡 伐 ？ 热水 摆 辣 阿里搭 ？
+  en: Do we make the tea ourselves? Where's the hot water?
+- n: 10
+  speaker: 阿姨
+  hanzi: 热水 有 人 来 加 个 ， 侬 笃悠悠 坐 辣海 。
+  en: Someone comes round to top it up. You just sit back and relax.
+- n: 11
+  speaker: Sam
+  hanzi: 吃 茶 吃 一 个 下半日 ， 真 写意 。
+  en: 'A whole afternoon drinking tea: what a life.'
+- n: 12
+  speaker: 陈师母
+  hanzi: 退休 了 末 ， 人 闲 ， 吃 吃 茶 ， 茄山河 。
+  en: 'When you''re retired you have time: you drink tea and chat.'
+- n: 13
+  speaker: Sam
+  hanzi: 茄山河 ？ 是 啥 意思 ？
+  en: 茄山河? What does that mean?
+- n: 14
+  speaker: 阿姨
+  hanzi: 就是 随便 谈谈 ， 讲讲 东 讲讲 西 ， 呒没 题目 。
+  en: Just chatting about this and that, with no subject.
+- n: 15
+  speaker: 陈师母
+  hanzi: 上海 人 个 闲话 末 ， 讲 勿 光 个 。
+  en: Shanghai people never run out of things to say.
+- n: 16
+  speaker: Sam
+  hanzi: 我 看 是 ， 侬 两 位 咾 ， 比 阿拉 还 开心 。
+  en: The way I see it, you two are happier than we young ones.
+- n: 17
+  speaker: 陈师母
+  hanzi: 开心 末 ， 要 自家 寻 个 。
+  en: Happiness is something you have to find for yourself.
+- n: 18
+  speaker: 阿姨
+  hanzi: Sam ， 侬 也 讲讲看 ， 法国 人 吃 茶 伐 ？
+  en: 'Sam, you tell us: do the French drink tea?'
+- n: 19
+  speaker: Sam
+  hanzi: 吃 是 吃 个 ， 必过 欢喜 吃 红茶 ， 一 杯 一 杯 吃 。
+  en: They do, but they like black tea, a cup at a time.
+- n: 20
+  speaker: 陈师母
+  hanzi: 红茶 ？ 下趟 侬 带 一眼 来 ， 拨 阿拉 尝尝 。
+  en: Black tea? Bring some next time and let us try it.
+- n: 21
+  speaker: 阿姨
+  hanzi: 茶 加 了 三 遍 水 了 ， 去 城隍庙 兜兜 。
+  en: 'That''s the third pot of water: let''s go for a stroll round the temple.'
+notes:
+- ref: 1
+  topic: culture
+  text: >-
+    城隍庙 {城隍庙} "the City God Temple", the old heart of Shanghai beside Yu Garden, with its teahouses and snack shops. 礼拜三
+    "Wednesday".
+- ref: 2
+  topic: culture
+  text: >-
+    师母 {师母} "Mrs", for a married woman of a certain age; once the wife of one's teacher.
+- ref: 4
+  topic: grammar
+  text: >-
+    末 {末} after a word or phrase sets it up as the topic, with a slight pause: 好个末…，勿好个末… (line 5) "as for the good …, as
+    for the bad …", a list of two. After a clause it can be "if, when": 退休了末 (line 12) "once you've retired".
+- ref: 6
+  topic: grammar
+  text: >-
+    茶末吃茶 "tea is for drinking (so drink it)": the noun, 末, then the verb with the same noun, tells someone to get on with
+    the obvious. 坏话 "bad things (said about someone)".
+- ref: 7
+  topic: vocab
+  text: >-
+    壶 "pot": 一壶茶. 点心 "snacks, dim sum".
+- ref: 9
+  topic: vocab
+  text: >-
+    泡 "to make (tea) by pouring on hot water": 泡茶. 热水 "hot water".
+- ref: 10
+  topic: vocab
+  text: >-
+    笃悠悠 {笃悠悠} "unhurried, at one's ease".
+- ref: 11
+  topic: vocab
+  text: >-
+    写意 {写意} "comfortable, pleasant, at ease": a favourite Shanghai word.
+- ref: 12
+  topic: vocab
+  text: >-
+    闲 "idle, with time on one's hands". 茄山河 {茄山河} "to chat, to shoot the breeze".
+- ref: 14
+  topic: vocab
+  text: >-
+    谈谈 "to chat", 讲讲东讲讲西 "talk about this and that".
+- ref: 15
+  topic: grammar
+  text: >-
+    讲勿光 "can never all be said": 光 "all gone, used up" after a verb (lesson 86 has more).
+- ref: 16
+  topic: grammar
+  text: >-
+    是 and 咾 as pauses in mid-sentence: 我看是，… "the way I see it, …", 侬两位咾，… "you two, now, …". They hold the floor while
+    the speaker thinks.
+- ref: 18
+  topic: vocab
+  text: >-
+    讲讲看 "tell us, let's hear it": a doubled verb + 看 "and see".
+- ref: 19
+  topic: vocab
+  text: >-
+    红茶 "black tea" (literally "red tea"). 吃是吃个 "they do drink it": verb + 是 + verb grants the point.
+- ref: 21
+  topic: vocab
+  text: >-
+    遍 "time, round": 加了三遍水 "topped up three times". 兜兜 "to stroll, to go round".
+new_words:
+- hanzi: 礼拜三
+  en: Wednesday
+- hanzi: 城隍庙
+  en: the City God Temple
+- hanzi: 师母
+  en: Mrs
+- hanzi: 坏话
+  en: bad things said
+- hanzi: 壶
+  en: pot
+- hanzi: 点心
+  en: snacks
+- hanzi: 泡
+  en: to make (tea)
+- hanzi: 热水
+  en: hot water
+- hanzi: 笃悠悠
+  en: unhurried
+- hanzi: 写意
+  en: comfortable, at ease
+- hanzi: 闲
+  en: idle
+- hanzi: 茄山河
+  en: to chat
+- hanzi: 谈谈
+  en: to chat
+- hanzi: 讲讲
+  en: to talk a bit
+- hanzi: 光
+  en: all gone
+- hanzi: 讲讲看
+  en: tell me, let's hear
+- hanzi: 红茶
+  en: black tea
+- hanzi: 遍
+  en: time, round
+- hanzi: 兜兜
+  en: to stroll
+exercises:
+  translate:
+  - hanzi: 饭 末 吃 饭 ， 覅 看 手机 。
+    en: Eat your meal, stop looking at your phone.
+  - hanzi: 礼拜天 我 欢喜 笃悠悠 吃 早饭 。
+    en: On Sundays I like a leisurely breakfast.
+  - hanzi: 搿 只[ʦᴀʔ55] 电影 我 看 了 两 遍 。
+    en: I've seen this film twice.
+  fill:
+  - hanzi: 今朝 天 好 ， 阿拉 去 外滩 ＿ 。
+    en: It's a nice day, let's go for a stroll on the Bund.
+    answer: 兜兜
+  - hanzi: 坐 辣 屋里 吃 茶 ， 真 ＿ 。
+    en: 'Sitting at home drinking tea: so pleasant.'
+    answer: 写意
+  - hanzi: 搿搭 个 ＿ 老 好吃 个 。
+    en: The snacks here are delicious.
+    answer: 点心
+  say:
+  - hanzi: 阿拉 要 一 壶 茶 。
+    en: We'd like a pot of tea.
+  - hanzi: 侬 讲讲看 。
+    en: Go on, tell me.
+  - hanzi: 我 退休 了 ， 人 老 闲 。
+    en: 'I''m retired: I have plenty of time.'

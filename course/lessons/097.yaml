@@ -1,0 +1,232 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 97
+title:
+  en: Farewells
+  hanzi: 再会
+review: false
+setting: >-
+  The end of August. Xiao Zhang leaves for her year in England: dinner at the auntie's the night before, then the friends
+  see her off at Pudong airport.
+dialogue:
+- n: 1
+  speaker: Text
+  hanzi: 八 月 底 ， 小张 要 离开 上海 了 。
+  en: At the end of August, Xiao Zhang is leaving Shanghai.
+- n: 2
+  speaker: Text
+  hanzi: 走 之前 一 日[ȵiɪʔ12] ， 阿姨 请 伊 到 屋里 来 吃 饭 。
+  en: The day before she goes, the auntie invites her home for dinner.
+- n: 3
+  speaker: 阿姨
+  hanzi: 到 了 外国 ， 饭 要 吃 饱 ， 衣裳 要 着 暖 。
+  en: When you're abroad, eat your fill and dress warmly.
+- n: 4
+  speaker: 阿姨
+  hanzi: 搿 是 我 烧 个 小菜 ， 侬 带 辣 路 浪 吃 。
+  en: 'This is a little dish I made: take it for the journey.'
+- n: 5
+  speaker: 小张
+  hanzi: 阿姨 ， 我 一定 记牢 侬 个 闲话 。
+  en: Auntie, I'll be sure to remember what you've said.
+- n: 6
+  speaker: Text
+  hanzi: 第 二 日[ȵiɪʔ12] 早浪 ， 四 个 朋友 一道 到 浦东 机场 。
+  en: The next morning the four friends went together to Pudong airport.
+- n: 7
+  speaker: 小李
+  hanzi: 行李 侪 带 好 了 伐 ？ 护照 、 签证 ， 再 看 一 看 。
+  en: 'Have you got all your luggage? Passport, visa: check again.'
+- n: 8
+  speaker: 小张
+  hanzi: 侪 带 好 了 。 飞机 十一 点 起飞 ， 还 有 两 个 钟头 。
+  en: 'I''ve got everything. The plane takes off at eleven: two hours yet.'
+- n: 9
+  speaker: Sam
+  hanzi: 到 了 英国 ， 侬 一定 要 联系 阿拉 。
+  en: When you get to England, you must keep in touch.
+- n: 10
+  speaker: 小张
+  hanzi: 晓得 个 。 我 每 个 礼拜 发 邮件 ， 发 照片 。
+  en: I know. I'll send emails and photos every week.
+- n: 11
+  speaker: 阿强
+  hanzi: 我 呢 ？ 我 要 侬 每日天 打 电话 。
+  en: And me? I want you to ring every day.
+- n: 12
+  speaker: 小张
+  hanzi: 每日天 ？ 英国 搭 上海 差 七 个 钟头 ， 侬 困 了 我 起来 。
+  en: 'Every day? England is seven hours behind Shanghai: when you go to bed I''m getting up.'
+- n: 13
+  speaker: 阿强
+  hanzi: 等 侬 起来 ， 我 再 困 ， 勿要紧 。
+  en: I'll wait until you're up, then go to bed. No problem.
+- n: 14
+  speaker: Text
+  hanzi: 阿强 从 袋袋 里 拿 出 一 张 明信片 ， 是 外滩 个 照片 。
+  en: A-Qiang took a postcard of the Bund out of his pocket.
+- n: 15
+  speaker: 阿强
+  hanzi: 拨 侬 做 纪念 。 想念 上海 个 辰光 ， 拿 出来 看看 。
+  en: A keepsake for you. When you miss Shanghai, take it out and look at it.
+- n: 16
+  speaker: 小张
+  hanzi: 我 一辈子 也 勿 会 忘记脱 上海 ， 也 勿 会 忘记脱 侬 。
+  en: I'll never in my life forget Shanghai, or you.
+- n: 17
+  speaker: 小李
+  hanzi: 好 了 好 了 ， 阿拉 送 侬 送到 搿搭 ， 下趟见 ！
+  en: 'All right, all right: this is as far as we can see you off. See you!'
+- n: 18
+  speaker: Text
+  hanzi: 小张 进去 之后 ， 三 个 人 立 辣海 ， 一歇 也 勿 动 。
+  en: After Xiao Zhang had gone through, the three of them stood there without moving.
+- n: 19
+  speaker: Sam
+  hanzi: 一 年 一歇 就 过去 了 ， 开年 夏天 就 好 见面 了 。
+  en: 'A year passes in no time: next summer we''ll see her again.'
+- n: 20
+  speaker: 阿强
+  hanzi: 侬 讲 得 轻松 ， 一 年 有 三百六十五 日[ȵiɪʔ12] 。
+  en: 'Easy for you to say: a year has three hundred and sixty-five days.'
+- n: 21
+  speaker: 小李
+  hanzi: 走 ， 阿拉 去 吃 夜宵 ， 我 请 。
+  en: Come on, let's go for a late-night snack. My treat.
+- n: 22
+  speaker: 阿强
+  hanzi: 早浪 十 点 吃 夜宵 ？
+  en: A late-night snack at ten in the morning?
+- n: 23
+  speaker: Text
+  hanzi: 三 个 人 侪 笑 了 ， 笑 了 一歇 ， 又 勿响 了 。
+  en: The three of them laughed, laughed a little, and fell silent again.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    离开 "to leave (a place)". 八月底 "the end of August" (底, lesson 88).
+- ref: 2
+  topic: grammar
+  text: >-
+    之前 "before" and 之后 (line 18) "after", after a verb or a time: 走之前一日 "the day before leaving", 进去之后 "after going in".
+    In speech 以前 and 以后 are also common.
+- ref: 3
+  topic: culture
+  text: >-
+    Wishes for the road: 饭要吃饱，衣裳要着暖 "eat your fill, dress warmly", what every Shanghai mother says. 饱 "full (after eating)",
+    暖 "warm".
+- ref: 4
+  topic: vocab
+  text: >-
+    小菜 "a dish (to go with rice)": in Shanghai, any cooked dish.
+- ref: 5
+  topic: vocab
+  text: >-
+    记牢 {记牢} "to remember (for good)": 记 + 牢 "firmly" (lesson 66); against 忘记脱 (line 16) "to forget completely".
+- ref: 6
+  topic: vocab
+  text: >-
+    机场 "airport".
+- ref: 7
+  topic: vocab
+  text: >-
+    护照 "passport".
+- ref: 8
+  topic: vocab
+  text: >-
+    起飞 "to take off".
+- ref: 9
+  topic: vocab
+  text: >-
+    联系 "to keep in touch, to contact".
+- ref: 10
+  topic: vocab
+  text: >-
+    发 "to send": 发邮件 "send an email", 邮件 "email".
+- ref: 13
+  topic: grammar
+  text: >-
+    等…再… "wait until …, then …": 等侬起来，我再困 "I'll go to bed once you're up".
+- ref: 15
+  topic: vocab
+  text: >-
+    明信片 (line 14) "postcard". 纪念 "souvenir, keepsake": 做纪念 "as a keepsake". 想念 "to miss (someone, a place)".
+- ref: 16
+  topic: vocab
+  text: >-
+    一辈子 "all one's life": 一辈子也勿会 "never in my life".
+- ref: 17
+  topic: vocab
+  text: >-
+    送到搿搭 "see (you) off as far as here": 送 + 到. 下趟见 "see you next time".
+- ref: 19
+  topic: vocab
+  text: >-
+    开年 "next year". 见面 "to meet, to see each other".
+- ref: 20
+  topic: vocab
+  text: >-
+    轻松 "easy, light, relaxed".
+new_words:
+- hanzi: 离开
+  en: to leave
+- hanzi: 之前
+  en: before
+- hanzi: 饱
+  en: full (after eating)
+- hanzi: 暖
+  en: warm
+- hanzi: 起飞
+  en: to take off
+- hanzi: 联系
+  en: to keep in touch
+- hanzi: 邮件
+  en: email
+- hanzi: 明信片
+  en: postcard
+- hanzi: 纪念
+  en: keepsake
+- hanzi: 想念
+  en: to miss
+- hanzi: 忘记脱
+  en: to forget completely
+- hanzi: 一辈子
+  en: all one's life
+- hanzi: 送到
+  en: to see off as far as
+- hanzi: 下趟见
+  en: see you next time
+- hanzi: 之后
+  en: after
+- hanzi: 开年
+  en: next year
+- hanzi: 见面
+  en: to meet
+- hanzi: 轻松
+  en: easy
+exercises:
+  translate:
+  - hanzi: 吃 饭 之前 ， 先 汏汏 手 。
+    en: Wash your hands before eating.
+  - hanzi: 等 伊 来 了 ， 阿拉 再 走 。
+    en: We'll go once he's arrived.
+  - hanzi: 我 一定 记牢 侬 个 闲话 。
+    en: I'll be sure to remember what you said.
+  fill:
+  - hanzi: 侬 到 了 ， 要 ＿ 我 。
+    en: When you arrive, get in touch.
+    answer: 联系
+  - hanzi: 飞机 几 点 ＿ ？
+    en: What time does the plane take off?
+    answer: 起飞
+  - hanzi: 我 老 ＿ 屋里 人 。
+    en: I miss my family a lot.
+    answer: 想念
+  say:
+  - hanzi: 下趟见 ！
+    en: See you next time!
+  - hanzi: 开年 见 ！
+    en: See you next year!
+  - hanzi: 我 勿 会 忘记脱 侬 。
+    en: I won't forget you.

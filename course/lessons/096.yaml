@@ -1,0 +1,229 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 96
+title:
+  en: Pudong and Puxi
+  hanzi: 浦东 浦西
+review: false
+setting: >-
+  Narrated: the auntie's younger brother, Old Zhou, crossed the river by ferry to work for thirty years. Now there are bridges
+  and tunnels, and one Sunday he takes Sam on the ferry.
+dialogue:
+- n: 1
+  speaker: Text
+  hanzi: 阿姨 个 阿弟 老周 ， 今年 六十五 岁 。
+  en: The auntie's younger brother, Old Zhou, is sixty-five this year.
+- n: 2
+  speaker: Text
+  hanzi: 伊 年纪 轻 个 辰光 ， 住 辣 浦西 ， 辣 浦东 个 工厂 上班 。
+  en: When he was young he lived in Puxi and worked at a factory in Pudong.
+- n: 3
+  speaker: Text
+  hanzi: 每日天 早浪 ， 伊 要 到 码头 去 乘 摆渡 ， 过 黄浦江 。
+  en: Every morning he went to the quay to take the ferry across the Huangpu.
+- n: 4
+  speaker: Text
+  hanzi: 摆渡 浪 人 轧 得来 ， 脚踏车 也 要 搬 上去 。
+  en: The ferry was packed, and you had to lift your bike on board too.
+- n: 5
+  speaker: Text
+  hanzi: 冬天 江 浪 风 大 ， 冷 得来 骨头 也 痛 。
+  en: In winter the wind on the river was so strong it chilled you to the bone.
+- n: 6
+  speaker: Text
+  hanzi: 有 一 趟 落 大 雾 ， 摆渡 停 了 ， 伊 拨 老板 骂 了 一 顿 。
+  en: Once there was thick fog, the ferry stopped, and his boss gave him a dressing-down.
+- n: 7
+  speaker: Text
+  hanzi: 老早 讲 ： 宁可 要 浦西 一 张 床 ， 勿 要 浦东 一 间 房子 。
+  en: 'People used to say: better a bed in Puxi than a flat in Pudong.'
+- n: 8
+  speaker: Text
+  hanzi: 搿 辰光 个 浦东 ， 侪 是 工厂 ， 夜里 冷清 得来 。
+  en: Pudong in those days was all factories, and deserted at night.
+- n: 9
+  speaker: Text
+  hanzi: 九十 年代 开始 ， 浦东 一 年 一 个 样子 。
+  en: From the nineties, Pudong looked different every year.
+- n: 10
+  speaker: Text
+  hanzi: 第 一 座 大桥 造好 了 ， 挨下来 隧道 也 造好 了 。
+  en: The first big bridge was built, and then the tunnels.
+- n: 11
+  speaker: Text
+  hanzi: 陆家嘴 个 大楼 越来越 多 ， 越来越 高 。
+  en: The towers of Lujiazui grew more and more numerous, taller and taller.
+- n: 12
+  speaker: Text
+  hanzi: 老周 个 工厂 拨 拆脱 了 ， 造 了 高级 公寓 。
+  en: Old Zhou's factory was pulled down, and smart flats built in its place.
+- n: 13
+  speaker: Text
+  hanzi: 伊 屋里 也 动迁 了 ， 从 浦西 个 石库门 搬 到 浦东 个 新 房子 。
+  en: His family was rehoused too, from a shikumen house in Puxi to a new flat in Pudong.
+- n: 14
+  speaker: 老周
+  hanzi: 老早 拨 人家 看勿起 个 浦东 ， 现在 是 好 地方 了 。
+  en: Pudong, that people used to look down on, is a good place now.
+- n: 15
+  speaker: Sam
+  hanzi: 侬 现在 还 乘 摆渡 伐 ？
+  en: Do you still take the ferry?
+- n: 16
+  speaker: 老周
+  hanzi: 有辰光 乘 。 摆渡 比 隧道 慢 ， 必过 有 味道 。
+  en: Sometimes. The ferry is slower than the tunnel, but it has charm.
+- n: 17
+  speaker: Text
+  hanzi: 礼拜天 ， 老周 带 Sam 去 乘 摆渡 。
+  en: On Sunday Old Zhou took Sam on the ferry.
+- n: 18
+  speaker: Text
+  hanzi: 江面 浪 风 老 大 ， 船 慢慢叫 开 ， 两 面 侪 是 大楼 。
+  en: The wind was strong on the water, the boat moved slowly, and there were towers on both sides.
+- n: 19
+  speaker: 老周
+  hanzi: 侬 看 ， 搿 面 是 外滩 ， 一百 年 个 历史 。
+  en: 'Look: on this side the Bund, a hundred years of history.'
+- n: 20
+  speaker: 老周
+  hanzi: 伊 面 是 陆家嘴 ， 只 有 三十 年 。
+  en: 'On that side Lujiazui: only thirty years.'
+- n: 21
+  speaker: Sam
+  hanzi: 三十 年 就 造 了 介 多 楼 ， 真 想勿到 。
+  en: 'So many buildings in thirty years: I''d never have thought it.'
+- n: 22
+  speaker: 老周
+  hanzi: 是个 ， 必过 江 还是 老 江 ， 摆渡 还是 老 摆渡 。
+  en: Yes, but the river is the same old river, and the ferry the same old ferry.
+- n: 23
+  speaker: Text
+  hanzi: 船 到 了 浦东 ， 老周 看 了 交关 辰光 ， 一 句 闲话 也 勿 讲 。
+  en: When the boat reached Pudong, Old Zhou gazed for a long time without saying a word.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    老周 "Old Zhou": the auntie's younger brother (阿弟, lesson 76).
+- ref: 2
+  topic: vocab
+  text: >-
+    浦西 "Puxi", the old city on the west bank; 浦东 (lesson 66) the east bank. 工厂 "factory".
+- ref: 3
+  topic: vocab
+  text: >-
+    码头 "quay, pier". 摆渡 {摆渡} "ferry; to ferry across": 乘摆渡 "take the ferry".
+- ref: 5
+  topic: vocab
+  text: >-
+    风 "wind": 风大 "windy".
+- ref: 6
+  topic: grammar
+  text: >-
+    拨 + person + verb in a story, for something that happened to someone: 伊拨老板骂了一顿 "he was scolded by his boss" (the passive,
+    lesson 94); 工厂拨拆脱了 (line 12) "the factory was pulled down", with no one named. 雾 "fog".
+- ref: 7
+  topic: culture
+  text: >-
+    宁可要浦西一张床，勿要浦东一间房 "better a bed in Puxi than a flat in Pudong", the saying of the 1980s. 宁可 "would rather".
+- ref: 8
+  topic: vocab
+  text: >-
+    冷清 "deserted, quiet, lifeless".
+- ref: 10
+  topic: grammar
+  text: >-
+    V好 for what now stands, the result in place: 造好 "built (and standing)", 装好 "installed". 座 counts bridges (lesson 72).
+    大桥 "big bridge", 隧道 "tunnel".
+- ref: 11
+  topic: vocab
+  text: >-
+    陆家嘴 {陆家嘴} "Lujiazui", the towers of Pudong. 越来越 "more and more" (lesson 83).
+- ref: 12
+  topic: vocab
+  text: >-
+    拆脱 "to pull down, to demolish". 高级 "high-class". 公寓 "block of flats; flat".
+- ref: 13
+  topic: culture
+  text: >-
+    动迁 {动迁} "to be rehoused (when the old district is cleared)": from the 1990s, millions of Shanghai families left the
+    lanes for new flats this way. 从…到… (lesson 65).
+- ref: 18
+  topic: vocab
+  text: >-
+    江面 "the surface of the river". 船 "boat".
+- ref: 19
+  topic: vocab
+  text: >-
+    历史 "history". 搿面 / 伊面 "this side / that side" (lesson 52).
+- ref: 21
+  topic: vocab
+  text: >-
+    想勿到 "unexpected, I'd never have thought".
+new_words:
+- hanzi: 老周
+  en: Old Zhou
+- hanzi: 浦西
+  en: Puxi
+- hanzi: 工厂
+  en: factory
+- hanzi: 码头
+  en: quay
+- hanzi: 摆渡
+  en: ferry
+- hanzi: 雾
+  en: fog
+- hanzi: 宁可
+  en: would rather
+- hanzi: 冷清
+  en: deserted
+- hanzi: 大桥
+  en: big bridge
+- hanzi: 造好
+  en: built
+- hanzi: 隧道
+  en: tunnel
+- hanzi: 陆家嘴
+  en: Lujiazui
+- hanzi: 拆脱
+  en: to pull down
+- hanzi: 高级
+  en: high-class
+- hanzi: 公寓
+  en: flat, block of flats
+- hanzi: 动迁
+  en: to be rehoused
+- hanzi: 江面
+  en: the river surface
+- hanzi: 船
+  en: boat
+- hanzi: 历史
+  en: history
+- hanzi: 想勿到
+  en: I'd never have thought
+exercises:
+  translate:
+  - hanzi: 我 宁可 走 ， 也 勿 要 乘 差头 。
+    en: I'd rather walk than take a taxi.
+  - hanzi: 搿 只[ʦᴀʔ55] 地方 老早 老 冷清 个 。
+    en: This place used to be very deserted.
+  - hanzi: 新 个 地铁 站 造好 了 。
+    en: The new metro station has been built.
+  fill:
+  - hanzi: 伊 拨 经理 ＿ 了 一 顿 。
+    en: He got a dressing-down from the manager.
+    answer: 骂
+  - hanzi: 今朝 江 浪 ＿ 老 大 。
+    en: It's very windy on the river today.
+    answer: 风
+  - hanzi: 落 雾 了 ， ＿ 停 了 。
+    en: There's fog, the ferry has stopped.
+    answer: 摆渡
+  say:
+  - hanzi: 阿拉 去 乘 摆渡 。
+    en: Let's take the ferry.
+  - hanzi: 浦东 老 勿 一样 了 。
+    en: Pudong is very different now.
+  - hanzi: 真 想勿到 ！
+    en: I'd never have thought it!

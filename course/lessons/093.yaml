@@ -1,0 +1,224 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 93
+title:
+  en: A visit
+  hanzi: 做 人客
+review: false
+setting: >-
+  Sam's parents are in Shanghai for a week. On Sunday the auntie invites the three of them to lunch. They speak no Shanghainese,
+  so Sam translates.
+dialogue:
+- n: 1
+  speaker: Text
+  hanzi: Sam 个 爷娘 从 法国 来 上海 ， 白相 一 个 礼拜 。
+  en: Sam's parents came from France to Shanghai for a week.
+- n: 2
+  speaker: Text
+  hanzi: 礼拜天 ， 阿姨 邀请 伊拉 三 个 人 到 屋里 来 吃 中饭 。
+  en: On Sunday the auntie invited the three of them home for lunch.
+- n: 3
+  speaker: 阿姨
+  hanzi: 欢迎 光临 ！ 请 进来 ， 覅 客气 ， 鞋子 覅 换 了 。
+  en: Welcome! Come in, don't stand on ceremony, no need to change your shoes.
+- n: 4
+  speaker: Sam
+  hanzi: 阿姨 ， 搿 是 阿拉 爷 ， 搿 是 阿拉 姆妈 。
+  en: Auntie, this is my father, and this is my mother.
+- n: 5
+  speaker: Sam姆妈
+  hanzi: 侬 好 ， 谢谢 ！
+  en: Hello, thank you!
+- n: 6
+  speaker: 阿姨
+  hanzi: 侬 姆妈 上海 闲话 也 会 讲 啊 ？ 老 好 ！
+  en: Your mother speaks Shanghainese too? Very good!
+- n: 7
+  speaker: Sam
+  hanzi: 就 会 搿 两 句 ， 是 我 昨日 教 个 。
+  en: 'Only those two phrases: I taught her yesterday.'
+- n: 8
+  speaker: 阿姨
+  hanzi: 坐 ， 坐 。 阿要 吃 杯 茶 ？ 还是 吃 咖啡 ？
+  en: Sit down, sit down. Would you like some tea? Or coffee?
+- n: 9
+  speaker: Sam
+  hanzi: Sam 翻译 ： 阿拉 爷 讲 ， 伊 想 尝尝 中国 茶 。
+  en: 'Sam translates: My father says he''d like to try Chinese tea.'
+- n: 10
+  speaker: 阿姨
+  hanzi: 好个 。 先 吃 一眼 水果 ， 香蕉 、 葡萄 、 生梨 侪 有 。
+  en: 'Good. Have some fruit first: there are bananas, grapes and pears.'
+- n: 11
+  speaker: Text
+  hanzi: 台子 浪 侪 是 菜 ： 红烧肉 、 鸡毛菜 、 腌笃鲜 。
+  en: 'The table was covered with dishes: red-braised pork, baby pak choi, and spring soup.'
+- n: 12
+  speaker: Sam
+  hanzi: 阿拉 姆妈 讲 ， 搿 只[ʦᴀʔ55] 汤 啥 名字 ？ 味道 老 好 。
+  en: My mother asks what this soup is called. It's delicious.
+- n: 13
+  speaker: 阿姨
+  hanzi: 叫 腌笃鲜 ， 笋 搭 咸肉 、 鲜肉 一道 烧 个 。
+  en: 'It''s called 腌笃鲜: bamboo shoots cooked with salted and fresh pork.'
+- n: 14
+  speaker: 阿姨
+  hanzi: 稍为 吃 一眼 ， 覅 客气 ， 菜 多 了 末 吃 勿 光 。
+  en: 'Do have some more, don''t be shy: there''s too much to finish.'
+- n: 15
+  speaker: Sam
+  hanzi: 阿姨 ， 侬 介 客气 ， 阿拉 真 是 添麻烦 了 。
+  en: Auntie, you're too kind. We've put you to so much trouble.
+- n: 16
+  speaker: 阿姨
+  hanzi: 勿 麻烦 。 客人 来 了 末 ， 主人 当然 要 招待 好 。
+  en: No trouble. When guests come, of course you look after them.
+- n: 17
+  speaker: Sam
+  hanzi: 阿拉 爷 讲 ， 侬 介 和气 ， 介 大方 ， 伊 谢谢 侬 照顾 我 。
+  en: My father says you're so kind and generous; he thanks you for looking after me.
+- n: 18
+  speaker: 阿姨
+  hanzi: 照顾 是 应该 个 ， Sam 就 像 我 自家 个 小人 。
+  en: 'Looking after him is only right: Sam is like my own child.'
+- n: 19
+  speaker: Text
+  hanzi: 吃 好 饭 ， 吃 了 冰淇淋 ， 阿姨 送 拨 Sam 姆妈 一 条 围巾 。
+  en: After lunch and ice cream, the auntie gave Sam's mother a scarf.
+- n: 20
+  speaker: Sam
+  hanzi: 阿拉 要 走 了 。 阿姨 ， 谢谢 侬 招待 。
+  en: We'll be going now. Thank you for having us, Auntie.
+- n: 21
+  speaker: 阿姨
+  hanzi: 走好 ， 走好 ！ 下趟 再 来 白相 。
+  en: Take care! Come again!
+- n: 22
+  speaker: Sam姆妈
+  hanzi: 拜哎 ！ 明朝会 ！
+  en: Bye-bye! See you tomorrow!
+- n: 23
+  speaker: Text
+  hanzi: 楼梯 浪 ， Sam 个 爷 讲 ： 上海 人 真 是 热情 。
+  en: 'On the stairs Sam''s father said: Shanghai people are so warm.'
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    爷娘 {爷娘} "parents" (father and mother).
+- ref: 3
+  topic: culture
+  text: >-
+    Host and guest: 欢迎光临 "welcome" (a set phrase, also on every shop door), 请进来 "come in", 覅客气 "don't stand on ceremony".
+    做人客 (the title) "to be a guest".
+- ref: 8
+  topic: grammar
+  text: >-
+    阿要 {阿要} "would you like …?": 阿 + 要, the question 阿 of 阿是 (lesson 75). 阿要吃杯茶？ is the classic offer.
+- ref: 10
+  topic: vocab
+  text: >-
+    香蕉 "banana", 葡萄 "grapes", 生梨 {生梨} "pear" (梨, lesson 68).
+- ref: 11
+  topic: culture
+  text: >-
+    腌笃鲜 {腌笃鲜} "spring soup": salted pork (咸肉) and fresh pork (鲜肉) simmered with spring bamboo shoots (笋), the dish of March
+    and April.
+- ref: 14
+  topic: grammar
+  text: >-
+    Softening an offer: 稍为吃一眼 "do have a little" (稍为, lesson 74), with a doubled verb as in 尝尝, 坐坐. 吃勿光 "can't all be eaten".
+- ref: 15
+  topic: vocab
+  text: >-
+    添麻烦 "to put someone to trouble": 添 "to add".
+- ref: 16
+  topic: vocab
+  text: >-
+    客人 "guest", 主人 "host". 招待 "to entertain, to look after (guests)". 当然 "of course".
+- ref: 17
+  topic: vocab
+  text: >-
+    和气 "kind, friendly", 大方 "generous, open-handed".
+- ref: 18
+  topic: vocab
+  text: >-
+    应该 "should, ought to; only right".
+- ref: 21
+  topic: culture
+  text: >-
+    走好 {走好} "take care, mind how you go", said by the host at the door; the guest says 再会 or 明朝会.
+- ref: 22
+  topic: vocab
+  text: >-
+    拜哎 {拜哎} "bye-bye", from English, used by everyone.
+- ref: 23
+  topic: vocab
+  text: >-
+    热情 "warm, warm-hearted".
+new_words:
+- hanzi: 人客
+  en: guest
+- hanzi: 爷娘
+  en: parents
+- hanzi: 邀请
+  en: to invite
+- hanzi: 葡萄
+  en: grapes
+- hanzi: 翻译
+  en: to translate
+- hanzi: 主人
+  en: host
+- hanzi: 冰淇淋
+  en: ice cream
+- hanzi: 欢迎
+  en: welcome
+- hanzi: 光临
+  en: (polite) to come
+- hanzi: 阿要
+  en: would you like
+- hanzi: 香蕉
+  en: banana
+- hanzi: 生梨
+  en: pear
+- hanzi: 添麻烦
+  en: to put to trouble
+- hanzi: 客人
+  en: guest
+- hanzi: 招待
+  en: to look after (guests)
+- hanzi: 和气
+  en: kind, friendly
+- hanzi: 大方
+  en: generous
+- hanzi: 走好
+  en: take care
+- hanzi: 拜哎
+  en: bye-bye
+- hanzi: 热情
+  en: warm-hearted
+exercises:
+  translate:
+  - hanzi: 阿要 吃 一眼 水果 ？
+    en: Would you like some fruit?
+  - hanzi: 伊 老 和气 个 ， 也 老 大方 。
+    en: She's very kind, and very generous too.
+  - hanzi: 客人 来 了 ， 当然 要 请 伊拉 吃 饭 。
+    en: When guests come, of course you invite them to eat.
+  fill:
+  - hanzi: ＿ 光临 ！ 请 坐 。
+    en: Welcome! Please sit down.
+    answer: 欢迎
+  - hanzi: 侬 ＿ 早 点 困 。
+    en: You should go to bed earlier.
+    answer: 应该
+  - hanzi: 真 是 ＿ 了 ， 谢谢 侬 。
+    en: Sorry for all the trouble, thank you.
+    answer: 添麻烦
+  say:
+  - hanzi: 走好 ！
+    en: Take care!
+  - hanzi: 阿要 吃 杯 茶 ？
+    en: Would you like some tea?
+  - hanzi: 上海 人 老 热情 个 。
+    en: Shanghai people are very warm.

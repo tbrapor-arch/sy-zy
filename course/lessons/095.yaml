@@ -1,0 +1,237 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 95
+title:
+  en: Lane life
+  hanzi: 弄堂 里向
+review: false
+setting: >-
+  Narrated, in the manner of a lane memoir: the people of the auntie's lane and the nicknames they go by. The rough ones
+  are names heard, not words to use.
+dialogue:
+- n: 1
+  speaker: Text
+  hanzi: 阿拉 搿 条 弄堂 ， 邻舍隔壁 有 三十 几 家 。
+  en: Our lane has some thirty households of neighbours.
+- n: 2
+  speaker: Text
+  hanzi: 弄堂 里 个 人 侪 有 绰号 ， 真 名字 反而 呒没 人 记得 。
+  en: Everyone in the lane has a nickname; their real names, no one remembers.
+- n: 3
+  speaker: Text
+  hanzi: 小菜场 门口 修 脚踏车 个 ， 人 老 胖 ， 叫 大块头 。
+  en: 'The man who mends bikes by the market is very fat: he''s called Big Lump.'
+- n: 4
+  speaker: Text
+  hanzi: 伊 隔壁 修 鞋子 个 ， 人 老 长 ， 叫 长脚 。
+  en: 'The shoe-mender next to him is very tall: they call him Long Legs.'
+- n: 5
+  speaker: Text
+  hanzi: 有 个 男人 一日到夜 立 辣 门口 ， 叫 排门板 。
+  en: 'One man stands at his door all day: he''s called the Shutter Board.'
+- n: 6
+  speaker: Text
+  hanzi: 排门板 就是 老早 店 门口 一 块 一 块 个 门 。
+  en: Shutter boards were the wooden doors, one board after another, of the old shops.
+- n: 7
+  speaker: Text
+  hanzi: 还 有 个 老 阿姨 ， 又 矮 又 胖 ， 像 只[ʦᴀʔ55] 柏油桶 。
+  en: And there's an old lady, short and round, just like a tar barrel.
+- n: 8
+  speaker: Text
+  hanzi: 搿 种 绰号 ， 伊拉 自家 听 到 是 勿 开心 个 。
+  en: Nicknames like these don't please their owners when they hear them.
+- n: 9
+  speaker: Text
+  hanzi: 弄堂 里 也 有 老油条 ， 欢喜 揩油 。
+  en: The lane had its slippery customers too, always on the make.
+- n: 10
+  speaker: Text
+  hanzi: 七十 年代 有 个 年纪 轻 个 ， 龌龊 兮兮 ， 叫 阿飞 。
+  en: In the seventies there was a young man, a bit grubby, who was called the Teddy Boy.
+- n: 11
+  speaker: Text
+  hanzi: 伊 偷 过 隔壁 个 脚踏车 ， 大家 骂 伊 贼骨头 。
+  en: He once stole the next-door bike, and everyone called him a thief.
+- n: 12
+  speaker: 阿姨
+  hanzi: 赤佬 、 瘪三 ， 是 骂 人 个 ， 侬 覅 学 。
+  en: 'Words like 赤佬 and 瘪三 are insults: don''t learn to use them.'
+- n: 13
+  speaker: 阿姨
+  hanzi: 小说 里 常庄 有 ， 晓得 意思 就 可以 了 。
+  en: 'But you''ll often see them in novels: knowing what they mean is enough.'
+- n: 14
+  speaker: Text
+  hanzi: 弄堂 里 顶 闹猛 个 辰光 ， 是 夏天 个 夜里 。
+  en: The liveliest time in the lane was summer evenings.
+- n: 15
+  speaker: Text
+  hanzi: 屋里 热 ， 大家 搬 凳子 出来 ， 辣 弄堂 里 乘风凉 。
+  en: It was hot indoors, so everyone brought their stools out to sit in the cool of the lane.
+- n: 16
+  speaker: Text
+  hanzi: 小囡 跑 来 跑 去 ， 老 人 坐 辣海 茄山河 。
+  en: The children ran about, and the old folk sat and chatted.
+- n: 17
+  speaker: Text
+  hanzi: 有 个 老 爷叔 派头 老 大 ， 讲 闲话 花头 老 多 。
+  en: One old man had grand airs and was full of stories.
+- n: 18
+  speaker: Text
+  hanzi: 讲到 老 上海 ， 伊 个 名堂 行情行事 ， 听 也 听 勿 光 。
+  en: Once he started on old Shanghai, he had more tales than anyone could listen to.
+- n: 19
+  speaker: Text
+  hanzi: 小囡 白相 好 ， 玩具 摆 得 一天世界 。
+  en: When the children had played, their toys lay all over the place.
+- n: 20
+  speaker: Text
+  hanzi: 现在 ， 弄堂 里 个 老 邻舍 搬 走 了 一半 。
+  en: Now half the old neighbours have moved away.
+- n: 21
+  speaker: Text
+  hanzi: 留 下来 个 碰头 ， 还是 叫 绰号 。
+  en: Those who stayed still call each other by their nicknames when they meet.
+- n: 22
+  speaker: Sam
+  hanzi: 阿姨 ， 我 辣 弄堂 里 有 绰号 伐 ？
+  en: Auntie, do I have a nickname in the lane?
+- n: 23
+  speaker: 阿姨
+  hanzi: 有 个 ， 叫 小 法国 。 侬 勿 晓得 ？
+  en: 'You do: Little France. Didn''t you know?'
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    邻舍隔壁 {邻舍隔壁} "the neighbours, everyone around".
+- ref: 2
+  topic: vocab
+  text: >-
+    绰号 "nickname". 真名字 "real name".
+- ref: 3
+  topic: culture
+  text: >-
+    Lane nicknames are pictures of the person: 大块头 {大块头} "big lump" (a fat person), 长脚 {长脚} (line 4) "long legs", 排门板 {排门板}
+    (line 5) "shutter board" (a tall, stiff, thin one), 柏油桶 {柏油桶} (line 7) "tar barrel" (short and round). 胖 "fat".
+- ref: 5
+  topic: vocab
+  text: >-
+    一日到夜 "from morning till night" (lesson 51).
+- ref: 7
+  topic: vocab
+  text: >-
+    矮 "short (of people)".
+- ref: 9
+  topic: vocab
+  text: >-
+    老油条 {老油条} "an old hand, a slippery customer" (an old dough stick, lesson 69). 揩油 {揩油} "to take advantage, to get something
+    for nothing" (literally "wipe off the oil").
+- ref: 10
+  topic: grammar
+  text: >-
+    Adjective + 兮兮 {兮兮} "a bit, rather (unpleasantly)": 龌龊兮兮 "grubby", 嗲兮兮 "a bit too sweet". 阿飞 {阿飞} "Teddy boy, hooligan"
+    (from the 1950s on), always said of someone else.
+- ref: 11
+  topic: vocab
+  text: >-
+    偷 "to steal". 骂 "to scold, to call names". 贼骨头 {贼骨头} "thief" (literally "thief's bones"), a lane word.
+- ref: 12
+  topic: culture
+  text: >-
+    赤佬 {赤佬} and 瘪三 {瘪三} are insults ("ghost", "tramp"), found in every Shanghai novel and film. The course explains them
+    so that you can read and understand them; nobody in the lessons says them to Sam, and you should not say them to anyone.
+- ref: 14
+  topic: vocab
+  text: >-
+    闹猛 {闹猛} "lively, bustling".
+- ref: 15
+  topic: culture
+  text: >-
+    乘风凉 {乘风凉} "to sit out in the cool": before air-conditioning, the lanes filled with stools and bamboo beds on summer
+    nights.
+- ref: 17
+  topic: vocab
+  text: >-
+    派头 {派头} "airs, style": 派头大 "grand, showy". 花头 {花头} "tricks, colour; stories": 花头多 "full of tales (or tricks)".
+- ref: 18
+  topic: vocab
+  text: >-
+    名堂 {名堂} "a thing, a story, a fuss". 行情行事 {行情行事} "a great many, loads". 听也听勿光 "too many to listen to them all".
+- ref: 19
+  topic: vocab
+  text: >-
+    一天世界 {一天世界} "all over the place, a complete mess": 摆得一天世界 "strewn everywhere".
+- ref: 21
+  topic: vocab
+  text: >-
+    留 "to stay, to remain". 碰头 "to meet" (lesson 16).
+new_words:
+- hanzi: 邻舍隔壁
+  en: the neighbours
+- hanzi: 小菜场
+  en: food market
+- hanzi: 绰号
+  en: nickname
+- hanzi: 长脚
+  en: long legs
+- hanzi: 男人
+  en: man
+- hanzi: 排门板
+  en: shutter board
+- hanzi: 柏油桶
+  en: tar barrel
+- hanzi: 兮兮
+  en: (after an adjective) a bit, rather
+- hanzi: 阿飞
+  en: Teddy boy, hooligan
+- hanzi: 偷
+  en: to steal
+- hanzi: 贼骨头
+  en: thief
+- hanzi: 赤佬
+  en: (insult) ghost
+- hanzi: 瘪三
+  en: (insult) tramp
+- hanzi: 闹猛
+  en: lively
+- hanzi: 花头
+  en: tricks, stories
+- hanzi: 名堂
+  en: a thing, a story
+- hanzi: 行情行事
+  en: a great many
+- hanzi: 一天世界
+  en: all over the place
+- hanzi: 派头
+  en: airs, style
+- hanzi: 老油条
+  en: old hand, slippery customer
+- hanzi: 揩油
+  en: to take advantage
+exercises:
+  translate:
+  - hanzi: 伊 个 绰号 叫 长脚 。
+    en: His nickname is Long Legs.
+  - hanzi: 夏天 夜里 ， 弄堂 里 老 闹猛 个 。
+    en: On summer nights the lane is very lively.
+  - hanzi: 侬 屋里 物事 摆 得 一天世界 。
+    en: Your things are strewn all over the flat.
+  fill:
+  - hanzi: 伊 又 矮 又 ＿ ， 像 只[ʦᴀʔ55] 柏油桶 。
+    en: He's short and round, like a tar barrel.
+    answer: 胖
+  - hanzi: 我 个 脚踏车 拨 人 ＿ 了 。
+    en: My bike has been stolen.
+    answer: 偷
+  - hanzi: 伊 讲 闲话 ＿ 老 多 。
+    en: He has plenty of stories.
+    answer: 花头
+  say:
+  - hanzi: 侬 有 绰号 伐 ？
+    en: Do you have a nickname?
+  - hanzi: 今朝 弄堂 里 老 闹猛 。
+    en: The lane is very lively today.
+  - hanzi: 覅 骂 人 。
+    en: Don't call people names.

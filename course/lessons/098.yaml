@@ -1,0 +1,135 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 98
+title:
+  en: Review
+  hanzi: 复习
+review: true
+setting: >-
+  September. Xiao Zhang has been gone a month, and Sam writes her a long email about everything that has happened since.
+dialogue:
+- n: 1
+  speaker: Text
+  hanzi: 小张 走 了 一 个 月 ， Sam 写 邮件 拨 伊 。
+  en: Xiao Zhang has been gone a month, and Sam writes her an email.
+- n: 2
+  speaker: Sam
+  hanzi: 小张 ， 侬 好 伐 ？ 英国 冷 伐 ？ 饭 吃 得 好 伐 ？
+  en: Xiao Zhang, how are you? Is England cold? Are you eating well?
+- n: 3
+  speaker: Sam
+  hanzi: 侬 走 之后 ， 阿拉 越来越 冷清 。
+  en: Since you left, we've been lonelier and lonelier.
+- n: 4
+  speaker: Sam
+  hanzi: 阿强 每日天 等 侬 个 电话 ， 等 好 再 困 。
+  en: A-Qiang waits for your call every day, and only goes to bed after.
+- n: 5
+  speaker: Sam
+  hanzi: 礼拜天 ， 老周 带 我 乘 摆渡 ， 从 浦西 到 浦东 。
+  en: On Sunday Old Zhou took me on the ferry from Puxi to Pudong.
+- n: 6
+  speaker: Sam
+  hanzi: 伊 讲 ， 老早 浦东 拨 人家 看勿起 。
+  en: He says people used to look down on Pudong.
+- n: 7
+  speaker: Sam
+  hanzi: 讲到 大楼 末 ， 我 还是 欢喜 弄堂 。
+  en: But when it comes to buildings, I still prefer the lanes.
+- n: 8
+  speaker: Sam
+  hanzi: 阿姨 讲 ， 我 辣 弄堂 里 也 有 绰号 ， 叫 小 法国 。
+  en: 'The auntie says I have a nickname in the lane: Little France.'
+- n: 9
+  speaker: Sam
+  hanzi: 上个月 物业 个 师傅 又 弄坏 了 灯 。
+  en: Last month the repairman broke the light again.
+- n: 10
+  speaker: Sam
+  hanzi: 我 去 讲 道理 ， 着末脚 伊拉 赔 了 。
+  en: I argued my case, and in the end they paid for it.
+- n: 11
+  speaker: Sam
+  hanzi: 爷娘 来 了 ， 阿姨 招待 伊拉 吃 饭 。
+  en: My parents came, and the auntie had them to lunch.
+- n: 12
+  speaker: Sam
+  hanzi: 阿姨 叫 阿拉 覅 客气 ， 阿拉 吃 得 滚滚壮 。
+  en: She kept telling us not to be shy, and we ate till we were round.
+- n: 13
+  speaker: Sam
+  hanzi: 阿拉 姆妈 讲 ， 上海 人 比 巴黎 人 热情 。
+  en: My mother says Shanghai people are warmer than Parisians.
+- n: 14
+  speaker: Sam
+  hanzi: 我 普通话 讲 得 勿大 好 ， 上海 闲话 倒是 好 一眼 。
+  en: My Mandarin isn't very good, but my Shanghainese is a bit better.
+- n: 15
+  speaker: Sam
+  hanzi: 老王 讲 ， 搿 个 外国 人 ， 比 上海 人 还 上海 人 。
+  en: Old Wang says this foreigner is more Shanghainese than the Shanghainese.
+- n: 16
+  speaker: Sam
+  hanzi: 侬 走 之前 讲 过 ， 要 我 记牢 一 桩 事体 。
+  en: Before you left you told me to remember one thing.
+- n: 17
+  speaker: Sam
+  hanzi: 侬 讲 ： 勿管 多 忙 ， 礼拜天 要 去 公园 散步 。
+  en: 'You said: however busy I am, I must walk in the park on Sundays.'
+- n: 18
+  speaker: Sam
+  hanzi: 我 记牢 个 ， 每 个 礼拜天 侪 去 ， 老王 也 来 。
+  en: 'I''ve remembered: I go every Sunday, and Old Wang comes too.'
+- n: 19
+  speaker: Sam
+  hanzi: 等 侬 开年 转来 ， 一道 去 吃 生煎馒头 。
+  en: When you come back next year, we'll go for pan-fried buns again.
+- n: 20
+  speaker: Sam
+  hanzi: 搿 趟 当心 汤 ， 覅 再 滴 到 衣裳 浪 。
+  en: This time mind the soup and don't drip it on your clothes.
+- n: 21
+  speaker: Sam
+  hanzi: 我 也 买 了 一 张 明信片 ， 下趟 拨 侬 。
+  en: 'I''ve bought you a postcard too: you''ll have it next time.'
+- n: 22
+  speaker: Text
+  hanzi: Sam 想 了 一歇 ， 又 加 了 一 句 ： 阿拉 侪 想念 侬 。
+  en: 'Sam thought for a moment, and added one line: We all miss you.'
+notes:
+- ref: 1
+  topic: grammar
+  text: >-
+    Review of lessons 92–97. Comparing on a topic: 讲到…末, 比较, 最, 同 / 勿同, 别个 / 别人家 (92). Host and guest: 欢迎光临, 阿要…, 覅客气, 走好,
+    稍为…一眼 (93). Arguing your case: 哪能好…, 根本 + negative, 勿…是勿来三个 (94). Nicknames and 兮兮 (95). Change over time: V好, 越来越,
+    从…到…, passive 拨 (96). Before and after: 之前, 之后, 等…再, 记牢 and 忘记脱 (97).
+- ref: 15
+  topic: grammar
+  text: >-
+    比上海人还上海人 "more Shanghainese than the Shanghainese": a noun used as an adjective after 比…还.
+new_words: []
+exercises:
+  translate:
+  - hanzi: 讲到 吃 末 ， 我 欢喜 上海 菜 。
+    en: When it comes to food, I like Shanghai cooking.
+  - hanzi: 伊 个 脚踏车 拨 人 偷 了 。
+    en: His bike was stolen.
+  - hanzi: 吃 好 饭 之后 ， 阿拉 去 散步 。
+    en: After the meal we'll go for a walk.
+  fill:
+  - hanzi: 天气 ＿ 热 了 。
+    en: It's getting hotter and hotter.
+    answer: 越来越
+  - hanzi: 侬 ＿ 吃 杯 茶 ？
+    en: Would you like a cup of tea?
+    answer: 阿要
+  - hanzi: 我 ＿ 勿 晓得 搿 桩 事体 。
+    en: I knew nothing at all about it.
+    answer: 根本
+  say:
+  - hanzi: 欢迎 光临 ！
+    en: Welcome!
+  - hanzi: 阿拉 侪 想念 侬 。
+    en: We all miss you.
+  - hanzi: 侬 走好 ！
+    en: Take care!

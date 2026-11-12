@@ -1,0 +1,231 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 94
+title:
+  en: A complaint
+  hanzi: 讲 道理
+review: false
+setting: >-
+  Autumn. The management sent the same repairman as in lesson 80 to fix Sam's ceiling, and he has made things worse. Sam
+  rings the office.
+dialogue:
+- n: 1
+  speaker: Text
+  hanzi: 物业 派 了 同 一 个 师傅 ， 来 修 Sam 个 天花板 。
+  en: The management sent the same repairman to fix Sam's ceiling.
+- n: 2
+  speaker: Text
+  hanzi: 师傅 走 了 以后 ， Sam 一 看 ， 老 惹气 。
+  en: When he'd gone, Sam took one look and was furious.
+- n: 3
+  speaker: Text
+  hanzi: 天花板 浪 个 灯 拨 伊 弄坏 了 ， 地板 浪 侪 是 油漆 ， 真 讨厌 。
+  en: 'He had broken the ceiling light, and there was paint all over the floor: so annoying.'
+- n: 4
+  speaker: Sam
+  hanzi: 喂 ， 是 物业 伐 ？ 我 是 五 楼 个 ， 我 要 投诉 。
+  en: Hello, is that the management? I'm on the fifth floor and I want to complain.
+- n: 5
+  speaker: 物业
+  hanzi: 先生 ， 啥 事体 ？ 侬 慢慢叫 讲 。
+  en: What's the matter, sir? Take your time.
+- n: 6
+  speaker: Sam
+  hanzi: 侬 派 来 个 师傅 ， 天花板 呒没 修 好 ， 灯 又 弄坏 了 。
+  en: The man you sent didn't fix the ceiling, and he broke the light as well.
+- n: 7
+  speaker: 物业
+  hanzi: 勿 会 个 ， 阿拉 师傅 做 生活 一向 老 仔细 。
+  en: That can't be. Our men always work very carefully.
+- n: 8
+  speaker: Sam
+  hanzi: 仔细 ？ 地板 浪 侪 是 油漆 ， 侬 自家 来 看看 。
+  en: 'Carefully? The floor''s covered in paint: come and see for yourself.'
+- n: 9
+  speaker: 物业
+  hanzi: 我 来 解释 ： 可能 是 灯 本来 就 坏 了 。
+  en: 'Let me explain: perhaps the light was already broken.'
+- n: 10
+  speaker: Sam
+  hanzi: 根本 勿 是 ！ 上个礼拜 还 好好叫 个 。
+  en: It was not! It was working fine last week.
+- n: 11
+  speaker: Sam
+  hanzi: 侬 哪能 好 讲 搿 种 闲话 ？ 一眼 也 勿 讲 道理 。
+  en: How can you say such a thing? You're being completely unreasonable.
+- n: 12
+  speaker: 物业
+  hanzi: 先生 ， 覅 惹气 ， 阿拉 再 派 人 来 看看 。
+  en: Please don't be angry, sir. We'll send someone else to look.
+- n: 13
+  speaker: Sam
+  hanzi: 再 派 搿 个 师傅 来 ， 我 勿 开 门 个 。
+  en: If you send that man again, I won't open the door.
+- n: 14
+  speaker: 物业
+  hanzi: 换 一 个 ， 好 伐 ？ 搿 趟 一定 帮 侬 处理 好 。
+  en: We'll send a different one, all right? This time we'll sort it out for you.
+- n: 15
+  speaker: Sam
+  hanzi: 灯 呢 ？ 弄坏 了 勿 赔 ， 是 勿 来三 个 。
+  en: And the light? Breaking it and not paying for it won't do.
+- n: 16
+  speaker: 物业
+  hanzi: 搿 个 我 要 问 经理 。 侬 稍为 等 一歇 。
+  en: I'll have to ask the manager about that. Please wait a moment.
+- n: 17
+  speaker: Text
+  hanzi: 等 了 十 分钟 ， 物业 个 经理 亲自 打 电话 来 了 。
+  en: After ten minutes the office manager rang in person.
+- n: 18
+  speaker: 物业经理
+  hanzi: 服务 勿 好 ， 实在 抱歉 。 灯 阿拉 赔 ， 油漆 阿拉 派 人 来 揩 清爽 。
+  en: I'm very sorry for the poor service. We'll pay for the light, and send someone to clean off the paint.
+- n: 19
+  speaker: Sam
+  hanzi: 我 勿 是 存心 刁 ， 也 勿 要 硬碰硬 ， 是 师傅 做 得 忒 推板 。
+  en: 'I''m not being difficult on purpose, or picking a fight: the work was just too poor.'
+- n: 20
+  speaker: 物业经理
+  hanzi: 晓得 个 ， 侬 勿 讲 ， 阿拉 也 勿 晓得 。
+  en: I understand. If you didn't tell us, we wouldn't know.
+- n: 21
+  speaker: 物业经理
+  hanzi: 下趟 有 啥 勿 满意 ， 侬 直接 打 电话 拨 我 。
+  en: Next time you're not satisfied, call me directly.
+- n: 22
+  speaker: Text
+  hanzi: 第 二 日[ȵiɪʔ12] ， 新 个 师傅 来 了 ， 做 得 又 快 又 好 。
+  en: The next day a new repairman came, and he was quick and good.
+- n: 23
+  speaker: Sam
+  hanzi: 讲 道理 末 ， 还是 有 用 个 。 现在 我 笃定 了 。
+  en: Standing up for yourself does work after all. Now I can relax.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    同一个 "the same (one)" (同, lesson 92).
+- ref: 2
+  topic: vocab
+  text: >-
+    惹气 {惹气} "infuriating; to be angry": 覅惹气 (line 12) "don't be angry".
+- ref: 3
+  topic: grammar
+  text: >-
+    拨 + person + verb for what was done to something (the passive with 拨): 灯拨伊弄坏了 "the light was broken by him". 灯 "light,
+    lamp". 弄坏 "to break". 讨厌 "annoying".
+- ref: 4
+  topic: vocab
+  text: >-
+    投诉 "to complain (officially)".
+- ref: 7
+  topic: vocab
+  text: >-
+    仔细 "careful, thorough". 做生活 "to work" (生活, lesson 89).
+- ref: 9
+  topic: vocab
+  text: >-
+    解释 "to explain". 本来 "originally, already, in the first place".
+- ref: 10
+  topic: grammar
+  text: >-
+    根本 + negative "not at all, absolutely not": 根本勿是 "not at all".
+- ref: 11
+  topic: grammar
+  text: >-
+    哪能好…？ "how can you …?", a reproach: 侬哪能好讲搿种闲话？ 讲道理 "to be reasonable; to argue your case": 道理 "reason, sense".
+- ref: 14
+  topic: vocab
+  text: >-
+    处理 "to deal with, to handle".
+- ref: 15
+  topic: grammar
+  text: >-
+    Double negative: 弄坏了勿赔，是勿来三个 "to break it and not pay is not acceptable": 勿 + verb, then 勿来三 "won't do" (lesson 91).
+    赔 "to pay for, to compensate".
+- ref: 17
+  topic: vocab
+  text: >-
+    亲自 "in person".
+- ref: 18
+  topic: vocab
+  text: >-
+    服务 "service". 抱歉 "sorry (formal)". 揩清爽 "wipe clean" (揩, lesson 66).
+- ref: 19
+  topic: vocab
+  text: >-
+    存心 "on purpose", 刁 {刁} "awkward, difficult (of a person)". 推板 {推板} "poor, shoddy (of work or goods)". 硬碰硬 "head-on,
+    tit for tat".
+- ref: 21
+  topic: vocab
+  text: >-
+    满意 "satisfied". 直接 "directly".
+- ref: 23
+  topic: vocab
+  text: >-
+    笃定 {笃定} "sure, at ease, with nothing to worry about".
+new_words:
+- hanzi: 惹气
+  en: infuriating
+- hanzi: 讨厌
+  en: annoying
+- hanzi: 服务
+  en: service
+- hanzi: 解释
+  en: to explain
+- hanzi: 硬碰硬
+  en: head-on
+- hanzi: 笃定
+  en: sure, at ease
+- hanzi: 弄坏
+  en: to break
+- hanzi: 投诉
+  en: to complain
+- hanzi: 仔细
+  en: careful
+- hanzi: 本来
+  en: originally, already
+- hanzi: 根本
+  en: not at all (with a negative)
+- hanzi: 处理
+  en: to deal with
+- hanzi: 亲自
+  en: in person
+- hanzi: 抱歉
+  en: sorry
+- hanzi: 存心
+  en: on purpose
+- hanzi: 刁
+  en: awkward, difficult
+- hanzi: 推板
+  en: shoddy
+- hanzi: 满意
+  en: satisfied
+- hanzi: 直接
+  en: directly
+exercises:
+  translate:
+  - hanzi: 搿 只[ʦᴀʔ55] 碗 拨 伊 打破 了 。
+    en: This bowl was broken by him.
+  - hanzi: 我 根本 勿 晓得 搿 桩 事体 。
+    en: I knew nothing at all about this.
+  - hanzi: 侬 哪能 好 搿能 讲 ？
+    en: How can you say that?
+  fill:
+  - hanzi: 伊 做 事体 老 ＿ ， 一眼 也 勿 错 。
+    en: She works very carefully, without a single mistake.
+    answer: 仔细
+  - hanzi: 我 勿 是 ＿ 个 ， 对勿起 。
+    en: I didn't do it on purpose, sorry.
+    answer: 存心
+  - hanzi: 侬 ＿ 伐 ？ 勿 满意 再 讲 。
+    en: Are you satisfied? If not, say so.
+    answer: 满意
+  say:
+  - hanzi: 我 要 投诉 。
+    en: I want to make a complaint.
+  - hanzi: 侬 讲 道理 好 伐 ？
+    en: Be reasonable, will you?
+  - hanzi: 实在 抱歉 。
+    en: I'm terribly sorry.

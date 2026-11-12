@@ -1,0 +1,233 @@
+# Lesson schema: see course/README.md. hanzi = words separated by spaces (one space = one sandhi domain);
+# a word can force its reading with IPA + Chao tones: 新[ɕin53], 法国人[fᴀʔ55_koʔ55_ȵin13].
+id: 92
+title:
+  en: Shanghai and elsewhere
+  hanzi: 上海 搭 外地
+review: false
+setting: >-
+  Narrated: after nearly two years in China, Sam compares Shanghai with the other cities he has seen; then Xiao Li asks
+  him to compare it with Paris.
+dialogue:
+- n: 1
+  speaker: Text
+  hanzi: Sam 去 过 中国 勿少 城市 搭 郊区 。
+  en: Sam has seen quite a few Chinese cities and their outskirts.
+- n: 2
+  speaker: Text
+  hanzi: 每 只[ʦᴀʔ55] 城市 侪 有 自家 个 脾气 。
+  en: Each city has a temper of its own.
+- n: 3
+  speaker: Text
+  hanzi: 讲到 吃 末 ， 北方 人 吃 面 ， 上海 人 吃 饭 。
+  en: When it comes to food, northerners like noodles and Shanghai people like rice.
+- n: 4
+  speaker: Text
+  hanzi: 北京 个 菜 比较 咸 ， 上海 个 菜 比较 甜 。
+  en: Beijing food is on the salty side; Shanghai food is on the sweet side.
+- n: 5
+  speaker: Text
+  hanzi: 讲到 天气 末 ， 北京 冬天 干 ， 上海 冬天 潮 。
+  en: As for the weather, Beijing winters are dry, Shanghai winters damp.
+- n: 6
+  speaker: Text
+  hanzi: 北京 空气 有辰光 勿 好 ， 上海 好 一眼 。
+  en: The air in Beijing is sometimes bad; Shanghai's is a little better.
+- n: 7
+  speaker: Text
+  hanzi: 讲到 闲话 末 ， 每 只[ʦᴀʔ55] 城市 有 自家 个 方言 。
+  en: As for speech, every city has its own dialect.
+- n: 8
+  speaker: Text
+  hanzi: 北京 口音 搭 普通话 差勿多 ， Sam 一 听 就 懂 。
+  en: 'The Beijing accent is close to Mandarin: Sam understands it at once.'
+- n: 9
+  speaker: Text
+  hanzi: 苏州 也 是 江南 ， 苏州 闲话 更加 软 。
+  en: Suzhou is in Jiangnan too, and its speech is softer still.
+- n: 10
+  speaker: Text
+  hanzi: 宁波 闲话 末 ， 硬 得来 ， 像 辣 吵相骂 。
+  en: And Ningbo speech is so hard it sounds like a quarrel.
+- n: 11
+  speaker: Text
+  hanzi: 老 上海 人 讲 ， 阿拉 两 个 字 就是 宁波 来 个 。
+  en: Old Shanghai people say the word 阿拉 came from Ningbo.
+- n: 12
+  speaker: Text
+  hanzi: 上海 同 别个 城市 勿 同 ， 因为 伊 是 海派 。
+  en: Shanghai is unlike the other cities because it is 海派.
+- n: 13
+  speaker: Text
+  hanzi: 海派 就是 中国 个 传统 加 外国 个 物事 。
+  en: 海派 means Chinese tradition with foreign things added.
+- n: 14
+  speaker: Text
+  hanzi: 外滩 一 面 是 老 洋房 ， 对面 是 浦东 大楼 。
+  en: On one side the Bund has its old Western buildings; across the river stand the towers of Pudong.
+- n: 15
+  speaker: Text
+  hanzi: 上海 人 讲 闲话 快 ， 做 事体 也 快 。
+  en: Shanghai people talk fast and work fast.
+- n: 16
+  speaker: Text
+  hanzi: 别人家 讲 上海 人 门槛精 ， Sam 倒是 觉着 伊拉 实在 。
+  en: Others say Shanghai people are shrewd; Sam, for his part, finds them very straightforward.
+- n: 17
+  speaker: Text
+  hanzi: 一般 上海 人 特别 爱 干净 。
+  en: As a rule Shanghai people are particularly fond of cleanliness.
+- n: 18
+  speaker: 小李
+  hanzi: 侬 讲讲看 ， 上海 搭 法国 比 ， 啥 地方 顶 像 ？
+  en: Tell me, compared with France, how is Shanghai most alike?
+- n: 19
+  speaker: Sam
+  hanzi: 讲到 吃 末 ， 两 面 个 人 侪 讲 自家 个 菜 最 好吃 。
+  en: When it comes to food, people on both sides say their own cooking is the best.
+- n: 20
+  speaker: 小李
+  hanzi: 是个 ， 上海 人 吃 饭 ， 讲 个 闲话 也 是 吃 。
+  en: 'True: when Shanghai people eat, they talk about food too.'
+- n: 21
+  speaker: Sam
+  hanzi: 上海 人 搭 巴黎 人 一样 ， 觉着 自家 个 城市 最 好 。
+  en: 'And Shanghai people are like Parisians: they think their own city is the best.'
+- n: 22
+  speaker: 小李
+  hanzi: 侬 现在 也 是 上海 人 ， 侬 觉着 呢 ？
+  en: You're a Shanghai person now too. What do you think?
+- n: 23
+  speaker: Sam
+  hanzi: 我 觉着 ， 上海 是 最 好 个 ， 除脱 黄梅天 。
+  en: I think Shanghai is the best, except for the plum rain.
+notes:
+- ref: 1
+  topic: vocab
+  text: >-
+    中国 "China". 城市 "city", 郊区 "the outskirts, the suburbs". 外地 (the title) "elsewhere, out of town".
+- ref: 2
+  topic: vocab
+  text: >-
+    宁波 {宁波} "Ningbo", the port across the bay, home of many old Shanghai families. 脾气 "temper, character" (lesson 89).
+- ref: 3
+  topic: grammar
+  text: >-
+    讲到…末 "when it comes to …, as for …": it opens a topic to compare on, and is said again for each new topic (lines 5,
+    7). 北方 "the north".
+- ref: 4
+  topic: grammar
+  text: >-
+    比较 "rather, comparatively": 比较咸 "on the salty side". 最 (line 19) "most": 最好吃 "the most delicious", much like 顶.
+- ref: 6
+  topic: vocab
+  text: >-
+    空气 "air".
+- ref: 7
+  topic: vocab
+  text: >-
+    方言 "dialect"; 普通话 (line 8) "Mandarin, the common language".
+- ref: 9
+  topic: vocab
+  text: >-
+    江南 "Jiangnan", the lands south of the lower Yangtze: Shanghai, Suzhou, Hangzhou. 口音 (line 8) "accent".
+- ref: 10
+  topic: vocab
+  text: >-
+    硬 "hard". 吵相骂 "to quarrel" (lesson 49).
+- ref: 11
+  topic: culture
+  text: >-
+    阿拉 "we", the best-known word of Shanghainese, is said to have come with the Ningbo people who settled in the city; older
+    Shanghainese said 我伲. 字 "character, word".
+- ref: 12
+  topic: grammar
+  text: >-
+    同 "and, with; the same as": A同B勿同 "A is not like B". 别个 "other": 别个城市 "other cities". 海派 {海派} "the Shanghai style",
+    open, mixed, modern, as against 京派 "the Beijing style".
+- ref: 13
+  topic: vocab
+  text: >-
+    传统 "tradition; traditional".
+- ref: 14
+  topic: vocab
+  text: >-
+    洋房 "Western-style house": 老洋房 "old Western-style building".
+- ref: 16
+  topic: vocab
+  text: >-
+    别人家 "other people" (= 人家, lesson 49). 实在 "honest, down-to-earth" (lesson 81: "really").
+- ref: 17
+  topic: vocab
+  text: >-
+    一般 "as a rule, usually; ordinary". 特别 "especially, particularly". 爱干净 "to like things clean": 干净 "clean".
+new_words:
+- hanzi: 外地
+  en: elsewhere, out of town
+- hanzi: 中国
+  en: China
+- hanzi: 城市
+  en: city
+- hanzi: 宁波
+  en: Ningbo
+- hanzi: 讲到
+  en: when it comes to
+- hanzi: 北方
+  en: the north
+- hanzi: 比较
+  en: rather, comparatively
+- hanzi: 空气
+  en: air
+- hanzi: 硬
+  en: hard
+- hanzi: 同
+  en: and; the same as
+- hanzi: 别个
+  en: other
+- hanzi: 海派
+  en: the Shanghai style
+- hanzi: 传统
+  en: tradition
+- hanzi: 别人家
+  en: other people
+- hanzi: 一般
+  en: as a rule
+- hanzi: 最
+  en: most
+- hanzi: 郊区
+  en: the outskirts
+- hanzi: 江南
+  en: Jiangnan
+- hanzi: 口音
+  en: accent
+- hanzi: 特别
+  en: especially
+- hanzi: 爱
+  en: to love, to like
+- hanzi: 干净
+  en: clean
+exercises:
+  translate:
+  - hanzi: 讲到 天气 末 ， 我 欢喜 秋天 。
+    en: As for the weather, I like autumn.
+  - hanzi: 伊 个 闲话 比较 快 。
+    en: He talks rather fast.
+  - hanzi: 搿 只[ʦᴀʔ55] 城市 个 空气 老 好 。
+    en: The air in this city is very good.
+  fill:
+  - hanzi: 上海 闲话 搭 ＿ 勿 一样 。
+    en: Shanghainese is not the same as Mandarin.
+    answer: 普通话
+  - hanzi: 每 只[ʦᴀʔ55] 城市 侪 有 自家 个 ＿ 。
+    en: Every city has its own dialect.
+    answer: 方言
+  - hanzi: 苏州 闲话 ＿ 上海 闲话 勿 同 。
+    en: Suzhou speech is not like Shanghainese.
+    answer: 同
+  say:
+  - hanzi: 我 欢喜 上海 。
+    en: I like Shanghai.
+  - hanzi: 侬 会 讲 普通话 伐 ？
+    en: Can you speak Mandarin?
+  - hanzi: 一般 我 七 点 起来 。
+    en: As a rule I get up at seven.

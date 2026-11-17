@@ -16,6 +16,7 @@ Outputs:
 import json, re, sys, collections, pathlib, datetime
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import romanize as R
+import cards
 import opencc
 import yaml
 
@@ -98,20 +99,7 @@ for r in read_tsv(ROOT / 'course/verified.tsv', ['word', 'ipa', 'book', 'date'])
 
 # ---------- traditional characters (the app shows simplified by default; Settings › Characters switches)
 # OpenCC converts word by word; course/trad.tsv fixes what it gets wrong for Shanghainese (钟 → 鐘, not the surname 鍾).
-S2T = opencc.OpenCC('s2t').convert
-TRAD_FIX = sorted(((r['simp'], r['trad']) for r in read_tsv(ROOT / 'course/trad.tsv', ['simp', 'trad', 'note'])
-                   if r['simp'] != 'simp' and len(r['simp']) == len(r['trad'])), key=lambda x: -len(x[0]))
-def trad(s):
-    t = S2T(s)
-    if len(t) != len(s):
-        return t
-    t = list(t)
-    for a, b in TRAD_FIX:
-        i = s.find(a)
-        while i >= 0:
-            t[i:i + len(a)] = b
-            i = s.find(a, i + 1)
-    return ''.join(t)
+trad = cards.load_trad(ROOT)
 
 def ipa_of(word, forced=None):
     """Reading of a word, best source first. Returns (syllables, source)."""
@@ -124,13 +112,8 @@ def ipa_of(word, forced=None):
     if word in lex:
         return lex[word], 'lexicon'
     # not in any list: put it together from its characters (the lexicon's single-character reading)
-    syls = []
-    for ch in word:
-        r = ipa_of(ch)[0] if (ch in lex or ch in core or ch in overrides) else None
-        if not r:
-            return None, None
-        syls += r
-    return syls, 'composed'
+    syls = cards.compose(word, lambda ch: ipa_of(ch)[0] if (ch in lex or ch in core or ch in overrides) else None)
+    return (syls, 'composed') if syls else (None, None)
 
 def entry(word, forced=None):
     syls, src = ipa_of(word, forced)
@@ -199,25 +182,26 @@ def parse_lesson(path):
     return L
 
 dict_out = {}
-HAN = re.compile(r'[㐀-鿿\U00020000-\U0003ffff]')
+HAN = cards.HAN
 
 def tokens(src, where):
     out = []
-    for tok in src.split():
-        m = re.match(r'^(.+?)\[(.+)\]$', tok)
-        word, forced = (m.group(1), m.group(2).replace('_', ' ')) if m else (tok, None)
-        if not HAN.search(word):
-            out.append({'p': word} if re.fullmatch(r'[，。！？：、；…＿,.!?]+', word) else {'w': {'h': word}})
-            continue
+    for kind, word, *forced in cards.split(src):
+        if kind == 'p':
+            out.append({'p': word}); continue
+        if kind == 'plain':
+            out.append({'w': {'h': word}}); continue
+        forced = forced[0].replace('_', ' ') if forced[0] else None
         e = entry(word, forced)
         if not e:
-            report['missing'].append(f'{word} ({where})'); out.append({'w': {'h': word, **({'t': trad(word)} if trad(word) != word else {})}}); continue
-        wid = f"{word}|{e['ipa']}"
+            report['missing'].append(f'{word} ({where})'); out.append(cards.token(word, None, trad)); continue
+        t = cards.token(word, e, trad)
+        wid = t['w']['id']
         if wid not in dict_out:
             dict_out[wid] = e
             if e['src'] == 'composed': report['composed'].append(f"{word} → {e['wugniu']} ({where})")
             if 'gloss' not in e: report['no gloss'].append(f'{word} ({where})')
-        out.append({'w': {'h': word, 'id': wid, **({'t': trad(word)} if trad(word) != word else {})}})
+        out.append(t)
     return out
 
 # synthetic audio (tools/tts.py): a line gets its file only if the text it was made from is still the line's text

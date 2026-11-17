@@ -1,4 +1,4 @@
-# Build report (2026-11-12)
+# Build report (2026-11-17)
 
 - lexicon: 96039 words · app dictionary: 6898 words · lessons: 100 · bridge: 220 characters
 

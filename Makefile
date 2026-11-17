@@ -6,10 +6,12 @@
 # make coverage  what the lessons cover, what to teach next (PRIVATE=../syzy-private adds the books' ranking)
 # make plan    check the words planned for lessons 50–100 -> data/build/plan_check.tsv (after make db)
 # make packet N=50  everything needed to write lesson 50 -> data/build/packets/050.md (PRIVATE=../syzy-private adds the books)
+# make verify PRIVATE=../syzy-private  check every reading against the private books (after make db);
+#              rewrites the generated block of course/verified.tsv, prints only the suspects
 # make smoke   open the built app headless, visit every page (needs playwright + Chrome)
 PY = python3 -I
 
-.PHONY: all db app site lint test smoke vocab coverage plan packet
+.PHONY: all db app site lint test smoke vocab coverage plan packet verify
 all: db app
 
 db:
@@ -42,3 +44,6 @@ plan:
 
 packet:
 	$(PY) tools/packet.py $(N) $(if $(PRIVATE),--private $(PRIVATE))
+
+verify:
+	$(PY) $(or $(PRIVATE),../syzy-private)/tools/verify_words.py --public .

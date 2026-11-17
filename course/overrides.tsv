@@ -66,3 +66,74 @@
 拜哎	bᴀ13 ᴇ53	新上海人学说上海话 (钱乃荣)	printed bha e (twice)
 永远	ioŋ34 ɦyø13	新上海人学说上海话 (钱乃荣)	printed yong yhuoe
 阿毛	ᴀʔ55 mɔ13	Sy-zy standard	阿 checked, as in 阿拉
+# 17 Nov 2026: word entries whose lexicon reading had a literary or wrong syllable; the handbook's pinyin and Sy-zy's own character readings agree (syzy-private tools/verify_words.py)
+过房娘	ku34 vɑ̃13 ȵiã53	实用上海话词语手册 p. 31	book gufhangniang; database had ku34 fɑ̃53 ȵiã53
+街面房子	kᴀ53 mi13 vɑ̃13 ʦɿ34	实用上海话词语手册 p. 59	book gamifhangzy; database had kᴀ53 mi13 fɑ̃53 ʦɿ34
+平房	bin13 vɑ̃13	实用上海话词语手册 p. 59	book bhinfhang; database had bin13 fɑ̃53
+荷兰豆	ɦu13 lᴇ13 dɤ13	实用上海话词语手册 p. 48	book whuledhou; database had hu34 lᴇ13 dɤ13
+栈房	zᴇ13 vɑ̃13	实用上海话词语手册 p. 80	book shefhang; database had zᴇ13 fɑ̃53
+书房	sɿ53 vɑ̃13	实用上海话词语手册 p. 58	book syfhang; database had sɿ53 fɑ̃53
+房卡	vɑ̃13 kʰᴀ34	实用上海话词语手册 p. 73	book fhangka; database had fɑ̃53 kʰᴀ34
+断命	dø13 min13	实用上海话词语手册 p. 150	book dhoemin; database had tø34 min13
+两面黄	liã13 mi13 ɦuɑ̃13	实用上海话词语手册 p. 45	book liangmiwhang; database had liã13 mi13 huɑ̃53
+浮尸	vɤ13 sɿ53	实用上海话词语手册 p. 37	book fhousy; database had vu13 sɿ53
+倒黄梅	tɔ34 ɦuɑ̃13 mᴇ13	实用上海话词语手册 p. 22	book daowhangme; database had tɔ34 huɑ̃53 mᴇ13
+黄芽菜	ɦuɑ̃13 ŋᴀ13 ʦʰᴇ34	实用上海话词语手册 p. 47	book whangngace; database had huɑ̃53 ŋᴀ13 ʦʰᴇ34
+奶油小生	nᴀ13 ɦiɤ13 ɕiɔ34 sã53	实用上海话词语手册 p. 34	book nayhouxiaosang; database had nᴀ13 ɦiɤ13 ɕiɔ34 sən53
+番茄沙司	fᴇ53 gᴀ13 so53 sɿ53	实用上海话词语手册 p. 54	book feghasosy; database had fᴇ53 gᴀ13 sᴀ53 sɿ53
+黄豆	ɦuɑ̃13 dɤ13	实用上海话词语手册 p. 48	book whangdhou; database had huɑ̃53 dɤ13
+半夜把	pø34 ɦiᴀ13 po34	实用上海话词语手册 p. 20	book boeyhabo; database had pø34 ɦiᴀ13 pᴀ34
+黄牛	ɦuɑ̃13 ȵiɤ13	实用上海话词语手册 p. 36	book whangniu; database had huɑ̃53 ȵiɤ13
+别针	biɪʔ12 ʦən53	实用上海话词语手册 p. 72	book bhikzen; database had bəʔ12 ʦən53
+厥倒	ʨyɪʔ55 tɔ34	实用上海话词语手册 p. 94	book juikdao; database had ʨioʔ55 tɔ34
+有花头	ɦiɤ13 ho53 dɤ13	实用上海话词语手册 p. 98	book yhouhodhou; database had ɦiɤ13 huᴀ53 dɤ13
+实别别	zəʔ12 biɪʔ12 biɪʔ12	实用上海话词语手册 p. 155	book shakbhikbhik; database had zəʔ12 bəʔ12 bəʔ12
+花拆拆	ho53 ʦʰᴀʔ55 ʦʰᴀʔ55	实用上海话词语手册 p. 154	book hocakcak; database had huᴀ53 ʦʰᴀʔ55 ʦʰᴀʔ55
+空调车	kʰoŋ53 diɔ13 ʦʰo53	实用上海话词语手册 p. 61	book kongdhiaoco; database had kʰoŋ53 diɔ13 ʨy53
+乱话三千	lø13 ɦo13 sᴇ53 ʨʰi53	实用上海话词语手册 p. 180	book loehhoseqi; database had lø13 ɦuᴀ13 sᴇ53 ʨʰi53
+到把	tɔ34 po34	实用上海话词语手册 p. 101	book daobo; database had tɔ34 pᴀ34
+力把	liɪʔ12 po34	实用上海话词语手册 p. 97	book likbo; database had liɪʔ12 pᴀ34
+南瓜子	nø13 ko53 ʦɿ34	实用上海话词语手册 p. 54	book noegozy; database had nø13 kuᴀ53 ʦɿ34
+大菜	du13 ʦʰᴇ34	实用上海话词语手册 p. 47	book dhuce; database had dᴀ13 ʦʰᴇ34
+把手	po34 sɤ34	实用上海话词语手册 p. 74	book bosou; database had pᴀ34 sɤ34
+炒米花	ʦʰɔ34 mi13 ho53	实用上海话词语手册 p. 47	book caomiho; database had ʦʰɔ34 mi13 huᴀ53
+红颜绿色	ɦoŋ13 ŋᴇ13 loʔ12 səʔ55	实用上海话词语手册 p. 179	book hhongngeloksak; database had ɦoŋ13 ɦi13 loʔ12 səʔ55
+生病人	sã53 bin13 ȵin13	实用上海话词语手册 p. 63	book sangbhinnin; database had sã53 bin13 zən13
+吃着	ʨʰiɪʔ55 ʦᴀʔ55	实用上海话词语手册 p. 109	book qikzak; database had ʨʰiɪʔ55 zᴀʔ12
+白花	bᴀʔ12 ho53	实用上海话词语手册 p. 133	book bhakho; database had bᴀʔ12 huᴀ53
+花功	ho53 koŋ53	实用上海话词语手册 p. 99	book hogong; database had huᴀ53 koŋ53
+陌生人	mᴀʔ12 sã53 ȵin13	实用上海话词语手册 p. 28	book maksangnin; database had mᴀʔ12 sã53 zən13
+夹心饼干	kᴀʔ55 ɕin53 pin34 kø53	实用上海话词语手册 p. 47	book gakxinbingoe; database had kᴀʔ55 ɕin53 pin34 ʥi13
+画镜线	ɦo13 ʨin34 ɕi34	实用上海话词语手册 p. 60	book hhojinxi; database had ɦuᴀ13 ʨin34 ɕi34
+青蛙	ʨʰin53 o53	实用上海话词语手册 p. 53	book qin; database had ʨʰin53 uᴀ53
+人性命	ȵin13 ɕin34 min13	实用上海话词语手册 p. 31	book ninxinmin; database had zən13 ɕin34 min13
+人来疯	ȵin13 lᴇ13 foŋ53	实用上海话词语手册 p. 171	book ninlefong; database had zən13 lᴇ13 foŋ53
+俱乐部	ʥy13 loʔ12 bu13	实用上海话词语手册 p. 190	book jhulokbhu; database had ʥy13 ɦiᴀʔ12 bu13
+本地人	pən34 di13 ȵin13	实用上海话词语手册 p. 32	book bendhinin; database had pən34 di13 zən13
+柴草人	zᴀ13 ʦʰɔ34 ȵin13	实用上海话词语手册 p. 35	book shacaonin; database had zᴀ13 ʦʰɔ34 zən13
+安生	ø53 sã53	实用上海话词语手册 p. 145	book oesang; database had ø53 sən53
+手艺人	sɤ34 ȵi13 ȵin13	实用上海话词语手册 p. 82	book souninin; database had sɤ34 ȵi13 zən13
+日场	ȵiɪʔ12 zã13	实用上海话词语手册 p. 87	book nikshang; database had zəʔ12 zã13
+下半夜	ɦo13 pø34 ɦiᴀ13	实用上海话词语手册 p. 20	book hhoboeyha; database had ɕiᴀ34 pø34 ɦiᴀ13
+会钞	ɦuᴇ13 ʦʰɔ53	实用上海话词语手册 p. 96	book whecao; database had kuᴇ34 ʦʰɔ53
+自说自话	zɿ13 səʔ55 zɿ13 ɦo13	实用上海话词语手册 p. 179	book shysakshyhho; database had zɿ13 sø34 zɿ13 ɦuᴀ13
+花菜	ho53 ʦʰᴇ34	实用上海话词语手册 p. 44	book hoce; database had huᴀ53 ʦʰᴇ34
+别别跳	biɪʔ12 biɪʔ12 tʰiɔ34	实用上海话词语手册 p. 157	book bhikbhik; database had bəʔ12 bəʔ12 tʰiɔ34
+拍马屁	pʰᴀʔ55 mo13 pʰi34	实用上海话词语手册 p. 173	book pak; database had pʰᴀʔ55 mᴀ13 pʰi34
+煞死	sᴀʔ55 ɕi34	实用上海话词语手册 p. 162	book sakxi; database had sᴀʔ55 sɿ34
+五颜六色	ɦŋ̩13 ŋᴇ13 loʔ12 səʔ55	实用上海话词语手册 p. 178	book hhngngeloksak; database had u53 ɦi13 loʔ12 səʔ55
+空口说白话	kʰoŋ53 kʰɤ34 səʔ55 bᴀʔ12 ɦo13	实用上海话词语手册 p. 185	book kongkou; database had kʰoŋ53 kʰɤ34 sø34 bᴀʔ12 ɦuᴀ13
+挑染	tʰiɔ53 zø13	实用上海话词语手册 p. 42	book tiaoshoe; database had tʰiɔ53 ȵi13
+长途电话	zã13 du13 di13 ɦo13	实用上海话词语手册 p. 75	book shangdhu; database had ʦã34 du13 di13 ɦuᴀ13
+饼干听	pin34 kø53 tʰin53	实用上海话词语手册 p. 191	book bingoetin; database had pin34 ʥi13 tʰən53
+香鼻头	ɕiã53 biɪʔ12 dɤ13	实用上海话词语手册 p. 174	book xiang; database had ɕiã53 bəʔ12 dɤ13
+记认	ʨi34 ȵin13	实用上海话词语手册 p. 100	book jinin; database had ʨi34 zən13
+下作	ɦo13 ʦoʔ55	实用上海话词语手册 p. 153	book hhozok; database had ɕiᴀ34 ʦoʔ55
+死机	ɕi34 ʨi53	实用上海话词语手册 p. 195	book xiji; database had sɿ34 ʨi53
+花功道地	ho53 koŋ53 dɔ13 di13	实用上海话词语手册 p. 179	book hogong; database had huᴀ53 koŋ53 dɔ13 di13
+跨头势	kʰo34 dɤ13 sɿ53	实用上海话词语手册 p. 117	book ko; database had kʰuᴀ34 dɤ13 sɿ53
+五斤吼六斤	ɦŋ̩13 ʨin53 hɤ53 loʔ12 ʨin53	实用上海话词语手册 p. 170	book hhngjin; database had u53 ʨin53 hɤ53 loʔ12 ʨin53
+把脉	po34 mᴀʔ12	实用上海话词语手册 p. 66	book bo; database had pᴀ34 mᴀʔ12
+开无轨电车	kʰᴇ53 ɦu13 kuᴇ34 di13 ʦʰo53	实用上海话词语手册 p. 186	book ke; database had kʰᴇ53 ɦu13 kuᴇ34 di13 ʨy53
+三日两横头	sᴇ53 ȵiɪʔ12 liã13 ɦuã13 dɤ13	实用上海话词语手册 p. 184	book senik; database had sᴇ53 zəʔ12 liã13 ɦuã13 dɤ13
+请问	ʨʰin34 vən13	实用上海话词语手册 p. 93	book qingfhen: 问 literary ven in this set phrase (Wiktionary gives men)
